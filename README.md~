@@ -1,0 +1,18 @@
+System Python
+===============================================================================
+This project is based on my PhD thesis and is related with a Python tool 
+developed to ease the hardware implementation of processor-centric systems 
+implemented on FGPA devices. 
+
+Using Python our goal was to integrate under the same scripting environment all 
+the required tools for hardware/software development and simulation of a 
+System on Chip (SoC). SysPy also takes advantage of Python's clear and powerful 
+syntax that can be used to describe hardware digital designs using Hardware 
+Description Language (HDL) like syntax or in an abstract way, using functions 
+to auto-generate HDL code.
+
+
+
+The key fetures of the tool are summarized below:
+
+
