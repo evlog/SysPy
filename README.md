@@ -1,5 +1,7 @@
 SysPy (System Python)
 ===============================================================================
+Please read this file in its raw version to get the correct text structure.
+
 This project is based on my PhD thesis and is related with a Python tool 
 developed to ease the hardware implementation of processor-centric systems 
 implemented on FGPA devices. 
