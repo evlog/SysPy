@@ -32,11 +32,11 @@ SysPy and also design examples using SysPy are included.
 The folders' hierarchy in the repository is the following:
 
 ./SysPy
-	./tools
-		./bin2init
-			bint2init.py
-			bin2hex.c
-			bin2hex (binary)
+    ./tools
+        ./bin2init
+            bint2init.py
+            bin2hex.c
+            bin2hex (binary)
 			
 
 -In the "tools" directory standalone Python code is included used within SysPy.
