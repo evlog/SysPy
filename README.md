@@ -26,13 +26,29 @@ The key fetures of the tool are summarized below:
 (e) tool integration for hw/sw co-design by generating Tcl scripts for FPGA 
     synthesis tools.
 
-On this repository supporting Python tools used within SysPy and also design
-examples using SysPy are included.
+In this repository Python code of SysPy, supporting Python tools used within 
+SysPy and also design examples using SysPy are included.
+
+The folders' hierarchy in the repository is the following:
+
+./SysPy
+	./tools
+		./bin2init
+			bint2init.py
+			bin2hex.c
+			bin2hex (binary)
+			
+
+-In the "tools" directory standalone Python code is included used within SysPy.
+
+-In the "bin2init" directory Python and C code are included that can be used
+ to initialize to Xilinx BRAMs the binary content of C compiled software for 
+ the ORPSoC v2 (OpenrRisc) processor design. 
 
 In case you find any piece of code in this repository useful to your work please
-add a reference to SysPy's repository or to one of the published papers related to 
-SysPy. The list of publications as well as other information about me and the 
-project can be found in my personla website:
+add a reference to SysPy's repository or to one of the published papers related 
+to SysPy. The list of publications as well as other information about me and the 
+project can be found in my personal website:
 
 http://cgi.di.uoa.gr/~evlog/
 
