@@ -23,7 +23,8 @@ The key fetures of the tool are summarized below:
 (c) abstract simulation of a design by mapping hardware functionality to Python 
     function and classes.
 
-(d) simulation and generation of VCD files for top-level I/O signal visualization.
+(d) simulation and generation of VCD files for top-level I/O signal 
+    visualization.
 
 (e) tool integration for hw/sw co-design by generating Tcl scripts for FPGA 
     synthesis tools.
@@ -39,13 +40,18 @@ The folders' hierarchy in the repository is the following:
             bint2init.py
             bin2hex.c
             bin2hex (binary)
+        ./fp2Bin
+            fpSignToBin.py
 			
-
+			
 -In the "tools" directory standalone Python code is included used within SysPy.
 
--In the "bin2init" directory Python and C code are included that can be used
+-"bin2init": Python and C code are included that can be used
  to initialize to Xilinx BRAMs the binary content of C compiled software for 
  the ORPSoC v2 (OpenrRisc) processor design. 
+
+-"fp2Bin": Conversion of floating point numbers to the corresponding binary 
+ fixed point representation.
 
 In case you find any piece of code in this repository useful to your work please
 add a reference to SysPy's repository or to one of the published papers related 
