@@ -46,7 +46,7 @@ Created by:   Evangelos Logaras
   (integer number of bits).(decimal number of bits)
 
   Usage: python fpSignToBin.py <decimal number> <notation> (Python 2.6)
-  Example: python fpSignToBin.py 3.3 "1.3"
+  Example: python fpSignToBin.py 3.3 1.3
 """
 import sys
 
