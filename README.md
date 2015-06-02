@@ -125,6 +125,7 @@ to get the latest release (tag: SysPy_v0.5_20150602_2)
 >git checkout SysPy_v0.5_20150602_2
 >git branch -D master
 >git checkout -b master
+***************
 
 
 In case you find any piece of code in this repository useful to your work please
