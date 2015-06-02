@@ -115,6 +115,18 @@ Standalone tools
  fixed point representation.
 ***************
 
+Populating instructions
+***************
+The repository of the project is hosted in GitHub. use the following command suquence
+to get the latest release (tag: SysPy_v0.5_20150602_2)
+
+>git clone https://github.com/evlog/SysPy.git
+> cd SysPy
+>git checkout SysPy_v0.5_20150602_2
+>git branch -D master
+>git checkout -b master
+
+
 In case you find any piece of code in this repository useful to your work please
 add a reference to SysPy's repository or to one of the published papers related 
 to SysPy. The list of publications as well as other information about me and the 
