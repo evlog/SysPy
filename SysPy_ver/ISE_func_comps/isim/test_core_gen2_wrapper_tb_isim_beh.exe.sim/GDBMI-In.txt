@@ -1,0 +1,41 @@
+1-ntrace -on
+2-ntrace -on
+3-target-exec-status
+4-target-exec-status
+5-var-evaluate-expression 304
+6-target-exec-status
+7-var-evaluate-expression 304
+8-target-exec-status
+9-var-evaluate-expression 304
+10-target-exec-status
+11-var-evaluate-expression 304
+12-target-exec-status
+13-var-evaluate-expression 305
+14-ntrace-select -n 304 -on
+15-ntrace-select -n 305 -on
+16-exec-continue -time 1000000
+17-target-exec-status
+18-var-evaluate-expression 304
+19-target-exec-status
+20-var-evaluate-expression 305
+21-target-exec-status
+22-target-exec-status
+23-target-exec-status
+24-var-evaluate-expression 304
+25-target-exec-status
+26-var-evaluate-expression 305
+27-target-exec-status
+28-target-exec-status
+29-target-exec-status
+30-var-evaluate-expression 304
+31-target-exec-status
+32-var-evaluate-expression 305
+33-target-exec-status
+34-var-evaluate-expression 304
+35-target-exec-status
+36-var-evaluate-expression 305
+37-target-exec-status
+38-var-evaluate-expression 304
+39-target-exec-status
+40-var-evaluate-expression 305
+41-gdb-exit

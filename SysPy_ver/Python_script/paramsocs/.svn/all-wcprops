@@ -1,0 +1,65 @@
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/svn/!svn/ver/140/SysPy/SysPy_ver/Python_script/paramsocs
+END
+FRM1XforLEONparam.vhd
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/svn/!svn/ver/102/SysPy/SysPy_ver/Python_script/paramsocs/FRM1XforLEONparam.vhd
+END
+proc_wrapper_FRM4X.vhd
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/svn/!svn/ver/102/SysPy/SysPy_ver/Python_script/paramsocs/proc_wrapper_FRM4X.vhd
+END
+FRM2XforLeonparam.vhd
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/svn/!svn/ver/102/SysPy/SysPy_ver/Python_script/paramsocs/FRM2XforLeonparam.vhd
+END
+FRM4XforLEONparam.vhd
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/svn/!svn/ver/102/SysPy/SysPy_ver/Python_script/paramsocs/FRM4XforLEONparam.vhd
+END
+proc_wrapper_NRM4X.vhd
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/svn/!svn/ver/102/SysPy/SysPy_ver/Python_script/paramsocs/proc_wrapper_NRM4X.vhd
+END
+LEONplusFRM4XNRM4X_2param.vhd
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/svn/!svn/ver/102/SysPy/SysPy_ver/Python_script/paramsocs/LEONplusFRM4XNRM4X_2param.vhd
+END
+proc_wrapper2X.vhd
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/svn/!svn/ver/102/SysPy/SysPy_ver/Python_script/paramsocs/proc_wrapper2X.vhd
+END
+proc_wrapper4X.vhd
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/svn/!svn/ver/102/SysPy/SysPy_ver/Python_script/paramsocs/proc_wrapper4X.vhd
+END
+proc_wrapper_FRM1X.vhd
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/svn/!svn/ver/102/SysPy/SysPy_ver/Python_script/paramsocs/proc_wrapper_FRM1X.vhd
+END
+proc_wrapper_FRM2X.vhd
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/svn/!svn/ver/102/SysPy/SysPy_ver/Python_script/paramsocs/proc_wrapper_FRM2X.vhd
+END

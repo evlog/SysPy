@@ -1,0 +1,47 @@
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/svn/!svn/ver/102/SysPy/SysPy_ver/Leon3_comps/libs/eth/core
+END
+eth_rstgen.vhd
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/svn/!svn/ver/102/SysPy/SysPy_ver/Leon3_comps/libs/eth/core/eth_rstgen.vhd
+END
+greth_rx.vhd
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/svn/!svn/ver/102/SysPy/SysPy_ver/Leon3_comps/libs/eth/core/greth_rx.vhd
+END
+greth_tx.vhd
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/svn/!svn/ver/102/SysPy/SysPy_ver/Leon3_comps/libs/eth/core/greth_tx.vhd
+END
+vhdlsyn.txt
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/svn/!svn/ver/102/SysPy/SysPy_ver/Leon3_comps/libs/eth/core/vhdlsyn.txt
+END
+greth_pkg.vhd
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/svn/!svn/ver/102/SysPy/SysPy_ver/Leon3_comps/libs/eth/core/greth_pkg.vhd
+END
+grethc.vhd
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/svn/!svn/ver/102/SysPy/SysPy_ver/Leon3_comps/libs/eth/core/grethc.vhd
+END
+eth_ahb_mst.vhd
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/svn/!svn/ver/102/SysPy/SysPy_ver/Leon3_comps/libs/eth/core/eth_ahb_mst.vhd
+END

@@ -1,0 +1,17 @@
+V3 12
+FL /home/SysPy_test/SysPy_ver/Python_script/paramsocs/Leon3_comps_Gill_top/Leon3_comps/libs/esa/memoryctrl/mctrl.vhd 2011/05/11.18:05:45 O.76xd
+EN esa/mctrl 1369068634 \
+      FL /home/SysPy_test/SysPy_ver/Python_script/paramsocs/Leon3_comps_Gill_top/Leon3_comps/libs/esa/memoryctrl/mctrl.vhd \
+      PB ieee/std_logic_1164 1296775758 LB grlib PB grlib/amba 1369068082 \
+      PH grlib/devices 1369068084 PB grlib/stdlib 1369068080 LB gaisler \
+      PH gaisler/memctrl 1369068414 LB esa PH esa/memoryctrl 1369068613
+AR esa/mctrl/rtl 1369068635 \
+      FL /home/SysPy_test/SysPy_ver/Python_script/paramsocs/Leon3_comps_Gill_top/Leon3_comps/libs/esa/memoryctrl/mctrl.vhd \
+      EN esa/mctrl 1369068634 CP sdmctrl
+FL /home/SysPy_test/SysPy_ver/Python_script/paramsocs/Leon3_comps_Gill_top/Leon3_comps/libs/esa/memoryctrl/memoryctrl.vhd 2011/05/11.18:05:45 O.76xd
+PH esa/memoryctrl 1369068613 \
+      FL /home/SysPy_test/SysPy_ver/Python_script/paramsocs/Leon3_comps_Gill_top/Leon3_comps/libs/esa/memoryctrl/memoryctrl.vhd \
+      PB ieee/std_logic_1164 1296775758 LB grlib PB grlib/amba 1369068082 \
+      LB gaisler PH gaisler/memctrl 1369068414 CD mctrl
+FL /media/Seagate/system_backup/SysPy_test/SysPy_ver/Python_script/paramsocs/Leon3_comps_Gill_top/Leon3_comps/libs/esa/memoryctrl/mctrl.vhd 2011/05/11.18:05:45 O.76xd
+FL /media/Seagate/system_backup/SysPy_test/SysPy_ver/Python_script/paramsocs/Leon3_comps_Gill_top/Leon3_comps/libs/esa/memoryctrl/memoryctrl.vhd 2011/05/11.18:05:45 O.76xd

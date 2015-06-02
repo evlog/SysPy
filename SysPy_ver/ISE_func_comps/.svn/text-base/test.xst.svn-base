@@ -1,0 +1,5 @@
+set -tmpdir "/media/My Passport/work/PhD/myHDL_tests/my_conversion/Plex_test/new_code_2/ISE_func_comps/xst/projnav.tmp"
+set -xsthdpdir "/media/My Passport/work/PhD/myHDL_tests/my_conversion/Plex_test/new_code_2/ISE_func_comps/xst"
+elaborate
+-ifn test.prj
+-ifmt mixed

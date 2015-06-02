@@ -1,0 +1,83 @@
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/svn/!svn/ver/102/SysPy/SysPy_ver/Leon3_comps/libs/techmap/gencomp
+END
+clkgen.in.help
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/svn/!svn/ver/102/SysPy/SysPy_ver/Leon3_comps/libs/techmap/gencomp/clkgen.in.help
+END
+tech.in.help
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/svn/!svn/ver/102/SysPy/SysPy_ver/Leon3_comps/libs/techmap/gencomp/tech.in.help
+END
+tech.in.fpga
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/svn/!svn/ver/102/SysPy/SysPy_ver/Leon3_comps/libs/techmap/gencomp/tech.in.fpga
+END
+netcomp.vhd
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/svn/!svn/ver/102/SysPy/SysPy_ver/Leon3_comps/libs/techmap/gencomp/netcomp.vhd
+END
+tech.in.com
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/svn/!svn/ver/102/SysPy/SysPy_ver/Leon3_comps/libs/techmap/gencomp/tech.in.com
+END
+vhdlsyn.txt
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/svn/!svn/ver/102/SysPy/SysPy_ver/Leon3_comps/libs/techmap/gencomp/vhdlsyn.txt
+END
+clkgen.in
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/svn/!svn/ver/102/SysPy/SysPy_ver/Leon3_comps/libs/techmap/gencomp/clkgen.in
+END
+clkgen.in.vhd
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/svn/!svn/ver/102/SysPy/SysPy_ver/Leon3_comps/libs/techmap/gencomp/clkgen.in.vhd
+END
+gencomp.vhd
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/svn/!svn/ver/102/SysPy/SysPy_ver/Leon3_comps/libs/techmap/gencomp/gencomp.vhd
+END
+tech.in
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/svn/!svn/ver/102/SysPy/SysPy_ver/Leon3_comps/libs/techmap/gencomp/tech.in
+END
+tech.in.vhd
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/svn/!svn/ver/102/SysPy/SysPy_ver/Leon3_comps/libs/techmap/gencomp/tech.in.vhd
+END
+clkgen.in.h
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/svn/!svn/ver/102/SysPy/SysPy_ver/Leon3_comps/libs/techmap/gencomp/clkgen.in.h
+END
+tech.in.h
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/svn/!svn/ver/102/SysPy/SysPy_ver/Leon3_comps/libs/techmap/gencomp/tech.in.h
+END

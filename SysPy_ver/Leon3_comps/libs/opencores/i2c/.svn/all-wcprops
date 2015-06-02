@@ -1,0 +1,29 @@
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/svn/!svn/ver/102/SysPy/SysPy_ver/Leon3_comps/libs/opencores/i2c
+END
+i2c_master_byte_ctrl.vhd
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/svn/!svn/ver/102/SysPy/SysPy_ver/Leon3_comps/libs/opencores/i2c/i2c_master_byte_ctrl.vhd
+END
+i2coc.vhd
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/svn/!svn/ver/102/SysPy/SysPy_ver/Leon3_comps/libs/opencores/i2c/i2coc.vhd
+END
+vhdlsyn.txt
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/svn/!svn/ver/102/SysPy/SysPy_ver/Leon3_comps/libs/opencores/i2c/vhdlsyn.txt
+END
+i2c_master_bit_ctrl.vhd
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/svn/!svn/ver/102/SysPy/SysPy_ver/Leon3_comps/libs/opencores/i2c/i2c_master_bit_ctrl.vhd
+END

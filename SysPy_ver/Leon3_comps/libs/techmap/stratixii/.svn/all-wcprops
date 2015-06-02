@@ -1,0 +1,35 @@
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/svn/!svn/ver/102/SysPy/SysPy_ver/Leon3_comps/libs/techmap/stratixii
+END
+clkgen_stratixii.vhd
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/svn/!svn/ver/102/SysPy/SysPy_ver/Leon3_comps/libs/techmap/stratixii/clkgen_stratixii.vhd
+END
+vhdlsim.txt
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/svn/!svn/ver/102/SysPy/SysPy_ver/Leon3_comps/libs/techmap/stratixii/vhdlsim.txt
+END
+vhdlsyn.txt
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/svn/!svn/ver/102/SysPy/SysPy_ver/Leon3_comps/libs/techmap/stratixii/vhdlsyn.txt
+END
+stratixii_ddr_phy.vhd
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/svn/!svn/ver/102/SysPy/SysPy_ver/Leon3_comps/libs/techmap/stratixii/stratixii_ddr_phy.vhd
+END
+grusbhc_stratixii.vhd
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/svn/!svn/ver/102/SysPy/SysPy_ver/Leon3_comps/libs/techmap/stratixii/grusbhc_stratixii.vhd
+END

@@ -1,0 +1,696 @@
+
+# =======================================================
+# XDL NCD CONVERSION MODE $Revision: 1.01$
+# time: Wed Mar 10 14:56:00 2010
+
+# =======================================================
+
+
+# =======================================================
+# The syntax for the design statement is:                
+# design <design_name> <part> <ncd version>;             
+# or                                                     
+# design <design_name> <device> <package> <speed> <ncd_version>
+# =======================================================
+design "test_core_gen2_wrapper" xc3s1000fg320-5 v3.2 ,
+  cfg "
+       _DESIGN_PROP::BUS_INFO:5:OUTPUT:x_out<4:0>
+       _DESIGN_PROP::BUS_INFO:8:INPUT:x_in<7:0>
+       _DESIGN_PROP::PIN_INFO:x_in<0>:/test_core_gen2_wrapper/PACKED/test_core_gen2_wrapper/x_in<0>/x_in<0>/PAD:INPUT:7:x_in<7\:0>
+       _DESIGN_PROP::PIN_INFO:x_in<1>:/test_core_gen2_wrapper/PACKED/test_core_gen2_wrapper/x_in<1>/x_in<1>/PAD:INPUT:6:x_in<7\:0>
+       _DESIGN_PROP::PIN_INFO:x_in<2>:/test_core_gen2_wrapper/PACKED/test_core_gen2_wrapper/x_in<2>/x_in<2>/PAD:INPUT:5:x_in<7\:0>
+       _DESIGN_PROP::PIN_INFO:x_in<3>:/test_core_gen2_wrapper/PACKED/test_core_gen2_wrapper/x_in<3>/x_in<3>/PAD:INPUT:4:x_in<7\:0>
+       _DESIGN_PROP::PIN_INFO:x_in<4>:/test_core_gen2_wrapper/PACKED/test_core_gen2_wrapper/x_in<4>/x_in<4>/PAD:INPUT:3:x_in<7\:0>
+       _DESIGN_PROP::PIN_INFO:x_in<5>:/test_core_gen2_wrapper/PACKED/test_core_gen2_wrapper/x_in<5>/x_in<5>/PAD:INPUT:2:x_in<7\:0>
+       _DESIGN_PROP::PIN_INFO:x_in<6>:/test_core_gen2_wrapper/PACKED/test_core_gen2_wrapper/x_in<6>/x_in<6>/PAD:INPUT:1:x_in<7\:0>
+       _DESIGN_PROP::PIN_INFO:x_in<7>:/test_core_gen2_wrapper/PACKED/test_core_gen2_wrapper/x_in<7>/x_in<7>/PAD:INPUT:0:x_in<7\:0>
+       _DESIGN_PROP::PIN_INFO:x_out<0>:/test_core_gen2_wrapper/PACKED/test_core_gen2_wrapper/x_out<0>/x_out<0>/PAD:OUTPUT:4:x_out<4\:0>
+       _DESIGN_PROP::PIN_INFO:x_out<1>:/test_core_gen2_wrapper/PACKED/test_core_gen2_wrapper/x_out<1>/x_out<1>/PAD:OUTPUT:3:x_out<4\:0>
+       _DESIGN_PROP::PIN_INFO:x_out<2>:/test_core_gen2_wrapper/PACKED/test_core_gen2_wrapper/x_out<2>/x_out<2>/PAD:OUTPUT:2:x_out<4\:0>
+       _DESIGN_PROP::PIN_INFO:x_out<3>:/test_core_gen2_wrapper/PACKED/test_core_gen2_wrapper/x_out<3>/x_out<3>/PAD:OUTPUT:1:x_out<4\:0>
+       _DESIGN_PROP::PIN_INFO:x_out<4>:/test_core_gen2_wrapper/PACKED/test_core_gen2_wrapper/x_out<4>/x_out<4>/PAD:OUTPUT:0:x_out<4\:0>
+       _DESIGN_PROP::PK_NGMTIMESTAMP:1268225517";
+
+
+#  =======================================================
+#  The syntax for instances is:
+#      instance <name> <sitedef>, placed <tile> <site>, cfg <string> ;
+#  or
+#      instance <name> <sitedef>, unplaced, cfg <string> ;
+# 
+#  For typing convenience you can abbreviate instance to inst.
+# 
+#  For IOs there are two special keywords: bonded and unbonded
+#  that can be used to designate whether the PAD of an unplaced IO is
+#  bonded out. If neither keyword is specified, bonded is assumed.
+# 
+#  The bonding of placed IOs is determined by the site they are placed in.
+# 
+#  If you specify bonded or unbonded for an instance that is not an
+#  IOB it is ignored.
+# 
+#  Shown below are three examples for IOs. 
+#     instance IO1 IOB, unplaced ;          # This will be bonded
+#     instance IO1 IOB, unplaced bonded ;   # This will be bonded
+#     instance IO1 IOB, unplaced unbonded ; # This will be unbonded
+#  =======================================================
+inst "sqrt_comp/blk00000003/sig00000026" "SLICEL",placed R2C17 SLICE_X33Y92  ,
+  cfg " BXINV::BX BYINV::#OFF CEINV::#OFF CLKINV::#OFF COUTUSED::0 CY0F::F1
+       CY0G::G1 CYINIT::BX CYSELF::F CYSELG::G DXMUX::#OFF DYMUX::#OFF F:sqrt_comp/blk00000003/blk00000049:#LUT:D=~A1
+       F5USED::#OFF FFX::#OFF FFX_INIT_ATTR::#OFF FFX_SR_ATTR::#OFF FFY::#OFF
+       FFY_INIT_ATTR::#OFF FFY_SR_ATTR::#OFF FXMUX::FXOR FXUSED::#OFF G:sqrt_comp/blk00000003/blk00000048:#LUT:D=~A1
+       GYMUX::GXOR REVUSED::#OFF SRINV::#OFF SYNC_ATTR::#OFF XBUSED::#OFF
+       XUSED::0 YBUSED::#OFF YUSED::0 CYMUXF:sqrt_comp/blk00000003/blk00000017:
+       CYMUXG:sqrt_comp/blk00000003/blk0000001a: XORF:sqrt_comp/blk00000003/blk00000018:
+       XORG:sqrt_comp/blk00000003/blk0000001b:
+       _INST_PROP::XDL_SHAPE_DESC:Shape_0:CARRY,A\ carry\ chain\ starting\ with\ carry\ mux\ \"sqrt_comp/blk00000003/blk00000017\"
+       _INST_PROP::XDL_SHAPE_MEMBER:Shape_0:0,0 "
+  ;
+inst "sqrt_comp/blk00000003/sig0000002d" "SLICEL",placed R2C17 SLICE_X33Y93  ,
+  cfg " BXINV::#OFF BYINV::#OFF CEINV::#OFF CLKINV::#OFF COUTUSED::0 CY0F::F1
+       CY0G::G2 CYINIT::CIN CYSELF::F CYSELG::G DXMUX::#OFF DYMUX::#OFF
+       F:sqrt_comp/blk00000003/blk0000003d:#LUT:D=((~A1*A2)+(A1*~A4)) F5USED::#OFF
+       FFX::#OFF FFX_INIT_ATTR::#OFF FFX_SR_ATTR::#OFF FFY::#OFF FFY_INIT_ATTR::#OFF
+       FFY_SR_ATTR::#OFF FXMUX::FXOR FXUSED::#OFF G:sqrt_comp/blk00000003/blk00000044:#LUT:D=((~A1*~A3)@A2)
+       GYMUX::GXOR REVUSED::#OFF SRINV::#OFF SYNC_ATTR::#OFF XBUSED::#OFF
+       XUSED::0 YBUSED::#OFF YUSED::0 CYMUXF:sqrt_comp/blk00000003/blk0000001c:
+       CYMUXG:sqrt_comp/blk00000003/blk0000001e: XORF:sqrt_comp/blk00000003/blk0000001d:
+       XORG:sqrt_comp/blk00000003/blk0000001f:
+       _INST_PROP::XDL_SHAPE_MEMBER:Shape_0:0,1 "
+  ;
+inst "sqrt_comp/blk00000003/sig00000035" "SLICEL",placed R1C17 SLICE_X33Y94  ,
+  cfg " BXINV::BX BYINV::BY CEINV::#OFF CLKINV::#OFF COUTUSED::0 CY0F::BX
+       CY0G::BY CYINIT::CIN CYSELF::F CYSELG::G DXMUX::#OFF DYMUX::#OFF
+       F:sqrt_comp/blk00000003/blk00000041:#LUT:D=((~A2*~A3)+(A2*(A4+~A1)))
+       F5USED::#OFF FFX::#OFF FFX_INIT_ATTR::#OFF FFX_SR_ATTR::#OFF FFY::#OFF
+       FFY_INIT_ATTR::#OFF FFY_SR_ATTR::#OFF FXMUX::FXOR FXUSED::#OFF G:sqrt_comp/blk00000003/blk00000040:#LUT:D=((~A2*~A1)+(A2*(~A3+~A4)))
+       GYMUX::#OFF REVUSED::#OFF SRINV::#OFF SYNC_ATTR::#OFF XBUSED::#OFF
+       XUSED::0 YBUSED::#OFF YUSED::#OFF CYMUXF:sqrt_comp/blk00000003/blk00000020:
+       CYMUXG:sqrt_comp/blk00000003/blk00000022: XORF:sqrt_comp/blk00000003/blk00000021:
+       _INST_PROP::XDL_SHAPE_MEMBER:Shape_0:0,2  _ROUTETHROUGH:COUT:YB "
+  ;
+inst "sqrt_comp/blk00000003/sig00000013" "SLICEL",placed R2C17 SLICE_X32Y92  ,
+  cfg " BXINV::BX BYINV::#OFF CEINV::#OFF CLKINV::#OFF COUTUSED::0 CY0F::F1
+       CY0G::G2 CYINIT::BX CYSELF::F CYSELG::G DXMUX::#OFF DYMUX::#OFF F:sqrt_comp/blk00000003/blk00000046:#LUT:D=~A1
+       F5USED::#OFF FFX::#OFF FFX_INIT_ATTR::#OFF FFX_SR_ATTR::#OFF FFY::#OFF
+       FFY_INIT_ATTR::#OFF FFY_SR_ATTR::#OFF FXMUX::#OFF FXUSED::#OFF G:sqrt_comp/blk00000003/blk00000045:#LUT:D=~A2
+       GYMUX::#OFF REVUSED::#OFF SRINV::#OFF SYNC_ATTR::#OFF XBUSED::#OFF
+       XUSED::#OFF YBUSED::#OFF YUSED::#OFF CYMUXF:sqrt_comp/blk00000003/blk00000006:
+       CYMUXG:sqrt_comp/blk00000003/blk00000009:
+       _INST_PROP::XDL_SHAPE_DESC:Shape_1:CARRY,A\ carry\ chain\ starting\ with\ carry\ mux\ \"sqrt_comp/blk00000003/blk00000006\"
+       _INST_PROP::XDL_SHAPE_MEMBER:Shape_1:0,0 "
+  ;
+inst "sqrt_comp/blk00000003/sig00000019" "SLICEL",placed R2C17 SLICE_X32Y93  ,
+  cfg " BXINV::#OFF BYINV::#OFF CEINV::#OFF CLKINV::#OFF COUTUSED::0 CY0F::F1
+       CY0G::G2 CYINIT::CIN CYSELF::F CYSELG::G DXMUX::#OFF DYMUX::#OFF
+       F:sqrt_comp/blk00000003/blk0000003b:#LUT:D=((~A1*A2)+(A1*~A4)) F5USED::#OFF
+       FFX::#OFF FFX_INIT_ATTR::#OFF FFX_SR_ATTR::#OFF FFY::#OFF FFY_INIT_ATTR::#OFF
+       FFY_SR_ATTR::#OFF FXMUX::#OFF FXUSED::#OFF G:sqrt_comp/blk00000003/blk0000003c:#LUT:D=(A2@((~A1*A3)+(A1*A4)))
+       GYMUX::#OFF REVUSED::#OFF SRINV::#OFF SYNC_ATTR::#OFF XBUSED::#OFF
+       XUSED::#OFF YBUSED::#OFF YUSED::#OFF CYMUXF:sqrt_comp/blk00000003/blk0000000b:
+       CYMUXG:sqrt_comp/blk00000003/blk0000000d:
+       _INST_PROP::XDL_SHAPE_MEMBER:Shape_1:0,1 "
+  ;
+inst "sqrt_comp/blk00000003/sig0000001f" "SLICEL",placed R1C17 SLICE_X32Y94  ,
+  cfg " BXINV::#OFF BYINV::#OFF CEINV::#OFF CLKINV::#OFF COUTUSED::0 CY0F::F2
+       CY0G::G2 CYINIT::CIN CYSELF::F CYSELG::G DXMUX::#OFF DYMUX::#OFF
+       F:sqrt_comp/blk00000003/blk00000042:#LUT:D=((~A1*~A4)@A2) F5USED::#OFF
+       FFX::#OFF FFX_INIT_ATTR::#OFF FFX_SR_ATTR::#OFF FFY::#OFF FFY_INIT_ATTR::#OFF
+       FFY_SR_ATTR::#OFF FXMUX::#OFF FXUSED::#OFF G:sqrt_comp/blk00000003/blk0000003f:#LUT:D=((~A1*~A4)+(A1*~A3))
+       GYMUX::#OFF REVUSED::#OFF SRINV::#OFF SYNC_ATTR::#OFF XBUSED::#OFF
+       XUSED::#OFF YBUSED::#OFF YUSED::#OFF CYMUXF:sqrt_comp/blk00000003/blk0000000f:
+       CYMUXG:sqrt_comp/blk00000003/blk00000011:
+       _INST_PROP::XDL_SHAPE_MEMBER:Shape_1:0,2 "
+  ;
+inst "sqrt_comp/blk00000003/sig00000022" "SLICEL",placed R1C17 SLICE_X32Y95  ,
+  cfg " BXINV::#OFF BYINV::#OFF CEINV::#OFF CLKINV::#OFF COUTUSED::#OFF
+       CY0F::F2 CY0G::#OFF CYINIT::CIN CYSELF::F CYSELG::#OFF DXMUX::#OFF
+       DYMUX::#OFF F:sqrt_comp/blk00000003/blk0000003e:#LUT:D=((~A1*~A3)+(A1*~A4))
+       F5USED::#OFF FFX::#OFF FFX_INIT_ATTR::#OFF FFX_SR_ATTR::#OFF FFY::#OFF
+       FFY_INIT_ATTR::#OFF FFY_SR_ATTR::#OFF FXMUX::#OFF FXUSED::#OFF G::#OFF
+       GYMUX::#OFF REVUSED::#OFF SRINV::#OFF SYNC_ATTR::#OFF XBUSED::0 XUSED::#OFF
+       YBUSED::#OFF YUSED::#OFF CYMUXF:sqrt_comp/blk00000003/blk00000013:
+       _INST_PROP::XDL_SHAPE_MEMBER:Shape_1:0,3 "
+  ;
+inst "sqrt_comp/blk00000003/sig0000003b" "SLICEL",placed R2C16 SLICE_X31Y92  ,
+  cfg " BXINV::BX BYINV::#OFF CEINV::#OFF CLKINV::#OFF COUTUSED::0 CY0F::F2
+       CY0G::G1 CYINIT::BX CYSELF::F CYSELG::G DXMUX::#OFF DYMUX::#OFF F:sqrt_comp/blk00000003/blk0000004c:#LUT:D=~A2
+       F5USED::#OFF FFX::#OFF FFX_INIT_ATTR::#OFF FFX_SR_ATTR::#OFF FFY::#OFF
+       FFY_INIT_ATTR::#OFF FFY_SR_ATTR::#OFF FXMUX::FXOR FXUSED::#OFF G:sqrt_comp/blk00000003/blk0000004b:#LUT:D=~A1
+       GYMUX::GXOR REVUSED::#OFF SRINV::#OFF SYNC_ATTR::#OFF XBUSED::#OFF
+       XUSED::0 YBUSED::#OFF YUSED::0 CYMUXF:sqrt_comp/blk00000003/blk00000026:
+       CYMUXG:sqrt_comp/blk00000003/blk00000029: XORF:sqrt_comp/blk00000003/blk00000027:
+       XORG:sqrt_comp/blk00000003/blk0000002a:
+       _INST_PROP::XDL_SHAPE_DESC:Shape_2:CARRY,A\ carry\ chain\ starting\ with\ carry\ mux\ \"sqrt_comp/blk00000003/blk00000026\"
+       _INST_PROP::XDL_SHAPE_MEMBER:Shape_2:0,0 "
+  ;
+inst "sqrt_comp/blk00000003/sig00000043" "SLICEL",placed R2C16 SLICE_X31Y93  ,
+  cfg " BXINV::#OFF BYINV::#OFF CEINV::#OFF CLKINV::#OFF COUTUSED::0 CY0F::F1
+       CY0G::PROD CYINIT::CIN CYSELF::F CYSELG::G DXMUX::#OFF DYMUX::#OFF
+       F:sqrt_comp/blk00000003/blk0000004e:#LUT:D=~A2 F5USED::#OFF FFX::#OFF
+       FFX_INIT_ATTR::#OFF FFX_SR_ATTR::#OFF FFY::#OFF FFY_INIT_ATTR::#OFF
+       FFY_SR_ATTR::#OFF FXMUX::FXOR FXUSED::#OFF G:sqrt_comp/blk00000003/blk00000043:#LUT:D=(~A1+~A2)
+       GYMUX::GXOR REVUSED::#OFF SRINV::#OFF SYNC_ATTR::#OFF XBUSED::#OFF
+       XUSED::0 YBUSED::#OFF YUSED::0 CYMUXF:sqrt_comp/blk00000003/blk0000002b:
+       CYMUXG:sqrt_comp/blk00000003/blk0000002d: GAND:sqrt_comp/blk00000003/blk00000038:
+       XORF:sqrt_comp/blk00000003/blk0000002c: XORG:sqrt_comp/blk00000003/blk0000002e:
+       _INST_PROP::XDL_SHAPE_MEMBER:Shape_2:0,1 "
+  ;
+inst "sqrt_comp/blk00000003/sig00000048" "SLICEL",placed R1C16 SLICE_X31Y94  ,
+  cfg " BXINV::#OFF BYINV::#OFF CEINV::#OFF CLKINV::#OFF COUTUSED::#OFF
+       CY0F::#OFF CY0G::#OFF CYINIT::CIN CYSELF::1 CYSELG::#OFF DXMUX::#OFF
+       DYMUX::#OFF F::#OFF F5USED::#OFF FFX::#OFF FFX_INIT_ATTR::#OFF FFX_SR_ATTR::#OFF
+       FFY::#OFF FFY_INIT_ATTR::#OFF FFY_SR_ATTR::#OFF FXMUX::#OFF FXUSED::#OFF
+       G::#OFF GYMUX::#OFF REVUSED::#OFF SRINV::#OFF SYNC_ATTR::#OFF XBUSED::0
+       XUSED::#OFF YBUSED::#OFF YUSED::#OFF CYMUXF:sqrt_comp/blk00000003/blk0000002f:
+       VDDF:ProtoComp8.VDDF:
+       _INST_PROP::XDL_SHAPE_MEMBER:Shape_2:0,2 "
+  ;
+inst "x_out<0>" "IOB",placed TIOIC19 A9  ,
+  cfg " DRIVEATTRBOX::12 DRIVE_0MA::#OFF GTSATTRBOX::#OFF ICEINV::#OFF ICLK1INV::#OFF
+       ICLK2INV::#OFF IDELMUX::#OFF IFF1::#OFF IFF1_INIT_ATTR::#OFF IFF1_SR_ATTR::#OFF
+       IFF2::#OFF IFF2_INIT_ATTR::#OFF IFF2_SR_ATTR::#OFF IFFATTRBOX::#OFF
+       IFFDELMUX::#OFF IFFDMUX::#OFF IMUX::#OFF IOATTRBOX::LVCMOS25 IREV_USED::#OFF
+       ISR_USED::#OFF O1INV::O1 O2INV::#OFF OCEINV::#OFF OFF1::#OFF OFF1_INIT_ATTR::#OFF
+       OFF1_SR_ATTR::#OFF OFF2::#OFF OFF2_INIT_ATTR::#OFF OFF2_SR_ATTR::#OFF
+       OFFATTRBOX::#OFF OMUX::O1 OREV_USED::#OFF OSR_USED::#OFF OTCLK1INV::#OFF
+       OTCLK2INV::#OFF PULL::#OFF REVINV::#OFF SLEW::SLOW SRINV::#OFF T1INV::#OFF
+       T2INV::#OFF TCEINV::#OFF TFF1::#OFF TFF1_INIT_ATTR::#OFF TFF1_SR_ATTR::#OFF
+       TFF2::#OFF TFF2_INIT_ATTR::#OFF TFF2_SR_ATTR::#OFF TFFATTRBOX::#OFF
+       TMUX::#OFF TREV_USED::#OFF TSMUX::#OFF TSR_USED::#OFF T_USED::#OFF
+       OUTBUF:x_out_0_OBUF: PAD:x_out<0>: "
+  ;
+inst "x_out<1>" "IOB",placed TIOIC19 D9  ,
+  cfg " DRIVEATTRBOX::12 DRIVE_0MA::#OFF GTSATTRBOX::#OFF ICEINV::#OFF ICLK1INV::#OFF
+       ICLK2INV::#OFF IDELMUX::#OFF IFF1::#OFF IFF1_INIT_ATTR::#OFF IFF1_SR_ATTR::#OFF
+       IFF2::#OFF IFF2_INIT_ATTR::#OFF IFF2_SR_ATTR::#OFF IFFATTRBOX::#OFF
+       IFFDELMUX::#OFF IFFDMUX::#OFF IMUX::#OFF IOATTRBOX::LVCMOS25 IREV_USED::#OFF
+       ISR_USED::#OFF O1INV::O1_B O2INV::#OFF OCEINV::#OFF OFF1::#OFF OFF1_INIT_ATTR::#OFF
+       OFF1_SR_ATTR::#OFF OFF2::#OFF OFF2_INIT_ATTR::#OFF OFF2_SR_ATTR::#OFF
+       OFFATTRBOX::#OFF OMUX::O1 OREV_USED::#OFF OSR_USED::#OFF OTCLK1INV::#OFF
+       OTCLK2INV::#OFF PULL::#OFF REVINV::#OFF SLEW::SLOW SRINV::#OFF T1INV::#OFF
+       T2INV::#OFF TCEINV::#OFF TFF1::#OFF TFF1_INIT_ATTR::#OFF TFF1_SR_ATTR::#OFF
+       TFF2::#OFF TFF2_INIT_ATTR::#OFF TFF2_SR_ATTR::#OFF TFFATTRBOX::#OFF
+       TMUX::#OFF TREV_USED::#OFF TSMUX::#OFF TSR_USED::#OFF T_USED::#OFF
+       OUTBUF:x_out_1_OBUF: PAD:x_out<1>: "
+  ;
+inst "x_out<2>" "IOB",placed TIOIC15 E7  ,
+  cfg " DRIVEATTRBOX::12 DRIVE_0MA::#OFF GTSATTRBOX::#OFF ICEINV::#OFF ICLK1INV::#OFF
+       ICLK2INV::#OFF IDELMUX::#OFF IFF1::#OFF IFF1_INIT_ATTR::#OFF IFF1_SR_ATTR::#OFF
+       IFF2::#OFF IFF2_INIT_ATTR::#OFF IFF2_SR_ATTR::#OFF IFFATTRBOX::#OFF
+       IFFDELMUX::#OFF IFFDMUX::#OFF IMUX::#OFF IOATTRBOX::LVCMOS25 IREV_USED::#OFF
+       ISR_USED::#OFF O1INV::O1_B O2INV::#OFF OCEINV::#OFF OFF1::#OFF OFF1_INIT_ATTR::#OFF
+       OFF1_SR_ATTR::#OFF OFF2::#OFF OFF2_INIT_ATTR::#OFF OFF2_SR_ATTR::#OFF
+       OFFATTRBOX::#OFF OMUX::O1 OREV_USED::#OFF OSR_USED::#OFF OTCLK1INV::#OFF
+       OTCLK2INV::#OFF PULL::#OFF REVINV::#OFF SLEW::SLOW SRINV::#OFF T1INV::#OFF
+       T2INV::#OFF TCEINV::#OFF TFF1::#OFF TFF1_INIT_ATTR::#OFF TFF1_SR_ATTR::#OFF
+       TFF2::#OFF TFF2_INIT_ATTR::#OFF TFF2_SR_ATTR::#OFF TFFATTRBOX::#OFF
+       TMUX::#OFF TREV_USED::#OFF TSMUX::#OFF TSR_USED::#OFF T_USED::#OFF
+       OUTBUF:x_out_2_OBUF: PAD:x_out<2>: "
+  ;
+inst "x_out<3>" "IOB",placed TIOIC19 B9  ,
+  cfg " DRIVEATTRBOX::12 DRIVE_0MA::#OFF GTSATTRBOX::#OFF ICEINV::#OFF ICLK1INV::#OFF
+       ICLK2INV::#OFF IDELMUX::#OFF IFF1::#OFF IFF1_INIT_ATTR::#OFF IFF1_SR_ATTR::#OFF
+       IFF2::#OFF IFF2_INIT_ATTR::#OFF IFF2_SR_ATTR::#OFF IFFATTRBOX::#OFF
+       IFFDELMUX::#OFF IFFDMUX::#OFF IMUX::#OFF IOATTRBOX::LVCMOS25 IREV_USED::#OFF
+       ISR_USED::#OFF O1INV::O1 O2INV::#OFF OCEINV::#OFF OFF1::#OFF OFF1_INIT_ATTR::#OFF
+       OFF1_SR_ATTR::#OFF OFF2::#OFF OFF2_INIT_ATTR::#OFF OFF2_SR_ATTR::#OFF
+       OFFATTRBOX::#OFF OMUX::O1 OREV_USED::#OFF OSR_USED::#OFF OTCLK1INV::#OFF
+       OTCLK2INV::#OFF PULL::#OFF REVINV::#OFF SLEW::SLOW SRINV::#OFF T1INV::#OFF
+       T2INV::#OFF TCEINV::#OFF TFF1::#OFF TFF1_INIT_ATTR::#OFF TFF1_SR_ATTR::#OFF
+       TFF2::#OFF TFF2_INIT_ATTR::#OFF TFF2_SR_ATTR::#OFF TFFATTRBOX::#OFF
+       TMUX::#OFF TREV_USED::#OFF TSMUX::#OFF TSR_USED::#OFF T_USED::#OFF
+       OUTBUF:x_out_3_OBUF: PAD:x_out<3>: "
+  ;
+inst "x_out<4>" "IOB",placed TIOIC20 E9  ,
+  cfg " DRIVEATTRBOX::12 DRIVE_0MA::#OFF GTSATTRBOX::#OFF ICEINV::#OFF ICLK1INV::#OFF
+       ICLK2INV::#OFF IDELMUX::#OFF IFF1::#OFF IFF1_INIT_ATTR::#OFF IFF1_SR_ATTR::#OFF
+       IFF2::#OFF IFF2_INIT_ATTR::#OFF IFF2_SR_ATTR::#OFF IFFATTRBOX::#OFF
+       IFFDELMUX::#OFF IFFDMUX::#OFF IMUX::#OFF IOATTRBOX::LVCMOS25 IREV_USED::#OFF
+       ISR_USED::#OFF O1INV::O1 O2INV::#OFF OCEINV::#OFF OFF1::#OFF OFF1_INIT_ATTR::#OFF
+       OFF1_SR_ATTR::#OFF OFF2::#OFF OFF2_INIT_ATTR::#OFF OFF2_SR_ATTR::#OFF
+       OFFATTRBOX::#OFF OMUX::O1 OREV_USED::#OFF OSR_USED::#OFF OTCLK1INV::#OFF
+       OTCLK2INV::#OFF PULL::#OFF REVINV::#OFF SLEW::SLOW SRINV::#OFF T1INV::#OFF
+       T2INV::#OFF TCEINV::#OFF TFF1::#OFF TFF1_INIT_ATTR::#OFF TFF1_SR_ATTR::#OFF
+       TFF2::#OFF TFF2_INIT_ATTR::#OFF TFF2_SR_ATTR::#OFF TFFATTRBOX::#OFF
+       TMUX::#OFF TREV_USED::#OFF TSMUX::#OFF TSR_USED::#OFF T_USED::#OFF
+       OUTBUF:x_out_4_OBUF: PAD:x_out<4>: "
+  ;
+inst "x_in<0>" "IOB",placed TIOIC18 A8  ,
+  cfg " DRIVEATTRBOX::#OFF DRIVE_0MA::#OFF GTSATTRBOX::#OFF ICEINV::#OFF
+       ICLK1INV::#OFF ICLK2INV::#OFF IDELMUX::1 IFF1::#OFF IFF1_INIT_ATTR::#OFF
+       IFF1_SR_ATTR::#OFF IFF2::#OFF IFF2_INIT_ATTR::#OFF IFF2_SR_ATTR::#OFF
+       IFFATTRBOX::#OFF IFFDELMUX::#OFF IFFDMUX::#OFF IMUX::1 IOATTRBOX::LVCMOS25
+       IREV_USED::#OFF ISR_USED::#OFF O1INV::#OFF O2INV::#OFF OCEINV::#OFF
+       OFF1::#OFF OFF1_INIT_ATTR::#OFF OFF1_SR_ATTR::#OFF OFF2::#OFF OFF2_INIT_ATTR::#OFF
+       OFF2_SR_ATTR::#OFF OFFATTRBOX::#OFF OMUX::#OFF OREV_USED::#OFF OSR_USED::#OFF
+       OTCLK1INV::#OFF OTCLK2INV::#OFF PULL::#OFF REVINV::#OFF SLEW::#OFF
+       SRINV::#OFF T1INV::#OFF T2INV::#OFF TCEINV::#OFF TFF1::#OFF TFF1_INIT_ATTR::#OFF
+       TFF1_SR_ATTR::#OFF TFF2::#OFF TFF2_INIT_ATTR::#OFF TFF2_SR_ATTR::#OFF
+       TFFATTRBOX::#OFF TMUX::#OFF TREV_USED::#OFF TSMUX::#OFF TSR_USED::#OFF
+       T_USED::#OFF INBUF:x_in_0_IBUF: PAD:x_in<0>: "
+  ;
+inst "x_in<1>" "IOB",placed TIOIC18 A7  ,
+  cfg " DRIVEATTRBOX::#OFF DRIVE_0MA::#OFF GTSATTRBOX::#OFF ICEINV::#OFF
+       ICLK1INV::#OFF ICLK2INV::#OFF IDELMUX::1 IFF1::#OFF IFF1_INIT_ATTR::#OFF
+       IFF1_SR_ATTR::#OFF IFF2::#OFF IFF2_INIT_ATTR::#OFF IFF2_SR_ATTR::#OFF
+       IFFATTRBOX::#OFF IFFDELMUX::#OFF IFFDMUX::#OFF IMUX::1 IOATTRBOX::LVCMOS25
+       IREV_USED::#OFF ISR_USED::#OFF O1INV::#OFF O2INV::#OFF OCEINV::#OFF
+       OFF1::#OFF OFF1_INIT_ATTR::#OFF OFF1_SR_ATTR::#OFF OFF2::#OFF OFF2_INIT_ATTR::#OFF
+       OFF2_SR_ATTR::#OFF OFFATTRBOX::#OFF OMUX::#OFF OREV_USED::#OFF OSR_USED::#OFF
+       OTCLK1INV::#OFF OTCLK2INV::#OFF PULL::#OFF REVINV::#OFF SLEW::#OFF
+       SRINV::#OFF T1INV::#OFF T2INV::#OFF TCEINV::#OFF TFF1::#OFF TFF1_INIT_ATTR::#OFF
+       TFF1_SR_ATTR::#OFF TFF2::#OFF TFF2_INIT_ATTR::#OFF TFF2_SR_ATTR::#OFF
+       TFFATTRBOX::#OFF TMUX::#OFF TREV_USED::#OFF TSMUX::#OFF TSR_USED::#OFF
+       T_USED::#OFF INBUF:x_in_1_IBUF: PAD:x_in<1>: "
+  ;
+inst "x_in<2>" "IOB",placed TIOIC17 F8  ,
+  cfg " DRIVEATTRBOX::#OFF DRIVE_0MA::#OFF GTSATTRBOX::#OFF ICEINV::#OFF
+       ICLK1INV::#OFF ICLK2INV::#OFF IDELMUX::1 IFF1::#OFF IFF1_INIT_ATTR::#OFF
+       IFF1_SR_ATTR::#OFF IFF2::#OFF IFF2_INIT_ATTR::#OFF IFF2_SR_ATTR::#OFF
+       IFFATTRBOX::#OFF IFFDELMUX::#OFF IFFDMUX::#OFF IMUX::1 IOATTRBOX::LVCMOS25
+       IREV_USED::#OFF ISR_USED::#OFF O1INV::#OFF O2INV::#OFF OCEINV::#OFF
+       OFF1::#OFF OFF1_INIT_ATTR::#OFF OFF1_SR_ATTR::#OFF OFF2::#OFF OFF2_INIT_ATTR::#OFF
+       OFF2_SR_ATTR::#OFF OFFATTRBOX::#OFF OMUX::#OFF OREV_USED::#OFF OSR_USED::#OFF
+       OTCLK1INV::#OFF OTCLK2INV::#OFF PULL::#OFF REVINV::#OFF SLEW::#OFF
+       SRINV::#OFF T1INV::#OFF T2INV::#OFF TCEINV::#OFF TFF1::#OFF TFF1_INIT_ATTR::#OFF
+       TFF1_SR_ATTR::#OFF TFF2::#OFF TFF2_INIT_ATTR::#OFF TFF2_SR_ATTR::#OFF
+       TFFATTRBOX::#OFF TMUX::#OFF TREV_USED::#OFF TSMUX::#OFF TSR_USED::#OFF
+       T_USED::#OFF INBUF:x_in_2_IBUF: PAD:x_in<2>: "
+  ;
+inst "x_in<3>" "IOB",placed TIOIC17 E8  ,
+  cfg " DRIVEATTRBOX::#OFF DRIVE_0MA::#OFF GTSATTRBOX::#OFF ICEINV::#OFF
+       ICLK1INV::#OFF ICLK2INV::#OFF IDELMUX::1 IFF1::#OFF IFF1_INIT_ATTR::#OFF
+       IFF1_SR_ATTR::#OFF IFF2::#OFF IFF2_INIT_ATTR::#OFF IFF2_SR_ATTR::#OFF
+       IFFATTRBOX::#OFF IFFDELMUX::#OFF IFFDMUX::#OFF IMUX::1 IOATTRBOX::LVCMOS25
+       IREV_USED::#OFF ISR_USED::#OFF O1INV::#OFF O2INV::#OFF OCEINV::#OFF
+       OFF1::#OFF OFF1_INIT_ATTR::#OFF OFF1_SR_ATTR::#OFF OFF2::#OFF OFF2_INIT_ATTR::#OFF
+       OFF2_SR_ATTR::#OFF OFFATTRBOX::#OFF OMUX::#OFF OREV_USED::#OFF OSR_USED::#OFF
+       OTCLK1INV::#OFF OTCLK2INV::#OFF PULL::#OFF REVINV::#OFF SLEW::#OFF
+       SRINV::#OFF T1INV::#OFF T2INV::#OFF TCEINV::#OFF TFF1::#OFF TFF1_INIT_ATTR::#OFF
+       TFF1_SR_ATTR::#OFF TFF2::#OFF TFF2_INIT_ATTR::#OFF TFF2_SR_ATTR::#OFF
+       TFFATTRBOX::#OFF TMUX::#OFF TREV_USED::#OFF TSMUX::#OFF TSR_USED::#OFF
+       T_USED::#OFF INBUF:x_in_3_IBUF: PAD:x_in<3>: "
+  ;
+inst "x_in<4>" "IOB",placed TIOIC16 D8  ,
+  cfg " DRIVEATTRBOX::#OFF DRIVE_0MA::#OFF GTSATTRBOX::#OFF ICEINV::#OFF
+       ICLK1INV::#OFF ICLK2INV::#OFF IDELMUX::1 IFF1::#OFF IFF1_INIT_ATTR::#OFF
+       IFF1_SR_ATTR::#OFF IFF2::#OFF IFF2_INIT_ATTR::#OFF IFF2_SR_ATTR::#OFF
+       IFFATTRBOX::#OFF IFFDELMUX::#OFF IFFDMUX::#OFF IMUX::1 IOATTRBOX::LVCMOS25
+       IREV_USED::#OFF ISR_USED::#OFF O1INV::#OFF O2INV::#OFF OCEINV::#OFF
+       OFF1::#OFF OFF1_INIT_ATTR::#OFF OFF1_SR_ATTR::#OFF OFF2::#OFF OFF2_INIT_ATTR::#OFF
+       OFF2_SR_ATTR::#OFF OFFATTRBOX::#OFF OMUX::#OFF OREV_USED::#OFF OSR_USED::#OFF
+       OTCLK1INV::#OFF OTCLK2INV::#OFF PULL::#OFF REVINV::#OFF SLEW::#OFF
+       SRINV::#OFF T1INV::#OFF T2INV::#OFF TCEINV::#OFF TFF1::#OFF TFF1_INIT_ATTR::#OFF
+       TFF1_SR_ATTR::#OFF TFF2::#OFF TFF2_INIT_ATTR::#OFF TFF2_SR_ATTR::#OFF
+       TFFATTRBOX::#OFF TMUX::#OFF TREV_USED::#OFF TSMUX::#OFF TSR_USED::#OFF
+       T_USED::#OFF INBUF:x_in_4_IBUF: PAD:x_in<4>: "
+  ;
+inst "x_in<5>" "IOB",placed TIOIC16 C8  ,
+  cfg " DRIVEATTRBOX::#OFF DRIVE_0MA::#OFF GTSATTRBOX::#OFF ICEINV::#OFF
+       ICLK1INV::#OFF ICLK2INV::#OFF IDELMUX::1 IFF1::#OFF IFF1_INIT_ATTR::#OFF
+       IFF1_SR_ATTR::#OFF IFF2::#OFF IFF2_INIT_ATTR::#OFF IFF2_SR_ATTR::#OFF
+       IFFATTRBOX::#OFF IFFDELMUX::#OFF IFFDMUX::#OFF IMUX::1 IOATTRBOX::LVCMOS25
+       IREV_USED::#OFF ISR_USED::#OFF O1INV::#OFF O2INV::#OFF OCEINV::#OFF
+       OFF1::#OFF OFF1_INIT_ATTR::#OFF OFF1_SR_ATTR::#OFF OFF2::#OFF OFF2_INIT_ATTR::#OFF
+       OFF2_SR_ATTR::#OFF OFFATTRBOX::#OFF OMUX::#OFF OREV_USED::#OFF OSR_USED::#OFF
+       OTCLK1INV::#OFF OTCLK2INV::#OFF PULL::#OFF REVINV::#OFF SLEW::#OFF
+       SRINV::#OFF T1INV::#OFF T2INV::#OFF TCEINV::#OFF TFF1::#OFF TFF1_INIT_ATTR::#OFF
+       TFF1_SR_ATTR::#OFF TFF2::#OFF TFF2_INIT_ATTR::#OFF TFF2_SR_ATTR::#OFF
+       TFFATTRBOX::#OFF TMUX::#OFF TREV_USED::#OFF TSMUX::#OFF TSR_USED::#OFF
+       T_USED::#OFF INBUF:x_in_5_IBUF: PAD:x_in<5>: "
+  ;
+inst "x_in<6>" "IOB",placed TIOIC15 D7  ,
+  cfg " DRIVEATTRBOX::#OFF DRIVE_0MA::#OFF GTSATTRBOX::#OFF ICEINV::#OFF
+       ICLK1INV::#OFF ICLK2INV::#OFF IDELMUX::1 IFF1::#OFF IFF1_INIT_ATTR::#OFF
+       IFF1_SR_ATTR::#OFF IFF2::#OFF IFF2_INIT_ATTR::#OFF IFF2_SR_ATTR::#OFF
+       IFFATTRBOX::#OFF IFFDELMUX::#OFF IFFDMUX::#OFF IMUX::1 IOATTRBOX::LVCMOS25
+       IREV_USED::#OFF ISR_USED::#OFF O1INV::#OFF O2INV::#OFF OCEINV::#OFF
+       OFF1::#OFF OFF1_INIT_ATTR::#OFF OFF1_SR_ATTR::#OFF OFF2::#OFF OFF2_INIT_ATTR::#OFF
+       OFF2_SR_ATTR::#OFF OFFATTRBOX::#OFF OMUX::#OFF OREV_USED::#OFF OSR_USED::#OFF
+       OTCLK1INV::#OFF OTCLK2INV::#OFF PULL::#OFF REVINV::#OFF SLEW::#OFF
+       SRINV::#OFF T1INV::#OFF T2INV::#OFF TCEINV::#OFF TFF1::#OFF TFF1_INIT_ATTR::#OFF
+       TFF1_SR_ATTR::#OFF TFF2::#OFF TFF2_INIT_ATTR::#OFF TFF2_SR_ATTR::#OFF
+       TFFATTRBOX::#OFF TMUX::#OFF TREV_USED::#OFF TSMUX::#OFF TSR_USED::#OFF
+       T_USED::#OFF INBUF:x_in_6_IBUF: PAD:x_in<6>: "
+  ;
+inst "x_in<7>" "IOB",placed TIOIC15 C7  ,
+  cfg " DRIVEATTRBOX::#OFF DRIVE_0MA::#OFF GTSATTRBOX::#OFF ICEINV::#OFF
+       ICLK1INV::#OFF ICLK2INV::#OFF IDELMUX::1 IFF1::#OFF IFF1_INIT_ATTR::#OFF
+       IFF1_SR_ATTR::#OFF IFF2::#OFF IFF2_INIT_ATTR::#OFF IFF2_SR_ATTR::#OFF
+       IFFATTRBOX::#OFF IFFDELMUX::#OFF IFFDMUX::#OFF IMUX::1 IOATTRBOX::LVCMOS25
+       IREV_USED::#OFF ISR_USED::#OFF O1INV::#OFF O2INV::#OFF OCEINV::#OFF
+       OFF1::#OFF OFF1_INIT_ATTR::#OFF OFF1_SR_ATTR::#OFF OFF2::#OFF OFF2_INIT_ATTR::#OFF
+       OFF2_SR_ATTR::#OFF OFFATTRBOX::#OFF OMUX::#OFF OREV_USED::#OFF OSR_USED::#OFF
+       OTCLK1INV::#OFF OTCLK2INV::#OFF PULL::#OFF REVINV::#OFF SLEW::#OFF
+       SRINV::#OFF T1INV::#OFF T2INV::#OFF TCEINV::#OFF TFF1::#OFF TFF1_INIT_ATTR::#OFF
+       TFF1_SR_ATTR::#OFF TFF2::#OFF TFF2_INIT_ATTR::#OFF TFF2_SR_ATTR::#OFF
+       TFFATTRBOX::#OFF TMUX::#OFF TREV_USED::#OFF TSMUX::#OFF TSR_USED::#OFF
+       T_USED::#OFF INBUF:x_in_7_IBUF: PAD:x_in<7>: "
+  ;
+inst "sqrt_comp/blk00000003/sig0000001a" "SLICEL",placed R2C16 SLICE_X30Y93  ,
+  cfg " BXINV::BX BYINV::#OFF CEINV::#OFF CLKINV::#OFF COUTUSED::#OFF CY0F::#OFF
+       CY0G::#OFF CYINIT::#OFF CYSELF::#OFF CYSELG::#OFF DXMUX::#OFF DYMUX::#OFF
+       F:sqrt_comp/blk00000003/blk0000004f:#LUT:D=((~A1*A4)+(A1*(A2+A3)))
+       F5USED::#OFF FFX::#OFF FFX_INIT_ATTR::#OFF FFX_SR_ATTR::#OFF FFY::#OFF
+       FFY_INIT_ATTR::#OFF FFY_SR_ATTR::#OFF FXMUX::F5 FXUSED::#OFF G:sqrt_comp/blk00000003/blk00000050:#LUT:D=((~A1*A4)+(A1*(~A2*A3)))
+       GYMUX::#OFF REVUSED::#OFF SRINV::#OFF SYNC_ATTR::#OFF XBUSED::#OFF
+       XUSED::0 YBUSED::#OFF YUSED::#OFF F5MUX:sqrt_comp/blk00000003/blk00000051:
+       "
+  ;
+inst "sqrt_comp/blk00000003/sig00000040" "SLICEL",placed R1C16 SLICE_X30Y94  ,
+  cfg " BXINV::#OFF BYINV::#OFF CEINV::#OFF CLKINV::#OFF COUTUSED::#OFF
+       CY0F::#OFF CY0G::#OFF CYINIT::#OFF CYSELF::#OFF CYSELG::#OFF DXMUX::#OFF
+       DYMUX::#OFF F:sqrt_comp/blk00000003/blk0000003a:#LUT:D=(~A4*A3) F5USED::#OFF
+       FFX::#OFF FFX_INIT_ATTR::#OFF FFX_SR_ATTR::#OFF FFY::#OFF FFY_INIT_ATTR::#OFF
+       FFY_SR_ATTR::#OFF FXMUX::F FXUSED::#OFF G:sqrt_comp/blk00000003/blk00000033:#LUT:D=(A3+A4)
+       GYMUX::G REVUSED::#OFF SRINV::#OFF SYNC_ATTR::#OFF XBUSED::#OFF XUSED::0
+       YBUSED::#OFF YUSED::0 "
+  ;
+inst "sqrt_comp/blk00000003/sig00000014" "SLICEL",placed R1C18 SLICE_X35Y94  ,
+  cfg " BXINV::#OFF BYINV::#OFF CEINV::#OFF CLKINV::#OFF COUTUSED::#OFF
+       CY0F::#OFF CY0G::#OFF CYINIT::#OFF CYSELF::#OFF CYSELG::#OFF DXMUX::#OFF
+       DYMUX::#OFF F:sqrt_comp/blk00000003/blk00000025:#LUT:D=~A2 F5USED::#OFF
+       FFX::#OFF FFX_INIT_ATTR::#OFF FFX_SR_ATTR::#OFF FFY::#OFF FFY_INIT_ATTR::#OFF
+       FFY_SR_ATTR::#OFF FXMUX::F FXUSED::#OFF G::#OFF GYMUX::#OFF REVUSED::#OFF
+       SRINV::#OFF SYNC_ATTR::#OFF XBUSED::#OFF XUSED::0 YBUSED::#OFF YUSED::#OFF
+       "
+  ;
+inst "sqrt_comp/blk00000003/sig00000020" "SLICEL",placed R1C17 SLICE_X33Y95  ,
+  cfg " BXINV::#OFF BYINV::#OFF CEINV::#OFF CLKINV::#OFF COUTUSED::#OFF
+       CY0F::#OFF CY0G::#OFF CYINIT::#OFF CYSELF::#OFF CYSELG::#OFF DXMUX::#OFF
+       DYMUX::#OFF F:sqrt_comp/blk00000003/blk00000034:#LUT:D=((~A3*A2)+(A3*A4))
+       F5USED::#OFF FFX::#OFF FFX_INIT_ATTR::#OFF FFX_SR_ATTR::#OFF FFY::#OFF
+       FFY_INIT_ATTR::#OFF FFY_SR_ATTR::#OFF FXMUX::F FXUSED::#OFF G:sqrt_comp/blk00000003/blk00000037:#LUT:D=((~A2*A3)+(A2*(~A4*A1)))
+       GYMUX::G REVUSED::#OFF SRINV::#OFF SYNC_ATTR::#OFF XBUSED::#OFF XUSED::0
+       YBUSED::#OFF YUSED::0 "
+  ;
+inst "sqrt_comp/blk00000003/sig0000001d" "SLICEL",placed R1C16 SLICE_X31Y95  ,
+  cfg " BXINV::#OFF BYINV::#OFF CEINV::#OFF CLKINV::#OFF COUTUSED::#OFF
+       CY0F::#OFF CY0G::#OFF CYINIT::#OFF CYSELF::#OFF CYSELG::#OFF DXMUX::#OFF
+       DYMUX::#OFF F:sqrt_comp/blk00000003/blk00000035:#LUT:D=((~A2*A1)+(A2*A4))
+       F5USED::#OFF FFX::#OFF FFX_INIT_ATTR::#OFF FFX_SR_ATTR::#OFF FFY::#OFF
+       FFY_INIT_ATTR::#OFF FFY_SR_ATTR::#OFF FXMUX::F FXUSED::#OFF G:sqrt_comp/blk00000003/blk00000039:#LUT:D=((~A2*A4)+(A2*A3))
+       GYMUX::G REVUSED::#OFF SRINV::#OFF SYNC_ATTR::#OFF XBUSED::#OFF XUSED::0
+       YBUSED::#OFF YUSED::0 "
+  ;
+inst "sqrt_comp/blk00000003/sig00000036" "SLICEL",placed R1C16 SLICE_X30Y95  ,
+  cfg " BXINV::#OFF BYINV::#OFF CEINV::#OFF CLKINV::#OFF COUTUSED::#OFF
+       CY0F::#OFF CY0G::#OFF CYINIT::#OFF CYSELF::#OFF CYSELG::#OFF DXMUX::#OFF
+       DYMUX::#OFF F:sqrt_comp/blk00000003/blk00000036:#LUT:D=((~A3*A2)+(A3*(A1*A4)))
+       F5USED::#OFF FFX::#OFF FFX_INIT_ATTR::#OFF FFX_SR_ATTR::#OFF FFY::#OFF
+       FFY_INIT_ATTR::#OFF FFY_SR_ATTR::#OFF FXMUX::F FXUSED::#OFF G:sqrt_comp/blk00000003/blk00000032:#LUT:D=~A4
+       GYMUX::G REVUSED::#OFF SRINV::#OFF SYNC_ATTR::#OFF XBUSED::#OFF XUSED::0
+       YBUSED::#OFF YUSED::0 "
+  ;
+inst "XDL_DUMMY_R2C16_SLICE_X30Y92" "SLICEM",placed R2C16 SLICE_X30Y92  ,
+  cfg "_NO_USER_LOGIC:: _GND_SOURCE::Y "
+  ;
+inst "XDL_DUMMY_R2C18_SLICE_X35Y93" "SLICEL",placed R2C18 SLICE_X35Y93  ,
+  cfg "_NO_USER_LOGIC:: _GND_SOURCE::Y "
+  ;
+inst "XDL_DUMMY_R1C20_SLICE_X39Y95" "SLICEL",placed R1C20 SLICE_X39Y95  ,
+  cfg "_NO_USER_LOGIC:: _GND_SOURCE::Y "
+  ;
+
+#  ================================================
+#  The syntax for nets is:
+#     net <name> <type>,
+#       outpin <inst_name> <inst_pin>,
+#       .
+#       .
+#       inpin <inst_name> <inst_pin>,
+#       .
+#       .
+#       pip <tile> <wire0> <dir> <wire1> , # [<rt>]
+#       .
+#       .
+#       ;
+# 
+#  There are three available wire types: wire, power and ground.
+#  If no type is specified, wire is assumed.
+# 
+#  Wire indicates that this a normal wire.
+#  Power indicates that this net is tied to a DC power source.
+#  You can use "power", "vcc" or "vdd" to specify a power net.
+# 
+#  Ground indicates that this net is tied to ground.
+#  You can use "ground", or "gnd" to specify a ground net.
+# 
+#  The <dir> token will be one of the following:
+# 
+#     Symbol Description
+#     ====== ==========================================
+#       ==   Bidirectional, unbuffered.
+#       =>   Bidirectional, buffered in one direction.
+#       =-   Bidirectional, buffered in both directions.
+#       ->   Directional, buffered.
+# 
+#  No pips exist for unrouted nets.
+#  ================================================
+net "GLOBAL_LOGIC0_0" gnd, 
+  outpin "XDL_DUMMY_R2C16_SLICE_X30Y92" Y ,
+  inpin "sqrt_comp/blk00000003/sig00000013" BX ,
+  inpin "sqrt_comp/blk00000003/sig0000003b" BX ,
+  ;
+net "GLOBAL_LOGIC0_1" gnd, 
+  outpin "XDL_DUMMY_R1C20_SLICE_X39Y95" Y ,
+  inpin "x_out<4>" O1 ,
+  ;
+net "GLOBAL_LOGIC0_2" gnd, 
+  outpin "XDL_DUMMY_R2C18_SLICE_X35Y93" Y ,
+  inpin "sqrt_comp/blk00000003/sig00000026" BX ,
+  ;
+net "sqrt_comp/blk00000003/sig00000013" , 
+  outpin "sqrt_comp/blk00000003/sig00000013" COUT ,
+  inpin "sqrt_comp/blk00000003/sig00000019" CIN ,
+  ;
+net "sqrt_comp/blk00000003/sig00000014" , 
+  outpin "sqrt_comp/blk00000003/sig00000014" X ,
+  inpin "sqrt_comp/blk00000003/sig00000019" F1 ,
+  inpin "sqrt_comp/blk00000003/sig00000019" G1 ,
+  inpin "sqrt_comp/blk00000003/sig0000001a" F1 ,
+  inpin "sqrt_comp/blk00000003/sig0000001a" G1 ,
+  inpin "sqrt_comp/blk00000003/sig0000001d" F2 ,
+  inpin "sqrt_comp/blk00000003/sig0000001f" G1 ,
+  inpin "sqrt_comp/blk00000003/sig00000020" F3 ,
+  inpin "sqrt_comp/blk00000003/sig00000022" F1 ,
+  inpin "x_out<1>" O1 ,
+  ;
+net "sqrt_comp/blk00000003/sig00000017" , 
+  outpin "sqrt_comp/blk00000003/sig00000036" Y ,
+  inpin "sqrt_comp/blk00000003/sig00000019" G2 ,
+  inpin "sqrt_comp/blk00000003/sig0000001a" F2 ,
+  inpin "sqrt_comp/blk00000003/sig0000001a" G2 ,
+  inpin "sqrt_comp/blk00000003/sig0000001d" G2 ,
+  inpin "sqrt_comp/blk00000003/sig00000020" G2 ,
+  inpin "sqrt_comp/blk00000003/sig0000002d" F1 ,
+  inpin "sqrt_comp/blk00000003/sig00000035" F2 ,
+  inpin "sqrt_comp/blk00000003/sig00000035" G2 ,
+  inpin "sqrt_comp/blk00000003/sig00000036" F3 ,
+  inpin "x_out<2>" O1 ,
+  ;
+net "sqrt_comp/blk00000003/sig00000019" , 
+  outpin "sqrt_comp/blk00000003/sig00000019" COUT ,
+  inpin "sqrt_comp/blk00000003/sig0000001f" CIN ,
+  ;
+net "sqrt_comp/blk00000003/sig0000001a" , 
+  outpin "sqrt_comp/blk00000003/sig0000001a" X ,
+  inpin "sqrt_comp/blk00000003/sig0000001f" F2 ,
+  ;
+net "sqrt_comp/blk00000003/sig0000001d" , 
+  outpin "sqrt_comp/blk00000003/sig0000001d" X ,
+  inpin "sqrt_comp/blk00000003/sig0000001f" G2 ,
+  ;
+net "sqrt_comp/blk00000003/sig0000001f" , 
+  outpin "sqrt_comp/blk00000003/sig0000001f" COUT ,
+  inpin "sqrt_comp/blk00000003/sig00000022" CIN ,
+  ;
+net "sqrt_comp/blk00000003/sig00000020" , 
+  outpin "sqrt_comp/blk00000003/sig00000020" X ,
+  inpin "sqrt_comp/blk00000003/sig00000022" F2 ,
+  ;
+net "sqrt_comp/blk00000003/sig00000022" , 
+  outpin "sqrt_comp/blk00000003/sig00000022" XB ,
+  inpin "x_out<0>" O1 ,
+  ;
+net "sqrt_comp/blk00000003/sig00000026" , 
+  outpin "sqrt_comp/blk00000003/sig00000026" X ,
+  inpin "sqrt_comp/blk00000003/sig00000019" F2 ,
+  ;
+net "sqrt_comp/blk00000003/sig00000029" , 
+  outpin "sqrt_comp/blk00000003/sig00000026" COUT ,
+  inpin "sqrt_comp/blk00000003/sig0000002d" CIN ,
+  ;
+net "sqrt_comp/blk00000003/sig0000002a" , 
+  outpin "sqrt_comp/blk00000003/sig00000026" Y ,
+  inpin "sqrt_comp/blk00000003/sig00000019" G3 ,
+  ;
+net "sqrt_comp/blk00000003/sig0000002d" , 
+  outpin "sqrt_comp/blk00000003/sig0000002d" X ,
+  inpin "sqrt_comp/blk00000003/sig0000001a" F4 ,
+  inpin "sqrt_comp/blk00000003/sig0000001a" G4 ,
+  ;
+net "sqrt_comp/blk00000003/sig0000002e" , 
+  outpin "sqrt_comp/blk00000003/sig0000001d" Y ,
+  inpin "sqrt_comp/blk00000003/sig0000001d" F4 ,
+  inpin "sqrt_comp/blk00000003/sig0000001f" G3 ,
+  inpin "sqrt_comp/blk00000003/sig0000002d" G2 ,
+  ;
+net "sqrt_comp/blk00000003/sig00000030" , 
+  outpin "sqrt_comp/blk00000003/sig0000002d" COUT ,
+  inpin "sqrt_comp/blk00000003/sig00000035" CIN ,
+  ;
+net "sqrt_comp/blk00000003/sig00000031" , 
+  outpin "sqrt_comp/blk00000003/sig0000002d" Y ,
+  inpin "sqrt_comp/blk00000003/sig0000001d" F1 ,
+  inpin "sqrt_comp/blk00000003/sig0000001f" G4 ,
+  ;
+net "sqrt_comp/blk00000003/sig00000032" , 
+  outpin "sqrt_comp/blk00000003/sig00000020" Y ,
+  inpin "sqrt_comp/blk00000003/sig00000020" F4 ,
+  inpin "sqrt_comp/blk00000003/sig00000022" F4 ,
+  inpin "sqrt_comp/blk00000003/sig00000035" BX ,
+  ;
+net "sqrt_comp/blk00000003/sig00000035" , 
+  outpin "sqrt_comp/blk00000003/sig00000035" X ,
+  inpin "sqrt_comp/blk00000003/sig00000020" F2 ,
+  inpin "sqrt_comp/blk00000003/sig00000022" F3 ,
+  ;
+net "sqrt_comp/blk00000003/sig00000036" , 
+  outpin "sqrt_comp/blk00000003/sig00000036" X ,
+  inpin "sqrt_comp/blk00000003/sig00000035" BY ,
+  ;
+net "sqrt_comp/blk00000003/sig00000038" , 
+  outpin "sqrt_comp/blk00000003/sig00000035" COUT ,
+  inpin "sqrt_comp/blk00000003/sig00000014" F2 ,
+  ;
+net "sqrt_comp/blk00000003/sig0000003b" , 
+  outpin "sqrt_comp/blk00000003/sig0000003b" X ,
+  inpin "sqrt_comp/blk00000003/sig0000001a" F3 ,
+  inpin "sqrt_comp/blk00000003/sig0000001a" G3 ,
+  inpin "sqrt_comp/blk00000003/sig0000002d" F2 ,
+  ;
+net "sqrt_comp/blk00000003/sig0000003e" , 
+  outpin "sqrt_comp/blk00000003/sig0000003b" COUT ,
+  inpin "sqrt_comp/blk00000003/sig00000043" CIN ,
+  ;
+net "sqrt_comp/blk00000003/sig0000003f" , 
+  outpin "sqrt_comp/blk00000003/sig0000003b" Y ,
+  inpin "sqrt_comp/blk00000003/sig0000001d" G4 ,
+  ;
+net "sqrt_comp/blk00000003/sig00000040" , 
+  outpin "sqrt_comp/blk00000003/sig00000040" X ,
+  inpin "sqrt_comp/blk00000003/sig00000043" F1 ,
+  ;
+net "sqrt_comp/blk00000003/sig00000043" , 
+  outpin "sqrt_comp/blk00000003/sig00000043" X ,
+  inpin "sqrt_comp/blk00000003/sig00000020" G3 ,
+  inpin "sqrt_comp/blk00000003/sig00000035" F3 ,
+  ;
+net "sqrt_comp/blk00000003/sig00000046" , 
+  outpin "sqrt_comp/blk00000003/sig00000043" COUT ,
+  inpin "sqrt_comp/blk00000003/sig00000048" CIN ,
+  ;
+net "sqrt_comp/blk00000003/sig00000047" , 
+  outpin "sqrt_comp/blk00000003/sig00000043" Y ,
+  inpin "sqrt_comp/blk00000003/sig00000035" G1 ,
+  inpin "sqrt_comp/blk00000003/sig00000036" F2 ,
+  ;
+net "sqrt_comp/blk00000003/sig00000048" , 
+  outpin "sqrt_comp/blk00000003/sig00000048" XB ,
+  inpin "sqrt_comp/blk00000003/sig00000036" G4 ,
+  ;
+net "x_in<0>" , cfg " _BELSIG:PAD,PAD,x_in<0>:x_in<0>",
+  ;
+net "x_in<1>" , cfg " _BELSIG:PAD,PAD,x_in<1>:x_in<1>",
+  ;
+net "x_in<2>" , cfg " _BELSIG:PAD,PAD,x_in<2>:x_in<2>",
+  ;
+net "x_in<3>" , cfg " _BELSIG:PAD,PAD,x_in<3>:x_in<3>",
+  ;
+net "x_in<4>" , cfg " _BELSIG:PAD,PAD,x_in<4>:x_in<4>",
+  ;
+net "x_in<5>" , cfg " _BELSIG:PAD,PAD,x_in<5>:x_in<5>",
+  ;
+net "x_in<6>" , cfg " _BELSIG:PAD,PAD,x_in<6>:x_in<6>",
+  ;
+net "x_in<7>" , cfg " _BELSIG:PAD,PAD,x_in<7>:x_in<7>",
+  ;
+net "x_in_0_IBUF" , 
+  outpin "x_in<0>" I ,
+  inpin "sqrt_comp/blk00000003/sig00000013" F1 ,
+  ;
+net "x_in_1_IBUF" , 
+  outpin "x_in<1>" I ,
+  inpin "sqrt_comp/blk00000003/sig00000013" G2 ,
+  ;
+net "x_in_2_IBUF" , 
+  outpin "x_in<2>" I ,
+  inpin "sqrt_comp/blk00000003/sig00000019" F4 ,
+  inpin "sqrt_comp/blk00000003/sig00000026" F1 ,
+  ;
+net "x_in_3_IBUF" , 
+  outpin "x_in<3>" I ,
+  inpin "sqrt_comp/blk00000003/sig00000019" G4 ,
+  inpin "sqrt_comp/blk00000003/sig00000026" G1 ,
+  ;
+net "x_in_4_IBUF" , 
+  outpin "x_in<4>" I ,
+  inpin "sqrt_comp/blk00000003/sig0000001a" BX ,
+  inpin "sqrt_comp/blk00000003/sig0000002d" F4 ,
+  inpin "sqrt_comp/blk00000003/sig0000003b" F2 ,
+  ;
+net "x_in_5_IBUF" , 
+  outpin "x_in<5>" I ,
+  inpin "sqrt_comp/blk00000003/sig0000001d" G3 ,
+  inpin "sqrt_comp/blk00000003/sig0000003b" G1 ,
+  ;
+net "x_in_6_IBUF" , 
+  outpin "x_in<6>" I ,
+  inpin "sqrt_comp/blk00000003/sig0000001f" F1 ,
+  inpin "sqrt_comp/blk00000003/sig00000020" G4 ,
+  inpin "sqrt_comp/blk00000003/sig0000002d" G1 ,
+  inpin "sqrt_comp/blk00000003/sig00000035" F4 ,
+  inpin "sqrt_comp/blk00000003/sig00000035" G4 ,
+  inpin "sqrt_comp/blk00000003/sig00000036" F4 ,
+  inpin "sqrt_comp/blk00000003/sig00000040" F4 ,
+  inpin "sqrt_comp/blk00000003/sig00000040" G4 ,
+  inpin "sqrt_comp/blk00000003/sig00000043" F2 ,
+  inpin "sqrt_comp/blk00000003/sig00000043" G1 ,
+  ;
+net "x_in_7_IBUF" , 
+  outpin "x_in<7>" I ,
+  inpin "sqrt_comp/blk00000003/sig0000001f" F4 ,
+  inpin "sqrt_comp/blk00000003/sig00000020" G1 ,
+  inpin "sqrt_comp/blk00000003/sig0000002d" G3 ,
+  inpin "sqrt_comp/blk00000003/sig00000035" F1 ,
+  inpin "sqrt_comp/blk00000003/sig00000035" G3 ,
+  inpin "sqrt_comp/blk00000003/sig00000036" F1 ,
+  inpin "sqrt_comp/blk00000003/sig00000040" F3 ,
+  inpin "sqrt_comp/blk00000003/sig00000040" G3 ,
+  inpin "sqrt_comp/blk00000003/sig00000043" G2 ,
+  ;
+net "x_out<0>" , cfg " _BELSIG:PAD,PAD,x_out<0>:x_out<0>",
+  ;
+net "x_out<1>" , cfg " _BELSIG:PAD,PAD,x_out<1>:x_out<1>",
+  ;
+net "x_out<2>" , cfg " _BELSIG:PAD,PAD,x_out<2>:x_out<2>",
+  ;
+net "x_out<3>" , cfg " _BELSIG:PAD,PAD,x_out<3>:x_out<3>",
+  ;
+net "x_out<4>" , cfg " _BELSIG:PAD,PAD,x_out<4>:x_out<4>",
+  ;
+net "x_out_3_OBUF" , 
+  outpin "sqrt_comp/blk00000003/sig00000040" Y ,
+  inpin "x_out<3>" O1 ,
+  ;
+
+# =======================================================
+# SUMMARY
+# Number of Module Defs: 0
+# Number of Module Insts: 0
+# Number of Primitive Insts: 29
+# Number of Nets: 51
+# =======================================================
+

@@ -1,0 +1,23 @@
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/svn/!svn/ver/102/SysPy/SysPy_ver/Leon3_comps/libs/techmap/umc18
+END
+pads_umc18.vhd
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/svn/!svn/ver/102/SysPy/SysPy_ver/Leon3_comps/libs/techmap/umc18/pads_umc18.vhd
+END
+memory_umc18.vhd
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/svn/!svn/ver/102/SysPy/SysPy_ver/Leon3_comps/libs/techmap/umc18/memory_umc18.vhd
+END
+vhdlsyn.txt
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/svn/!svn/ver/102/SysPy/SysPy_ver/Leon3_comps/libs/techmap/umc18/vhdlsyn.txt
+END

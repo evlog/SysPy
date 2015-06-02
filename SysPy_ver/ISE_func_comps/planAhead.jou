@@ -1,0 +1,19 @@
+#-----------------------------------------------------------
+# PlanAhead v11.1
+# Build 44534 by hdbuild on Thu Mar  5 11:05:08 PST 2009
+# Start of session at: 3/10/10 2:55:46 PM
+# Process ID: 3107
+#-----------------------------------------------------------
+source {/media/My Passport/work/PhD/myHDL_tests/my_conversion/Plex_test/new_code_2/ISE_func_comps/pa.fromNcd.tcl}
+# hdi::project new -name ISE_func_comps -dir /media/My Passport/work/PhD/myHDL_tests/my_conversion/Plex_test/new_code_2/ISE_func_comps/patmp -netlist /media/My Passport/work/PhD/myHDL_tests/my_conversion/Plex_test/new_code_2/ISE_func_comps/test_core_gen2_wrapper.ngc -search_path  {/media/My Passport/work/PhD/myHDL_tests/my_conversion/Plex_test/new_code_2/ISE_func_comps} {ipcore_dir} 
+# hdi::project setArch -name ISE_func_comps -arch spartan3
+# hdi::param set -name project.paUcfFile -svalue test_core_gen2_wrapper.ucf
+# hdi::floorplan new -name floorplan_1 -part xc3s1000fg320-5 -project ISE_func_comps
+# hdi::floorplan importPlacement -project ISE_func_comps -floorplan floorplan_1 -file /media/My Passport/work/PhD/myHDL_tests/my_conversion/Plex_test/new_code_2/ISE_func_comps/test_core_gen2_wrapper.ncd
+# hdi::pconst import -project ISE_func_comps -floorplan floorplan_1 -file test_core_gen2_wrapper.ucf
+# hdi::timing import -name results_1 -project ISE_func_comps -floorplan floorplan_1 -file /media/My Passport/work/PhD/myHDL_tests/my_conversion/Plex_test/new_code_2/ISE_func_comps/test_core_gen2_wrapper.twx
+hdi::timing run -name results_1 -project ISE_func_comps -floorplan floorplan_1 -speed {-5} -from x_in -to x_out -min_max max -transition rise/fall -sort_by slack -interconnect_type estimated -maxpaths 10 -nworst 1
+#-----------------------------------------------------------
+# End of session at: 3/10/10 2:57:51 PM
+# Process ID: 3107
+#-----------------------------------------------------------

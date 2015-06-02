@@ -1,0 +1,193 @@
+--------------------------------------------------------------------------------
+-- Copyright (c) 1995-2007 Xilinx, Inc.
+-- All Right Reserved.
+--------------------------------------------------------------------------------
+--   ____  ____ 
+--  /   /\/   / 
+-- /___/  \  /    Vendor: Xilinx 
+-- \   \   \/     Version : 9.2.04i
+--  \   \         Application : ISE
+--  /   /         Filename : simAddrepeatint.ant
+-- /___/   /\     Timestamp : Mon Nov 14 22:45:22 2011
+-- \   \  /  \ 
+--  \___\/\___\ 
+--
+--Command: 
+--Design Name: simAddrepeatint
+--Device: Xilinx
+--
+
+library UNISIM;
+use UNISIM.Vcomponents.ALL;
+library ieee;
+use ieee.std_logic_1164.ALL;
+use ieee.numeric_std.ALL;
+USE IEEE.STD_LOGIC_TEXTIO.ALL;
+USE IEEE.STD_LOGIC_ARITH.ALL;
+USE IEEE.STD_LOGIC_UNSIGNED.ALL;
+USE STD.TEXTIO.ALL;
+
+ENTITY simAddrepeatint IS
+END simAddrepeatint;
+
+ARCHITECTURE testbench_arch OF simAddrepeatint IS
+    FILE RESULTS: TEXT OPEN WRITE_MODE IS "C:\NOC11\TestswithLeon4\LEONGILL\simAddrepeatint.ano";
+
+    COMPONENT Addrepeatedly
+        PORT (
+            ceaddrepeat : In std_logic;
+            clk : In std_logic;
+            opadd_r : In std_logic_vector (5 DownTo 0);
+            Qinnew : In std_logic_vector (31 DownTo 0);
+            sclr : In std_logic;
+            selFSM : In std_logic;
+            timemin : In std_logic_vector (31 DownTo 0);
+            go : Out std_logic;
+            rdyr : Out std_logic;
+            timeshow : Out std_logic_vector (31 DownTo 0)
+        );
+    END COMPONENT;
+
+    SIGNAL ceaddrepeat : std_logic := '0';
+    SIGNAL clk : std_logic := '0';
+    SIGNAL opadd_r : std_logic_vector (5 DownTo 0) := "000000";
+    SIGNAL Qinnew : std_logic_vector (31 DownTo 0) := "00000000000000000000000000000000";
+    SIGNAL sclr : std_logic := '0';
+    SIGNAL selFSM : std_logic := '0';
+    SIGNAL timemin : std_logic_vector (31 DownTo 0) := "00000000000000000000000000000000";
+    SIGNAL go : std_logic := '0';
+    SIGNAL rdyr : std_logic := '0';
+    SIGNAL timeshow : std_logic_vector (31 DownTo 0) := "00000000000000000000000000000000";
+
+    SHARED VARIABLE TX_ERROR : INTEGER := 0;
+    SHARED VARIABLE TX_OUT : LINE;
+
+    constant PERIOD : time := 20 ns;
+    constant DUTY_CYCLE : real := 0.5;
+    constant OFFSET : time := 100 ns;
+
+    BEGIN
+        UUT : Addrepeatedly
+        PORT MAP (
+            ceaddrepeat => ceaddrepeat,
+            clk => clk,
+            opadd_r => opadd_r,
+            Qinnew => Qinnew,
+            sclr => sclr,
+            selFSM => selFSM,
+            timemin => timemin,
+            go => go,
+            rdyr => rdyr,
+            timeshow => timeshow
+        );
+
+        PROCESS    -- clock process for clk
+        BEGIN
+            WAIT for OFFSET;
+            CLOCK_LOOP : LOOP
+                clk <= '0';
+                WAIT FOR (PERIOD - (PERIOD * DUTY_CYCLE));
+                clk <= '1';
+                WAIT FOR (PERIOD * DUTY_CYCLE);
+            END LOOP CLOCK_LOOP;
+        END PROCESS;
+
+        PROCESS    -- Annotation process for clk
+            VARIABLE TX_TIME : INTEGER := 0;
+
+            PROCEDURE ANNOTATE_go(
+                TX_TIME : INTEGER
+            ) IS
+                VARIABLE TX_STR : String(1 to 4096);
+                VARIABLE TX_LOC : LINE;
+            BEGIN
+                STD.TEXTIO.write(TX_LOC, string'("Annotate["));
+                STD.TEXTIO.write(TX_LOC, TX_TIME);
+                STD.TEXTIO.write(TX_LOC, string'(", go, "));
+                IEEE.STD_LOGIC_TEXTIO.write(TX_LOC, go);
+                STD.TEXTIO.write(TX_LOC, string'("]"));
+                TX_STR(TX_LOC.all'range) := TX_LOC.all;
+                STD.TEXTIO.writeline(RESULTS, TX_LOC);
+                STD.TEXTIO.Deallocate(TX_LOC);
+            END;
+            PROCEDURE ANNOTATE_rdyr(
+                TX_TIME : INTEGER
+            ) IS
+                VARIABLE TX_STR : String(1 to 4096);
+                VARIABLE TX_LOC : LINE;
+            BEGIN
+                STD.TEXTIO.write(TX_LOC, string'("Annotate["));
+                STD.TEXTIO.write(TX_LOC, TX_TIME);
+                STD.TEXTIO.write(TX_LOC, string'(", rdyr, "));
+                IEEE.STD_LOGIC_TEXTIO.write(TX_LOC, rdyr);
+                STD.TEXTIO.write(TX_LOC, string'("]"));
+                TX_STR(TX_LOC.all'range) := TX_LOC.all;
+                STD.TEXTIO.writeline(RESULTS, TX_LOC);
+                STD.TEXTIO.Deallocate(TX_LOC);
+            END;
+            PROCEDURE ANNOTATE_timeshow(
+                TX_TIME : INTEGER
+            ) IS
+                VARIABLE TX_STR : String(1 to 4096);
+                VARIABLE TX_LOC : LINE;
+            BEGIN
+                STD.TEXTIO.write(TX_LOC, string'("Annotate["));
+                STD.TEXTIO.write(TX_LOC, TX_TIME);
+                STD.TEXTIO.write(TX_LOC, string'(", timeshow, "));
+                IEEE.STD_LOGIC_TEXTIO.write(TX_LOC, timeshow);
+                STD.TEXTIO.write(TX_LOC, string'("]"));
+                TX_STR(TX_LOC.all'range) := TX_LOC.all;
+                STD.TEXTIO.writeline(RESULTS, TX_LOC);
+                STD.TEXTIO.Deallocate(TX_LOC);
+            END;
+        BEGIN
+            WAIT for 1 fs;
+            ANNOTATE_go(0);
+            ANNOTATE_rdyr(0);
+            ANNOTATE_timeshow(0);
+            WAIT for OFFSET;
+            TX_TIME := TX_TIME + 100;
+            ANNO_LOOP : LOOP
+                --Rising Edge
+                WAIT for 15 ns;
+                TX_TIME := TX_TIME + 15;
+                ANNOTATE_go(TX_TIME);
+                ANNOTATE_rdyr(TX_TIME);
+                ANNOTATE_timeshow(TX_TIME);
+                WAIT for 5 ns;
+                TX_TIME := TX_TIME + 5;
+            END LOOP ANNO_LOOP;
+        END PROCESS;
+
+        PROCESS
+            BEGIN
+                -- -------------  Current Time:  100ns
+                WAIT FOR 100 ns;
+                ceaddrepeat <= '1';
+                timemin <= "01000000000000000000000000000000";
+                -- -------------------------------------
+                -- -------------  Current Time:  105ns
+                WAIT FOR 5 ns;
+                selFSM <= '1';
+                -- -------------------------------------
+                -- -------------  Current Time:  225ns
+                WAIT FOR 120 ns;
+                sclr <= '1';
+                selFSM <= '0';
+                -- -------------------------------------
+                -- -------------  Current Time:  465ns
+                WAIT FOR 240 ns;
+                sclr <= '0';
+                selFSM <= '1';
+                -- -------------------------------------
+                WAIT FOR 555 ns;
+
+                STD.TEXTIO.write(TX_OUT, string'("Total[]"));
+                STD.TEXTIO.writeline(RESULTS, TX_OUT);
+                ASSERT (FALSE) REPORT
+                    "Success! Simulation for annotation completed"
+                    SEVERITY FAILURE;
+            END PROCESS;
+
+    END testbench_arch;
+

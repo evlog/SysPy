@@ -1,0 +1,17 @@
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/svn/!svn/ver/102/SysPy/SysPy_ver/Leon3_comps/libs/opencores/spi
+END
+vlogsyn.txt
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/svn/!svn/ver/102/SysPy/SysPy_ver/Leon3_comps/libs/opencores/spi/vlogsyn.txt
+END
+simple_spi_top.v
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/svn/!svn/ver/102/SysPy/SysPy_ver/Leon3_comps/libs/opencores/spi/simple_spi_top.v
+END

@@ -1,0 +1,3 @@
+MODULE simFRM2X
+SUBMODULE TestconnectionwithLeonFRM2X
+INSTANCE UUT

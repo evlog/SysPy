@@ -1,0 +1,47 @@
+K 25
+svn:wc:ra_dav:version-url
+V 106
+/svn/!svn/ver/102/SysPy/SysPy_ver/Python_script/paramsocs/Leon3_comps_Gill_top/Leon3_comps/libs/grlib/util
+END
+debug.in.h
+K 25
+svn:wc:ra_dav:version-url
+V 117
+/svn/!svn/ver/102/SysPy/SysPy_ver/Python_script/paramsocs/Leon3_comps_Gill_top/Leon3_comps/libs/grlib/util/debug.in.h
+END
+debug.in.help
+K 25
+svn:wc:ra_dav:version-url
+V 120
+/svn/!svn/ver/102/SysPy/SysPy_ver/Python_script/paramsocs/Leon3_comps_Gill_top/Leon3_comps/libs/grlib/util/debug.in.help
+END
+vhdlsim.txt
+K 25
+svn:wc:ra_dav:version-url
+V 118
+/svn/!svn/ver/102/SysPy/SysPy_ver/Python_script/paramsocs/Leon3_comps_Gill_top/Leon3_comps/libs/grlib/util/vhdlsim.txt
+END
+fpudummy.vhd
+K 25
+svn:wc:ra_dav:version-url
+V 119
+/svn/!svn/ver/102/SysPy/SysPy_ver/Python_script/paramsocs/Leon3_comps_Gill_top/Leon3_comps/libs/grlib/util/fpudummy.vhd
+END
+debug.in
+K 25
+svn:wc:ra_dav:version-url
+V 115
+/svn/!svn/ver/102/SysPy/SysPy_ver/Python_script/paramsocs/Leon3_comps_Gill_top/Leon3_comps/libs/grlib/util/debug.in
+END
+debug.in.vhd
+K 25
+svn:wc:ra_dav:version-url
+V 119
+/svn/!svn/ver/102/SysPy/SysPy_ver/Python_script/paramsocs/Leon3_comps_Gill_top/Leon3_comps/libs/grlib/util/debug.in.vhd
+END
+util.vhd
+K 25
+svn:wc:ra_dav:version-url
+V 115
+/svn/!svn/ver/102/SysPy/SysPy_ver/Python_script/paramsocs/Leon3_comps_Gill_top/Leon3_comps/libs/grlib/util/util.vhd
+END

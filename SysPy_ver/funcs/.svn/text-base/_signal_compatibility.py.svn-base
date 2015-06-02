@@ -1,0 +1,458 @@
+import _MyExceptions
+reload(_MyExceptions)
+import math
+from pdb import *
+
+def signal_compatibility(token_left_struct, token_right_struct, signals, arithm_oper_struct, func):
+       """
+       FUNCTION: signal_compatibility(a(), b() c[], d(), e str)
+              a: left signal's tupple
+              b: token's tupple
+              c: I/O signals list
+              d: arithmetic operator tupple
+              e: string name of the design function
+              
+       - Checking the compatibility of left signals against the right signals assignment.
+       """
+       
+# Python's variable declerations
+#----------------------------------------------------------------------------------------------------------------------------------
+       bit = "01"
+       letter_d = "abcdefghijklmnopqrstuvwxyz"
+       letter_u = "ABCDEFGHIJKLMNOPQRSTUVWXYZ"
+       letter = letter_u + letter_d
+       digit = "0123456789"
+       signal_left_struct = ''
+       signal_right_struct = ''
+       signal_right_conv_struct = ''
+       left_signal_name = ''
+       right_signal_name = ''
+       L_left = ''
+       L_right = ''
+       size_left = ''
+       size_right = ''
+       pos = 0
+       flag_signal = 0
+#----------------------------------------------------------------------------------------------------------------------------------
+       print("token_left_struct:", token_left_struct)
+       if (len(token_left_struct) > 0):
+              if (token_left_struct[0] == "name_left_item"):
+                     left_signal_name = token_left_struct[1][0]
+              elif (token_left_struct[0] == "name_left_item_var"):
+                     left_signal_name = token_left_struct[1][0]
+                     left_index_name = token_left_struct[1][1]
+              elif (token_left_struct[0] == "name_left_binary_slice"):
+                     left_signal_name = token_left_struct[1][0]
+                     #print("left_signal_name:", left_signal_name)
+              else:
+                     left_signal_name = token_left_struct[1]
+       left_signal_name = left_signal_name.replace('=', '')
+       left_signal_name = left_signal_name.replace('!', '')
+       left_signal_name = left_signal_name.replace('>', '')
+       left_signal_name = left_signal_name.replace('<', '')
+       left_signal_name = left_signal_name.replace(' ', '')
+
+       if (arithm_oper_struct == ''):
+              arithm_oper_struct = ["arithm_oper", '+']
+
+
+       print("token_right_struct:", token_right_struct)
+       print("arithm_oper_struct:", arithm_oper_struct)
+
+       for i in range(len(token_right_struct)):
+              if (token_right_struct[i][0] == "name_right_binary_slice"):
+                     right_signal_name = token_right_struct[i][1][0]
+                     pos = token_left_struct[2]
+              elif (token_right_struct[i][0] == "name_right_binary_slice_var0"):
+                     right_signal_name = token_right_struct[i][1][0]
+                     right_index_name = token_right_struct[i][1][1]
+                     pos = token_left_struct[2]
+              elif (token_right_struct[i][0] == "name_right_binary_slice_var1"):
+                     right_signal_name = token_right_struct[i][1][0]
+                     right_index_name = token_right_struct[i][1][2]
+                     pos = token_left_struct[2]
+              elif (token_right_struct[i][0] == "name_right_binary_slice_var01"):
+                     right_signal_name = token_right_struct[i][1][0]
+                     right_index_name = [token_right_struct[i][1][1], token_right_struct[i][1][2]] 
+                     pos = token_left_struct[2]
+              elif (token_right_struct[i][0] == "name_right_item"):
+                     right_signal_name = token_right_struct[i][1][0]
+                     pos = token_left_struct[2]
+              elif (token_right_struct[i][0] == "name_right_item_var"):
+                     right_signal_name = token_right_struct[i][1][0]
+                     right_index_name = token_right_struct[i][1][1]
+                     pos = token_left_struct[2]
+              elif (token_right_struct[i][0] == "name_right_array_binary_item"):
+                     right_signal_name = token_right_struct[i][1][0]
+                     pos = token_left_struct[2]
+              elif (token_right_struct[i][0] == "name_right_array_binary_item_var0"):
+                     right_signal_name = token_right_struct[i][1][0]
+                     right_index_name = token_right_struct[i][1][1]
+                     pos = token_left_struct[2]
+              elif (token_right_struct[i][0] == "name_right_array_binary_item_var1"):
+                     right_signal_name = token_right_struct[i][1][0]
+                     right_index_name = token_right_struct[i][1][2]
+                     pos = token_left_struct[2]
+              elif (token_right_struct[i][0] == "name_right_array_binary_item_var01"):
+                     right_signal_name = token_right_struct[i][1][0]
+                     right_index_name = [token_right_struct[i][1][1], token_right_struct[i][1][2]]
+                     pos = token_left_struct[2]
+              elif (token_right_struct[i][0] == "name_right_array_binary_slice"):
+                     right_signal_name = token_right_struct[i][1][0]
+                     pos = token_left_struct[2]
+              elif (token_right_struct[i][0] == "name_right_array_binary_slice_var0"):
+                     right_signal_name = token_right_struct[i][1][0]
+                     right_index_name = [token_right_struct[i][1][1], token_right_struct[i][1][2], token_right_struct[i][1][3]]
+                     pos = token_left_struct[2]
+              elif (token_right_struct[i][0] == "name_right_array_binary_slice_var1"):
+                     right_signal_name = token_right_struct[i][1][0]
+                     right_index_name = [token_right_struct[i][1][1], token_right_struct[i][1][2], token_right_struct[i][1][3]]
+                     pos = token_left_struct[2]
+              elif (token_right_struct[i][0] == "name_right_array_binary_slice_var2"):
+                     right_signal_name = token_right_struct[i][1][0]
+                     right_index_name = [token_right_struct[i][1][1], token_right_struct[i][1][2], token_right_struct[i][1][3]]
+                     pos = token_left_struct[2]
+              elif (token_right_struct[i][0] == "name_right_array_binary_slice_var01"):
+                     right_signal_name = token_right_struct[i][1][0]
+                     right_index_name = [token_right_struct[i][1][1], token_right_struct[i][1][2], token_right_struct[i][1][3]]
+                     pos = token_left_struct[2]
+              elif (token_right_struct[i][0] == "name_right_array_binary_slice_var02"):
+                     right_signal_name = token_right_struct[i][1][0]
+                     right_index_name = [token_right_struct[i][1][1], token_right_struct[i][1][2], token_right_struct[i][1][3]]
+                     pos = token_left_struct[2]
+              elif (token_right_struct[i][0] == "name_right_array_binary_slice_var12"):
+                     right_signal_name = token_right_struct[i][1][0]
+                     right_index_name = [token_right_struct[i][1][1], token_right_struct[i][1][2], token_right_struct[i][1][3]]
+                     pos = token_left_struct[2]
+              elif (token_right_struct[i][0] == "name_right_array_binary_slice_var012"):
+                     right_signal_name = token_right_struct[i][1][0]
+                     right_index_name = [token_right_struct[i][1][1], token_right_struct[i][1][2], token_right_struct[i][1][3]]
+                     pos = token_left_struct[2]
+              elif (token_right_struct[i][0] == "conv_std_logic"):
+                     right_signal_name = token_right_struct[i][1]
+                     pos = token_right_struct[i][3]
+              elif (token_right_struct[i][0] == "others"):
+                     right_signal_name = token_right_struct[i][1]
+                     pos = token_right_struct[i][2]  
+              else:
+                     right_signal_name = token_right_struct[i][1]
+                     pos = token_left_struct[2]
+
+              print("left_signal_name:", left_signal_name)
+              print("right_signal_name:", right_signal_name)
+              
+# Identifying left afrom pdb import *nd right signals
+#----------------------------------------------------------------------------------------------------------------------------------
+
+              for j in range(len(signals)):
+                     if (token_left_struct[0] == "name_left_item"):
+                            if (left_signal_name == signals[j]['N']):
+                                   if (signals[j]['T'] == 'b'):
+                                          #signal_left_struct = {'T': signals[j]['T'], 'L': [int(token_left_struct[1][1])] , 'N': signals[j]['N']}
+                                          signal_left_struct = {'T': signals[j]['T'], 'L': 1 , 'N': signals[j]['N']}
+                                   elif (signals[j]['T'] == 'arrb'):
+                                          signal_left_struct = {'T': signals[j]['T'], 'L': signals[j]['L'][1] , 'N': signals[j]['N']}
+                     elif (token_left_struct[0] == "name_left_binary_slice"):
+                            if (left_signal_name == signals[j]['N']):
+                                   if (signals[j]['T'] == 'b'):
+                                          #signal_left_struct = {'T': signals[j]['T'], 'L': [int(token_left_struct[1][1])] , 'N': signals[j]['N']}
+                                          signal_left_struct = {'T': signals[j]['T'], 'L': [int(token_left_struct[1][1]), int(token_left_struct[1][2])],  'N': signals[j]['N']}
+                                   #elif (signals[j]['T'] == 'arrb'):
+                                      #    signal_left_struct = {'T': signals[j]['T'], 'L': [int(token_right_struct[i][1][1]), int(token_right_struct[i][1][2])],  'N': signals[j]['N']}
+                     else:
+                            if (left_signal_name == signals[j]['N']):
+                                   signal_left_struct = signals[j]
+
+              if ((token_right_struct[i][0] == "name_right") or (token_right_struct[i][0] == "name_right_dataflow_comp")):
+                     for j in range(len(signals)):
+                            if (right_signal_name == signals[j]['N']):
+                                   signal_right_struct = signals[j]
+              elif (token_right_struct[i][0] == "name_right_binary_slice"):
+                     for j in range(len(signals)):
+                            if (right_signal_name == signals[j]['N']):
+                                   signal_right_struct = {'T': signals[j]['T'], 'L': [int(token_right_struct[i][1][1]), int(token_right_struct[i][1][2])] , 'N': signals[j]['N']}
+                                   #signal_right_struct = signals[j]
+              elif (token_right_struct[i][0] == "name_right_binary_slice_var0"):
+                     for j in range(len(signals)):
+                            if (right_signal_name == signals[j]['N']):
+                                   signal_right_struct = {'T': signals[j]['T'], 'L': [token_right_struct[i][1][1], int(token_right_struct[i][1][2])] , 'N': signals[j]['N']}
+                                   #signal_right_struct = signals[j]
+              elif (token_right_struct[i][0] == "name_right_binary_slice_var1"):
+                     for j in range(len(signals)):
+                            if (right_signal_name == signals[j]['N']):
+                                   signal_right_struct = {'T': signals[j]['T'], 'L': [int(token_right_struct[i][1][1]), token_right_struct[i][1][2]] , 'N': signals[j]['N']}
+                                   #signal_right_struct = signals[j]
+              elif (token_right_struct[i][0] == "name_right_binary_slice_var01"):
+                     for j in range(len(signals)):
+                            if (right_signal_name == signals[j]['N']):
+                                   signal_right_struct = {'T': signals[j]['T'], 'L': [token_right_struct[i][1][1], token_right_struct[i][1][2]] , 'N': signals[j]['N']}
+                                   #signal_right_struct = signals[j]
+              elif (token_right_struct[i][0] == "name_right_item"):
+                     for j in range(len(signals)):
+                            if (right_signal_name == signals[j]['N']):
+                                   signal_right_struct = {'T': signals[j]['T'], 'L': [int(token_right_struct[i][1][1])] , 'N': signals[j]['N']}
+              elif (token_right_struct[i][0] == "name_right_item_var"):
+                     for j in range(len(signals)):
+                            if (right_signal_name == signals[j]['N']):
+                                   signal_right_struct = {'T': signals[j]['T'], 'L': signals[j]['L']  , 'N': signals[j]['N']}
+                            if (right_index_name == signals[j]['N']):
+                                   index_right_struct = {'T': signals[j]['T'], 'L': signals[j]['L'] , 'N': signals[j]['N']}
+              elif (token_right_struct[i][0] == "name_right_array_binary_item"):
+                     for j in range(len(signals)):
+                            if (right_signal_name == signals[j]['N']):
+                                   signal_right_struct = {'T': signals[j]['T'], 'L': [int(token_right_struct[i][1][1]), int(token_right_struct[i][1][2])] , 'N': signals[j]['N']}
+              elif (token_right_struct[i][0] == "name_right_array_binary_item_var0"):
+                     for j in range(len(signals)):
+                            if (right_signal_name == signals[j]['N']):
+                                   signal_right_struct = {'T': signals[j]['T'], 'L': [token_right_struct[i][1][1], int(token_right_struct[i][1][2])] , 'N': signals[j]['N']}
+              elif (token_right_struct[i][0] == "name_right_array_binary_item_var1"):
+                     for j in range(len(signals)):
+                            if (right_signal_name == signals[j]['N']):
+                                   signal_right_struct = {'T': signals[j]['T'], 'L': [int(token_right_struct[i][1][1]), token_right_struct[i][1][2]] , 'N': signals[j]['N']}
+              elif (token_right_struct[i][0] == "name_right_array_binary_item_var01"):
+                     for j in range(len(signals)):
+                            if (right_signal_name == signals[j]['N']):
+                                   signal_right_struct = {'T': signals[j]['T'], 'L': [token_right_struct[i][1][1], token_right_struct[i][1][2]] , 'N': signals[j]['N']}
+              elif (token_right_struct[i][0] == "name_right_array_binary_slice"):
+                     for j in range(len(signals)):
+                            if (right_signal_name == signals[j]['N']):
+                                   signal_right_struct = {'T': signals[j]['T'], 'L': [int(token_right_struct[i][1][1]), int(token_right_struct[i][1][2]), int(token_right_struct[i][1][3])] , 'N': signals[j]['N']}
+              elif (token_right_struct[i][0] == "name_right_array_binary_slice_var0"):
+                     for j in range(len(signals)):
+                            if (right_signal_name == signals[j]['N']):
+                                   signal_right_struct = {'T': signals[j]['T'], 'L': [token_right_struct[i][1][1], int(token_right_struct[i][1][2]), int(token_right_struct[i][1][3])] , 'N': signals[j]['N']}
+              elif (token_right_struct[i][0] == "name_right_array_binary_slice_var1"):
+                     for j in range(len(signals)):
+                            if (right_signal_name == signals[j]['N']):
+                                   signal_right_struct = {'T': signals[j]['T'], 'L': [int(token_right_struct[i][1][1]), token_right_struct[i][1][2], int(token_right_struct[i][1][3])] , 'N': signals[j]['N']}
+              elif (token_right_struct[i][0] == "name_right_array_binary_slice_var2"):
+                     for j in range(len(signals)):
+                            if (right_signal_name == signals[j]['N']):
+                                   signal_right_struct = {'T': signals[j]['T'], 'L': [int(token_right_struct[i][1][1]), int(token_right_struct[i][1][2]), token_right_struct[i][1][3]] , 'N': signals[j]['N']}
+              elif (token_right_struct[i][0] == "name_right_array_binary_slice_var01"):
+                     for j in range(len(signals)):
+                            if (right_signal_name == signals[j]['N']):
+                                   signal_right_struct = {'T': signals[j]['T'], 'L': [token_right_struct[i][1][1], token_right_struct[i][1][2], int(token_right_struct[i][1][3])] , 'N': signals[j]['N']}
+              elif (token_right_struct[i][0] == "name_right_array_binary_slice_var02"):
+                     for j in range(len(signals)):
+                            if (right_signal_name == signals[j]['N']):
+                                   signal_right_struct = {'T': signals[j]['T'], 'L': [token_right_struct[i][1][1], int(token_right_struct[i][1][2]), token_right_struct[i][1][3]] , 'N': signals[j]['N']}
+              elif (token_right_struct[i][0] == "name_right_array_binary_slice_var12"):
+                     for j in range(len(signals)):
+                            if (right_signal_name == signals[j]['N']):
+                                   signal_right_struct = {'T': signals[j]['T'], 'L': [int(token_right_struct[i][1][1]), token_right_struct[i][1][2], token_right_struct[i][1][3]] , 'N': signals[j]['N']}
+              elif (token_right_struct[i][0] == "name_right_array_binary_slice_var012"):
+                     for j in range(len(signals)):
+                            if (right_signal_name == signals[j]['N']):
+                                   signal_right_struct = {'T': signals[j]['T'], 'L': [token_right_struct[i][1][1], token_right_struct[i][1][2], token_right_struct[i][1][3]] , 'N': signals[j]['N']}
+              elif (token_right_struct[i][0] == "const_binary_bit"):
+                     signal_right_struct = {'T': 'b', 'L': 1, 'N': token_right_struct[i][1].replace('\'', '')}
+              elif (token_right_struct[i][0] == "const_binary_bits"):
+                     L = len(token_right_struct[i][1]) - 2
+                     signal_right_struct = {'T': 'b', 'L': [L-1, 0], 'N': token_right_struct[i][1]}
+              elif (token_right_struct[i][0] == "const_integer"):
+                     ## Adding '-' sign, if one-to-one assignmet and the right integer operand is negative
+                     if ((len(token_right_struct) == 1) and (arithm_oper_struct[1] == '-')):
+                            t = arithm_oper_struct[1] + token_right_struct[i][1].replace("\"", '')
+                            t = int(t)
+                            signal_right_struct = {'T': 'int', 'L': t, 'N': arithm_oper_struct[1] + token_right_struct[i][1].replace('\"', '')}
+                     else:
+                            t = token_right_struct[i][1].replace("\"", '')
+                            t = int(t) 
+                            signal_right_struct = {'T': 'int', 'L': t, 'N': token_right_struct[i][1].replace('\"', '')}
+              elif (token_right_struct[i][0] == "conv_integer"):
+                     flag_signal = 0
+                     for j in range(len(signals)):
+                            if (right_signal_name == signals[j]['N']):
+                                   flag_signal = 1
+                                   signal_right_struct = signals[j]
+                                   signal_right_conv_struct = {'T': 'int', 'L': 0, 'N': signal_right_struct['N']}
+                     if (flag_signal == 0):
+                     #if ((right_signal_name.find('\"') == 0) or(right_signal_name.find('\'') == 0)):
+                            raise funcs._MyExceptions.MyExceptions("File :\"" +  func +".py\": Line: " + str(pos) + ": only declared binary bus signals can be converted to integer.")           
+                            #L0 = len(right_signal_name) - 2
+                            #if (L0 == 1):
+                            #       signal_right_struct = {'T': 'b', 'L': L0, 'N': right_signal_name}
+                            #       signal_right_conv_struct = {'T': 'int', 'L': 0, 'N': right_signal_name}
+                            #elif (L0 > 1):
+                            #       signal_right_struct = {'T': 'b', 'L': [(L0 - 1), 0], 'N': right_signal_name}
+                            #       signal_right_conv_struct = {'T': 'int', 'L': 0, 'N': right_signal_name}
+              elif (token_right_struct[i][0] == "conv_std_logic"):
+                     flag_signal = 0
+                     for k in range(len(letter)):
+                            if (right_signal_name[0] == letter[k]):
+                                   for j in range(len(signals)):
+                                          if (right_signal_name == signals[j]['N']):
+                                                 #flag_signal = 1
+                                                 signal_right_struct = signals[j]
+                                                 signal_right_conv_struct = {'T': 'b', 'L': [(int(token_right_struct[i][2]) - 1), 0], 'N': signal_right_struct['N']}
+              elif (token_right_struct[i][0] == "others"):
+                     signal_right_struct = {'T': 'b', 'L': signal_left_struct['L'] , 'N': signal_left_struct['N']}
+
+
+                            
+                     #if (flag_signal == 0):
+                     #if ((right_signal_name.find('\"') == 0) or(right_signal_name.find('\'') == 0)):
+                            #raise funcs._MyExceptions.MyExceptions("File :\"" +  func +".py\": Line: " + str(pos) + ": only declared integer signals can be converted to std_logic_vector.")
+
+                     for k in range(len(digit)):
+                            if ((right_signal_name[0] == digit[k]) or (right_signal_name[0] == '-')):
+                                   #x = int(right_signal_name)
+                                   #y = int(math.log(x, 2))
+                                   signal_right_struct = {'T': 'int', 'L': [0, int(right_signal_name)], 'N': right_signal_name}
+                                   signal_right_conv_struct = {'T': 'b', 'L': [(int(token_right_struct[i][2]) - 1), 0], 'N': right_signal_name}
+
+                     print("signal_right_conv_struct:", signal_right_conv_struct)
+                     if (((signal_left_struct['T'] == 'b') or (signal_left_struct['T'] == 'arrb')) and ((signal_right_conv_struct['T'] == 'b') or (signal_right_conv_struct['T'] == 'arrb'))):
+                            signal_left_struct['T'] = 'arrb'
+                            signal_right_conv_struct['T'] = 'arrb'
+#----------------------------------------------------------------------------------------------------------------------------------
+
+
+              print("signal_right_conv_struct:", signal_right_conv_struct)
+              print("token_right_struct:", token_right_struct)
+              #if ((token_right_struct[0] == "name_right") or (token_right_struct[0] == "name_right_dataflow_comp")):
+
+# Checking for type compatibility
+#----------------------------------------------------------------------------------------------------------------------------------
+              if (token_right_struct[i][0] == "conv_integer"):
+                     if (signal_left_struct['T'] != signal_right_conv_struct['T']):       
+                            raise funcs._MyExceptions.MyExceptions("File :\"" +  func +".py\": Line: " + str(pos) + ": signal \"" + signal_left_struct['N'] + "\" has different type from converted signal \"" + signal_right_conv_struct['N'].replace('\"', '') + "\".")           
+                     elif (signal_right_struct['T'] != 'b'):
+                            raise funcs._MyExceptions.MyExceptions("File :\"" +  func +".py\": Line: " + str(pos) + ": constant \"" + signal_right_struct['N'].replace('\"', '') + "\" is not a binary bus.")          
+
+              print("signal_left_struct:", signal_left_struct)
+              print("signal_right_conv_struct:", signal_right_conv_struct)
+
+
+
+
+                                                               
+              if (token_right_struct[i][0] == "conv_std_logic"):
+                      if (signal_left_struct['T'] != signal_right_conv_struct['T']):
+                            raise funcs._MyExceptions.MyExceptions("File :\"" +  func +".py\": Line: " + str(pos) + ": signal \"" + signal_left_struct['N'] + "\" has different type from converted signal \"" + signal_right_conv_struct['N'].replace('\"', '') + "\".")           
+
+              #print("signal_left_struct:", signal_left_struct)
+              #print("signal_right_struct:", signal_right_struct)
+
+              if (((signal_left_struct['T'] == 'b') or (signal_left_struct['T'] == 'arrb')) and ((signal_right_struct['T'] == 'b') or (signal_right_struct['T'] == 'arrb'))):
+                     signal_left_struct['T'] = 'arrb'
+                     signal_right_struct['T'] = 'arrb'
+                     
+              print("signal_left_struct:", signal_left_struct)
+              print("signal_right_struct:", signal_right_struct)
+              
+              if (signal_left_struct['T'] != signal_right_struct['T']):
+                     if ((token_right_struct[i][0] == "name_right") or (token_right_struct[i][0] == "name_right_dataflow_comp")):
+                            raise funcs._MyExceptions.MyExceptions("File :\"" +  func +".py\": Line: " + str(pos) + ": signal \"" + signal_left_struct['N'] + "\" has different type from signal \"" + signal_right_struct['N'] + "\".")           
+                     elif (token_right_struct[i][0] == "const_binary_bit"):
+                            raise funcs._MyExceptions.MyExceptions("File :\"" +  func +".py\": Line: " + str(pos) + ": signal \"" + signal_left_struct['N'] + "\" has different type from constant binary bit \"" + signal_right_struct['N'] + "\".")
+                     elif (token_right_struct[i][0] == "const_binary_bits"):
+                            raise funcs._MyExceptions.MyExceptions("File :\"" +  func +".py\": Line: " + str(pos) + ": signal \"" + signal_left_struct['N'] + "\" has different type from constant binary bus " + signal_right_struct['N'] + ".")
+                     elif (token_right_struct[i][0] == "const_integer"):
+                            raise funcs._MyExceptions.MyExceptions("File :\"" +  func +".py\": Line: " + str(pos) + ": signal \"" + signal_left_struct['N'] + "\" has different type from constant integer \"" + signal_right_struct['N'] + "\".")
+                     #elif (token_right_struct[i][0] == "conv_integer"):
+                      #      raise funcs._MyExceptions.MyExceptions("File :\"" +  func +".py\": Line: " + str(pos) + ": constant \"" + signal_right_struct['N'].replace('\"', '') + "\" is not a binary bus.")                                
+#----------------------------------------------------------------------------------------------------------------------------------
+
+# Checking for size compatibility
+#----------------------------------------------------------------------------------------------------------------------------------
+              if (token_right_struct[i][0] == "conv_integer"):
+                     L = signal_right_struct['L'].__doc__
+                     if ((right_signal_name.find('\"') == 0) or(right_signal_name.find('\'') == 0)):
+                            L_right = signal_right_struct['L'].__doc__
+                            if (L_right.find("int") == 0):
+                                   raise funcs._MyExceptions.MyExceptions("File :\"" +  func +".py\": Line: " + str(pos) + ": constant \"" + signal_right_struct['N'].replace('\"', '') + "\" is not a binary bus.")        
+
+                     if (L.find("int") == 0):
+                            raise funcs._MyExceptions.MyExceptions("File :\"" +  func +".py\": Line: " + str(pos) + ": binary signal \"" + signal_right_struct['N'] + "\" cannot be converted to integer.")
+
+              elif (token_right_struct[i][0] == "conv_std_logic"):
+                     L_left = signal_left_struct['L'].__doc__
+                     if (L_left.find("int") == 0):
+                            size_left = 1
+                     elif (L_left.find("list") == 0):
+                            size_left = abs(signal_left_struct['L'][0] - signal_left_struct['L'][1])
+
+                     size_right = abs(signal_right_conv_struct['L'][0] - signal_right_conv_struct['L'][1])
+
+                     # Raising a warning if the converted integer signal has different bit width from the left signal 
+                     try:
+                            if (size_left != size_right):
+                                   raise funcs._MyExceptions.MyExceptions("File :\"" +  func +".py\": Line: " + str(pos) + ": signal \"" + signal_left_struct['N'] + "\" has different size from converted signal \"" + signal_right_conv_struct['N'] + "\".")                       
+                     except:
+                            print("Warning: File :\"" +  func +".py\": Line: " + str(pos) + ": signal \"" + signal_left_struct['N'] + "\" has different size from converted signal \"" + signal_right_conv_struct['N'] + "\".")                       
+    
+#----------------------------------------------------------------------------------------------------------------------------------
+
+# Checking for size compatibility if there is a one-to-one assignment
+#----------------------------------------------------------------------------------------------------------------------------------
+       #print("token_right_struct:", token_right_struct)
+
+
+       
+       if (len(token_right_struct) == 1):
+              if ((signal_left_struct['T'] == 'b') or (signal_left_struct['T'] == 'arrb')):
+                     if ((token_right_struct[i][0] == "name_right") or (token_right_struct[i][0] == "name_right_dataflow_comp")):
+                            L_left = signal_left_struct['L'].__doc__
+                            if (L_left.find("int") == 0):
+                                   size_left = 1
+                            elif (L_left.find("list") == 0):
+                                   L_left = signal_left_struct['L'][0].__doc__
+                                   ## 'T' = 'b'
+                                   if (L_left.find("int") == 0):
+                                          size_left = abs(signal_left_struct['L'][0] - signal_left_struct['L'][1])
+                                   ## 'T' = 'arrb'
+                                   elif (L_left.find("list") == 0):
+                                          size_left = abs(signal_left_struct['L'][1][0] - signal_left_struct['L'][1][1])
+
+                            L_right = signal_right_struct['L'].__doc__
+                            if (L_right.find("int") == 0):
+                                   size_right = 1
+                            elif (L_right.find("list") == 0):
+                                   size_right = abs(signal_right_struct['L'][0] - signal_right_struct['L'][1])
+
+                     elif (token_right_struct[i][0] == "const_binary_bits"):
+                            L_left = signal_left_struct['L'].__doc__
+                            if (L_left.find("int") == 0):
+                                   size_left = 1
+                            elif (L_left.find("list") == 0):
+                                   L_left = signal_left_struct['L'][0].__doc__
+                                   if (L_left.find("int") == 0):
+                                          size_left = abs(signal_left_struct['L'][0] - signal_left_struct['L'][1])
+                                          size_right =  abs(signal_right_struct['L'][0] - signal_right_struct['L'][1])
+                                   elif (L_left.find("list") == 0):
+                                          size_left = abs(signal_left_struct['L'][1][0] - signal_left_struct['L'][1][1])
+                                          size_right =  abs(signal_right_struct['L'][0] - signal_right_struct['L'][1])
+
+                     elif (token_right_struct[i][0] == "name_right_binary_slice"):
+                            L_left = signal_left_struct['L'].__doc__
+                            if (L_left.find("int") == 0):
+                                   size_left = 1
+                            elif (L_left.find("list") == 0):
+                                   size_left = abs(signal_left_struct['L'][0] - signal_left_struct['L'][1])
+                                   size_right = signal_right_struct['L']
+
+                     elif (token_right_struct[i][0] == "conv_integer"):
+                            if ((right_signal_name.find('\"') == 0) or(right_signal_name.find('\'') == 0)):
+                                   L_right = signal_right_struct['L'].__doc__
+                                   if (L_right.find("int") == 0):
+                                          raise funcs._MyExceptions.MyExceptions("File :\"" +  func +".py\": Line: " + str(pos) + ": constant \"" + signal_right_struct['N'].replace('\"', '') + "\" is not a binary bus.")
+
+                     if (size_left != size_right):
+                            if ((token_right_struct[i][0] == "name_right") or (token_right_struct[i][0] == "name_right_dataflow_comp")):
+                                   raise funcs._MyExceptions.MyExceptions("File :\"" +  func +".py\": Line: " + str(pos) + ": signal \"" + signal_left_struct['N'] + "\" has different size from signal \"" + signal_right_struct['N'] + "\".")           
+                            elif (token_right_struct[i][0] == "name_right_binary_slice"):
+                                   raise funcs._MyExceptions.MyExceptions("File :\"" +  func +".py\": Line: " + str(pos) + ": signal \"" + signal_left_struct['N'] + "\" has different size from signal \"" + signal_right_struct['N'] + '[' + str(signal_right_struct['L'][0]) + ':' + str(signal_right_struct['L'][1]) + ']' + "\".")           
+                            elif (token_right_struct[i][0] == "const_binary_bit"):
+                                   raise funcs._MyExceptions.MyExceptions("File :\"" +  func +".py\": Line: " + str(pos) + ": signal \"" + signal_left_struct['N'] + "\" has different size from binary constant \"" + signal_right_struct['N'] + "\".")  
+                            elif (token_right_struct[i][0] == "const_binary_bits"):
+                                   raise funcs._MyExceptions.MyExceptions("File :\"" +  func +".py\": Line: " + str(pos) + ": signal \"" + signal_left_struct['N'] + "\" has different size from binary constant \"" + signal_right_struct['N'] + "\".")  
+
+              elif (signal_left_struct['T'] == "int"):         
+                     if ((token_right_struct[i][0] == "name_right") or (token_right_struct[i][0] == "name_right_dataflow_comp")):
+                            if ((signal_right_struct['L'][0] != signal_left_struct['L'][0]) or (signal_right_struct['L'][1] != signal_left_struct['L'][1])):
+                                   raise funcs._MyExceptions.MyExceptions("File :\"" +  func +".py\": Line: " + str(pos) + ": value \"" + signal_right_struct['N'] + "\" is not included in the range of signal \"" + signal_left_struct['N'] + "\".")
+                     elif (token_right_struct[i][0] == "const_integer"):
+                            if ((signal_right_struct['L'] < signal_left_struct['L'][0]) or (signal_right_struct['L'] > signal_left_struct['L'][1])):
+                                   raise funcs._MyExceptions.MyExceptions("File :\"" +  func +".py\": Line: " + str(pos) + ": value \"" + signal_right_struct['N'] + "\" is not included in the range of signal \"" + signal_left_struct['N'] + "\".")

@@ -1,0 +1,53 @@
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/svn/!svn/ver/102/SysPy/SysPy_ver/Leon3_comps/libs/grlib/stdlib
+END
+stdlib.vhd
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/svn/!svn/ver/102/SysPy/SysPy_ver/Leon3_comps/libs/grlib/stdlib/stdlib.vhd
+END
+stdio.vhd
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/svn/!svn/ver/102/SysPy/SysPy_ver/Leon3_comps/libs/grlib/stdlib/stdio.vhd
+END
+vhdlsim.txt
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/svn/!svn/ver/102/SysPy/SysPy_ver/Leon3_comps/libs/grlib/stdlib/vhdlsim.txt
+END
+config.vhd
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/svn/!svn/ver/102/SysPy/SysPy_ver/Leon3_comps/libs/grlib/stdlib/config.vhd
+END
+version.vhd
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/svn/!svn/ver/102/SysPy/SysPy_ver/Leon3_comps/libs/grlib/stdlib/version.vhd
+END
+vhdlsyn.txt
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/svn/!svn/ver/102/SysPy/SysPy_ver/Leon3_comps/libs/grlib/stdlib/vhdlsyn.txt
+END
+testlib.vhd
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/svn/!svn/ver/102/SysPy/SysPy_ver/Leon3_comps/libs/grlib/stdlib/testlib.vhd
+END
+stdio_tb.vhd
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/svn/!svn/ver/102/SysPy/SysPy_ver/Leon3_comps/libs/grlib/stdlib/stdio_tb.vhd
+END

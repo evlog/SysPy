@@ -1,0 +1,25 @@
+import operator
+
+def dataflow_constant_check(token_struct, func):
+       """
+       FUNCTION: dataflow_constant_check(a()
+              a: token's tupple
+              b: string name of the design function
+              
+       - Checking dataflow constant assignments.
+       """
+       
+# Python's variable declerations
+#----------------------------------------------------------------------------------------------------------------------------------
+       bit = "01"
+       const_name = ''
+       pos = ''
+#----------------------------------------------------------------------------------------------------------------------------------
+
+       const_name = token_struct[1]
+  
+##       if (token_struct[0] = "const_integer"):
+##              if (operator.isNumberType(int(token_strict[1]) = False)):
+##                     pos = token_struct[2]
+##                     raise "Line " + str(pos) + ": constant " + const_name + " not an integer."
+              

@@ -1,0 +1,291 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- IMPORTANT: This is an internal file that has been generated
+     by the Xilinx ISE software.  Any direct editing or
+     changes made to this file may result in unpredictable
+     behavior or data corruption.  It is strongly advised that
+     users do not edit the contents of this file. -->
+<messages>
+<msg type="warning" file="ConstraintSystem" num="0" >A target design object for the Locate constraint &apos;&lt;INST /proc_wrapper_FRM4X/EXPANDED/proc_wrapper_FRM4X/leon3mp_U0\/ddrsp0.ddrc0\/ddr_phy0\/ddr_phy0\/xc4v.ddr_phy0\/idelctrl[0].u LOC = IDELAYCTRL_X0Y1&gt;&apos; could not be found and so the Locate constraint will be removed.
+</msg>
+
+<msg type="warning" file="ConstraintSystem" num="0" >A target design object for the Locate constraint &apos;&lt;INST /proc_wrapper_FRM4X/EXPANDED/proc_wrapper_FRM4X/leon3mp_U0\/ddrsp0.ddrc0\/ddr_phy0\/ddr_phy0\/xc4v.ddr_phy0\/idelctrl[1].u LOC = IDELAYCTRL_X0Y2&gt;&apos; could not be found and so the Locate constraint will be removed.
+</msg>
+
+<msg type="warning" file="ConstraintSystem" num="0" >A target design object for the Locate constraint &apos;&lt;INST /proc_wrapper_FRM4X/EXPANDED/proc_wrapper_FRM4X/leon3mp_U0\/ddrsp0.ddrc0\/ddr_phy0\/ddr_phy0\/xc4v.ddr_phy0\/idelctrl[2].u LOC = IDELAYCTRL_X0Y6&gt;&apos; could not be found and so the Locate constraint will be removed.
+</msg>
+
+<msg type="warning" file="ConstraintSystem" num="0" >TNM : clkm was distributed to a DCM but new TNM constraints were not derived. This TNM is used in the following user groups or specifications:
+&lt;TIMESPEC &quot;TS_clkm_clkml&quot; = FROM &quot;clkm&quot; TO &quot;clkml&quot; TIG;&gt; [Leon3_wrapper.ucf(5)]
+&lt;TIMESPEC &quot;TS_clkml_clkm&quot; = FROM &quot;clkml&quot; TO &quot;clkm&quot; TIG;&gt; [Leon3_wrapper.ucf(6)]
+&lt;TIMESPEC &quot;TS_clkm_egtx_clk&quot; = FROM &quot;clkm&quot; TO &quot;egtx_clk&quot; TIG;&gt; [Leon3_wrapper.ucf(11)]
+&lt;TIMESPEC &quot;TS_egtx_clk_clkm&quot; = FROM &quot;egtx_clk&quot; TO &quot;clkm&quot; TIG;&gt; [Leon3_wrapper.ucf(12)]
+</msg>
+
+<msg type="warning" file="ConstraintSystem" num="0" >TNM : clkml was distributed to a DCM but new TNM constraints were not derived. This TNM is used in the following user groups or specifications:
+&lt;TIMESPEC &quot;TS_clkm_clkml&quot; = FROM &quot;clkm&quot; TO &quot;clkml&quot; TIG;&gt; [Leon3_wrapper.ucf(5)]
+&lt;TIMESPEC &quot;TS_clkml_clkm&quot; = FROM &quot;clkml&quot; TO &quot;clkm&quot; TIG;&gt; [Leon3_wrapper.ucf(6)]
+</msg>
+
+<msg type="info" file="ConstraintSystem" num="0" >The Period constraint &lt;NET clk_100 period = 10.000 ;&gt; [Leon3_wrapper.ucf(15)], is specified using the Net Period method which is not recommended. Please use the Timespec PERIOD method.
+</msg>
+
+<msg type="info" file="ConstraintSystem" num="0" >The Period constraint &lt;NET leon3mp_U0/clk_200 period = 5.000;&gt; [Leon3_wrapper.ucf(17)], is specified using the Net Period method which is not recommended. Please use the Timespec PERIOD method.
+</msg>
+
+<msg type="warning" file="NgdBuild" num="1012" delta="old" >The constraint <arg fmt="%s" index="1">&lt;INST /proc_wrapper_FRM4X/EXPANDED/proc_wrapper_FRM4X/leon3mp_U0\/ddrsp0.ddrc0\/ddr_phy0\/ddr_phy0\/xc4v.ddr_phy0\/idelctrl[0].u LOC = IDELAYCTRL_X0Y1&gt;</arg> is overridden on the design object <arg fmt="%s" index="2">leon3mp_U0/ddrsp0.ddrc0/ddr_phy0/ddr_phy0/xc4v.ddr_phy0/idelctrl[0].u</arg> by the constraint <arg fmt="%s" index="3">&lt;INST &quot;leon3mp_U0/ddrsp0.ddrc0/ddr_phy0/ddr_phy0/xc4v.ddr_phy0/idelctrl[0].u&quot; LOC = &quot;IDELAYCTRL_X0Y1&quot;;&gt; [Leon3_wrapper.ucf(56)]</arg>.
+</msg>
+
+<msg type="warning" file="NgdBuild" num="1012" delta="old" >The constraint <arg fmt="%s" index="1">&lt;INST /proc_wrapper_FRM4X/EXPANDED/proc_wrapper_FRM4X/leon3mp_U0\/ddrsp0.ddrc0\/ddr_phy0\/ddr_phy0\/xc4v.ddr_phy0\/idelctrl[1].u LOC = IDELAYCTRL_X0Y2&gt;</arg> is overridden on the design object <arg fmt="%s" index="2">leon3mp_U0/ddrsp0.ddrc0/ddr_phy0/ddr_phy0/xc4v.ddr_phy0/idelctrl[1].u</arg> by the constraint <arg fmt="%s" index="3">&lt;INST &quot;leon3mp_U0/ddrsp0.ddrc0/ddr_phy0/ddr_phy0/xc4v.ddr_phy0/idelctrl[1].u&quot; LOC = &quot;IDELAYCTRL_X0Y2&quot;;&gt; [Leon3_wrapper.ucf(57)]</arg>.
+</msg>
+
+<msg type="warning" file="NgdBuild" num="1012" delta="old" >The constraint <arg fmt="%s" index="1">&lt;INST /proc_wrapper_FRM4X/EXPANDED/proc_wrapper_FRM4X/leon3mp_U0\/ddrsp0.ddrc0\/ddr_phy0\/ddr_phy0\/xc4v.ddr_phy0\/idelctrl[2].u LOC = IDELAYCTRL_X0Y6&gt;</arg> is overridden on the design object <arg fmt="%s" index="2">leon3mp_U0/ddrsp0.ddrc0/ddr_phy0/ddr_phy0/xc4v.ddr_phy0/idelctrl[2].u</arg> by the constraint <arg fmt="%s" index="3">&lt;INST &quot;leon3mp_U0/ddrsp0.ddrc0/ddr_phy0/ddr_phy0/xc4v.ddr_phy0/idelctrl[2].u&quot; LOC = &quot;IDELAYCTRL_X0Y6&quot;;&gt; [Leon3_wrapper.ucf(58)]</arg>.
+</msg>
+
+<msg type="warning" file="NgdBuild" num="1012" delta="old" >The constraint <arg fmt="%s" index="1">&lt;NET &quot;sys_rst_in&quot; PULLUP&gt;</arg> is overridden on the design object <arg fmt="%s" index="2">sys_rst_in</arg> by the constraint <arg fmt="%s" index="3">&lt;NET sys_rst_in PULLUP;&gt; [Leon3_wrapper.ucf(60)]</arg>.
+</msg>
+
+<msg type="warning" file="NgdBuild" num="1345" delta="old" >The constraint <arg fmt="%s" index="1">&lt;NET &quot;sram_clk&quot; FEEDBACK = 1000 ps NET &quot;sram_clk_fb&quot;&gt;</arg> is overridden by the constraint <arg fmt="%s" index="2">&lt;NET sram_clk FEEDBACK = 1.0 NET sram_clk_fb;&gt; [Leon3_wrapper.ucf(2)]</arg>. The overriden constraint usually comes from the input netlist or ncf files. Please set XIL_NGDBUILD_CONSTR_OVERRIDE_ERROR to promote this message to an error.
+</msg>
+
+<msg type="warning" file="NgdBuild" num="440" delta="old" >FF primitive &apos;<arg fmt="%s" index="1">Gill/FRM4X/XLXI_6/XLXI_5/XLXI_9/XLXI_2/blk00000003/blk00000114</arg>&apos; has unconnected output pin
+</msg>
+
+<msg type="warning" file="NgdBuild" num="443" delta="old" >SFF primitive &apos;<arg fmt="%s" index="1">Gill/FRM4X/XLXI_6/XLXI_5/XLXI_9/XLXI_2/blk00000003/blk000003ff</arg>&apos; has unconnected output pin
+</msg>
+
+<msg type="warning" file="NgdBuild" num="443" delta="old" >SFF primitive &apos;<arg fmt="%s" index="1">Gill/FRM4X/XLXI_6/XLXI_5/XLXI_9/XLXI_2/blk00000003/blk00000400</arg>&apos; has unconnected output pin
+</msg>
+
+<msg type="warning" file="NgdBuild" num="440" delta="old" >FF primitive &apos;<arg fmt="%s" index="1">Gill/FRM4X/XLXI_6/XLXI_5/XLXI_13/blk00000003/blk00000114</arg>&apos; has unconnected output pin
+</msg>
+
+<msg type="warning" file="NgdBuild" num="443" delta="old" >SFF primitive &apos;<arg fmt="%s" index="1">Gill/FRM4X/XLXI_6/XLXI_5/XLXI_13/blk00000003/blk000003ff</arg>&apos; has unconnected output pin
+</msg>
+
+<msg type="warning" file="NgdBuild" num="443" delta="old" >SFF primitive &apos;<arg fmt="%s" index="1">Gill/FRM4X/XLXI_6/XLXI_5/XLXI_13/blk00000003/blk00000400</arg>&apos; has unconnected output pin
+</msg>
+
+<msg type="warning" file="NgdBuild" num="440" delta="old" >FF primitive &apos;<arg fmt="%s" index="1">Gill/FRM4X/XLXI_6/XLXI_5/XLXI_6/blk00000003/blk00000114</arg>&apos; has unconnected output pin
+</msg>
+
+<msg type="warning" file="NgdBuild" num="443" delta="old" >SFF primitive &apos;<arg fmt="%s" index="1">Gill/FRM4X/XLXI_6/XLXI_5/XLXI_6/blk00000003/blk000003ff</arg>&apos; has unconnected output pin
+</msg>
+
+<msg type="warning" file="NgdBuild" num="443" delta="old" >SFF primitive &apos;<arg fmt="%s" index="1">Gill/FRM4X/XLXI_6/XLXI_5/XLXI_6/blk00000003/blk00000400</arg>&apos; has unconnected output pin
+</msg>
+
+<msg type="warning" file="NgdBuild" num="440" delta="old" >FF primitive &apos;<arg fmt="%s" index="1">Gill/FRM4X/XLXI_6/XLXI_5/XLXI_5/blk00000003/blk00000114</arg>&apos; has unconnected output pin
+</msg>
+
+<msg type="warning" file="NgdBuild" num="443" delta="old" >SFF primitive &apos;<arg fmt="%s" index="1">Gill/FRM4X/XLXI_6/XLXI_5/XLXI_5/blk00000003/blk000003ff</arg>&apos; has unconnected output pin
+</msg>
+
+<msg type="warning" file="NgdBuild" num="443" delta="old" >SFF primitive &apos;<arg fmt="%s" index="1">Gill/FRM4X/XLXI_6/XLXI_5/XLXI_5/blk00000003/blk00000400</arg>&apos; has unconnected output pin
+</msg>
+
+<msg type="warning" file="NgdBuild" num="440" delta="old" >FF primitive &apos;<arg fmt="%s" index="1">Gill/FRM4X/XLXI_6/XLXI_5/XLXI_4/blk00000003/blk00000114</arg>&apos; has unconnected output pin
+</msg>
+
+<msg type="warning" file="NgdBuild" num="443" delta="old" >SFF primitive &apos;<arg fmt="%s" index="1">Gill/FRM4X/XLXI_6/XLXI_5/XLXI_4/blk00000003/blk000003ff</arg>&apos; has unconnected output pin
+</msg>
+
+<msg type="warning" file="NgdBuild" num="443" delta="old" >SFF primitive &apos;<arg fmt="%s" index="1">Gill/FRM4X/XLXI_6/XLXI_5/XLXI_4/blk00000003/blk00000400</arg>&apos; has unconnected output pin
+</msg>
+
+<msg type="warning" file="NgdBuild" num="440" delta="old" >FF primitive &apos;<arg fmt="%s" index="1">Gill/FRM4X/XLXI_6/XLXI_5/XLXI_3/blk00000003/blk00000114</arg>&apos; has unconnected output pin
+</msg>
+
+<msg type="warning" file="NgdBuild" num="443" delta="old" >SFF primitive &apos;<arg fmt="%s" index="1">Gill/FRM4X/XLXI_6/XLXI_5/XLXI_3/blk00000003/blk000003ff</arg>&apos; has unconnected output pin
+</msg>
+
+<msg type="warning" file="NgdBuild" num="443" delta="old" >SFF primitive &apos;<arg fmt="%s" index="1">Gill/FRM4X/XLXI_6/XLXI_5/XLXI_3/blk00000003/blk00000400</arg>&apos; has unconnected output pin
+</msg>
+
+<msg type="warning" file="NgdBuild" num="440" delta="old" >FF primitive &apos;<arg fmt="%s" index="1">Gill/FRM4X/XLXI_6/XLXI_4/XLXI_9/XLXI_2/blk00000003/blk00000114</arg>&apos; has unconnected output pin
+</msg>
+
+<msg type="warning" file="NgdBuild" num="443" delta="old" >SFF primitive &apos;<arg fmt="%s" index="1">Gill/FRM4X/XLXI_6/XLXI_4/XLXI_9/XLXI_2/blk00000003/blk000003ff</arg>&apos; has unconnected output pin
+</msg>
+
+<msg type="warning" file="NgdBuild" num="443" delta="old" >SFF primitive &apos;<arg fmt="%s" index="1">Gill/FRM4X/XLXI_6/XLXI_4/XLXI_9/XLXI_2/blk00000003/blk00000400</arg>&apos; has unconnected output pin
+</msg>
+
+<msg type="warning" file="NgdBuild" num="440" delta="old" >FF primitive &apos;<arg fmt="%s" index="1">Gill/FRM4X/XLXI_6/XLXI_4/XLXI_13/blk00000003/blk00000114</arg>&apos; has unconnected output pin
+</msg>
+
+<msg type="warning" file="NgdBuild" num="443" delta="old" >SFF primitive &apos;<arg fmt="%s" index="1">Gill/FRM4X/XLXI_6/XLXI_4/XLXI_13/blk00000003/blk000003ff</arg>&apos; has unconnected output pin
+</msg>
+
+<msg type="warning" file="NgdBuild" num="443" delta="old" >SFF primitive &apos;<arg fmt="%s" index="1">Gill/FRM4X/XLXI_6/XLXI_4/XLXI_13/blk00000003/blk00000400</arg>&apos; has unconnected output pin
+</msg>
+
+<msg type="warning" file="NgdBuild" num="440" delta="old" >FF primitive &apos;<arg fmt="%s" index="1">Gill/FRM4X/XLXI_6/XLXI_4/XLXI_6/blk00000003/blk00000114</arg>&apos; has unconnected output pin
+</msg>
+
+<msg type="warning" file="NgdBuild" num="443" delta="old" >SFF primitive &apos;<arg fmt="%s" index="1">Gill/FRM4X/XLXI_6/XLXI_4/XLXI_6/blk00000003/blk000003ff</arg>&apos; has unconnected output pin
+</msg>
+
+<msg type="warning" file="NgdBuild" num="443" delta="old" >SFF primitive &apos;<arg fmt="%s" index="1">Gill/FRM4X/XLXI_6/XLXI_4/XLXI_6/blk00000003/blk00000400</arg>&apos; has unconnected output pin
+</msg>
+
+<msg type="warning" file="NgdBuild" num="440" delta="old" >FF primitive &apos;<arg fmt="%s" index="1">Gill/FRM4X/XLXI_6/XLXI_4/XLXI_5/blk00000003/blk00000114</arg>&apos; has unconnected output pin
+</msg>
+
+<msg type="warning" file="NgdBuild" num="443" delta="old" >SFF primitive &apos;<arg fmt="%s" index="1">Gill/FRM4X/XLXI_6/XLXI_4/XLXI_5/blk00000003/blk000003ff</arg>&apos; has unconnected output pin
+</msg>
+
+<msg type="warning" file="NgdBuild" num="443" delta="old" >SFF primitive &apos;<arg fmt="%s" index="1">Gill/FRM4X/XLXI_6/XLXI_4/XLXI_5/blk00000003/blk00000400</arg>&apos; has unconnected output pin
+</msg>
+
+<msg type="warning" file="NgdBuild" num="440" delta="old" >FF primitive &apos;<arg fmt="%s" index="1">Gill/FRM4X/XLXI_6/XLXI_4/XLXI_4/blk00000003/blk00000114</arg>&apos; has unconnected output pin
+</msg>
+
+<msg type="warning" file="NgdBuild" num="443" delta="old" >SFF primitive &apos;<arg fmt="%s" index="1">Gill/FRM4X/XLXI_6/XLXI_4/XLXI_4/blk00000003/blk000003ff</arg>&apos; has unconnected output pin
+</msg>
+
+<msg type="warning" file="NgdBuild" num="443" delta="old" >SFF primitive &apos;<arg fmt="%s" index="1">Gill/FRM4X/XLXI_6/XLXI_4/XLXI_4/blk00000003/blk00000400</arg>&apos; has unconnected output pin
+</msg>
+
+<msg type="warning" file="NgdBuild" num="440" delta="old" >FF primitive &apos;<arg fmt="%s" index="1">Gill/FRM4X/XLXI_6/XLXI_4/XLXI_3/blk00000003/blk00000114</arg>&apos; has unconnected output pin
+</msg>
+
+<msg type="warning" file="NgdBuild" num="443" delta="old" >SFF primitive &apos;<arg fmt="%s" index="1">Gill/FRM4X/XLXI_6/XLXI_4/XLXI_3/blk00000003/blk000003ff</arg>&apos; has unconnected output pin
+</msg>
+
+<msg type="warning" file="NgdBuild" num="443" delta="old" >SFF primitive &apos;<arg fmt="%s" index="1">Gill/FRM4X/XLXI_6/XLXI_4/XLXI_3/blk00000003/blk00000400</arg>&apos; has unconnected output pin
+</msg>
+
+<msg type="warning" file="NgdBuild" num="440" delta="old" >FF primitive &apos;<arg fmt="%s" index="1">Gill/FRM4X/XLXI_6/XLXI_3/XLXI_9/XLXI_2/blk00000003/blk00000114</arg>&apos; has unconnected output pin
+</msg>
+
+<msg type="warning" file="NgdBuild" num="443" delta="old" >SFF primitive &apos;<arg fmt="%s" index="1">Gill/FRM4X/XLXI_6/XLXI_3/XLXI_9/XLXI_2/blk00000003/blk000003ff</arg>&apos; has unconnected output pin
+</msg>
+
+<msg type="warning" file="NgdBuild" num="443" delta="old" >SFF primitive &apos;<arg fmt="%s" index="1">Gill/FRM4X/XLXI_6/XLXI_3/XLXI_9/XLXI_2/blk00000003/blk00000400</arg>&apos; has unconnected output pin
+</msg>
+
+<msg type="warning" file="NgdBuild" num="440" delta="old" >FF primitive &apos;<arg fmt="%s" index="1">Gill/FRM4X/XLXI_6/XLXI_3/XLXI_13/blk00000003/blk00000114</arg>&apos; has unconnected output pin
+</msg>
+
+<msg type="warning" file="NgdBuild" num="443" delta="old" >SFF primitive &apos;<arg fmt="%s" index="1">Gill/FRM4X/XLXI_6/XLXI_3/XLXI_13/blk00000003/blk000003ff</arg>&apos; has unconnected output pin
+</msg>
+
+<msg type="warning" file="NgdBuild" num="443" delta="old" >SFF primitive &apos;<arg fmt="%s" index="1">Gill/FRM4X/XLXI_6/XLXI_3/XLXI_13/blk00000003/blk00000400</arg>&apos; has unconnected output pin
+</msg>
+
+<msg type="warning" file="NgdBuild" num="440" delta="old" >FF primitive &apos;<arg fmt="%s" index="1">Gill/FRM4X/XLXI_6/XLXI_3/XLXI_6/blk00000003/blk00000114</arg>&apos; has unconnected output pin
+</msg>
+
+<msg type="warning" file="NgdBuild" num="443" delta="old" >SFF primitive &apos;<arg fmt="%s" index="1">Gill/FRM4X/XLXI_6/XLXI_3/XLXI_6/blk00000003/blk000003ff</arg>&apos; has unconnected output pin
+</msg>
+
+<msg type="warning" file="NgdBuild" num="443" delta="old" >SFF primitive &apos;<arg fmt="%s" index="1">Gill/FRM4X/XLXI_6/XLXI_3/XLXI_6/blk00000003/blk00000400</arg>&apos; has unconnected output pin
+</msg>
+
+<msg type="warning" file="NgdBuild" num="440" delta="old" >FF primitive &apos;<arg fmt="%s" index="1">Gill/FRM4X/XLXI_6/XLXI_3/XLXI_5/blk00000003/blk00000114</arg>&apos; has unconnected output pin
+</msg>
+
+<msg type="warning" file="NgdBuild" num="443" delta="old" >SFF primitive &apos;<arg fmt="%s" index="1">Gill/FRM4X/XLXI_6/XLXI_3/XLXI_5/blk00000003/blk000003ff</arg>&apos; has unconnected output pin
+</msg>
+
+<msg type="warning" file="NgdBuild" num="443" delta="old" >SFF primitive &apos;<arg fmt="%s" index="1">Gill/FRM4X/XLXI_6/XLXI_3/XLXI_5/blk00000003/blk00000400</arg>&apos; has unconnected output pin
+</msg>
+
+<msg type="warning" file="NgdBuild" num="440" delta="old" >FF primitive &apos;<arg fmt="%s" index="1">Gill/FRM4X/XLXI_6/XLXI_3/XLXI_4/blk00000003/blk00000114</arg>&apos; has unconnected output pin
+</msg>
+
+<msg type="warning" file="NgdBuild" num="443" delta="old" >SFF primitive &apos;<arg fmt="%s" index="1">Gill/FRM4X/XLXI_6/XLXI_3/XLXI_4/blk00000003/blk000003ff</arg>&apos; has unconnected output pin
+</msg>
+
+<msg type="warning" file="NgdBuild" num="443" delta="old" >SFF primitive &apos;<arg fmt="%s" index="1">Gill/FRM4X/XLXI_6/XLXI_3/XLXI_4/blk00000003/blk00000400</arg>&apos; has unconnected output pin
+</msg>
+
+<msg type="warning" file="NgdBuild" num="440" delta="old" >FF primitive &apos;<arg fmt="%s" index="1">Gill/FRM4X/XLXI_6/XLXI_3/XLXI_3/blk00000003/blk00000114</arg>&apos; has unconnected output pin
+</msg>
+
+<msg type="warning" file="NgdBuild" num="443" delta="old" >SFF primitive &apos;<arg fmt="%s" index="1">Gill/FRM4X/XLXI_6/XLXI_3/XLXI_3/blk00000003/blk000003ff</arg>&apos; has unconnected output pin
+</msg>
+
+<msg type="warning" file="NgdBuild" num="443" delta="old" >SFF primitive &apos;<arg fmt="%s" index="1">Gill/FRM4X/XLXI_6/XLXI_3/XLXI_3/blk00000003/blk00000400</arg>&apos; has unconnected output pin
+</msg>
+
+<msg type="warning" file="NgdBuild" num="440" delta="old" >FF primitive &apos;<arg fmt="%s" index="1">Gill/FRM4X/XLXI_6/XLXI_1/XLXI_9/XLXI_2/blk00000003/blk00000114</arg>&apos; has unconnected output pin
+</msg>
+
+<msg type="warning" file="NgdBuild" num="443" delta="old" >SFF primitive &apos;<arg fmt="%s" index="1">Gill/FRM4X/XLXI_6/XLXI_1/XLXI_9/XLXI_2/blk00000003/blk000003ff</arg>&apos; has unconnected output pin
+</msg>
+
+<msg type="warning" file="NgdBuild" num="443" delta="old" >SFF primitive &apos;<arg fmt="%s" index="1">Gill/FRM4X/XLXI_6/XLXI_1/XLXI_9/XLXI_2/blk00000003/blk00000400</arg>&apos; has unconnected output pin
+</msg>
+
+<msg type="warning" file="NgdBuild" num="440" delta="old" >FF primitive &apos;<arg fmt="%s" index="1">Gill/FRM4X/XLXI_6/XLXI_1/XLXI_13/blk00000003/blk00000114</arg>&apos; has unconnected output pin
+</msg>
+
+<msg type="warning" file="NgdBuild" num="443" delta="old" >SFF primitive &apos;<arg fmt="%s" index="1">Gill/FRM4X/XLXI_6/XLXI_1/XLXI_13/blk00000003/blk000003ff</arg>&apos; has unconnected output pin
+</msg>
+
+<msg type="warning" file="NgdBuild" num="443" delta="old" >SFF primitive &apos;<arg fmt="%s" index="1">Gill/FRM4X/XLXI_6/XLXI_1/XLXI_13/blk00000003/blk00000400</arg>&apos; has unconnected output pin
+</msg>
+
+<msg type="warning" file="NgdBuild" num="440" delta="old" >FF primitive &apos;<arg fmt="%s" index="1">Gill/FRM4X/XLXI_6/XLXI_1/XLXI_6/blk00000003/blk00000114</arg>&apos; has unconnected output pin
+</msg>
+
+<msg type="warning" file="NgdBuild" num="443" delta="old" >SFF primitive &apos;<arg fmt="%s" index="1">Gill/FRM4X/XLXI_6/XLXI_1/XLXI_6/blk00000003/blk000003ff</arg>&apos; has unconnected output pin
+</msg>
+
+<msg type="warning" file="NgdBuild" num="443" delta="old" >SFF primitive &apos;<arg fmt="%s" index="1">Gill/FRM4X/XLXI_6/XLXI_1/XLXI_6/blk00000003/blk00000400</arg>&apos; has unconnected output pin
+</msg>
+
+<msg type="warning" file="NgdBuild" num="440" delta="old" >FF primitive &apos;<arg fmt="%s" index="1">Gill/FRM4X/XLXI_6/XLXI_1/XLXI_5/blk00000003/blk00000114</arg>&apos; has unconnected output pin
+</msg>
+
+<msg type="warning" file="NgdBuild" num="443" delta="old" >SFF primitive &apos;<arg fmt="%s" index="1">Gill/FRM4X/XLXI_6/XLXI_1/XLXI_5/blk00000003/blk000003ff</arg>&apos; has unconnected output pin
+</msg>
+
+<msg type="warning" file="NgdBuild" num="443" delta="old" >SFF primitive &apos;<arg fmt="%s" index="1">Gill/FRM4X/XLXI_6/XLXI_1/XLXI_5/blk00000003/blk00000400</arg>&apos; has unconnected output pin
+</msg>
+
+<msg type="warning" file="NgdBuild" num="440" delta="old" >FF primitive &apos;<arg fmt="%s" index="1">Gill/FRM4X/XLXI_6/XLXI_1/XLXI_4/blk00000003/blk00000114</arg>&apos; has unconnected output pin
+</msg>
+
+<msg type="warning" file="NgdBuild" num="443" delta="old" >SFF primitive &apos;<arg fmt="%s" index="1">Gill/FRM4X/XLXI_6/XLXI_1/XLXI_4/blk00000003/blk000003ff</arg>&apos; has unconnected output pin
+</msg>
+
+<msg type="warning" file="NgdBuild" num="443" delta="old" >SFF primitive &apos;<arg fmt="%s" index="1">Gill/FRM4X/XLXI_6/XLXI_1/XLXI_4/blk00000003/blk00000400</arg>&apos; has unconnected output pin
+</msg>
+
+<msg type="warning" file="NgdBuild" num="440" delta="old" >FF primitive &apos;<arg fmt="%s" index="1">Gill/FRM4X/XLXI_6/XLXI_1/XLXI_3/blk00000003/blk00000114</arg>&apos; has unconnected output pin
+</msg>
+
+<msg type="warning" file="NgdBuild" num="443" delta="old" >SFF primitive &apos;<arg fmt="%s" index="1">Gill/FRM4X/XLXI_6/XLXI_1/XLXI_3/blk00000003/blk000003ff</arg>&apos; has unconnected output pin
+</msg>
+
+<msg type="warning" file="NgdBuild" num="443" delta="old" >SFF primitive &apos;<arg fmt="%s" index="1">Gill/FRM4X/XLXI_6/XLXI_1/XLXI_3/blk00000003/blk00000400</arg>&apos; has unconnected output pin
+</msg>
+
+<msg type="warning" file="NgdBuild" num="452" delta="old" ><arg fmt="%s" index="1">logical</arg> net &apos;<arg fmt="%s" index="2">N9155</arg>&apos; has no driver
+</msg>
+
+<msg type="warning" file="NgdBuild" num="452" delta="old" ><arg fmt="%s" index="1">logical</arg> net &apos;<arg fmt="%s" index="2">N9156</arg>&apos; has no driver
+</msg>
+
+<msg type="warning" file="NgdBuild" num="452" delta="old" ><arg fmt="%s" index="1">logical</arg> net &apos;<arg fmt="%s" index="2">N9157</arg>&apos; has no driver
+</msg>
+
+<msg type="warning" file="NgdBuild" num="452" delta="old" ><arg fmt="%s" index="1">logical</arg> net &apos;<arg fmt="%s" index="2">N9158</arg>&apos; has no driver
+</msg>
+
+<msg type="warning" file="NgdBuild" num="452" delta="old" ><arg fmt="%s" index="1">logical</arg> net &apos;<arg fmt="%s" index="2">N9159</arg>&apos; has no driver
+</msg>
+
+<msg type="warning" file="NgdBuild" num="452" delta="old" ><arg fmt="%s" index="1">logical</arg> net &apos;<arg fmt="%s" index="2">N9160</arg>&apos; has no driver
+</msg>
+
+<msg type="warning" file="NgdBuild" num="452" delta="old" ><arg fmt="%s" index="1">logical</arg> net &apos;<arg fmt="%s" index="2">N9161</arg>&apos; has no driver
+</msg>
+
+<msg type="warning" file="NgdBuild" num="452" delta="old" ><arg fmt="%s" index="1">logical</arg> net &apos;<arg fmt="%s" index="2">N9162</arg>&apos; has no driver
+</msg>
+
+</messages>
+

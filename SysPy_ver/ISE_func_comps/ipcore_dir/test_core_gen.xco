@@ -1,0 +1,60 @@
+##############################################################
+#
+# Xilinx Core Generator version 11.1
+# Date: Tue Mar  9 18:44:42 2010
+#
+##############################################################
+#
+#  This file contains the customisation parameters for a
+#  Xilinx CORE Generator IP GUI. It is strongly recommended
+#  that you do not manually alter this file as it may cause
+#  unexpected and unsupported behavior.
+#
+##############################################################
+#
+# BEGIN Project Options
+SET addpads = False
+SET asysymbol = True
+SET busformat = BusFormatAngleBracketNotRipped
+SET createndf = False
+SET designentry = VHDL
+SET device = xc3s1000
+SET devicefamily = spartan3
+SET flowvendor = Foundation_ISE
+SET formalverification = False
+SET foundationsym = False
+SET implementationfiletype = Ngc
+SET package = fg320
+SET removerpms = False
+SET simulationfiles = Behavioral
+SET speedgrade = -5
+SET verilogsim = True
+SET vhdlsim = True
+# END Project Options
+# BEGIN Select
+SELECT Accumulator family Xilinx,_Inc. 11.0
+# END Select
+# BEGIN Parameters
+CSET accum_mode=Add
+CSET ainit_value=0
+CSET bypass=true
+CSET bypass_sense=Active_High
+CSET c_in=false
+CSET ce=false
+CSET component_name=test_core_gen
+CSET implementation=Fabric
+CSET input_type=Signed
+CSET input_width=16
+CSET latency=1
+CSET latency_configuration=Manual
+CSET output_width=16
+CSET scale=0
+CSET sclr=false
+CSET sinit=false
+CSET sinit_value=0
+CSET sset=false
+CSET sync_ce_priority=Sync_Overrides_CE
+CSET syncctrlpriority=Reset_Overrides_Set
+# END Parameters
+GENERATE
+# CRC: 442db72a

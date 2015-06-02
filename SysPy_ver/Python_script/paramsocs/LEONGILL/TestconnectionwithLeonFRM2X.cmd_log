@@ -1,0 +1,3 @@
+xst -ise "C:/NOC11/TestswithLeon4/LEONGILL/LEONGILL.ise" -intstyle ise -ifn TestconnectionwithLeonFRM2X.xst -ofn TestconnectionwithLeonFRM2X.syr
+xst -ise "C:/NOC11/TestswithLeon4/LEONGILL/LEONGILL.ise" -intstyle ise -ifn TestconnectionwithLeonFRM2X.xst -ofn TestconnectionwithLeonFRM2X.syr
+xst -ise "C:/NOC11/TestswithLeon4/LEONGILL/LEONGILL.ise" -intstyle ise -ifn TestconnectionwithLeonFRM2X.xst -ofn TestconnectionwithLeonFRM2X.syr

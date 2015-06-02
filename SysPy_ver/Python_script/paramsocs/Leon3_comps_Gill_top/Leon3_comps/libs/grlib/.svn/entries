@@ -1,0 +1,77 @@
+10
+
+dir
+140
+http://195.134.67.116/svn/SysPy/SysPy_ver/Python_script/paramsocs/Leon3_comps_Gill_top/Leon3_comps/libs/grlib
+http://195.134.67.116/svn
+
+
+
+2013-06-08T14:41:14.187504Z
+102
+root
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+6226af92-94fb-486e-b1e0-015fb9bc6cc8
+
+dirs.txt
+file
+
+
+
+
+2013-08-29T18:28:01.754336Z
+e086877566a56451b101fbbd9829881a
+2013-06-08T14:41:14.187504Z
+102
+root
+has-props
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+36
+
+amba
+dir
+
+stdlib
+dir
+
+sparc
+dir
+
+modgen
+dir
+
+util
+dir
+

@@ -1,0 +1,101 @@
+--------------------------------------------------------------------------------
+Release 11.1 Trace  (lin)
+Copyright (c) 1995-2009 Xilinx, Inc.  All rights reserved.
+
+/media/4DC444747164E7E6/Xilinx_11.1_Ubuntu/ISE/bin/lin/unwrapped/trce -ise
+/media/My Passport/work/PhD/myHDL_tests/my_conversion/Plex_test/new_code_2/ISE_func_comps/ISE_func_comps.ise
+-intstyle ise -v 3 -s 5 -fastpaths -xml test_core_gen_wrap.twx
+test_core_gen_wrap.ncd -o test_core_gen_wrap.twr test_core_gen_wrap.pcf
+
+Design file:              test_core_gen_wrap.ncd
+Physical constraint file: test_core_gen_wrap.pcf
+Device,package,speed:     xc3s1000,fg320,-5 (PRODUCTION 1.39 2009-03-03)
+Report level:             verbose report
+
+Environment Variable      Effect 
+--------------------      ------ 
+NONE                      No environment variables were set
+--------------------------------------------------------------------------------
+
+INFO:Timing:2698 - No timing constraints found, doing default enumeration.
+INFO:Timing:2752 - To get complete path coverage, use the unconstrained paths 
+   option. All paths that are not constrained will be reported in the 
+   unconstrained paths section(s) of the report.
+INFO:Timing:3339 - The clock-to-out numbers in this timing report are based on 
+   a 50 Ohm transmission line loading model.  For the details of this model, 
+   and for more information on accounting for different loading conditions, 
+   please see the device datasheet.
+
+
+
+Data Sheet report:
+-----------------
+All values displayed in nanoseconds (ns)
+
+Setup/Hold to clock clk
+------------+------------+------------+------------------+--------+
+            |  Setup to  |  Hold to   |                  | Clock  |
+Source      | clk (edge) | clk (edge) |Internal Clock(s) | Phase  |
+------------+------------+------------+------------------+--------+
+b<0>        |    2.295(R)|    1.086(R)|clk_IBUF          |   0.000|
+b<1>        |    1.545(R)|    1.551(R)|clk_IBUF          |   0.000|
+b<2>        |    1.307(R)|    1.794(R)|clk_IBUF          |   0.000|
+b<3>        |    2.546(R)|    0.667(R)|clk_IBUF          |   0.000|
+b<4>        |    1.264(R)|    1.742(R)|clk_IBUF          |   0.000|
+b<5>        |    1.257(R)|    1.611(R)|clk_IBUF          |   0.000|
+b<6>        |    1.512(R)|    1.459(R)|clk_IBUF          |   0.000|
+b<7>        |    1.962(R)|    0.963(R)|clk_IBUF          |   0.000|
+b<8>        |    1.559(R)|    1.334(R)|clk_IBUF          |   0.000|
+b<9>        |    0.969(R)|    1.670(R)|clk_IBUF          |   0.000|
+b<10>       |    1.203(R)|    1.535(R)|clk_IBUF          |   0.000|
+b<11>       |    1.575(R)|    1.102(R)|clk_IBUF          |   0.000|
+b<12>       |    0.382(R)|    2.101(R)|clk_IBUF          |   0.000|
+b<13>       |    0.052(R)|    2.229(R)|clk_IBUF          |   0.000|
+b<14>       |    0.313(R)|    1.916(R)|clk_IBUF          |   0.000|
+b<15>       |   -0.307(R)|    1.967(R)|clk_IBUF          |   0.000|
+bypass      |    2.833(R)|    1.002(R)|clk_IBUF          |   0.000|
+------------+------------+------------+------------------+--------+
+
+Clock clk to Pad
+------------+------------+------------------+--------+
+            | clk (edge) |                  | Clock  |
+Destination |   to PAD   |Internal Clock(s) | Phase  |
+------------+------------+------------------+--------+
+q<0>        |   11.529(R)|clk_IBUF          |   0.000|
+q<1>        |   10.478(R)|clk_IBUF          |   0.000|
+q<2>        |   11.047(R)|clk_IBUF          |   0.000|
+q<3>        |   10.175(R)|clk_IBUF          |   0.000|
+q<4>        |   10.348(R)|clk_IBUF          |   0.000|
+q<5>        |    9.737(R)|clk_IBUF          |   0.000|
+q<6>        |   10.155(R)|clk_IBUF          |   0.000|
+q<7>        |    9.732(R)|clk_IBUF          |   0.000|
+q<8>        |   10.407(R)|clk_IBUF          |   0.000|
+q<9>        |    9.433(R)|clk_IBUF          |   0.000|
+q<10>       |    9.433(R)|clk_IBUF          |   0.000|
+q<11>       |   10.374(R)|clk_IBUF          |   0.000|
+q<12>       |    9.430(R)|clk_IBUF          |   0.000|
+q<13>       |    9.124(R)|clk_IBUF          |   0.000|
+q<14>       |    9.432(R)|clk_IBUF          |   0.000|
+q<15>       |    9.148(R)|clk_IBUF          |   0.000|
+------------+------------+------------------+--------+
+
+Clock to Setup on destination clock clk
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+clk            |    3.678|         |         |         |
+---------------+---------+---------+---------+---------+
+
+
+Analysis completed Tue Mar  9 20:48:24 2010 
+--------------------------------------------------------------------------------
+
+Trace Settings:
+-------------------------
+Trace Settings 
+
+Peak Memory Usage: 83 MB
+
+
+

@@ -1,0 +1,35 @@
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/svn/!svn/ver/102/SysPy/SysPy_ver/Leon3_comps/libs/grlib/sparc
+END
+vhdlsim.txt
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/svn/!svn/ver/102/SysPy/SysPy_ver/Leon3_comps/libs/grlib/sparc/vhdlsim.txt
+END
+vhdlsyn.txt
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/svn/!svn/ver/102/SysPy/SysPy_ver/Leon3_comps/libs/grlib/sparc/vhdlsyn.txt
+END
+sparc.vhd
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/svn/!svn/ver/102/SysPy/SysPy_ver/Leon3_comps/libs/grlib/sparc/sparc.vhd
+END
+cpu_disas.vhd
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/svn/!svn/ver/102/SysPy/SysPy_ver/Leon3_comps/libs/grlib/sparc/cpu_disas.vhd
+END
+sparc_disas.vhd
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/svn/!svn/ver/102/SysPy/SysPy_ver/Leon3_comps/libs/grlib/sparc/sparc_disas.vhd
+END

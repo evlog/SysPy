@@ -1,0 +1,35 @@
+#:C9     
+#Xilinx FPGA Editor Command Log File
+#Editor Version:
+#:V   NT M2.1 L.33
+#Current Working Directory:
+#:D   K:\work\PhD\myHDL_tests\my_conversion\Plex_test\new_code_2\ISE_func_comps
+#Date/Time:
+#:T   Tue Mar 09 20:59:34 2010
+#------------------------------
+	#Reading test_core_gen_wrap.ncd...
+	#Loading device for application Rf_Device from file '3s1000.nph' in environment C:\Xilinx11.1\ISE.
+	#   "test_core_gen_wrap" is an NCD, version 3.2, device xc3s1000, package fg320, speed -5
+	#Building chip graphics...
+	#Loading speed info...
+	#1
+setattr main edit-mode no-logic-changes
+	#2
+setattr main disable_draw on
+	#3
+setattr layer switch_boxes view on
+	#4
+setattr main disable_draw off
+	#Hint: change the visibility of more than one layer at a time by clicking on the apply button, clicking two or more layer buttons, and then clicking on the apply button again.
+	#5
+setattr main disable_draw on
+	#6
+setattr layer routes view on
+	#7
+setattr main disable_draw off
+	#8
+setattr main disable_draw on
+	#9
+setattr layer ratsnests view on
+	#10
+setattr main disable_draw off

@@ -1,0 +1,69 @@
+import _MyExceptions
+reload(_MyExceptions)
+from pdb import *
+
+def leon3_config(attributes, config_options):
+       """
+       FUNCTION: leon3_config(a {}, b{})
+              a: dictionary containing design's attributes
+              b: dictionary containing configuration file paths
+              
+       - Edit processor's VHDL configuration file.
+       """
+	 
+# Python's variable declarations
+#--------------------------------------------------------------------------------------------------------------------------------
+       ClockMul = ''
+       ClockDiv = ''
+       ClockMulDef = 8
+       ClockDivDef = 10
+       SysFreq = ''
+       ProcFreq = ''
+       Leon3ConfigFile = ''
+       Leon3ConfigFileRead = ''
+       Leon3ConfigFilePath = ''
+#--------------------------------------------------------------------------------------------------------------------------------
+
+# Caclulate the div and mul clock generator parameters
+#----------------------------------------------------------------------------------------------------------------------------------
+
+
+       #print config_options
+
+       if ((attributes.has_key("SYS_FREQ")) and (attributes.has_key("PROC_FREQ"))):
+              SysFreq = attributes["SYS_FREQ"]
+              ProcFreq = attributes["PROC_FREQ"]
+
+              if (SysFreq == 100):
+                     if (ProcFreq == 80):
+                            ClockMul = 8
+                            ClockDiv = 10
+                     elif (ProcFreq == 120):
+                            ClockMul = 6
+                            ClockDiv = 5
+
+       
+              ConfigFilePath = config_options["syspy_dir"] + "Leon3_comps/config_temp.vhd"
+              Leon3ConfigFile = open(ConfigFilePath, 'r')
+              Leon3ConfigFileRead = Leon3ConfigFile.read()
+              Leon3ConfigFile.close()
+
+              Leon3ConfigFileRead = Leon3ConfigFileRead + "\n-- Clock generator\n  constant CFG_CLKMUL : integer := (" + str(ClockMul) + ");\n" + "  constant CFG_CLKDIV : integer := (" + str(ClockDiv) + ");\nend;"
+
+              ConfigFilePath = config_options["syspy_dir"] + "Leon3_comps/config.vhd"
+              Leon3ConfigFile = open(ConfigFilePath, 'w')
+              Leon3ConfigFile.write(Leon3ConfigFileRead)
+
+              Leon3ConfigFile.close()
+
+       else:
+              ConfigFilePath = config_options["syspy_dir"] + "Leon3_comps/config_temp.vhd"
+              Leon3ConfigFile = open(ConfigFilePath, 'r')
+              Leon3ConfigFileRead = Leon3ConfigFile.read()
+              Leon3ConfigFile.close()
+
+              Leon3ConfigFileRead = Leon3ConfigFileRead + "\n-- Clock generator\n  constant CFG_CLKMUL : integer := (" + str(ClockMulDef) + ");\n" + "  constant CFG_CLKDIV : integer := (" + str(ClockDivDef) + ");\nend;"
+
+              ConfigFilePath = config_options["syspy_dir"] + "Leon3_comps/config.vhd"
+              Leon3ConfigFile = open(ConfigFilePath, 'w')
+              Leon3ConfigFile.write(Leon3ConfigFileRead)              

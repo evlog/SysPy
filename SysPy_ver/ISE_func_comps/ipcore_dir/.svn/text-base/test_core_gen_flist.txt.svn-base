@@ -1,0 +1,16 @@
+# Output products list for <test_core_gen>
+core_resources.txt
+gui_latency.txt
+test_core_gen.asy
+test_core_gen.gise
+test_core_gen.ise
+test_core_gen.ngc
+test_core_gen.sym
+test_core_gen.v
+test_core_gen.veo
+test_core_gen.vhd
+test_core_gen.vho
+test_core_gen.xco
+test_core_gen.xise
+test_core_gen_flist.txt
+test_core_gen_xmdf.tcl

@@ -1,0 +1,29 @@
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/svn/!svn/ver/102/SysPy/SysPy_ver/Leon3_comps/libs/techmap/altera_mf
+END
+memory_altera_mf.vhd
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/svn/!svn/ver/102/SysPy/SysPy_ver/Leon3_comps/libs/techmap/altera_mf/memory_altera_mf.vhd
+END
+vhdlsyn.txt
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/svn/!svn/ver/102/SysPy/SysPy_ver/Leon3_comps/libs/techmap/altera_mf/vhdlsyn.txt
+END
+clkgen_altera_mf.vhd
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/svn/!svn/ver/102/SysPy/SysPy_ver/Leon3_comps/libs/techmap/altera_mf/clkgen_altera_mf.vhd
+END
+tap_altera_mf.vhd
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/svn/!svn/ver/102/SysPy/SysPy_ver/Leon3_comps/libs/techmap/altera_mf/tap_altera_mf.vhd
+END

@@ -1,0 +1,23 @@
+K 25
+svn:wc:ra_dav:version-url
+V 115
+/svn/!svn/ver/102/SysPy/SysPy_ver/Python_script/paramsocs/Leon3_comps_Gill_top/Leon3_comps/libs/gleichmann/clockgen
+END
+vhdlsyn.txt
+K 25
+svn:wc:ra_dav:version-url
+V 127
+/svn/!svn/ver/102/SysPy/SysPy_ver/Python_script/paramsocs/Leon3_comps_Gill_top/Leon3_comps/libs/gleichmann/clockgen/vhdlsyn.txt
+END
+clockgenerator_ea.vhd
+K 25
+svn:wc:ra_dav:version-url
+V 137
+/svn/!svn/ver/102/SysPy/SysPy_ver/Python_script/paramsocs/Leon3_comps_Gill_top/Leon3_comps/libs/gleichmann/clockgen/clockgenerator_ea.vhd
+END
+ge_clkgen_p.vhd
+K 25
+svn:wc:ra_dav:version-url
+V 131
+/svn/!svn/ver/102/SysPy/SysPy_ver/Python_script/paramsocs/Leon3_comps_Gill_top/Leon3_comps/libs/gleichmann/clockgen/ge_clkgen_p.vhd
+END

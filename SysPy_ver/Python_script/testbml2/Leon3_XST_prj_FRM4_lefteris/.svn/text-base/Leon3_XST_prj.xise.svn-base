@@ -1,0 +1,1922 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
+<project xmlns="http://www.xilinx.com/XMLSchema" xmlns:xil_pn="http://www.xilinx.com/XMLSchema">
+
+  <header>
+    <!-- ISE source project file created by Project Navigator.             -->
+    <!--                                                                   -->
+    <!-- This file contains project source information including a list of -->
+    <!-- project source files, project and process properties.  This file, -->
+    <!-- along with the project source files, is sufficient to open and    -->
+    <!-- implement in ISE Project Navigator.                               -->
+    <!--                                                                   -->
+    <!-- Copyright (c) 1995-2011 Xilinx, Inc.  All rights reserved. -->
+  </header>
+
+  <version xil_pn:ise_version="13.3" xil_pn:schema_version="2"/>
+
+  <files>
+    <file xil_pn:name="ahbrom.vhd" xil_pn:type="FILE_VHDL">
+      <association xil_pn:name="BehavioralSimulation" xil_pn:seqID="1"/>
+      <association xil_pn:name="Implementation" xil_pn:seqID="155"/>
+    </file>
+    <file xil_pn:name="config.vhd" xil_pn:type="FILE_VHDL">
+      <association xil_pn:name="BehavioralSimulation" xil_pn:seqID="2"/>
+      <association xil_pn:name="Implementation" xil_pn:seqID="154"/>
+    </file>
+    <file xil_pn:name="io_buf.vhd" xil_pn:type="FILE_VHDL">
+      <association xil_pn:name="BehavioralSimulation" xil_pn:seqID="3"/>
+      <association xil_pn:name="Implementation" xil_pn:seqID="0"/>
+    </file>
+    <file xil_pn:name="leon3mp.vhd" xil_pn:type="FILE_VHDL">
+      <association xil_pn:name="BehavioralSimulation" xil_pn:seqID="4"/>
+      <association xil_pn:name="Implementation" xil_pn:seqID="183"/>
+    </file>
+    <file xil_pn:name="svga2ch7301c.vhd" xil_pn:type="FILE_VHDL">
+      <association xil_pn:name="BehavioralSimulation" xil_pn:seqID="5"/>
+      <association xil_pn:name="Implementation" xil_pn:seqID="153"/>
+    </file>
+    <file xil_pn:name="Leon3_wrapper.ucf" xil_pn:type="FILE_UCF">
+      <association xil_pn:name="Implementation" xil_pn:seqID="0"/>
+    </file>
+    <file xil_pn:name="proc_wrapper_FRM4X.vhd" xil_pn:type="FILE_VHDL">
+      <association xil_pn:name="BehavioralSimulation" xil_pn:seqID="7"/>
+      <association xil_pn:name="Implementation" xil_pn:seqID="185"/>
+    </file>
+    <file xil_pn:name="../../paramsocs/Leon3_comps_Gill_top/Leon3_comps/libs/cypress/ssram/components.vhd" xil_pn:type="FILE_VHDL">
+      <association xil_pn:name="BehavioralSimulation" xil_pn:seqID="8"/>
+      <association xil_pn:name="Implementation" xil_pn:seqID="0"/>
+      <library xil_pn:name="cypress"/>
+    </file>
+    <file xil_pn:name="../../paramsocs/Leon3_comps_Gill_top/Leon3_comps/libs/cypress/ssram/cy7c1354b.vhd" xil_pn:type="FILE_VHDL">
+      <association xil_pn:name="BehavioralSimulation" xil_pn:seqID="9"/>
+      <association xil_pn:name="Implementation" xil_pn:seqID="0"/>
+      <library xil_pn:name="cypress"/>
+    </file>
+    <file xil_pn:name="../../paramsocs/Leon3_comps_Gill_top/Leon3_comps/libs/cypress/ssram/cy7c1380d.vhd" xil_pn:type="FILE_VHDL">
+      <association xil_pn:name="BehavioralSimulation" xil_pn:seqID="10"/>
+      <association xil_pn:name="Implementation" xil_pn:seqID="0"/>
+      <library xil_pn:name="cypress"/>
+    </file>
+    <file xil_pn:name="../../paramsocs/Leon3_comps_Gill_top/Leon3_comps/libs/cypress/ssram/package_utility.vhd" xil_pn:type="FILE_VHDL">
+      <association xil_pn:name="BehavioralSimulation" xil_pn:seqID="11"/>
+      <association xil_pn:name="Implementation" xil_pn:seqID="0"/>
+      <library xil_pn:name="cypress"/>
+    </file>
+    <file xil_pn:name="../../paramsocs/Leon3_comps_Gill_top/Leon3_comps/libs/esa/memoryctrl/mctrl.vhd" xil_pn:type="FILE_VHDL">
+      <association xil_pn:name="BehavioralSimulation" xil_pn:seqID="12"/>
+      <association xil_pn:name="Implementation" xil_pn:seqID="182"/>
+      <library xil_pn:name="esa"/>
+    </file>
+    <file xil_pn:name="../../paramsocs/Leon3_comps_Gill_top/Leon3_comps/libs/esa/memoryctrl/memoryctrl.vhd" xil_pn:type="FILE_VHDL">
+      <association xil_pn:name="BehavioralSimulation" xil_pn:seqID="13"/>
+      <association xil_pn:name="Implementation" xil_pn:seqID="152"/>
+      <library xil_pn:name="esa"/>
+    </file>
+    <file xil_pn:name="../../paramsocs/Leon3_comps_Gill_top/Leon3_comps/libs/eth/comp/ethcomp.vhd" xil_pn:type="FILE_VHDL">
+      <association xil_pn:name="BehavioralSimulation" xil_pn:seqID="14"/>
+      <association xil_pn:name="Implementation" xil_pn:seqID="118"/>
+      <library xil_pn:name="eth"/>
+    </file>
+    <file xil_pn:name="../../paramsocs/Leon3_comps_Gill_top/Leon3_comps/libs/eth/core/eth_ahb_mst.vhd" xil_pn:type="FILE_VHDL">
+      <association xil_pn:name="BehavioralSimulation" xil_pn:seqID="15"/>
+      <association xil_pn:name="Implementation" xil_pn:seqID="71"/>
+      <library xil_pn:name="eth"/>
+    </file>
+    <file xil_pn:name="../../paramsocs/Leon3_comps_Gill_top/Leon3_comps/libs/eth/core/eth_rstgen.vhd" xil_pn:type="FILE_VHDL">
+      <association xil_pn:name="BehavioralSimulation" xil_pn:seqID="16"/>
+      <association xil_pn:name="Implementation" xil_pn:seqID="39"/>
+      <library xil_pn:name="eth"/>
+    </file>
+    <file xil_pn:name="../../paramsocs/Leon3_comps_Gill_top/Leon3_comps/libs/eth/core/grethc.vhd" xil_pn:type="FILE_VHDL">
+      <association xil_pn:name="BehavioralSimulation" xil_pn:seqID="17"/>
+      <association xil_pn:name="Implementation" xil_pn:seqID="117"/>
+      <library xil_pn:name="eth"/>
+    </file>
+    <file xil_pn:name="../../paramsocs/Leon3_comps_Gill_top/Leon3_comps/libs/eth/wrapper/greth_gbit_gen.vhd" xil_pn:type="FILE_VHDL">
+      <association xil_pn:name="BehavioralSimulation" xil_pn:seqID="18"/>
+      <association xil_pn:name="Implementation" xil_pn:seqID="0"/>
+      <library xil_pn:name="eth"/>
+    </file>
+    <file xil_pn:name="../../paramsocs/Leon3_comps_Gill_top/Leon3_comps/libs/eth/wrapper/greth_gen.vhd" xil_pn:type="FILE_VHDL">
+      <association xil_pn:name="BehavioralSimulation" xil_pn:seqID="19"/>
+      <association xil_pn:name="Implementation" xil_pn:seqID="0"/>
+      <library xil_pn:name="eth"/>
+    </file>
+    <file xil_pn:name="../../paramsocs/Leon3_comps_Gill_top/Leon3_comps/libs/eth/core/greth_pkg.vhd" xil_pn:type="FILE_VHDL">
+      <association xil_pn:name="BehavioralSimulation" xil_pn:seqID="20"/>
+      <association xil_pn:name="Implementation" xil_pn:seqID="38"/>
+      <library xil_pn:name="eth"/>
+    </file>
+    <file xil_pn:name="../../paramsocs/Leon3_comps_Gill_top/Leon3_comps/libs/eth/core/greth_rx.vhd" xil_pn:type="FILE_VHDL">
+      <association xil_pn:name="BehavioralSimulation" xil_pn:seqID="21"/>
+      <association xil_pn:name="Implementation" xil_pn:seqID="70"/>
+      <library xil_pn:name="eth"/>
+    </file>
+    <file xil_pn:name="../../paramsocs/Leon3_comps_Gill_top/Leon3_comps/libs/eth/core/greth_tx.vhd" xil_pn:type="FILE_VHDL">
+      <association xil_pn:name="BehavioralSimulation" xil_pn:seqID="22"/>
+      <association xil_pn:name="Implementation" xil_pn:seqID="69"/>
+      <library xil_pn:name="eth"/>
+    </file>
+    <file xil_pn:name="../../paramsocs/Leon3_comps_Gill_top/Leon3_comps/libs/fmf/utilities/conversions.vhd" xil_pn:type="FILE_VHDL">
+      <association xil_pn:name="BehavioralSimulation" xil_pn:seqID="23"/>
+      <association xil_pn:name="Implementation" xil_pn:seqID="0"/>
+      <library xil_pn:name="fmf"/>
+    </file>
+    <file xil_pn:name="../../paramsocs/Leon3_comps_Gill_top/Leon3_comps/libs/fmf/utilities/gen_utils.vhd" xil_pn:type="FILE_VHDL">
+      <association xil_pn:name="BehavioralSimulation" xil_pn:seqID="24"/>
+      <association xil_pn:name="Implementation" xil_pn:seqID="0"/>
+      <library xil_pn:name="fmf"/>
+    </file>
+    <file xil_pn:name="../../paramsocs/Leon3_comps_Gill_top/Leon3_comps/libs/fmf/fifo/idt7202.vhd" xil_pn:type="FILE_VHDL">
+      <association xil_pn:name="BehavioralSimulation" xil_pn:seqID="25"/>
+      <association xil_pn:name="Implementation" xil_pn:seqID="0"/>
+      <library xil_pn:name="fmf"/>
+    </file>
+    <file xil_pn:name="../../paramsocs/Leon3_comps_Gill_top/Leon3_comps/libs/fmf/flash/flash.vhd" xil_pn:type="FILE_VHDL">
+      <association xil_pn:name="BehavioralSimulation" xil_pn:seqID="26"/>
+      <association xil_pn:name="Implementation" xil_pn:seqID="0"/>
+      <library xil_pn:name="fmf"/>
+    </file>
+    <file xil_pn:name="../../paramsocs/Leon3_comps_Gill_top/Leon3_comps/libs/fmf/flash/m25p80.vhd" xil_pn:type="FILE_VHDL">
+      <association xil_pn:name="BehavioralSimulation" xil_pn:seqID="27"/>
+      <association xil_pn:name="Implementation" xil_pn:seqID="0"/>
+      <library xil_pn:name="fmf"/>
+    </file>
+    <file xil_pn:name="../../paramsocs/Leon3_comps_Gill_top/Leon3_comps/libs/fmf/flash/s25fl064a.vhd" xil_pn:type="FILE_VHDL">
+      <association xil_pn:name="BehavioralSimulation" xil_pn:seqID="28"/>
+      <association xil_pn:name="Implementation" xil_pn:seqID="0"/>
+      <library xil_pn:name="fmf"/>
+    </file>
+    <file xil_pn:name="../../paramsocs/Leon3_comps_Gill_top/Leon3_comps/libs/gaisler/misc/ahbdpram.vhd" xil_pn:type="FILE_VHDL">
+      <association xil_pn:name="BehavioralSimulation" xil_pn:seqID="29"/>
+      <association xil_pn:name="Implementation" xil_pn:seqID="0"/>
+      <library xil_pn:name="gaisler"/>
+    </file>
+    <file xil_pn:name="../../paramsocs/Leon3_comps_Gill_top/Leon3_comps/libs/gaisler/jtag/ahbjtag.vhd" xil_pn:type="FILE_VHDL">
+      <association xil_pn:name="BehavioralSimulation" xil_pn:seqID="30"/>
+      <association xil_pn:name="Implementation" xil_pn:seqID="179"/>
+      <library xil_pn:name="gaisler"/>
+    </file>
+    <file xil_pn:name="../../paramsocs/Leon3_comps_Gill_top/Leon3_comps/libs/gaisler/jtag/ahbjtag_bsd.vhd" xil_pn:type="FILE_VHDL">
+      <association xil_pn:name="BehavioralSimulation" xil_pn:seqID="31"/>
+      <association xil_pn:name="Implementation" xil_pn:seqID="0"/>
+      <library xil_pn:name="gaisler"/>
+    </file>
+    <file xil_pn:name="../../paramsocs/Leon3_comps_Gill_top/Leon3_comps/libs/gaisler/misc/ahbmst.vhd" xil_pn:type="FILE_VHDL">
+      <association xil_pn:name="BehavioralSimulation" xil_pn:seqID="32"/>
+      <association xil_pn:name="Implementation" xil_pn:seqID="137"/>
+      <library xil_pn:name="gaisler"/>
+    </file>
+    <file xil_pn:name="../../paramsocs/Leon3_comps_Gill_top/Leon3_comps/libs/gaisler/misc/ahbmst2.vhd" xil_pn:type="FILE_VHDL">
+      <association xil_pn:name="BehavioralSimulation" xil_pn:seqID="33"/>
+      <association xil_pn:name="Implementation" xil_pn:seqID="0"/>
+      <library xil_pn:name="gaisler"/>
+    </file>
+    <file xil_pn:name="../../paramsocs/Leon3_comps_Gill_top/Leon3_comps/libs/gaisler/misc/ahbram.vhd" xil_pn:type="FILE_VHDL">
+      <association xil_pn:name="BehavioralSimulation" xil_pn:seqID="34"/>
+      <association xil_pn:name="Implementation" xil_pn:seqID="175"/>
+      <library xil_pn:name="gaisler"/>
+    </file>
+    <file xil_pn:name="../../paramsocs/Leon3_comps_Gill_top/Leon3_comps/libs/gaisler/sim/ahbrep.vhd" xil_pn:type="FILE_VHDL">
+      <association xil_pn:name="BehavioralSimulation" xil_pn:seqID="35"/>
+      <association xil_pn:name="Implementation" xil_pn:seqID="0"/>
+      <library xil_pn:name="gaisler"/>
+    </file>
+    <file xil_pn:name="../../paramsocs/Leon3_comps_Gill_top/Leon3_comps/libs/gaisler/misc/ahbstat.vhd" xil_pn:type="FILE_VHDL">
+      <association xil_pn:name="BehavioralSimulation" xil_pn:seqID="36"/>
+      <association xil_pn:name="Implementation" xil_pn:seqID="174"/>
+      <library xil_pn:name="gaisler"/>
+    </file>
+    <file xil_pn:name="../../paramsocs/Leon3_comps_Gill_top/Leon3_comps/libs/gaisler/misc/ahbtrace.vhd" xil_pn:type="FILE_VHDL">
+      <association xil_pn:name="BehavioralSimulation" xil_pn:seqID="37"/>
+      <association xil_pn:name="Implementation" xil_pn:seqID="0"/>
+      <library xil_pn:name="gaisler"/>
+    </file>
+    <file xil_pn:name="../../paramsocs/Leon3_comps_Gill_top/Leon3_comps/libs/gaisler/misc/ahbtrace_mb.vhd" xil_pn:type="FILE_VHDL">
+      <association xil_pn:name="BehavioralSimulation" xil_pn:seqID="38"/>
+      <association xil_pn:name="Implementation" xil_pn:seqID="0"/>
+      <library xil_pn:name="gaisler"/>
+    </file>
+    <file xil_pn:name="../../paramsocs/Leon3_comps_Gill_top/Leon3_comps/libs/gaisler/uart/ahbuart.vhd" xil_pn:type="FILE_VHDL">
+      <association xil_pn:name="BehavioralSimulation" xil_pn:seqID="39"/>
+      <association xil_pn:name="Implementation" xil_pn:seqID="165"/>
+      <library xil_pn:name="gaisler"/>
+    </file>
+    <file xil_pn:name="../../paramsocs/Leon3_comps_Gill_top/Leon3_comps/libs/gaisler/misc/ahb_mst_iface.vhd" xil_pn:type="FILE_VHDL">
+      <association xil_pn:name="BehavioralSimulation" xil_pn:seqID="40"/>
+      <association xil_pn:name="Implementation" xil_pn:seqID="0"/>
+      <library xil_pn:name="gaisler"/>
+    </file>
+    <file xil_pn:name="../../paramsocs/Leon3_comps_Gill_top/Leon3_comps/libs/gaisler/misc/apbps2.vhd" xil_pn:type="FILE_VHDL">
+      <association xil_pn:name="BehavioralSimulation" xil_pn:seqID="41"/>
+      <association xil_pn:name="Implementation" xil_pn:seqID="173"/>
+      <library xil_pn:name="gaisler"/>
+    </file>
+    <file xil_pn:name="../../paramsocs/Leon3_comps_Gill_top/Leon3_comps/libs/gaisler/uart/apbuart.vhd" xil_pn:type="FILE_VHDL">
+      <association xil_pn:name="BehavioralSimulation" xil_pn:seqID="42"/>
+      <association xil_pn:name="Implementation" xil_pn:seqID="164"/>
+      <library xil_pn:name="gaisler"/>
+    </file>
+    <file xil_pn:name="../../paramsocs/Leon3_comps_Gill_top/Leon3_comps/libs/gaisler/misc/apbvga.vhd" xil_pn:type="FILE_VHDL">
+      <association xil_pn:name="BehavioralSimulation" xil_pn:seqID="43"/>
+      <association xil_pn:name="Implementation" xil_pn:seqID="172"/>
+      <library xil_pn:name="gaisler"/>
+    </file>
+    <file xil_pn:name="../../paramsocs/Leon3_comps_Gill_top/Leon3_comps/libs/gaisler/arith/arith.vhd" xil_pn:type="FILE_VHDL">
+      <association xil_pn:name="BehavioralSimulation" xil_pn:seqID="44"/>
+      <association xil_pn:name="Implementation" xil_pn:seqID="8"/>
+      <library xil_pn:name="gaisler"/>
+    </file>
+    <file xil_pn:name="../../paramsocs/Leon3_comps_Gill_top/Leon3_comps/libs/gaisler/sim/ata_device.vhd" xil_pn:type="FILE_VHDL">
+      <association xil_pn:name="BehavioralSimulation" xil_pn:seqID="45"/>
+      <association xil_pn:name="Implementation" xil_pn:seqID="0"/>
+      <library xil_pn:name="gaisler"/>
+    </file>
+    <file xil_pn:name="../../paramsocs/Leon3_comps_Gill_top/Leon3_comps/libs/gaisler/leon3/cachemem.vhd" xil_pn:type="FILE_VHDL">
+      <association xil_pn:name="BehavioralSimulation" xil_pn:seqID="46"/>
+      <association xil_pn:name="Implementation" xil_pn:seqID="145"/>
+      <library xil_pn:name="gaisler"/>
+    </file>
+    <file xil_pn:name="../../paramsocs/Leon3_comps_Gill_top/Leon3_comps/libs/gaisler/misc/charrom.vhd" xil_pn:type="FILE_VHDL">
+      <association xil_pn:name="BehavioralSimulation" xil_pn:seqID="47"/>
+      <association xil_pn:name="Implementation" xil_pn:seqID="136"/>
+      <library xil_pn:name="gaisler"/>
+    </file>
+    <file xil_pn:name="../../paramsocs/Leon3_comps_Gill_top/Leon3_comps/libs/gaisler/misc/charrom_package.vhd" xil_pn:type="FILE_VHDL">
+      <association xil_pn:name="BehavioralSimulation" xil_pn:seqID="48"/>
+      <association xil_pn:name="Implementation" xil_pn:seqID="135"/>
+      <library xil_pn:name="gaisler"/>
+    </file>
+    <file xil_pn:name="../../paramsocs/Leon3_comps_Gill_top/Leon3_comps/libs/gaisler/leon3/cpu_disasx.vhd" xil_pn:type="FILE_VHDL">
+      <association xil_pn:name="BehavioralSimulation" xil_pn:seqID="49"/>
+      <association xil_pn:name="Implementation" xil_pn:seqID="68"/>
+      <library xil_pn:name="gaisler"/>
+    </file>
+    <file xil_pn:name="../../paramsocs/Leon3_comps_Gill_top/Leon3_comps/libs/gaisler/uart/dcom.vhd" xil_pn:type="FILE_VHDL">
+      <association xil_pn:name="BehavioralSimulation" xil_pn:seqID="50"/>
+      <association xil_pn:name="Implementation" xil_pn:seqID="134"/>
+      <library xil_pn:name="gaisler"/>
+    </file>
+    <file xil_pn:name="../../paramsocs/Leon3_comps_Gill_top/Leon3_comps/libs/gaisler/uart/dcom_uart.vhd" xil_pn:type="FILE_VHDL">
+      <association xil_pn:name="BehavioralSimulation" xil_pn:seqID="51"/>
+      <association xil_pn:name="Implementation" xil_pn:seqID="133"/>
+      <library xil_pn:name="gaisler"/>
+    </file>
+    <file xil_pn:name="../../paramsocs/Leon3_comps_Gill_top/Leon3_comps/libs/gaisler/ddr/ddr2buf.vhd" xil_pn:type="FILE_VHDL">
+      <association xil_pn:name="BehavioralSimulation" xil_pn:seqID="52"/>
+      <association xil_pn:name="Implementation" xil_pn:seqID="114"/>
+      <library xil_pn:name="gaisler"/>
+    </file>
+    <file xil_pn:name="../../paramsocs/Leon3_comps_Gill_top/Leon3_comps/libs/gaisler/ddr/ddr2spa.vhd" xil_pn:type="FILE_VHDL">
+      <association xil_pn:name="BehavioralSimulation" xil_pn:seqID="53"/>
+      <association xil_pn:name="Implementation" xil_pn:seqID="181"/>
+      <library xil_pn:name="gaisler"/>
+    </file>
+    <file xil_pn:name="../../paramsocs/Leon3_comps_Gill_top/Leon3_comps/libs/gaisler/ddr/ddr2spax.vhd" xil_pn:type="FILE_VHDL">
+      <association xil_pn:name="BehavioralSimulation" xil_pn:seqID="54"/>
+      <association xil_pn:name="Implementation" xil_pn:seqID="151"/>
+      <library xil_pn:name="gaisler"/>
+    </file>
+    <file xil_pn:name="../../paramsocs/Leon3_comps_Gill_top/Leon3_comps/libs/gaisler/ddr/ddr2spax_ahb.vhd" xil_pn:type="FILE_VHDL">
+      <association xil_pn:name="BehavioralSimulation" xil_pn:seqID="55"/>
+      <association xil_pn:name="Implementation" xil_pn:seqID="113"/>
+      <library xil_pn:name="gaisler"/>
+    </file>
+    <file xil_pn:name="../../paramsocs/Leon3_comps_Gill_top/Leon3_comps/libs/gaisler/ddr/ddr2spax_ddr.vhd" xil_pn:type="FILE_VHDL">
+      <association xil_pn:name="BehavioralSimulation" xil_pn:seqID="56"/>
+      <association xil_pn:name="Implementation" xil_pn:seqID="112"/>
+      <library xil_pn:name="gaisler"/>
+    </file>
+    <file xil_pn:name="../../paramsocs/Leon3_comps_Gill_top/Leon3_comps/libs/gaisler/ddr/ddrsp16a.vhd" xil_pn:type="FILE_VHDL">
+      <association xil_pn:name="BehavioralSimulation" xil_pn:seqID="57"/>
+      <association xil_pn:name="Implementation" xil_pn:seqID="0"/>
+      <library xil_pn:name="gaisler"/>
+    </file>
+    <file xil_pn:name="../../paramsocs/Leon3_comps_Gill_top/Leon3_comps/libs/gaisler/ddr/ddrsp32a.vhd" xil_pn:type="FILE_VHDL">
+      <association xil_pn:name="BehavioralSimulation" xil_pn:seqID="58"/>
+      <association xil_pn:name="Implementation" xil_pn:seqID="0"/>
+      <library xil_pn:name="gaisler"/>
+    </file>
+    <file xil_pn:name="../../paramsocs/Leon3_comps_Gill_top/Leon3_comps/libs/gaisler/ddr/ddrsp64a.vhd" xil_pn:type="FILE_VHDL">
+      <association xil_pn:name="BehavioralSimulation" xil_pn:seqID="59"/>
+      <association xil_pn:name="Implementation" xil_pn:seqID="0"/>
+      <library xil_pn:name="gaisler"/>
+    </file>
+    <file xil_pn:name="../../paramsocs/Leon3_comps_Gill_top/Leon3_comps/libs/gaisler/ddr/ddrspa.vhd" xil_pn:type="FILE_VHDL">
+      <association xil_pn:name="BehavioralSimulation" xil_pn:seqID="60"/>
+      <association xil_pn:name="Implementation" xil_pn:seqID="0"/>
+      <library xil_pn:name="gaisler"/>
+    </file>
+    <file xil_pn:name="../../paramsocs/Leon3_comps_Gill_top/Leon3_comps/libs/gaisler/ddr/ddr_phy.vhd" xil_pn:type="FILE_VHDL">
+      <association xil_pn:name="BehavioralSimulation" xil_pn:seqID="61"/>
+      <association xil_pn:name="Implementation" xil_pn:seqID="150"/>
+      <library xil_pn:name="gaisler"/>
+    </file>
+    <file xil_pn:name="../../paramsocs/Leon3_comps_Gill_top/Leon3_comps/libs/gaisler/sim/delay_wire.vhd" xil_pn:type="FILE_VHDL">
+      <association xil_pn:name="BehavioralSimulation" xil_pn:seqID="62"/>
+      <association xil_pn:name="Implementation" xil_pn:seqID="0"/>
+      <library xil_pn:name="gaisler"/>
+    </file>
+    <file xil_pn:name="../../paramsocs/Leon3_comps_Gill_top/Leon3_comps/libs/gaisler/arith/div32.vhd" xil_pn:type="FILE_VHDL">
+      <association xil_pn:name="BehavioralSimulation" xil_pn:seqID="63"/>
+      <association xil_pn:name="Implementation" xil_pn:seqID="116"/>
+      <library xil_pn:name="gaisler"/>
+    </file>
+    <file xil_pn:name="../../paramsocs/Leon3_comps_Gill_top/Leon3_comps/libs/gaisler/leon3/dsu3.vhd" xil_pn:type="FILE_VHDL">
+      <association xil_pn:name="BehavioralSimulation" xil_pn:seqID="64"/>
+      <association xil_pn:name="Implementation" xil_pn:seqID="178"/>
+      <library xil_pn:name="gaisler"/>
+    </file>
+    <file xil_pn:name="../../paramsocs/Leon3_comps_Gill_top/Leon3_comps/libs/gaisler/leon3/dsu3x.vhd" xil_pn:type="FILE_VHDL">
+      <association xil_pn:name="BehavioralSimulation" xil_pn:seqID="65"/>
+      <association xil_pn:name="Implementation" xil_pn:seqID="144"/>
+      <library xil_pn:name="gaisler"/>
+    </file>
+    <file xil_pn:name="../../paramsocs/Leon3_comps_Gill_top/Leon3_comps/libs/gaisler/greth/ethernet_mac.vhd" xil_pn:type="FILE_VHDL">
+      <association xil_pn:name="BehavioralSimulation" xil_pn:seqID="66"/>
+      <association xil_pn:name="Implementation" xil_pn:seqID="111"/>
+      <library xil_pn:name="gaisler"/>
+    </file>
+    <file xil_pn:name="../../paramsocs/Leon3_comps_Gill_top/Leon3_comps/libs/gaisler/misc/gptimer.vhd" xil_pn:type="FILE_VHDL">
+      <association xil_pn:name="BehavioralSimulation" xil_pn:seqID="67"/>
+      <association xil_pn:name="Implementation" xil_pn:seqID="171"/>
+      <library xil_pn:name="gaisler"/>
+    </file>
+    <file xil_pn:name="../../paramsocs/Leon3_comps_Gill_top/Leon3_comps/libs/gaisler/misc/gracectrl.vhd" xil_pn:type="FILE_VHDL">
+      <association xil_pn:name="BehavioralSimulation" xil_pn:seqID="68"/>
+      <association xil_pn:name="Implementation" xil_pn:seqID="170"/>
+      <library xil_pn:name="gaisler"/>
+    </file>
+    <file xil_pn:name="../../paramsocs/Leon3_comps_Gill_top/Leon3_comps/libs/gaisler/greth/greth.vhd" xil_pn:type="FILE_VHDL">
+      <association xil_pn:name="BehavioralSimulation" xil_pn:seqID="69"/>
+      <association xil_pn:name="Implementation" xil_pn:seqID="149"/>
+      <library xil_pn:name="gaisler"/>
+    </file>
+    <file xil_pn:name="../../paramsocs/Leon3_comps_Gill_top/Leon3_comps/libs/gaisler/greth/grethm.vhd" xil_pn:type="FILE_VHDL">
+      <association xil_pn:name="BehavioralSimulation" xil_pn:seqID="70"/>
+      <association xil_pn:name="Implementation" xil_pn:seqID="180"/>
+      <library xil_pn:name="gaisler"/>
+    </file>
+    <file xil_pn:name="../../paramsocs/Leon3_comps_Gill_top/Leon3_comps/libs/gaisler/greth/greth_gbit.vhd" xil_pn:type="FILE_VHDL">
+      <association xil_pn:name="BehavioralSimulation" xil_pn:seqID="71"/>
+      <association xil_pn:name="Implementation" xil_pn:seqID="148"/>
+      <library xil_pn:name="gaisler"/>
+    </file>
+    <file xil_pn:name="../../paramsocs/Leon3_comps_Gill_top/Leon3_comps/libs/gaisler/leon3/grfpushwx.vhd" xil_pn:type="FILE_VHDL">
+      <association xil_pn:name="BehavioralSimulation" xil_pn:seqID="72"/>
+      <association xil_pn:name="Implementation" xil_pn:seqID="0"/>
+      <library xil_pn:name="gaisler"/>
+    </file>
+    <file xil_pn:name="../../paramsocs/Leon3_comps_Gill_top/Leon3_comps/libs/gaisler/leon3/grfpwx.vhd" xil_pn:type="FILE_VHDL">
+      <association xil_pn:name="BehavioralSimulation" xil_pn:seqID="73"/>
+      <association xil_pn:name="Implementation" xil_pn:seqID="143"/>
+      <library xil_pn:name="gaisler"/>
+    </file>
+    <file xil_pn:name="../../paramsocs/Leon3_comps_Gill_top/Leon3_comps/libs/gaisler/leon3/grfpwxsh.vhd" xil_pn:type="FILE_VHDL">
+      <association xil_pn:name="BehavioralSimulation" xil_pn:seqID="74"/>
+      <association xil_pn:name="Implementation" xil_pn:seqID="0"/>
+      <library xil_pn:name="gaisler"/>
+    </file>
+    <file xil_pn:name="../../paramsocs/Leon3_comps_Gill_top/Leon3_comps/libs/gaisler/misc/grgpio.vhd" xil_pn:type="FILE_VHDL">
+      <association xil_pn:name="BehavioralSimulation" xil_pn:seqID="75"/>
+      <association xil_pn:name="Implementation" xil_pn:seqID="169"/>
+      <library xil_pn:name="gaisler"/>
+    </file>
+    <file xil_pn:name="../../paramsocs/Leon3_comps_Gill_top/Leon3_comps/libs/gaisler/misc/grgpreg.vhd" xil_pn:type="FILE_VHDL">
+      <association xil_pn:name="BehavioralSimulation" xil_pn:seqID="76"/>
+      <association xil_pn:name="Implementation" xil_pn:seqID="0"/>
+      <library xil_pn:name="gaisler"/>
+    </file>
+    <file xil_pn:name="../../paramsocs/Leon3_comps_Gill_top/Leon3_comps/libs/gaisler/leon3/grlfpwx.vhd" xil_pn:type="FILE_VHDL">
+      <association xil_pn:name="BehavioralSimulation" xil_pn:seqID="77"/>
+      <association xil_pn:name="Implementation" xil_pn:seqID="142"/>
+      <library xil_pn:name="gaisler"/>
+    </file>
+    <file xil_pn:name="../../paramsocs/Leon3_comps_Gill_top/Leon3_comps/libs/gaisler/misc/grsysmon.vhd" xil_pn:type="FILE_VHDL">
+      <association xil_pn:name="BehavioralSimulation" xil_pn:seqID="78"/>
+      <association xil_pn:name="Implementation" xil_pn:seqID="0"/>
+      <library xil_pn:name="gaisler"/>
+    </file>
+    <file xil_pn:name="../../paramsocs/Leon3_comps_Gill_top/Leon3_comps/libs/gaisler/sim/grusbdcsim.vhd" xil_pn:type="FILE_VHDL">
+      <association xil_pn:name="BehavioralSimulation" xil_pn:seqID="79"/>
+      <association xil_pn:name="Implementation" xil_pn:seqID="0"/>
+      <library xil_pn:name="gaisler"/>
+    </file>
+    <file xil_pn:name="../../paramsocs/Leon3_comps_Gill_top/Leon3_comps/libs/gaisler/sim/grusb_dclsim.vhd" xil_pn:type="FILE_VHDL">
+      <association xil_pn:name="BehavioralSimulation" xil_pn:seqID="80"/>
+      <association xil_pn:name="Implementation" xil_pn:seqID="0"/>
+      <library xil_pn:name="gaisler"/>
+    </file>
+    <file xil_pn:name="../../paramsocs/Leon3_comps_Gill_top/Leon3_comps/libs/gaisler/misc/i2cmst.vhd" xil_pn:type="FILE_VHDL">
+      <association xil_pn:name="BehavioralSimulation" xil_pn:seqID="81"/>
+      <association xil_pn:name="Implementation" xil_pn:seqID="168"/>
+      <library xil_pn:name="gaisler"/>
+    </file>
+    <file xil_pn:name="../../paramsocs/Leon3_comps_Gill_top/Leon3_comps/libs/gaisler/misc/i2cmst_gen.vhd" xil_pn:type="FILE_VHDL">
+      <association xil_pn:name="BehavioralSimulation" xil_pn:seqID="82"/>
+      <association xil_pn:name="Implementation" xil_pn:seqID="0"/>
+      <library xil_pn:name="gaisler"/>
+    </file>
+    <file xil_pn:name="../../paramsocs/Leon3_comps_Gill_top/Leon3_comps/libs/gaisler/misc/i2cslv.vhd" xil_pn:type="FILE_VHDL">
+      <association xil_pn:name="BehavioralSimulation" xil_pn:seqID="83"/>
+      <association xil_pn:name="Implementation" xil_pn:seqID="0"/>
+      <library xil_pn:name="gaisler"/>
+    </file>
+    <file xil_pn:name="../../paramsocs/Leon3_comps_Gill_top/Leon3_comps/libs/gaisler/leon3/irqmp.vhd" xil_pn:type="FILE_VHDL">
+      <association xil_pn:name="BehavioralSimulation" xil_pn:seqID="84"/>
+      <association xil_pn:name="Implementation" xil_pn:seqID="177"/>
+      <library xil_pn:name="gaisler"/>
+    </file>
+    <file xil_pn:name="../../paramsocs/Leon3_comps_Gill_top/Leon3_comps/libs/gaisler/leon3/iu3.vhd" xil_pn:type="FILE_VHDL">
+      <association xil_pn:name="BehavioralSimulation" xil_pn:seqID="85"/>
+      <association xil_pn:name="Implementation" xil_pn:seqID="109"/>
+      <library xil_pn:name="gaisler"/>
+    </file>
+    <file xil_pn:name="../../paramsocs/Leon3_comps_Gill_top/Leon3_comps/libs/gaisler/jtag/jtag.vhd" xil_pn:type="FILE_VHDL">
+      <association xil_pn:name="BehavioralSimulation" xil_pn:seqID="86"/>
+      <association xil_pn:name="Implementation" xil_pn:seqID="147"/>
+      <library xil_pn:name="gaisler"/>
+    </file>
+    <file xil_pn:name="../../paramsocs/Leon3_comps_Gill_top/Leon3_comps/libs/gaisler/jtag/jtagcom.vhd" xil_pn:type="FILE_VHDL">
+      <association xil_pn:name="BehavioralSimulation" xil_pn:seqID="87"/>
+      <association xil_pn:name="Implementation" xil_pn:seqID="146"/>
+      <library xil_pn:name="gaisler"/>
+    </file>
+    <file xil_pn:name="../../paramsocs/Leon3_comps_Gill_top/Leon3_comps/libs/gaisler/jtag/jtagtst.vhd" xil_pn:type="FILE_VHDL">
+      <association xil_pn:name="BehavioralSimulation" xil_pn:seqID="88"/>
+      <association xil_pn:name="Implementation" xil_pn:seqID="0"/>
+      <library xil_pn:name="gaisler"/>
+    </file>
+    <file xil_pn:name="../../paramsocs/Leon3_comps_Gill_top/Leon3_comps/libs/gaisler/leon3/leon3.vhd" xil_pn:type="FILE_VHDL">
+      <association xil_pn:name="BehavioralSimulation" xil_pn:seqID="89"/>
+      <association xil_pn:name="Implementation" xil_pn:seqID="7"/>
+      <library xil_pn:name="gaisler"/>
+    </file>
+    <file xil_pn:name="../../paramsocs/Leon3_comps_Gill_top/Leon3_comps/libs/gaisler/leon3/leon3cg.vhd" xil_pn:type="FILE_VHDL">
+      <association xil_pn:name="BehavioralSimulation" xil_pn:seqID="90"/>
+      <association xil_pn:name="Implementation" xil_pn:seqID="0"/>
+      <library xil_pn:name="gaisler"/>
+    </file>
+    <file xil_pn:name="../../paramsocs/Leon3_comps_Gill_top/Leon3_comps/libs/gaisler/leon3/leon3s.vhd" xil_pn:type="FILE_VHDL">
+      <association xil_pn:name="BehavioralSimulation" xil_pn:seqID="91"/>
+      <association xil_pn:name="Implementation" xil_pn:seqID="176"/>
+      <library xil_pn:name="gaisler"/>
+    </file>
+    <file xil_pn:name="../../paramsocs/Leon3_comps_Gill_top/Leon3_comps/libs/gaisler/leon3/leon3sh.vhd" xil_pn:type="FILE_VHDL">
+      <association xil_pn:name="BehavioralSimulation" xil_pn:seqID="92"/>
+      <association xil_pn:name="Implementation" xil_pn:seqID="0"/>
+      <library xil_pn:name="gaisler"/>
+    </file>
+    <file xil_pn:name="../../paramsocs/Leon3_comps_Gill_top/Leon3_comps/libs/gaisler/leon3/libcache.vhd" xil_pn:type="FILE_VHDL">
+      <association xil_pn:name="BehavioralSimulation" xil_pn:seqID="93"/>
+      <association xil_pn:name="Implementation" xil_pn:seqID="13"/>
+      <library xil_pn:name="gaisler"/>
+    </file>
+    <file xil_pn:name="../../paramsocs/Leon3_comps_Gill_top/Leon3_comps/libs/gaisler/uart/libdcom.vhd" xil_pn:type="FILE_VHDL">
+      <association xil_pn:name="BehavioralSimulation" xil_pn:seqID="94"/>
+      <association xil_pn:name="Implementation" xil_pn:seqID="106"/>
+      <library xil_pn:name="gaisler"/>
+    </file>
+    <file xil_pn:name="../../paramsocs/Leon3_comps_Gill_top/Leon3_comps/libs/gaisler/leon3/libiu.vhd" xil_pn:type="FILE_VHDL">
+      <association xil_pn:name="BehavioralSimulation" xil_pn:seqID="95"/>
+      <association xil_pn:name="Implementation" xil_pn:seqID="10"/>
+      <library xil_pn:name="gaisler"/>
+    </file>
+    <file xil_pn:name="../../paramsocs/Leon3_comps_Gill_top/Leon3_comps/libs/gaisler/jtag/libjtagcom.vhd" xil_pn:type="FILE_VHDL">
+      <association xil_pn:name="BehavioralSimulation" xil_pn:seqID="96"/>
+      <association xil_pn:name="Implementation" xil_pn:seqID="110"/>
+      <library xil_pn:name="gaisler"/>
+    </file>
+    <file xil_pn:name="../../paramsocs/Leon3_comps_Gill_top/Leon3_comps/libs/gaisler/leon3/libmmu.vhd" xil_pn:type="FILE_VHDL">
+      <association xil_pn:name="BehavioralSimulation" xil_pn:seqID="97"/>
+      <association xil_pn:name="Implementation" xil_pn:seqID="18"/>
+      <library xil_pn:name="gaisler"/>
+    </file>
+    <file xil_pn:name="../../paramsocs/Leon3_comps_Gill_top/Leon3_comps/libs/gaisler/leon3/libproc3.vhd" xil_pn:type="FILE_VHDL">
+      <association xil_pn:name="BehavioralSimulation" xil_pn:seqID="98"/>
+      <association xil_pn:name="Implementation" xil_pn:seqID="141"/>
+      <library xil_pn:name="gaisler"/>
+    </file>
+    <file xil_pn:name="../../paramsocs/Leon3_comps_Gill_top/Leon3_comps/libs/gaisler/misc/logan.vhd" xil_pn:type="FILE_VHDL">
+      <association xil_pn:name="BehavioralSimulation" xil_pn:seqID="99"/>
+      <association xil_pn:name="Implementation" xil_pn:seqID="0"/>
+      <library xil_pn:name="gaisler"/>
+    </file>
+    <file xil_pn:name="../../paramsocs/Leon3_comps_Gill_top/Leon3_comps/libs/gaisler/memctrl/memctrl.vhd" xil_pn:type="FILE_VHDL">
+      <association xil_pn:name="BehavioralSimulation" xil_pn:seqID="100"/>
+      <association xil_pn:name="Implementation" xil_pn:seqID="63"/>
+      <library xil_pn:name="gaisler"/>
+    </file>
+    <file xil_pn:name="../../paramsocs/Leon3_comps_Gill_top/Leon3_comps/libs/gaisler/leon3/mfpwx.vhd" xil_pn:type="FILE_VHDL">
+      <association xil_pn:name="BehavioralSimulation" xil_pn:seqID="101"/>
+      <association xil_pn:name="Implementation" xil_pn:seqID="140"/>
+      <library xil_pn:name="gaisler"/>
+    </file>
+    <file xil_pn:name="../../paramsocs/Leon3_comps_Gill_top/Leon3_comps/libs/gaisler/misc/misc.vhd" xil_pn:type="FILE_VHDL">
+      <association xil_pn:name="BehavioralSimulation" xil_pn:seqID="102"/>
+      <association xil_pn:name="Implementation" xil_pn:seqID="62"/>
+      <library xil_pn:name="gaisler"/>
+    </file>
+    <file xil_pn:name="../../paramsocs/Leon3_comps_Gill_top/Leon3_comps/libs/gaisler/leon3/mmu.vhd" xil_pn:type="FILE_VHDL">
+      <association xil_pn:name="BehavioralSimulation" xil_pn:seqID="103"/>
+      <association xil_pn:name="Implementation" xil_pn:seqID="67"/>
+      <library xil_pn:name="gaisler"/>
+    </file>
+    <file xil_pn:name="../../paramsocs/Leon3_comps_Gill_top/Leon3_comps/libs/gaisler/leon3/mmuconfig.vhd" xil_pn:type="FILE_VHDL">
+      <association xil_pn:name="BehavioralSimulation" xil_pn:seqID="104"/>
+      <association xil_pn:name="Implementation" xil_pn:seqID="6"/>
+      <library xil_pn:name="gaisler"/>
+    </file>
+    <file xil_pn:name="../../paramsocs/Leon3_comps_Gill_top/Leon3_comps/libs/gaisler/leon3/mmuiface.vhd" xil_pn:type="FILE_VHDL">
+      <association xil_pn:name="BehavioralSimulation" xil_pn:seqID="105"/>
+      <association xil_pn:name="Implementation" xil_pn:seqID="9"/>
+      <library xil_pn:name="gaisler"/>
+    </file>
+    <file xil_pn:name="../../paramsocs/Leon3_comps_Gill_top/Leon3_comps/libs/gaisler/leon3/mmulru.vhd" xil_pn:type="FILE_VHDL">
+      <association xil_pn:name="BehavioralSimulation" xil_pn:seqID="106"/>
+      <association xil_pn:name="Implementation" xil_pn:seqID="23"/>
+      <library xil_pn:name="gaisler"/>
+    </file>
+    <file xil_pn:name="../../paramsocs/Leon3_comps_Gill_top/Leon3_comps/libs/gaisler/leon3/mmulrue.vhd" xil_pn:type="FILE_VHDL">
+      <association xil_pn:name="BehavioralSimulation" xil_pn:seqID="107"/>
+      <association xil_pn:name="Implementation" xil_pn:seqID="17"/>
+      <library xil_pn:name="gaisler"/>
+    </file>
+    <file xil_pn:name="../../paramsocs/Leon3_comps_Gill_top/Leon3_comps/libs/gaisler/leon3/mmutlb.vhd" xil_pn:type="FILE_VHDL">
+      <association xil_pn:name="BehavioralSimulation" xil_pn:seqID="108"/>
+      <association xil_pn:name="Implementation" xil_pn:seqID="37"/>
+      <library xil_pn:name="gaisler"/>
+    </file>
+    <file xil_pn:name="../../paramsocs/Leon3_comps_Gill_top/Leon3_comps/libs/gaisler/leon3/mmutlbcam.vhd" xil_pn:type="FILE_VHDL">
+      <association xil_pn:name="BehavioralSimulation" xil_pn:seqID="109"/>
+      <association xil_pn:name="Implementation" xil_pn:seqID="22"/>
+      <library xil_pn:name="gaisler"/>
+    </file>
+    <file xil_pn:name="../../paramsocs/Leon3_comps_Gill_top/Leon3_comps/libs/gaisler/leon3/mmutw.vhd" xil_pn:type="FILE_VHDL">
+      <association xil_pn:name="BehavioralSimulation" xil_pn:seqID="110"/>
+      <association xil_pn:name="Implementation" xil_pn:seqID="36"/>
+      <library xil_pn:name="gaisler"/>
+    </file>
+    <file xil_pn:name="../../paramsocs/Leon3_comps_Gill_top/Leon3_comps/libs/gaisler/leon3/mmu_acache.vhd" xil_pn:type="FILE_VHDL">
+      <association xil_pn:name="BehavioralSimulation" xil_pn:seqID="111"/>
+      <association xil_pn:name="Implementation" xil_pn:seqID="66"/>
+      <library xil_pn:name="gaisler"/>
+    </file>
+    <file xil_pn:name="../../paramsocs/Leon3_comps_Gill_top/Leon3_comps/libs/gaisler/leon3/mmu_cache.vhd" xil_pn:type="FILE_VHDL">
+      <association xil_pn:name="BehavioralSimulation" xil_pn:seqID="112"/>
+      <association xil_pn:name="Implementation" xil_pn:seqID="108"/>
+      <library xil_pn:name="gaisler"/>
+    </file>
+    <file xil_pn:name="../../paramsocs/Leon3_comps_Gill_top/Leon3_comps/libs/gaisler/leon3/mmu_dcache.vhd" xil_pn:type="FILE_VHDL">
+      <association xil_pn:name="BehavioralSimulation" xil_pn:seqID="113"/>
+      <association xil_pn:name="Implementation" xil_pn:seqID="65"/>
+      <library xil_pn:name="gaisler"/>
+    </file>
+    <file xil_pn:name="../../paramsocs/Leon3_comps_Gill_top/Leon3_comps/libs/gaisler/leon3/mmu_icache.vhd" xil_pn:type="FILE_VHDL">
+      <association xil_pn:name="BehavioralSimulation" xil_pn:seqID="114"/>
+      <association xil_pn:name="Implementation" xil_pn:seqID="64"/>
+      <library xil_pn:name="gaisler"/>
+    </file>
+    <file xil_pn:name="../../paramsocs/Leon3_comps_Gill_top/Leon3_comps/libs/gaisler/arith/mul32.vhd" xil_pn:type="FILE_VHDL">
+      <association xil_pn:name="BehavioralSimulation" xil_pn:seqID="115"/>
+      <association xil_pn:name="Implementation" xil_pn:seqID="115"/>
+      <library xil_pn:name="gaisler"/>
+    </file>
+    <file xil_pn:name="../../paramsocs/Leon3_comps_Gill_top/Leon3_comps/libs/gaisler/net/net.vhd" xil_pn:type="FILE_VHDL">
+      <association xil_pn:name="BehavioralSimulation" xil_pn:seqID="116"/>
+      <association xil_pn:name="Implementation" xil_pn:seqID="61"/>
+      <library xil_pn:name="gaisler"/>
+    </file>
+    <file xil_pn:name="../../paramsocs/Leon3_comps_Gill_top/Leon3_comps/libs/gaisler/sim/phy.vhd" xil_pn:type="FILE_VHDL">
+      <association xil_pn:name="BehavioralSimulation" xil_pn:seqID="117"/>
+      <association xil_pn:name="Implementation" xil_pn:seqID="0"/>
+      <library xil_pn:name="gaisler"/>
+    </file>
+    <file xil_pn:name="../../paramsocs/Leon3_comps_Gill_top/Leon3_comps/libs/gaisler/leon3/proc3.vhd" xil_pn:type="FILE_VHDL">
+      <association xil_pn:name="BehavioralSimulation" xil_pn:seqID="118"/>
+      <association xil_pn:name="Implementation" xil_pn:seqID="139"/>
+      <library xil_pn:name="gaisler"/>
+    </file>
+    <file xil_pn:name="../../paramsocs/Leon3_comps_Gill_top/Leon3_comps/libs/gaisler/sim/pwm_check.vhd" xil_pn:type="FILE_VHDL">
+      <association xil_pn:name="BehavioralSimulation" xil_pn:seqID="119"/>
+      <association xil_pn:name="Implementation" xil_pn:seqID="0"/>
+      <library xil_pn:name="gaisler"/>
+    </file>
+    <file xil_pn:name="../../paramsocs/Leon3_comps_Gill_top/Leon3_comps/libs/gaisler/misc/rstgen.vhd" xil_pn:type="FILE_VHDL">
+      <association xil_pn:name="BehavioralSimulation" xil_pn:seqID="120"/>
+      <association xil_pn:name="Implementation" xil_pn:seqID="167"/>
+      <library xil_pn:name="gaisler"/>
+    </file>
+    <file xil_pn:name="../../paramsocs/Leon3_comps_Gill_top/Leon3_comps/libs/gaisler/memctrl/sdctrl.vhd" xil_pn:type="FILE_VHDL">
+      <association xil_pn:name="BehavioralSimulation" xil_pn:seqID="121"/>
+      <association xil_pn:name="Implementation" xil_pn:seqID="0"/>
+      <library xil_pn:name="gaisler"/>
+    </file>
+    <file xil_pn:name="../../paramsocs/Leon3_comps_Gill_top/Leon3_comps/libs/gaisler/memctrl/sdctrl64.vhd" xil_pn:type="FILE_VHDL">
+      <association xil_pn:name="BehavioralSimulation" xil_pn:seqID="122"/>
+      <association xil_pn:name="Implementation" xil_pn:seqID="0"/>
+      <library xil_pn:name="gaisler"/>
+    </file>
+    <file xil_pn:name="../../paramsocs/Leon3_comps_Gill_top/Leon3_comps/libs/gaisler/memctrl/sdmctrl.vhd" xil_pn:type="FILE_VHDL">
+      <association xil_pn:name="BehavioralSimulation" xil_pn:seqID="123"/>
+      <association xil_pn:name="Implementation" xil_pn:seqID="138"/>
+      <library xil_pn:name="gaisler"/>
+    </file>
+    <file xil_pn:name="../../paramsocs/Leon3_comps_Gill_top/Leon3_comps/libs/gaisler/sim/sim.vhd" xil_pn:type="FILE_VHDL">
+      <association xil_pn:name="BehavioralSimulation" xil_pn:seqID="124"/>
+      <association xil_pn:name="Implementation" xil_pn:seqID="0"/>
+      <library xil_pn:name="gaisler"/>
+    </file>
+    <file xil_pn:name="../../paramsocs/Leon3_comps_Gill_top/Leon3_comps/libs/gaisler/misc/spictrl.vhd" xil_pn:type="FILE_VHDL">
+      <association xil_pn:name="BehavioralSimulation" xil_pn:seqID="125"/>
+      <association xil_pn:name="Implementation" xil_pn:seqID="0"/>
+      <library xil_pn:name="gaisler"/>
+    </file>
+    <file xil_pn:name="../../paramsocs/Leon3_comps_Gill_top/Leon3_comps/libs/gaisler/memctrl/spimctrl.vhd" xil_pn:type="FILE_VHDL">
+      <association xil_pn:name="BehavioralSimulation" xil_pn:seqID="126"/>
+      <association xil_pn:name="Implementation" xil_pn:seqID="0"/>
+      <library xil_pn:name="gaisler"/>
+    </file>
+    <file xil_pn:name="../../paramsocs/Leon3_comps_Gill_top/Leon3_comps/libs/gaisler/sim/spi_flash.vhd" xil_pn:type="FILE_VHDL">
+      <association xil_pn:name="BehavioralSimulation" xil_pn:seqID="127"/>
+      <association xil_pn:name="Implementation" xil_pn:seqID="0"/>
+      <library xil_pn:name="gaisler"/>
+    </file>
+    <file xil_pn:name="../../paramsocs/Leon3_comps_Gill_top/Leon3_comps/libs/gaisler/sim/sram.vhd" xil_pn:type="FILE_VHDL">
+      <association xil_pn:name="BehavioralSimulation" xil_pn:seqID="128"/>
+      <association xil_pn:name="Implementation" xil_pn:seqID="0"/>
+      <library xil_pn:name="gaisler"/>
+    </file>
+    <file xil_pn:name="../../paramsocs/Leon3_comps_Gill_top/Leon3_comps/libs/gaisler/sim/sram16.vhd" xil_pn:type="FILE_VHDL">
+      <association xil_pn:name="BehavioralSimulation" xil_pn:seqID="129"/>
+      <association xil_pn:name="Implementation" xil_pn:seqID="0"/>
+      <library xil_pn:name="gaisler"/>
+    </file>
+    <file xil_pn:name="../../paramsocs/Leon3_comps_Gill_top/Leon3_comps/libs/gaisler/memctrl/srctrl.vhd" xil_pn:type="FILE_VHDL">
+      <association xil_pn:name="BehavioralSimulation" xil_pn:seqID="130"/>
+      <association xil_pn:name="Implementation" xil_pn:seqID="0"/>
+      <library xil_pn:name="gaisler"/>
+    </file>
+    <file xil_pn:name="../../paramsocs/Leon3_comps_Gill_top/Leon3_comps/libs/gaisler/misc/svgactrl.vhd" xil_pn:type="FILE_VHDL">
+      <association xil_pn:name="BehavioralSimulation" xil_pn:seqID="131"/>
+      <association xil_pn:name="Implementation" xil_pn:seqID="166"/>
+      <library xil_pn:name="gaisler"/>
+    </file>
+    <file xil_pn:name="../../paramsocs/Leon3_comps_Gill_top/Leon3_comps/libs/gaisler/leon3/tbufmem.vhd" xil_pn:type="FILE_VHDL">
+      <association xil_pn:name="BehavioralSimulation" xil_pn:seqID="132"/>
+      <association xil_pn:name="Implementation" xil_pn:seqID="107"/>
+      <library xil_pn:name="gaisler"/>
+    </file>
+    <file xil_pn:name="../../paramsocs/Leon3_comps_Gill_top/Leon3_comps/libs/gaisler/uart/uart.vhd" xil_pn:type="FILE_VHDL">
+      <association xil_pn:name="BehavioralSimulation" xil_pn:seqID="133"/>
+      <association xil_pn:name="Implementation" xil_pn:seqID="60"/>
+      <library xil_pn:name="gaisler"/>
+    </file>
+    <file xil_pn:name="../../paramsocs/Leon3_comps_Gill_top/Leon3_comps/libs/gaisler/sim/usbsim.vhd" xil_pn:type="FILE_VHDL">
+      <association xil_pn:name="BehavioralSimulation" xil_pn:seqID="134"/>
+      <association xil_pn:name="Implementation" xil_pn:seqID="0"/>
+      <library xil_pn:name="gaisler"/>
+    </file>
+    <file xil_pn:name="../../paramsocs/Leon3_comps_Gill_top/Leon3_comps/libs/gaisler/misc/wild.vhd" xil_pn:type="FILE_VHDL">
+      <association xil_pn:name="BehavioralSimulation" xil_pn:seqID="135"/>
+      <association xil_pn:name="Implementation" xil_pn:seqID="0"/>
+      <library xil_pn:name="gaisler"/>
+    </file>
+    <file xil_pn:name="../../paramsocs/Leon3_comps_Gill_top/Leon3_comps/libs/gaisler/misc/wild2ahb.vhd" xil_pn:type="FILE_VHDL">
+      <association xil_pn:name="BehavioralSimulation" xil_pn:seqID="136"/>
+      <association xil_pn:name="Implementation" xil_pn:seqID="0"/>
+      <library xil_pn:name="gaisler"/>
+    </file>
+    <file xil_pn:name="../../paramsocs/Leon3_comps_Gill_top/Leon3_comps/libs/grlib/amba/ahbctrl.vhd" xil_pn:type="FILE_VHDL">
+      <association xil_pn:name="BehavioralSimulation" xil_pn:seqID="137"/>
+      <association xil_pn:name="Implementation" xil_pn:seqID="163"/>
+      <library xil_pn:name="grlib"/>
+    </file>
+    <file xil_pn:name="../../paramsocs/Leon3_comps_Gill_top/Leon3_comps/libs/grlib/amba/amba.vhd" xil_pn:type="FILE_VHDL">
+      <association xil_pn:name="BehavioralSimulation" xil_pn:seqID="138"/>
+      <association xil_pn:name="Implementation" xil_pn:seqID="4"/>
+      <library xil_pn:name="grlib"/>
+    </file>
+    <file xil_pn:name="../../paramsocs/Leon3_comps_Gill_top/Leon3_comps/libs/grlib/amba/amba_tp.vhd" xil_pn:type="FILE_VHDL">
+      <association xil_pn:name="BehavioralSimulation" xil_pn:seqID="139"/>
+      <association xil_pn:name="Implementation" xil_pn:seqID="0"/>
+      <library xil_pn:name="grlib"/>
+    </file>
+    <file xil_pn:name="../../paramsocs/Leon3_comps_Gill_top/Leon3_comps/libs/grlib/amba/apbctrl.vhd" xil_pn:type="FILE_VHDL">
+      <association xil_pn:name="BehavioralSimulation" xil_pn:seqID="140"/>
+      <association xil_pn:name="Implementation" xil_pn:seqID="162"/>
+      <library xil_pn:name="grlib"/>
+    </file>
+    <file xil_pn:name="../../paramsocs/Leon3_comps_Gill_top/Leon3_comps/libs/grlib/amba/at/at_ahbs.vhd" xil_pn:type="FILE_VHDL">
+      <association xil_pn:name="BehavioralSimulation" xil_pn:seqID="141"/>
+      <association xil_pn:name="Implementation" xil_pn:seqID="0"/>
+      <library xil_pn:name="grlib"/>
+    </file>
+    <file xil_pn:name="../../paramsocs/Leon3_comps_Gill_top/Leon3_comps/libs/grlib/amba/at/at_ahb_ctrl.vhd" xil_pn:type="FILE_VHDL">
+      <association xil_pn:name="BehavioralSimulation" xil_pn:seqID="142"/>
+      <association xil_pn:name="Implementation" xil_pn:seqID="0"/>
+      <library xil_pn:name="grlib"/>
+    </file>
+    <file xil_pn:name="../../paramsocs/Leon3_comps_Gill_top/Leon3_comps/libs/grlib/amba/at/at_ahb_mst.vhd" xil_pn:type="FILE_VHDL">
+      <association xil_pn:name="BehavioralSimulation" xil_pn:seqID="143"/>
+      <association xil_pn:name="Implementation" xil_pn:seqID="0"/>
+      <library xil_pn:name="grlib"/>
+    </file>
+    <file xil_pn:name="../../paramsocs/Leon3_comps_Gill_top/Leon3_comps/libs/grlib/amba/at/at_ahb_mst_pkg.vhd" xil_pn:type="FILE_VHDL">
+      <association xil_pn:name="BehavioralSimulation" xil_pn:seqID="144"/>
+      <association xil_pn:name="Implementation" xil_pn:seqID="0"/>
+      <library xil_pn:name="grlib"/>
+    </file>
+    <file xil_pn:name="../../paramsocs/Leon3_comps_Gill_top/Leon3_comps/libs/grlib/amba/at/at_ahb_slv.vhd" xil_pn:type="FILE_VHDL">
+      <association xil_pn:name="BehavioralSimulation" xil_pn:seqID="145"/>
+      <association xil_pn:name="Implementation" xil_pn:seqID="0"/>
+      <library xil_pn:name="grlib"/>
+    </file>
+    <file xil_pn:name="../../paramsocs/Leon3_comps_Gill_top/Leon3_comps/libs/grlib/amba/at/at_ahb_slv_pkg.vhd" xil_pn:type="FILE_VHDL">
+      <association xil_pn:name="BehavioralSimulation" xil_pn:seqID="146"/>
+      <association xil_pn:name="Implementation" xil_pn:seqID="0"/>
+      <library xil_pn:name="grlib"/>
+    </file>
+    <file xil_pn:name="../../paramsocs/Leon3_comps_Gill_top/Leon3_comps/libs/grlib/amba/at/at_pkg.vhd" xil_pn:type="FILE_VHDL">
+      <association xil_pn:name="BehavioralSimulation" xil_pn:seqID="147"/>
+      <association xil_pn:name="Implementation" xil_pn:seqID="0"/>
+      <library xil_pn:name="grlib"/>
+    </file>
+    <file xil_pn:name="../../paramsocs/Leon3_comps_Gill_top/Leon3_comps/libs/grlib/amba/at/at_util.vhd" xil_pn:type="FILE_VHDL">
+      <association xil_pn:name="BehavioralSimulation" xil_pn:seqID="148"/>
+      <association xil_pn:name="Implementation" xil_pn:seqID="0"/>
+      <library xil_pn:name="grlib"/>
+    </file>
+    <file xil_pn:name="../../paramsocs/Leon3_comps_Gill_top/Leon3_comps/libs/grlib/stdlib/config.vhd" xil_pn:type="FILE_VHDL">
+      <association xil_pn:name="BehavioralSimulation" xil_pn:seqID="149"/>
+      <association xil_pn:name="Implementation" xil_pn:seqID="3"/>
+      <library xil_pn:name="grlib"/>
+    </file>
+    <file xil_pn:name="../../paramsocs/Leon3_comps_Gill_top/Leon3_comps/libs/grlib/sparc/cpu_disas.vhd" xil_pn:type="FILE_VHDL">
+      <association xil_pn:name="BehavioralSimulation" xil_pn:seqID="150"/>
+      <association xil_pn:name="Implementation" xil_pn:seqID="0"/>
+      <library xil_pn:name="grlib"/>
+    </file>
+    <file xil_pn:name="../../paramsocs/Leon3_comps_Gill_top/Leon3_comps/libs/grlib/amba/defmst.vhd" xil_pn:type="FILE_VHDL">
+      <association xil_pn:name="BehavioralSimulation" xil_pn:seqID="151"/>
+      <association xil_pn:name="Implementation" xil_pn:seqID="0"/>
+      <library xil_pn:name="grlib"/>
+    </file>
+    <file xil_pn:name="../../paramsocs/Leon3_comps_Gill_top/Leon3_comps/libs/grlib/amba/devices.vhd" xil_pn:type="FILE_VHDL">
+      <association xil_pn:name="BehavioralSimulation" xil_pn:seqID="152"/>
+      <association xil_pn:name="Implementation" xil_pn:seqID="35"/>
+      <library xil_pn:name="grlib"/>
+    </file>
+    <file xil_pn:name="../../paramsocs/Leon3_comps_Gill_top/Leon3_comps/libs/grlib/amba/dma2ahb.vhd" xil_pn:type="FILE_VHDL">
+      <association xil_pn:name="BehavioralSimulation" xil_pn:seqID="153"/>
+      <association xil_pn:name="Implementation" xil_pn:seqID="0"/>
+      <library xil_pn:name="grlib"/>
+    </file>
+    <file xil_pn:name="../../paramsocs/Leon3_comps_Gill_top/Leon3_comps/libs/grlib/amba/dma2ahb_pkg.vhd" xil_pn:type="FILE_VHDL">
+      <association xil_pn:name="BehavioralSimulation" xil_pn:seqID="154"/>
+      <association xil_pn:name="Implementation" xil_pn:seqID="0"/>
+      <library xil_pn:name="grlib"/>
+    </file>
+    <file xil_pn:name="../../paramsocs/Leon3_comps_Gill_top/Leon3_comps/libs/grlib/amba/dma2ahb_tp.vhd" xil_pn:type="FILE_VHDL">
+      <association xil_pn:name="BehavioralSimulation" xil_pn:seqID="155"/>
+      <association xil_pn:name="Implementation" xil_pn:seqID="0"/>
+      <library xil_pn:name="grlib"/>
+    </file>
+    <file xil_pn:name="../../paramsocs/Leon3_comps_Gill_top/Leon3_comps/libs/grlib/modgen/leaves.vhd" xil_pn:type="FILE_VHDL">
+      <association xil_pn:name="BehavioralSimulation" xil_pn:seqID="156"/>
+      <association xil_pn:name="Implementation" xil_pn:seqID="59"/>
+      <library xil_pn:name="grlib"/>
+    </file>
+    <file xil_pn:name="../../paramsocs/Leon3_comps_Gill_top/Leon3_comps/libs/grlib/modgen/multlib.vhd" xil_pn:type="FILE_VHDL">
+      <association xil_pn:name="BehavioralSimulation" xil_pn:seqID="157"/>
+      <association xil_pn:name="Implementation" xil_pn:seqID="58"/>
+      <library xil_pn:name="grlib"/>
+    </file>
+    <file xil_pn:name="../../paramsocs/Leon3_comps_Gill_top/Leon3_comps/libs/grlib/sparc/sparc.vhd" xil_pn:type="FILE_VHDL">
+      <association xil_pn:name="BehavioralSimulation" xil_pn:seqID="158"/>
+      <association xil_pn:name="Implementation" xil_pn:seqID="34"/>
+      <library xil_pn:name="grlib"/>
+    </file>
+    <file xil_pn:name="../../paramsocs/Leon3_comps_Gill_top/Leon3_comps/libs/grlib/sparc/sparc_disas.vhd" xil_pn:type="FILE_VHDL">
+      <association xil_pn:name="BehavioralSimulation" xil_pn:seqID="159"/>
+      <association xil_pn:name="Implementation" xil_pn:seqID="0"/>
+      <library xil_pn:name="grlib"/>
+    </file>
+    <file xil_pn:name="../../paramsocs/Leon3_comps_Gill_top/Leon3_comps/libs/grlib/stdlib/stdio.vhd" xil_pn:type="FILE_VHDL">
+      <association xil_pn:name="BehavioralSimulation" xil_pn:seqID="160"/>
+      <association xil_pn:name="Implementation" xil_pn:seqID="0"/>
+      <library xil_pn:name="grlib"/>
+    </file>
+    <file xil_pn:name="../../paramsocs/Leon3_comps_Gill_top/Leon3_comps/libs/grlib/stdlib/stdlib.vhd" xil_pn:type="FILE_VHDL">
+      <association xil_pn:name="BehavioralSimulation" xil_pn:seqID="161"/>
+      <association xil_pn:name="Implementation" xil_pn:seqID="2"/>
+      <library xil_pn:name="grlib"/>
+    </file>
+    <file xil_pn:name="../../paramsocs/Leon3_comps_Gill_top/Leon3_comps/libs/grlib/stdlib/testlib.vhd" xil_pn:type="FILE_VHDL">
+      <association xil_pn:name="BehavioralSimulation" xil_pn:seqID="162"/>
+      <association xil_pn:name="Implementation" xil_pn:seqID="0"/>
+      <library xil_pn:name="grlib"/>
+    </file>
+    <file xil_pn:name="../../paramsocs/Leon3_comps_Gill_top/Leon3_comps/libs/grlib/util/util.vhd" xil_pn:type="FILE_VHDL">
+      <association xil_pn:name="BehavioralSimulation" xil_pn:seqID="163"/>
+      <association xil_pn:name="Implementation" xil_pn:seqID="0"/>
+      <library xil_pn:name="grlib"/>
+    </file>
+    <file xil_pn:name="../../paramsocs/Leon3_comps_Gill_top/Leon3_comps/libs/grlib/stdlib/version.vhd" xil_pn:type="FILE_VHDL">
+      <association xil_pn:name="BehavioralSimulation" xil_pn:seqID="164"/>
+      <association xil_pn:name="Implementation" xil_pn:seqID="1"/>
+      <library xil_pn:name="grlib"/>
+    </file>
+    <file xil_pn:name="../../paramsocs/Leon3_comps_Gill_top/Leon3_comps/libs/gsi/ssram/core_burst.vhd" xil_pn:type="FILE_VHDL">
+      <association xil_pn:name="BehavioralSimulation" xil_pn:seqID="165"/>
+      <association xil_pn:name="Implementation" xil_pn:seqID="0"/>
+      <library xil_pn:name="gsi"/>
+    </file>
+    <file xil_pn:name="../../paramsocs/Leon3_comps_Gill_top/Leon3_comps/libs/gsi/ssram/functions.vhd" xil_pn:type="FILE_VHDL">
+      <association xil_pn:name="BehavioralSimulation" xil_pn:seqID="166"/>
+      <association xil_pn:name="Implementation" xil_pn:seqID="0"/>
+      <library xil_pn:name="gsi"/>
+    </file>
+    <file xil_pn:name="../../paramsocs/Leon3_comps_Gill_top/Leon3_comps/libs/gsi/ssram/g880e18bt.vhd" xil_pn:type="FILE_VHDL">
+      <association xil_pn:name="BehavioralSimulation" xil_pn:seqID="167"/>
+      <association xil_pn:name="Implementation" xil_pn:seqID="0"/>
+      <library xil_pn:name="gsi"/>
+    </file>
+    <file xil_pn:name="../../paramsocs/Leon3_comps_Gill_top/Leon3_comps/libs/hynix/ddr2/components.vhd" xil_pn:type="FILE_VHDL">
+      <association xil_pn:name="BehavioralSimulation" xil_pn:seqID="168"/>
+      <association xil_pn:name="Implementation" xil_pn:seqID="0"/>
+      <library xil_pn:name="hynix"/>
+    </file>
+    <file xil_pn:name="../../paramsocs/Leon3_comps_Gill_top/Leon3_comps/libs/hynix/ddr2/HY5PS121621F.vhd" xil_pn:type="FILE_VHDL">
+      <association xil_pn:name="BehavioralSimulation" xil_pn:seqID="169"/>
+      <association xil_pn:name="Implementation" xil_pn:seqID="0"/>
+      <library xil_pn:name="hynix"/>
+    </file>
+    <file xil_pn:name="../../paramsocs/Leon3_comps_Gill_top/Leon3_comps/libs/hynix/ddr2/HY5PS121621F_PACK.vhd" xil_pn:type="FILE_VHDL">
+      <association xil_pn:name="BehavioralSimulation" xil_pn:seqID="170"/>
+      <association xil_pn:name="Implementation" xil_pn:seqID="0"/>
+      <library xil_pn:name="hynix"/>
+    </file>
+    <file xil_pn:name="../../paramsocs/Leon3_comps_Gill_top/Leon3_comps/libs/micron/sdram/components.vhd" xil_pn:type="FILE_VHDL">
+      <association xil_pn:name="BehavioralSimulation" xil_pn:seqID="171"/>
+      <association xil_pn:name="Implementation" xil_pn:seqID="0"/>
+      <library xil_pn:name="micron"/>
+    </file>
+    <file xil_pn:name="../../paramsocs/Leon3_comps_Gill_top/Leon3_comps/libs/micron/ddr/mt46v16m16.vhd" xil_pn:type="FILE_VHDL">
+      <association xil_pn:name="BehavioralSimulation" xil_pn:seqID="172"/>
+      <association xil_pn:name="Implementation" xil_pn:seqID="0"/>
+      <library xil_pn:name="micron"/>
+    </file>
+    <file xil_pn:name="../../paramsocs/Leon3_comps_Gill_top/Leon3_comps/libs/micron/sdram/mt48lc16m16a2.vhd" xil_pn:type="FILE_VHDL">
+      <association xil_pn:name="BehavioralSimulation" xil_pn:seqID="173"/>
+      <association xil_pn:name="Implementation" xil_pn:seqID="0"/>
+      <library xil_pn:name="micron"/>
+    </file>
+    <file xil_pn:name="../../paramsocs/Leon3_comps_Gill_top/Leon3_comps/libs/opencores/i2c/i2coc.vhd" xil_pn:type="FILE_VHDL">
+      <association xil_pn:name="BehavioralSimulation" xil_pn:seqID="174"/>
+      <association xil_pn:name="Implementation" xil_pn:seqID="132"/>
+      <library xil_pn:name="opencores"/>
+    </file>
+    <file xil_pn:name="../../paramsocs/Leon3_comps_Gill_top/Leon3_comps/libs/opencores/i2c/i2c_master_bit_ctrl.vhd" xil_pn:type="FILE_VHDL">
+      <association xil_pn:name="BehavioralSimulation" xil_pn:seqID="175"/>
+      <association xil_pn:name="Implementation" xil_pn:seqID="105"/>
+      <library xil_pn:name="opencores"/>
+    </file>
+    <file xil_pn:name="../../paramsocs/Leon3_comps_Gill_top/Leon3_comps/libs/opencores/i2c/i2c_master_byte_ctrl.vhd" xil_pn:type="FILE_VHDL">
+      <association xil_pn:name="BehavioralSimulation" xil_pn:seqID="176"/>
+      <association xil_pn:name="Implementation" xil_pn:seqID="131"/>
+      <library xil_pn:name="opencores"/>
+    </file>
+    <file xil_pn:name="../../paramsocs/Leon3_comps_Gill_top/Leon3_comps/libs/opencores/occomp/occomp.vhd" xil_pn:type="FILE_VHDL">
+      <association xil_pn:name="BehavioralSimulation" xil_pn:seqID="177"/>
+      <association xil_pn:name="Implementation" xil_pn:seqID="0"/>
+      <library xil_pn:name="opencores"/>
+    </file>
+    <file xil_pn:name="../../paramsocs/Leon3_comps_Gill_top/Leon3_comps/libs/synplify/sim/synattr.vhd" xil_pn:type="FILE_VHDL">
+      <association xil_pn:name="BehavioralSimulation" xil_pn:seqID="178"/>
+      <association xil_pn:name="Implementation" xil_pn:seqID="0"/>
+      <library xil_pn:name="synplify"/>
+    </file>
+    <file xil_pn:name="../../paramsocs/Leon3_comps_Gill_top/Leon3_comps/libs/synplify/sim/synplify.vhd" xil_pn:type="FILE_VHDL">
+      <association xil_pn:name="BehavioralSimulation" xil_pn:seqID="179"/>
+      <association xil_pn:name="Implementation" xil_pn:seqID="0"/>
+      <library xil_pn:name="synplify"/>
+    </file>
+    <file xil_pn:name="../../paramsocs/Leon3_comps_Gill_top/Leon3_comps/libs/techmap/maps/allclkgen.vhd" xil_pn:type="FILE_VHDL">
+      <association xil_pn:name="BehavioralSimulation" xil_pn:seqID="180"/>
+      <association xil_pn:name="Implementation" xil_pn:seqID="11"/>
+      <library xil_pn:name="techmap"/>
+    </file>
+    <file xil_pn:name="../../paramsocs/Leon3_comps_Gill_top/Leon3_comps/libs/techmap/maps/allddr.vhd" xil_pn:type="FILE_VHDL">
+      <association xil_pn:name="BehavioralSimulation" xil_pn:seqID="181"/>
+      <association xil_pn:name="Implementation" xil_pn:seqID="56"/>
+      <library xil_pn:name="techmap"/>
+    </file>
+    <file xil_pn:name="../../paramsocs/Leon3_comps_Gill_top/Leon3_comps/libs/techmap/maps/allmem.vhd" xil_pn:type="FILE_VHDL">
+      <association xil_pn:name="BehavioralSimulation" xil_pn:seqID="182"/>
+      <association xil_pn:name="Implementation" xil_pn:seqID="16"/>
+      <library xil_pn:name="techmap"/>
+    </file>
+    <file xil_pn:name="../../paramsocs/Leon3_comps_Gill_top/Leon3_comps/libs/techmap/maps/allpads.vhd" xil_pn:type="FILE_VHDL">
+      <association xil_pn:name="BehavioralSimulation" xil_pn:seqID="183"/>
+      <association xil_pn:name="Implementation" xil_pn:seqID="21"/>
+      <library xil_pn:name="techmap"/>
+    </file>
+    <file xil_pn:name="../../paramsocs/Leon3_comps_Gill_top/Leon3_comps/libs/techmap/maps/alltap.vhd" xil_pn:type="FILE_VHDL">
+      <association xil_pn:name="BehavioralSimulation" xil_pn:seqID="184"/>
+      <association xil_pn:name="Implementation" xil_pn:seqID="103"/>
+      <library xil_pn:name="techmap"/>
+    </file>
+    <file xil_pn:name="../../paramsocs/Leon3_comps_Gill_top/Leon3_comps/libs/techmap/unisim/buffer_unisim.vhd" xil_pn:type="FILE_VHDL">
+      <association xil_pn:name="BehavioralSimulation" xil_pn:seqID="185"/>
+      <association xil_pn:name="Implementation" xil_pn:seqID="53"/>
+      <library xil_pn:name="techmap"/>
+    </file>
+    <file xil_pn:name="../../paramsocs/Leon3_comps_Gill_top/Leon3_comps/libs/techmap/maps/clkand.vhd" xil_pn:type="FILE_VHDL">
+      <association xil_pn:name="BehavioralSimulation" xil_pn:seqID="186"/>
+      <association xil_pn:name="Implementation" xil_pn:seqID="102"/>
+      <library xil_pn:name="techmap"/>
+    </file>
+    <file xil_pn:name="../../paramsocs/Leon3_comps_Gill_top/Leon3_comps/libs/techmap/maps/clkgen.vhd" xil_pn:type="FILE_VHDL">
+      <association xil_pn:name="BehavioralSimulation" xil_pn:seqID="187"/>
+      <association xil_pn:name="Implementation" xil_pn:seqID="161"/>
+      <library xil_pn:name="techmap"/>
+    </file>
+    <file xil_pn:name="../../paramsocs/Leon3_comps_Gill_top/Leon3_comps/libs/techmap/unisim/clkgen_unisim.vhd" xil_pn:type="FILE_VHDL">
+      <association xil_pn:name="BehavioralSimulation" xil_pn:seqID="188"/>
+      <association xil_pn:name="Implementation" xil_pn:seqID="52"/>
+      <library xil_pn:name="techmap"/>
+    </file>
+    <file xil_pn:name="../../paramsocs/Leon3_comps_Gill_top/Leon3_comps/libs/techmap/maps/clkmux.vhd" xil_pn:type="FILE_VHDL">
+      <association xil_pn:name="BehavioralSimulation" xil_pn:seqID="189"/>
+      <association xil_pn:name="Implementation" xil_pn:seqID="0"/>
+      <library xil_pn:name="techmap"/>
+    </file>
+    <file xil_pn:name="../../paramsocs/Leon3_comps_Gill_top/Leon3_comps/libs/techmap/maps/clkpad.vhd" xil_pn:type="FILE_VHDL">
+      <association xil_pn:name="BehavioralSimulation" xil_pn:seqID="190"/>
+      <association xil_pn:name="Implementation" xil_pn:seqID="33"/>
+      <library xil_pn:name="techmap"/>
+    </file>
+    <file xil_pn:name="../../paramsocs/Leon3_comps_Gill_top/Leon3_comps/libs/techmap/maps/clkpad_ds.vhd" xil_pn:type="FILE_VHDL">
+      <association xil_pn:name="BehavioralSimulation" xil_pn:seqID="191"/>
+      <association xil_pn:name="Implementation" xil_pn:seqID="160"/>
+      <library xil_pn:name="techmap"/>
+    </file>
+    <file xil_pn:name="../../paramsocs/Leon3_comps_Gill_top/Leon3_comps/libs/techmap/maps/cpu_disas_net.vhd" xil_pn:type="FILE_VHDL">
+      <association xil_pn:name="BehavioralSimulation" xil_pn:seqID="192"/>
+      <association xil_pn:name="Implementation" xil_pn:seqID="0"/>
+      <library xil_pn:name="techmap"/>
+    </file>
+    <file xil_pn:name="../../paramsocs/Leon3_comps_Gill_top/Leon3_comps/libs/techmap/maps/ddrphy.vhd" xil_pn:type="FILE_VHDL">
+      <association xil_pn:name="BehavioralSimulation" xil_pn:seqID="193"/>
+      <association xil_pn:name="Implementation" xil_pn:seqID="101"/>
+      <library xil_pn:name="techmap"/>
+    </file>
+    <file xil_pn:name="../../paramsocs/Leon3_comps_Gill_top/Leon3_comps/libs/techmap/inferred/ddr_inferred.vhd" xil_pn:type="FILE_VHDL">
+      <association xil_pn:name="BehavioralSimulation" xil_pn:seqID="194"/>
+      <association xil_pn:name="Implementation" xil_pn:seqID="0"/>
+      <library xil_pn:name="techmap"/>
+    </file>
+    <file xil_pn:name="../../paramsocs/Leon3_comps_Gill_top/Leon3_comps/libs/techmap/maps/ddr_ireg.vhd" xil_pn:type="FILE_VHDL">
+      <association xil_pn:name="BehavioralSimulation" xil_pn:seqID="195"/>
+      <association xil_pn:name="Implementation" xil_pn:seqID="0"/>
+      <library xil_pn:name="techmap"/>
+    </file>
+    <file xil_pn:name="../../paramsocs/Leon3_comps_Gill_top/Leon3_comps/libs/techmap/maps/ddr_oreg.vhd" xil_pn:type="FILE_VHDL">
+      <association xil_pn:name="BehavioralSimulation" xil_pn:seqID="196"/>
+      <association xil_pn:name="Implementation" xil_pn:seqID="130"/>
+      <library xil_pn:name="techmap"/>
+    </file>
+    <file xil_pn:name="../../paramsocs/Leon3_comps_Gill_top/Leon3_comps/libs/techmap/inferred/ddr_phy_inferred.vhd" xil_pn:type="FILE_VHDL">
+      <association xil_pn:name="BehavioralSimulation" xil_pn:seqID="197"/>
+      <association xil_pn:name="Implementation" xil_pn:seqID="57"/>
+      <library xil_pn:name="techmap"/>
+    </file>
+    <file xil_pn:name="../../paramsocs/Leon3_comps_Gill_top/Leon3_comps/libs/techmap/unisim/ddr_phy_unisim.vhd" xil_pn:type="FILE_VHDL">
+      <association xil_pn:name="BehavioralSimulation" xil_pn:seqID="198"/>
+      <association xil_pn:name="Implementation" xil_pn:seqID="51"/>
+      <library xil_pn:name="techmap"/>
+    </file>
+    <file xil_pn:name="../../paramsocs/Leon3_comps_Gill_top/Leon3_comps/libs/techmap/unisim/ddr_unisim.vhd" xil_pn:type="FILE_VHDL">
+      <association xil_pn:name="BehavioralSimulation" xil_pn:seqID="199"/>
+      <association xil_pn:name="Implementation" xil_pn:seqID="29"/>
+      <library xil_pn:name="techmap"/>
+    </file>
+    <file xil_pn:name="../../paramsocs/Leon3_comps_Gill_top/Leon3_comps/libs/techmap/gencomp/gencomp.vhd" xil_pn:type="FILE_VHDL">
+      <association xil_pn:name="BehavioralSimulation" xil_pn:seqID="200"/>
+      <association xil_pn:name="Implementation" xil_pn:seqID="5"/>
+      <library xil_pn:name="techmap"/>
+    </file>
+    <file xil_pn:name="../../paramsocs/Leon3_comps_Gill_top/Leon3_comps/libs/techmap/maps/grfpw_net.vhd" xil_pn:type="FILE_VHDL">
+      <association xil_pn:name="BehavioralSimulation" xil_pn:seqID="201"/>
+      <association xil_pn:name="Implementation" xil_pn:seqID="100"/>
+      <library xil_pn:name="techmap"/>
+    </file>
+    <file xil_pn:name="../../paramsocs/Leon3_comps_Gill_top/Leon3_comps/libs/techmap/maps/grgates.vhd" xil_pn:type="FILE_VHDL">
+      <association xil_pn:name="BehavioralSimulation" xil_pn:seqID="202"/>
+      <association xil_pn:name="Implementation" xil_pn:seqID="15"/>
+      <library xil_pn:name="techmap"/>
+    </file>
+    <file xil_pn:name="../../paramsocs/Leon3_comps_Gill_top/Leon3_comps/libs/techmap/maps/grlfpw_net.vhd" xil_pn:type="FILE_VHDL">
+      <association xil_pn:name="BehavioralSimulation" xil_pn:seqID="203"/>
+      <association xil_pn:name="Implementation" xil_pn:seqID="99"/>
+      <library xil_pn:name="techmap"/>
+    </file>
+    <file xil_pn:name="../../paramsocs/Leon3_comps_Gill_top/Leon3_comps/libs/techmap/maps/grspwc2_net.vhd" xil_pn:type="FILE_VHDL">
+      <association xil_pn:name="BehavioralSimulation" xil_pn:seqID="204"/>
+      <association xil_pn:name="Implementation" xil_pn:seqID="0"/>
+      <library xil_pn:name="techmap"/>
+    </file>
+    <file xil_pn:name="../../paramsocs/Leon3_comps_Gill_top/Leon3_comps/libs/techmap/unisim/grspwc2_unisim.vhd" xil_pn:type="FILE_VHDL">
+      <association xil_pn:name="BehavioralSimulation" xil_pn:seqID="205"/>
+      <association xil_pn:name="Implementation" xil_pn:seqID="0"/>
+      <library xil_pn:name="techmap"/>
+    </file>
+    <file xil_pn:name="../../paramsocs/Leon3_comps_Gill_top/Leon3_comps/libs/techmap/maps/grspwc_net.vhd" xil_pn:type="FILE_VHDL">
+      <association xil_pn:name="BehavioralSimulation" xil_pn:seqID="206"/>
+      <association xil_pn:name="Implementation" xil_pn:seqID="0"/>
+      <library xil_pn:name="techmap"/>
+    </file>
+    <file xil_pn:name="../../paramsocs/Leon3_comps_Gill_top/Leon3_comps/libs/techmap/unisim/grspwc_unisim.vhd" xil_pn:type="FILE_VHDL">
+      <association xil_pn:name="BehavioralSimulation" xil_pn:seqID="207"/>
+      <association xil_pn:name="Implementation" xil_pn:seqID="0"/>
+      <library xil_pn:name="techmap"/>
+    </file>
+    <file xil_pn:name="../../paramsocs/Leon3_comps_Gill_top/Leon3_comps/libs/techmap/unisim/grusbhc_unisim.vhd" xil_pn:type="FILE_VHDL">
+      <association xil_pn:name="BehavioralSimulation" xil_pn:seqID="208"/>
+      <association xil_pn:name="Implementation" xil_pn:seqID="0"/>
+      <library xil_pn:name="techmap"/>
+    </file>
+    <file xil_pn:name="../../paramsocs/Leon3_comps_Gill_top/Leon3_comps/libs/techmap/maps/inpad.vhd" xil_pn:type="FILE_VHDL">
+      <association xil_pn:name="BehavioralSimulation" xil_pn:seqID="209"/>
+      <association xil_pn:name="Implementation" xil_pn:seqID="159"/>
+      <library xil_pn:name="techmap"/>
+    </file>
+    <file xil_pn:name="../../paramsocs/Leon3_comps_Gill_top/Leon3_comps/libs/techmap/maps/inpad_ddr.vhd" xil_pn:type="FILE_VHDL">
+      <association xil_pn:name="BehavioralSimulation" xil_pn:seqID="210"/>
+      <association xil_pn:name="Implementation" xil_pn:seqID="0"/>
+      <library xil_pn:name="techmap"/>
+    </file>
+    <file xil_pn:name="../../paramsocs/Leon3_comps_Gill_top/Leon3_comps/libs/techmap/maps/inpad_ds.vhd" xil_pn:type="FILE_VHDL">
+      <association xil_pn:name="BehavioralSimulation" xil_pn:seqID="211"/>
+      <association xil_pn:name="Implementation" xil_pn:seqID="0"/>
+      <library xil_pn:name="techmap"/>
+    </file>
+    <file xil_pn:name="../../paramsocs/Leon3_comps_Gill_top/Leon3_comps/libs/techmap/maps/iodpad.vhd" xil_pn:type="FILE_VHDL">
+      <association xil_pn:name="BehavioralSimulation" xil_pn:seqID="212"/>
+      <association xil_pn:name="Implementation" xil_pn:seqID="0"/>
+      <library xil_pn:name="techmap"/>
+    </file>
+    <file xil_pn:name="../../paramsocs/Leon3_comps_Gill_top/Leon3_comps/libs/techmap/maps/iopad.vhd" xil_pn:type="FILE_VHDL">
+      <association xil_pn:name="BehavioralSimulation" xil_pn:seqID="213"/>
+      <association xil_pn:name="Implementation" xil_pn:seqID="32"/>
+      <library xil_pn:name="techmap"/>
+    </file>
+    <file xil_pn:name="../../paramsocs/Leon3_comps_Gill_top/Leon3_comps/libs/techmap/maps/iopad_ddr.vhd" xil_pn:type="FILE_VHDL">
+      <association xil_pn:name="BehavioralSimulation" xil_pn:seqID="214"/>
+      <association xil_pn:name="Implementation" xil_pn:seqID="0"/>
+      <library xil_pn:name="techmap"/>
+    </file>
+    <file xil_pn:name="../../paramsocs/Leon3_comps_Gill_top/Leon3_comps/libs/techmap/maps/iopad_ds.vhd" xil_pn:type="FILE_VHDL">
+      <association xil_pn:name="BehavioralSimulation" xil_pn:seqID="215"/>
+      <association xil_pn:name="Implementation" xil_pn:seqID="31"/>
+      <library xil_pn:name="techmap"/>
+    </file>
+    <file xil_pn:name="../../paramsocs/Leon3_comps_Gill_top/Leon3_comps/libs/techmap/maps/lvds_combo.vhd" xil_pn:type="FILE_VHDL">
+      <association xil_pn:name="BehavioralSimulation" xil_pn:seqID="216"/>
+      <association xil_pn:name="Implementation" xil_pn:seqID="0"/>
+      <library xil_pn:name="techmap"/>
+    </file>
+    <file xil_pn:name="../../paramsocs/Leon3_comps_Gill_top/Leon3_comps/libs/techmap/inferred/memory_inferred.vhd" xil_pn:type="FILE_VHDL">
+      <association xil_pn:name="BehavioralSimulation" xil_pn:seqID="217"/>
+      <association xil_pn:name="Implementation" xil_pn:seqID="12"/>
+      <library xil_pn:name="techmap"/>
+    </file>
+    <file xil_pn:name="../../paramsocs/Leon3_comps_Gill_top/Leon3_comps/libs/techmap/unisim/memory_unisim.vhd" xil_pn:type="FILE_VHDL">
+      <association xil_pn:name="BehavioralSimulation" xil_pn:seqID="218"/>
+      <association xil_pn:name="Implementation" xil_pn:seqID="14"/>
+      <library xil_pn:name="techmap"/>
+    </file>
+    <file xil_pn:name="../../paramsocs/Leon3_comps_Gill_top/Leon3_comps/libs/techmap/maps/mul_61x61.vhd" xil_pn:type="FILE_VHDL">
+      <association xil_pn:name="BehavioralSimulation" xil_pn:seqID="219"/>
+      <association xil_pn:name="Implementation" xil_pn:seqID="0"/>
+      <library xil_pn:name="techmap"/>
+    </file>
+    <file xil_pn:name="../../paramsocs/Leon3_comps_Gill_top/Leon3_comps/libs/techmap/inferred/mul_inferred.vhd" xil_pn:type="FILE_VHDL">
+      <association xil_pn:name="BehavioralSimulation" xil_pn:seqID="220"/>
+      <association xil_pn:name="Implementation" xil_pn:seqID="0"/>
+      <library xil_pn:name="techmap"/>
+    </file>
+    <file xil_pn:name="../../paramsocs/Leon3_comps_Gill_top/Leon3_comps/libs/techmap/unisim/mul_unisim.vhd" xil_pn:type="FILE_VHDL">
+      <association xil_pn:name="BehavioralSimulation" xil_pn:seqID="221"/>
+      <association xil_pn:name="Implementation" xil_pn:seqID="0"/>
+      <library xil_pn:name="techmap"/>
+    </file>
+    <file xil_pn:name="../../paramsocs/Leon3_comps_Gill_top/Leon3_comps/libs/techmap/maps/nandtree.vhd" xil_pn:type="FILE_VHDL">
+      <association xil_pn:name="BehavioralSimulation" xil_pn:seqID="222"/>
+      <association xil_pn:name="Implementation" xil_pn:seqID="0"/>
+      <library xil_pn:name="techmap"/>
+    </file>
+    <file xil_pn:name="../../paramsocs/Leon3_comps_Gill_top/Leon3_comps/libs/techmap/gencomp/netcomp.vhd" xil_pn:type="FILE_VHDL">
+      <association xil_pn:name="BehavioralSimulation" xil_pn:seqID="223"/>
+      <association xil_pn:name="Implementation" xil_pn:seqID="104"/>
+      <library xil_pn:name="techmap"/>
+    </file>
+    <file xil_pn:name="../../paramsocs/Leon3_comps_Gill_top/Leon3_comps/libs/techmap/maps/odpad.vhd" xil_pn:type="FILE_VHDL">
+      <association xil_pn:name="BehavioralSimulation" xil_pn:seqID="224"/>
+      <association xil_pn:name="Implementation" xil_pn:seqID="0"/>
+      <library xil_pn:name="techmap"/>
+    </file>
+    <file xil_pn:name="../../paramsocs/Leon3_comps_Gill_top/Leon3_comps/libs/techmap/maps/outpad.vhd" xil_pn:type="FILE_VHDL">
+      <association xil_pn:name="BehavioralSimulation" xil_pn:seqID="225"/>
+      <association xil_pn:name="Implementation" xil_pn:seqID="30"/>
+      <library xil_pn:name="techmap"/>
+    </file>
+    <file xil_pn:name="../../paramsocs/Leon3_comps_Gill_top/Leon3_comps/libs/techmap/maps/outpad_ddr.vhd" xil_pn:type="FILE_VHDL">
+      <association xil_pn:name="BehavioralSimulation" xil_pn:seqID="226"/>
+      <association xil_pn:name="Implementation" xil_pn:seqID="0"/>
+      <library xil_pn:name="techmap"/>
+    </file>
+    <file xil_pn:name="../../paramsocs/Leon3_comps_Gill_top/Leon3_comps/libs/techmap/maps/outpad_ds.vhd" xil_pn:type="FILE_VHDL">
+      <association xil_pn:name="BehavioralSimulation" xil_pn:seqID="227"/>
+      <association xil_pn:name="Implementation" xil_pn:seqID="0"/>
+      <library xil_pn:name="techmap"/>
+    </file>
+    <file xil_pn:name="../../paramsocs/Leon3_comps_Gill_top/Leon3_comps/libs/techmap/unisim/pads_unisim.vhd" xil_pn:type="FILE_VHDL">
+      <association xil_pn:name="BehavioralSimulation" xil_pn:seqID="228"/>
+      <association xil_pn:name="Implementation" xil_pn:seqID="19"/>
+      <library xil_pn:name="techmap"/>
+    </file>
+    <file xil_pn:name="../../paramsocs/Leon3_comps_Gill_top/Leon3_comps/libs/techmap/maps/regfile_3p.vhd" xil_pn:type="FILE_VHDL">
+      <association xil_pn:name="BehavioralSimulation" xil_pn:seqID="229"/>
+      <association xil_pn:name="Implementation" xil_pn:seqID="98"/>
+      <library xil_pn:name="techmap"/>
+    </file>
+    <file xil_pn:name="../../paramsocs/Leon3_comps_Gill_top/Leon3_comps/libs/techmap/maps/ringosc.vhd" xil_pn:type="FILE_VHDL">
+      <association xil_pn:name="BehavioralSimulation" xil_pn:seqID="230"/>
+      <association xil_pn:name="Implementation" xil_pn:seqID="0"/>
+      <library xil_pn:name="techmap"/>
+    </file>
+    <file xil_pn:name="../../paramsocs/Leon3_comps_Gill_top/Leon3_comps/libs/techmap/maps/skew_outpad.vhd" xil_pn:type="FILE_VHDL">
+      <association xil_pn:name="BehavioralSimulation" xil_pn:seqID="231"/>
+      <association xil_pn:name="Implementation" xil_pn:seqID="0"/>
+      <library xil_pn:name="techmap"/>
+    </file>
+    <file xil_pn:name="../../paramsocs/Leon3_comps_Gill_top/Leon3_comps/libs/techmap/unisim/ssrctrl_unisim.vhd" xil_pn:type="FILE_VHDL">
+      <association xil_pn:name="BehavioralSimulation" xil_pn:seqID="232"/>
+      <association xil_pn:name="Implementation" xil_pn:seqID="0"/>
+      <library xil_pn:name="techmap"/>
+    </file>
+    <file xil_pn:name="../../paramsocs/Leon3_comps_Gill_top/Leon3_comps/libs/techmap/maps/syncfifo.vhd" xil_pn:type="FILE_VHDL">
+      <association xil_pn:name="BehavioralSimulation" xil_pn:seqID="233"/>
+      <association xil_pn:name="Implementation" xil_pn:seqID="0"/>
+      <library xil_pn:name="techmap"/>
+    </file>
+    <file xil_pn:name="../../paramsocs/Leon3_comps_Gill_top/Leon3_comps/libs/techmap/maps/syncram.vhd" xil_pn:type="FILE_VHDL">
+      <association xil_pn:name="BehavioralSimulation" xil_pn:seqID="234"/>
+      <association xil_pn:name="Implementation" xil_pn:seqID="20"/>
+      <library xil_pn:name="techmap"/>
+    </file>
+    <file xil_pn:name="../../paramsocs/Leon3_comps_Gill_top/Leon3_comps/libs/techmap/maps/syncram64.vhd" xil_pn:type="FILE_VHDL">
+      <association xil_pn:name="BehavioralSimulation" xil_pn:seqID="235"/>
+      <association xil_pn:name="Implementation" xil_pn:seqID="55"/>
+      <library xil_pn:name="techmap"/>
+    </file>
+    <file xil_pn:name="../../paramsocs/Leon3_comps_Gill_top/Leon3_comps/libs/techmap/maps/syncram128.vhd" xil_pn:type="FILE_VHDL">
+      <association xil_pn:name="BehavioralSimulation" xil_pn:seqID="236"/>
+      <association xil_pn:name="Implementation" xil_pn:seqID="0"/>
+      <library xil_pn:name="techmap"/>
+    </file>
+    <file xil_pn:name="../../paramsocs/Leon3_comps_Gill_top/Leon3_comps/libs/techmap/maps/syncram156bw.vhd" xil_pn:type="FILE_VHDL">
+      <association xil_pn:name="BehavioralSimulation" xil_pn:seqID="237"/>
+      <association xil_pn:name="Implementation" xil_pn:seqID="0"/>
+      <library xil_pn:name="techmap"/>
+    </file>
+    <file xil_pn:name="../../paramsocs/Leon3_comps_Gill_top/Leon3_comps/libs/techmap/maps/syncram_2p.vhd" xil_pn:type="FILE_VHDL">
+      <association xil_pn:name="BehavioralSimulation" xil_pn:seqID="238"/>
+      <association xil_pn:name="Implementation" xil_pn:seqID="54"/>
+      <library xil_pn:name="techmap"/>
+    </file>
+    <file xil_pn:name="../../paramsocs/Leon3_comps_Gill_top/Leon3_comps/libs/techmap/maps/syncram_dp.vhd" xil_pn:type="FILE_VHDL">
+      <association xil_pn:name="BehavioralSimulation" xil_pn:seqID="239"/>
+      <association xil_pn:name="Implementation" xil_pn:seqID="97"/>
+      <library xil_pn:name="techmap"/>
+    </file>
+    <file xil_pn:name="../../paramsocs/Leon3_comps_Gill_top/Leon3_comps/libs/techmap/unisim/sysmon_unisim.vhd" xil_pn:type="FILE_VHDL">
+      <association xil_pn:name="BehavioralSimulation" xil_pn:seqID="240"/>
+      <association xil_pn:name="Implementation" xil_pn:seqID="0"/>
+      <library xil_pn:name="techmap"/>
+    </file>
+    <file xil_pn:name="../../paramsocs/Leon3_comps_Gill_top/Leon3_comps/libs/techmap/maps/system_monitor.vhd" xil_pn:type="FILE_VHDL">
+      <association xil_pn:name="BehavioralSimulation" xil_pn:seqID="241"/>
+      <association xil_pn:name="Implementation" xil_pn:seqID="0"/>
+      <library xil_pn:name="techmap"/>
+    </file>
+    <file xil_pn:name="../../paramsocs/Leon3_comps_Gill_top/Leon3_comps/libs/techmap/maps/tap.vhd" xil_pn:type="FILE_VHDL">
+      <association xil_pn:name="BehavioralSimulation" xil_pn:seqID="242"/>
+      <association xil_pn:name="Implementation" xil_pn:seqID="129"/>
+      <library xil_pn:name="techmap"/>
+    </file>
+    <file xil_pn:name="../../paramsocs/Leon3_comps_Gill_top/Leon3_comps/libs/techmap/unisim/tap_unisim.vhd" xil_pn:type="FILE_VHDL">
+      <association xil_pn:name="BehavioralSimulation" xil_pn:seqID="243"/>
+      <association xil_pn:name="Implementation" xil_pn:seqID="95"/>
+      <library xil_pn:name="techmap"/>
+    </file>
+    <file xil_pn:name="../../paramsocs/Leon3_comps_Gill_top/Leon3_comps/libs/techmap/maps/techbuf.vhd" xil_pn:type="FILE_VHDL">
+      <association xil_pn:name="BehavioralSimulation" xil_pn:seqID="244"/>
+      <association xil_pn:name="Implementation" xil_pn:seqID="96"/>
+      <library xil_pn:name="techmap"/>
+    </file>
+    <file xil_pn:name="../../paramsocs/Leon3_comps_Gill_top/Leon3_comps/libs/techmap/maps/toutpad.vhd" xil_pn:type="FILE_VHDL">
+      <association xil_pn:name="BehavioralSimulation" xil_pn:seqID="245"/>
+      <association xil_pn:name="Implementation" xil_pn:seqID="0"/>
+      <library xil_pn:name="techmap"/>
+    </file>
+    <file xil_pn:name="../../paramsocs/LEONGILL/TestconectionwithLeonFRM1Xparam.vhd" xil_pn:type="FILE_VHDL">
+      <association xil_pn:name="BehavioralSimulation" xil_pn:seqID="246"/>
+      <association xil_pn:name="Implementation" xil_pn:seqID="0"/>
+    </file>
+    <file xil_pn:name="../../paramsocs/LEONGILL/TestconnectionwithLeonFRM2X.vhd" xil_pn:type="FILE_VHDL">
+      <association xil_pn:name="BehavioralSimulation" xil_pn:seqID="247"/>
+      <association xil_pn:name="Implementation" xil_pn:seqID="0"/>
+    </file>
+    <file xil_pn:name="../../paramsocs/LEONGILL/TestQuatroconnwithLeon.vhd" xil_pn:type="FILE_VHDL">
+      <association xil_pn:name="BehavioralSimulation" xil_pn:seqID="248"/>
+      <association xil_pn:name="Implementation" xil_pn:seqID="184"/>
+    </file>
+    <file xil_pn:name="../../paramsocs/LEONGILL/FRM1XforLEONparam2v.vhd" xil_pn:type="FILE_VHDL">
+      <association xil_pn:name="BehavioralSimulation" xil_pn:seqID="249"/>
+      <association xil_pn:name="Implementation" xil_pn:seqID="0"/>
+    </file>
+    <file xil_pn:name="../../paramsocs/LEONGILL/FRM2XforLeonparam.vhd" xil_pn:type="FILE_VHDL">
+      <association xil_pn:name="BehavioralSimulation" xil_pn:seqID="250"/>
+      <association xil_pn:name="Implementation" xil_pn:seqID="0"/>
+    </file>
+    <file xil_pn:name="../../paramsocs/LEONGILL/FRM4XQuatroConnect.vhd" xil_pn:type="FILE_VHDL">
+      <association xil_pn:name="BehavioralSimulation" xil_pn:seqID="251"/>
+      <association xil_pn:name="Implementation" xil_pn:seqID="158"/>
+    </file>
+    <file xil_pn:name="../../paramsocs/LEONGILL/UARTDDRFSM.vhd" xil_pn:type="FILE_VHDL">
+      <association xil_pn:name="BehavioralSimulation" xil_pn:seqID="252"/>
+      <association xil_pn:name="Implementation" xil_pn:seqID="72"/>
+    </file>
+    <file xil_pn:name="../../paramsocs/LEONGILL/MUXforpointersRama1.vhd" xil_pn:type="FILE_VHDL">
+      <association xil_pn:name="BehavioralSimulation" xil_pn:seqID="253"/>
+      <association xil_pn:name="Implementation" xil_pn:seqID="88"/>
+    </file>
+    <file xil_pn:name="../../paramsocs/LEONGILL/MUXpointerRam2.vhd" xil_pn:type="FILE_VHDL">
+      <association xil_pn:name="BehavioralSimulation" xil_pn:seqID="254"/>
+      <association xil_pn:name="Implementation" xil_pn:seqID="82"/>
+    </file>
+    <file xil_pn:name="../../paramsocs/LEONGILL/MUXforspeciesTableIndi2.vhd" xil_pn:type="FILE_VHDL">
+      <association xil_pn:name="BehavioralSimulation" xil_pn:seqID="255"/>
+      <association xil_pn:name="Implementation" xil_pn:seqID="84"/>
+    </file>
+    <file xil_pn:name="../../paramsocs/LEONGILL/MUXforupdatespecies2_c.vhd" xil_pn:type="FILE_VHDL">
+      <association xil_pn:name="BehavioralSimulation" xil_pn:seqID="256"/>
+      <association xil_pn:name="Implementation" xil_pn:seqID="83"/>
+    </file>
+    <file xil_pn:name="../../paramsocs/LEONGILL/speciescoppyTableFRM1X.vhd" xil_pn:type="FILE_VHDL">
+      <association xil_pn:name="BehavioralSimulation" xil_pn:seqID="257"/>
+      <association xil_pn:name="Implementation" xil_pn:seqID="0"/>
+    </file>
+    <file xil_pn:name="../../paramsocs/LEONGILL/MUXforspeciesTable.vhd" xil_pn:type="FILE_VHDL">
+      <association xil_pn:name="BehavioralSimulation" xil_pn:seqID="258"/>
+      <association xil_pn:name="Implementation" xil_pn:seqID="86"/>
+    </file>
+    <file xil_pn:name="../../paramsocs/LEONGILL/Addrepeatedly2.vhd" xil_pn:type="FILE_VHDL">
+      <association xil_pn:name="BehavioralSimulation" xil_pn:seqID="259"/>
+      <association xil_pn:name="Implementation" xil_pn:seqID="0"/>
+    </file>
+    <file xil_pn:name="../../paramsocs/LEONGILL/MUxforrepeat2.vhd" xil_pn:type="FILE_VHDL">
+      <association xil_pn:name="BehavioralSimulation" xil_pn:seqID="260"/>
+      <association xil_pn:name="Implementation" xil_pn:seqID="0"/>
+    </file>
+    <file xil_pn:name="../../paramsocs/LEONGILL/speciescopyTableFRM2X.vhd" xil_pn:type="FILE_VHDL">
+      <association xil_pn:name="BehavioralSimulation" xil_pn:seqID="261"/>
+      <association xil_pn:name="Implementation" xil_pn:seqID="0"/>
+    </file>
+    <file xil_pn:name="../../paramsocs/LEONGILL/speciescopyTableFRM2X_2.vhd" xil_pn:type="FILE_VHDL">
+      <association xil_pn:name="BehavioralSimulation" xil_pn:seqID="262"/>
+      <association xil_pn:name="Implementation" xil_pn:seqID="0"/>
+    </file>
+    <file xil_pn:name="../../paramsocs/LEONGILL/MUXforspeciesTable2.vhd" xil_pn:type="FILE_VHDL">
+      <association xil_pn:name="BehavioralSimulation" xil_pn:seqID="263"/>
+      <association xil_pn:name="Implementation" xil_pn:seqID="85"/>
+    </file>
+    <file xil_pn:name="../../paramsocs/LEONGILL/FixaddrssDG.vhd" xil_pn:type="FILE_VHDL">
+      <association xil_pn:name="BehavioralSimulation" xil_pn:seqID="264"/>
+      <association xil_pn:name="Implementation" xil_pn:seqID="0"/>
+    </file>
+    <file xil_pn:name="../../paramsocs/LEONGILL/FixaddrssDG2.vhd" xil_pn:type="FILE_VHDL">
+      <association xil_pn:name="BehavioralSimulation" xil_pn:seqID="265"/>
+      <association xil_pn:name="Implementation" xil_pn:seqID="0"/>
+    </file>
+    <file xil_pn:name="../../paramsocs/LEONGILL/MUXDGNRM.vhd" xil_pn:type="FILE_VHDL">
+      <association xil_pn:name="BehavioralSimulation" xil_pn:seqID="266"/>
+      <association xil_pn:name="Implementation" xil_pn:seqID="0"/>
+    </file>
+    <file xil_pn:name="../../paramsocs/LEONGILL/FSMforNRMFRM4X.vhd" xil_pn:type="FILE_VHDL">
+      <association xil_pn:name="BehavioralSimulation" xil_pn:seqID="267"/>
+      <association xil_pn:name="Implementation" xil_pn:seqID="0"/>
+    </file>
+    <file xil_pn:name="../../paramsocs/LEONGILL/RTBIOMD189param.vhd" xil_pn:type="FILE_VHDL">
+      <association xil_pn:name="BehavioralSimulation" xil_pn:seqID="268"/>
+      <association xil_pn:name="Implementation" xil_pn:seqID="0"/>
+    </file>
+    <file xil_pn:name="../../paramsocs/LEONGILL/RTBIOMD189param2.vhd" xil_pn:type="FILE_VHDL">
+      <association xil_pn:name="BehavioralSimulation" xil_pn:seqID="269"/>
+      <association xil_pn:name="Implementation" xil_pn:seqID="0"/>
+    </file>
+    <file xil_pn:name="../../paramsocs/LEONGILL/speciescoppyTable1.vhd" xil_pn:type="FILE_VHDL">
+      <association xil_pn:name="BehavioralSimulation" xil_pn:seqID="270"/>
+      <association xil_pn:name="Implementation" xil_pn:seqID="76"/>
+    </file>
+    <file xil_pn:name="../../paramsocs/LEONGILL/speciesTablecopy2.vhd" xil_pn:type="FILE_VHDL">
+      <association xil_pn:name="BehavioralSimulation" xil_pn:seqID="271"/>
+      <association xil_pn:name="Implementation" xil_pn:seqID="73"/>
+    </file>
+    <file xil_pn:name="../../paramsocs/LEONGILL/RT1.vhd" xil_pn:type="FILE_VHDL">
+      <association xil_pn:name="BehavioralSimulation" xil_pn:seqID="272"/>
+      <association xil_pn:name="Implementation" xil_pn:seqID="80"/>
+    </file>
+    <file xil_pn:name="../../paramsocs/LEONGILL/RT2.vhd" xil_pn:type="FILE_VHDL">
+      <association xil_pn:name="BehavioralSimulation" xil_pn:seqID="273"/>
+      <association xil_pn:name="Implementation" xil_pn:seqID="79"/>
+    </file>
+    <file xil_pn:name="../../paramsocs/LEONGILL/RT3.vhd" xil_pn:type="FILE_VHDL">
+      <association xil_pn:name="BehavioralSimulation" xil_pn:seqID="274"/>
+      <association xil_pn:name="Implementation" xil_pn:seqID="78"/>
+    </file>
+    <file xil_pn:name="../../paramsocs/LEONGILL/RT4.vhd" xil_pn:type="FILE_VHDL">
+      <association xil_pn:name="BehavioralSimulation" xil_pn:seqID="275"/>
+      <association xil_pn:name="Implementation" xil_pn:seqID="77"/>
+    </file>
+    <file xil_pn:name="../../paramsocs/LEONGILL/speciesTableLOTKA_VOLTERA1param.vhd" xil_pn:type="FILE_VHDL">
+      <association xil_pn:name="BehavioralSimulation" xil_pn:seqID="276"/>
+      <association xil_pn:name="Implementation" xil_pn:seqID="0"/>
+    </file>
+    <file xil_pn:name="../../paramsocs/LEONGILL/STOICHIOBIOMD189param.vhd" xil_pn:type="FILE_VHDL">
+      <association xil_pn:name="BehavioralSimulation" xil_pn:seqID="277"/>
+      <association xil_pn:name="Implementation" xil_pn:seqID="0"/>
+    </file>
+    <file xil_pn:name="../../paramsocs/LEONGILL/speciesTableLOTKA_VOLTERA2param.vhd" xil_pn:type="FILE_VHDL">
+      <association xil_pn:name="BehavioralSimulation" xil_pn:seqID="278"/>
+      <association xil_pn:name="Implementation" xil_pn:seqID="0"/>
+    </file>
+    <file xil_pn:name="../../paramsocs/LEONGILL/memintdimer189param.vhd" xil_pn:type="FILE_VHDL">
+      <association xil_pn:name="BehavioralSimulation" xil_pn:seqID="279"/>
+      <association xil_pn:name="Implementation" xil_pn:seqID="0"/>
+    </file>
+    <file xil_pn:name="../../paramsocs/LEONGILL/simpleFRM_NRM4X_DSP.vhd" xil_pn:type="FILE_VHDL">
+      <association xil_pn:name="BehavioralSimulation" xil_pn:seqID="280"/>
+      <association xil_pn:name="Implementation" xil_pn:seqID="0"/>
+    </file>
+    <file xil_pn:name="../../paramsocs/LEONGILL/FRM4X_2DSP2FRM2X.vhd" xil_pn:type="FILE_VHDL">
+      <association xil_pn:name="BehavioralSimulation" xil_pn:seqID="281"/>
+      <association xil_pn:name="Implementation" xil_pn:seqID="0"/>
+    </file>
+    <file xil_pn:name="../../paramsocs/LEONGILL/FRM4X_2DSP2.vhd" xil_pn:type="FILE_VHDL">
+      <association xil_pn:name="BehavioralSimulation" xil_pn:seqID="282"/>
+      <association xil_pn:name="Implementation" xil_pn:seqID="122"/>
+    </file>
+    <file xil_pn:name="../../paramsocs/LEONGILL/PQ.vhd" xil_pn:type="FILE_VHDL">
+      <association xil_pn:name="BehavioralSimulation" xil_pn:seqID="283"/>
+      <association xil_pn:name="Implementation" xil_pn:seqID="0"/>
+    </file>
+    <file xil_pn:name="../../paramsocs/LEONGILL/Comp1new.vhd" xil_pn:type="FILE_VHDL">
+      <association xil_pn:name="BehavioralSimulation" xil_pn:seqID="284"/>
+      <association xil_pn:name="Implementation" xil_pn:seqID="127"/>
+    </file>
+    <file xil_pn:name="../../paramsocs/LEONGILL/Compnew2.vhd" xil_pn:type="FILE_VHDL">
+      <association xil_pn:name="BehavioralSimulation" xil_pn:seqID="285"/>
+      <association xil_pn:name="Implementation" xil_pn:seqID="126"/>
+    </file>
+    <file xil_pn:name="../../paramsocs/LEONGILL/Compnew3.vhd" xil_pn:type="FILE_VHDL">
+      <association xil_pn:name="BehavioralSimulation" xil_pn:seqID="286"/>
+      <association xil_pn:name="Implementation" xil_pn:seqID="125"/>
+    </file>
+    <file xil_pn:name="../../paramsocs/LEONGILL/datamemddr5forLEON.vhd" xil_pn:type="FILE_VHDL">
+      <association xil_pn:name="BehavioralSimulation" xil_pn:seqID="287"/>
+      <association xil_pn:name="Implementation" xil_pn:seqID="124"/>
+    </file>
+    <file xil_pn:name="../../paramsocs/LEONGILL/MUXGPIO4.vhd" xil_pn:type="FILE_VHDL">
+      <association xil_pn:name="BehavioralSimulation" xil_pn:seqID="288"/>
+      <association xil_pn:name="Implementation" xil_pn:seqID="119"/>
+    </file>
+    <file xil_pn:name="../../paramsocs/LEONGILL/Lotka_VolteraparamRT.vhd" xil_pn:type="FILE_VHDL">
+      <association xil_pn:name="BehavioralSimulation" xil_pn:seqID="289"/>
+      <association xil_pn:name="Implementation" xil_pn:seqID="0"/>
+    </file>
+    <file xil_pn:name="../../paramsocs/LEONGILL/speciesTable1.vhd" xil_pn:type="FILE_VHDL">
+      <association xil_pn:name="BehavioralSimulation" xil_pn:seqID="290"/>
+      <association xil_pn:name="Implementation" xil_pn:seqID="0"/>
+    </file>
+    <file xil_pn:name="../../paramsocs/LEONGILL/speciesTable24_1.vhd" xil_pn:type="FILE_VHDL">
+      <association xil_pn:name="BehavioralSimulation" xil_pn:seqID="291"/>
+      <association xil_pn:name="Implementation" xil_pn:seqID="75"/>
+    </file>
+    <file xil_pn:name="../../paramsocs/LEONGILL/speciesTable24_2.vhd" xil_pn:type="FILE_VHDL">
+      <association xil_pn:name="BehavioralSimulation" xil_pn:seqID="292"/>
+      <association xil_pn:name="Implementation" xil_pn:seqID="74"/>
+    </file>
+    <file xil_pn:name="../../paramsocs/LEONGILL/LOTKA_VOLTERA_STOICHIOparam.vhd" xil_pn:type="FILE_VHDL">
+      <association xil_pn:name="BehavioralSimulation" xil_pn:seqID="293"/>
+      <association xil_pn:name="Implementation" xil_pn:seqID="90"/>
+    </file>
+    <file xil_pn:name="../../paramsocs/LEONGILL/DFF32.vhd" xil_pn:type="FILE_VHDL">
+      <association xil_pn:name="BehavioralSimulation" xil_pn:seqID="294"/>
+      <association xil_pn:name="Implementation" xil_pn:seqID="123"/>
+    </file>
+    <file xil_pn:name="../../paramsocs/LEONGILL/memintdimerLOTKA_VOLTERAparam.vhd" xil_pn:type="FILE_VHDL">
+      <association xil_pn:name="BehavioralSimulation" xil_pn:seqID="295"/>
+      <association xil_pn:name="Implementation" xil_pn:seqID="89"/>
+    </file>
+    <file xil_pn:name="../../paramsocs/LEONGILL/memsubsystemFRM2xparam.vhd" xil_pn:type="FILE_VHDL">
+      <association xil_pn:name="BehavioralSimulation" xil_pn:seqID="296"/>
+      <association xil_pn:name="Implementation" xil_pn:seqID="0"/>
+    </file>
+    <file xil_pn:name="../../paramsocs/LEONGILL/memsubsystemfinalLOTKA_VOLTERA.vhd" xil_pn:type="FILE_VHDL">
+      <association xil_pn:name="BehavioralSimulation" xil_pn:seqID="297"/>
+      <association xil_pn:name="Implementation" xil_pn:seqID="121"/>
+    </file>
+    <file xil_pn:name="../../paramsocs/LEONGILL/PE6.vhd" xil_pn:type="FILE_VHDL">
+      <association xil_pn:name="BehavioralSimulation" xil_pn:seqID="298"/>
+      <association xil_pn:name="Implementation" xil_pn:seqID="0"/>
+    </file>
+    <file xil_pn:name="../../paramsocs/LEONGILL/PE5.vhd" xil_pn:type="FILE_VHDL">
+      <association xil_pn:name="BehavioralSimulation" xil_pn:seqID="299"/>
+      <association xil_pn:name="Implementation" xil_pn:seqID="81"/>
+    </file>
+    <file xil_pn:name="../../paramsocs/LEONGILL/addnewflt.xco" xil_pn:type="FILE_COREGEN">
+      <association xil_pn:name="BehavioralSimulation" xil_pn:seqID="300"/>
+      <association xil_pn:name="Implementation" xil_pn:seqID="50"/>
+    </file>
+    <file xil_pn:name="../../paramsocs/LEONGILL/newmultflt.xco" xil_pn:type="FILE_COREGEN">
+      <association xil_pn:name="BehavioralSimulation" xil_pn:seqID="301"/>
+      <association xil_pn:name="Implementation" xil_pn:seqID="26"/>
+    </file>
+    <file xil_pn:name="../../paramsocs/LEONGILL/patterngen2.vhd" xil_pn:type="FILE_VHDL">
+      <association xil_pn:name="BehavioralSimulation" xil_pn:seqID="302"/>
+      <association xil_pn:name="Implementation" xil_pn:seqID="40"/>
+    </file>
+    <file xil_pn:name="../../paramsocs/LEONGILL/random2gen.vhd" xil_pn:type="FILE_VHDL">
+      <association xil_pn:name="BehavioralSimulation" xil_pn:seqID="303"/>
+      <association xil_pn:name="Implementation" xil_pn:seqID="25"/>
+    </file>
+    <file xil_pn:name="../../paramsocs/LEONGILL/fixtoflt.xco" xil_pn:type="FILE_COREGEN">
+      <association xil_pn:name="BehavioralSimulation" xil_pn:seqID="304"/>
+      <association xil_pn:name="Implementation" xil_pn:seqID="46"/>
+    </file>
+    <file xil_pn:name="../../paramsocs/LEONGILL/lnxfixed.vhd" xil_pn:type="FILE_VHDL">
+      <association xil_pn:name="BehavioralSimulation" xil_pn:seqID="305"/>
+      <association xil_pn:name="Implementation" xil_pn:seqID="44"/>
+    </file>
+    <file xil_pn:name="../../paramsocs/LEONGILL/lnxflt.vhd" xil_pn:type="FILE_VHDL">
+      <association xil_pn:name="BehavioralSimulation" xil_pn:seqID="306"/>
+      <association xil_pn:name="Implementation" xil_pn:seqID="27"/>
+    </file>
+    <file xil_pn:name="../../paramsocs/LEONGILL/Compforlnx.vhd" xil_pn:type="FILE_VHDL">
+      <association xil_pn:name="BehavioralSimulation" xil_pn:seqID="307"/>
+      <association xil_pn:name="Implementation" xil_pn:seqID="28"/>
+    </file>
+    <file xil_pn:name="../../paramsocs/LEONGILL/subnewflt.xco" xil_pn:type="FILE_COREGEN">
+      <association xil_pn:name="BehavioralSimulation" xil_pn:seqID="308"/>
+      <association xil_pn:name="Implementation" xil_pn:seqID="24"/>
+    </file>
+    <file xil_pn:name="../../paramsocs/LEONGILL/minuslnx.xco" xil_pn:type="FILE_COREGEN">
+      <association xil_pn:name="BehavioralSimulation" xil_pn:seqID="309"/>
+      <association xil_pn:name="Implementation" xil_pn:seqID="43"/>
+    </file>
+    <file xil_pn:name="../../paramsocs/LEONGILL/FSMPE22_3.vhd" xil_pn:type="FILE_VHDL">
+      <association xil_pn:name="BehavioralSimulation" xil_pn:seqID="310"/>
+      <association xil_pn:name="Implementation" xil_pn:seqID="45"/>
+    </file>
+    <file xil_pn:name="../../paramsocs/LEONGILL/DFFinternalPE.vhd" xil_pn:type="FILE_VHDL">
+      <association xil_pn:name="BehavioralSimulation" xil_pn:seqID="311"/>
+      <association xil_pn:name="Implementation" xil_pn:seqID="48"/>
+    </file>
+    <file xil_pn:name="../../paramsocs/LEONGILL/divflt2.xco" xil_pn:type="FILE_COREGEN">
+      <association xil_pn:name="BehavioralSimulation" xil_pn:seqID="312"/>
+      <association xil_pn:name="Implementation" xil_pn:seqID="47"/>
+    </file>
+    <file xil_pn:name="../../paramsocs/LEONGILL/MUXPEint3.vhd" xil_pn:type="FILE_VHDL">
+      <association xil_pn:name="BehavioralSimulation" xil_pn:seqID="313"/>
+      <association xil_pn:name="Implementation" xil_pn:seqID="42"/>
+    </file>
+    <file xil_pn:name="../../paramsocs/LEONGILL/MUXPEintdimer2.vhd" xil_pn:type="FILE_VHDL">
+      <association xil_pn:name="BehavioralSimulation" xil_pn:seqID="314"/>
+      <association xil_pn:name="Implementation" xil_pn:seqID="41"/>
+    </file>
+    <file xil_pn:name="../../paramsocs/LEONGILL/cnstlatch2_2.vhd" xil_pn:type="FILE_VHDL">
+      <association xil_pn:name="BehavioralSimulation" xil_pn:seqID="315"/>
+      <association xil_pn:name="Implementation" xil_pn:seqID="49"/>
+    </file>
+    <file xil_pn:name="../../paramsocs/LEONGILL/FSM6new.vhd" xil_pn:type="FILE_VHDL">
+      <association xil_pn:name="BehavioralSimulation" xil_pn:seqID="316"/>
+      <association xil_pn:name="Implementation" xil_pn:seqID="91"/>
+    </file>
+    <file xil_pn:name="../../paramsocs/LEONGILL/FSM7new.vhd" xil_pn:type="FILE_VHDL">
+      <association xil_pn:name="BehavioralSimulation" xil_pn:seqID="317"/>
+      <association xil_pn:name="Implementation" xil_pn:seqID="0"/>
+    </file>
+    <file xil_pn:name="../../paramsocs/LEONGILL/find8min512.vhd" xil_pn:type="FILE_VHDL">
+      <association xil_pn:name="BehavioralSimulation" xil_pn:seqID="318"/>
+      <association xil_pn:name="Implementation" xil_pn:seqID="92"/>
+    </file>
+    <file xil_pn:name="../../paramsocs/LEONGILL/addingnewflt.xco" xil_pn:type="FILE_COREGEN">
+      <association xil_pn:name="BehavioralSimulation" xil_pn:seqID="319"/>
+      <association xil_pn:name="Implementation" xil_pn:seqID="94"/>
+    </file>
+    <file xil_pn:name="../../paramsocs/LEONGILL/Addrepeatedly.vhd" xil_pn:type="FILE_VHDL">
+      <association xil_pn:name="BehavioralSimulation" xil_pn:seqID="320"/>
+      <association xil_pn:name="Implementation" xil_pn:seqID="128"/>
+    </file>
+    <file xil_pn:name="../../paramsocs/LEONGILL/MUxforrepeat.vhd" xil_pn:type="FILE_VHDL">
+      <association xil_pn:name="BehavioralSimulation" xil_pn:seqID="321"/>
+      <association xil_pn:name="Implementation" xil_pn:seqID="87"/>
+    </file>
+    <file xil_pn:name="../../paramsocs/LEONGILL/datamemddr4forLeon.vhd" xil_pn:type="FILE_VHDL">
+      <association xil_pn:name="BehavioralSimulation" xil_pn:seqID="322"/>
+      <association xil_pn:name="Implementation" xil_pn:seqID="0"/>
+    </file>
+    <file xil_pn:name="../../paramsocs/LEONGILL/MUXGPIO.vhd" xil_pn:type="FILE_VHDL">
+      <association xil_pn:name="BehavioralSimulation" xil_pn:seqID="323"/>
+      <association xil_pn:name="Implementation" xil_pn:seqID="0"/>
+    </file>
+    <file xil_pn:name="../../paramsocs/LEONGILL/DFFsignal.vhd" xil_pn:type="FILE_VHDL">
+      <association xil_pn:name="BehavioralSimulation" xil_pn:seqID="324"/>
+      <association xil_pn:name="Implementation" xil_pn:seqID="93"/>
+    </file>
+    <file xil_pn:name="../../paramsocs/LEONGILL/MUXforNRMPQ.vhd" xil_pn:type="FILE_VHDL">
+      <association xil_pn:name="BehavioralSimulation" xil_pn:seqID="325"/>
+      <association xil_pn:name="Implementation" xil_pn:seqID="0"/>
+    </file>
+    <file xil_pn:name="../../paramsocs/LEONGILL/MUXforcmpaddress.vhd" xil_pn:type="FILE_VHDL">
+      <association xil_pn:name="BehavioralSimulation" xil_pn:seqID="326"/>
+      <association xil_pn:name="Implementation" xil_pn:seqID="0"/>
+    </file>
+    <file xil_pn:name="../../paramsocs/LEONGILL/MUXforUart1.vhd" xil_pn:type="FILE_VHDL">
+      <association xil_pn:name="BehavioralSimulation" xil_pn:seqID="327"/>
+      <association xil_pn:name="Implementation" xil_pn:seqID="120"/>
+    </file>
+    <file xil_pn:name="../../paramsocs/LEONGILL/FSMintforsending.vhd" xil_pn:type="FILE_VHDL">
+      <association xil_pn:name="BehavioralSimulation" xil_pn:seqID="328"/>
+      <association xil_pn:name="Implementation" xil_pn:seqID="157"/>
+    </file>
+    <file xil_pn:name="../../paramsocs/LEONGILL/Test_myFSM.vhd" xil_pn:type="FILE_VHDL">
+      <association xil_pn:name="BehavioralSimulation" xil_pn:seqID="329"/>
+      <association xil_pn:name="Implementation" xil_pn:seqID="156"/>
+    </file>
+  </files>
+
+  <properties>
+    <property xil_pn:name="AES Initial Vector virtex5" xil_pn:value="" xil_pn:valueState="default"/>
+    <property xil_pn:name="AES Key (Hex String)" xil_pn:value="" xil_pn:valueState="default"/>
+    <property xil_pn:name="Add I/O Buffers" xil_pn:value="true" xil_pn:valueState="default"/>
+    <property xil_pn:name="Allow Logic Optimization Across Hierarchy" xil_pn:value="false" xil_pn:valueState="default"/>
+    <property xil_pn:name="Allow SelectMAP Pins to Persist" xil_pn:value="false" xil_pn:valueState="default"/>
+    <property xil_pn:name="Allow Unexpanded Blocks" xil_pn:value="false" xil_pn:valueState="default"/>
+    <property xil_pn:name="Allow Unmatched LOC Constraints" xil_pn:value="false" xil_pn:valueState="default"/>
+    <property xil_pn:name="Allow Unmatched Timing Group Constraints" xil_pn:value="false" xil_pn:valueState="default"/>
+    <property xil_pn:name="Asynchronous To Synchronous" xil_pn:value="false" xil_pn:valueState="default"/>
+    <property xil_pn:name="Auto Implementation Compile Order" xil_pn:value="true" xil_pn:valueState="default"/>
+    <property xil_pn:name="Auto Implementation Top" xil_pn:value="false" xil_pn:valueState="non-default"/>
+    <property xil_pn:name="Automatic BRAM Packing" xil_pn:value="false" xil_pn:valueState="default"/>
+    <property xil_pn:name="Automatically Insert glbl Module in the Netlist" xil_pn:value="true" xil_pn:valueState="default"/>
+    <property xil_pn:name="Automatically Run Generate Target PROM/ACE File" xil_pn:value="false" xil_pn:valueState="default"/>
+    <property xil_pn:name="BPI Reads Per Page" xil_pn:value="1" xil_pn:valueState="default"/>
+    <property xil_pn:name="BRAM Utilization Ratio" xil_pn:value="100" xil_pn:valueState="default"/>
+    <property xil_pn:name="Bring Out Global Set/Reset Net as a Port" xil_pn:value="false" xil_pn:valueState="default"/>
+    <property xil_pn:name="Bring Out Global Tristate Net as a Port" xil_pn:value="false" xil_pn:valueState="default"/>
+    <property xil_pn:name="Bus Delimiter" xil_pn:value="&lt;>" xil_pn:valueState="default"/>
+    <property xil_pn:name="Case" xil_pn:value="Maintain" xil_pn:valueState="default"/>
+    <property xil_pn:name="Case Implementation Style" xil_pn:value="None" xil_pn:valueState="default"/>
+    <property xil_pn:name="Change Device Speed To" xil_pn:value="-1" xil_pn:valueState="default"/>
+    <property xil_pn:name="Change Device Speed To Post Trace" xil_pn:value="-1" xil_pn:valueState="default"/>
+    <property xil_pn:name="Combinatorial Logic Optimization" xil_pn:value="false" xil_pn:valueState="default"/>
+    <property xil_pn:name="Compile EDK Simulation Library" xil_pn:value="false" xil_pn:valueState="default"/>
+    <property xil_pn:name="Compile SIMPRIM (Timing) Simulation Library" xil_pn:value="true" xil_pn:valueState="default"/>
+    <property xil_pn:name="Compile UNISIM (Functional) Simulation Library" xil_pn:value="true" xil_pn:valueState="default"/>
+    <property xil_pn:name="Compile XilinxCoreLib (CORE Generator) Simulation Library" xil_pn:value="true" xil_pn:valueState="default"/>
+    <property xil_pn:name="Compile for HDL Debugging" xil_pn:value="true" xil_pn:valueState="default"/>
+    <property xil_pn:name="Configuration Clk (Configuration Pins)" xil_pn:value="Pull Up" xil_pn:valueState="default"/>
+    <property xil_pn:name="Configuration Pin Busy" xil_pn:value="Pull Up" xil_pn:valueState="default"/>
+    <property xil_pn:name="Configuration Pin CS" xil_pn:value="Pull Up" xil_pn:valueState="default"/>
+    <property xil_pn:name="Configuration Pin DIn" xil_pn:value="Pull Up" xil_pn:valueState="default"/>
+    <property xil_pn:name="Configuration Pin Done" xil_pn:value="Pull Up" xil_pn:valueState="default"/>
+    <property xil_pn:name="Configuration Pin HSWAPEN" xil_pn:value="Pull Up" xil_pn:valueState="default"/>
+    <property xil_pn:name="Configuration Pin Init" xil_pn:value="Pull Up" xil_pn:valueState="default"/>
+    <property xil_pn:name="Configuration Pin M0" xil_pn:value="Pull Up" xil_pn:valueState="default"/>
+    <property xil_pn:name="Configuration Pin M1" xil_pn:value="Pull Up" xil_pn:valueState="default"/>
+    <property xil_pn:name="Configuration Pin M2" xil_pn:value="Pull Up" xil_pn:valueState="default"/>
+    <property xil_pn:name="Configuration Pin Program" xil_pn:value="Pull Up" xil_pn:valueState="default"/>
+    <property xil_pn:name="Configuration Pin RdWr" xil_pn:value="Pull Up" xil_pn:valueState="default"/>
+    <property xil_pn:name="Configuration Rate virtex5" xil_pn:value="2" xil_pn:valueState="default"/>
+    <property xil_pn:name="Correlate Output to Input Design" xil_pn:value="false" xil_pn:valueState="default"/>
+    <property xil_pn:name="Create ASCII Configuration File" xil_pn:value="false" xil_pn:valueState="default"/>
+    <property xil_pn:name="Create Binary Configuration File" xil_pn:value="false" xil_pn:valueState="default"/>
+    <property xil_pn:name="Create Bit File" xil_pn:value="true" xil_pn:valueState="default"/>
+    <property xil_pn:name="Create I/O Pads from Ports" xil_pn:value="false" xil_pn:valueState="default"/>
+    <property xil_pn:name="Create IEEE 1532 Configuration File" xil_pn:value="false" xil_pn:valueState="default"/>
+    <property xil_pn:name="Create Logic Allocation File" xil_pn:value="false" xil_pn:valueState="default"/>
+    <property xil_pn:name="Create Mask File" xil_pn:value="false" xil_pn:valueState="default"/>
+    <property xil_pn:name="Create ReadBack Data Files" xil_pn:value="false" xil_pn:valueState="default"/>
+    <property xil_pn:name="Cross Clock Analysis" xil_pn:value="false" xil_pn:valueState="default"/>
+    <property xil_pn:name="Cycles for First BPI Page Read" xil_pn:value="1" xil_pn:valueState="default"/>
+    <property xil_pn:name="DCI Update Mode" xil_pn:value="As Required" xil_pn:valueState="default"/>
+    <property xil_pn:name="DSP Utilization Ratio" xil_pn:value="100" xil_pn:valueState="default"/>
+    <property xil_pn:name="Decoder Extraction" xil_pn:value="true" xil_pn:valueState="default"/>
+    <property xil_pn:name="Delay Values To Be Read from SDF" xil_pn:value="Setup Time" xil_pn:valueState="default"/>
+    <property xil_pn:name="Device" xil_pn:value="xc5vlx110t" xil_pn:valueState="non-default"/>
+    <property xil_pn:name="Device Family" xil_pn:value="Virtex5" xil_pn:valueState="non-default"/>
+    <property xil_pn:name="Device Speed Grade/Select ABS Minimum" xil_pn:value="-1" xil_pn:valueState="default"/>
+    <property xil_pn:name="Disable Detailed Package Model Insertion" xil_pn:value="false" xil_pn:valueState="default"/>
+    <property xil_pn:name="Do Not Escape Signal and Instance Names in Netlist" xil_pn:value="false" xil_pn:valueState="default"/>
+    <property xil_pn:name="Done (Output Events)" xil_pn:value="Default (4)" xil_pn:valueState="default"/>
+    <property xil_pn:name="Drive Done Pin High" xil_pn:value="false" xil_pn:valueState="default"/>
+    <property xil_pn:name="Enable BitStream Compression" xil_pn:value="false" xil_pn:valueState="default"/>
+    <property xil_pn:name="Enable Cyclic Redundancy Checking (CRC)" xil_pn:value="true" xil_pn:valueState="default"/>
+    <property xil_pn:name="Enable Debugging of Serial Mode BitStream" xil_pn:value="false" xil_pn:valueState="default"/>
+    <property xil_pn:name="Enable Internal Done Pipe" xil_pn:value="false" xil_pn:valueState="default"/>
+    <property xil_pn:name="Enable Message Filtering" xil_pn:value="false" xil_pn:valueState="default"/>
+    <property xil_pn:name="Enable Multi-Threading" xil_pn:value="2" xil_pn:valueState="non-default"/>
+    <property xil_pn:name="Enable Multi-Threading par virtex5" xil_pn:value="4" xil_pn:valueState="non-default"/>
+    <property xil_pn:name="Enable Outputs (Output Events)" xil_pn:value="Default (5)" xil_pn:valueState="default"/>
+    <property xil_pn:name="Encrypt Bitstream" xil_pn:value="false" xil_pn:valueState="default"/>
+    <property xil_pn:name="Equivalent Register Removal" xil_pn:value="true" xil_pn:valueState="default"/>
+    <property xil_pn:name="Equivalent Register Removal XST" xil_pn:value="true" xil_pn:valueState="default"/>
+    <property xil_pn:name="Essential Bits" xil_pn:value="false" xil_pn:valueState="default"/>
+    <property xil_pn:name="Evaluation Development Board" xil_pn:value="None Specified" xil_pn:valueState="default"/>
+    <property xil_pn:name="Exclude Compilation of Deprecated EDK Cores" xil_pn:value="true" xil_pn:valueState="default"/>
+    <property xil_pn:name="Exclude Compilation of EDK Sub-Libraries" xil_pn:value="false" xil_pn:valueState="default"/>
+    <property xil_pn:name="Extra Effort (Highest PAR level only)" xil_pn:value="None" xil_pn:valueState="default"/>
+    <property xil_pn:name="FPGA Start-Up Clock" xil_pn:value="CCLK" xil_pn:valueState="default"/>
+    <property xil_pn:name="FSM Encoding Algorithm" xil_pn:value="Auto" xil_pn:valueState="default"/>
+    <property xil_pn:name="FSM Style" xil_pn:value="LUT" xil_pn:valueState="default"/>
+    <property xil_pn:name="Fallback Reconfiguration" xil_pn:value="Enable" xil_pn:valueState="default"/>
+    <property xil_pn:name="Filter Files From Compile Order" xil_pn:value="true" xil_pn:valueState="default"/>
+    <property xil_pn:name="Flatten Output Netlist" xil_pn:value="false" xil_pn:valueState="default"/>
+    <property xil_pn:name="Functional Model Target Language ArchWiz" xil_pn:value="VHDL" xil_pn:valueState="default"/>
+    <property xil_pn:name="Functional Model Target Language Coregen" xil_pn:value="VHDL" xil_pn:valueState="default"/>
+    <property xil_pn:name="Functional Model Target Language Schematic" xil_pn:value="VHDL" xil_pn:valueState="default"/>
+    <property xil_pn:name="Generate Architecture Only (No Entity Declaration)" xil_pn:value="false" xil_pn:valueState="default"/>
+    <property xil_pn:name="Generate Asynchronous Delay Report" xil_pn:value="false" xil_pn:valueState="default"/>
+    <property xil_pn:name="Generate Clock Region Report" xil_pn:value="false" xil_pn:valueState="default"/>
+    <property xil_pn:name="Generate Constraints Interaction Report" xil_pn:value="false" xil_pn:valueState="default"/>
+    <property xil_pn:name="Generate Constraints Interaction Report Post Trace" xil_pn:value="false" xil_pn:valueState="default"/>
+    <property xil_pn:name="Generate Datasheet Section" xil_pn:value="true" xil_pn:valueState="default"/>
+    <property xil_pn:name="Generate Datasheet Section Post Trace" xil_pn:value="true" xil_pn:valueState="default"/>
+    <property xil_pn:name="Generate Detailed MAP Report" xil_pn:value="false" xil_pn:valueState="default"/>
+    <property xil_pn:name="Generate Multiple Hierarchical Netlist Files" xil_pn:value="false" xil_pn:valueState="default"/>
+    <property xil_pn:name="Generate Post-Place &amp; Route Power Report" xil_pn:value="false" xil_pn:valueState="default"/>
+    <property xil_pn:name="Generate Post-Place &amp; Route Simulation Model" xil_pn:value="false" xil_pn:valueState="default"/>
+    <property xil_pn:name="Generate RTL Schematic" xil_pn:value="Yes" xil_pn:valueState="default"/>
+    <property xil_pn:name="Generate SAIF File for Power Optimization/Estimation Par" xil_pn:value="false" xil_pn:valueState="default"/>
+    <property xil_pn:name="Generate Testbench File" xil_pn:value="false" xil_pn:valueState="default"/>
+    <property xil_pn:name="Generate Timegroups Section" xil_pn:value="false" xil_pn:valueState="default"/>
+    <property xil_pn:name="Generate Timegroups Section Post Trace" xil_pn:value="false" xil_pn:valueState="default"/>
+    <property xil_pn:name="Generics, Parameters" xil_pn:value="" xil_pn:valueState="default"/>
+    <property xil_pn:name="Global Optimization Goal" xil_pn:value="AllClockNets" xil_pn:valueState="default"/>
+    <property xil_pn:name="Global Optimization map virtex5" xil_pn:value="Off" xil_pn:valueState="default"/>
+    <property xil_pn:name="Global Set/Reset Port Name" xil_pn:value="GSR_PORT" xil_pn:valueState="default"/>
+    <property xil_pn:name="Global Tristate Port Name" xil_pn:value="GTS_PORT" xil_pn:valueState="default"/>
+    <property xil_pn:name="Hierarchy Separator" xil_pn:value="/" xil_pn:valueState="default"/>
+    <property xil_pn:name="ISim UUT Instance Name" xil_pn:value="UUT" xil_pn:valueState="default"/>
+    <property xil_pn:name="Ignore User Timing Constraints Map" xil_pn:value="false" xil_pn:valueState="default"/>
+    <property xil_pn:name="Ignore User Timing Constraints Par" xil_pn:value="false" xil_pn:valueState="default"/>
+    <property xil_pn:name="Implementation Top" xil_pn:value="Architecture|proc_wrapper_FRM4X|rtl" xil_pn:valueState="non-default"/>
+    <property xil_pn:name="Implementation Top File" xil_pn:value="proc_wrapper_FRM4X.vhd" xil_pn:valueState="non-default"/>
+    <property xil_pn:name="Implementation Top Instance Path" xil_pn:value="/proc_wrapper_FRM4X" xil_pn:valueState="non-default"/>
+    <property xil_pn:name="Include 'uselib Directive in Verilog File" xil_pn:value="false" xil_pn:valueState="default"/>
+    <property xil_pn:name="Include SIMPRIM Models in Verilog File" xil_pn:value="false" xil_pn:valueState="default"/>
+    <property xil_pn:name="Include UNISIM Models in Verilog File" xil_pn:value="false" xil_pn:valueState="default"/>
+    <property xil_pn:name="Include sdf_annotate task in Verilog File" xil_pn:value="true" xil_pn:valueState="default"/>
+    <property xil_pn:name="Incremental Compilation" xil_pn:value="true" xil_pn:valueState="default"/>
+    <property xil_pn:name="Insert Buffers to Prevent Pulse Swallowing" xil_pn:value="true" xil_pn:valueState="default"/>
+    <property xil_pn:name="Instantiation Template Target Language Xps" xil_pn:value="VHDL" xil_pn:valueState="default"/>
+    <property xil_pn:name="JTAG Pin TCK" xil_pn:value="Pull Up" xil_pn:valueState="default"/>
+    <property xil_pn:name="JTAG Pin TDI" xil_pn:value="Pull Up" xil_pn:valueState="default"/>
+    <property xil_pn:name="JTAG Pin TDO" xil_pn:value="Pull Up" xil_pn:valueState="default"/>
+    <property xil_pn:name="JTAG Pin TMS" xil_pn:value="Pull Up" xil_pn:valueState="default"/>
+    <property xil_pn:name="JTAG to System Monitor Connection" xil_pn:value="Enable" xil_pn:valueState="default"/>
+    <property xil_pn:name="Keep Hierarchy" xil_pn:value="No" xil_pn:valueState="default"/>
+    <property xil_pn:name="LUT Combining Map" xil_pn:value="Off" xil_pn:valueState="default"/>
+    <property xil_pn:name="LUT Combining Xst" xil_pn:value="No" xil_pn:valueState="default"/>
+    <property xil_pn:name="Language" xil_pn:value="VHDL" xil_pn:valueState="default"/>
+    <property xil_pn:name="Last Applied Goal" xil_pn:value="Balanced" xil_pn:valueState="default"/>
+    <property xil_pn:name="Last Applied Strategy" xil_pn:value="Xilinx Default (unlocked)" xil_pn:valueState="default"/>
+    <property xil_pn:name="Last Unlock Status" xil_pn:value="false" xil_pn:valueState="default"/>
+    <property xil_pn:name="Launch SDK after Export" xil_pn:value="true" xil_pn:valueState="default"/>
+    <property xil_pn:name="Library for Verilog Sources" xil_pn:value="" xil_pn:valueState="default"/>
+    <property xil_pn:name="Load glbl" xil_pn:value="true" xil_pn:valueState="default"/>
+    <property xil_pn:name="Logical Shifter Extraction" xil_pn:value="true" xil_pn:valueState="default"/>
+    <property xil_pn:name="Manual Implementation Compile Order" xil_pn:value="false" xil_pn:valueState="default"/>
+    <property xil_pn:name="Map Slice Logic into Unused Block RAMs" xil_pn:value="false" xil_pn:valueState="default"/>
+    <property xil_pn:name="Max Fanout" xil_pn:value="100000" xil_pn:valueState="default"/>
+    <property xil_pn:name="Maximum Compression" xil_pn:value="false" xil_pn:valueState="default"/>
+    <property xil_pn:name="Maximum Number of Lines in Report" xil_pn:value="1000" xil_pn:valueState="default"/>
+    <property xil_pn:name="Maximum Signal Name Length" xil_pn:value="20" xil_pn:valueState="default"/>
+    <property xil_pn:name="Move First Flip-Flop Stage" xil_pn:value="true" xil_pn:valueState="default"/>
+    <property xil_pn:name="Move Last Flip-Flop Stage" xil_pn:value="true" xil_pn:valueState="default"/>
+    <property xil_pn:name="Mux Extraction" xil_pn:value="Yes" xil_pn:valueState="default"/>
+    <property xil_pn:name="Mux Style" xil_pn:value="Auto" xil_pn:valueState="default"/>
+    <property xil_pn:name="Netlist Hierarchy" xil_pn:value="As Optimized" xil_pn:valueState="default"/>
+    <property xil_pn:name="Netlist Translation Type" xil_pn:value="Timestamp" xil_pn:valueState="default"/>
+    <property xil_pn:name="Number of Clock Buffers" xil_pn:value="32" xil_pn:valueState="default"/>
+    <property xil_pn:name="Number of Paths in Error/Verbose Report" xil_pn:value="3" xil_pn:valueState="default"/>
+    <property xil_pn:name="Number of Paths in Error/Verbose Report Post Trace" xil_pn:value="3" xil_pn:valueState="default"/>
+    <property xil_pn:name="Optimization Effort" xil_pn:value="Normal" xil_pn:valueState="default"/>
+    <property xil_pn:name="Optimization Goal" xil_pn:value="Speed" xil_pn:valueState="default"/>
+    <property xil_pn:name="Optimization Strategy (Cover Mode)" xil_pn:value="Area" xil_pn:valueState="default"/>
+    <property xil_pn:name="Optimize Instantiated Primitives" xil_pn:value="false" xil_pn:valueState="default"/>
+    <property xil_pn:name="Other Bitgen Command Line Options" xil_pn:value="" xil_pn:valueState="default"/>
+    <property xil_pn:name="Other Compiler Options" xil_pn:value="" xil_pn:valueState="default"/>
+    <property xil_pn:name="Other Compiler Options Fit" xil_pn:value="" xil_pn:valueState="default"/>
+    <property xil_pn:name="Other Compiler Options Map" xil_pn:value="" xil_pn:valueState="default"/>
+    <property xil_pn:name="Other Compiler Options Par" xil_pn:value="" xil_pn:valueState="default"/>
+    <property xil_pn:name="Other Compiler Options Translate" xil_pn:value="" xil_pn:valueState="default"/>
+    <property xil_pn:name="Other Compxlib Command Line Options" xil_pn:value="" xil_pn:valueState="default"/>
+    <property xil_pn:name="Other Map Command Line Options" xil_pn:value="" xil_pn:valueState="default"/>
+    <property xil_pn:name="Other NETGEN Command Line Options" xil_pn:value="" xil_pn:valueState="default"/>
+    <property xil_pn:name="Other Ngdbuild Command Line Options" xil_pn:value="" xil_pn:valueState="default"/>
+    <property xil_pn:name="Other Place &amp; Route Command Line Options" xil_pn:value="" xil_pn:valueState="default"/>
+    <property xil_pn:name="Other Simulator Commands Behavioral" xil_pn:value="" xil_pn:valueState="default"/>
+    <property xil_pn:name="Other Simulator Commands Post-Map" xil_pn:value="" xil_pn:valueState="default"/>
+    <property xil_pn:name="Other Simulator Commands Post-Route" xil_pn:value="" xil_pn:valueState="default"/>
+    <property xil_pn:name="Other Simulator Commands Post-Translate" xil_pn:value="" xil_pn:valueState="default"/>
+    <property xil_pn:name="Other XPWR Command Line Options" xil_pn:value="" xil_pn:valueState="default"/>
+    <property xil_pn:name="Other XST Command Line Options" xil_pn:value="-uc ../../paramsocs/Leon3_comps_Gill_top/Leon3_comps/leon3mp.xcf" xil_pn:valueState="non-default"/>
+    <property xil_pn:name="Output Extended Identifiers" xil_pn:value="false" xil_pn:valueState="default"/>
+    <property xil_pn:name="Output File Name" xil_pn:value="proc_wrapper_FRM4X" xil_pn:valueState="default"/>
+    <property xil_pn:name="Overwrite Compiled Libraries" xil_pn:value="false" xil_pn:valueState="default"/>
+    <property xil_pn:name="Pack I/O Registers into IOBs" xil_pn:value="Auto" xil_pn:valueState="default"/>
+    <property xil_pn:name="Pack I/O Registers/Latches into IOBs" xil_pn:value="Off" xil_pn:valueState="default"/>
+    <property xil_pn:name="Package" xil_pn:value="ff1136" xil_pn:valueState="default"/>
+    <property xil_pn:name="Perform Advanced Analysis" xil_pn:value="false" xil_pn:valueState="default"/>
+    <property xil_pn:name="Perform Advanced Analysis Post Trace" xil_pn:value="false" xil_pn:valueState="default"/>
+    <property xil_pn:name="Perform Timing-Driven Packing and Placement" xil_pn:value="false" xil_pn:valueState="default"/>
+    <property xil_pn:name="Place &amp; Route Effort Level (Overall)" xil_pn:value="High" xil_pn:valueState="default"/>
+    <property xil_pn:name="Place And Route Mode" xil_pn:value="Route Only" xil_pn:valueState="default"/>
+    <property xil_pn:name="Placer Effort Level Map" xil_pn:value="High" xil_pn:valueState="default"/>
+    <property xil_pn:name="Placer Extra Effort Map" xil_pn:value="None" xil_pn:valueState="default"/>
+    <property xil_pn:name="Port to be used" xil_pn:value="Auto - default" xil_pn:valueState="default"/>
+    <property xil_pn:name="Post Map Simulation Model Name" xil_pn:value="proc_wrapper_FRM4X_map.vhd" xil_pn:valueState="default"/>
+    <property xil_pn:name="Post Place &amp; Route Simulation Model Name" xil_pn:value="proc_wrapper_FRM4X_timesim.vhd" xil_pn:valueState="default"/>
+    <property xil_pn:name="Post Synthesis Simulation Model Name" xil_pn:value="proc_wrapper_FRM4X_synthesis.vhd" xil_pn:valueState="default"/>
+    <property xil_pn:name="Post Translate Simulation Model Name" xil_pn:value="proc_wrapper_FRM4X_translate.vhd" xil_pn:valueState="default"/>
+    <property xil_pn:name="Power Down Device if Over Safe Temperature" xil_pn:value="true" xil_pn:valueState="non-default"/>
+    <property xil_pn:name="Power Reduction Map" xil_pn:value="false" xil_pn:valueState="default"/>
+    <property xil_pn:name="Power Reduction Par" xil_pn:value="false" xil_pn:valueState="default"/>
+    <property xil_pn:name="Power Reduction Xst" xil_pn:value="false" xil_pn:valueState="default"/>
+    <property xil_pn:name="Preferred Language" xil_pn:value="VHDL" xil_pn:valueState="non-default"/>
+    <property xil_pn:name="Priority Encoder Extraction" xil_pn:value="Yes" xil_pn:valueState="default"/>
+    <property xil_pn:name="Produce Verbose Report" xil_pn:value="false" xil_pn:valueState="default"/>
+    <property xil_pn:name="Property Specification in Project File" xil_pn:value="Store all values" xil_pn:valueState="default"/>
+    <property xil_pn:name="RAM Extraction" xil_pn:value="true" xil_pn:valueState="default"/>
+    <property xil_pn:name="RAM Style" xil_pn:value="Auto" xil_pn:valueState="default"/>
+    <property xil_pn:name="ROM Extraction" xil_pn:value="true" xil_pn:valueState="default"/>
+    <property xil_pn:name="ROM Style" xil_pn:value="Auto" xil_pn:valueState="default"/>
+    <property xil_pn:name="Read Cores" xil_pn:value="true" xil_pn:valueState="default"/>
+    <property xil_pn:name="Reduce Control Sets" xil_pn:value="No" xil_pn:valueState="default"/>
+    <property xil_pn:name="Regenerate Core" xil_pn:value="Under Current Project Setting" xil_pn:valueState="default"/>
+    <property xil_pn:name="Register Balancing" xil_pn:value="No" xil_pn:valueState="default"/>
+    <property xil_pn:name="Register Duplication Map" xil_pn:value="Off" xil_pn:valueState="default"/>
+    <property xil_pn:name="Register Duplication Xst" xil_pn:value="true" xil_pn:valueState="default"/>
+    <property xil_pn:name="Release Write Enable (Output Events)" xil_pn:value="Default (6)" xil_pn:valueState="default"/>
+    <property xil_pn:name="Rename Design Instance in Testbench File to" xil_pn:value="UUT" xil_pn:valueState="default"/>
+    <property xil_pn:name="Rename Top Level Architecture To" xil_pn:value="Structure" xil_pn:valueState="default"/>
+    <property xil_pn:name="Rename Top Level Entity to" xil_pn:value="proc_wrapper_FRM4X" xil_pn:valueState="default"/>
+    <property xil_pn:name="Rename Top Level Module To" xil_pn:value="" xil_pn:valueState="default"/>
+    <property xil_pn:name="Report Fastest Path(s) in Each Constraint" xil_pn:value="true" xil_pn:valueState="default"/>
+    <property xil_pn:name="Report Fastest Path(s) in Each Constraint Post Trace" xil_pn:value="true" xil_pn:valueState="default"/>
+    <property xil_pn:name="Report Paths by Endpoint" xil_pn:value="3" xil_pn:valueState="default"/>
+    <property xil_pn:name="Report Paths by Endpoint Post Trace" xil_pn:value="3" xil_pn:valueState="default"/>
+    <property xil_pn:name="Report Type" xil_pn:value="Verbose Report" xil_pn:valueState="default"/>
+    <property xil_pn:name="Report Type Post Trace" xil_pn:value="Verbose Report" xil_pn:valueState="default"/>
+    <property xil_pn:name="Report Unconstrained Paths" xil_pn:value="" xil_pn:valueState="default"/>
+    <property xil_pn:name="Report Unconstrained Paths Post Trace" xil_pn:value="" xil_pn:valueState="default"/>
+    <property xil_pn:name="Reset On Configuration Pulse Width" xil_pn:value="100" xil_pn:valueState="default"/>
+    <property xil_pn:name="Resource Sharing" xil_pn:value="true" xil_pn:valueState="default"/>
+    <property xil_pn:name="Retain Hierarchy" xil_pn:value="true" xil_pn:valueState="default"/>
+    <property xil_pn:name="Retiming" xil_pn:value="false" xil_pn:valueState="default"/>
+    <property xil_pn:name="Run Design Rules Checker (DRC)" xil_pn:value="true" xil_pn:valueState="default"/>
+    <property xil_pn:name="Run for Specified Time" xil_pn:value="true" xil_pn:valueState="default"/>
+    <property xil_pn:name="Run for Specified Time Map" xil_pn:value="true" xil_pn:valueState="default"/>
+    <property xil_pn:name="Run for Specified Time Par" xil_pn:value="true" xil_pn:valueState="default"/>
+    <property xil_pn:name="Run for Specified Time Translate" xil_pn:value="true" xil_pn:valueState="default"/>
+    <property xil_pn:name="Safe Implementation" xil_pn:value="No" xil_pn:valueState="default"/>
+    <property xil_pn:name="Security" xil_pn:value="Enable Readback and Reconfiguration" xil_pn:valueState="default"/>
+    <property xil_pn:name="SelectMAP Abort Sequence" xil_pn:value="Enable" xil_pn:valueState="default"/>
+    <property xil_pn:name="Selected Simulation Root Source Node Behavioral" xil_pn:value="" xil_pn:valueState="default"/>
+    <property xil_pn:name="Selected Simulation Root Source Node Post-Map" xil_pn:value="" xil_pn:valueState="default"/>
+    <property xil_pn:name="Selected Simulation Root Source Node Post-Route" xil_pn:value="" xil_pn:valueState="default"/>
+    <property xil_pn:name="Selected Simulation Root Source Node Post-Translate" xil_pn:value="" xil_pn:valueState="default"/>
+    <property xil_pn:name="Selected Simulation Source Node" xil_pn:value="UUT" xil_pn:valueState="default"/>
+    <property xil_pn:name="Shift Register Extraction" xil_pn:value="true" xil_pn:valueState="default"/>
+    <property xil_pn:name="Show All Models" xil_pn:value="false" xil_pn:valueState="default"/>
+    <property xil_pn:name="Simulation Model Target" xil_pn:value="VHDL" xil_pn:valueState="default"/>
+    <property xil_pn:name="Simulation Run Time ISim" xil_pn:value="1000 ns" xil_pn:valueState="default"/>
+    <property xil_pn:name="Simulation Run Time Map" xil_pn:value="1000 ns" xil_pn:valueState="default"/>
+    <property xil_pn:name="Simulation Run Time Par" xil_pn:value="1000 ns" xil_pn:valueState="default"/>
+    <property xil_pn:name="Simulation Run Time Translate" xil_pn:value="1000 ns" xil_pn:valueState="default"/>
+    <property xil_pn:name="Simulator" xil_pn:value="ISim (VHDL/Verilog)" xil_pn:valueState="default"/>
+    <property xil_pn:name="Slice Packing" xil_pn:value="true" xil_pn:valueState="default"/>
+    <property xil_pn:name="Slice Utilization Ratio" xil_pn:value="100" xil_pn:valueState="default"/>
+    <property xil_pn:name="Specify 'define Macro Name and Value" xil_pn:value="" xil_pn:valueState="default"/>
+    <property xil_pn:name="Specify Top Level Instance Names Behavioral" xil_pn:value="Default" xil_pn:valueState="default"/>
+    <property xil_pn:name="Specify Top Level Instance Names Post-Map" xil_pn:value="Default" xil_pn:valueState="default"/>
+    <property xil_pn:name="Specify Top Level Instance Names Post-Route" xil_pn:value="Default" xil_pn:valueState="default"/>
+    <property xil_pn:name="Specify Top Level Instance Names Post-Translate" xil_pn:value="Default" xil_pn:valueState="default"/>
+    <property xil_pn:name="Speed Grade" xil_pn:value="-1" xil_pn:valueState="non-default"/>
+    <property xil_pn:name="Starting Placer Cost Table (1-100)" xil_pn:value="1" xil_pn:valueState="default"/>
+    <property xil_pn:name="Synthesis Tool" xil_pn:value="XST (VHDL/Verilog)" xil_pn:valueState="default"/>
+    <property xil_pn:name="Target Simulator" xil_pn:value="Please Specify" xil_pn:valueState="default"/>
+    <property xil_pn:name="Timing Mode Map" xil_pn:value="Performance Evaluation" xil_pn:valueState="default"/>
+    <property xil_pn:name="Timing Mode Par" xil_pn:value="Performance Evaluation" xil_pn:valueState="default"/>
+    <property xil_pn:name="Top-Level Module Name in Output Netlist" xil_pn:value="" xil_pn:valueState="default"/>
+    <property xil_pn:name="Top-Level Source Type" xil_pn:value="HDL" xil_pn:valueState="default"/>
+    <property xil_pn:name="Trim Unconnected Signals" xil_pn:value="true" xil_pn:valueState="default"/>
+    <property xil_pn:name="Tristate On Configuration Pulse Width" xil_pn:value="0" xil_pn:valueState="default"/>
+    <property xil_pn:name="Unused IOB Pins" xil_pn:value="Pull Down" xil_pn:valueState="default"/>
+    <property xil_pn:name="Use 64-bit PlanAhead on 64-bit Systems" xil_pn:value="true" xil_pn:valueState="default"/>
+    <property xil_pn:name="Use Clock Enable" xil_pn:value="Auto" xil_pn:valueState="default"/>
+    <property xil_pn:name="Use Custom Project File Behavioral" xil_pn:value="false" xil_pn:valueState="default"/>
+    <property xil_pn:name="Use Custom Project File Post-Map" xil_pn:value="false" xil_pn:valueState="default"/>
+    <property xil_pn:name="Use Custom Project File Post-Route" xil_pn:value="false" xil_pn:valueState="default"/>
+    <property xil_pn:name="Use Custom Project File Post-Translate" xil_pn:value="false" xil_pn:valueState="default"/>
+    <property xil_pn:name="Use Custom Simulation Command File Behavioral" xil_pn:value="false" xil_pn:valueState="default"/>
+    <property xil_pn:name="Use Custom Simulation Command File Map" xil_pn:value="false" xil_pn:valueState="default"/>
+    <property xil_pn:name="Use Custom Simulation Command File Par" xil_pn:value="false" xil_pn:valueState="default"/>
+    <property xil_pn:name="Use Custom Simulation Command File Translate" xil_pn:value="false" xil_pn:valueState="default"/>
+    <property xil_pn:name="Use Custom Waveform Configuration File Behav" xil_pn:value="false" xil_pn:valueState="default"/>
+    <property xil_pn:name="Use Custom Waveform Configuration File Map" xil_pn:value="false" xil_pn:valueState="default"/>
+    <property xil_pn:name="Use Custom Waveform Configuration File Par" xil_pn:value="false" xil_pn:valueState="default"/>
+    <property xil_pn:name="Use Custom Waveform Configuration File Translate" xil_pn:value="false" xil_pn:valueState="default"/>
+    <property xil_pn:name="Use DSP Block" xil_pn:value="Auto" xil_pn:valueState="default"/>
+    <property xil_pn:name="Use LOC Constraints" xil_pn:value="true" xil_pn:valueState="default"/>
+    <property xil_pn:name="Use RLOC Constraints" xil_pn:value="Yes" xil_pn:valueState="default"/>
+    <property xil_pn:name="Use Smart Guide" xil_pn:value="false" xil_pn:valueState="default"/>
+    <property xil_pn:name="Use Synchronous Reset" xil_pn:value="Auto" xil_pn:valueState="default"/>
+    <property xil_pn:name="Use Synchronous Set" xil_pn:value="Auto" xil_pn:valueState="default"/>
+    <property xil_pn:name="Use Synthesis Constraints File" xil_pn:value="true" xil_pn:valueState="default"/>
+    <property xil_pn:name="User Access Register Value" xil_pn:value="None" xil_pn:valueState="default"/>
+    <property xil_pn:name="User Browsed Strategy Files" xil_pn:value="" xil_pn:valueState="default"/>
+    <property xil_pn:name="UserID Code (8 Digit Hexadecimal)" xil_pn:value="0xFFFFFFFF" xil_pn:valueState="default"/>
+    <property xil_pn:name="VHDL Source Analysis Standard" xil_pn:value="VHDL-93" xil_pn:valueState="default"/>
+    <property xil_pn:name="Value Range Check" xil_pn:value="false" xil_pn:valueState="default"/>
+    <property xil_pn:name="Verilog 2001 Xst" xil_pn:value="true" xil_pn:valueState="default"/>
+    <property xil_pn:name="Verilog Macros" xil_pn:value="" xil_pn:valueState="default"/>
+    <property xil_pn:name="Wait for DCI Match (Output Events) virtex5" xil_pn:value="Auto" xil_pn:valueState="default"/>
+    <property xil_pn:name="Wait for DLL Lock (Output Events) virtex5" xil_pn:value="Default (NoWait)" xil_pn:valueState="default"/>
+    <property xil_pn:name="Watchdog Timer Mode virtex5" xil_pn:value="Off" xil_pn:valueState="default"/>
+    <property xil_pn:name="Watchdog Timer Value virtex5" xil_pn:value="0x000000" xil_pn:valueState="default"/>
+    <property xil_pn:name="Working Directory" xil_pn:value="." xil_pn:valueState="non-default"/>
+    <property xil_pn:name="Write Timing Constraints" xil_pn:value="false" xil_pn:valueState="default"/>
+    <property xil_pn:name="XOR Collapsing" xil_pn:value="true" xil_pn:valueState="default"/>
+    <!--                                                                                  -->
+    <!-- The following properties are for internal use only. These should not be modified.-->
+    <!--                                                                                  -->
+    <property xil_pn:name="PROP_BehavioralSimTop" xil_pn:value="" xil_pn:valueState="default"/>
+    <property xil_pn:name="PROP_DesignName" xil_pn:value="Leon3_XST_prj" xil_pn:valueState="non-default"/>
+    <property xil_pn:name="PROP_DevFamilyPMName" xil_pn:value="virtex5" xil_pn:valueState="default"/>
+    <property xil_pn:name="PROP_FPGAConfiguration" xil_pn:value="FPGAConfiguration" xil_pn:valueState="default"/>
+    <property xil_pn:name="PROP_PostFitSimTop" xil_pn:value="" xil_pn:valueState="default"/>
+    <property xil_pn:name="PROP_PostMapSimTop" xil_pn:value="" xil_pn:valueState="default"/>
+    <property xil_pn:name="PROP_PostParSimTop" xil_pn:value="" xil_pn:valueState="default"/>
+    <property xil_pn:name="PROP_PostSynthSimTop" xil_pn:value="" xil_pn:valueState="default"/>
+    <property xil_pn:name="PROP_PostXlateSimTop" xil_pn:value="" xil_pn:valueState="default"/>
+    <property xil_pn:name="PROP_PreSynthesis" xil_pn:value="PreSynthesis" xil_pn:valueState="default"/>
+    <property xil_pn:name="PROP_intProjectCreationTimestamp" xil_pn:value="2011-12-19T10:46:58" xil_pn:valueState="non-default"/>
+    <property xil_pn:name="PROP_intWbtProjectID" xil_pn:value="604062694E800B8B836FA6022F1350A6" xil_pn:valueState="non-default"/>
+    <property xil_pn:name="PROP_intWorkingDirLocWRTProjDir" xil_pn:value="Same" xil_pn:valueState="non-default"/>
+    <property xil_pn:name="PROP_intWorkingDirUsed" xil_pn:value="No" xil_pn:valueState="non-default"/>
+  </properties>
+
+  <bindings/>
+
+  <libraries>
+    <library xil_pn:name="cypress"/>
+    <library xil_pn:name="esa"/>
+    <library xil_pn:name="eth"/>
+    <library xil_pn:name="fmf"/>
+    <library xil_pn:name="gaisler"/>
+    <library xil_pn:name="grlib"/>
+    <library xil_pn:name="gsi"/>
+    <library xil_pn:name="hynix"/>
+    <library xil_pn:name="micron"/>
+    <library xil_pn:name="opencores"/>
+    <library xil_pn:name="synplify"/>
+    <library xil_pn:name="techmap"/>
+  </libraries>
+
+  <autoManagedFiles>
+    <!-- The following files are identified by `include statements in verilog -->
+    <!-- source files and are automatically managed by Project Navigator.     -->
+    <!--                                                                      -->
+    <!-- Do not hand-edit this section, as it will be overwritten when the    -->
+    <!-- project is analyzed based on files automatically identified as       -->
+    <!-- include files.                                                       -->
+  </autoManagedFiles>
+
+</project>

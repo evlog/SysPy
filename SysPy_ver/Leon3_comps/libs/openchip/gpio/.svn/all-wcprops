@@ -1,0 +1,23 @@
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/svn/!svn/ver/102/SysPy/SysPy_ver/Leon3_comps/libs/openchip/gpio
+END
+apbgpio.vhd
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/svn/!svn/ver/102/SysPy/SysPy_ver/Leon3_comps/libs/openchip/gpio/apbgpio.vhd
+END
+vhdlsyn.txt
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/svn/!svn/ver/102/SysPy/SysPy_ver/Leon3_comps/libs/openchip/gpio/vhdlsyn.txt
+END
+gpio.vhd
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/svn/!svn/ver/102/SysPy/SysPy_ver/Leon3_comps/libs/openchip/gpio/gpio.vhd
+END

@@ -1,0 +1,11 @@
+# Output products list for <subnewflt>
+subnewflt.asy
+subnewflt.ngc
+subnewflt.sym
+subnewflt.v
+subnewflt.veo
+subnewflt.vhd
+subnewflt.vho
+subnewflt.xco
+subnewflt_flist.txt
+subnewflt_xmdf.tcl

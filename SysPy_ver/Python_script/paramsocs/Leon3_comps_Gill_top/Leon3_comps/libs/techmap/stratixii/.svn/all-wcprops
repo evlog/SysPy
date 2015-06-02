@@ -1,0 +1,35 @@
+K 25
+svn:wc:ra_dav:version-url
+V 113
+/svn/!svn/ver/102/SysPy/SysPy_ver/Python_script/paramsocs/Leon3_comps_Gill_top/Leon3_comps/libs/techmap/stratixii
+END
+clkgen_stratixii.vhd
+K 25
+svn:wc:ra_dav:version-url
+V 134
+/svn/!svn/ver/102/SysPy/SysPy_ver/Python_script/paramsocs/Leon3_comps_Gill_top/Leon3_comps/libs/techmap/stratixii/clkgen_stratixii.vhd
+END
+vhdlsim.txt
+K 25
+svn:wc:ra_dav:version-url
+V 125
+/svn/!svn/ver/102/SysPy/SysPy_ver/Python_script/paramsocs/Leon3_comps_Gill_top/Leon3_comps/libs/techmap/stratixii/vhdlsim.txt
+END
+vhdlsyn.txt
+K 25
+svn:wc:ra_dav:version-url
+V 125
+/svn/!svn/ver/102/SysPy/SysPy_ver/Python_script/paramsocs/Leon3_comps_Gill_top/Leon3_comps/libs/techmap/stratixii/vhdlsyn.txt
+END
+stratixii_ddr_phy.vhd
+K 25
+svn:wc:ra_dav:version-url
+V 135
+/svn/!svn/ver/102/SysPy/SysPy_ver/Python_script/paramsocs/Leon3_comps_Gill_top/Leon3_comps/libs/techmap/stratixii/stratixii_ddr_phy.vhd
+END
+grusbhc_stratixii.vhd
+K 25
+svn:wc:ra_dav:version-url
+V 135
+/svn/!svn/ver/102/SysPy/SysPy_ver/Python_script/paramsocs/Leon3_comps_Gill_top/Leon3_comps/libs/techmap/stratixii/grusbhc_stratixii.vhd
+END

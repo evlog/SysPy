@@ -1,0 +1,53 @@
+xst -intstyle ise -ifn "/home/SysPy_test/SysPy_ver/Python_script/testbml2/Leon3_XST_prj/proc_wrapper_FRM4X.xst" -ofn "/home/SysPy_test/SysPy_ver/Python_script/testbml2/Leon3_XST_prj/proc_wrapper_FRM4X.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ../../paramsocs/LEONGILL -nt timestamp -uc Leon3_wrapper.ucf -p xc5vlx110t-ff1136-1 proc_wrapper_FRM4X.ngc proc_wrapper_FRM4X.ngd  
+map -intstyle ise -p xc5vlx110t-ff1136-1 -w -logic_opt off -ol high -t 1 -register_duplication off -global_opt off -mt 2 -cm area -ir off -pr off -lc off -power off -o proc_wrapper_FRM4X_map.ncd proc_wrapper_FRM4X.ngd proc_wrapper_FRM4X.pcf 
+par -w -intstyle ise -ol high -mt 4 proc_wrapper_FRM4X_map.ncd proc_wrapper_FRM4X.ncd proc_wrapper_FRM4X.pcf 
+trce -intstyle ise -v 3 -s 1 -n 3 -fastpaths -xml proc_wrapper_FRM4X.twx proc_wrapper_FRM4X.ncd -o proc_wrapper_FRM4X.twr proc_wrapper_FRM4X.pcf -ucf Leon3_wrapper.ucf 
+bitgen -intstyle ise -f proc_wrapper_FRM4X.ut proc_wrapper_FRM4X.ncd 
+xst -intstyle ise -ifn "/home/SysPy_test/SysPy_ver/Python_script/testbml2/Leon3_XST_prj/proc_wrapper_FRM4X.xst" -ofn "/home/SysPy_test/SysPy_ver/Python_script/testbml2/Leon3_XST_prj/proc_wrapper_FRM4X.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ../../paramsocs/LEONGILL -nt timestamp -uc Leon3_wrapper.ucf -p xc5vlx110t-ff1136-1 proc_wrapper_FRM4X.ngc proc_wrapper_FRM4X.ngd  
+map -intstyle ise -p xc5vlx110t-ff1136-1 -w -logic_opt off -ol high -t 1 -register_duplication off -global_opt off -mt 2 -cm area -ir off -pr off -lc off -power off -o proc_wrapper_FRM4X_map.ncd proc_wrapper_FRM4X.ngd proc_wrapper_FRM4X.pcf 
+xst -intstyle ise -ifn "/home/SysPy_test/SysPy_ver/Python_script/testbml2/Leon3_XST_prj_FRM4_lefteris/proc_wrapper_FRM4X.xst" -ofn "/home/SysPy_test/SysPy_ver/Python_script/testbml2/Leon3_XST_prj_FRM4_lefteris/proc_wrapper_FRM4X.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ../../paramsocs/LEONGILL -nt timestamp -uc Leon3_wrapper.ucf -p xc5vlx110t-ff1136-1 proc_wrapper_FRM4X.ngc proc_wrapper_FRM4X.ngd  
+map -intstyle ise -p xc5vlx110t-ff1136-1 -w -logic_opt off -ol high -t 1 -register_duplication off -global_opt off -mt 2 -cm area -ir off -pr off -lc off -power off -o proc_wrapper_FRM4X_map.ncd proc_wrapper_FRM4X.ngd proc_wrapper_FRM4X.pcf 
+ngdbuild -intstyle ise -dd _ngo -sd ../../paramsocs/LEONGILL -nt timestamp -uc Leon3_wrapper.ucf -p xc5vlx110t-ff1136-1 proc_wrapper_FRM4X.ngc proc_wrapper_FRM4X.ngd  
+map -intstyle ise -p xc5vlx110t-ff1136-1 -w -logic_opt off -ol high -t 1 -register_duplication off -global_opt off -mt 2 -cm area -ir off -pr off -lc off -power off -o proc_wrapper_FRM4X_map.ncd proc_wrapper_FRM4X.ngd proc_wrapper_FRM4X.pcf 
+par -w -intstyle ise -ol high -mt 4 proc_wrapper_FRM4X_map.ncd proc_wrapper_FRM4X.ncd proc_wrapper_FRM4X.pcf 
+trce -intstyle ise -v 3 -s 1 -n 3 -fastpaths -xml proc_wrapper_FRM4X.twx proc_wrapper_FRM4X.ncd -o proc_wrapper_FRM4X.twr proc_wrapper_FRM4X.pcf -ucf Leon3_wrapper.ucf 
+bitgen -intstyle ise -f proc_wrapper_FRM4X.ut proc_wrapper_FRM4X.ncd 
+xst -intstyle ise -ifn "/home/SysPy_test/SysPy_ver/Python_script/testbml2/Leon3_XST_prj_FRM4_lefteris/proc_wrapper_FRM4X.xst" -ofn "/home/SysPy_test/SysPy_ver/Python_script/testbml2/Leon3_XST_prj_FRM4_lefteris/proc_wrapper_FRM4X.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ../../paramsocs/LEONGILL -nt timestamp -uc Leon3_wrapper.ucf -p xc5vlx110t-ff1136-1 proc_wrapper_FRM4X.ngc proc_wrapper_FRM4X.ngd  
+map -intstyle ise -p xc5vlx110t-ff1136-1 -w -logic_opt off -ol high -t 1 -register_duplication off -global_opt off -mt 2 -cm area -ir off -pr off -lc off -power off -o proc_wrapper_FRM4X_map.ncd proc_wrapper_FRM4X.ngd proc_wrapper_FRM4X.pcf 
+ngdbuild -intstyle ise -dd _ngo -sd ../../paramsocs/LEONGILL -nt timestamp -uc Leon3_wrapper.ucf -p xc5vlx110t-ff1136-1 proc_wrapper_FRM4X.ngc proc_wrapper_FRM4X.ngd  
+map -intstyle ise -p xc5vlx110t-ff1136-1 -w -logic_opt off -ol high -t 1 -register_duplication off -global_opt off -mt 2 -cm area -ir off -pr off -lc off -power off -o proc_wrapper_FRM4X_map.ncd proc_wrapper_FRM4X.ngd proc_wrapper_FRM4X.pcf 
+par -w -intstyle ise -ol high -mt 4 proc_wrapper_FRM4X_map.ncd proc_wrapper_FRM4X.ncd proc_wrapper_FRM4X.pcf 
+trce -intstyle ise -v 3 -s 1 -n 3 -fastpaths -xml proc_wrapper_FRM4X.twx proc_wrapper_FRM4X.ncd -o proc_wrapper_FRM4X.twr proc_wrapper_FRM4X.pcf -ucf Leon3_wrapper.ucf 
+bitgen -intstyle ise -f proc_wrapper_FRM4X.ut proc_wrapper_FRM4X.ncd 
+xst -intstyle ise -ifn "/home/SysPy_test/SysPy_ver/Python_script/testbml2/Leon3_XST_prj_FRM4_lefteris/proc_wrapper_FRM4X.xst" -ofn "/home/SysPy_test/SysPy_ver/Python_script/testbml2/Leon3_XST_prj_FRM4_lefteris/proc_wrapper_FRM4X.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ../../paramsocs/LEONGILL -nt timestamp -uc Leon3_wrapper.ucf -p xc5vlx110t-ff1136-1 proc_wrapper_FRM4X.ngc proc_wrapper_FRM4X.ngd  
+map -intstyle ise -p xc5vlx110t-ff1136-1 -w -logic_opt off -ol high -t 1 -register_duplication off -global_opt off -mt 2 -cm area -ir off -pr off -lc off -power off -o proc_wrapper_FRM4X_map.ncd proc_wrapper_FRM4X.ngd proc_wrapper_FRM4X.pcf 
+par -w -intstyle ise -ol high -mt 4 proc_wrapper_FRM4X_map.ncd proc_wrapper_FRM4X.ncd proc_wrapper_FRM4X.pcf 
+trce -intstyle ise -v 3 -s 1 -n 3 -fastpaths -xml proc_wrapper_FRM4X.twx proc_wrapper_FRM4X.ncd -o proc_wrapper_FRM4X.twr proc_wrapper_FRM4X.pcf -ucf Leon3_wrapper.ucf 
+bitgen -intstyle ise -f proc_wrapper_FRM4X.ut proc_wrapper_FRM4X.ncd 
+xst -intstyle ise -ifn "/home/SysPy_test/SysPy_ver/Python_script/testbml2/Leon3_XST_prj_FRM4_lefteris/proc_wrapper_FRM4X.xst" -ofn "/home/SysPy_test/SysPy_ver/Python_script/testbml2/Leon3_XST_prj_FRM4_lefteris/proc_wrapper_FRM4X.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ../../paramsocs/LEONGILL -nt timestamp -uc Leon3_wrapper.ucf -p xc5vlx110t-ff1136-1 proc_wrapper_FRM4X.ngc proc_wrapper_FRM4X.ngd  
+map -intstyle ise -p xc5vlx110t-ff1136-1 -w -logic_opt off -ol high -t 1 -register_duplication off -global_opt off -mt 2 -cm area -ir off -pr off -lc off -power off -o proc_wrapper_FRM4X_map.ncd proc_wrapper_FRM4X.ngd proc_wrapper_FRM4X.pcf 
+par -w -intstyle ise -ol high -mt 4 proc_wrapper_FRM4X_map.ncd proc_wrapper_FRM4X.ncd proc_wrapper_FRM4X.pcf 
+trce -intstyle ise -v 3 -s 1 -n 3 -fastpaths -xml proc_wrapper_FRM4X.twx proc_wrapper_FRM4X.ncd -o proc_wrapper_FRM4X.twr proc_wrapper_FRM4X.pcf -ucf Leon3_wrapper.ucf 
+bitgen -intstyle ise -f proc_wrapper_FRM4X.ut proc_wrapper_FRM4X.ncd 
+xst -intstyle ise -ifn "/home/SysPy_test/SysPy_ver/Python_script/testbml2/Leon3_XST_prj_FRM4_lefteris/proc_wrapper_FRM4X.xst" -ofn "/home/SysPy_test/SysPy_ver/Python_script/testbml2/Leon3_XST_prj_FRM4_lefteris/proc_wrapper_FRM4X.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ../../paramsocs/LEONGILL -nt timestamp -uc Leon3_wrapper.ucf -p xc5vlx110t-ff1136-1 proc_wrapper_FRM4X.ngc proc_wrapper_FRM4X.ngd  
+map -intstyle ise -p xc5vlx110t-ff1136-1 -w -logic_opt off -ol high -t 1 -register_duplication off -global_opt off -mt 2 -cm area -ir off -pr off -lc off -power off -o proc_wrapper_FRM4X_map.ncd proc_wrapper_FRM4X.ngd proc_wrapper_FRM4X.pcf 
+par -w -intstyle ise -ol high -mt 4 proc_wrapper_FRM4X_map.ncd proc_wrapper_FRM4X.ncd proc_wrapper_FRM4X.pcf 
+trce -intstyle ise -v 3 -s 1 -n 3 -fastpaths -xml proc_wrapper_FRM4X.twx proc_wrapper_FRM4X.ncd -o proc_wrapper_FRM4X.twr proc_wrapper_FRM4X.pcf -ucf Leon3_wrapper.ucf 
+bitgen -intstyle ise -f proc_wrapper_FRM4X.ut proc_wrapper_FRM4X.ncd 
+xst -intstyle ise -ifn "/home/SysPy_test/SysPy_ver/Python_script/testbml2/Leon3_XST_prj_FRM4_lefteris/proc_wrapper_FRM4X.xst" -ofn "/home/SysPy_test/SysPy_ver/Python_script/testbml2/Leon3_XST_prj_FRM4_lefteris/proc_wrapper_FRM4X.syr" 
+xst -intstyle ise -ifn "/media/Seagate/system_backup/SysPy_test/SysPy_ver/Python_script/testbml2/Leon3_XST_prj_FRM4_lefteris/proc_wrapper_FRM4X.xst" -ofn "/media/Seagate/system_backup/SysPy_test/SysPy_ver/Python_script/testbml2/Leon3_XST_prj_FRM4_lefteris/proc_wrapper_FRM4X.syr" 
+xst -intstyle ise -ifn "/media/Seagate/system_backup/SysPy_test/SysPy_ver/Python_script/testbml2/Leon3_XST_prj_FRM4_lefteris/proc_wrapper_FRM4X.xst" -ofn "/media/Seagate/system_backup/SysPy_test/SysPy_ver/Python_script/testbml2/Leon3_XST_prj_FRM4_lefteris/proc_wrapper_FRM4X.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ../../paramsocs/LEONGILL -nt timestamp -uc Leon3_wrapper.ucf -p xc5vlx110t-ff1136-1 proc_wrapper_FRM4X.ngc proc_wrapper_FRM4X.ngd  
+map -intstyle ise -p xc5vlx110t-ff1136-1 -w -logic_opt off -ol high -t 1 -register_duplication off -global_opt off -mt 2 -cm area -ir off -pr off -lc off -power off -o proc_wrapper_FRM4X_map.ncd proc_wrapper_FRM4X.ngd proc_wrapper_FRM4X.pcf 
+par -w -intstyle ise -ol high -mt 4 proc_wrapper_FRM4X_map.ncd proc_wrapper_FRM4X.ncd proc_wrapper_FRM4X.pcf 
+trce -intstyle ise -v 3 -s 1 -n 3 -fastpaths -xml proc_wrapper_FRM4X.twx proc_wrapper_FRM4X.ncd -o proc_wrapper_FRM4X.twr proc_wrapper_FRM4X.pcf -ucf Leon3_wrapper.ucf 
+xst -intstyle ise -ifn "/home/SysPy_test/SysPy_ver/Python_script/testbml2/Leon3_XST_prj_FRM4_lefteris/proc_wrapper_FRM4X.xst" -ofn "/home/SysPy_test/SysPy_ver/Python_script/testbml2/Leon3_XST_prj_FRM4_lefteris/proc_wrapper_FRM4X.syr" 
+xst -intstyle ise -ifn "/home/SysPy_test/SysPy_ver/Python_script/testbml2/Leon3_XST_prj_FRM4_lefteris/proc_wrapper_FRM4X.xst" -ofn "/home/SysPy_test/SysPy_ver/Python_script/testbml2/Leon3_XST_prj_FRM4_lefteris/proc_wrapper_FRM4X.syr" 
+xst -intstyle ise -ifn "/home/SysPy_test/SysPy_ver/Python_script/testbml2/Leon3_XST_prj_FRM4_lefteris/proc_wrapper_FRM4X.xst" -ofn "/home/SysPy_test/SysPy_ver/Python_script/testbml2/Leon3_XST_prj_FRM4_lefteris/proc_wrapper_FRM4X.syr" 

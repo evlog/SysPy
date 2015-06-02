@@ -1,0 +1,11 @@
+# Output products list for <minuslnx>
+minuslnx.asy
+minuslnx.ngc
+minuslnx.sym
+minuslnx.v
+minuslnx.veo
+minuslnx.vhd
+minuslnx.vho
+minuslnx.xco
+minuslnx_flist.txt
+minuslnx_xmdf.tcl

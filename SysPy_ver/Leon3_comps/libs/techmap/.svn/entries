@@ -1,0 +1,107 @@
+10
+
+dir
+140
+http://195.134.67.116/svn/SysPy/SysPy_ver/Leon3_comps/libs/techmap
+http://195.134.67.116/svn
+
+
+
+2013-06-08T14:41:14.187504Z
+102
+root
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+6226af92-94fb-486e-b1e0-015fb9bc6cc8
+
+dirs.txt
+file
+
+
+
+
+2013-08-29T18:27:25.320128Z
+f5222c195fc5bed2f0d33096c8295aef
+2013-06-08T14:41:14.187504Z
+102
+root
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+23
+
+atc18
+dir
+
+stratixii
+dir
+
+cycloneiii
+dir
+
+ec
+dir
+
+gencomp
+dir
+
+eclipsee
+dir
+
+stratixiii
+dir
+
+altera_mf
+dir
+
+umc18
+dir
+
+inferred
+dir
+
+maps
+dir
+
+unisim
+dir
+
+dw02
+dir
+
+virage
+dir
+
+clocks
+dir
+

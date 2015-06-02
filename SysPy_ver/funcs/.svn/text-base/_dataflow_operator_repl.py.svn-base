@@ -1,0 +1,47 @@
+def dataflow_operator_repl(dataflow_assign):
+       """
+       FUNCTION: dataflow_operator_repl(a[])
+              a: list with the data flow assignments
+              
+       Libraries statement of the *.vhd file.
+       - Operators replacement in the dataflow assignments.
+       """
+       
+# Python's variable declerations
+#----------------------------------------------------------------------------------------------------------------------------------
+
+#----------------------------------------------------------------------------------------------------------------------------------
+
+# remove space characters
+#----------------------------------------------------------------------------------------------------------------------------------
+       for i in range(0, len(dataflow_assign)):
+              dataflow_assign[i][0] = dataflow_assign[i][0].replace(' ', '')
+              if (dataflow_assign[i] != "\n"):
+                     dataflow_assign[i][0] = dataflow_assign[i][0].replace("\n", '')
+#----------------------------------------------------------------------------------------------------------------------------------
+
+# replacement of arithmetic operands
+#----------------------------------------------------------------------------------------------------------------------------------
+       ## replacement in the data flow assignments of the '=' characters with " = "
+       for i in range(0, len(dataflow_assign)):
+              dataflow_assign[i][0] = dataflow_assign[i][0].replace('=', " <= ")
+
+       ## replacement in the data flow assignments of the '+' characters with " + "
+       for i in range(0, len(dataflow_assign)):
+              dataflow_assign[i][0] = dataflow_assign[i][0].replace('+', " + ")
+
+       ## replacement in the data flow assignments of the '+' characters with " + "
+       for i in range(0, len(dataflow_assign)):
+              dataflow_assign[i][0] = dataflow_assign[i][0].replace('-', " - ")
+
+       ## replacement in the data flow assignments of the '*' characters with " * "
+       for i in range(0, len(dataflow_assign)):
+              dataflow_assign[i][0] = dataflow_assign[i][0].replace('*', " * ")
+#----------------------------------------------------------------------------------------------------------------------------------
+
+       for i in range(0, len(dataflow_assign)):
+              dataflow_assign[i][0] = ("\t" + dataflow_assign[i][0] + ";\n")
+
+       return dataflow_assign
+
+       

@@ -1,0 +1,23 @@
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/svn/!svn/ver/102/SysPy/SysPy_ver/Leon3_comps/libs/openchip/charlcd
+END
+charlcd.vhd
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/svn/!svn/ver/102/SysPy/SysPy_ver/Leon3_comps/libs/openchip/charlcd/charlcd.vhd
+END
+apbcharlcd.vhd
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/svn/!svn/ver/102/SysPy/SysPy_ver/Leon3_comps/libs/openchip/charlcd/apbcharlcd.vhd
+END
+vhdlsyn.txt
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/svn/!svn/ver/102/SysPy/SysPy_ver/Leon3_comps/libs/openchip/charlcd/vhdlsyn.txt
+END

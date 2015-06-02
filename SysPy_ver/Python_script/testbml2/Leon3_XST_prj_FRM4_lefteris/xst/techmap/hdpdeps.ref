@@ -1,0 +1,767 @@
+V3 838
+FL /home/SysPy_test/SysPy_ver/Python_script/paramsocs/Leon3_comps_Gill_top/Leon3_comps/libs/techmap/gencomp/gencomp.vhd 2011/05/11.18:05:45 O.76xd
+PH techmap/gencomp 1369068217 \
+      FL /home/SysPy_test/SysPy_ver/Python_script/paramsocs/Leon3_comps_Gill_top/Leon3_comps/libs/techmap/gencomp/gencomp.vhd \
+      PB ieee/std_logic_1164 1296775758 LB grlib PB grlib/amba 1369068082 \
+      CD syncram CD syncram_2p CD syncram_dp CD regfile_3p CD syncram64 CD syncram128 \
+      CD syncramft CD syncram_2pft CD syncfifo CD syncram128bw CD syncram156bw \
+      CD syncram256bw CD inpad CD inpadv CD iopad CD iopadv CD iopadvv CD iodpad \
+      CD iodpadv CD outpad CD outpadv CD odpad CD odpadv CD toutpad CD toutpadv \
+      CD toutpadvv CD toutpad_ds CD toutpad_dsv CD toutpad_dsvv CD skew_outpad \
+      CD clkpad CD inpad_ds CD clkpad_ds CD inpad_dsv CD iopad_ds CD outpad_ds \
+      CD outpad_dsv CD lvds_combo CD inpad_ddr CD inpad_ddrv CD outpad_ddr \
+      CD outpad_ddrv CD iopad_ddr CD iopad_ddrv CD iopad_ddrvv CD techbuf CD clkgen \
+      CD clkand CD clkmux CD tap CD ddr_ireg CD ddr_oreg CD ddrphy CD ddr2phy \
+      CD mul_61x61 CD ringosc CD system_monitor CD nandtree CD grmux2
+FL /home/SysPy_test/SysPy_ver/Python_script/paramsocs/Leon3_comps_Gill_top/Leon3_comps/libs/techmap/gencomp/netcomp.vhd 2011/05/11.18:05:45 O.76xd
+PH techmap/netcomp 1369068377 \
+      FL /home/SysPy_test/SysPy_ver/Python_script/paramsocs/Leon3_comps_Gill_top/Leon3_comps/libs/techmap/gencomp/netcomp.vhd \
+      PB ieee/std_logic_1164 1296775758 LB grlib PB grlib/amba 1369068082 \
+      PH techmap/gencomp 1369068217 CD grusbhc_net CD grspwc_net CD grspwc2_net \
+      CD grlfpw_net CD grfpw_net CD leon3ft_net CD ftmctrl_net CD ssrctrl_net \
+      CD ftsrctrl_net CD grlfpw4_net CD grfpw4_net
+FL /home/SysPy_test/SysPy_ver/Python_script/paramsocs/Leon3_comps_Gill_top/Leon3_comps/libs/techmap/inferred/ddr_phy_inferred.vhd 2011/05/11.18:05:45 O.76xd
+EN techmap/gen_ddr_phy_oreg 1369068337 \
+      FL /home/SysPy_test/SysPy_ver/Python_script/paramsocs/Leon3_comps_Gill_top/Leon3_comps/libs/techmap/inferred/ddr_phy_inferred.vhd \
+      PB ieee/std_logic_1164 1296775758
+AR techmap/gen_ddr_phy_oreg/rtl 1369068338 \
+      FL /home/SysPy_test/SysPy_ver/Python_script/paramsocs/Leon3_comps_Gill_top/Leon3_comps/libs/techmap/inferred/ddr_phy_inferred.vhd \
+      EN techmap/gen_ddr_phy_oreg 1369068337
+EN techmap/gen_ddr_phy_ireg 1369068339 \
+      FL /home/SysPy_test/SysPy_ver/Python_script/paramsocs/Leon3_comps_Gill_top/Leon3_comps/libs/techmap/inferred/ddr_phy_inferred.vhd \
+      PB ieee/std_logic_1164 1296775758
+AR techmap/gen_ddr_phy_ireg/rtl 1369068340 \
+      FL /home/SysPy_test/SysPy_ver/Python_script/paramsocs/Leon3_comps_Gill_top/Leon3_comps/libs/techmap/inferred/ddr_phy_inferred.vhd \
+      EN techmap/gen_ddr_phy_ireg 1369068339
+EN techmap/gen_ddr_phy_reg 1369068341 \
+      FL /home/SysPy_test/SysPy_ver/Python_script/paramsocs/Leon3_comps_Gill_top/Leon3_comps/libs/techmap/inferred/ddr_phy_inferred.vhd \
+      PB ieee/std_logic_1164 1296775758
+AR techmap/gen_ddr_phy_reg/rtl 1369068342 \
+      FL /home/SysPy_test/SysPy_ver/Python_script/paramsocs/Leon3_comps_Gill_top/Leon3_comps/libs/techmap/inferred/ddr_phy_inferred.vhd \
+      EN techmap/gen_ddr_phy_reg 1369068341
+EN techmap/generic_ddr_phy 1369068343 \
+      FL /home/SysPy_test/SysPy_ver/Python_script/paramsocs/Leon3_comps_Gill_top/Leon3_comps/libs/techmap/inferred/ddr_phy_inferred.vhd \
+      PB ieee/std_logic_1164 1296775758 LB techmap PH techmap/gencomp 1369068217 \
+      LB grlib PB grlib/stdlib 1369068080
+AR techmap/generic_ddr_phy/rtl 1369068344 \
+      FL /home/SysPy_test/SysPy_ver/Python_script/paramsocs/Leon3_comps_Gill_top/Leon3_comps/libs/techmap/inferred/ddr_phy_inferred.vhd \
+      EN techmap/generic_ddr_phy 1369068343 CP gen_ddr_phy_oreg CP outpad \
+      CP gen_ddr_phy_reg CP iopad CP gen_ddr_phy_ireg
+FL /home/SysPy_test/SysPy_ver/Python_script/paramsocs/Leon3_comps_Gill_top/Leon3_comps/libs/techmap/inferred/memory_inferred.vhd 2011/05/11.18:05:45 O.76xd
+EN techmap/generic_syncram 1369068243 \
+      FL /home/SysPy_test/SysPy_ver/Python_script/paramsocs/Leon3_comps_Gill_top/Leon3_comps/libs/techmap/inferred/memory_inferred.vhd \
+      PB ieee/std_logic_1164 1296775758 LB grlib PB grlib/stdlib 1369068080
+AR techmap/generic_syncram/behavioral 1369068244 \
+      FL /home/SysPy_test/SysPy_ver/Python_script/paramsocs/Leon3_comps_Gill_top/Leon3_comps/libs/techmap/inferred/memory_inferred.vhd \
+      EN techmap/generic_syncram 1369068243
+EN techmap/generic_syncram_reg 1369068245 \
+      FL /home/SysPy_test/SysPy_ver/Python_script/paramsocs/Leon3_comps_Gill_top/Leon3_comps/libs/techmap/inferred/memory_inferred.vhd \
+      PB ieee/std_logic_1164 1296775758 LB grlib PB grlib/stdlib 1369068080
+AR techmap/generic_syncram_reg/behavioral 1369068246 \
+      FL /home/SysPy_test/SysPy_ver/Python_script/paramsocs/Leon3_comps_Gill_top/Leon3_comps/libs/techmap/inferred/memory_inferred.vhd \
+      EN techmap/generic_syncram_reg 1369068245
+EN techmap/generic_syncram_2p 1369068247 \
+      FL /home/SysPy_test/SysPy_ver/Python_script/paramsocs/Leon3_comps_Gill_top/Leon3_comps/libs/techmap/inferred/memory_inferred.vhd \
+      PB ieee/std_logic_1164 1296775758 LB grlib PB grlib/stdlib 1369068080
+AR techmap/generic_syncram_2p/behav 1369068248 \
+      FL /home/SysPy_test/SysPy_ver/Python_script/paramsocs/Leon3_comps_Gill_top/Leon3_comps/libs/techmap/inferred/memory_inferred.vhd \
+      EN techmap/generic_syncram_2p 1369068247
+EN techmap/generic_syncram_2p_reg 1369068249 \
+      FL /home/SysPy_test/SysPy_ver/Python_script/paramsocs/Leon3_comps_Gill_top/Leon3_comps/libs/techmap/inferred/memory_inferred.vhd \
+      PB ieee/std_logic_1164 1296775758 LB grlib PB grlib/stdlib 1369068080
+AR techmap/generic_syncram_2p_reg/behav 1369068250 \
+      FL /home/SysPy_test/SysPy_ver/Python_script/paramsocs/Leon3_comps_Gill_top/Leon3_comps/libs/techmap/inferred/memory_inferred.vhd \
+      EN techmap/generic_syncram_2p_reg 1369068249
+EN techmap/generic_regfile_3p 1369068251 \
+      FL /home/SysPy_test/SysPy_ver/Python_script/paramsocs/Leon3_comps_Gill_top/Leon3_comps/libs/techmap/inferred/memory_inferred.vhd \
+      PB ieee/std_logic_1164 1296775758 LB grlib PB grlib/stdlib 1369068080
+AR techmap/generic_regfile_3p/rtl 1369068252 \
+      FL /home/SysPy_test/SysPy_ver/Python_script/paramsocs/Leon3_comps_Gill_top/Leon3_comps/libs/techmap/inferred/memory_inferred.vhd \
+      EN techmap/generic_regfile_3p 1369068251
+EN techmap/generic_regfile_4p 1369068253 \
+      FL /home/SysPy_test/SysPy_ver/Python_script/paramsocs/Leon3_comps_Gill_top/Leon3_comps/libs/techmap/inferred/memory_inferred.vhd \
+      PB ieee/std_logic_1164 1296775758 LB grlib PB grlib/stdlib 1369068080
+AR techmap/generic_regfile_4p/rtl 1369068254 \
+      FL /home/SysPy_test/SysPy_ver/Python_script/paramsocs/Leon3_comps_Gill_top/Leon3_comps/libs/techmap/inferred/memory_inferred.vhd \
+      EN techmap/generic_regfile_4p 1369068253
+FL /home/SysPy_test/SysPy_ver/Python_script/paramsocs/Leon3_comps_Gill_top/Leon3_comps/libs/techmap/maps/allclkgen.vhd 2011/05/11.18:05:45 O.76xd
+PH techmap/allclkgen 1369068255 \
+      FL /home/SysPy_test/SysPy_ver/Python_script/paramsocs/Leon3_comps_Gill_top/Leon3_comps/libs/techmap/maps/allclkgen.vhd \
+      PB ieee/std_logic_1164 1296775758 LB techmap PH techmap/gencomp 1369068217 \
+      CD clkgen_virtex2 CD clkgen_spartan3 CD clkgen_virtex5 CD clkgen_axcelerator \
+      CD clkgen_altera_mf CD clkgen_stratixii CD clkgen_cycloneiii \
+      CD clkgen_stratixiii CD clkgen_rh_lib18t CD clkmul_virtex2 CD clkand_unisim \
+      CD clkand_ut025crh CD clkand_rh_lib18t CD clkmux_unisim CD clkmux_fusion \
+      CD altera_pll CD clkgen_proasic3 CD clkgen_fusion CD clkgen_proasic3e \
+      CD clkgen_proasic3l CD cyclone3_pll CD stratix3_pll CD clkgen_dare \
+      CD clkgen_easic90 CD clkmux_rhlib18t
+FL /home/SysPy_test/SysPy_ver/Python_script/paramsocs/Leon3_comps_Gill_top/Leon3_comps/libs/techmap/maps/allddr.vhd 2011/05/11.18:05:45 O.76xd
+PH techmap/allddr 1369068319 \
+      FL /home/SysPy_test/SysPy_ver/Python_script/paramsocs/Leon3_comps_Gill_top/Leon3_comps/libs/techmap/maps/allddr.vhd \
+      PB ieee/std_logic_1164 1296775758 LB techmap PH techmap/gencomp 1369068217 \
+      CD unisim_iddr_reg CD gen_iddr_reg CD ec_oddr_reg CD unisim_oddr_reg \
+      CD gen_oddr_reg CD axcel_oddr_reg CD axcel_iddr_reg CD nextreme_oddr_reg \
+      CD nextreme_iddr_reg CD apa3_oddr_reg CD apa3_iddr_reg CD apa3e_oddr_reg \
+      CD apa3e_iddr_reg CD apa3l_oddr_reg CD apa3l_iddr_reg CD spartan3e_ddr_phy \
+      CD virtex4_ddr_phy CD virtex2_ddr_phy CD stratixii_ddr_phy \
+      CD cycloneiii_ddr_phy CD generic_ddr_phy CD tsmc90_tci_ddr_phy \
+      CD virtex5_ddr2_phy CD stratixii_ddr2_phy CD stratixiii_ddr2_phy \
+      CD spartan3a_ddr2_phy CD easic90_ddr2_phy CD spartan6_ddr2_phy
+FL /home/SysPy_test/SysPy_ver/Python_script/paramsocs/Leon3_comps_Gill_top/Leon3_comps/libs/techmap/maps/allmem.vhd 2011/05/11.18:05:45 O.76xd
+PH techmap/allmem 1369068286 \
+      FL /home/SysPy_test/SysPy_ver/Python_script/paramsocs/Leon3_comps_Gill_top/Leon3_comps/libs/techmap/maps/allmem.vhd \
+      PB ieee/std_logic_1164 1296775758 CD axcel_syncram CD axcel_syncram_2p \
+      CD proasic_syncram CD proasic_syncram_2p CD proasic3_syncram \
+      CD proasic3_syncram_2p CD proasic3_syncram_dp CD proasic3e_syncram \
+      CD proasic3e_syncram_2p CD proasic3e_syncram_dp CD proasic3l_syncram \
+      CD proasic3l_syncram_2p CD proasic3l_syncram_dp CD fusion_syncram \
+      CD fusion_syncram_2p CD fusion_syncram_dp CD altera_syncram \
+      CD altera_syncram_dp CD generic_syncram CD generic_syncram_2p \
+      CD generic_syncram_reg CD generic_syncram_2p_reg CD generic_regfile_3p \
+      CD ihp25_syncram CD ec_syncram CD ec_syncram_dp CD rh_lib18t_syncram_2p \
+      CD rh_lib18t_syncram CD umc_syncram CD rhumc_syncram CD virage_syncram \
+      CD virage_syncram_dp CD virage90_syncram CD virtex_syncram \
+      CD virtex_syncram_dp CD unisim_syncram CD unisim_syncram_dp \
+      CD unisim_syncram64 CD virage90_syncram_dp CD ut025crh_syncram \
+      CD ut025crh_syncram_2p CD peregrine_regfile_3p CD eclipse_syncram_2p \
+      CD nextreme_syncram_2p CD custom1_syncram_2p CD artisan_syncram_2p \
+      CD smic13_syncram_2p CD ihp25rh_syncram CD peregrine_syncram \
+      CD artisan_syncram CD smic13_syncram CD custom1_syncram CD nextreme_syncram \
+      CD unisim_syncram_2p CD virage_syncram_2p CD atc18rha_syncram \
+      CD atc18rha_syncram_dp CD atc18rha_syncram_2p CD artisan_syncram_dp \
+      CD smic13_syncram_dp CD tm65gplus_syncram CD tm65gplus_syncram_dp \
+      CD tm65gplus_syncram_2p CD generic_regfile_4p CD cmos9sf_syncram \
+      CD cmos9sf_syncram_2p
+FL /home/SysPy_test/SysPy_ver/Python_script/paramsocs/Leon3_comps_Gill_top/Leon3_comps/libs/techmap/maps/allpads.vhd 2011/05/11.18:05:45 O.76xd
+PH techmap/allpads 1369068218 \
+      FL /home/SysPy_test/SysPy_ver/Python_script/paramsocs/Leon3_comps_Gill_top/Leon3_comps/libs/techmap/maps/allpads.vhd \
+      PB ieee/std_logic_1164 1296775758 LB techmap PH techmap/gencomp 1369068217 \
+      CD apa3_clkpad CD apa3_clkpad_ds CD apa3_inpad CD apa3_inpad_ds CD apa3_iopad \
+      CD apa3_iopad_ds CD apa3_odpad CD apa3_outpad CD apa3_outpad_ds \
+      CD apa3_toutpad CD apa3_toutpad_ds CD apa3e_clkpad CD apa3e_clkpad_ds \
+      CD apa3e_inpad CD apa3e_inpad_ds CD apa3e_iopad CD apa3e_iopad_ds \
+      CD apa3e_odpad CD apa3e_outpad CD apa3e_outpad_ds CD apa3e_toutpad \
+      CD apa3e_toutpad_ds CD apa3l_clkpad CD apa3l_clkpad_ds CD apa3l_inpad \
+      CD apa3l_inpad_ds CD apa3l_iopad CD apa3l_iopad_ds CD apa3l_odpad \
+      CD apa3l_outpad CD apa3l_outpad_ds CD apa3l_toutpad CD apa3l_toutpad_ds \
+      CD fusion_clkpad CD fusion_clkpad_ds CD fusion_inpad CD fusion_inpad_ds \
+      CD fusion_iopad CD fusion_iopad_ds CD fusion_odpad CD fusion_outpad \
+      CD fusion_outpad_ds CD fusion_toutpad CD fusion_toutpad_ds CD axcel_inpad \
+      CD axcel_iopad CD axcel_outpad CD axcel_odpad CD axcel_toutpad CD axcel_clkpad \
+      CD axcel_inpad_ds CD axcel_outpad_ds CD atc18_inpad CD atc18_iopad \
+      CD atc18_outpad CD atc18_odpad CD atc18_toutpad CD atc18_clkpad CD ihp25_inpad \
+      CD ihp25rh_inpad CD ihp25_iopad CD ihp25rh_iopad CD ihp25_outpad \
+      CD ihp25rh_outpad CD ihp25_toutpad CD ihp25rh_toutpad CD ihp25_clkpad \
+      CD ihp25rh_clkpad CD rhumc_inpad CD rhumc_iopad CD rhumc_outpad \
+      CD rhumc_toutpad CD umc_inpad CD umc_iopad CD umc_outpad CD umc_toutpad \
+      CD unisim_inpad CD unisim_iopad CD unisim_outpad CD unisim_odpad \
+      CD unisim_toutpad CD unisim_skew_outpad CD unisim_clkpad CD unisim_inpad_ds \
+      CD unisim_iopad_ds CD unisim_outpad_ds CD unisim_clkpad_ds \
+      CD virtex4_inpad_ds CD virtex4_clkpad_ds CD rh_lib18t_inpad \
+      CD rh_lib18t_iopad CD rh_lib18t_inpad_ds CD rh_lib18t_outpad_ds \
+      CD ut025crh_inpad CD ut025crh_iopad CD ut025crh_outpad CD ut025crh_toutpad \
+      CD ut025crh_lvds_combo CD rhumc_lvds_combo CD umc_lvds_combo \
+      CD peregrine_inpad CD peregrine_iopad CD peregrine_toutpad CD nextreme_inpad \
+      CD nextreme_iopad CD nextreme_toutpad CD atc18rha_inpad CD atc18rha_iopad \
+      CD atc18rha_outpad CD atc18rha_odpad CD atc18rha_toutpad CD atc18rha_clkpad
+FL /home/SysPy_test/SysPy_ver/Python_script/paramsocs/Leon3_comps_Gill_top/Leon3_comps/libs/techmap/maps/alltap.vhd 2011/05/11.18:05:45 O.76xd
+PH techmap/alltap 1369068320 \
+      FL /home/SysPy_test/SysPy_ver/Python_script/paramsocs/Leon3_comps_Gill_top/Leon3_comps/libs/techmap/maps/alltap.vhd \
+      PB ieee/std_logic_1164 1296775758 CD tap_gen CD virtex_tap CD virtex2_tap \
+      CD virtex4_tap CD virtex5_tap CD spartan3_tap CD altera_tap CD fusion_tap \
+      CD proasic3_tap CD proasic3e_tap CD proasic3l_tap CD virtex6_tap \
+      CD spartan6_tap
+FL /home/SysPy_test/SysPy_ver/Python_script/paramsocs/Leon3_comps_Gill_top/Leon3_comps/libs/techmap/maps/clkand.vhd 2011/05/11.18:05:45 O.76xd
+EN techmap/clkand 1369068375 \
+      FL /home/SysPy_test/SysPy_ver/Python_script/paramsocs/Leon3_comps_Gill_top/Leon3_comps/libs/techmap/maps/clkand.vhd \
+      PB ieee/std_logic_1164 1296775758 PH techmap/gencomp 1369068217 \
+      PH techmap/allclkgen 1369068255
+AR techmap/clkand/rtl 1369068376 \
+      FL /home/SysPy_test/SysPy_ver/Python_script/paramsocs/Leon3_comps_Gill_top/Leon3_comps/libs/techmap/maps/clkand.vhd \
+      EN techmap/clkand 1369068375 CP clkand_unisim CP clkand_ut025crh \
+      CP clkand_rh_lib18t
+FL /home/SysPy_test/SysPy_ver/Python_script/paramsocs/Leon3_comps_Gill_top/Leon3_comps/libs/techmap/maps/clkgen.vhd 2011/05/11.18:05:45 O.76xd
+EN techmap/clkgen 1369068388 \
+      FL /home/SysPy_test/SysPy_ver/Python_script/paramsocs/Leon3_comps_Gill_top/Leon3_comps/libs/techmap/maps/clkgen.vhd \
+      PB ieee/std_logic_1164 1296775758 LB techmap PH techmap/gencomp 1369068217 \
+      PH techmap/allclkgen 1369068255
+AR techmap/clkgen/struct 1369068389 \
+      FL /home/SysPy_test/SysPy_ver/Python_script/paramsocs/Leon3_comps_Gill_top/Leon3_comps/libs/techmap/maps/clkgen.vhd \
+      EN techmap/clkgen 1369068388 CP clkgen_virtex2 CP clkgen_virtex5 \
+      CP clkgen_spartan3 CP clkgen_altera_mf CP clkgen_stratixii \
+      CP clkgen_cycloneiii CP clkgen_stratixiii CP clkgen_axcelerator \
+      CP clkgen_rh_lib18t CP clkgen_proasic3 CP clkgen_proasic3e \
+      CP clkgen_proasic3l CP clkgen_fusion CP clkgen_dare CP clkgen_easic90
+FL /home/SysPy_test/SysPy_ver/Python_script/paramsocs/Leon3_comps_Gill_top/Leon3_comps/libs/techmap/maps/clkpad.vhd 2011/05/11.18:05:45 O.76xd
+EN techmap/clkpad 1369068272 \
+      FL /home/SysPy_test/SysPy_ver/Python_script/paramsocs/Leon3_comps_Gill_top/Leon3_comps/libs/techmap/maps/clkpad.vhd \
+      LB techmap PB ieee/std_logic_1164 1296775758 PH techmap/gencomp 1369068217 \
+      PH techmap/allpads 1369068218
+AR techmap/clkpad/rtl 1369068273 \
+      FL /home/SysPy_test/SysPy_ver/Python_script/paramsocs/Leon3_comps_Gill_top/Leon3_comps/libs/techmap/maps/clkpad.vhd \
+      EN techmap/clkpad 1369068272 CP unisim_clkpad CP axcel_clkpad CP apa3_clkpad \
+      CP apa3e_clkpad CP apa3l_clkpad CP fusion_clkpad CP atc18_clkpad \
+      CP atc18rha_clkpad CP umc_inpad CP rhumc_inpad CP ihp25_clkpad \
+      CP rh_lib18t_inpad CP ut025crh_inpad CP peregrine_inpad
+FL /home/SysPy_test/SysPy_ver/Python_script/paramsocs/Leon3_comps_Gill_top/Leon3_comps/libs/techmap/maps/clkpad_ds.vhd 2011/05/11.18:05:45 O.76xd
+EN techmap/clkpad_ds 1369068386 \
+      FL /home/SysPy_test/SysPy_ver/Python_script/paramsocs/Leon3_comps_Gill_top/Leon3_comps/libs/techmap/maps/clkpad_ds.vhd \
+      LB techmap PB ieee/std_logic_1164 1296775758 PH techmap/gencomp 1369068217 \
+      PH techmap/allpads 1369068218
+AR techmap/clkpad_ds/rtl 1369068387 \
+      FL /home/SysPy_test/SysPy_ver/Python_script/paramsocs/Leon3_comps_Gill_top/Leon3_comps/libs/techmap/maps/clkpad_ds.vhd \
+      EN techmap/clkpad_ds 1369068386 CP unisim_clkpad_ds CP virtex4_clkpad_ds \
+      CP axcel_inpad_ds CP apa3_clkpad_ds CP apa3e_clkpad_ds CP apa3l_clkpad_ds \
+      CP fusion_clkpad_ds CP rh_lib18t_inpad_ds
+FL /home/SysPy_test/SysPy_ver/Python_script/paramsocs/Leon3_comps_Gill_top/Leon3_comps/libs/techmap/maps/ddrphy.vhd 2011/05/11.18:05:45 O.76xd
+EN techmap/ddrphy 1369068371 \
+      FL /home/SysPy_test/SysPy_ver/Python_script/paramsocs/Leon3_comps_Gill_top/Leon3_comps/libs/techmap/maps/ddrphy.vhd \
+      PB ieee/std_logic_1164 1296775758 LB grlib PB grlib/stdlib 1369068080 \
+      LB techmap PH techmap/gencomp 1369068217 PH techmap/allddr 1369068319
+AR techmap/ddrphy/rtl 1369068372 \
+      FL /home/SysPy_test/SysPy_ver/Python_script/paramsocs/Leon3_comps_Gill_top/Leon3_comps/libs/techmap/maps/ddrphy.vhd \
+      EN techmap/ddrphy 1369068371 CP generic_ddr_phy CP stratixii_ddr_phy \
+      CP cycloneiii_ddr_phy CP virtex2_ddr_phy CP virtex4_ddr_phy \
+      CP spartan3e_ddr_phy
+EN techmap/ddr2phy 1369068373 \
+      FL /home/SysPy_test/SysPy_ver/Python_script/paramsocs/Leon3_comps_Gill_top/Leon3_comps/libs/techmap/maps/ddrphy.vhd \
+      PB ieee/std_logic_1164 1296775758 LB grlib PB grlib/stdlib 1369068080 \
+      LB techmap PH techmap/gencomp 1369068217 PH techmap/allddr 1369068319
+AR techmap/ddr2phy/rtl 1369068374 \
+      FL /home/SysPy_test/SysPy_ver/Python_script/paramsocs/Leon3_comps_Gill_top/Leon3_comps/libs/techmap/maps/ddrphy.vhd \
+      EN techmap/ddr2phy 1369068373 CP virtex5_ddr2_phy CP stratixii_ddr2_phy \
+      CP stratixiii_ddr2_phy CP spartan3a_ddr2_phy CP easic90_ddr2_phy
+FL /home/SysPy_test/SysPy_ver/Python_script/paramsocs/Leon3_comps_Gill_top/Leon3_comps/libs/techmap/maps/ddr_oreg.vhd 2011/05/11.18:05:45 O.76xd
+EN techmap/ddr_oreg 1369068380 \
+      FL /home/SysPy_test/SysPy_ver/Python_script/paramsocs/Leon3_comps_Gill_top/Leon3_comps/libs/techmap/maps/ddr_oreg.vhd \
+      PB ieee/std_logic_1164 1296775758 LB techmap PH techmap/gencomp 1369068217 \
+      PH techmap/allddr 1369068319
+AR techmap/ddr_oreg/rtl 1369068381 \
+      FL /home/SysPy_test/SysPy_ver/Python_script/paramsocs/Leon3_comps_Gill_top/Leon3_comps/libs/techmap/maps/ddr_oreg.vhd \
+      EN techmap/ddr_oreg 1369068380 CP gen_oddr_reg CP axcel_oddr_reg \
+      CP apa3_oddr_reg CP apa3e_oddr_reg CP apa3l_oddr_reg CP ec_oddr_reg \
+      CP unisim_oddr_reg
+FL /home/SysPy_test/SysPy_ver/Python_script/paramsocs/Leon3_comps_Gill_top/Leon3_comps/libs/techmap/maps/grfpw_net.vhd 2011/05/11.18:05:45 O.76xd
+EN techmap/grfpw_net 1369068369 \
+      FL /home/SysPy_test/SysPy_ver/Python_script/paramsocs/Leon3_comps_Gill_top/Leon3_comps/libs/techmap/maps/grfpw_net.vhd \
+      PB ieee/std_logic_1164 1296775758 PH techmap/gencomp 1369068217
+AR techmap/grfpw_net/rtl 1369068370 \
+      FL /home/SysPy_test/SysPy_ver/Python_script/paramsocs/Leon3_comps_Gill_top/Leon3_comps/libs/techmap/maps/grfpw_net.vhd \
+      EN techmap/grfpw_net 1369068369 CP grfpw_0_unisim CP grfpw_0_stratixii \
+      CP grfpw_0_stratixiii CP grfpw_0_cycloneiii CP grfpw_tsmc90 \
+      CP grfpw_tm65gplus
+FL /home/SysPy_test/SysPy_ver/Python_script/paramsocs/Leon3_comps_Gill_top/Leon3_comps/libs/techmap/maps/grgates.vhd 2011/05/11.18:05:45 O.76xd
+EN techmap/grmux2 1369068287 \
+      FL /home/SysPy_test/SysPy_ver/Python_script/paramsocs/Leon3_comps_Gill_top/Leon3_comps/libs/techmap/maps/grgates.vhd \
+      PB ieee/std_logic_1164 1296775758 LB techmap PH techmap/gencomp 1369068217 \
+      PH techmap/allclkgen 1369068255
+AR techmap/grmux2/rtl 1369068288 \
+      FL /home/SysPy_test/SysPy_ver/Python_script/paramsocs/Leon3_comps_Gill_top/Leon3_comps/libs/techmap/maps/grgates.vhd \
+      EN techmap/grmux2 1369068287 CP clkmux_rhlib18t
+FL /home/SysPy_test/SysPy_ver/Python_script/paramsocs/Leon3_comps_Gill_top/Leon3_comps/libs/techmap/maps/grlfpw_net.vhd 2011/05/11.18:05:45 O.76xd
+EN techmap/grlfpw_net 1369068367 \
+      FL /home/SysPy_test/SysPy_ver/Python_script/paramsocs/Leon3_comps_Gill_top/Leon3_comps/libs/techmap/maps/grlfpw_net.vhd \
+      PB ieee/std_logic_1164 1296775758 PH techmap/gencomp 1369068217
+AR techmap/grlfpw_net/rtl 1369068368 \
+      FL /home/SysPy_test/SysPy_ver/Python_script/paramsocs/Leon3_comps_Gill_top/Leon3_comps/libs/techmap/maps/grlfpw_net.vhd \
+      EN techmap/grlfpw_net 1369068367 CP grlfpw_0_stratixii \
+      CP grlfpw_0_stratixiii CP grlfpw_0_cycloneiii CP grlfpw_0_axcelerator \
+      CP grlfpw_0_proasic3 CP grlfpw_0_unisim
+FL /home/SysPy_test/SysPy_ver/Python_script/paramsocs/Leon3_comps_Gill_top/Leon3_comps/libs/techmap/maps/inpad.vhd 2011/05/11.18:05:45 O.76xd
+EN techmap/inpad 1369068382 \
+      FL /home/SysPy_test/SysPy_ver/Python_script/paramsocs/Leon3_comps_Gill_top/Leon3_comps/libs/techmap/maps/inpad.vhd \
+      LB techmap PB ieee/std_logic_1164 1296775758 PH techmap/gencomp 1369068217 \
+      PH techmap/allpads 1369068218
+AR techmap/inpad/rtl 1369068383 \
+      FL /home/SysPy_test/SysPy_ver/Python_script/paramsocs/Leon3_comps_Gill_top/Leon3_comps/libs/techmap/maps/inpad.vhd \
+      EN techmap/inpad 1369068382 CP unisim_inpad CP axcel_inpad CP apa3_inpad \
+      CP apa3e_inpad CP apa3l_inpad CP fusion_inpad CP atc18_inpad CP atc18rha_inpad \
+      CP umc_inpad CP rhumc_inpad CP ihp25_inpad CP ihp25rh_inpad CP rh_lib18t_inpad \
+      CP ut025crh_inpad CP peregrine_inpad CP nextreme_inpad
+EN techmap/inpadv 1369068384 \
+      FL /home/SysPy_test/SysPy_ver/Python_script/paramsocs/Leon3_comps_Gill_top/Leon3_comps/libs/techmap/maps/inpad.vhd \
+      LB techmap PB ieee/std_logic_1164 1296775758 PH techmap/gencomp 1369068217
+AR techmap/inpadv/rtl 1369068385 \
+      FL /home/SysPy_test/SysPy_ver/Python_script/paramsocs/Leon3_comps_Gill_top/Leon3_comps/libs/techmap/maps/inpad.vhd \
+      EN techmap/inpadv 1369068384 CP inpad
+FL /home/SysPy_test/SysPy_ver/Python_script/paramsocs/Leon3_comps_Gill_top/Leon3_comps/libs/techmap/maps/iopad.vhd 2011/05/11.18:05:45 O.76xd
+EN techmap/iopad 1369068280 \
+      FL /home/SysPy_test/SysPy_ver/Python_script/paramsocs/Leon3_comps_Gill_top/Leon3_comps/libs/techmap/maps/iopad.vhd \
+      LB techmap PB ieee/std_logic_1164 1296775758 PH techmap/gencomp 1369068217 \
+      PH techmap/allpads 1369068218
+AR techmap/iopad/rtl 1369068281 \
+      FL /home/SysPy_test/SysPy_ver/Python_script/paramsocs/Leon3_comps_Gill_top/Leon3_comps/libs/techmap/maps/iopad.vhd \
+      EN techmap/iopad 1369068280 CP unisim_iopad CP axcel_iopad CP apa3_iopad \
+      CP apa3e_iopad CP apa3l_iopad CP fusion_iopad CP atc18_iopad CP atc18rha_iopad \
+      CP umc_iopad CP rhumc_iopad CP ihp25_iopad CP ihp25rh_iopad CP rh_lib18t_iopad \
+      CP ut025crh_iopad CP peregrine_iopad CP nextreme_iopad
+EN techmap/iopadv 1369068282 \
+      FL /home/SysPy_test/SysPy_ver/Python_script/paramsocs/Leon3_comps_Gill_top/Leon3_comps/libs/techmap/maps/iopad.vhd \
+      LB techmap PB ieee/std_logic_1164 1296775758 PH techmap/gencomp 1369068217
+AR techmap/iopadv/rtl 1369068283 \
+      FL /home/SysPy_test/SysPy_ver/Python_script/paramsocs/Leon3_comps_Gill_top/Leon3_comps/libs/techmap/maps/iopad.vhd \
+      EN techmap/iopadv 1369068282 CP iopad
+EN techmap/iopadvv 1369068284 \
+      FL /home/SysPy_test/SysPy_ver/Python_script/paramsocs/Leon3_comps_Gill_top/Leon3_comps/libs/techmap/maps/iopad.vhd \
+      LB techmap PB ieee/std_logic_1164 1296775758 PH techmap/gencomp 1369068217
+AR techmap/iopadvv/rtl 1369068285 \
+      FL /home/SysPy_test/SysPy_ver/Python_script/paramsocs/Leon3_comps_Gill_top/Leon3_comps/libs/techmap/maps/iopad.vhd \
+      EN techmap/iopadvv 1369068284 CP iopad
+FL /home/SysPy_test/SysPy_ver/Python_script/paramsocs/Leon3_comps_Gill_top/Leon3_comps/libs/techmap/maps/iopad_ds.vhd 2011/05/11.18:05:45 O.76xd
+EN techmap/iopad_ds 1369068274 \
+      FL /home/SysPy_test/SysPy_ver/Python_script/paramsocs/Leon3_comps_Gill_top/Leon3_comps/libs/techmap/maps/iopad_ds.vhd \
+      LB techmap PB ieee/std_logic_1164 1296775758 PH techmap/gencomp 1369068217 \
+      PH techmap/allpads 1369068218
+AR techmap/iopad_ds/rtl 1369068275 \
+      FL /home/SysPy_test/SysPy_ver/Python_script/paramsocs/Leon3_comps_Gill_top/Leon3_comps/libs/techmap/maps/iopad_ds.vhd \
+      EN techmap/iopad_ds 1369068274 CP unisim_iopad_ds CP apa3_iopad_ds \
+      CP apa3e_iopad_ds CP apa3l_iopad_ds CP fusion_iopad_ds
+EN techmap/iopad_dsv 1369068276 \
+      FL /home/SysPy_test/SysPy_ver/Python_script/paramsocs/Leon3_comps_Gill_top/Leon3_comps/libs/techmap/maps/iopad_ds.vhd \
+      LB techmap PB ieee/std_logic_1164 1296775758 PH techmap/gencomp 1369068217
+AR techmap/iopad_dsv/rtl 1369068277 \
+      FL /home/SysPy_test/SysPy_ver/Python_script/paramsocs/Leon3_comps_Gill_top/Leon3_comps/libs/techmap/maps/iopad_ds.vhd \
+      EN techmap/iopad_dsv 1369068276 CP iopad_ds
+EN techmap/iopad_dsvv 1369068278 \
+      FL /home/SysPy_test/SysPy_ver/Python_script/paramsocs/Leon3_comps_Gill_top/Leon3_comps/libs/techmap/maps/iopad_ds.vhd \
+      LB techmap PB ieee/std_logic_1164 1296775758 PH techmap/gencomp 1369068217
+AR techmap/iopad_dsvv/rtl 1369068279 \
+      FL /home/SysPy_test/SysPy_ver/Python_script/paramsocs/Leon3_comps_Gill_top/Leon3_comps/libs/techmap/maps/iopad_ds.vhd \
+      EN techmap/iopad_dsvv 1369068278 CP iopad_ds
+FL /home/SysPy_test/SysPy_ver/Python_script/paramsocs/Leon3_comps_Gill_top/Leon3_comps/libs/techmap/maps/outpad.vhd 2011/05/11.18:05:45 O.76xd
+EN techmap/outpad 1369068268 \
+      FL /home/SysPy_test/SysPy_ver/Python_script/paramsocs/Leon3_comps_Gill_top/Leon3_comps/libs/techmap/maps/outpad.vhd \
+      LB techmap PB ieee/std_logic_1164 1296775758 PH techmap/gencomp 1369068217 \
+      PH techmap/allpads 1369068218
+AR techmap/outpad/rtl 1369068269 \
+      FL /home/SysPy_test/SysPy_ver/Python_script/paramsocs/Leon3_comps_Gill_top/Leon3_comps/libs/techmap/maps/outpad.vhd \
+      EN techmap/outpad 1369068268 CP unisim_outpad CP axcel_outpad CP apa3_outpad \
+      CP apa3e_outpad CP apa3l_outpad CP fusion_outpad CP atc18_outpad \
+      CP atc18rha_outpad CP umc_outpad CP rhumc_outpad CP ihp25_outpad \
+      CP ihp25rh_outpad CP rh_lib18t_iopad CP ut025crh_outpad CP peregrine_toutpad \
+      CP nextreme_toutpad
+EN techmap/outpadv 1369068270 \
+      FL /home/SysPy_test/SysPy_ver/Python_script/paramsocs/Leon3_comps_Gill_top/Leon3_comps/libs/techmap/maps/outpad.vhd \
+      LB techmap PB ieee/std_logic_1164 1296775758 PH techmap/gencomp 1369068217
+AR techmap/outpadv/rtl 1369068271 \
+      FL /home/SysPy_test/SysPy_ver/Python_script/paramsocs/Leon3_comps_Gill_top/Leon3_comps/libs/techmap/maps/outpad.vhd \
+      EN techmap/outpadv 1369068270 CP outpad
+FL /home/SysPy_test/SysPy_ver/Python_script/paramsocs/Leon3_comps_Gill_top/Leon3_comps/libs/techmap/maps/regfile_3p.vhd 2011/05/11.18:05:45 O.76xd
+EN techmap/regfile_3p 1369068365 \
+      FL /home/SysPy_test/SysPy_ver/Python_script/paramsocs/Leon3_comps_Gill_top/Leon3_comps/libs/techmap/maps/regfile_3p.vhd \
+      LB techmap PB ieee/std_logic_1164 1296775758 PH techmap/gencomp 1369068217 \
+      PH techmap/allmem 1369068286
+AR techmap/regfile_3p/rtl 1369068366 \
+      FL /home/SysPy_test/SysPy_ver/Python_script/paramsocs/Leon3_comps_Gill_top/Leon3_comps/libs/techmap/maps/regfile_3p.vhd \
+      EN techmap/regfile_3p 1369068365 CP generic_regfile_3p \
+      CP peregrine_regfile_3p CP syncram_2p
+FL /home/SysPy_test/SysPy_ver/Python_script/paramsocs/Leon3_comps_Gill_top/Leon3_comps/libs/techmap/maps/syncram.vhd 2011/05/11.18:05:45 O.76xd
+EN techmap/syncram 1369068359 \
+      FL /home/SysPy_test/SysPy_ver/Python_script/paramsocs/Leon3_comps_Gill_top/Leon3_comps/libs/techmap/maps/syncram.vhd \
+      PB ieee/std_logic_1164 1296775758 PH techmap/gencomp 1369068217 \
+      PH techmap/allmem 1369068286
+AR techmap/syncram/rtl 1369068360 \
+      FL /home/SysPy_test/SysPy_ver/Python_script/paramsocs/Leon3_comps_Gill_top/Leon3_comps/libs/techmap/maps/syncram.vhd \
+      EN techmap/syncram 1369068359 CP grmux2 CP generic_syncram CP virtex_syncram \
+      CP unisim_syncram CP virage_syncram CP atc18rha_syncram CP axcel_syncram \
+      CP proasic_syncram CP umc_syncram CP rhumc_syncram CP proasic3_syncram \
+      CP proasic3e_syncram CP proasic3l_syncram CP fusion_syncram CP ihp25_syncram \
+      CP ihp25rh_syncram CP altera_syncram CP rh_lib18t_syncram CP ec_syncram \
+      CP ut025crh_syncram CP peregrine_syncram CP artisan_syncram \
+      CP custom1_syncram CP eclipse_syncram_2p CP virage90_syncram \
+      CP nextreme_syncram CP smic13_syncram CP tm65gplus_syncram CP cmos9sf_syncram
+FL /home/SysPy_test/SysPy_ver/Python_script/paramsocs/Leon3_comps_Gill_top/Leon3_comps/libs/techmap/maps/syncram64.vhd 2011/05/11.18:05:45 O.76xd
+EN techmap/syncram64 1369068361 \
+      FL /home/SysPy_test/SysPy_ver/Python_script/paramsocs/Leon3_comps_Gill_top/Leon3_comps/libs/techmap/maps/syncram64.vhd \
+      LB techmap PB ieee/std_logic_1164 1296775758 PH techmap/gencomp 1369068217
+AR techmap/syncram64/rtl 1369068362 \
+      FL /home/SysPy_test/SysPy_ver/Python_script/paramsocs/Leon3_comps_Gill_top/Leon3_comps/libs/techmap/maps/syncram64.vhd \
+      EN techmap/syncram64 1369068361 CP unisim_syncram64 CP artisan_syncram64 \
+      CP custom1_syncram64 CP smic13_syncram64 CP syncram
+FL /home/SysPy_test/SysPy_ver/Python_script/paramsocs/Leon3_comps_Gill_top/Leon3_comps/libs/techmap/maps/syncram_2p.vhd 2011/05/11.18:05:45 O.76xd
+EN techmap/syncram_2p 1369068357 \
+      FL /home/SysPy_test/SysPy_ver/Python_script/paramsocs/Leon3_comps_Gill_top/Leon3_comps/libs/techmap/maps/syncram_2p.vhd \
+      LB techmap PB ieee/std_logic_1164 1296775758 PH techmap/gencomp 1369068217 \
+      PH techmap/allmem 1369068286
+AR techmap/syncram_2p/rtl 1369068358 \
+      FL /home/SysPy_test/SysPy_ver/Python_script/paramsocs/Leon3_comps_Gill_top/Leon3_comps/libs/techmap/maps/syncram_2p.vhd \
+      EN techmap/syncram_2p 1369068357 CP grmux2 CP generic_syncram_2p \
+      CP virtex_syncram_dp CP unisim_syncram_2p CP virage_syncram_2p \
+      CP virage_syncram_dp CP atc18rha_syncram_2p CP axcel_syncram_2p \
+      CP proasic_syncram_2p CP proasic3_syncram_2p CP proasic3e_syncram_2p \
+      CP proasic3l_syncram_2p CP fusion_syncram_2p CP altera_syncram_dp \
+      CP rh_lib18t_syncram_2p CP ec_syncram_dp CP ut025crh_syncram_2p \
+      CP artisan_syncram_2p CP custom1_syncram_2p CP eclipse_syncram_2p \
+      CP virage90_syncram_dp CP nextreme_syncram_2p CP smic13_syncram_2p \
+      CP tm65gplus_syncram_2p CP cmos9sf_syncram_2p
+FL /home/SysPy_test/SysPy_ver/Python_script/paramsocs/Leon3_comps_Gill_top/Leon3_comps/libs/techmap/maps/syncram_dp.vhd 2011/05/11.18:05:45 O.76xd
+EN techmap/syncram_dp 1369068363 \
+      FL /home/SysPy_test/SysPy_ver/Python_script/paramsocs/Leon3_comps_Gill_top/Leon3_comps/libs/techmap/maps/syncram_dp.vhd \
+      LB techmap PB ieee/std_logic_1164 1296775758 PH techmap/gencomp 1369068217 \
+      PH techmap/allmem 1369068286
+AR techmap/syncram_dp/rtl 1369068364 \
+      FL /home/SysPy_test/SysPy_ver/Python_script/paramsocs/Leon3_comps_Gill_top/Leon3_comps/libs/techmap/maps/syncram_dp.vhd \
+      EN techmap/syncram_dp 1369068363 CP virtex_syncram_dp CP unisim_syncram_dp \
+      CP virage_syncram_dp CP artisan_syncram_dp CP axcel_syncram_2p \
+      CP proasic3_syncram_dp CP proasic3e_syncram_dp CP proasic3l_syncram_dp \
+      CP fusion_syncram_dp CP altera_syncram_dp CP ec_syncram_dp \
+      CP virage90_syncram_dp CP atc18rha_syncram_dp CP smic13_syncram_dp \
+      CP tm65gplus_syncram_dp
+FL /home/SysPy_test/SysPy_ver/Python_script/paramsocs/Leon3_comps_Gill_top/Leon3_comps/libs/techmap/maps/tap.vhd 2011/05/11.18:05:45 O.76xd
+EN techmap/tap 1369068378 \
+      FL /home/SysPy_test/SysPy_ver/Python_script/paramsocs/Leon3_comps_Gill_top/Leon3_comps/libs/techmap/maps/tap.vhd \
+      PB ieee/std_logic_1164 1296775758 LB techmap PH techmap/gencomp 1369068217 \
+      PH techmap/alltap 1369068320 LB grlib PB grlib/stdlib 1369068080
+AR techmap/tap/rtl 1369068379 \
+      FL /home/SysPy_test/SysPy_ver/Python_script/paramsocs/Leon3_comps_Gill_top/Leon3_comps/libs/techmap/maps/tap.vhd \
+      EN techmap/tap 1369068378 CP virtex_tap CP virtex2_tap CP virtex4_tap \
+      CP virtex5_tap CP virtex6_tap CP spartan3_tap CP spartan6_tap CP altera_tap \
+      CP proasic3_tap CP proasic3e_tap CP proasic3l_tap CP fusion_tap CP grmux2 \
+      CP techbuf CP tap_gen
+FL /home/SysPy_test/SysPy_ver/Python_script/paramsocs/Leon3_comps_Gill_top/Leon3_comps/libs/techmap/maps/techbuf.vhd 2011/05/11.18:05:45 O.76xd
+EN techmap/techbuf 1369068335 \
+      FL /home/SysPy_test/SysPy_ver/Python_script/paramsocs/Leon3_comps_Gill_top/Leon3_comps/libs/techmap/maps/techbuf.vhd \
+      PB ieee/std_logic_1164 1296775758 LB techmap PH techmap/gencomp 1369068217
+AR techmap/techbuf/rtl 1369068336 \
+      FL /home/SysPy_test/SysPy_ver/Python_script/paramsocs/Leon3_comps_Gill_top/Leon3_comps/libs/techmap/maps/techbuf.vhd \
+      EN techmap/techbuf 1369068335 CP clkbuf_fusion CP clkbuf_apa3 CP clkbuf_apa3e \
+      CP clkbuf_apa3l CP clkbuf_actel CP clkbuf_xilinx CP clkbuf_ut025crh \
+      CP clkbuf_nextreme
+FL /home/SysPy_test/SysPy_ver/Python_script/paramsocs/Leon3_comps_Gill_top/Leon3_comps/libs/techmap/unisim/buffer_unisim.vhd 2011/05/11.18:05:45 O.76xd
+EN techmap/clkbuf_xilinx 1369068256 \
+      FL /home/SysPy_test/SysPy_ver/Python_script/paramsocs/Leon3_comps_Gill_top/Leon3_comps/libs/techmap/unisim/buffer_unisim.vhd \
+      PB ieee/std_logic_1164 1296775758
+AR techmap/clkbuf_xilinx/rtl 1369068257 \
+      FL /home/SysPy_test/SysPy_ver/Python_script/paramsocs/Leon3_comps_Gill_top/Leon3_comps/libs/techmap/unisim/buffer_unisim.vhd \
+      EN techmap/clkbuf_xilinx 1369068256 CP bufgmux CP bufg
+EN techmap/clkmux_xilinx 1369068258 \
+      FL /home/SysPy_test/SysPy_ver/Python_script/paramsocs/Leon3_comps_Gill_top/Leon3_comps/libs/techmap/unisim/buffer_unisim.vhd \
+      PB ieee/std_logic_1164 1296775758
+AR techmap/clkmux_xilinx/rtl 1369068259 \
+      FL /home/SysPy_test/SysPy_ver/Python_script/paramsocs/Leon3_comps_Gill_top/Leon3_comps/libs/techmap/unisim/buffer_unisim.vhd \
+      EN techmap/clkmux_xilinx 1369068258 CP bufgmux
+FL /home/SysPy_test/SysPy_ver/Python_script/paramsocs/Leon3_comps_Gill_top/Leon3_comps/libs/techmap/unisim/clkgen_unisim.vhd 2011/05/11.18:05:45 O.76xd
+EN techmap/clkgen_virtex2 1369068305 \
+      FL /home/SysPy_test/SysPy_ver/Python_script/paramsocs/Leon3_comps_Gill_top/Leon3_comps/libs/techmap/unisim/clkgen_unisim.vhd \
+      PB ieee/std_logic_1164 1296775758 LB techmap PH techmap/gencomp 1369068217
+AR techmap/clkgen_virtex2/struct 1369068306 \
+      FL /home/SysPy_test/SysPy_ver/Python_script/paramsocs/Leon3_comps_Gill_top/Leon3_comps/libs/techmap/unisim/clkgen_unisim.vhd \
+      EN techmap/clkgen_virtex2 1369068305 CP BUFGDLL CP bufg CP IBUFG CP DCM \
+      CP bufgmux
+EN techmap/clkgen_virtex 1369068307 \
+      FL /home/SysPy_test/SysPy_ver/Python_script/paramsocs/Leon3_comps_Gill_top/Leon3_comps/libs/techmap/unisim/clkgen_unisim.vhd \
+      PB ieee/std_logic_1164 1296775758 LB techmap PH techmap/gencomp 1369068217
+AR techmap/clkgen_virtex/rtl 1369068308 \
+      FL /home/SysPy_test/SysPy_ver/Python_script/paramsocs/Leon3_comps_Gill_top/Leon3_comps/libs/techmap/unisim/clkgen_unisim.vhd \
+      EN techmap/clkgen_virtex 1369068307 CP BUFGDLL CP bufg CP CLKDLL
+EN techmap/clkmul_virtex2 1369068309 \
+      FL /home/SysPy_test/SysPy_ver/Python_script/paramsocs/Leon3_comps_Gill_top/Leon3_comps/libs/techmap/unisim/clkgen_unisim.vhd \
+      PB ieee/std_logic_1164 1296775758 LB techmap PH techmap/gencomp 1369068217
+AR techmap/clkmul_virtex2/struct 1369068310 \
+      FL /home/SysPy_test/SysPy_ver/Python_script/paramsocs/Leon3_comps_Gill_top/Leon3_comps/libs/techmap/unisim/clkgen_unisim.vhd \
+      EN techmap/clkmul_virtex2 1369068309 CP bufg CP DCM
+EN techmap/clkgen_spartan3 1369068311 \
+      FL /home/SysPy_test/SysPy_ver/Python_script/paramsocs/Leon3_comps_Gill_top/Leon3_comps/libs/techmap/unisim/clkgen_unisim.vhd \
+      PB ieee/std_logic_1164 1296775758 LB techmap PH techmap/gencomp 1369068217
+AR techmap/clkgen_spartan3/struct 1369068312 \
+      FL /home/SysPy_test/SysPy_ver/Python_script/paramsocs/Leon3_comps_Gill_top/Leon3_comps/libs/techmap/unisim/clkgen_unisim.vhd \
+      EN techmap/clkgen_spartan3 1369068311 CP BUFGDLL CP bufg CP bufgmux CP DCM
+EN techmap/clkgen_virtex5 1369068313 \
+      FL /home/SysPy_test/SysPy_ver/Python_script/paramsocs/Leon3_comps_Gill_top/Leon3_comps/libs/techmap/unisim/clkgen_unisim.vhd \
+      PB ieee/std_logic_1164 1296775758 LB techmap PH techmap/gencomp 1369068217
+AR techmap/clkgen_virtex5/struct 1369068314 \
+      FL /home/SysPy_test/SysPy_ver/Python_script/paramsocs/Leon3_comps_Gill_top/Leon3_comps/libs/techmap/unisim/clkgen_unisim.vhd \
+      EN techmap/clkgen_virtex5 1369068313 CP BUFGDLL CP bufg CP bufgmux CP DCM
+EN techmap/clkand_unisim 1369068315 \
+      FL /home/SysPy_test/SysPy_ver/Python_script/paramsocs/Leon3_comps_Gill_top/Leon3_comps/libs/techmap/unisim/clkgen_unisim.vhd \
+      PB ieee/std_logic_1164 1296775758
+AR techmap/clkand_unisim/rtl 1369068316 \
+      FL /home/SysPy_test/SysPy_ver/Python_script/paramsocs/Leon3_comps_Gill_top/Leon3_comps/libs/techmap/unisim/clkgen_unisim.vhd \
+      EN techmap/clkand_unisim 1369068315 CP bufgce
+EN techmap/clkmux_unisim 1369068317 \
+      FL /home/SysPy_test/SysPy_ver/Python_script/paramsocs/Leon3_comps_Gill_top/Leon3_comps/libs/techmap/unisim/clkgen_unisim.vhd \
+      PB ieee/std_logic_1164 1296775758
+AR techmap/clkmux_unisim/rtl 1369068318 \
+      FL /home/SysPy_test/SysPy_ver/Python_script/paramsocs/Leon3_comps_Gill_top/Leon3_comps/libs/techmap/unisim/clkgen_unisim.vhd \
+      EN techmap/clkmux_unisim 1369068317 CP bufgmux
+FL /home/SysPy_test/SysPy_ver/Python_script/paramsocs/Leon3_comps_Gill_top/Leon3_comps/libs/techmap/unisim/ddr_phy_unisim.vhd 2011/05/11.18:05:45 O.76xd
+EN techmap/virtex4_ddr_phy 1369068345 \
+      FL /home/SysPy_test/SysPy_ver/Python_script/paramsocs/Leon3_comps_Gill_top/Leon3_comps/libs/techmap/unisim/ddr_phy_unisim.vhd \
+      PB ieee/std_logic_1164 1296775758 LB grlib PB grlib/stdlib 1369068080 \
+      LB techmap PH techmap/gencomp 1369068217
+AR techmap/virtex4_ddr_phy/rtl 1369068346 \
+      FL /home/SysPy_test/SysPy_ver/Python_script/paramsocs/Leon3_comps_Gill_top/Leon3_comps/libs/techmap/unisim/ddr_phy_unisim.vhd \
+      EN techmap/virtex4_ddr_phy 1369068345 CP bufg CP DCM CP clkpad CP ODDR \
+      CP outpad CP FD CP iopad CP IDDR
+EN techmap/virtex2_ddr_phy 1369068347 \
+      FL /home/SysPy_test/SysPy_ver/Python_script/paramsocs/Leon3_comps_Gill_top/Leon3_comps/libs/techmap/unisim/ddr_phy_unisim.vhd \
+      PB ieee/std_logic_1164 1296775758 LB grlib PB grlib/stdlib 1369068080 \
+      LB techmap PH techmap/gencomp 1369068217 EN techmap/oddrv2 1369068264
+AR techmap/virtex2_ddr_phy/rtl 1369068348 \
+      FL /home/SysPy_test/SysPy_ver/Python_script/paramsocs/Leon3_comps_Gill_top/Leon3_comps/libs/techmap/unisim/ddr_phy_unisim.vhd \
+      EN techmap/virtex2_ddr_phy 1369068347 CP bufg CP DCM CP FDDRRSE CP outpad CP FD \
+      CP oddrv2 CP iopad CP clkpad CP IFDDRRSE
+EN techmap/spartan3e_ddr_phy 1369068349 \
+      FL /home/SysPy_test/SysPy_ver/Python_script/paramsocs/Leon3_comps_Gill_top/Leon3_comps/libs/techmap/unisim/ddr_phy_unisim.vhd \
+      PB ieee/std_logic_1164 1296775758 LB grlib PB grlib/stdlib 1369068080 \
+      LB techmap PH techmap/gencomp 1369068217 EN techmap/oddrc3e 1369068266
+AR techmap/spartan3e_ddr_phy/rtl 1369068350 \
+      FL /home/SysPy_test/SysPy_ver/Python_script/paramsocs/Leon3_comps_Gill_top/Leon3_comps/libs/techmap/unisim/ddr_phy_unisim.vhd \
+      EN techmap/spartan3e_ddr_phy 1369068349 CP bufg CP DCM CP ODDR2 CP outpad CP FD \
+      CP oddrc3e CP iopad CP clkpad CP IDDR2
+EN techmap/virtex5_ddr2_phy 1369068351 \
+      FL /home/SysPy_test/SysPy_ver/Python_script/paramsocs/Leon3_comps_Gill_top/Leon3_comps/libs/techmap/unisim/ddr_phy_unisim.vhd \
+      PB ieee/std_logic_1164 1296775758 LB grlib PB grlib/stdlib 1369068080 \
+      LB techmap PH techmap/gencomp 1369068217
+AR techmap/virtex5_ddr2_phy/rtl 1369068352 \
+      FL /home/SysPy_test/SysPy_ver/Python_script/paramsocs/Leon3_comps_Gill_top/Leon3_comps/libs/techmap/unisim/ddr_phy_unisim.vhd \
+      EN techmap/virtex5_ddr2_phy 1369068351 CP bufg CP DCM CP IDELAYCTRL CP ODDR \
+      CP outpad CP FD CP iopad_ds CP iopad CP IDELAY CP IDDR
+EN techmap/spartan3a_ddr2_phy 1369068353 \
+      FL /home/SysPy_test/SysPy_ver/Python_script/paramsocs/Leon3_comps_Gill_top/Leon3_comps/libs/techmap/unisim/ddr_phy_unisim.vhd \
+      PB ieee/std_logic_1164 1296775758 LB grlib PB grlib/stdlib 1369068080 \
+      LB techmap PH techmap/gencomp 1369068217
+AR techmap/spartan3a_ddr2_phy/rtl 1369068354 \
+      FL /home/SysPy_test/SysPy_ver/Python_script/paramsocs/Leon3_comps_Gill_top/Leon3_comps/libs/techmap/unisim/ddr_phy_unisim.vhd \
+      EN techmap/spartan3a_ddr2_phy 1369068353 CP bufg CP DCM CP ODDR2 CP outpad \
+      CP clkpad CP FD CP iopad_ds CP IDDR2 CP iopad
+EN techmap/spartan6_ddr2_phy 1369068355 \
+      FL /home/SysPy_test/SysPy_ver/Python_script/paramsocs/Leon3_comps_Gill_top/Leon3_comps/libs/techmap/unisim/ddr_phy_unisim.vhd \
+      PB ieee/std_logic_1164 1296775758 LB grlib PB grlib/stdlib 1369068080 \
+      LB techmap PH techmap/gencomp 1369068217
+AR techmap/spartan6_ddr2_phy/rtl 1369068356 \
+      FL /home/SysPy_test/SysPy_ver/Python_script/paramsocs/Leon3_comps_Gill_top/Leon3_comps/libs/techmap/unisim/ddr_phy_unisim.vhd \
+      EN techmap/spartan6_ddr2_phy 1369068355 CP bufg CP DCM CP ODDR2 CP outpad \
+      CP clkpad CP FD CP iopad_ds CP IDDR2 CP iopad
+FL /home/SysPy_test/SysPy_ver/Python_script/paramsocs/Leon3_comps_Gill_top/Leon3_comps/libs/techmap/unisim/ddr_unisim.vhd 2011/05/11.18:05:45 O.76xd
+EN techmap/unisim_iddr_reg 1369068260 \
+      FL /home/SysPy_test/SysPy_ver/Python_script/paramsocs/Leon3_comps_Gill_top/Leon3_comps/libs/techmap/unisim/ddr_unisim.vhd \
+      PB ieee/std_logic_1164 1296775758 LB techmap PH techmap/gencomp 1369068217
+AR techmap/unisim_iddr_reg/rtl 1369068261 \
+      FL /home/SysPy_test/SysPy_ver/Python_script/paramsocs/Leon3_comps_Gill_top/Leon3_comps/libs/techmap/unisim/ddr_unisim.vhd \
+      EN techmap/unisim_iddr_reg 1369068260 CP IDDR
+EN techmap/unisim_oddr_reg 1369068262 \
+      FL /home/SysPy_test/SysPy_ver/Python_script/paramsocs/Leon3_comps_Gill_top/Leon3_comps/libs/techmap/unisim/ddr_unisim.vhd \
+      PB ieee/std_logic_1164 1296775758 LB techmap PH techmap/gencomp 1369068217
+AR techmap/unisim_oddr_reg/rtl 1369068263 \
+      FL /home/SysPy_test/SysPy_ver/Python_script/paramsocs/Leon3_comps_Gill_top/Leon3_comps/libs/techmap/unisim/ddr_unisim.vhd \
+      EN techmap/unisim_oddr_reg 1369068262 CP ODDR CP FDDRRSE
+EN techmap/oddrv2 1369068264 \
+      FL /home/SysPy_test/SysPy_ver/Python_script/paramsocs/Leon3_comps_Gill_top/Leon3_comps/libs/techmap/unisim/ddr_unisim.vhd \
+      PB ieee/std_logic_1164 1296775758 LB techmap PH techmap/gencomp 1369068217
+AR techmap/oddrv2/rtl 1369068265 \
+      FL /home/SysPy_test/SysPy_ver/Python_script/paramsocs/Leon3_comps_Gill_top/Leon3_comps/libs/techmap/unisim/ddr_unisim.vhd \
+      EN techmap/oddrv2 1369068264 CP FD CP FDDRRSE
+EN techmap/oddrc3e 1369068266 \
+      FL /home/SysPy_test/SysPy_ver/Python_script/paramsocs/Leon3_comps_Gill_top/Leon3_comps/libs/techmap/unisim/ddr_unisim.vhd \
+      PB ieee/std_logic_1164 1296775758 LB techmap PH techmap/gencomp 1369068217
+AR techmap/oddrc3e/rtl 1369068267 \
+      FL /home/SysPy_test/SysPy_ver/Python_script/paramsocs/Leon3_comps_Gill_top/Leon3_comps/libs/techmap/unisim/ddr_unisim.vhd \
+      EN techmap/oddrc3e 1369068266 CP FD CP ODDR2
+FL /home/SysPy_test/SysPy_ver/Python_script/paramsocs/Leon3_comps_Gill_top/Leon3_comps/libs/techmap/unisim/memory_unisim.vhd 2011/05/11.18:05:45 O.76xd
+EN techmap/virtex_syncram 1369068289 \
+      FL /home/SysPy_test/SysPy_ver/Python_script/paramsocs/Leon3_comps_Gill_top/Leon3_comps/libs/techmap/unisim/memory_unisim.vhd \
+      PB ieee/std_logic_1164 1296775758 LB techmap PH techmap/gencomp 1369068217
+AR techmap/virtex_syncram/behav 1369068290 \
+      FL /home/SysPy_test/SysPy_ver/Python_script/paramsocs/Leon3_comps_Gill_top/Leon3_comps/libs/techmap/unisim/memory_unisim.vhd \
+      EN techmap/virtex_syncram 1369068289 CP generic_syncram CP RAMB4_S16_S16 \
+      CP RAMB4_S16 CP RAMB4_S8 CP RAMB4_S4 CP RAMB4_S2 CP RAMB4_S1
+EN techmap/virtex_syncram_dp 1369068291 \
+      FL /home/SysPy_test/SysPy_ver/Python_script/paramsocs/Leon3_comps_Gill_top/Leon3_comps/libs/techmap/unisim/memory_unisim.vhd \
+      PB ieee/std_logic_1164 1296775758
+AR techmap/virtex_syncram_dp/behav 1369068292 \
+      FL /home/SysPy_test/SysPy_ver/Python_script/paramsocs/Leon3_comps_Gill_top/Leon3_comps/libs/techmap/unisim/memory_unisim.vhd \
+      EN techmap/virtex_syncram_dp 1369068291 CP RAMB4_S16_S16 CP RAMB4_S8_S8 \
+      CP RAMB4_S4_S4 CP RAMB4_S2_S2 CP RAMB4_S1_S1
+EN techmap/unisim_syncram 1369068293 \
+      FL /home/SysPy_test/SysPy_ver/Python_script/paramsocs/Leon3_comps_Gill_top/Leon3_comps/libs/techmap/unisim/memory_unisim.vhd \
+      PB ieee/std_logic_1164 1296775758
+AR techmap/unisim_syncram/behav 1369068294 \
+      FL /home/SysPy_test/SysPy_ver/Python_script/paramsocs/Leon3_comps_Gill_top/Leon3_comps/libs/techmap/unisim/memory_unisim.vhd \
+      EN techmap/unisim_syncram 1369068293 CP generic_syncram CP RAMB16_S36_S36 \
+      CP RAMB16_S36 CP RAMB16_S18 CP RAMB16_S9 CP RAMB16_S4 CP RAMB16_S2 CP RAMB16_S1
+EN techmap/unisim_syncram_dp 1369068295 \
+      FL /home/SysPy_test/SysPy_ver/Python_script/paramsocs/Leon3_comps_Gill_top/Leon3_comps/libs/techmap/unisim/memory_unisim.vhd \
+      PB ieee/std_logic_1164 1296775758
+AR techmap/unisim_syncram_dp/behav 1369068296 \
+      FL /home/SysPy_test/SysPy_ver/Python_script/paramsocs/Leon3_comps_Gill_top/Leon3_comps/libs/techmap/unisim/memory_unisim.vhd \
+      EN techmap/unisim_syncram_dp 1369068295 CP RAMB16_S36_S36 CP RAMB16_S18_S18 \
+      CP RAMB16_S9_S9 CP RAMB16_S4_S4 CP RAMB16_S2_S2 CP RAMB16_S1_S1
+EN techmap/unisim_syncram_2p 1369068297 \
+      FL /home/SysPy_test/SysPy_ver/Python_script/paramsocs/Leon3_comps_Gill_top/Leon3_comps/libs/techmap/unisim/memory_unisim.vhd \
+      PB ieee/std_logic_1164 1296775758
+AR techmap/unisim_syncram_2p/behav 1369068298 \
+      FL /home/SysPy_test/SysPy_ver/Python_script/paramsocs/Leon3_comps_Gill_top/Leon3_comps/libs/techmap/unisim/memory_unisim.vhd \
+      EN techmap/unisim_syncram_2p 1369068297 CP generic_syncram_2p \
+      CP unisim_syncram_dp
+EN techmap/unisim_syncram64 1369068299 \
+      FL /home/SysPy_test/SysPy_ver/Python_script/paramsocs/Leon3_comps_Gill_top/Leon3_comps/libs/techmap/unisim/memory_unisim.vhd \
+      PB ieee/std_logic_1164 1296775758
+AR techmap/unisim_syncram64/behav 1369068300 \
+      FL /home/SysPy_test/SysPy_ver/Python_script/paramsocs/Leon3_comps_Gill_top/Leon3_comps/libs/techmap/unisim/memory_unisim.vhd \
+      EN techmap/unisim_syncram64 1369068299 CP RAMB16_S36_S36 CP unisim_syncram
+EN techmap/unisim_syncram128 1369068301 \
+      FL /home/SysPy_test/SysPy_ver/Python_script/paramsocs/Leon3_comps_Gill_top/Leon3_comps/libs/techmap/unisim/memory_unisim.vhd \
+      PB ieee/std_logic_1164 1296775758
+AR techmap/unisim_syncram128/behav 1369068302 \
+      FL /home/SysPy_test/SysPy_ver/Python_script/paramsocs/Leon3_comps_Gill_top/Leon3_comps/libs/techmap/unisim/memory_unisim.vhd \
+      EN techmap/unisim_syncram128 1369068301 CP unisim_syncram64
+EN techmap/unisim_syncram128bw 1369068303 \
+      FL /home/SysPy_test/SysPy_ver/Python_script/paramsocs/Leon3_comps_Gill_top/Leon3_comps/libs/techmap/unisim/memory_unisim.vhd \
+      PB ieee/std_logic_1164 1296775758
+AR techmap/unisim_syncram128bw/behav 1369068304 \
+      FL /home/SysPy_test/SysPy_ver/Python_script/paramsocs/Leon3_comps_Gill_top/Leon3_comps/libs/techmap/unisim/memory_unisim.vhd \
+      EN techmap/unisim_syncram128bw 1369068303 CP RAMB16_S9_S9 CP unisim_syncram
+FL /home/SysPy_test/SysPy_ver/Python_script/paramsocs/Leon3_comps_Gill_top/Leon3_comps/libs/techmap/unisim/pads_unisim.vhd 2011/05/11.18:05:45 O.76xd
+EN techmap/unisim_inpad 1369068219 \
+      FL /home/SysPy_test/SysPy_ver/Python_script/paramsocs/Leon3_comps_Gill_top/Leon3_comps/libs/techmap/unisim/pads_unisim.vhd \
+      PB ieee/std_logic_1164 1296775758 LB techmap PH techmap/gencomp 1369068217
+AR techmap/unisim_inpad/rtl 1369068220 \
+      FL /home/SysPy_test/SysPy_ver/Python_script/paramsocs/Leon3_comps_Gill_top/Leon3_comps/libs/techmap/unisim/pads_unisim.vhd \
+      EN techmap/unisim_inpad 1369068219 CP IBUF
+EN techmap/unisim_iopad 1369068221 \
+      FL /home/SysPy_test/SysPy_ver/Python_script/paramsocs/Leon3_comps_Gill_top/Leon3_comps/libs/techmap/unisim/pads_unisim.vhd \
+      PB ieee/std_logic_1164 1296775758 LB techmap PH techmap/gencomp 1369068217
+AR techmap/unisim_iopad/rtl 1369068222 \
+      FL /home/SysPy_test/SysPy_ver/Python_script/paramsocs/Leon3_comps_Gill_top/Leon3_comps/libs/techmap/unisim/pads_unisim.vhd \
+      EN techmap/unisim_iopad 1369068221 CP IOBUF
+EN techmap/unisim_outpad 1369068223 \
+      FL /home/SysPy_test/SysPy_ver/Python_script/paramsocs/Leon3_comps_Gill_top/Leon3_comps/libs/techmap/unisim/pads_unisim.vhd \
+      PB ieee/std_logic_1164 1296775758 LB techmap PH techmap/gencomp 1369068217
+AR techmap/unisim_outpad/rtl 1369068224 \
+      FL /home/SysPy_test/SysPy_ver/Python_script/paramsocs/Leon3_comps_Gill_top/Leon3_comps/libs/techmap/unisim/pads_unisim.vhd \
+      EN techmap/unisim_outpad 1369068223 CP OBUF
+EN techmap/unisim_toutpad 1369068225 \
+      FL /home/SysPy_test/SysPy_ver/Python_script/paramsocs/Leon3_comps_Gill_top/Leon3_comps/libs/techmap/unisim/pads_unisim.vhd \
+      PB ieee/std_logic_1164 1296775758 LB techmap PH techmap/gencomp 1369068217
+AR techmap/unisim_toutpad/rtl 1369068226 \
+      FL /home/SysPy_test/SysPy_ver/Python_script/paramsocs/Leon3_comps_Gill_top/Leon3_comps/libs/techmap/unisim/pads_unisim.vhd \
+      EN techmap/unisim_toutpad 1369068225 CP OBUFT
+EN techmap/unisim_skew_outpad 1369068227 \
+      FL /home/SysPy_test/SysPy_ver/Python_script/paramsocs/Leon3_comps_Gill_top/Leon3_comps/libs/techmap/unisim/pads_unisim.vhd \
+      PB ieee/std_logic_1164 1296775758 LB techmap PH techmap/gencomp 1369068217
+AR techmap/unisim_skew_outpad/rtl 1369068228 \
+      FL /home/SysPy_test/SysPy_ver/Python_script/paramsocs/Leon3_comps_Gill_top/Leon3_comps/libs/techmap/unisim/pads_unisim.vhd \
+      EN techmap/unisim_skew_outpad 1369068227 CP DCM CP bufg CP OBUF
+EN techmap/unisim_clkpad 1369068229 \
+      FL /home/SysPy_test/SysPy_ver/Python_script/paramsocs/Leon3_comps_Gill_top/Leon3_comps/libs/techmap/unisim/pads_unisim.vhd \
+      PB ieee/std_logic_1164 1296775758 LB techmap PH techmap/gencomp 1369068217
+AR techmap/unisim_clkpad/rtl 1369068230 \
+      FL /home/SysPy_test/SysPy_ver/Python_script/paramsocs/Leon3_comps_Gill_top/Leon3_comps/libs/techmap/unisim/pads_unisim.vhd \
+      EN techmap/unisim_clkpad 1369068229 CP IBUFG CP IBUF CP bufgmux CP bufg \
+      CP CLKDLL CP CLKDLLHF
+EN techmap/unisim_inpad_ds 1369068231 \
+      FL /home/SysPy_test/SysPy_ver/Python_script/paramsocs/Leon3_comps_Gill_top/Leon3_comps/libs/techmap/unisim/pads_unisim.vhd \
+      PB ieee/std_logic_1164 1296775758 LB techmap PH techmap/gencomp 1369068217
+AR techmap/unisim_inpad_ds/rtl 1369068232 \
+      FL /home/SysPy_test/SysPy_ver/Python_script/paramsocs/Leon3_comps_Gill_top/Leon3_comps/libs/techmap/unisim/pads_unisim.vhd \
+      EN techmap/unisim_inpad_ds 1369068231 CP IBUFDS_LVDS_33 CP IBUFDS_LVDS_25
+EN techmap/unisim_clkpad_ds 1369068233 \
+      FL /home/SysPy_test/SysPy_ver/Python_script/paramsocs/Leon3_comps_Gill_top/Leon3_comps/libs/techmap/unisim/pads_unisim.vhd \
+      PB ieee/std_logic_1164 1296775758 LB techmap PH techmap/gencomp 1369068217
+AR techmap/unisim_clkpad_ds/rtl 1369068234 \
+      FL /home/SysPy_test/SysPy_ver/Python_script/paramsocs/Leon3_comps_Gill_top/Leon3_comps/libs/techmap/unisim/pads_unisim.vhd \
+      EN techmap/unisim_clkpad_ds 1369068233 CP IBUFGDS_LVDS_33 CP IBUFGDS_LVDS_25
+EN techmap/virtex4_inpad_ds 1369068235 \
+      FL /home/SysPy_test/SysPy_ver/Python_script/paramsocs/Leon3_comps_Gill_top/Leon3_comps/libs/techmap/unisim/pads_unisim.vhd \
+      PB ieee/std_logic_1164 1296775758 LB techmap PH techmap/gencomp 1369068217
+AR techmap/virtex4_inpad_ds/rtl 1369068236 \
+      FL /home/SysPy_test/SysPy_ver/Python_script/paramsocs/Leon3_comps_Gill_top/Leon3_comps/libs/techmap/unisim/pads_unisim.vhd \
+      EN techmap/virtex4_inpad_ds 1369068235 CP IBUFDS
+EN techmap/virtex4_clkpad_ds 1369068237 \
+      FL /home/SysPy_test/SysPy_ver/Python_script/paramsocs/Leon3_comps_Gill_top/Leon3_comps/libs/techmap/unisim/pads_unisim.vhd \
+      PB ieee/std_logic_1164 1296775758 LB techmap PH techmap/gencomp 1369068217
+AR techmap/virtex4_clkpad_ds/rtl 1369068238 \
+      FL /home/SysPy_test/SysPy_ver/Python_script/paramsocs/Leon3_comps_Gill_top/Leon3_comps/libs/techmap/unisim/pads_unisim.vhd \
+      EN techmap/virtex4_clkpad_ds 1369068237 CP IBUFGDS
+EN techmap/unisim_iopad_ds 1369068239 \
+      FL /home/SysPy_test/SysPy_ver/Python_script/paramsocs/Leon3_comps_Gill_top/Leon3_comps/libs/techmap/unisim/pads_unisim.vhd \
+      PB ieee/std_logic_1164 1296775758 LB techmap PH techmap/gencomp 1369068217
+AR techmap/unisim_iopad_ds/rtl 1369068240 \
+      FL /home/SysPy_test/SysPy_ver/Python_script/paramsocs/Leon3_comps_Gill_top/Leon3_comps/libs/techmap/unisim/pads_unisim.vhd \
+      EN techmap/unisim_iopad_ds 1369068239 CP IOBUFDS
+EN techmap/unisim_outpad_ds 1369068241 \
+      FL /home/SysPy_test/SysPy_ver/Python_script/paramsocs/Leon3_comps_Gill_top/Leon3_comps/libs/techmap/unisim/pads_unisim.vhd \
+      PB ieee/std_logic_1164 1296775758 LB techmap PH techmap/gencomp 1369068217
+AR techmap/unisim_outpad_ds/rtl 1369068242 \
+      FL /home/SysPy_test/SysPy_ver/Python_script/paramsocs/Leon3_comps_Gill_top/Leon3_comps/libs/techmap/unisim/pads_unisim.vhd \
+      EN techmap/unisim_outpad_ds 1369068241 CP OBUFDS
+FL /home/SysPy_test/SysPy_ver/Python_script/paramsocs/Leon3_comps_Gill_top/Leon3_comps/libs/techmap/unisim/tap_unisim.vhd 2011/05/11.18:05:45 O.76xd
+EN techmap/virtex_tap 1369068321 \
+      FL /home/SysPy_test/SysPy_ver/Python_script/paramsocs/Leon3_comps_Gill_top/Leon3_comps/libs/techmap/unisim/tap_unisim.vhd \
+      PB ieee/std_logic_1164 1296775758
+AR techmap/virtex_tap/rtl 1369068322 \
+      FL /home/SysPy_test/SysPy_ver/Python_script/paramsocs/Leon3_comps_Gill_top/Leon3_comps/libs/techmap/unisim/tap_unisim.vhd \
+      EN techmap/virtex_tap 1369068321 CP BSCAN_VIRTEX
+EN techmap/virtex2_tap 1369068323 \
+      FL /home/SysPy_test/SysPy_ver/Python_script/paramsocs/Leon3_comps_Gill_top/Leon3_comps/libs/techmap/unisim/tap_unisim.vhd \
+      PB ieee/std_logic_1164 1296775758
+AR techmap/virtex2_tap/rtl 1369068324 \
+      FL /home/SysPy_test/SysPy_ver/Python_script/paramsocs/Leon3_comps_Gill_top/Leon3_comps/libs/techmap/unisim/tap_unisim.vhd \
+      EN techmap/virtex2_tap 1369068323 CP BSCAN_VIRTEX2
+EN techmap/spartan3_tap 1369068325 \
+      FL /home/SysPy_test/SysPy_ver/Python_script/paramsocs/Leon3_comps_Gill_top/Leon3_comps/libs/techmap/unisim/tap_unisim.vhd \
+      PB ieee/std_logic_1164 1296775758
+AR techmap/spartan3_tap/rtl 1369068326 \
+      FL /home/SysPy_test/SysPy_ver/Python_script/paramsocs/Leon3_comps_Gill_top/Leon3_comps/libs/techmap/unisim/tap_unisim.vhd \
+      EN techmap/spartan3_tap 1369068325 CP BSCAN_SPARTAN3
+EN techmap/virtex4_tap 1369068327 \
+      FL /home/SysPy_test/SysPy_ver/Python_script/paramsocs/Leon3_comps_Gill_top/Leon3_comps/libs/techmap/unisim/tap_unisim.vhd \
+      PB ieee/std_logic_1164 1296775758
+AR techmap/virtex4_tap/rtl 1369068328 \
+      FL /home/SysPy_test/SysPy_ver/Python_script/paramsocs/Leon3_comps_Gill_top/Leon3_comps/libs/techmap/unisim/tap_unisim.vhd \
+      EN techmap/virtex4_tap 1369068327 CP BSCAN_VIRTEX4
+EN techmap/virtex5_tap 1369068329 \
+      FL /home/SysPy_test/SysPy_ver/Python_script/paramsocs/Leon3_comps_Gill_top/Leon3_comps/libs/techmap/unisim/tap_unisim.vhd \
+      PB ieee/std_logic_1164 1296775758
+AR techmap/virtex5_tap/rtl 1369068330 \
+      FL /home/SysPy_test/SysPy_ver/Python_script/paramsocs/Leon3_comps_Gill_top/Leon3_comps/libs/techmap/unisim/tap_unisim.vhd \
+      EN techmap/virtex5_tap 1369068329 CP BSCAN_VIRTEX5
+EN techmap/virtex6_tap 1369068331 \
+      FL /home/SysPy_test/SysPy_ver/Python_script/paramsocs/Leon3_comps_Gill_top/Leon3_comps/libs/techmap/unisim/tap_unisim.vhd \
+      PB ieee/std_logic_1164 1296775758
+AR techmap/virtex6_tap/rtl 1369068332 \
+      FL /home/SysPy_test/SysPy_ver/Python_script/paramsocs/Leon3_comps_Gill_top/Leon3_comps/libs/techmap/unisim/tap_unisim.vhd \
+      EN techmap/virtex6_tap 1369068331 CP BSCAN_VIRTEX6
+EN techmap/spartan6_tap 1369068333 \
+      FL /home/SysPy_test/SysPy_ver/Python_script/paramsocs/Leon3_comps_Gill_top/Leon3_comps/libs/techmap/unisim/tap_unisim.vhd \
+      PB ieee/std_logic_1164 1296775758
+AR techmap/spartan6_tap/rtl 1369068334 \
+      FL /home/SysPy_test/SysPy_ver/Python_script/paramsocs/Leon3_comps_Gill_top/Leon3_comps/libs/techmap/unisim/tap_unisim.vhd \
+      EN techmap/spartan6_tap 1369068333 CP BSCAN_SPARTAN6
+FL /media/Seagate/system_backup/SysPy_test/SysPy_ver/Python_script/paramsocs/Leon3_comps_Gill_top/Leon3_comps/libs/techmap/gencomp/gencomp.vhd 2011/05/11.18:05:45 O.76xd
+FL /media/Seagate/system_backup/SysPy_test/SysPy_ver/Python_script/paramsocs/Leon3_comps_Gill_top/Leon3_comps/libs/techmap/gencomp/netcomp.vhd 2011/05/11.18:05:45 O.76xd
+FL /media/Seagate/system_backup/SysPy_test/SysPy_ver/Python_script/paramsocs/Leon3_comps_Gill_top/Leon3_comps/libs/techmap/inferred/ddr_phy_inferred.vhd 2011/05/11.18:05:45 O.76xd
+FL /media/Seagate/system_backup/SysPy_test/SysPy_ver/Python_script/paramsocs/Leon3_comps_Gill_top/Leon3_comps/libs/techmap/inferred/memory_inferred.vhd 2011/05/11.18:05:45 O.76xd
+FL /media/Seagate/system_backup/SysPy_test/SysPy_ver/Python_script/paramsocs/Leon3_comps_Gill_top/Leon3_comps/libs/techmap/maps/allclkgen.vhd 2011/05/11.18:05:45 O.76xd
+FL /media/Seagate/system_backup/SysPy_test/SysPy_ver/Python_script/paramsocs/Leon3_comps_Gill_top/Leon3_comps/libs/techmap/maps/allddr.vhd 2011/05/11.18:05:45 O.76xd
+FL /media/Seagate/system_backup/SysPy_test/SysPy_ver/Python_script/paramsocs/Leon3_comps_Gill_top/Leon3_comps/libs/techmap/maps/allmem.vhd 2011/05/11.18:05:45 O.76xd
+FL /media/Seagate/system_backup/SysPy_test/SysPy_ver/Python_script/paramsocs/Leon3_comps_Gill_top/Leon3_comps/libs/techmap/maps/allpads.vhd 2011/05/11.18:05:45 O.76xd
+FL /media/Seagate/system_backup/SysPy_test/SysPy_ver/Python_script/paramsocs/Leon3_comps_Gill_top/Leon3_comps/libs/techmap/maps/alltap.vhd 2011/05/11.18:05:45 O.76xd
+FL /media/Seagate/system_backup/SysPy_test/SysPy_ver/Python_script/paramsocs/Leon3_comps_Gill_top/Leon3_comps/libs/techmap/maps/clkand.vhd 2011/05/11.18:05:45 O.76xd
+FL /media/Seagate/system_backup/SysPy_test/SysPy_ver/Python_script/paramsocs/Leon3_comps_Gill_top/Leon3_comps/libs/techmap/maps/clkgen.vhd 2011/05/11.18:05:45 O.76xd
+FL /media/Seagate/system_backup/SysPy_test/SysPy_ver/Python_script/paramsocs/Leon3_comps_Gill_top/Leon3_comps/libs/techmap/maps/clkpad.vhd 2011/05/11.18:05:45 O.76xd
+FL /media/Seagate/system_backup/SysPy_test/SysPy_ver/Python_script/paramsocs/Leon3_comps_Gill_top/Leon3_comps/libs/techmap/maps/clkpad_ds.vhd 2011/05/11.18:05:45 O.76xd
+FL /media/Seagate/system_backup/SysPy_test/SysPy_ver/Python_script/paramsocs/Leon3_comps_Gill_top/Leon3_comps/libs/techmap/maps/ddrphy.vhd 2011/05/11.18:05:45 O.76xd
+FL /media/Seagate/system_backup/SysPy_test/SysPy_ver/Python_script/paramsocs/Leon3_comps_Gill_top/Leon3_comps/libs/techmap/maps/ddr_oreg.vhd 2011/05/11.18:05:45 O.76xd
+FL /media/Seagate/system_backup/SysPy_test/SysPy_ver/Python_script/paramsocs/Leon3_comps_Gill_top/Leon3_comps/libs/techmap/maps/grfpw_net.vhd 2011/05/11.18:05:45 O.76xd
+FL /media/Seagate/system_backup/SysPy_test/SysPy_ver/Python_script/paramsocs/Leon3_comps_Gill_top/Leon3_comps/libs/techmap/maps/grgates.vhd 2011/05/11.18:05:45 O.76xd
+FL /media/Seagate/system_backup/SysPy_test/SysPy_ver/Python_script/paramsocs/Leon3_comps_Gill_top/Leon3_comps/libs/techmap/maps/grlfpw_net.vhd 2011/05/11.18:05:45 O.76xd
+FL /media/Seagate/system_backup/SysPy_test/SysPy_ver/Python_script/paramsocs/Leon3_comps_Gill_top/Leon3_comps/libs/techmap/maps/inpad.vhd 2011/05/11.18:05:45 O.76xd
+FL /media/Seagate/system_backup/SysPy_test/SysPy_ver/Python_script/paramsocs/Leon3_comps_Gill_top/Leon3_comps/libs/techmap/maps/iopad.vhd 2011/05/11.18:05:45 O.76xd
+FL /media/Seagate/system_backup/SysPy_test/SysPy_ver/Python_script/paramsocs/Leon3_comps_Gill_top/Leon3_comps/libs/techmap/maps/iopad_ds.vhd 2011/05/11.18:05:45 O.76xd
+FL /media/Seagate/system_backup/SysPy_test/SysPy_ver/Python_script/paramsocs/Leon3_comps_Gill_top/Leon3_comps/libs/techmap/maps/outpad.vhd 2011/05/11.18:05:45 O.76xd
+FL /media/Seagate/system_backup/SysPy_test/SysPy_ver/Python_script/paramsocs/Leon3_comps_Gill_top/Leon3_comps/libs/techmap/maps/regfile_3p.vhd 2011/05/11.18:05:45 O.76xd
+FL /media/Seagate/system_backup/SysPy_test/SysPy_ver/Python_script/paramsocs/Leon3_comps_Gill_top/Leon3_comps/libs/techmap/maps/syncram.vhd 2011/05/11.18:05:45 O.76xd
+FL /media/Seagate/system_backup/SysPy_test/SysPy_ver/Python_script/paramsocs/Leon3_comps_Gill_top/Leon3_comps/libs/techmap/maps/syncram64.vhd 2011/05/11.18:05:45 O.76xd
+FL /media/Seagate/system_backup/SysPy_test/SysPy_ver/Python_script/paramsocs/Leon3_comps_Gill_top/Leon3_comps/libs/techmap/maps/syncram_2p.vhd 2011/05/11.18:05:45 O.76xd
+FL /media/Seagate/system_backup/SysPy_test/SysPy_ver/Python_script/paramsocs/Leon3_comps_Gill_top/Leon3_comps/libs/techmap/maps/syncram_dp.vhd 2011/05/11.18:05:45 O.76xd
+FL /media/Seagate/system_backup/SysPy_test/SysPy_ver/Python_script/paramsocs/Leon3_comps_Gill_top/Leon3_comps/libs/techmap/maps/tap.vhd 2011/05/11.18:05:45 O.76xd
+FL /media/Seagate/system_backup/SysPy_test/SysPy_ver/Python_script/paramsocs/Leon3_comps_Gill_top/Leon3_comps/libs/techmap/maps/techbuf.vhd 2011/05/11.18:05:45 O.76xd
+FL /media/Seagate/system_backup/SysPy_test/SysPy_ver/Python_script/paramsocs/Leon3_comps_Gill_top/Leon3_comps/libs/techmap/unisim/buffer_unisim.vhd 2011/05/11.18:05:45 O.76xd
+FL /media/Seagate/system_backup/SysPy_test/SysPy_ver/Python_script/paramsocs/Leon3_comps_Gill_top/Leon3_comps/libs/techmap/unisim/clkgen_unisim.vhd 2011/05/11.18:05:45 O.76xd
+FL /media/Seagate/system_backup/SysPy_test/SysPy_ver/Python_script/paramsocs/Leon3_comps_Gill_top/Leon3_comps/libs/techmap/unisim/ddr_phy_unisim.vhd 2011/05/11.18:05:45 O.76xd
+FL /media/Seagate/system_backup/SysPy_test/SysPy_ver/Python_script/paramsocs/Leon3_comps_Gill_top/Leon3_comps/libs/techmap/unisim/ddr_unisim.vhd 2011/05/11.18:05:45 O.76xd
+FL /media/Seagate/system_backup/SysPy_test/SysPy_ver/Python_script/paramsocs/Leon3_comps_Gill_top/Leon3_comps/libs/techmap/unisim/memory_unisim.vhd 2011/05/11.18:05:45 O.76xd
+FL /media/Seagate/system_backup/SysPy_test/SysPy_ver/Python_script/paramsocs/Leon3_comps_Gill_top/Leon3_comps/libs/techmap/unisim/pads_unisim.vhd 2011/05/11.18:05:45 O.76xd
+FL /media/Seagate/system_backup/SysPy_test/SysPy_ver/Python_script/paramsocs/Leon3_comps_Gill_top/Leon3_comps/libs/techmap/unisim/tap_unisim.vhd 2011/05/11.18:05:45 O.76xd

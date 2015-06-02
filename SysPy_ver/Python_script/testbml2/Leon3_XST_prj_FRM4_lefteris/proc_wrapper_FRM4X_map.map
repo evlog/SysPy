@@ -1,0 +1,1676 @@
+Release 13.3 Map O.76xd (lin)
+Xilinx Map Application Log File for Design 'proc_wrapper_FRM4X'
+
+Design Information
+------------------
+Command Line   : map -intstyle ise -p xc5vlx110t-ff1136-1 -w -logic_opt off -ol
+high -t 1 -register_duplication off -global_opt off -mt 2 -cm area -ir off -pr
+off -lc off -power off -o proc_wrapper_FRM4X_map.ncd proc_wrapper_FRM4X.ngd
+proc_wrapper_FRM4X.pcf 
+Target Device  : xc5vlx110t
+Target Package : ff1136
+Target Speed   : -1
+Mapper Version : virtex5 -- $Revision: 1.55 $
+Mapped Date    : Tue Apr 23 09:40:20 2013
+
+vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv
+INFO:Security:56 - Part 'xc5vlx110t' is not a WebPack part.
+WARNING:Security:42 - Your software subscription period has lapsed. Your current
+version of Xilinx tools will continue to function, but you no longer qualify for
+Xilinx software updates or new releases.
+----------------------------------------------------------------------
+Mapping design into LUTs...
+WARNING:MapLib:701 - Signal dvi_iic_scl connected to top level port dvi_iic_scl
+   has been removed.
+WARNING:MapLib:701 - Signal dvi_iic_sda connected to top level port dvi_iic_sda
+   has been removed.
+WARNING:MapLib:701 - Signal phy_rx_data<7> connected to top level port
+   phy_rx_data<7> has been removed.
+WARNING:MapLib:701 - Signal phy_rx_data<6> connected to top level port
+   phy_rx_data<6> has been removed.
+WARNING:MapLib:701 - Signal phy_rx_data<5> connected to top level port
+   phy_rx_data<5> has been removed.
+WARNING:MapLib:701 - Signal phy_rx_data<4> connected to top level port
+   phy_rx_data<4> has been removed.
+WARNING:MapLib:701 - Signal iic_sda_main connected to top level port
+   iic_sda_main has been removed.
+WARNING:MapLib:701 - Signal iic_scl_main connected to top level port
+   iic_scl_main has been removed.
+WARNING:Pack:2874 - Trimming timing constraints from pin
+   Gill/FRM4X/XLXI_1/XLXI_14/Mram_RAM1
+   of frag REGCLKAU connected to power/ground net
+   Gill/FRM4X/XLXI_1/XLXI_14/Mram_RAM1_REGCLKAU_tiesig
+WARNING:Pack:2874 - Trimming timing constraints from pin
+   Gill/FRM4X/XLXI_1/XLXI_14/Mram_RAM1
+   of frag REGCLKAL connected to power/ground net
+   Gill/FRM4X/XLXI_1/XLXI_14/Mram_RAM1_REGCLKAL_tiesig
+WARNING:Pack:2874 - Trimming timing constraints from pin
+   Gill/FRM4X/XLXI_1/XLXI_14/Mram_RAM2
+   of frag REGCLKAU connected to power/ground net
+   Gill/FRM4X/XLXI_1/XLXI_14/Mram_RAM2_REGCLKAU_tiesig
+WARNING:Pack:2874 - Trimming timing constraints from pin
+   Gill/FRM4X/XLXI_1/XLXI_14/Mram_RAM2
+   of frag REGCLKAL connected to power/ground net
+   Gill/FRM4X/XLXI_1/XLXI_14/Mram_RAM2_REGCLKAL_tiesig
+WARNING:Pack:2874 - Trimming timing constraints from pin
+   Gill/FRM4X/XLXI_1/XLXI_14/Mram_RAM3
+   of frag REGCLKAU connected to power/ground net
+   Gill/FRM4X/XLXI_1/XLXI_14/Mram_RAM3_REGCLKAU_tiesig
+WARNING:Pack:2874 - Trimming timing constraints from pin
+   Gill/FRM4X/XLXI_1/XLXI_14/Mram_RAM3
+   of frag REGCLKAL connected to power/ground net
+   Gill/FRM4X/XLXI_1/XLXI_14/Mram_RAM3_REGCLKAL_tiesig
+WARNING:Pack:2874 - Trimming timing constraints from pin
+   Gill/FRM4X/XLXI_1/XLXI_14/Mram_RAM4
+   of frag REGCLKAU connected to power/ground net
+   Gill/FRM4X/XLXI_1/XLXI_14/Mram_RAM4_REGCLKAU_tiesig
+WARNING:Pack:2874 - Trimming timing constraints from pin
+   Gill/FRM4X/XLXI_1/XLXI_14/Mram_RAM4
+   of frag REGCLKAL connected to power/ground net
+   Gill/FRM4X/XLXI_1/XLXI_14/Mram_RAM4_REGCLKAL_tiesig
+WARNING:Pack:2874 - Trimming timing constraints from pin
+   Gill/FRM4X/XLXI_1/XLXI_14/Mram_RAM5
+   of frag REGCLKAU connected to power/ground net
+   Gill/FRM4X/XLXI_1/XLXI_14/Mram_RAM5_REGCLKAU_tiesig
+WARNING:Pack:2874 - Trimming timing constraints from pin
+   Gill/FRM4X/XLXI_1/XLXI_14/Mram_RAM5
+   of frag REGCLKAL connected to power/ground net
+   Gill/FRM4X/XLXI_1/XLXI_14/Mram_RAM5_REGCLKAL_tiesig
+WARNING:Pack:2874 - Trimming timing constraints from pin
+   Gill/FRM4X/XLXI_1/XLXI_14/Mram_RAM6
+   of frag REGCLKAU connected to power/ground net
+   Gill/FRM4X/XLXI_1/XLXI_14/Mram_RAM6_REGCLKAU_tiesig
+WARNING:Pack:2874 - Trimming timing constraints from pin
+   Gill/FRM4X/XLXI_1/XLXI_14/Mram_RAM6
+   of frag REGCLKAL connected to power/ground net
+   Gill/FRM4X/XLXI_1/XLXI_14/Mram_RAM6_REGCLKAL_tiesig
+WARNING:Pack:2874 - Trimming timing constraints from pin
+   Gill/FRM4X/XLXI_1/XLXI_14/Mram_RAM7
+   of frag REGCLKAU connected to power/ground net
+   Gill/FRM4X/XLXI_1/XLXI_14/Mram_RAM7_REGCLKAU_tiesig
+WARNING:Pack:2874 - Trimming timing constraints from pin
+   Gill/FRM4X/XLXI_1/XLXI_14/Mram_RAM7
+   of frag REGCLKAL connected to power/ground net
+   Gill/FRM4X/XLXI_1/XLXI_14/Mram_RAM7_REGCLKAL_tiesig
+WARNING:Pack:2874 - Trimming timing constraints from pin
+   Gill/FRM4X/XLXI_1/XLXI_14/Mram_RAM8
+   of frag REGCLKAU connected to power/ground net
+   Gill/FRM4X/XLXI_1/XLXI_14/Mram_RAM8_REGCLKAU_tiesig
+WARNING:Pack:2874 - Trimming timing constraints from pin
+   Gill/FRM4X/XLXI_1/XLXI_14/Mram_RAM8
+   of frag REGCLKAL connected to power/ground net
+   Gill/FRM4X/XLXI_1/XLXI_14/Mram_RAM8_REGCLKAL_tiesig
+WARNING:Pack:2874 - Trimming timing constraints from pin
+   Gill/FRM4X/XLXI_1/XLXI_14/Mram_RAM9
+   of frag REGCLKAU connected to power/ground net
+   Gill/FRM4X/XLXI_1/XLXI_14/Mram_RAM9_REGCLKAU_tiesig
+WARNING:Pack:2874 - Trimming timing constraints from pin
+   Gill/FRM4X/XLXI_1/XLXI_14/Mram_RAM9
+   of frag REGCLKAL connected to power/ground net
+   Gill/FRM4X/XLXI_1/XLXI_14/Mram_RAM9_REGCLKAL_tiesig
+WARNING:Pack:2874 - Trimming timing constraints from pin
+   Gill/FRM4X/XLXI_1/XLXI_15/Mram_RAM1
+   of frag REGCLKAU connected to power/ground net
+   Gill/FRM4X/XLXI_1/XLXI_15/Mram_RAM1_REGCLKAU_tiesig
+WARNING:Pack:2874 - Trimming timing constraints from pin
+   Gill/FRM4X/XLXI_1/XLXI_15/Mram_RAM1
+   of frag REGCLKAL connected to power/ground net
+   Gill/FRM4X/XLXI_1/XLXI_15/Mram_RAM1_REGCLKAL_tiesig
+WARNING:Pack:2874 - Trimming timing constraints from pin
+   Gill/FRM4X/XLXI_1/XLXI_15/Mram_RAM2
+   of frag REGCLKAU connected to power/ground net
+   Gill/FRM4X/XLXI_1/XLXI_15/Mram_RAM2_REGCLKAU_tiesig
+WARNING:Pack:2874 - Trimming timing constraints from pin
+   Gill/FRM4X/XLXI_1/XLXI_15/Mram_RAM2
+   of frag REGCLKAL connected to power/ground net
+   Gill/FRM4X/XLXI_1/XLXI_15/Mram_RAM2_REGCLKAL_tiesig
+WARNING:Pack:2874 - Trimming timing constraints from pin
+   Gill/FRM4X/XLXI_1/XLXI_15/Mram_RAM3
+   of frag REGCLKAU connected to power/ground net
+   Gill/FRM4X/XLXI_1/XLXI_15/Mram_RAM3_REGCLKAU_tiesig
+WARNING:Pack:2874 - Trimming timing constraints from pin
+   Gill/FRM4X/XLXI_1/XLXI_15/Mram_RAM3
+   of frag REGCLKAL connected to power/ground net
+   Gill/FRM4X/XLXI_1/XLXI_15/Mram_RAM3_REGCLKAL_tiesig
+WARNING:Pack:2874 - Trimming timing constraints from pin
+   Gill/FRM4X/XLXI_1/XLXI_15/Mram_RAM4
+   of frag REGCLKAU connected to power/ground net
+   Gill/FRM4X/XLXI_1/XLXI_15/Mram_RAM4_REGCLKAU_tiesig
+WARNING:Pack:2874 - Trimming timing constraints from pin
+   Gill/FRM4X/XLXI_1/XLXI_15/Mram_RAM4
+   of frag REGCLKAL connected to power/ground net
+   Gill/FRM4X/XLXI_1/XLXI_15/Mram_RAM4_REGCLKAL_tiesig
+WARNING:Pack:2874 - Trimming timing constraints from pin
+   Gill/FRM4X/XLXI_1/XLXI_15/Mram_RAM5
+   of frag REGCLKAU connected to power/ground net
+   Gill/FRM4X/XLXI_1/XLXI_15/Mram_RAM5_REGCLKAU_tiesig
+WARNING:Pack:2874 - Trimming timing constraints from pin
+   Gill/FRM4X/XLXI_1/XLXI_15/Mram_RAM5
+   of frag REGCLKAL connected to power/ground net
+   Gill/FRM4X/XLXI_1/XLXI_15/Mram_RAM5_REGCLKAL_tiesig
+WARNING:Pack:2874 - Trimming timing constraints from pin
+   Gill/FRM4X/XLXI_1/XLXI_15/Mram_RAM6
+   of frag REGCLKAU connected to power/ground net
+   Gill/FRM4X/XLXI_1/XLXI_15/Mram_RAM6_REGCLKAU_tiesig
+WARNING:Pack:2874 - Trimming timing constraints from pin
+   Gill/FRM4X/XLXI_1/XLXI_15/Mram_RAM6
+   of frag REGCLKAL connected to power/ground net
+   Gill/FRM4X/XLXI_1/XLXI_15/Mram_RAM6_REGCLKAL_tiesig
+WARNING:Pack:2874 - Trimming timing constraints from pin
+   Gill/FRM4X/XLXI_1/XLXI_15/Mram_RAM7
+   of frag REGCLKAU connected to power/ground net
+   Gill/FRM4X/XLXI_1/XLXI_15/Mram_RAM7_REGCLKAU_tiesig
+WARNING:Pack:2874 - Trimming timing constraints from pin
+   Gill/FRM4X/XLXI_1/XLXI_15/Mram_RAM7
+   of frag REGCLKAL connected to power/ground net
+   Gill/FRM4X/XLXI_1/XLXI_15/Mram_RAM7_REGCLKAL_tiesig
+WARNING:Pack:2874 - Trimming timing constraints from pin
+   Gill/FRM4X/XLXI_1/XLXI_15/Mram_RAM8
+   of frag REGCLKAU connected to power/ground net
+   Gill/FRM4X/XLXI_1/XLXI_15/Mram_RAM8_REGCLKAU_tiesig
+WARNING:Pack:2874 - Trimming timing constraints from pin
+   Gill/FRM4X/XLXI_1/XLXI_15/Mram_RAM8
+   of frag REGCLKAL connected to power/ground net
+   Gill/FRM4X/XLXI_1/XLXI_15/Mram_RAM8_REGCLKAL_tiesig
+WARNING:Pack:2874 - Trimming timing constraints from pin
+   Gill/FRM4X/XLXI_1/XLXI_15/Mram_RAM9
+   of frag REGCLKAU connected to power/ground net
+   Gill/FRM4X/XLXI_1/XLXI_15/Mram_RAM9_REGCLKAU_tiesig
+WARNING:Pack:2874 - Trimming timing constraints from pin
+   Gill/FRM4X/XLXI_1/XLXI_15/Mram_RAM9
+   of frag REGCLKAL connected to power/ground net
+   Gill/FRM4X/XLXI_1/XLXI_15/Mram_RAM9_REGCLKAL_tiesig
+WARNING:Pack:2874 - Trimming timing constraints from pin
+   Gill/FRM4X/XLXI_1/XLXI_16/Mram_RAM1
+   of frag REGCLKAU connected to power/ground net
+   Gill/FRM4X/XLXI_1/XLXI_16/Mram_RAM1_REGCLKAU_tiesig
+WARNING:Pack:2874 - Trimming timing constraints from pin
+   Gill/FRM4X/XLXI_1/XLXI_16/Mram_RAM1
+   of frag REGCLKAL connected to power/ground net
+   Gill/FRM4X/XLXI_1/XLXI_16/Mram_RAM1_REGCLKAL_tiesig
+WARNING:Pack:2874 - Trimming timing constraints from pin
+   Gill/FRM4X/XLXI_1/XLXI_16/Mram_RAM2
+   of frag REGCLKAU connected to power/ground net
+   Gill/FRM4X/XLXI_1/XLXI_16/Mram_RAM2_REGCLKAU_tiesig
+WARNING:Pack:2874 - Trimming timing constraints from pin
+   Gill/FRM4X/XLXI_1/XLXI_16/Mram_RAM2
+   of frag REGCLKAL connected to power/ground net
+   Gill/FRM4X/XLXI_1/XLXI_16/Mram_RAM2_REGCLKAL_tiesig
+WARNING:Pack:2874 - Trimming timing constraints from pin
+   Gill/FRM4X/XLXI_1/XLXI_16/Mram_RAM3
+   of frag REGCLKAU connected to power/ground net
+   Gill/FRM4X/XLXI_1/XLXI_16/Mram_RAM3_REGCLKAU_tiesig
+WARNING:Pack:2874 - Trimming timing constraints from pin
+   Gill/FRM4X/XLXI_1/XLXI_16/Mram_RAM3
+   of frag REGCLKAL connected to power/ground net
+   Gill/FRM4X/XLXI_1/XLXI_16/Mram_RAM3_REGCLKAL_tiesig
+WARNING:Pack:2874 - Trimming timing constraints from pin
+   Gill/FRM4X/XLXI_1/XLXI_16/Mram_RAM4
+   of frag REGCLKAU connected to power/ground net
+   Gill/FRM4X/XLXI_1/XLXI_16/Mram_RAM4_REGCLKAU_tiesig
+WARNING:Pack:2874 - Trimming timing constraints from pin
+   Gill/FRM4X/XLXI_1/XLXI_16/Mram_RAM4
+   of frag REGCLKAL connected to power/ground net
+   Gill/FRM4X/XLXI_1/XLXI_16/Mram_RAM4_REGCLKAL_tiesig
+WARNING:Pack:2874 - Trimming timing constraints from pin
+   Gill/FRM4X/XLXI_1/XLXI_16/Mram_RAM5
+   of frag REGCLKAU connected to power/ground net
+   Gill/FRM4X/XLXI_1/XLXI_16/Mram_RAM5_REGCLKAU_tiesig
+WARNING:Pack:2874 - Trimming timing constraints from pin
+   Gill/FRM4X/XLXI_1/XLXI_16/Mram_RAM5
+   of frag REGCLKAL connected to power/ground net
+   Gill/FRM4X/XLXI_1/XLXI_16/Mram_RAM5_REGCLKAL_tiesig
+WARNING:Pack:2874 - Trimming timing constraints from pin
+   Gill/FRM4X/XLXI_1/XLXI_16/Mram_RAM6
+   of frag REGCLKAU connected to power/ground net
+   Gill/FRM4X/XLXI_1/XLXI_16/Mram_RAM6_REGCLKAU_tiesig
+WARNING:Pack:2874 - Trimming timing constraints from pin
+   Gill/FRM4X/XLXI_1/XLXI_16/Mram_RAM6
+   of frag REGCLKAL connected to power/ground net
+   Gill/FRM4X/XLXI_1/XLXI_16/Mram_RAM6_REGCLKAL_tiesig
+WARNING:Pack:2874 - Trimming timing constraints from pin
+   Gill/FRM4X/XLXI_1/XLXI_16/Mram_RAM7
+   of frag REGCLKAU connected to power/ground net
+   Gill/FRM4X/XLXI_1/XLXI_16/Mram_RAM7_REGCLKAU_tiesig
+WARNING:Pack:2874 - Trimming timing constraints from pin
+   Gill/FRM4X/XLXI_1/XLXI_16/Mram_RAM7
+   of frag REGCLKAL connected to power/ground net
+   Gill/FRM4X/XLXI_1/XLXI_16/Mram_RAM7_REGCLKAL_tiesig
+WARNING:Pack:2874 - Trimming timing constraints from pin
+   Gill/FRM4X/XLXI_1/XLXI_16/Mram_RAM8
+   of frag REGCLKAU connected to power/ground net
+   Gill/FRM4X/XLXI_1/XLXI_16/Mram_RAM8_REGCLKAU_tiesig
+WARNING:Pack:2874 - Trimming timing constraints from pin
+   Gill/FRM4X/XLXI_1/XLXI_16/Mram_RAM8
+   of frag REGCLKAL connected to power/ground net
+   Gill/FRM4X/XLXI_1/XLXI_16/Mram_RAM8_REGCLKAL_tiesig
+WARNING:Pack:2874 - Trimming timing constraints from pin
+   Gill/FRM4X/XLXI_1/XLXI_16/Mram_RAM9
+   of frag REGCLKAU connected to power/ground net
+   Gill/FRM4X/XLXI_1/XLXI_16/Mram_RAM9_REGCLKAU_tiesig
+WARNING:Pack:2874 - Trimming timing constraints from pin
+   Gill/FRM4X/XLXI_1/XLXI_16/Mram_RAM9
+   of frag REGCLKAL connected to power/ground net
+   Gill/FRM4X/XLXI_1/XLXI_16/Mram_RAM9_REGCLKAL_tiesig
+WARNING:Pack:2874 - Trimming timing constraints from pin
+   Gill/FRM4X/XLXI_1/XLXI_18/Mram_RAM1
+   of frag REGCLKAU connected to power/ground net
+   Gill/FRM4X/XLXI_1/XLXI_18/Mram_RAM1_REGCLKAU_tiesig
+WARNING:Pack:2874 - Trimming timing constraints from pin
+   Gill/FRM4X/XLXI_1/XLXI_18/Mram_RAM1
+   of frag REGCLKAL connected to power/ground net
+   Gill/FRM4X/XLXI_1/XLXI_18/Mram_RAM1_REGCLKAL_tiesig
+WARNING:Pack:2874 - Trimming timing constraints from pin
+   Gill/FRM4X/XLXI_1/XLXI_18/Mram_RAM2
+   of frag REGCLKAU connected to power/ground net
+   Gill/FRM4X/XLXI_1/XLXI_18/Mram_RAM2_REGCLKAU_tiesig
+WARNING:Pack:2874 - Trimming timing constraints from pin
+   Gill/FRM4X/XLXI_1/XLXI_18/Mram_RAM2
+   of frag REGCLKAL connected to power/ground net
+   Gill/FRM4X/XLXI_1/XLXI_18/Mram_RAM2_REGCLKAL_tiesig
+WARNING:Pack:2874 - Trimming timing constraints from pin
+   Gill/FRM4X/XLXI_1/XLXI_18/Mram_RAM3
+   of frag REGCLKAU connected to power/ground net
+   Gill/FRM4X/XLXI_1/XLXI_18/Mram_RAM3_REGCLKAU_tiesig
+WARNING:Pack:2874 - Trimming timing constraints from pin
+   Gill/FRM4X/XLXI_1/XLXI_18/Mram_RAM3
+   of frag REGCLKAL connected to power/ground net
+   Gill/FRM4X/XLXI_1/XLXI_18/Mram_RAM3_REGCLKAL_tiesig
+WARNING:Pack:2874 - Trimming timing constraints from pin
+   Gill/FRM4X/XLXI_1/XLXI_18/Mram_RAM4
+   of frag REGCLKAU connected to power/ground net
+   Gill/FRM4X/XLXI_1/XLXI_18/Mram_RAM4_REGCLKAU_tiesig
+WARNING:Pack:2874 - Trimming timing constraints from pin
+   Gill/FRM4X/XLXI_1/XLXI_18/Mram_RAM4
+   of frag REGCLKAL connected to power/ground net
+   Gill/FRM4X/XLXI_1/XLXI_18/Mram_RAM4_REGCLKAL_tiesig
+WARNING:Pack:2874 - Trimming timing constraints from pin
+   Gill/FRM4X/XLXI_1/XLXI_18/Mram_RAM5
+   of frag REGCLKAU connected to power/ground net
+   Gill/FRM4X/XLXI_1/XLXI_18/Mram_RAM5_REGCLKAU_tiesig
+WARNING:Pack:2874 - Trimming timing constraints from pin
+   Gill/FRM4X/XLXI_1/XLXI_18/Mram_RAM5
+   of frag REGCLKAL connected to power/ground net
+   Gill/FRM4X/XLXI_1/XLXI_18/Mram_RAM5_REGCLKAL_tiesig
+WARNING:Pack:2874 - Trimming timing constraints from pin
+   Gill/FRM4X/XLXI_1/XLXI_18/Mram_RAM6
+   of frag REGCLKAU connected to power/ground net
+   Gill/FRM4X/XLXI_1/XLXI_18/Mram_RAM6_REGCLKAU_tiesig
+WARNING:Pack:2874 - Trimming timing constraints from pin
+   Gill/FRM4X/XLXI_1/XLXI_18/Mram_RAM6
+   of frag REGCLKAL connected to power/ground net
+   Gill/FRM4X/XLXI_1/XLXI_18/Mram_RAM6_REGCLKAL_tiesig
+WARNING:Pack:2874 - Trimming timing constraints from pin
+   Gill/FRM4X/XLXI_1/XLXI_18/Mram_RAM7
+   of frag REGCLKAU connected to power/ground net
+   Gill/FRM4X/XLXI_1/XLXI_18/Mram_RAM7_REGCLKAU_tiesig
+WARNING:Pack:2874 - Trimming timing constraints from pin
+   Gill/FRM4X/XLXI_1/XLXI_18/Mram_RAM7
+   of frag REGCLKAL connected to power/ground net
+   Gill/FRM4X/XLXI_1/XLXI_18/Mram_RAM7_REGCLKAL_tiesig
+WARNING:Pack:2874 - Trimming timing constraints from pin
+   Gill/FRM4X/XLXI_1/XLXI_18/Mram_RAM8
+   of frag REGCLKAU connected to power/ground net
+   Gill/FRM4X/XLXI_1/XLXI_18/Mram_RAM8_REGCLKAU_tiesig
+WARNING:Pack:2874 - Trimming timing constraints from pin
+   Gill/FRM4X/XLXI_1/XLXI_18/Mram_RAM8
+   of frag REGCLKAL connected to power/ground net
+   Gill/FRM4X/XLXI_1/XLXI_18/Mram_RAM8_REGCLKAL_tiesig
+WARNING:Pack:2874 - Trimming timing constraints from pin
+   Gill/FRM4X/XLXI_1/XLXI_19/Mram_RAM1
+   of frag REGCLKAU connected to power/ground net
+   Gill/FRM4X/XLXI_1/XLXI_19/Mram_RAM1_REGCLKAU_tiesig
+WARNING:Pack:2874 - Trimming timing constraints from pin
+   Gill/FRM4X/XLXI_1/XLXI_19/Mram_RAM1
+   of frag REGCLKAL connected to power/ground net
+   Gill/FRM4X/XLXI_1/XLXI_19/Mram_RAM1_REGCLKAL_tiesig
+WARNING:Pack:2874 - Trimming timing constraints from pin
+   Gill/FRM4X/XLXI_1/XLXI_19/Mram_RAM2
+   of frag REGCLKAU connected to power/ground net
+   Gill/FRM4X/XLXI_1/XLXI_19/Mram_RAM2_REGCLKAU_tiesig
+WARNING:Pack:2874 - Trimming timing constraints from pin
+   Gill/FRM4X/XLXI_1/XLXI_19/Mram_RAM2
+   of frag REGCLKAL connected to power/ground net
+   Gill/FRM4X/XLXI_1/XLXI_19/Mram_RAM2_REGCLKAL_tiesig
+WARNING:Pack:2874 - Trimming timing constraints from pin
+   Gill/FRM4X/XLXI_1/XLXI_19/Mram_RAM3
+   of frag REGCLKAU connected to power/ground net
+   Gill/FRM4X/XLXI_1/XLXI_19/Mram_RAM3_REGCLKAU_tiesig
+WARNING:Pack:2874 - Trimming timing constraints from pin
+   Gill/FRM4X/XLXI_1/XLXI_19/Mram_RAM3
+   of frag REGCLKAL connected to power/ground net
+   Gill/FRM4X/XLXI_1/XLXI_19/Mram_RAM3_REGCLKAL_tiesig
+WARNING:Pack:2874 - Trimming timing constraints from pin
+   Gill/FRM4X/XLXI_1/XLXI_19/Mram_RAM4
+   of frag REGCLKAU connected to power/ground net
+   Gill/FRM4X/XLXI_1/XLXI_19/Mram_RAM4_REGCLKAU_tiesig
+WARNING:Pack:2874 - Trimming timing constraints from pin
+   Gill/FRM4X/XLXI_1/XLXI_19/Mram_RAM4
+   of frag REGCLKAL connected to power/ground net
+   Gill/FRM4X/XLXI_1/XLXI_19/Mram_RAM4_REGCLKAL_tiesig
+WARNING:Pack:2874 - Trimming timing constraints from pin
+   Gill/FRM4X/XLXI_1/XLXI_19/Mram_RAM5
+   of frag REGCLKAU connected to power/ground net
+   Gill/FRM4X/XLXI_1/XLXI_19/Mram_RAM5_REGCLKAU_tiesig
+WARNING:Pack:2874 - Trimming timing constraints from pin
+   Gill/FRM4X/XLXI_1/XLXI_19/Mram_RAM5
+   of frag REGCLKAL connected to power/ground net
+   Gill/FRM4X/XLXI_1/XLXI_19/Mram_RAM5_REGCLKAL_tiesig
+WARNING:Pack:2874 - Trimming timing constraints from pin
+   Gill/FRM4X/XLXI_1/XLXI_19/Mram_RAM6
+   of frag REGCLKAU connected to power/ground net
+   Gill/FRM4X/XLXI_1/XLXI_19/Mram_RAM6_REGCLKAU_tiesig
+WARNING:Pack:2874 - Trimming timing constraints from pin
+   Gill/FRM4X/XLXI_1/XLXI_19/Mram_RAM6
+   of frag REGCLKAL connected to power/ground net
+   Gill/FRM4X/XLXI_1/XLXI_19/Mram_RAM6_REGCLKAL_tiesig
+WARNING:Pack:2874 - Trimming timing constraints from pin
+   Gill/FRM4X/XLXI_1/XLXI_19/Mram_RAM7
+   of frag REGCLKAU connected to power/ground net
+   Gill/FRM4X/XLXI_1/XLXI_19/Mram_RAM7_REGCLKAU_tiesig
+WARNING:Pack:2874 - Trimming timing constraints from pin
+   Gill/FRM4X/XLXI_1/XLXI_19/Mram_RAM7
+   of frag REGCLKAL connected to power/ground net
+   Gill/FRM4X/XLXI_1/XLXI_19/Mram_RAM7_REGCLKAL_tiesig
+WARNING:Pack:2874 - Trimming timing constraints from pin
+   Gill/FRM4X/XLXI_1/XLXI_19/Mram_RAM8
+   of frag REGCLKAU connected to power/ground net
+   Gill/FRM4X/XLXI_1/XLXI_19/Mram_RAM8_REGCLKAU_tiesig
+WARNING:Pack:2874 - Trimming timing constraints from pin
+   Gill/FRM4X/XLXI_1/XLXI_19/Mram_RAM8
+   of frag REGCLKAL connected to power/ground net
+   Gill/FRM4X/XLXI_1/XLXI_19/Mram_RAM8_REGCLKAL_tiesig
+WARNING:Pack:2874 - Trimming timing constraints from pin
+   Gill/FRM4X/XLXI_1/XLXI_20/Mram_RAM1
+   of frag REGCLKAU connected to power/ground net
+   Gill/FRM4X/XLXI_1/XLXI_20/Mram_RAM1_REGCLKAU_tiesig
+WARNING:Pack:2874 - Trimming timing constraints from pin
+   Gill/FRM4X/XLXI_1/XLXI_20/Mram_RAM1
+   of frag REGCLKAL connected to power/ground net
+   Gill/FRM4X/XLXI_1/XLXI_20/Mram_RAM1_REGCLKAL_tiesig
+WARNING:Pack:2874 - Trimming timing constraints from pin
+   Gill/FRM4X/XLXI_1/XLXI_20/Mram_RAM2
+   of frag REGCLKAU connected to power/ground net
+   Gill/FRM4X/XLXI_1/XLXI_20/Mram_RAM2_REGCLKAU_tiesig
+WARNING:Pack:2874 - Trimming timing constraints from pin
+   Gill/FRM4X/XLXI_1/XLXI_20/Mram_RAM2
+   of frag REGCLKAL connected to power/ground net
+   Gill/FRM4X/XLXI_1/XLXI_20/Mram_RAM2_REGCLKAL_tiesig
+WARNING:Pack:2874 - Trimming timing constraints from pin
+   Gill/FRM4X/XLXI_1/XLXI_20/Mram_RAM3
+   of frag REGCLKAU connected to power/ground net
+   Gill/FRM4X/XLXI_1/XLXI_20/Mram_RAM3_REGCLKAU_tiesig
+WARNING:Pack:2874 - Trimming timing constraints from pin
+   Gill/FRM4X/XLXI_1/XLXI_20/Mram_RAM3
+   of frag REGCLKAL connected to power/ground net
+   Gill/FRM4X/XLXI_1/XLXI_20/Mram_RAM3_REGCLKAL_tiesig
+WARNING:Pack:2874 - Trimming timing constraints from pin
+   Gill/FRM4X/XLXI_1/XLXI_20/Mram_RAM4
+   of frag REGCLKAU connected to power/ground net
+   Gill/FRM4X/XLXI_1/XLXI_20/Mram_RAM4_REGCLKAU_tiesig
+WARNING:Pack:2874 - Trimming timing constraints from pin
+   Gill/FRM4X/XLXI_1/XLXI_20/Mram_RAM4
+   of frag REGCLKAL connected to power/ground net
+   Gill/FRM4X/XLXI_1/XLXI_20/Mram_RAM4_REGCLKAL_tiesig
+WARNING:Pack:2874 - Trimming timing constraints from pin
+   Gill/FRM4X/XLXI_1/XLXI_20/Mram_RAM5
+   of frag REGCLKAU connected to power/ground net
+   Gill/FRM4X/XLXI_1/XLXI_20/Mram_RAM5_REGCLKAU_tiesig
+WARNING:Pack:2874 - Trimming timing constraints from pin
+   Gill/FRM4X/XLXI_1/XLXI_20/Mram_RAM5
+   of frag REGCLKAL connected to power/ground net
+   Gill/FRM4X/XLXI_1/XLXI_20/Mram_RAM5_REGCLKAL_tiesig
+WARNING:Pack:2874 - Trimming timing constraints from pin
+   Gill/FRM4X/XLXI_1/XLXI_20/Mram_RAM6
+   of frag REGCLKAU connected to power/ground net
+   Gill/FRM4X/XLXI_1/XLXI_20/Mram_RAM6_REGCLKAU_tiesig
+WARNING:Pack:2874 - Trimming timing constraints from pin
+   Gill/FRM4X/XLXI_1/XLXI_20/Mram_RAM6
+   of frag REGCLKAL connected to power/ground net
+   Gill/FRM4X/XLXI_1/XLXI_20/Mram_RAM6_REGCLKAL_tiesig
+WARNING:Pack:2874 - Trimming timing constraints from pin
+   Gill/FRM4X/XLXI_1/XLXI_20/Mram_RAM7
+   of frag REGCLKAU connected to power/ground net
+   Gill/FRM4X/XLXI_1/XLXI_20/Mram_RAM7_REGCLKAU_tiesig
+WARNING:Pack:2874 - Trimming timing constraints from pin
+   Gill/FRM4X/XLXI_1/XLXI_20/Mram_RAM7
+   of frag REGCLKAL connected to power/ground net
+   Gill/FRM4X/XLXI_1/XLXI_20/Mram_RAM7_REGCLKAL_tiesig
+WARNING:Pack:2874 - Trimming timing constraints from pin
+   Gill/FRM4X/XLXI_1/XLXI_20/Mram_RAM8
+   of frag REGCLKAU connected to power/ground net
+   Gill/FRM4X/XLXI_1/XLXI_20/Mram_RAM8_REGCLKAU_tiesig
+WARNING:Pack:2874 - Trimming timing constraints from pin
+   Gill/FRM4X/XLXI_1/XLXI_20/Mram_RAM8
+   of frag REGCLKAL connected to power/ground net
+   Gill/FRM4X/XLXI_1/XLXI_20/Mram_RAM8_REGCLKAL_tiesig
+WARNING:Pack:2874 - Trimming timing constraints from pin
+   Gill/FRM4X/XLXI_1/XLXI_21/Mram_RAM1
+   of frag REGCLKAU connected to power/ground net
+   Gill/FRM4X/XLXI_1/XLXI_21/Mram_RAM1_REGCLKAU_tiesig
+WARNING:Pack:2874 - Trimming timing constraints from pin
+   Gill/FRM4X/XLXI_1/XLXI_21/Mram_RAM1
+   of frag REGCLKAL connected to power/ground net
+   Gill/FRM4X/XLXI_1/XLXI_21/Mram_RAM1_REGCLKAL_tiesig
+WARNING:Pack:2874 - Trimming timing constraints from pin
+   Gill/FRM4X/XLXI_1/XLXI_21/Mram_RAM2
+   of frag REGCLKAU connected to power/ground net
+   Gill/FRM4X/XLXI_1/XLXI_21/Mram_RAM2_REGCLKAU_tiesig
+WARNING:Pack:2874 - Trimming timing constraints from pin
+   Gill/FRM4X/XLXI_1/XLXI_21/Mram_RAM2
+   of frag REGCLKAL connected to power/ground net
+   Gill/FRM4X/XLXI_1/XLXI_21/Mram_RAM2_REGCLKAL_tiesig
+WARNING:Pack:2874 - Trimming timing constraints from pin
+   Gill/FRM4X/XLXI_1/XLXI_21/Mram_RAM3
+   of frag REGCLKAU connected to power/ground net
+   Gill/FRM4X/XLXI_1/XLXI_21/Mram_RAM3_REGCLKAU_tiesig
+WARNING:Pack:2874 - Trimming timing constraints from pin
+   Gill/FRM4X/XLXI_1/XLXI_21/Mram_RAM3
+   of frag REGCLKAL connected to power/ground net
+   Gill/FRM4X/XLXI_1/XLXI_21/Mram_RAM3_REGCLKAL_tiesig
+WARNING:Pack:2874 - Trimming timing constraints from pin
+   Gill/FRM4X/XLXI_1/XLXI_21/Mram_RAM4
+   of frag REGCLKAU connected to power/ground net
+   Gill/FRM4X/XLXI_1/XLXI_21/Mram_RAM4_REGCLKAU_tiesig
+WARNING:Pack:2874 - Trimming timing constraints from pin
+   Gill/FRM4X/XLXI_1/XLXI_21/Mram_RAM4
+   of frag REGCLKAL connected to power/ground net
+   Gill/FRM4X/XLXI_1/XLXI_21/Mram_RAM4_REGCLKAL_tiesig
+WARNING:Pack:2874 - Trimming timing constraints from pin
+   Gill/FRM4X/XLXI_1/XLXI_21/Mram_RAM5
+   of frag REGCLKAU connected to power/ground net
+   Gill/FRM4X/XLXI_1/XLXI_21/Mram_RAM5_REGCLKAU_tiesig
+WARNING:Pack:2874 - Trimming timing constraints from pin
+   Gill/FRM4X/XLXI_1/XLXI_21/Mram_RAM5
+   of frag REGCLKAL connected to power/ground net
+   Gill/FRM4X/XLXI_1/XLXI_21/Mram_RAM5_REGCLKAL_tiesig
+WARNING:Pack:2874 - Trimming timing constraints from pin
+   Gill/FRM4X/XLXI_1/XLXI_21/Mram_RAM6
+   of frag REGCLKAU connected to power/ground net
+   Gill/FRM4X/XLXI_1/XLXI_21/Mram_RAM6_REGCLKAU_tiesig
+WARNING:Pack:2874 - Trimming timing constraints from pin
+   Gill/FRM4X/XLXI_1/XLXI_21/Mram_RAM6
+   of frag REGCLKAL connected to power/ground net
+   Gill/FRM4X/XLXI_1/XLXI_21/Mram_RAM6_REGCLKAL_tiesig
+WARNING:Pack:2874 - Trimming timing constraints from pin
+   Gill/FRM4X/XLXI_1/XLXI_21/Mram_RAM7
+   of frag REGCLKAU connected to power/ground net
+   Gill/FRM4X/XLXI_1/XLXI_21/Mram_RAM7_REGCLKAU_tiesig
+WARNING:Pack:2874 - Trimming timing constraints from pin
+   Gill/FRM4X/XLXI_1/XLXI_21/Mram_RAM7
+   of frag REGCLKAL connected to power/ground net
+   Gill/FRM4X/XLXI_1/XLXI_21/Mram_RAM7_REGCLKAL_tiesig
+WARNING:Pack:2874 - Trimming timing constraints from pin
+   Gill/FRM4X/XLXI_1/XLXI_21/Mram_RAM8
+   of frag REGCLKAU connected to power/ground net
+   Gill/FRM4X/XLXI_1/XLXI_21/Mram_RAM8_REGCLKAU_tiesig
+WARNING:Pack:2874 - Trimming timing constraints from pin
+   Gill/FRM4X/XLXI_1/XLXI_21/Mram_RAM8
+   of frag REGCLKAL connected to power/ground net
+   Gill/FRM4X/XLXI_1/XLXI_21/Mram_RAM8_REGCLKAL_tiesig
+WARNING:Pack:2874 - Trimming timing constraints from pin
+   Gill/FRM4X/XLXI_1/XLXI_22/Mram_RAM2_ren_1
+   of frag REGCLKAU connected to power/ground net
+   Gill/FRM4X/XLXI_1/XLXI_22/Mram_RAM2_ren_1_REGCLKAU_tiesig
+WARNING:Pack:2874 - Trimming timing constraints from pin
+   Gill/FRM4X/XLXI_1/XLXI_22/Mram_RAM2_ren_1
+   of frag REGCLKAL connected to power/ground net
+   Gill/FRM4X/XLXI_1/XLXI_22/Mram_RAM2_ren_1_REGCLKAL_tiesig
+WARNING:Pack:2874 - Trimming timing constraints from pin
+   Gill/FRM4X/XLXI_1/XLXI_22/Mram_RAM2_ren_1
+   of frag REGCLKBU connected to power/ground net
+   Gill/FRM4X/XLXI_1/XLXI_22/Mram_RAM2_ren_1_REGCLKBU_tiesig
+WARNING:Pack:2874 - Trimming timing constraints from pin
+   Gill/FRM4X/XLXI_1/XLXI_22/Mram_RAM2_ren_1
+   of frag REGCLKBL connected to power/ground net
+   Gill/FRM4X/XLXI_1/XLXI_22/Mram_RAM2_ren_1_REGCLKBL_tiesig
+WARNING:Pack:2874 - Trimming timing constraints from pin
+   Gill/FRM4X/XLXI_1/XLXI_22/Mram_RAM3_ren_2
+   of frag REGCLKAU connected to power/ground net
+   Gill/FRM4X/XLXI_1/XLXI_22/Mram_RAM3_ren_2_REGCLKAU_tiesig
+WARNING:Pack:2874 - Trimming timing constraints from pin
+   Gill/FRM4X/XLXI_1/XLXI_22/Mram_RAM3_ren_2
+   of frag REGCLKAL connected to power/ground net
+   Gill/FRM4X/XLXI_1/XLXI_22/Mram_RAM3_ren_2_REGCLKAL_tiesig
+WARNING:Pack:2874 - Trimming timing constraints from pin
+   Gill/FRM4X/XLXI_1/XLXI_22/Mram_RAM3_ren_2
+   of frag REGCLKBU connected to power/ground net
+   Gill/FRM4X/XLXI_1/XLXI_22/Mram_RAM3_ren_2_REGCLKBU_tiesig
+WARNING:Pack:2874 - Trimming timing constraints from pin
+   Gill/FRM4X/XLXI_1/XLXI_22/Mram_RAM3_ren_2
+   of frag REGCLKBL connected to power/ground net
+   Gill/FRM4X/XLXI_1/XLXI_22/Mram_RAM3_ren_2_REGCLKBL_tiesig
+WARNING:Pack:2874 - Trimming timing constraints from pin
+   Gill/FRM4X/XLXI_1/XLXI_22/Mram_RAM4_ren_2
+   of frag REGCLKAU connected to power/ground net
+   Gill/FRM4X/XLXI_1/XLXI_22/Mram_RAM4_ren_2_REGCLKAU_tiesig
+WARNING:Pack:2874 - Trimming timing constraints from pin
+   Gill/FRM4X/XLXI_1/XLXI_22/Mram_RAM4_ren_2
+   of frag REGCLKAL connected to power/ground net
+   Gill/FRM4X/XLXI_1/XLXI_22/Mram_RAM4_ren_2_REGCLKAL_tiesig
+WARNING:Pack:2874 - Trimming timing constraints from pin
+   Gill/FRM4X/XLXI_1/XLXI_22/Mram_RAM4_ren_2
+   of frag REGCLKBU connected to power/ground net
+   Gill/FRM4X/XLXI_1/XLXI_22/Mram_RAM4_ren_2_REGCLKBU_tiesig
+WARNING:Pack:2874 - Trimming timing constraints from pin
+   Gill/FRM4X/XLXI_1/XLXI_22/Mram_RAM4_ren_2
+   of frag REGCLKBL connected to power/ground net
+   Gill/FRM4X/XLXI_1/XLXI_22/Mram_RAM4_ren_2_REGCLKBL_tiesig
+WARNING:Pack:2874 - Trimming timing constraints from pin
+   Gill/FRM4X/XLXI_1/XLXI_9/Mram_RAM1
+   of frag REGCLKAU connected to power/ground net
+   Gill/FRM4X/XLXI_1/XLXI_9/Mram_RAM1_REGCLKAU_tiesig
+WARNING:Pack:2874 - Trimming timing constraints from pin
+   Gill/FRM4X/XLXI_1/XLXI_9/Mram_RAM1
+   of frag REGCLKAL connected to power/ground net
+   Gill/FRM4X/XLXI_1/XLXI_9/Mram_RAM1_REGCLKAL_tiesig
+WARNING:Pack:2874 - Trimming timing constraints from pin
+   Gill/FRM4X/XLXI_1/XLXI_9/Mram_RAM2
+   of frag REGCLKAU connected to power/ground net
+   Gill/FRM4X/XLXI_1/XLXI_9/Mram_RAM2_REGCLKAU_tiesig
+WARNING:Pack:2874 - Trimming timing constraints from pin
+   Gill/FRM4X/XLXI_1/XLXI_9/Mram_RAM2
+   of frag REGCLKAL connected to power/ground net
+   Gill/FRM4X/XLXI_1/XLXI_9/Mram_RAM2_REGCLKAL_tiesig
+WARNING:Pack:2874 - Trimming timing constraints from pin
+   Gill/FRM4X/XLXI_1/XLXI_9/Mram_RAM3
+   of frag REGCLKAU connected to power/ground net
+   Gill/FRM4X/XLXI_1/XLXI_9/Mram_RAM3_REGCLKAU_tiesig
+WARNING:Pack:2874 - Trimming timing constraints from pin
+   Gill/FRM4X/XLXI_1/XLXI_9/Mram_RAM3
+   of frag REGCLKAL connected to power/ground net
+   Gill/FRM4X/XLXI_1/XLXI_9/Mram_RAM3_REGCLKAL_tiesig
+WARNING:Pack:2874 - Trimming timing constraints from pin
+   Gill/FRM4X/XLXI_1/XLXI_9/Mram_RAM4
+   of frag REGCLKAU connected to power/ground net
+   Gill/FRM4X/XLXI_1/XLXI_9/Mram_RAM4_REGCLKAU_tiesig
+WARNING:Pack:2874 - Trimming timing constraints from pin
+   Gill/FRM4X/XLXI_1/XLXI_9/Mram_RAM4
+   of frag REGCLKAL connected to power/ground net
+   Gill/FRM4X/XLXI_1/XLXI_9/Mram_RAM4_REGCLKAL_tiesig
+WARNING:Pack:2874 - Trimming timing constraints from pin
+   Gill/FRM4X/XLXI_1/XLXI_9/Mram_RAM5
+   of frag REGCLKAU connected to power/ground net
+   Gill/FRM4X/XLXI_1/XLXI_9/Mram_RAM5_REGCLKAU_tiesig
+WARNING:Pack:2874 - Trimming timing constraints from pin
+   Gill/FRM4X/XLXI_1/XLXI_9/Mram_RAM5
+   of frag REGCLKAL connected to power/ground net
+   Gill/FRM4X/XLXI_1/XLXI_9/Mram_RAM5_REGCLKAL_tiesig
+WARNING:Pack:2874 - Trimming timing constraints from pin
+   Gill/FRM4X/XLXI_1/XLXI_9/Mram_RAM6
+   of frag REGCLKAU connected to power/ground net
+   Gill/FRM4X/XLXI_1/XLXI_9/Mram_RAM6_REGCLKAU_tiesig
+WARNING:Pack:2874 - Trimming timing constraints from pin
+   Gill/FRM4X/XLXI_1/XLXI_9/Mram_RAM6
+   of frag REGCLKAL connected to power/ground net
+   Gill/FRM4X/XLXI_1/XLXI_9/Mram_RAM6_REGCLKAL_tiesig
+WARNING:Pack:2874 - Trimming timing constraints from pin
+   Gill/FRM4X/XLXI_1/XLXI_9/Mram_RAM7
+   of frag REGCLKAU connected to power/ground net
+   Gill/FRM4X/XLXI_1/XLXI_9/Mram_RAM7_REGCLKAU_tiesig
+WARNING:Pack:2874 - Trimming timing constraints from pin
+   Gill/FRM4X/XLXI_1/XLXI_9/Mram_RAM7
+   of frag REGCLKAL connected to power/ground net
+   Gill/FRM4X/XLXI_1/XLXI_9/Mram_RAM7_REGCLKAL_tiesig
+WARNING:Pack:2874 - Trimming timing constraints from pin
+   Gill/FRM4X/XLXI_1/XLXI_9/Mram_RAM8
+   of frag REGCLKAU connected to power/ground net
+   Gill/FRM4X/XLXI_1/XLXI_9/Mram_RAM8_REGCLKAU_tiesig
+WARNING:Pack:2874 - Trimming timing constraints from pin
+   Gill/FRM4X/XLXI_1/XLXI_9/Mram_RAM8
+   of frag REGCLKAL connected to power/ground net
+   Gill/FRM4X/XLXI_1/XLXI_9/Mram_RAM8_REGCLKAL_tiesig
+WARNING:Pack:2874 - Trimming timing constraints from pin
+   Gill/FRM4X/XLXI_1/XLXI_9/Mram_RAM9
+   of frag REGCLKAU connected to power/ground net
+   Gill/FRM4X/XLXI_1/XLXI_9/Mram_RAM9_REGCLKAU_tiesig
+WARNING:Pack:2874 - Trimming timing constraints from pin
+   Gill/FRM4X/XLXI_1/XLXI_9/Mram_RAM9
+   of frag REGCLKAL connected to power/ground net
+   Gill/FRM4X/XLXI_1/XLXI_9/Mram_RAM9_REGCLKAL_tiesig
+WARNING:Pack:2874 - Trimming timing constraints from pin
+   Gill/FRM4X/fifoext/Mram_RAM1
+   of frag REGCLKAU connected to power/ground net
+   Gill/FRM4X/fifoext/Mram_RAM1_REGCLKAU_tiesig
+WARNING:Pack:2874 - Trimming timing constraints from pin
+   Gill/FRM4X/fifoext/Mram_RAM1
+   of frag REGCLKAL connected to power/ground net
+   Gill/FRM4X/fifoext/Mram_RAM1_REGCLKAL_tiesig
+WARNING:Pack:2874 - Trimming timing constraints from pin
+   Gill/FRM4X/fifoext/Mram_RAM10
+   of frag REGCLKAU connected to power/ground net
+   Gill/FRM4X/fifoext/Mram_RAM10_REGCLKAU_tiesig
+WARNING:Pack:2874 - Trimming timing constraints from pin
+   Gill/FRM4X/fifoext/Mram_RAM10
+   of frag REGCLKAL connected to power/ground net
+   Gill/FRM4X/fifoext/Mram_RAM10_REGCLKAL_tiesig
+WARNING:Pack:2874 - Trimming timing constraints from pin
+   Gill/FRM4X/fifoext/Mram_RAM11
+   of frag REGCLKAU connected to power/ground net
+   Gill/FRM4X/fifoext/Mram_RAM11_REGCLKAU_tiesig
+WARNING:Pack:2874 - Trimming timing constraints from pin
+   Gill/FRM4X/fifoext/Mram_RAM11
+   of frag REGCLKAL connected to power/ground net
+   Gill/FRM4X/fifoext/Mram_RAM11_REGCLKAL_tiesig
+WARNING:Pack:2874 - Trimming timing constraints from pin
+   Gill/FRM4X/fifoext/Mram_RAM12
+   of frag REGCLKAU connected to power/ground net
+   Gill/FRM4X/fifoext/Mram_RAM12_REGCLKAU_tiesig
+WARNING:Pack:2874 - Trimming timing constraints from pin
+   Gill/FRM4X/fifoext/Mram_RAM12
+   of frag REGCLKAL connected to power/ground net
+   Gill/FRM4X/fifoext/Mram_RAM12_REGCLKAL_tiesig
+WARNING:Pack:2874 - Trimming timing constraints from pin
+   Gill/FRM4X/fifoext/Mram_RAM13
+   of frag REGCLKAU connected to power/ground net
+   Gill/FRM4X/fifoext/Mram_RAM13_REGCLKAU_tiesig
+WARNING:Pack:2874 - Trimming timing constraints from pin
+   Gill/FRM4X/fifoext/Mram_RAM13
+   of frag REGCLKAL connected to power/ground net
+   Gill/FRM4X/fifoext/Mram_RAM13_REGCLKAL_tiesig
+WARNING:Pack:2874 - Trimming timing constraints from pin
+   Gill/FRM4X/fifoext/Mram_RAM3
+   of frag REGCLKAU connected to power/ground net
+   Gill/FRM4X/fifoext/Mram_RAM3_REGCLKAU_tiesig
+WARNING:Pack:2874 - Trimming timing constraints from pin
+   Gill/FRM4X/fifoext/Mram_RAM3
+   of frag REGCLKAL connected to power/ground net
+   Gill/FRM4X/fifoext/Mram_RAM3_REGCLKAL_tiesig
+WARNING:Pack:2874 - Trimming timing constraints from pin
+   Gill/FRM4X/fifoext/Mram_RAM31
+   of frag REGCLKAU connected to power/ground net
+   Gill/FRM4X/fifoext/Mram_RAM31_REGCLKAU_tiesig
+WARNING:Pack:2874 - Trimming timing constraints from pin
+   Gill/FRM4X/fifoext/Mram_RAM31
+   of frag REGCLKAL connected to power/ground net
+   Gill/FRM4X/fifoext/Mram_RAM31_REGCLKAL_tiesig
+WARNING:Pack:2874 - Trimming timing constraints from pin
+   Gill/FRM4X/fifoext/Mram_RAM32
+   of frag REGCLKAU connected to power/ground net
+   Gill/FRM4X/fifoext/Mram_RAM32_REGCLKAU_tiesig
+WARNING:Pack:2874 - Trimming timing constraints from pin
+   Gill/FRM4X/fifoext/Mram_RAM32
+   of frag REGCLKAL connected to power/ground net
+   Gill/FRM4X/fifoext/Mram_RAM32_REGCLKAL_tiesig
+WARNING:Pack:2874 - Trimming timing constraints from pin
+   Gill/FRM4X/fifoext/Mram_RAM33
+   of frag REGCLKAU connected to power/ground net
+   Gill/FRM4X/fifoext/Mram_RAM33_REGCLKAU_tiesig
+WARNING:Pack:2874 - Trimming timing constraints from pin
+   Gill/FRM4X/fifoext/Mram_RAM33
+   of frag REGCLKAL connected to power/ground net
+   Gill/FRM4X/fifoext/Mram_RAM33_REGCLKAL_tiesig
+WARNING:Pack:2874 - Trimming timing constraints from pin
+   Gill/FRM4X/fifoext/Mram_RAM34
+   of frag REGCLKAU connected to power/ground net
+   Gill/FRM4X/fifoext/Mram_RAM34_REGCLKAU_tiesig
+WARNING:Pack:2874 - Trimming timing constraints from pin
+   Gill/FRM4X/fifoext/Mram_RAM34
+   of frag REGCLKAL connected to power/ground net
+   Gill/FRM4X/fifoext/Mram_RAM34_REGCLKAL_tiesig
+WARNING:Pack:2874 - Trimming timing constraints from pin
+   Gill/FRM4X/fifoext/Mram_RAM35
+   of frag REGCLKAU connected to power/ground net
+   Gill/FRM4X/fifoext/Mram_RAM35_REGCLKAU_tiesig
+WARNING:Pack:2874 - Trimming timing constraints from pin
+   Gill/FRM4X/fifoext/Mram_RAM35
+   of frag REGCLKAL connected to power/ground net
+   Gill/FRM4X/fifoext/Mram_RAM35_REGCLKAL_tiesig
+WARNING:Pack:2874 - Trimming timing constraints from pin
+   Gill/FRM4X/fifoext/Mram_RAM36
+   of frag REGCLKAU connected to power/ground net
+   Gill/FRM4X/fifoext/Mram_RAM36_REGCLKAU_tiesig
+WARNING:Pack:2874 - Trimming timing constraints from pin
+   Gill/FRM4X/fifoext/Mram_RAM36
+   of frag REGCLKAL connected to power/ground net
+   Gill/FRM4X/fifoext/Mram_RAM36_REGCLKAL_tiesig
+WARNING:Pack:2874 - Trimming timing constraints from pin
+   Gill/FRM4X/fifoext/Mram_RAM37
+   of frag REGCLKAU connected to power/ground net
+   Gill/FRM4X/fifoext/Mram_RAM37_REGCLKAU_tiesig
+WARNING:Pack:2874 - Trimming timing constraints from pin
+   Gill/FRM4X/fifoext/Mram_RAM37
+   of frag REGCLKAL connected to power/ground net
+   Gill/FRM4X/fifoext/Mram_RAM37_REGCLKAL_tiesig
+WARNING:Pack:2874 - Trimming timing constraints from pin
+   Gill/FRM4X/fifoext/Mram_RAM38
+   of frag REGCLKAU connected to power/ground net
+   Gill/FRM4X/fifoext/Mram_RAM38_REGCLKAU_tiesig
+WARNING:Pack:2874 - Trimming timing constraints from pin
+   Gill/FRM4X/fifoext/Mram_RAM38
+   of frag REGCLKAL connected to power/ground net
+   Gill/FRM4X/fifoext/Mram_RAM38_REGCLKAL_tiesig
+WARNING:Pack:2874 - Trimming timing constraints from pin
+   Gill/FRM4X/fifoext/Mram_RAM51
+   of frag REGCLKAU connected to power/ground net
+   Gill/FRM4X/fifoext/Mram_RAM51_REGCLKAU_tiesig
+WARNING:Pack:2874 - Trimming timing constraints from pin
+   Gill/FRM4X/fifoext/Mram_RAM51
+   of frag REGCLKAL connected to power/ground net
+   Gill/FRM4X/fifoext/Mram_RAM51_REGCLKAL_tiesig
+WARNING:Pack:2874 - Trimming timing constraints from pin
+   Gill/FRM4X/fifoext/Mram_RAM52
+   of frag REGCLKAU connected to power/ground net
+   Gill/FRM4X/fifoext/Mram_RAM52_REGCLKAU_tiesig
+WARNING:Pack:2874 - Trimming timing constraints from pin
+   Gill/FRM4X/fifoext/Mram_RAM52
+   of frag REGCLKAL connected to power/ground net
+   Gill/FRM4X/fifoext/Mram_RAM52_REGCLKAL_tiesig
+WARNING:Pack:2874 - Trimming timing constraints from pin
+   Gill/FRM4X/fifoext/Mram_RAM53
+   of frag REGCLKAU connected to power/ground net
+   Gill/FRM4X/fifoext/Mram_RAM53_REGCLKAU_tiesig
+WARNING:Pack:2874 - Trimming timing constraints from pin
+   Gill/FRM4X/fifoext/Mram_RAM53
+   of frag REGCLKAL connected to power/ground net
+   Gill/FRM4X/fifoext/Mram_RAM53_REGCLKAL_tiesig
+WARNING:Pack:2874 - Trimming timing constraints from pin
+   Gill/FRM4X/fifoext/Mram_RAM54
+   of frag REGCLKAU connected to power/ground net
+   Gill/FRM4X/fifoext/Mram_RAM54_REGCLKAU_tiesig
+WARNING:Pack:2874 - Trimming timing constraints from pin
+   Gill/FRM4X/fifoext/Mram_RAM54
+   of frag REGCLKAL connected to power/ground net
+   Gill/FRM4X/fifoext/Mram_RAM54_REGCLKAL_tiesig
+WARNING:Pack:2874 - Trimming timing constraints from pin
+   Gill/FRM4X/fifoext/Mram_RAM55
+   of frag REGCLKAU connected to power/ground net
+   Gill/FRM4X/fifoext/Mram_RAM55_REGCLKAU_tiesig
+WARNING:Pack:2874 - Trimming timing constraints from pin
+   Gill/FRM4X/fifoext/Mram_RAM55
+   of frag REGCLKAL connected to power/ground net
+   Gill/FRM4X/fifoext/Mram_RAM55_REGCLKAL_tiesig
+WARNING:Pack:2874 - Trimming timing constraints from pin
+   Gill/FRM4X/fifoext/Mram_RAM56
+   of frag REGCLKAU connected to power/ground net
+   Gill/FRM4X/fifoext/Mram_RAM56_REGCLKAU_tiesig
+WARNING:Pack:2874 - Trimming timing constraints from pin
+   Gill/FRM4X/fifoext/Mram_RAM56
+   of frag REGCLKAL connected to power/ground net
+   Gill/FRM4X/fifoext/Mram_RAM56_REGCLKAL_tiesig
+WARNING:Pack:2874 - Trimming timing constraints from pin
+   Gill/FRM4X/fifoext/Mram_RAM57
+   of frag REGCLKAU connected to power/ground net
+   Gill/FRM4X/fifoext/Mram_RAM57_REGCLKAU_tiesig
+WARNING:Pack:2874 - Trimming timing constraints from pin
+   Gill/FRM4X/fifoext/Mram_RAM57
+   of frag REGCLKAL connected to power/ground net
+   Gill/FRM4X/fifoext/Mram_RAM57_REGCLKAL_tiesig
+WARNING:Pack:2874 - Trimming timing constraints from pin
+   Gill/FRM4X/fifoext/Mram_RAM58
+   of frag REGCLKAU connected to power/ground net
+   Gill/FRM4X/fifoext/Mram_RAM58_REGCLKAU_tiesig
+WARNING:Pack:2874 - Trimming timing constraints from pin
+   Gill/FRM4X/fifoext/Mram_RAM58
+   of frag REGCLKAL connected to power/ground net
+   Gill/FRM4X/fifoext/Mram_RAM58_REGCLKAL_tiesig
+WARNING:Pack:2874 - Trimming timing constraints from pin
+   Gill/FRM4X/fifoext/Mram_RAM7
+   of frag REGCLKAU connected to power/ground net
+   Gill/FRM4X/fifoext/Mram_RAM7_REGCLKAU_tiesig
+WARNING:Pack:2874 - Trimming timing constraints from pin
+   Gill/FRM4X/fifoext/Mram_RAM7
+   of frag REGCLKAL connected to power/ground net
+   Gill/FRM4X/fifoext/Mram_RAM7_REGCLKAL_tiesig
+WARNING:Pack:2874 - Trimming timing constraints from pin
+   Gill/FRM4X/fifoext/Mram_RAM71
+   of frag REGCLKAU connected to power/ground net
+   Gill/FRM4X/fifoext/Mram_RAM71_REGCLKAU_tiesig
+WARNING:Pack:2874 - Trimming timing constraints from pin
+   Gill/FRM4X/fifoext/Mram_RAM71
+   of frag REGCLKAL connected to power/ground net
+   Gill/FRM4X/fifoext/Mram_RAM71_REGCLKAL_tiesig
+WARNING:Pack:2874 - Trimming timing constraints from pin
+   Gill/FRM4X/fifoext/Mram_RAM72
+   of frag REGCLKAU connected to power/ground net
+   Gill/FRM4X/fifoext/Mram_RAM72_REGCLKAU_tiesig
+WARNING:Pack:2874 - Trimming timing constraints from pin
+   Gill/FRM4X/fifoext/Mram_RAM72
+   of frag REGCLKAL connected to power/ground net
+   Gill/FRM4X/fifoext/Mram_RAM72_REGCLKAL_tiesig
+WARNING:Pack:2874 - Trimming timing constraints from pin
+   Gill/FRM4X/fifoext/Mram_RAM73
+   of frag REGCLKAU connected to power/ground net
+   Gill/FRM4X/fifoext/Mram_RAM73_REGCLKAU_tiesig
+WARNING:Pack:2874 - Trimming timing constraints from pin
+   Gill/FRM4X/fifoext/Mram_RAM73
+   of frag REGCLKAL connected to power/ground net
+   Gill/FRM4X/fifoext/Mram_RAM73_REGCLKAL_tiesig
+WARNING:Pack:2874 - Trimming timing constraints from pin
+   Gill/FRM4X/fifoext/Mram_RAM74
+   of frag REGCLKAU connected to power/ground net
+   Gill/FRM4X/fifoext/Mram_RAM74_REGCLKAU_tiesig
+WARNING:Pack:2874 - Trimming timing constraints from pin
+   Gill/FRM4X/fifoext/Mram_RAM74
+   of frag REGCLKAL connected to power/ground net
+   Gill/FRM4X/fifoext/Mram_RAM74_REGCLKAL_tiesig
+WARNING:Pack:2874 - Trimming timing constraints from pin
+   Gill/FRM4X/fifoext/Mram_RAM75
+   of frag REGCLKAU connected to power/ground net
+   Gill/FRM4X/fifoext/Mram_RAM75_REGCLKAU_tiesig
+WARNING:Pack:2874 - Trimming timing constraints from pin
+   Gill/FRM4X/fifoext/Mram_RAM75
+   of frag REGCLKAL connected to power/ground net
+   Gill/FRM4X/fifoext/Mram_RAM75_REGCLKAL_tiesig
+WARNING:Pack:2874 - Trimming timing constraints from pin
+   Gill/FRM4X/fifoext/Mram_RAM76
+   of frag REGCLKAU connected to power/ground net
+   Gill/FRM4X/fifoext/Mram_RAM76_REGCLKAU_tiesig
+WARNING:Pack:2874 - Trimming timing constraints from pin
+   Gill/FRM4X/fifoext/Mram_RAM76
+   of frag REGCLKAL connected to power/ground net
+   Gill/FRM4X/fifoext/Mram_RAM76_REGCLKAL_tiesig
+WARNING:Pack:2874 - Trimming timing constraints from pin
+   Gill/FRM4X/fifoext/Mram_RAM77
+   of frag REGCLKAU connected to power/ground net
+   Gill/FRM4X/fifoext/Mram_RAM77_REGCLKAU_tiesig
+WARNING:Pack:2874 - Trimming timing constraints from pin
+   Gill/FRM4X/fifoext/Mram_RAM77
+   of frag REGCLKAL connected to power/ground net
+   Gill/FRM4X/fifoext/Mram_RAM77_REGCLKAL_tiesig
+WARNING:Pack:2874 - Trimming timing constraints from pin
+   Gill/FRM4X/fifoext/Mram_RAM78
+   of frag REGCLKAU connected to power/ground net
+   Gill/FRM4X/fifoext/Mram_RAM78_REGCLKAU_tiesig
+WARNING:Pack:2874 - Trimming timing constraints from pin
+   Gill/FRM4X/fifoext/Mram_RAM78
+   of frag REGCLKAL connected to power/ground net
+   Gill/FRM4X/fifoext/Mram_RAM78_REGCLKAL_tiesig
+WARNING:Pack:2874 - Trimming timing constraints from pin
+   Gill/FRM4X/fifoext/Mram_RAM9
+   of frag REGCLKAU connected to power/ground net
+   Gill/FRM4X/fifoext/Mram_RAM9_REGCLKAU_tiesig
+WARNING:Pack:2874 - Trimming timing constraints from pin
+   Gill/FRM4X/fifoext/Mram_RAM9
+   of frag REGCLKAL connected to power/ground net
+   Gill/FRM4X/fifoext/Mram_RAM9_REGCLKAL_tiesig
+Running directed packing...
+WARNING:Pack:1186 - One or more I/O components have conflicting property values.
+    For each occurrence, the system will use the property value attached to the
+   pad.  Otherwise, the system will use the first property value read.  To view
+   each occurrence, create a detailed map report (run map using the -detail
+   option).
+Running delay-based LUT packing...
+Updating timing models...
+WARNING:Timing:3223 - Timing constraint PATH "TS_clkm_egtx_clk_path" TIG ignored
+   during timing analysis.
+WARNING:Timing:3223 - Timing constraint PATH "TS_egtx_clk_clkm_path" TIG ignored
+   during timing analysis.
+WARNING:Pack:2768 - At least one timing constraint is impossible to meet because
+   component switching limit violations have been detected for a constrained
+   component. A timing constraint summary below shows the failing constraints
+   (preceded with an Asterisk (*)). Please use the Timing Analyzer (GUI) or TRCE
+   (command line) with the Mapped NCD and PCF files to evaluate the component
+   switching limit violations in more detail. Evaluate the datasheet for
+   alternative configurations for the component that could allow the frequencies
+   requested in the constraint. Otherwise, the timing constraint covering this
+   component might need to be modified to satisfy the component switching limits
+   specified in the datasheet.
+WARNING:Timing:3223 - Timing constraint PATH "TS_clkm_egtx_clk_path" TIG 
+   ignored during timing analysis.
+WARNING:Timing:3223 - Timing constraint PATH "TS_egtx_clk_clkm_path" TIG 
+   ignored during timing analysis.
+INFO:Timing:3284 - This timing report was generated using estimated delay 
+   information.  For accurate numbers, please refer to the post Place and Route 
+   timing report.
+Number of Timing Constraints that were not applied: 3
+
+Asterisk (*) preceding a constraint indicates it was not met.
+   This may be due to a setup or hold violation.
+
+----------------------------------------------------------------------------------------------------------
+  Constraint                                |    Check    | Worst Case |  Best Case | Timing |   Timing   
+                                            |             |    Slack   | Achievable | Errors |    Score   
+----------------------------------------------------------------------------------------------------------
+* PERIOD analysis for net "leon3mp_U0/clkge | SETUP       |     2.070ns|     4.180ns|       0|           0
+  n0/xc5l.v/clk0B" derived from  NET "leon3 | HOLD        |    -0.029ns|            |    2112|       28200
+  mp_U0/clk_pad/xcv2.u0/ol" PERIOD = 10 ns  | MINPERIOD   |    -2.082ns|     8.332ns|       3|        5056
+  HIGH 50%  divided by 1.60 to 6.250 nS and |             |            |            |        |            
+   duty cycle corrected to HIGH 3.125 nS    |             |            |            |        |            
+----------------------------------------------------------------------------------------------------------
+  NET "leon3mp_U0/clk_pad/xcv2.u0/ol" PERIO | MINPERIOD   |     0.858ns|     7.142ns|       0|           0
+  D = 10 ns HIGH 50%                        |             |            |            |        |            
+----------------------------------------------------------------------------------------------------------
+  PERIOD analysis for net "leon3mp_U0/ddrsp | SETUP       |     1.403ns|     2.456ns|       0|           0
+  0.ddrc0/ddr_phy0/ddr_phy0/xc4v.ddr_phy0/m | HOLD        |     0.181ns|            |       0|           0
+  clkfx" derived from  NET "leon3mp_U0/clk_ | MINLOWPULSE |     1.262ns|     4.000ns|       0|           0
+  200" PERIOD = 5 ns HIGH 50%  multiplied b |             |            |            |        |            
+  y 1.05 to 5.263 nS and duty cycle correct |             |            |            |        |            
+  ed to HIGH 2.631 nS                       |             |            |            |        |            
+----------------------------------------------------------------------------------------------------------
+  NET "leon3mp_U0/clk_200" PERIOD = 5 ns HI | SETUP       |     4.513ns|     0.487ns|       0|           0
+  GH 50%                                    | HOLD        |     0.195ns|            |       0|           0
+                                            | MINLOWPULSE |     1.400ns|     3.600ns|       0|           0
+----------------------------------------------------------------------------------------------------------
+  PERIOD analysis for net "leon3mp_U0/ddrsp | SETUP       |     2.750ns|     1.596ns|       0|           0
+  0.ddrc0/ddr_phy0/ddr_phy0/xc4v.ddr_phy0/c | HOLD        |     3.819ns|            |       0|           0
+  lk_90ro" derived from  PERIOD analysis fo | MINPERIOD   |     3.042ns|     2.221ns|       0|           0
+  r net "leon3mp_U0/ddrsp0.ddrc0/ddr_phy0/d |             |            |            |        |            
+  dr_phy0/xc4v.ddr_phy0/mclkfx" derived fro |             |            |            |        |            
+  m NET "leon3mp_U0/clk_200" PERIOD = 5 ns  |             |            |            |        |            
+  HIGH 50% multiplied by 1.05 to 5.263 nS a |             |            |            |        |            
+  nd duty cycle corrected to HIGH 2.631 nS  |             |            |            |        |            
+    duty cycle corrected to 5.263 nS  HIGH  |             |            |            |        |            
+  2.631 nS                                  |             |            |            |        |            
+----------------------------------------------------------------------------------------------------------
+  TSSYSACE = PERIOD TIMEGRP "clk_33" 29 ns  | SETUP       |    27.096ns|     1.904ns|       0|           0
+  HIGH 50%                                  | HOLD        |     0.214ns|            |       0|           0
+                                            | MINHIGHPULSE|    26.500ns|     2.500ns|       0|           0
+----------------------------------------------------------------------------------------------------------
+  PATH "TS_clkm_clkml_path" TIG             | SETUP       |         N/A|     4.724ns|     N/A|           0
+----------------------------------------------------------------------------------------------------------
+  PATH "TS_clkml_clkm_path" TIG             | SETUP       |         N/A|     0.453ns|     N/A|           0
+----------------------------------------------------------------------------------------------------------
+  PATH "TS_clkm_egtx_clk_path" TIG          | N/A         |         N/A|         N/A|     N/A|         N/A
+----------------------------------------------------------------------------------------------------------
+  PATH "TS_egtx_clk_clkm_path" TIG          | N/A         |         N/A|         N/A|     N/A|         N/A
+----------------------------------------------------------------------------------------------------------
+
+
+Derived Constraint Report
+Review Timing Report for more details on the following derived constraints.
+To create a Timing Report, run "trce -v 12 -fastpaths -o design_timing_report design.ncd design.pcf"
+or "Run Timing Analysis" from Timing Analyzer (timingan).
+Derived Constraints for leon3mp_U0/clk_pad/xcv2.u0/ol
++-------------------------------+-------------+-------------+-------------+-------------+-------------+-------------+---
+----------+
+|                               |   Period    |       Actual Period       |      Timing Errors        |      Paths
+Analyzed       |
+|           Constraint          | Requirement
+|-------------+-------------|-------------+-------------|-------------+-------------|
+|                               |             |   Direct    | Derivative  |   Direct    | Derivative  |   Direct    |
+Derivative  |
++-------------------------------+-------------+-------------+-------------+-------------+-------------+-------------+---
+----------+
+|leon3mp_U0/clk_pad/xcv2.u0/ol  |     10.000ns|      7.142ns|     13.331ns|            0|         2115|            0|   
+  7063444|
+| leon3mp_U0/clkgen0/xc5l.v/clk0|      6.250ns|      8.332ns|          N/A|         2115|            0|      7063444|   
+        0|
+| B                             |             |             |             |             |             |             |   
+         |
++-------------------------------+-------------+-------------+-------------+-------------+-------------+-------------+---
+----------+
+
+Derived Constraints for leon3mp_U0/clk_200
++-------------------------------+-------------+-------------+-------------+-------------+-------------+-------------+---
+----------+
+|                               |   Period    |       Actual Period       |      Timing Errors        |      Paths
+Analyzed       |
+|           Constraint          | Requirement
+|-------------+-------------|-------------+-------------|-------------+-------------|
+|                               |             |   Direct    | Derivative  |   Direct    | Derivative  |   Direct    |
+Derivative  |
++-------------------------------+-------------+-------------+-------------+-------------+-------------+-------------+---
+----------+
+|leon3mp_U0/clk_200             |      5.000ns|      3.600ns|      3.800ns|            0|            0|            3|   
+     9097|
+| leon3mp_U0/ddrsp0.ddrc0/ddr_ph|      5.263ns|      4.000ns|      2.221ns|            0|            0|         9065|   
+       32|
+| y0/ddr_phy0/xc4v.ddr_phy0/mclk|             |             |             |             |             |             |   
+         |
+| fx                            |             |             |             |             |             |             |   
+         |
+|  leon3mp_U0/ddrsp0.ddrc0/ddr_p|      5.263ns|      2.221ns|          N/A|            0|            0|           32|   
+        0|
+|  hy0/ddr_phy0/xc4v.ddr_phy0/cl|             |             |             |             |             |             |   
+         |
+|  k_90ro                       |             |             |             |             |             |             |   
+         |
++-------------------------------+-------------+-------------+-------------+-------------+-------------+-------------+---
+----------+
+
+1 constraint not met.
+INFO:Timing:2761 - N/A entries in the Constraints List may indicate that the 
+   constraint is not analyzed due to the following: No paths covered by this 
+   constraint; Other constraints intersect with this constraint; or This 
+   constraint was disabled by a Path Tracing Control. Please run the Timespec 
+   Interaction Report (TSI) via command line (trce tsi) or Timing Analyzer GUI.
+
+
+INFO:Map:215 - The Interim Design Summary has been generated in the MAP Report
+   (.mrp).
+Running timing-driven placement...
+Total REAL time at the beginning of Placer: 7 mins 53 secs 
+Total CPU  time at the beginning of Placer: 7 mins 47 secs 
+
+Phase 1.1  Initial Placement Analysis
+Phase 1.1  Initial Placement Analysis (Checksum:e4690d26) REAL time: 8 mins 24 secs 
+
+Phase 2.7  Design Feasibility Check
+WARNING:Place:838 - An IO Bus with more than one IO standard is found.
+   Components associated with this bus are as follows: 
+   	 Comp: sram_flash_data<0>   IOSTANDARD = LVTTL
+   	 Comp: sram_flash_data<1>   IOSTANDARD = LVTTL
+   	 Comp: sram_flash_data<2>   IOSTANDARD = LVTTL
+   	 Comp: sram_flash_data<3>   IOSTANDARD = LVTTL
+   	 Comp: sram_flash_data<4>   IOSTANDARD = LVTTL
+   	 Comp: sram_flash_data<5>   IOSTANDARD = LVTTL
+   	 Comp: sram_flash_data<6>   IOSTANDARD = LVTTL
+   	 Comp: sram_flash_data<7>   IOSTANDARD = LVTTL
+   	 Comp: sram_flash_data<8>   IOSTANDARD = LVTTL
+   	 Comp: sram_flash_data<9>   IOSTANDARD = LVTTL
+   	 Comp: sram_flash_data<10>   IOSTANDARD = LVTTL
+   	 Comp: sram_flash_data<11>   IOSTANDARD = LVTTL
+   	 Comp: sram_flash_data<12>   IOSTANDARD = LVTTL
+   	 Comp: sram_flash_data<13>   IOSTANDARD = LVTTL
+   	 Comp: sram_flash_data<14>   IOSTANDARD = LVTTL
+   	 Comp: sram_flash_data<15>   IOSTANDARD = LVTTL
+   	 Comp: sram_flash_data<16>   IOSTANDARD = LVDCI_33
+   	 Comp: sram_flash_data<17>   IOSTANDARD = LVDCI_33
+   	 Comp: sram_flash_data<18>   IOSTANDARD = LVDCI_33
+   	 Comp: sram_flash_data<19>   IOSTANDARD = LVDCI_33
+   	 Comp: sram_flash_data<20>   IOSTANDARD = LVDCI_33
+   	 Comp: sram_flash_data<21>   IOSTANDARD = LVDCI_33
+   	 Comp: sram_flash_data<22>   IOSTANDARD = LVDCI_33
+   	 Comp: sram_flash_data<23>   IOSTANDARD = LVDCI_33
+   	 Comp: sram_flash_data<24>   IOSTANDARD = LVDCI_33
+   	 Comp: sram_flash_data<25>   IOSTANDARD = LVDCI_33
+   	 Comp: sram_flash_data<26>   IOSTANDARD = LVDCI_33
+   	 Comp: sram_flash_data<27>   IOSTANDARD = LVDCI_33
+   	 Comp: sram_flash_data<28>   IOSTANDARD = LVDCI_33
+   	 Comp: sram_flash_data<29>   IOSTANDARD = LVDCI_33
+   	 Comp: sram_flash_data<30>   IOSTANDARD = LVDCI_33
+   	 Comp: sram_flash_data<31>   IOSTANDARD = LVDCI_33
+
+
+WARNING:Place:838 - An IO Bus with more than one IO standard is found.
+   Components associated with this bus are as follows: 
+   	 Comp: led<0>   IOSTANDARD = LVCMOS25
+   	 Comp: led<1>   IOSTANDARD = LVCMOS25
+   	 Comp: led<2>   IOSTANDARD = LVCMOS25
+   	 Comp: led<3>   IOSTANDARD = LVCMOS18
+   	 Comp: led<4>   IOSTANDARD = LVCMOS25
+   	 Comp: led<5>   IOSTANDARD = LVCMOS18
+   	 Comp: led<6>   IOSTANDARD = LVCMOS18
+   	 Comp: led<7>   IOSTANDARD = LVCMOS18
+   	 Comp: led<8>   IOSTANDARD = LVCMOS33
+   	 Comp: led<9>   IOSTANDARD = LVCMOS33
+   	 Comp: led<10>   IOSTANDARD = LVCMOS33
+   	 Comp: led<11>   IOSTANDARD = LVCMOS33
+   	 Comp: led<12>   IOSTANDARD = LVCMOS33
+
+
+WARNING:Place:838 - An IO Bus with more than one IO standard is found.
+   Components associated with this bus are as follows: 
+   	 Comp: gpio<0>   IOSTANDARD = LVCMOS18
+   	 Comp: gpio<1>   IOSTANDARD = LVCMOS18
+   	 Comp: gpio<2>   IOSTANDARD = LVCMOS18
+   	 Comp: gpio<3>   IOSTANDARD = LVCMOS18
+   	 Comp: gpio<4>   IOSTANDARD = LVCMOS18
+   	 Comp: gpio<5>   IOSTANDARD = LVCMOS18
+   	 Comp: gpio<6>   IOSTANDARD = LVCMOS18
+   	 Comp: gpio<7>   IOSTANDARD = LVCMOS18
+   	 Comp: gpio<8>   IOSTANDARD = LVCMOS33
+   	 Comp: gpio<9>   IOSTANDARD = LVCMOS33
+   	 Comp: gpio<10>   IOSTANDARD = LVCMOS33
+   	 Comp: gpio<11>   IOSTANDARD = LVCMOS33
+   	 Comp: gpio<12>   IOSTANDARD = LVCMOS33
+
+
+Phase 2.7  Design Feasibility Check (Checksum:e4690d26) REAL time: 8 mins 26 secs 
+
+Phase 3.31  Local Placement Optimization
+Phase 3.31  Local Placement Optimization (Checksum:5f3727ad) REAL time: 8 mins 26 secs 
+
+Phase 4.37  Local Placement Optimization
+Phase 4.37  Local Placement Optimization (Checksum:5f3727ad) REAL time: 8 mins 26 secs 
+
+Phase 5.33  Local Placement Optimization
+Phase 5.33  Local Placement Optimization (Checksum:5f3727ad) REAL time: 11 mins 52 secs 
+
+Phase 6.32  Local Placement Optimization
+Phase 6.32  Local Placement Optimization (Checksum:5f3727ad) REAL time: 11 mins 58 secs 
+
+Phase 7.2  Initial Clock and IO Placement
+
+Phase 7.2  Initial Clock and IO Placement (Checksum:77ce8f71) REAL time: 12 mins 18 secs 
+
+Phase 8.36  Local Placement Optimization
+Phase 8.36  Local Placement Optimization (Checksum:77ce8f71) REAL time: 12 mins 18 secs 
+
+......................................
+..............................................................................................
+Phase 9.30  Global Clock Region Assignment
+
+
+######################################################################################
+# GLOBAL CLOCK NET DISTRIBUTION UCF REPORT:
+#
+# Number of Global Clock Regions : 16
+# Number of Global Clock Networks: 13
+#
+# Clock Region Assignment: SUCCESSFUL
+
+# Location of Clock Components
+INST "leon3mp_U0/clkgen0/xc5l.v/sd0.bufgx" LOC = "BUFGCTRL_X0Y0" ;
+INST "leon3mp_U0/ddrsp0.ddrc0/ddr_phy0/ddr_phy0/xc4v.ddr_phy0/bufg2" LOC = "BUFGCTRL_X0Y5" ;
+INST "leon3mp_U0/clk_pad/xcv2.u0/g2.ttl0.bf" LOC = "BUFGCTRL_X0Y2" ;
+INST "leon3mp_U0/ddrsp0.ddrc0/ddr_phy0/ddr_phy0/xc4v.ddr_phy0/refclkx.buf_clk200" LOC = "BUFGCTRL_X0Y31" ;
+INST "leon3mp_U0/clkgen0/xc5l.v/bufg0" LOC = "BUFGCTRL_X0Y26" ;
+INST "leon3mp_U0/clkgen0/xc5l.v/bufg1" LOC = "BUFGCTRL_X0Y25" ;
+INST "leon3mp_U0/clkgen1/xc5l.v/bufg0" LOC = "BUFGCTRL_X0Y3" ;
+INST "leon3mp_U0/clkgen1/xc5l.v/bufg1" LOC = "BUFGCTRL_X0Y4" ;
+INST "leon3mp_U0/clk_33_pad/o_BUFG" LOC = "BUFGCTRL_X0Y1" ;
+INST "leon3mp_U0/eth1.erxc_pad/xcv2.u0/g2.ttl0.bf" LOC = "BUFGCTRL_X0Y27" ;
+INST "leon3mp_U0/ddrsp0.ddrc0/ddr_phy0/ddr_phy0/xc4v.ddr_phy0/clkscale.bufg0" LOC = "BUFGCTRL_X0Y30" ;
+INST "leon3mp_U0/ddrsp0.ddrc0/ddr_phy0/ddr_phy0/xc4v.ddr_phy0/clkscale.bufg1" LOC = "BUFGCTRL_X0Y29" ;
+INST "leon3mp_U0/eth1.etxc_pad/xcv2.u0/g2.ttl0.bf" LOC = "BUFGCTRL_X0Y28" ;
+INST "leon3mp_U0/ddrsp0.ddrc0/ddr_phy0/ddr_phy0/xc4v.ddr_phy0/clkscale.HMODE_dllm.dllm" LOC = "DCM_ADV_X0Y11" ;
+INST "leon3mp_U0/clkgen0/xc5l.v/sd0.dll1" LOC = "DCM_ADV_X0Y0" ;
+INST "leon3mp_U0/clkgen0/xc5l.v/dll0" LOC = "DCM_ADV_X0Y10" ;
+INST "leon3mp_U0/clkgen1/xc5l.v/dll0" LOC = "DCM_ADV_X0Y1" ;
+INST "leon3mp_U0/ddrsp0.ddrc0/ddr_phy0/ddr_phy0/xc4v.ddr_phy0/HMODE_dll.dll" LOC = "DCM_ADV_X0Y2" ;
+INST "sram_clk_fb" LOC = "AG21" ;
+INST "clk_200_p" LOC = "L19" ;
+INST "clk_33" LOC = "AH17" ;
+INST "phy_rx_clk" LOC = "H17" ;
+INST "clk_100" LOC = "AH15" ;
+INST "phy_tx_clk" LOC = "K17" ;
+
+# leon3mp_U0/srclkl driven by BUFGCTRL_X0Y0
+NET "leon3mp_U0/srclkl" TNM_NET = "TN_leon3mp_U0/srclkl" ;
+TIMEGRP "TN_leon3mp_U0/srclkl" AREA_GROUP = "CLKAG_leon3mp_U0/srclkl" ;
+AREA_GROUP "CLKAG_leon3mp_U0/srclkl" RANGE =   CLOCKREGION_X1Y0, CLOCKREGION_X1Y1, CLOCKREGION_X1Y2, CLOCKREGION_X1Y3, CLOCKREGION_X1Y4, CLOCKREGION_X1Y5, CLOCKREGION_X1Y6, CLOCKREGION_X1Y7 ;
+
+# leon3mp_U0/ddrsp0.ddrc0/ddr_phy0/ddr_phy0/xc4v.ddr_phy0/clk90r driven by BUFGCTRL_X0Y5
+NET "leon3mp_U0/ddrsp0.ddrc0/ddr_phy0/ddr_phy0/xc4v.ddr_phy0/clk90r" TNM_NET = "TN_leon3mp_U0/ddrsp0.ddrc0/ddr_phy0/ddr_phy0/xc4v.ddr_phy0/clk90r" ;
+TIMEGRP "TN_leon3mp_U0/ddrsp0.ddrc0/ddr_phy0/ddr_phy0/xc4v.ddr_phy0/clk90r" AREA_GROUP = "CLKAG_leon3mp_U0/ddrsp0.ddrc0/ddr_phy0/ddr_phy0/xc4v.ddr_phy0/clk90r" ;
+AREA_GROUP "CLKAG_leon3mp_U0/ddrsp0.ddrc0/ddr_phy0/ddr_phy0/xc4v.ddr_phy0/clk90r" RANGE =   CLOCKREGION_X0Y0, CLOCKREGION_X1Y0, CLOCKREGION_X0Y1, CLOCKREGION_X1Y1, CLOCKREGION_X0Y2, CLOCKREGION_X1Y2, CLOCKREGION_X0Y3, CLOCKREGION_X1Y3, CLOCKREGION_X0Y4, CLOCKREGION_X1Y4, CLOCKREGION_X0Y5, CLOCKREGION_X1Y5, CLOCKREGION_X0Y6, CLOCKREGION_X1Y6, CLOCKREGION_X0Y7, CLOCKREGION_X1Y7 ;
+
+# leon3mp_U0/lclk driven by BUFGCTRL_X0Y2
+NET "leon3mp_U0/lclk" TNM_NET = "TN_leon3mp_U0/lclk" ;
+TIMEGRP "TN_leon3mp_U0/lclk" AREA_GROUP = "CLKAG_leon3mp_U0/lclk" ;
+AREA_GROUP "CLKAG_leon3mp_U0/lclk" RANGE =   CLOCKREGION_X0Y0, CLOCKREGION_X0Y1, CLOCKREGION_X0Y6, CLOCKREGION_X0Y7 ;
+
+# leon3mp_U0/ddrsp0.ddrc0/ddr_phy0/ddr_phy0/xc4v.ddr_phy0/clk200 driven by BUFGCTRL_X0Y31
+NET "leon3mp_U0/ddrsp0.ddrc0/ddr_phy0/ddr_phy0/xc4v.ddr_phy0/clk200" TNM_NET = "TN_leon3mp_U0/ddrsp0.ddrc0/ddr_phy0/ddr_phy0/xc4v.ddr_phy0/clk200" ;
+TIMEGRP "TN_leon3mp_U0/ddrsp0.ddrc0/ddr_phy0/ddr_phy0/xc4v.ddr_phy0/clk200" AREA_GROUP = "CLKAG_leon3mp_U0/ddrsp0.ddrc0/ddr_phy0/ddr_phy0/xc4v.ddr_phy0/clk200" ;
+AREA_GROUP "CLKAG_leon3mp_U0/ddrsp0.ddrc0/ddr_phy0/ddr_phy0/xc4v.ddr_phy0/clk200" RANGE =   CLOCKREGION_X0Y0, CLOCKREGION_X1Y0, CLOCKREGION_X0Y1, CLOCKREGION_X1Y1, CLOCKREGION_X0Y2, CLOCKREGION_X1Y2, CLOCKREGION_X0Y3, CLOCKREGION_X1Y3, CLOCKREGION_X0Y4, CLOCKREGION_X1Y4, CLOCKREGION_X0Y5, CLOCKREGION_X1Y5, CLOCKREGION_X0Y6, CLOCKREGION_X1Y6, CLOCKREGION_X0Y7, CLOCKREGION_X1Y7 ;
+
+# leon3mp_U0/clkm driven by BUFGCTRL_X0Y26
+NET "leon3mp_U0/clkm" TNM_NET = "TN_leon3mp_U0/clkm" ;
+TIMEGRP "TN_leon3mp_U0/clkm" AREA_GROUP = "CLKAG_leon3mp_U0/clkm" ;
+AREA_GROUP "CLKAG_leon3mp_U0/clkm" RANGE =   CLOCKREGION_X0Y0, CLOCKREGION_X1Y0, CLOCKREGION_X0Y1, CLOCKREGION_X1Y1, CLOCKREGION_X0Y2, CLOCKREGION_X1Y2, CLOCKREGION_X0Y3, CLOCKREGION_X1Y3, CLOCKREGION_X0Y4, CLOCKREGION_X1Y4, CLOCKREGION_X0Y5, CLOCKREGION_X1Y5, CLOCKREGION_X0Y6, CLOCKREGION_X1Y6, CLOCKREGION_X0Y7, CLOCKREGION_X1Y7 ;
+
+# leon3mp_U0/clkgen0/xc5l.v/clk_k driven by BUFGCTRL_X0Y25
+NET "leon3mp_U0/clkgen0/xc5l.v/clk_k" TNM_NET = "TN_leon3mp_U0/clkgen0/xc5l.v/clk_k" ;
+TIMEGRP "TN_leon3mp_U0/clkgen0/xc5l.v/clk_k" AREA_GROUP = "CLKAG_leon3mp_U0/clkgen0/xc5l.v/clk_k" ;
+AREA_GROUP "CLKAG_leon3mp_U0/clkgen0/xc5l.v/clk_k" RANGE =   CLOCKREGION_X0Y6, CLOCKREGION_X0Y7 ;
+
+# leon3mp_U0/egtx_clk driven by BUFGCTRL_X0Y3
+NET "leon3mp_U0/egtx_clk" TNM_NET = "TN_leon3mp_U0/egtx_clk" ;
+TIMEGRP "TN_leon3mp_U0/egtx_clk" AREA_GROUP = "CLKAG_leon3mp_U0/egtx_clk" ;
+AREA_GROUP "CLKAG_leon3mp_U0/egtx_clk" RANGE =   CLOCKREGION_X0Y0, CLOCKREGION_X1Y0, CLOCKREGION_X0Y1, CLOCKREGION_X1Y1, CLOCKREGION_X0Y2, CLOCKREGION_X1Y2, CLOCKREGION_X0Y3, CLOCKREGION_X1Y3, CLOCKREGION_X0Y4, CLOCKREGION_X1Y4, CLOCKREGION_X0Y5, CLOCKREGION_X1Y5 ;
+
+# leon3mp_U0/clkgen1/clk1xu driven by BUFGCTRL_X0Y4
+NET "leon3mp_U0/clkgen1/clk1xu" TNM_NET = "TN_leon3mp_U0/clkgen1/clk1xu" ;
+TIMEGRP "TN_leon3mp_U0/clkgen1/clk1xu" AREA_GROUP = "CLKAG_leon3mp_U0/clkgen1/clk1xu" ;
+AREA_GROUP "CLKAG_leon3mp_U0/clkgen1/clk1xu" RANGE =   CLOCKREGION_X0Y0, CLOCKREGION_X0Y1 ;
+
+# leon3mp_U0/clkace driven by BUFGCTRL_X0Y1
+NET "leon3mp_U0/clkace" TNM_NET = "TN_leon3mp_U0/clkace" ;
+TIMEGRP "TN_leon3mp_U0/clkace" AREA_GROUP = "CLKAG_leon3mp_U0/clkace" ;
+AREA_GROUP "CLKAG_leon3mp_U0/clkace" RANGE =   CLOCKREGION_X0Y0, CLOCKREGION_X1Y0, CLOCKREGION_X0Y1, CLOCKREGION_X1Y1, CLOCKREGION_X0Y2, CLOCKREGION_X1Y2, CLOCKREGION_X0Y3, CLOCKREGION_X1Y3, CLOCKREGION_X0Y4, CLOCKREGION_X1Y4, CLOCKREGION_X0Y5, CLOCKREGION_X1Y5, CLOCKREGION_X0Y6, CLOCKREGION_X1Y6, CLOCKREGION_X0Y7, CLOCKREGION_X1Y7 ;
+
+# leon3mp_U0/ethi_rx_clk driven by BUFGCTRL_X0Y27
+NET "leon3mp_U0/ethi_rx_clk" TNM_NET = "TN_leon3mp_U0/ethi_rx_clk" ;
+TIMEGRP "TN_leon3mp_U0/ethi_rx_clk" AREA_GROUP = "CLKAG_leon3mp_U0/ethi_rx_clk" ;
+AREA_GROUP "CLKAG_leon3mp_U0/ethi_rx_clk" RANGE =   CLOCKREGION_X0Y0, CLOCKREGION_X1Y0, CLOCKREGION_X0Y1, CLOCKREGION_X1Y1, CLOCKREGION_X0Y2, CLOCKREGION_X1Y2, CLOCKREGION_X0Y3, CLOCKREGION_X1Y3, CLOCKREGION_X0Y4, CLOCKREGION_X1Y4, CLOCKREGION_X0Y5, CLOCKREGION_X1Y5, CLOCKREGION_X0Y6, CLOCKREGION_X1Y6, CLOCKREGION_X0Y7, CLOCKREGION_X1Y7 ;
+
+# leon3mp_U0/clkml driven by BUFGCTRL_X0Y30
+NET "leon3mp_U0/clkml" TNM_NET = "TN_leon3mp_U0/clkml" ;
+TIMEGRP "TN_leon3mp_U0/clkml" AREA_GROUP = "CLKAG_leon3mp_U0/clkml" ;
+AREA_GROUP "CLKAG_leon3mp_U0/clkml" RANGE =   CLOCKREGION_X0Y0, CLOCKREGION_X1Y0, CLOCKREGION_X0Y1, CLOCKREGION_X1Y1, CLOCKREGION_X0Y2, CLOCKREGION_X1Y2, CLOCKREGION_X0Y3, CLOCKREGION_X1Y3, CLOCKREGION_X0Y4, CLOCKREGION_X1Y4, CLOCKREGION_X0Y5, CLOCKREGION_X1Y5, CLOCKREGION_X0Y6, CLOCKREGION_X1Y6, CLOCKREGION_X0Y7, CLOCKREGION_X1Y7 ;
+
+# leon3mp_U0/ddrsp0.ddrc0/ddr_phy0/ddr_phy0/xc4v.ddr_phy0/mclkfb driven by BUFGCTRL_X0Y29
+NET "leon3mp_U0/ddrsp0.ddrc0/ddr_phy0/ddr_phy0/xc4v.ddr_phy0/mclkfb" TNM_NET = "TN_leon3mp_U0/ddrsp0.ddrc0/ddr_phy0/ddr_phy0/xc4v.ddr_phy0/mclkfb" ;
+TIMEGRP "TN_leon3mp_U0/ddrsp0.ddrc0/ddr_phy0/ddr_phy0/xc4v.ddr_phy0/mclkfb" AREA_GROUP = "CLKAG_leon3mp_U0/ddrsp0.ddrc0/ddr_phy0/ddr_phy0/xc4v.ddr_phy0/mclkfb" ;
+AREA_GROUP "CLKAG_leon3mp_U0/ddrsp0.ddrc0/ddr_phy0/ddr_phy0/xc4v.ddr_phy0/mclkfb" RANGE =   CLOCKREGION_X0Y2, CLOCKREGION_X1Y2, CLOCKREGION_X0Y3, CLOCKREGION_X1Y3, CLOCKREGION_X0Y4, CLOCKREGION_X1Y4, CLOCKREGION_X0Y5, CLOCKREGION_X1Y5, CLOCKREGION_X0Y6, CLOCKREGION_X1Y6, CLOCKREGION_X0Y7, CLOCKREGION_X1Y7 ;
+
+# leon3mp_U0/ethi_tx_clk driven by BUFGCTRL_X0Y28
+NET "leon3mp_U0/ethi_tx_clk" TNM_NET = "TN_leon3mp_U0/ethi_tx_clk" ;
+TIMEGRP "TN_leon3mp_U0/ethi_tx_clk" AREA_GROUP = "CLKAG_leon3mp_U0/ethi_tx_clk" ;
+AREA_GROUP "CLKAG_leon3mp_U0/ethi_tx_clk" RANGE =   CLOCKREGION_X0Y0, CLOCKREGION_X1Y0, CLOCKREGION_X0Y1, CLOCKREGION_X1Y1, CLOCKREGION_X0Y2, CLOCKREGION_X1Y2, CLOCKREGION_X0Y3, CLOCKREGION_X1Y3, CLOCKREGION_X0Y4, CLOCKREGION_X1Y4, CLOCKREGION_X0Y5, CLOCKREGION_X1Y5, CLOCKREGION_X0Y6, CLOCKREGION_X1Y6, CLOCKREGION_X0Y7, CLOCKREGION_X1Y7 ;
+
+# NOTE: 
+# This report is provided to help reproduce successful clock-region 
+# assignments. The report provides range constraints for all global 
+# clock networks, in a format that is directly usable in ucf files. 
+#
+#END of Global Clock Net Distribution UCF Constraints
+######################################################################################
+
+
+######################################################################################
+GLOBAL CLOCK NET LOADS DISTRIBUTION REPORT:
+
+Number of Global Clock Regions : 16
+Number of Global Clock Networks: 13
+
+Clock Region Assignment: SUCCESSFUL
+
+Clock-Region: <CLOCKREGION_X0Y0> 
+ key resource utilizations (used/available): global-clocks - 1/10 ;
+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+----------------------------------------
+   BRAM |    DCM |    PLL |     GT | ILOGIC | OLOGIC |   MULT |  TEMAC |    PPC |   PCIE | IDLYCT | BUFGCT | LUTRAM |     FF | <- (Types of Resources in this  Region)
+   FIFO |        |        |        |        |        |        |        |        |        |        |        |        |        |
+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+----------------------------------------
+      8 |      0 |      0 |      0 |     80 |     80 |      8 |      0 |      0 |      0 |      2 |      0 |   2080 |   3840 | <- (Available Resources in this Region)
+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+----------------------------------------
+        |        |        |        |        |        |        |        |        |        |        |        |        |        | <Global clock Net Name>
+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+----------------------------------------
+      8 |      0 |      0 |      0 |      0 |      0 |      3 |      0 |      0 |      0 |      0 |      0 |    260 |   3582 |leon3mp_U0/clkm
+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+----------------------------------------
+      8 |      0 |      0 |      0 |      0 |      0 |      3 |      0 |      0 |      0 |      0 |      0 |    260 |   3582 | Total 
+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+----------------------------------------
+
+
+Clock-Region: <CLOCKREGION_X1Y0> 
+ key resource utilizations (used/available): global-clocks - 1/10 ;
+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+----------------------------------------
+   BRAM |    DCM |    PLL |     GT | ILOGIC | OLOGIC |   MULT |  TEMAC |    PPC |   PCIE | IDLYCT | BUFGCT | LUTRAM |     FF | <- (Types of Resources in this  Region)
+   FIFO |        |        |        |        |        |        |        |        |        |        |        |        |        |
+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+----------------------------------------
+     12 |      0 |      0 |      1 |     40 |     40 |      0 |      0 |      0 |      0 |      1 |      0 |   2400 |   4800 | <- (Available Resources in this Region)
+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+----------------------------------------
+        |        |        |        |        |        |        |        |        |        |        |        |        |        | <Global clock Net Name>
+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+----------------------------------------
+      9 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |    422 |   4263 |leon3mp_U0/clkm
+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+----------------------------------------
+      9 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |    422 |   4263 | Total 
+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+----------------------------------------
+
+
+Clock-Region: <CLOCKREGION_X0Y1> 
+ key resource utilizations (used/available): global-clocks - 6/10 ;
+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+----------------------------------------
+   BRAM |    DCM |    PLL |     GT | ILOGIC | OLOGIC |   MULT |  TEMAC |    PPC |   PCIE | IDLYCT | BUFGCT | LUTRAM |     FF | <- (Types of Resources in this  Region)
+   FIFO |        |        |        |        |        |        |        |        |        |        |        |        |        |
+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+----------------------------------------
+      8 |      4 |      2 |      0 |     40 |     40 |      8 |      0 |      0 |      0 |      1 |      0 |   2080 |   3840 | <- (Available Resources in this Region)
+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+----------------------------------------
+        |        |        |        |        |        |        |        |        |        |        |        |        |        | <Global clock Net Name>
+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+----------------------------------------
+      0 |      1 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |leon3mp_U0/clkgen1/clk1xu
+      8 |      1 |      0 |      0 |      0 |      0 |      7 |      0 |      0 |      0 |      0 |      0 |    270 |   3614 |leon3mp_U0/clkm
+      0 |      1 |      0 |      0 |     16 |     18 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |     12 |leon3mp_U0/clkml
+      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      1 |      0 |      0 |      0 |leon3mp_U0/ddrsp0.ddrc0/ddr_phy0/ddr_phy0/xc4v.ddr_phy0/clk200
+      0 |      1 |      0 |      0 |      0 |      6 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |leon3mp_U0/ddrsp0.ddrc0/ddr_phy0/ddr_phy0/xc4v.ddr_phy0/clk90r
+      0 |      1 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |leon3mp_U0/lclk
+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+----------------------------------------
+      8 |      5 |      0 |      0 |     16 |     24 |      7 |      0 |      0 |      0 |      1 |      0 |    270 |   3626 | Total 
+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+----------------------------------------
+
+
+Clock-Region: <CLOCKREGION_X1Y1> 
+ key resource utilizations (used/available): global-clocks - 2/10 ;
+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+----------------------------------------
+   BRAM |    DCM |    PLL |     GT | ILOGIC | OLOGIC |   MULT |  TEMAC |    PPC |   PCIE | IDLYCT | BUFGCT | LUTRAM |     FF | <- (Types of Resources in this  Region)
+   FIFO |        |        |        |        |        |        |        |        |        |        |        |        |        |
+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+----------------------------------------
+     12 |      0 |      0 |      1 |     40 |     40 |      0 |      0 |      0 |      0 |      1 |      0 |   2400 |   4800 | <- (Available Resources in this Region)
+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+----------------------------------------
+        |        |        |        |        |        |        |        |        |        |        |        |        |        | <Global clock Net Name>
+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+----------------------------------------
+     12 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |    358 |   4273 |leon3mp_U0/clkm
+      0 |      0 |      0 |      0 |      0 |      5 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |leon3mp_U0/ethi_tx_clk
+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+----------------------------------------
+     12 |      0 |      0 |      0 |      0 |      5 |      0 |      0 |      0 |      0 |      0 |      0 |    358 |   4273 | Total 
+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+----------------------------------------
+
+
+Clock-Region: <CLOCKREGION_X0Y2> 
+ key resource utilizations (used/available): global-clocks - 4/10 ;
+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+----------------------------------------
+   BRAM |    DCM |    PLL |     GT | ILOGIC | OLOGIC |   MULT |  TEMAC |    PPC |   PCIE | IDLYCT | BUFGCT | LUTRAM |     FF | <- (Types of Resources in this  Region)
+   FIFO |        |        |        |        |        |        |        |        |        |        |        |        |        |
+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+----------------------------------------
+      8 |      2 |      1 |      0 |     60 |     60 |      8 |      0 |      0 |      0 |      2 |      0 |   2080 |   3840 | <- (Available Resources in this Region)
+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+----------------------------------------
+        |        |        |        |        |        |        |        |        |        |        |        |        |        | <Global clock Net Name>
+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+----------------------------------------
+      8 |      0 |      0 |      0 |      0 |      0 |      8 |      0 |      0 |      0 |      0 |      0 |    506 |   3234 |leon3mp_U0/clkm
+      0 |      0 |      0 |      0 |     24 |     27 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |    152 |leon3mp_U0/clkml
+      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      1 |      0 |      0 |      0 |leon3mp_U0/ddrsp0.ddrc0/ddr_phy0/ddr_phy0/xc4v.ddr_phy0/clk200
+      0 |      0 |      0 |      0 |      0 |      6 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      4 |leon3mp_U0/ddrsp0.ddrc0/ddr_phy0/ddr_phy0/xc4v.ddr_phy0/clk90r
+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+----------------------------------------
+      8 |      0 |      0 |      0 |     24 |     33 |      8 |      0 |      0 |      0 |      1 |      0 |    506 |   3390 | Total 
+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+----------------------------------------
+
+
+Clock-Region: <CLOCKREGION_X1Y2> 
+ key resource utilizations (used/available): global-clocks - 1/10 ;
+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+----------------------------------------
+   BRAM |    DCM |    PLL |     GT | ILOGIC | OLOGIC |   MULT |  TEMAC |    PPC |   PCIE | IDLYCT | BUFGCT | LUTRAM |     FF | <- (Types of Resources in this  Region)
+   FIFO |        |        |        |        |        |        |        |        |        |        |        |        |        |
+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+----------------------------------------
+      8 |      0 |      0 |      1 |     40 |     40 |      0 |      0 |      0 |      1 |      1 |      0 |   2400 |   4800 | <- (Available Resources in this Region)
+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+----------------------------------------
+        |        |        |        |        |        |        |        |        |        |        |        |        |        | <Global clock Net Name>
+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+----------------------------------------
+      9 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |    506 |   4317 |leon3mp_U0/clkm
+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+----------------------------------------
+      9 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |    506 |   4317 | Total 
+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+----------------------------------------
+
+
+Clock-Region: <CLOCKREGION_X0Y3> 
+ key resource utilizations (used/available): global-clocks - 2/10 ;
+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+----------------------------------------
+   BRAM |    DCM |    PLL |     GT | ILOGIC | OLOGIC |   MULT |  TEMAC |    PPC |   PCIE | IDLYCT | BUFGCT | LUTRAM |     FF | <- (Types of Resources in this  Region)
+   FIFO |        |        |        |        |        |        |        |        |        |        |        |        |        |
+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+----------------------------------------
+      8 |      0 |      0 |      0 |     60 |     60 |      8 |      0 |      0 |      0 |      2 |     16 |   2080 |   3840 | <- (Available Resources in this Region)
+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+----------------------------------------
+        |        |        |        |        |        |        |        |        |        |        |        |        |        | <Global clock Net Name>
+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+----------------------------------------
+      8 |      0 |      0 |      0 |      0 |      0 |      8 |      0 |      0 |      0 |      0 |      0 |    425 |   3154 |leon3mp_U0/clkm
+      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |     36 |     36 |leon3mp_U0/clkml
+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+----------------------------------------
+      8 |      0 |      0 |      0 |      0 |      0 |      8 |      0 |      0 |      0 |      0 |      0 |    461 |   3190 | Total 
+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+----------------------------------------
+
+
+Clock-Region: <CLOCKREGION_X1Y3> 
+ key resource utilizations (used/available): global-clocks - 1/10 ;
+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+----------------------------------------
+   BRAM |    DCM |    PLL |     GT | ILOGIC | OLOGIC |   MULT |  TEMAC |    PPC |   PCIE | IDLYCT | BUFGCT | LUTRAM |     FF | <- (Types of Resources in this  Region)
+   FIFO |        |        |        |        |        |        |        |        |        |        |        |        |        |
+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+----------------------------------------
+      8 |      0 |      0 |      1 |     40 |     40 |      0 |      0 |      0 |      0 |      1 |      0 |   2400 |   4800 | <- (Available Resources in this Region)
+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+----------------------------------------
+        |        |        |        |        |        |        |        |        |        |        |        |        |        | <Global clock Net Name>
+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+----------------------------------------
+      9 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |    484 |   4165 |leon3mp_U0/clkm
+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+----------------------------------------
+      9 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |    484 |   4165 | Total 
+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+----------------------------------------
+
+
+Clock-Region: <CLOCKREGION_X0Y4> 
+ key resource utilizations (used/available): global-clocks - 4/10 ;
+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+----------------------------------------
+   BRAM |    DCM |    PLL |     GT | ILOGIC | OLOGIC |   MULT |  TEMAC |    PPC |   PCIE | IDLYCT | BUFGCT | LUTRAM |     FF | <- (Types of Resources in this  Region)
+   FIFO |        |        |        |        |        |        |        |        |        |        |        |        |        |
+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+----------------------------------------
+      8 |      0 |      0 |      0 |     60 |     60 |      8 |      0 |      0 |      0 |      2 |     16 |   2080 |   3840 | <- (Available Resources in this Region)
+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+----------------------------------------
+        |        |        |        |        |        |        |        |        |        |        |        |        |        | <Global clock Net Name>
+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+----------------------------------------
+     10 |      0 |      0 |      0 |      0 |      0 |      8 |      0 |      0 |      0 |      0 |      0 |    490 |   3153 |leon3mp_U0/clkm
+      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |     72 |     56 |leon3mp_U0/clkml
+      0 |      0 |      0 |      0 |      6 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |leon3mp_U0/ethi_rx_clk
+      0 |      0 |      0 |      0 |      2 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      1 |leon3mp_U0/ethi_tx_clk
+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+----------------------------------------
+     10 |      0 |      0 |      0 |      8 |      0 |      8 |      0 |      0 |      0 |      0 |      0 |    562 |   3210 | Total 
+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+----------------------------------------
+
+
+Clock-Region: <CLOCKREGION_X1Y4> 
+ key resource utilizations (used/available): global-clocks - 3/10 ;
+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+----------------------------------------
+   BRAM |    DCM |    PLL |     GT | ILOGIC | OLOGIC |   MULT |  TEMAC |    PPC |   PCIE | IDLYCT | BUFGCT | LUTRAM |     FF | <- (Types of Resources in this  Region)
+   FIFO |        |        |        |        |        |        |        |        |        |        |        |        |        |
+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+----------------------------------------
+     10 |      0 |      0 |      1 |     40 |     40 |      0 |      1 |      0 |      0 |      1 |      0 |   2400 |   4800 | <- (Available Resources in this Region)
+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+----------------------------------------
+        |        |        |        |        |        |        |        |        |        |        |        |        |        | <Global clock Net Name>
+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+----------------------------------------
+      0 |      0 |      0 |      0 |     16 |     26 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      5 |leon3mp_U0/clkace
+     10 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |    538 |   3840 |leon3mp_U0/clkm
+      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |     86 |leon3mp_U0/ethi_tx_clk
+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+----------------------------------------
+     10 |      0 |      0 |      0 |     16 |     26 |      0 |      0 |      0 |      0 |      0 |      0 |    538 |   3931 | Total 
+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+----------------------------------------
+
+
+Clock-Region: <CLOCKREGION_X0Y5> 
+ key resource utilizations (used/available): global-clocks - 5/10 ;
+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+----------------------------------------
+   BRAM |    DCM |    PLL |     GT | ILOGIC | OLOGIC |   MULT |  TEMAC |    PPC |   PCIE | IDLYCT | BUFGCT | LUTRAM |     FF | <- (Types of Resources in this  Region)
+   FIFO |        |        |        |        |        |        |        |        |        |        |        |        |        |
+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+----------------------------------------
+      8 |      2 |      1 |      0 |     60 |     60 |      8 |      0 |      0 |      0 |      2 |      0 |   2080 |   3840 | <- (Available Resources in this Region)
+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+----------------------------------------
+        |        |        |        |        |        |        |        |        |        |        |        |        |        | <Global clock Net Name>
+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+----------------------------------------
+     10 |      0 |      0 |      0 |      0 |      0 |      8 |      0 |      0 |      0 |      0 |      0 |    539 |   3097 |leon3mp_U0/clkm
+      0 |      0 |      0 |      0 |      0 |     23 |      0 |      0 |      0 |      0 |      0 |      0 |     63 |    170 |leon3mp_U0/clkml
+      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      4 |leon3mp_U0/ddrsp0.ddrc0/ddr_phy0/ddr_phy0/xc4v.ddr_phy0/clk90r
+      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |     38 |leon3mp_U0/ethi_rx_clk
+      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      8 |leon3mp_U0/ethi_tx_clk
+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+----------------------------------------
+     10 |      0 |      0 |      0 |      0 |     23 |      8 |      0 |      0 |      0 |      0 |      0 |    602 |   3317 | Total 
+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+----------------------------------------
+
+
+Clock-Region: <CLOCKREGION_X1Y5> 
+ key resource utilizations (used/available): global-clocks - 3/10 ;
+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+----------------------------------------
+   BRAM |    DCM |    PLL |     GT | ILOGIC | OLOGIC |   MULT |  TEMAC |    PPC |   PCIE | IDLYCT | BUFGCT | LUTRAM |     FF | <- (Types of Resources in this  Region)
+   FIFO |        |        |        |        |        |        |        |        |        |        |        |        |        |
+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+----------------------------------------
+     10 |      0 |      0 |      1 |     40 |     40 |      0 |      1 |      0 |      0 |      1 |      0 |   2400 |   4800 | <- (Available Resources in this Region)
+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+----------------------------------------
+        |        |        |        |        |        |        |        |        |        |        |        |        |        | <Global clock Net Name>
+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+----------------------------------------
+      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      4 |      2 |leon3mp_U0/clkace
+      8 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |    806 |   3461 |leon3mp_U0/clkm
+      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      2 |     28 |leon3mp_U0/ethi_tx_clk
+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+----------------------------------------
+      8 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |    812 |   3491 | Total 
+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+----------------------------------------
+
+
+Clock-Region: <CLOCKREGION_X0Y6> 
+ key resource utilizations (used/available): global-clocks - 8/10 ;
+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+----------------------------------------
+   BRAM |    DCM |    PLL |     GT | ILOGIC | OLOGIC |   MULT |  TEMAC |    PPC |   PCIE | IDLYCT | BUFGCT | LUTRAM |     FF | <- (Types of Resources in this  Region)
+   FIFO |        |        |        |        |        |        |        |        |        |        |        |        |        |
+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+----------------------------------------
+      8 |      4 |      2 |      0 |     40 |     40 |      8 |      0 |      0 |      0 |      1 |      0 |   2080 |   3840 | <- (Available Resources in this Region)
+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+----------------------------------------
+        |        |        |        |        |        |        |        |        |        |        |        |        |        | <Global clock Net Name>
+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+----------------------------------------
+      0 |      1 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |leon3mp_U0/clkgen0/xc5l.v/clk_k
+      6 |      0 |      0 |      0 |      0 |      0 |      6 |      0 |      0 |      0 |      0 |      0 |    406 |   3248 |leon3mp_U0/clkm
+      0 |      0 |      0 |      0 |     24 |     27 |      0 |      0 |      0 |      0 |      0 |      0 |     46 |    126 |leon3mp_U0/clkml
+      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      1 |      0 |      0 |      0 |leon3mp_U0/ddrsp0.ddrc0/ddr_phy0/ddr_phy0/xc4v.ddr_phy0/clk200
+      0 |      0 |      0 |      0 |      0 |      8 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |leon3mp_U0/ddrsp0.ddrc0/ddr_phy0/ddr_phy0/xc4v.ddr_phy0/clk90r
+      0 |      1 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |leon3mp_U0/ddrsp0.ddrc0/ddr_phy0/ddr_phy0/xc4v.ddr_phy0/mclkfb
+      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |     71 |leon3mp_U0/ethi_rx_clk
+      0 |      1 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |leon3mp_U0/lclk
+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+----------------------------------------
+      6 |      3 |      0 |      0 |     24 |     35 |      6 |      0 |      0 |      0 |      1 |      0 |    452 |   3445 | Total 
+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+----------------------------------------
+
+
+Clock-Region: <CLOCKREGION_X1Y6> 
+ key resource utilizations (used/available): global-clocks - 5/10 ;
+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+----------------------------------------
+   BRAM |    DCM |    PLL |     GT | ILOGIC | OLOGIC |   MULT |  TEMAC |    PPC |   PCIE | IDLYCT | BUFGCT | LUTRAM |     FF | <- (Types of Resources in this  Region)
+   FIFO |        |        |        |        |        |        |        |        |        |        |        |        |        |
+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+----------------------------------------
+     12 |      0 |      0 |      1 |     40 |     40 |      0 |      0 |      0 |      0 |      1 |      0 |   2400 |   4800 | <- (Available Resources in this Region)
+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+----------------------------------------
+        |        |        |        |        |        |        |        |        |        |        |        |        |        | <Global clock Net Name>
+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+----------------------------------------
+      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      2 |leon3mp_U0/clkace
+     17 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |    844 |   2893 |leon3mp_U0/clkm
+      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      8 |      4 |leon3mp_U0/clkml
+      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |     32 |leon3mp_U0/ethi_rx_clk
+      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |     35 |leon3mp_U0/ethi_tx_clk
+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+----------------------------------------
+     17 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |    852 |   2966 | Total 
+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+----------------------------------------
+
+
+Clock-Region: <CLOCKREGION_X0Y7> 
+ key resource utilizations (used/available): global-clocks - 4/10 ;
+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+----------------------------------------
+   BRAM |    DCM |    PLL |     GT | ILOGIC | OLOGIC |   MULT |  TEMAC |    PPC |   PCIE | IDLYCT | BUFGCT | LUTRAM |     FF | <- (Types of Resources in this  Region)
+   FIFO |        |        |        |        |        |        |        |        |        |        |        |        |        |
+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+----------------------------------------
+      8 |      0 |      0 |      0 |     80 |     80 |      8 |      0 |      0 |      0 |      2 |      0 |   2080 |   3840 | <- (Available Resources in this Region)
+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+----------------------------------------
+        |        |        |        |        |        |        |        |        |        |        |        |        |        | <Global clock Net Name>
+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+----------------------------------------
+      4 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |    796 |   2565 |leon3mp_U0/clkm
+      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      8 |      9 |leon3mp_U0/clkml
+      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      8 |leon3mp_U0/ddrsp0.ddrc0/ddr_phy0/ddr_phy0/xc4v.ddr_phy0/clk90r
+      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      2 |leon3mp_U0/ethi_rx_clk
+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+----------------------------------------
+      4 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |    804 |   2584 | Total 
+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+----------------------------------------
+
+
+Clock-Region: <CLOCKREGION_X1Y7> 
+ key resource utilizations (used/available): global-clocks - 3/10 ;
+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+----------------------------------------
+   BRAM |    DCM |    PLL |     GT | ILOGIC | OLOGIC |   MULT |  TEMAC |    PPC |   PCIE | IDLYCT | BUFGCT | LUTRAM |     FF | <- (Types of Resources in this  Region)
+   FIFO |        |        |        |        |        |        |        |        |        |        |        |        |        |
+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+----------------------------------------
+     12 |      0 |      0 |      1 |     40 |     40 |      0 |      0 |      0 |      0 |      1 |      0 |   2400 |   4800 | <- (Available Resources in this Region)
+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+----------------------------------------
+        |        |        |        |        |        |        |        |        |        |        |        |        |        | <Global clock Net Name>
+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+----------------------------------------
+     12 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |    222 |   2309 |leon3mp_U0/clkm
+      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      4 |leon3mp_U0/ethi_rx_clk
+      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      3 |leon3mp_U0/ethi_tx_clk
+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+----------------------------------------
+     12 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |    222 |   2316 | Total 
+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+----------------------------------------
+
+NOTE:
+The above detailed report is the initial placement of the logic after the clock region assignment. The final placement
+may be significantly different because of the various optimization steps which will follow. Specifically, logic blocks
+maybe moved to adjacent clock-regions as long as the "number of clocks per region" constraint is not violated.
+
+
+# END of Global Clock Net Loads Distribution Report:
+######################################################################################
+
+
+Phase 9.30  Global Clock Region Assignment (Checksum:77ce8f71) REAL time: 18 mins 15 secs 
+
+Phase 10.3  Local Placement Optimization
+Phase 10.3  Local Placement Optimization (Checksum:77ce8f71) REAL time: 18 mins 16 secs 
+
+Phase 11.5  Local Placement Optimization
+Phase 11.5  Local Placement Optimization (Checksum:77ce8f71) REAL time: 18 mins 20 secs 
+
+Phase 12.8  Global Placement
+...............................
+...............................................................................................................................
+....................................................................
+.................................................................................................................................................................................................
+..............................................................
+Phase 12.8  Global Placement (Checksum:f5ccbc2a) REAL time: 53 mins 53 secs 
+
+Phase 13.29  Local Placement Optimization
+Phase 13.29  Local Placement Optimization (Checksum:f5ccbc2a) REAL time: 53 mins 53 secs 
+
+Phase 14.8  Global Placement
+..........................................................................
+............................................................................................................................................................................................................
+.......................
+............................................................................................................................................................................
+........................................................................................................................................................................................
+.....................................................................
+Phase 14.8  Global Placement (Checksum:9ae2d63f) REAL time: 1 hrs 46 mins 48 secs 
+
+Phase 15.29  Local Placement Optimization
+Phase 15.29  Local Placement Optimization (Checksum:9ae2d63f) REAL time: 1 hrs 46 mins 48 secs 
+
+Phase 16.5  Local Placement Optimization
+Phase 16.5  Local Placement Optimization (Checksum:9ae2d63f) REAL time: 1 hrs 47 mins 
+
+Phase 17.18  Placement Optimization
+Phase 17.18  Placement Optimization (Checksum:a5c9547b) REAL time: 2 hrs 53 secs 
+
+Phase 18.5  Local Placement Optimization
+Phase 18.5  Local Placement Optimization (Checksum:a5c9547b) REAL time: 2 hrs 1 mins 5 secs 
+
+Phase 19.34  Placement Validation
+Phase 19.34  Placement Validation (Checksum:a5c9547b) REAL time: 2 hrs 1 mins 14 secs 
+
+Total REAL time to Placer completion: 2 hrs 1 mins 28 secs 
+Total CPU  time to Placer completion: 2 hrs 14 mins 6 secs 
+Running post-placement packing...
+Writing output files...
+
+Design Summary
+--------------
+
+Design Summary:
+Number of errors:      0
+Number of warnings:  227
+Slice Logic Utilization:
+  Number of Slice Registers:                58,115 out of  69,120   84%
+    Number used as Flip Flops:              58,114
+    Number used as Latch-thrus:                  1
+  Number of Slice LUTs:                     56,604 out of  69,120   81%
+    Number used as logic:                   52,037 out of  69,120   75%
+      Number using O6 output only:          40,371
+      Number using O5 output only:           1,202
+      Number using O5 and O6:               10,464
+    Number used as Memory:                   4,340 out of  17,920   24%
+      Number used as Dual Port RAM:          1,364
+        Number using O6 output only:         1,160
+        Number using O5 and O6:                204
+      Number used as Single Port RAM:           80
+        Number using O6 output only:            80
+      Number used as Shift Register:         2,896
+        Number using O6 output only:         2,896
+    Number used as exclusive route-thru:       227
+  Number of route-thrus:                     1,702
+    Number using O6 output only:             1,327
+    Number using O5 output only:               369
+    Number using O5 and O6:                      6
+
+Slice Logic Distribution:
+  Number of occupied Slices:                17,226 out of  17,280   99%
+  Number of LUT Flip Flop pairs used:       66,480
+    Number with an unused Flip Flop:         8,365 out of  66,480   12%
+    Number with an unused LUT:               9,876 out of  66,480   14%
+    Number of fully used LUT-FF pairs:      48,239 out of  66,480   72%
+    Number of unique control sets:           1,696
+    Number of slice register sites lost
+      to control set restrictions:           3,846 out of  69,120    5%
+
+  A LUT Flip Flop pair for this architecture represents one LUT paired with
+  one Flip Flop within a slice.  A control set is a unique combination of
+  clock, reset, set, and enable signals for a registered element.
+  The Slice Logic Distribution report is not meaningful if the design is
+  over-mapped for a non-slice resource or if Placement fails.
+  OVERMAPPING of BRAM resources should be ignored if the design is
+  over-mapped for a non-BRAM resource or if placement fails.
+
+IO Utilization:
+  Number of bonded IOBs:                       299 out of     640   46%
+    Number of LOCed IOBs:                      299 out of     299  100%
+    IOB Flip Flops:                            250
+
+Specific Feature Utilization:
+  Number of BlockRAM/FIFO:                     131 out of     148   88%
+    Number using BlockRAM only:                131
+    Total primitives used:
+      Number of 36k BlockRAM used:             110
+      Number of 18k BlockRAM used:              38
+    Total Memory used (KB):                  4,644 out of   5,328   87%
+  Number of BUFG/BUFGCTRLs:                     13 out of      32   40%
+    Number used as BUFGs:                       13
+  Number of IDELAYCTRLs:                         3 out of      22   13%
+  Number of BSCANs:                              2 out of       4   50%
+  Number of DCM_ADVs:                            5 out of      12   41%
+  Number of DSP48Es:                            48 out of      64   75%
+
+  Number of RPM macros:           24
+Average Fanout of Non-Clock Nets:                3.93
+
+Peak Memory Usage:  1418 MB
+Total REAL time to MAP completion:  2 hrs 3 mins 54 secs 
+Total CPU time to MAP completion (all processors):   2 hrs 16 mins 32 secs 
+
+Mapping completed.
+See MAP report file "proc_wrapper_FRM4X_map.mrp" for details.

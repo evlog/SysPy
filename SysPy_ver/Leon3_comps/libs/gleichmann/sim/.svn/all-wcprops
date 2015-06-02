@@ -1,0 +1,41 @@
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/svn/!svn/ver/102/SysPy/SysPy_ver/Leon3_comps/libs/gleichmann/sim
+END
+phy_ext.vhd
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/svn/!svn/ver/102/SysPy/SysPy_ver/Leon3_comps/libs/gleichmann/sim/phy_ext.vhd
+END
+vhdlsim.txt
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/svn/!svn/ver/102/SysPy/SysPy_ver/Leon3_comps/libs/gleichmann/sim/vhdlsim.txt
+END
+spi_slave_model.v
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/svn/!svn/ver/102/SysPy/SysPy_ver/Leon3_comps/libs/gleichmann/sim/spi_slave_model.v
+END
+uart_ext.vhd
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/svn/!svn/ver/102/SysPy/SysPy_ver/Leon3_comps/libs/gleichmann/sim/uart_ext.vhd
+END
+txt_util.vhd
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/svn/!svn/ver/102/SysPy/SysPy_ver/Leon3_comps/libs/gleichmann/sim/txt_util.vhd
+END
+vlogsim.txt
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/svn/!svn/ver/102/SysPy/SysPy_ver/Leon3_comps/libs/gleichmann/sim/vlogsim.txt
+END

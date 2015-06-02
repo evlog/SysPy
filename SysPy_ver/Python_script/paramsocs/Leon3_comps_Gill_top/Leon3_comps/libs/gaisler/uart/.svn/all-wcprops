@@ -1,0 +1,119 @@
+K 25
+svn:wc:ra_dav:version-url
+V 108
+/svn/!svn/ver/102/SysPy/SysPy_ver/Python_script/paramsocs/Leon3_comps_Gill_top/Leon3_comps/libs/gaisler/uart
+END
+uart1.in.vhd
+K 25
+svn:wc:ra_dav:version-url
+V 121
+/svn/!svn/ver/102/SysPy/SysPy_ver/Python_script/paramsocs/Leon3_comps_Gill_top/Leon3_comps/libs/gaisler/uart/uart1.in.vhd
+END
+uart2.in.vhd
+K 25
+svn:wc:ra_dav:version-url
+V 121
+/svn/!svn/ver/102/SysPy/SysPy_ver/Python_script/paramsocs/Leon3_comps_Gill_top/Leon3_comps/libs/gaisler/uart/uart2.in.vhd
+END
+uart1.in.h
+K 25
+svn:wc:ra_dav:version-url
+V 119
+/svn/!svn/ver/102/SysPy/SysPy_ver/Python_script/paramsocs/Leon3_comps_Gill_top/Leon3_comps/libs/gaisler/uart/uart1.in.h
+END
+dcom.in
+K 25
+svn:wc:ra_dav:version-url
+V 116
+/svn/!svn/ver/102/SysPy/SysPy_ver/Python_script/paramsocs/Leon3_comps_Gill_top/Leon3_comps/libs/gaisler/uart/dcom.in
+END
+uart2.in.h
+K 25
+svn:wc:ra_dav:version-url
+V 119
+/svn/!svn/ver/102/SysPy/SysPy_ver/Python_script/paramsocs/Leon3_comps_Gill_top/Leon3_comps/libs/gaisler/uart/uart2.in.h
+END
+uart1.in.help
+K 25
+svn:wc:ra_dav:version-url
+V 122
+/svn/!svn/ver/102/SysPy/SysPy_ver/Python_script/paramsocs/Leon3_comps_Gill_top/Leon3_comps/libs/gaisler/uart/uart1.in.help
+END
+libdcom.vhd
+K 25
+svn:wc:ra_dav:version-url
+V 120
+/svn/!svn/ver/102/SysPy/SysPy_ver/Python_script/paramsocs/Leon3_comps_Gill_top/Leon3_comps/libs/gaisler/uart/libdcom.vhd
+END
+uart2.in.help
+K 25
+svn:wc:ra_dav:version-url
+V 122
+/svn/!svn/ver/102/SysPy/SysPy_ver/Python_script/paramsocs/Leon3_comps_Gill_top/Leon3_comps/libs/gaisler/uart/uart2.in.help
+END
+uart.vhd
+K 25
+svn:wc:ra_dav:version-url
+V 117
+/svn/!svn/ver/102/SysPy/SysPy_ver/Python_script/paramsocs/Leon3_comps_Gill_top/Leon3_comps/libs/gaisler/uart/uart.vhd
+END
+dcom_uart.vhd
+K 25
+svn:wc:ra_dav:version-url
+V 122
+/svn/!svn/ver/102/SysPy/SysPy_ver/Python_script/paramsocs/Leon3_comps_Gill_top/Leon3_comps/libs/gaisler/uart/dcom_uart.vhd
+END
+uart1.in
+K 25
+svn:wc:ra_dav:version-url
+V 117
+/svn/!svn/ver/102/SysPy/SysPy_ver/Python_script/paramsocs/Leon3_comps_Gill_top/Leon3_comps/libs/gaisler/uart/uart1.in
+END
+uart2.in
+K 25
+svn:wc:ra_dav:version-url
+V 117
+/svn/!svn/ver/102/SysPy/SysPy_ver/Python_script/paramsocs/Leon3_comps_Gill_top/Leon3_comps/libs/gaisler/uart/uart2.in
+END
+dcom.vhd
+K 25
+svn:wc:ra_dav:version-url
+V 117
+/svn/!svn/ver/102/SysPy/SysPy_ver/Python_script/paramsocs/Leon3_comps_Gill_top/Leon3_comps/libs/gaisler/uart/dcom.vhd
+END
+vhdlsyn.txt
+K 25
+svn:wc:ra_dav:version-url
+V 120
+/svn/!svn/ver/102/SysPy/SysPy_ver/Python_script/paramsocs/Leon3_comps_Gill_top/Leon3_comps/libs/gaisler/uart/vhdlsyn.txt
+END
+ahbuart.vhd
+K 25
+svn:wc:ra_dav:version-url
+V 120
+/svn/!svn/ver/102/SysPy/SysPy_ver/Python_script/paramsocs/Leon3_comps_Gill_top/Leon3_comps/libs/gaisler/uart/ahbuart.vhd
+END
+dcom.in.vhd
+K 25
+svn:wc:ra_dav:version-url
+V 120
+/svn/!svn/ver/102/SysPy/SysPy_ver/Python_script/paramsocs/Leon3_comps_Gill_top/Leon3_comps/libs/gaisler/uart/dcom.in.vhd
+END
+dcom.in.h
+K 25
+svn:wc:ra_dav:version-url
+V 118
+/svn/!svn/ver/102/SysPy/SysPy_ver/Python_script/paramsocs/Leon3_comps_Gill_top/Leon3_comps/libs/gaisler/uart/dcom.in.h
+END
+dcom.in.help
+K 25
+svn:wc:ra_dav:version-url
+V 121
+/svn/!svn/ver/102/SysPy/SysPy_ver/Python_script/paramsocs/Leon3_comps_Gill_top/Leon3_comps/libs/gaisler/uart/dcom.in.help
+END
+apbuart.vhd
+K 25
+svn:wc:ra_dav:version-url
+V 120
+/svn/!svn/ver/102/SysPy/SysPy_ver/Python_script/paramsocs/Leon3_comps_Gill_top/Leon3_comps/libs/gaisler/uart/apbuart.vhd
+END

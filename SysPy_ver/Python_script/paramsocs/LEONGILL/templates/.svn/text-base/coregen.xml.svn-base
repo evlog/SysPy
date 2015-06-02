@@ -1,0 +1,380 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RootFolder label="COREGEN" treetype="folder" language="COREGEN">
+	<Folder label="VERILOG Component Instantiation" treetype="folder">
+		<Template label="addnewflt" treetype="template">
+ 
+ 
+// The following must be inserted into your Verilog file for this
+// core to be instantiated. Change the instance name and port connections
+// (in parentheses) to your own signal names.
+ 
+addnewflt YourInstanceName (
+    .a(a), // Bus [31 : 0] 
+    .b(b), // Bus [31 : 0] 
+    .operation(operation), // Bus [5 : 0] 
+    .clk(clk),
+    .sclr(sclr),
+    .ce(ce),
+    .result(result), // Bus [31 : 0] 
+    .rdy(rdy));
+
+ 
+		</Template>
+		<Template label="newmultflt" treetype="template">
+ 
+ 
+// The following must be inserted into your Verilog file for this
+// core to be instantiated. Change the instance name and port connections
+// (in parentheses) to your own signal names.
+ 
+newmultflt YourInstanceName (
+    .a(a), // Bus [31 : 0] 
+    .b(b), // Bus [31 : 0] 
+    .clk(clk),
+    .sclr(sclr),
+    .ce(ce),
+    .result(result), // Bus [31 : 0] 
+    .rdy(rdy));
+
+ 
+		</Template>
+		<Template label="fixtoflt" treetype="template">
+ 
+ 
+// The following must be inserted into your Verilog file for this
+// core to be instantiated. Change the instance name and port connections
+// (in parentheses) to your own signal names.
+ 
+fixtoflt YourInstanceName (
+    .a(a), // Bus [31 : 0] 
+    .clk(clk),
+    .sclr(sclr),
+    .ce(ce),
+    .result(result), // Bus [31 : 0] 
+    .rdy(rdy));
+
+ 
+		</Template>
+		<Template label="minuslnx" treetype="template">
+ 
+ 
+// The following must be inserted into your Verilog file for this
+// core to be instantiated. Change the instance name and port connections
+// (in parentheses) to your own signal names.
+ 
+minuslnx YourInstanceName (
+    .a(a), // Bus [31 : 0] 
+    .b(b), // Bus [31 : 0] 
+    .operation(operation), // Bus [5 : 0] 
+    .clk(clk),
+    .sclr(sclr),
+    .ce(ce),
+    .result(result), // Bus [31 : 0] 
+    .rdy(rdy));
+
+ 
+		</Template>
+		<Template label="divflt2" treetype="template">
+ 
+ 
+// The following must be inserted into your Verilog file for this
+// core to be instantiated. Change the instance name and port connections
+// (in parentheses) to your own signal names.
+ 
+divflt2 YourInstanceName (
+    .a(a), // Bus [31 : 0] 
+    .b(b), // Bus [31 : 0] 
+    .clk(clk),
+    .sclr(sclr),
+    .ce(ce),
+    .result(result), // Bus [31 : 0] 
+    .rdy(rdy));
+
+ 
+		</Template>
+		<Template label="addingnewflt" treetype="template">
+ 
+ 
+// The following must be inserted into your Verilog file for this
+// core to be instantiated. Change the instance name and port connections
+// (in parentheses) to your own signal names.
+ 
+addingnewflt YourInstanceName (
+    .a(a), // Bus [31 : 0] 
+    .b(b), // Bus [31 : 0] 
+    .operation(operation), // Bus [5 : 0] 
+    .clk(clk),
+    .sclr(sclr),
+    .ce(ce),
+    .result(result), // Bus [31 : 0] 
+    .rdy(rdy));
+
+ 
+		</Template>
+		<Template label="subnewflt" treetype="template">
+ 
+ 
+// The following must be inserted into your Verilog file for this
+// core to be instantiated. Change the instance name and port connections
+// (in parentheses) to your own signal names.
+ 
+subnewflt YourInstanceName (
+    .a(a), // Bus [31 : 0] 
+    .b(b), // Bus [31 : 0] 
+    .operation(operation), // Bus [5 : 0] 
+    .clk(clk),
+    .sclr(sclr),
+    .ce(ce),
+    .result(result), // Bus [31 : 0] 
+    .rdy(rdy));
+
+ 
+		</Template>
+	</Folder>
+	<Folder label="VHDL Component Instantiation" treetype="folder">
+		<Template label="addnewflt" treetype="template">
+ 
+ 
+-- The following code must appear in the VHDL architecture header:
+ 
+component addnewflt
+    port (
+    a: IN std_logic_VECTOR(31 downto 0);
+    b: IN std_logic_VECTOR(31 downto 0);
+    operation: IN std_logic_VECTOR(5 downto 0);
+    clk: IN std_logic;
+    sclr: IN std_logic;
+    ce: IN std_logic;
+    result: OUT std_logic_VECTOR(31 downto 0);
+    rdy: OUT std_logic);
+end component;
+
+
+ 
+-------------------------------------------------------------
+ 
+-- The following code must appear in the VHDL architecture body.
+-- Substitute your own instance name and net names.
+ 
+your_instance_name : addnewflt
+        port map (
+            a =&gt; a,
+            b =&gt; b,
+            operation =&gt; operation,
+            clk =&gt; clk,
+            sclr =&gt; sclr,
+            ce =&gt; ce,
+            result =&gt; result,
+            rdy =&gt; rdy);
+ 
+		</Template>
+		<Template label="newmultflt" treetype="template">
+ 
+ 
+-- The following code must appear in the VHDL architecture header:
+ 
+component newmultflt
+    port (
+    a: IN std_logic_VECTOR(31 downto 0);
+    b: IN std_logic_VECTOR(31 downto 0);
+    clk: IN std_logic;
+    sclr: IN std_logic;
+    ce: IN std_logic;
+    result: OUT std_logic_VECTOR(31 downto 0);
+    rdy: OUT std_logic);
+end component;
+
+
+ 
+-------------------------------------------------------------
+ 
+-- The following code must appear in the VHDL architecture body.
+-- Substitute your own instance name and net names.
+ 
+your_instance_name : newmultflt
+        port map (
+            a =&gt; a,
+            b =&gt; b,
+            clk =&gt; clk,
+            sclr =&gt; sclr,
+            ce =&gt; ce,
+            result =&gt; result,
+            rdy =&gt; rdy);
+ 
+		</Template>
+		<Template label="fixtoflt" treetype="template">
+ 
+ 
+-- The following code must appear in the VHDL architecture header:
+ 
+component fixtoflt
+    port (
+    a: IN std_logic_VECTOR(31 downto 0);
+    clk: IN std_logic;
+    sclr: IN std_logic;
+    ce: IN std_logic;
+    result: OUT std_logic_VECTOR(31 downto 0);
+    rdy: OUT std_logic);
+end component;
+
+
+ 
+-------------------------------------------------------------
+ 
+-- The following code must appear in the VHDL architecture body.
+-- Substitute your own instance name and net names.
+ 
+your_instance_name : fixtoflt
+        port map (
+            a =&gt; a,
+            clk =&gt; clk,
+            sclr =&gt; sclr,
+            ce =&gt; ce,
+            result =&gt; result,
+            rdy =&gt; rdy);
+ 
+		</Template>
+		<Template label="minuslnx" treetype="template">
+ 
+ 
+-- The following code must appear in the VHDL architecture header:
+ 
+component minuslnx
+    port (
+    a: IN std_logic_VECTOR(31 downto 0);
+    b: IN std_logic_VECTOR(31 downto 0);
+    operation: IN std_logic_VECTOR(5 downto 0);
+    clk: IN std_logic;
+    sclr: IN std_logic;
+    ce: IN std_logic;
+    result: OUT std_logic_VECTOR(31 downto 0);
+    rdy: OUT std_logic);
+end component;
+
+
+ 
+-------------------------------------------------------------
+ 
+-- The following code must appear in the VHDL architecture body.
+-- Substitute your own instance name and net names.
+ 
+your_instance_name : minuslnx
+        port map (
+            a =&gt; a,
+            b =&gt; b,
+            operation =&gt; operation,
+            clk =&gt; clk,
+            sclr =&gt; sclr,
+            ce =&gt; ce,
+            result =&gt; result,
+            rdy =&gt; rdy);
+ 
+		</Template>
+		<Template label="divflt2" treetype="template">
+ 
+ 
+-- The following code must appear in the VHDL architecture header:
+ 
+component divflt2
+    port (
+    a: IN std_logic_VECTOR(31 downto 0);
+    b: IN std_logic_VECTOR(31 downto 0);
+    clk: IN std_logic;
+    sclr: IN std_logic;
+    ce: IN std_logic;
+    result: OUT std_logic_VECTOR(31 downto 0);
+    rdy: OUT std_logic);
+end component;
+
+
+ 
+-------------------------------------------------------------
+ 
+-- The following code must appear in the VHDL architecture body.
+-- Substitute your own instance name and net names.
+ 
+your_instance_name : divflt2
+        port map (
+            a =&gt; a,
+            b =&gt; b,
+            clk =&gt; clk,
+            sclr =&gt; sclr,
+            ce =&gt; ce,
+            result =&gt; result,
+            rdy =&gt; rdy);
+ 
+		</Template>
+		<Template label="addingnewflt" treetype="template">
+ 
+ 
+-- The following code must appear in the VHDL architecture header:
+ 
+component addingnewflt
+    port (
+    a: IN std_logic_VECTOR(31 downto 0);
+    b: IN std_logic_VECTOR(31 downto 0);
+    operation: IN std_logic_VECTOR(5 downto 0);
+    clk: IN std_logic;
+    sclr: IN std_logic;
+    ce: IN std_logic;
+    result: OUT std_logic_VECTOR(31 downto 0);
+    rdy: OUT std_logic);
+end component;
+
+
+ 
+-------------------------------------------------------------
+ 
+-- The following code must appear in the VHDL architecture body.
+-- Substitute your own instance name and net names.
+ 
+your_instance_name : addingnewflt
+        port map (
+            a =&gt; a,
+            b =&gt; b,
+            operation =&gt; operation,
+            clk =&gt; clk,
+            sclr =&gt; sclr,
+            ce =&gt; ce,
+            result =&gt; result,
+            rdy =&gt; rdy);
+ 
+		</Template>
+		<Template label="subnewflt" treetype="template">
+ 
+ 
+-- The following code must appear in the VHDL architecture header:
+ 
+component subnewflt
+    port (
+    a: IN std_logic_VECTOR(31 downto 0);
+    b: IN std_logic_VECTOR(31 downto 0);
+    operation: IN std_logic_VECTOR(5 downto 0);
+    clk: IN std_logic;
+    sclr: IN std_logic;
+    ce: IN std_logic;
+    result: OUT std_logic_VECTOR(31 downto 0);
+    rdy: OUT std_logic);
+end component;
+
+
+ 
+-------------------------------------------------------------
+ 
+-- The following code must appear in the VHDL architecture body.
+-- Substitute your own instance name and net names.
+ 
+your_instance_name : subnewflt
+        port map (
+            a =&gt; a,
+            b =&gt; b,
+            operation =&gt; operation,
+            clk =&gt; clk,
+            sclr =&gt; sclr,
+            ce =&gt; ce,
+            result =&gt; result,
+            rdy =&gt; rdy);
+ 
+		</Template>
+	</Folder>
+</RootFolder>

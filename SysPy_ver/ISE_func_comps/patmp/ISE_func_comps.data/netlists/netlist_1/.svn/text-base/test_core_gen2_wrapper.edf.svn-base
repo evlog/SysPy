@@ -1,0 +1,378 @@
+(edif test_core_gen2_wrapper
+  (edifversion 2 0 0)
+  (edifLevel 0)
+  (keywordmap (keywordlevel 0))
+(status
+ (written
+  (timeStamp 2010 03 10 14 55 52)
+  (program "PlanAhead" (version "11.1"))
+  (comment "Built on 'Thu Mar  5 11:05:08 PST 2009'")
+  (comment "Built by 'hdbuild'")
+ )
+)
+  (Library hdi_primitives
+    (edifLevel 0)
+    (technology (numberDefinition ))
+   (cell IBUF (celltype GENERIC)
+     (view view_1 (viewtype NETLIST)
+       (interface 
+        (port I (direction INPUT))
+        (port O (direction OUTPUT))
+       )
+
+           (property TYPE (string "IBUF"))
+           (property XSTLIB (boolean (true)))
+     )
+   )
+   (cell OBUF (celltype GENERIC)
+     (view view_1 (viewtype NETLIST)
+       (interface 
+        (port I (direction INPUT))
+        (port O (direction OUTPUT))
+       )
+
+           (property TYPE (string "OBUF"))
+           (property XSTLIB (boolean (true)))
+     )
+   )
+   (cell VCC (celltype GENERIC)
+     (view view_1 (viewtype NETLIST)
+       (interface 
+        (port P (direction OUTPUT))
+       )
+
+           (property TYPE (string "VCC"))
+     )
+   )
+   (cell GND (celltype GENERIC)
+     (view view_1 (viewtype NETLIST)
+       (interface 
+        (port G (direction OUTPUT))
+       )
+
+           (property TYPE (string "GND"))
+     )
+   )
+   (cell XORCY (celltype GENERIC)
+     (view view_1 (viewtype NETLIST)
+       (interface 
+        (port CI (direction INPUT))
+        (port LI (direction INPUT))
+        (port O (direction OUTPUT))
+       )
+
+           (property TYPE (string "XORCY"))
+           (property XSTLIB (boolean (true)))
+     )
+   )
+   (cell MUXCY (celltype GENERIC)
+     (view view_1 (viewtype NETLIST)
+       (interface 
+        (port CI (direction INPUT))
+        (port DI (direction INPUT))
+        (port S (direction INPUT))
+        (port O (direction OUTPUT))
+       )
+
+           (property TYPE (string "MUXCY"))
+           (property XSTLIB (boolean (true)))
+     )
+   )
+   (cell LUT2 (celltype GENERIC)
+     (view view_1 (viewtype NETLIST)
+       (interface 
+        (port I0 (direction INPUT))
+        (port I1 (direction INPUT))
+        (port O (direction OUTPUT))
+       )
+
+           (property TYPE (string "LUT2"))
+           (property XSTLIB (boolean (true)))
+     )
+   )
+   (cell LUT3 (celltype GENERIC)
+     (view view_1 (viewtype NETLIST)
+       (interface 
+        (port I0 (direction INPUT))
+        (port I1 (direction INPUT))
+        (port I2 (direction INPUT))
+        (port O (direction OUTPUT))
+       )
+
+           (property TYPE (string "LUT3"))
+           (property XSTLIB (boolean (true)))
+     )
+   )
+   (cell LUT4 (celltype GENERIC)
+     (view view_1 (viewtype NETLIST)
+       (interface 
+        (port I0 (direction INPUT))
+        (port I1 (direction INPUT))
+        (port I2 (direction INPUT))
+        (port I3 (direction INPUT))
+        (port O (direction OUTPUT))
+       )
+
+           (property TYPE (string "LUT4"))
+           (property XSTLIB (boolean (true)))
+     )
+   )
+   (cell INV (celltype GENERIC)
+     (view view_1 (viewtype NETLIST)
+       (interface 
+        (port I (direction INPUT))
+        (port O (direction OUTPUT))
+       )
+
+           (property TYPE (string "INV"))
+           (property XSTLIB (boolean (true)))
+     )
+   )
+   (cell MUXF5 (celltype GENERIC)
+     (view view_1 (viewtype NETLIST)
+       (interface 
+        (port I0 (direction INPUT))
+        (port I1 (direction INPUT))
+        (port S (direction INPUT))
+        (port O (direction OUTPUT))
+       )
+
+           (property TYPE (string "MUXF5"))
+           (property XSTLIB (boolean (true)))
+     )
+   )
+  )
+  (Library test_core_gen2_lib
+    (edifLevel 0)
+    (technology (numberDefinition ))
+   (cell test_core_gen2 (celltype GENERIC)
+     (view view_1 (viewtype NETLIST)
+       (interface 
+        (port (array x_out 5) (direction OUTPUT)
+        )
+        (port (array x_in 8) (direction INPUT)
+        )
+       )
+
+           (property NLW_MACRO_TAG (integer 0))
+           (property X_CORE_INFO (string "cordic_v4_0, Xilinx CORE Generator 11.1"))
+           (property BUS_INFO (string "8:INPUT:x_in<7:0>"))
+           (property NLW_UNIQUE_ID (integer 0))
+           (property NLW_MACRO_ALIAS (string "test_core_gen2_test_core_gen2"))
+           (property TYPE (string "test_core_gen2"))
+     )
+   )
+  )
+  (Library test_core_gen2_wrapper_lib
+    (edifLevel 0)
+    (technology (numberDefinition ))
+   (cell test_core_gen2_wrapper (celltype GENERIC)
+     (view view_1 (viewtype NETLIST)
+       (interface 
+        (port (array x_out 5) (direction OUTPUT)
+        )
+        (port (array x_in 8) (direction INPUT)
+        )
+       )
+       (contents
+         (instance x_in_3_IBUF (viewref view_1 (cellref IBUF (libraryref hdi_primitives)))
+           (property XSTLIB (boolean (true)))
+         )
+         (instance x_out_2_OBUF (viewref view_1 (cellref OBUF (libraryref hdi_primitives)))
+           (property XSTLIB (boolean (true)))
+         )
+         (instance x_in_4_IBUF (viewref view_1 (cellref IBUF (libraryref hdi_primitives)))
+           (property XSTLIB (boolean (true)))
+         )
+         (instance x_out_3_OBUF (viewref view_1 (cellref OBUF (libraryref hdi_primitives)))
+           (property XSTLIB (boolean (true)))
+         )
+         (instance x_in_5_IBUF (viewref view_1 (cellref IBUF (libraryref hdi_primitives)))
+           (property XSTLIB (boolean (true)))
+         )
+         (instance x_in_0_IBUF (viewref view_1 (cellref IBUF (libraryref hdi_primitives)))
+           (property XSTLIB (boolean (true)))
+         )
+         (instance x_out_4_OBUF (viewref view_1 (cellref OBUF (libraryref hdi_primitives)))
+           (property XSTLIB (boolean (true)))
+         )
+         (instance sqrt_comp (viewref view_1 (cellref test_core_gen2 (libraryref test_core_gen2_lib)))
+           (property BUS_INFO (string "8:INPUT:x_in<7:0>"))
+         )
+         (instance x_in_6_IBUF (viewref view_1 (cellref IBUF (libraryref hdi_primitives)))
+           (property XSTLIB (boolean (true)))
+         )
+         (instance x_in_1_IBUF (viewref view_1 (cellref IBUF (libraryref hdi_primitives)))
+           (property XSTLIB (boolean (true)))
+         )
+         (instance x_out_0_OBUF (viewref view_1 (cellref OBUF (libraryref hdi_primitives)))
+           (property XSTLIB (boolean (true)))
+         )
+         (instance x_in_7_IBUF (viewref view_1 (cellref IBUF (libraryref hdi_primitives)))
+           (property XSTLIB (boolean (true)))
+         )
+         (instance x_in_2_IBUF (viewref view_1 (cellref IBUF (libraryref hdi_primitives)))
+           (property XSTLIB (boolean (true)))
+         )
+         (instance x_out_1_OBUF (viewref view_1 (cellref OBUF (libraryref hdi_primitives)))
+           (property XSTLIB (boolean (true)))
+         )
+         (net (rename x_in_1_ "x_in[1]") (joined
+          (portref I (instanceref x_in_1_IBUF))
+          (portref (member x_in 1))
+          )
+
+         )
+         (net x_in_3_IBUF (joined
+          (portref (member x_in 3) (instanceref sqrt_comp))
+          (portref O (instanceref x_in_3_IBUF))
+          )
+         )
+         (net (rename x_in_2_ "x_in[2]") (joined
+          (portref I (instanceref x_in_2_IBUF))
+          (portref (member x_in 2))
+          )
+
+         )
+         (net (rename x_in_3_ "x_in[3]") (joined
+          (portref I (instanceref x_in_3_IBUF))
+          (portref (member x_in 3))
+          )
+
+         )
+         (net x_out_2_OBUF (joined
+          (portref (member x_out 2) (instanceref sqrt_comp))
+          (portref I (instanceref x_out_2_OBUF))
+          )
+         )
+         (net (rename x_in_4_ "x_in[4]") (joined
+          (portref I (instanceref x_in_4_IBUF))
+          (portref (member x_in 4))
+          )
+
+         )
+         (net (rename x_in_5_ "x_in[5]") (joined
+          (portref I (instanceref x_in_5_IBUF))
+          (portref (member x_in 5))
+          )
+
+         )
+         (net (rename x_out_0_ "x_out[0]") (joined
+          (portref O (instanceref x_out_0_OBUF))
+          (portref (member x_out 0))
+          )
+
+         )
+         (net (rename x_in_6_ "x_in[6]") (joined
+          (portref I (instanceref x_in_6_IBUF))
+          (portref (member x_in 6))
+          )
+
+         )
+         (net (rename x_out_1_ "x_out[1]") (joined
+          (portref O (instanceref x_out_1_OBUF))
+          (portref (member x_out 1))
+          )
+
+         )
+         (net (rename x_in_7_ "x_in[7]") (joined
+          (portref I (instanceref x_in_7_IBUF))
+          (portref (member x_in 7))
+          )
+
+         )
+         (net (rename x_out_2_ "x_out[2]") (joined
+          (portref O (instanceref x_out_2_OBUF))
+          (portref (member x_out 2))
+          )
+
+         )
+         (net (rename x_out_3_ "x_out[3]") (joined
+          (portref O (instanceref x_out_3_OBUF))
+          (portref (member x_out 3))
+          )
+
+         )
+         (net x_in_4_IBUF (joined
+          (portref (member x_in 4) (instanceref sqrt_comp))
+          (portref O (instanceref x_in_4_IBUF))
+          )
+         )
+         (net (rename x_out_4_ "x_out[4]") (joined
+          (portref O (instanceref x_out_4_OBUF))
+          (portref (member x_out 4))
+          )
+
+         )
+         (net x_out_3_OBUF (joined
+          (portref (member x_out 3) (instanceref sqrt_comp))
+          (portref I (instanceref x_out_3_OBUF))
+          )
+         )
+         (net x_in_5_IBUF (joined
+          (portref (member x_in 5) (instanceref sqrt_comp))
+          (portref O (instanceref x_in_5_IBUF))
+          )
+         )
+         (net x_in_0_IBUF (joined
+          (portref (member x_in 0) (instanceref sqrt_comp))
+          (portref O (instanceref x_in_0_IBUF))
+          )
+         )
+         (net x_out_4_OBUF (joined
+          (portref (member x_out 4) (instanceref sqrt_comp))
+          (portref I (instanceref x_out_4_OBUF))
+          )
+         )
+         (net x_in_6_IBUF (joined
+          (portref (member x_in 6) (instanceref sqrt_comp))
+          (portref O (instanceref x_in_6_IBUF))
+          )
+         )
+         (net x_in_1_IBUF (joined
+          (portref (member x_in 1) (instanceref sqrt_comp))
+          (portref O (instanceref x_in_1_IBUF))
+          )
+         )
+         (net x_out_0_OBUF (joined
+          (portref (member x_out 0) (instanceref sqrt_comp))
+          (portref I (instanceref x_out_0_OBUF))
+          )
+         )
+         (net x_in_7_IBUF (joined
+          (portref (member x_in 7) (instanceref sqrt_comp))
+          (portref O (instanceref x_in_7_IBUF))
+          )
+         )
+         (net x_in_2_IBUF (joined
+          (portref (member x_in 2) (instanceref sqrt_comp))
+          (portref O (instanceref x_in_2_IBUF))
+          )
+         )
+         (net x_out_1_OBUF (joined
+          (portref (member x_out 1) (instanceref sqrt_comp))
+          (portref I (instanceref x_out_1_OBUF))
+          )
+         )
+         (net (rename x_in_0_ "x_in[0]") (joined
+          (portref I (instanceref x_in_0_IBUF))
+          (portref (member x_in 0))
+          )
+
+         )
+       )
+
+           (property NLW_MACRO_TAG (integer 0))
+           (property BUS_INFO (string "8:INPUT:x_in<7:0>"))
+           (property NLW_UNIQUE_ID (integer 0))
+           (property NLW_MACRO_ALIAS (string "test_core_gen2_wrapper_test_core_gen2_wrapper"))
+           (property TYPE (string "test_core_gen2_wrapper"))
+     )
+   )
+  )
+(comment "Reference To The Cell Of Highest Level")
+
+  (design test_core_gen2_wrapper
+    (cellref test_core_gen2_wrapper (libraryref test_core_gen2_wrapper_lib))
+  )
+)

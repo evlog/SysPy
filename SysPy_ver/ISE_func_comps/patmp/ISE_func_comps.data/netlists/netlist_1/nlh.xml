@@ -1,0 +1,8 @@
+<?xml version="1.0"?>
+<NetlistInfo Version="1" Minor="6">
+	<NetlistHandle Name="netlist_1" TargetPart="xc3s1000fg320-5" TopFile="test_core_gen2_wrapper.edf">
+		<Search Path="/media/My Passport/work/PhD/myHDL_tests/my_conversion/Plex_test/new_code_2/ISE_func_comps"/>
+		<Search Path="ipcore_dir"/>
+	</NetlistHandle>
+</NetlistInfo>
+

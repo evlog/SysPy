@@ -1,0 +1,35 @@
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/svn/!svn/ver/102/SysPy/SysPy_ver/Leon3_comps/libs/techmap/cycloneiii
+END
+cycloneiii_ddr_phy.vhd
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/svn/!svn/ver/102/SysPy/SysPy_ver/Leon3_comps/libs/techmap/cycloneiii/cycloneiii_ddr_phy.vhd
+END
+ddr_phy_cycloneiii.vhd
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/svn/!svn/ver/102/SysPy/SysPy_ver/Leon3_comps/libs/techmap/cycloneiii/ddr_phy_cycloneiii.vhd
+END
+vhdlsim.txt
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/svn/!svn/ver/102/SysPy/SysPy_ver/Leon3_comps/libs/techmap/cycloneiii/vhdlsim.txt
+END
+vhdlsyn.txt
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/svn/!svn/ver/102/SysPy/SysPy_ver/Leon3_comps/libs/techmap/cycloneiii/vhdlsyn.txt
+END
+cycloneiii_clkgen.vhd
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/svn/!svn/ver/102/SysPy/SysPy_ver/Leon3_comps/libs/techmap/cycloneiii/cycloneiii_clkgen.vhd
+END

@@ -1,0 +1,46 @@
+def dataflow_oper_check(token_struct, oper_supp):
+       """
+       FUNCTION: dataflow_oper_check(a(), b[])
+              a: token's tupple
+              b: supported operators list
+              
+       - Checking operators dataflow signal assignments.
+       """
+       
+# Python's variable declerations
+#----------------------------------------------------------------------------------------------------------------------------------
+
+#----------------------------------------------------------------------------------------------------------------------------------
+
+       operator = token_struct[1]
+      
+## raising exeptions if a tracked arithmetic operator is not supported
+#----------------------------------------------------------------------------------------------------------------------------------         
+       flag_oper = 0
+       if ((token_struct[0] == "arithm_oper") or (token_struct[0] == "shift_left_oper") or (token_struct[0] == "shift_right_oper")):
+              for i in range (0, len(oper_supp)):
+                     if (operator == oper_supp[i]):
+                            flag_oper = 1
+
+              if (flag_oper == 0):
+                     pos = token_struct[2]
+                     raise "Line " + str(pos) + ": arithmetic operator " + operator + " not supported."
+#----------------------------------------------------------------------------------------------------------------------------------
+
+## raising exeptions if a tracked logic operator is not supported
+#----------------------------------------------------------------------------------------------------------------------------------         
+       flag_oper = 0
+       if (token_struct[0] == "logic_oper"):
+              for i in range (0, len(oper_supp)):
+                     if (operator == oper_supp[i]):
+                            flag_oper = 1
+
+              if (flag_oper == 0):
+                     pos = token_struct[2]
+                     raise "Line " + str(pos) + ": logic operator " + operator + " not supported."
+#----------------------------------------------------------------------------------------------------------------------------------    
+
+
+
+
+

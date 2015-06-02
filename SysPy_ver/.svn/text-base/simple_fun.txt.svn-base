@@ -1,0 +1,23 @@
+library IEEE;
+use ieee.std_logic_1164.all;
+use ieee.std_logic_arith.all;
+use ieee.std_logic_unsigned.all;
+
+entity simple_fun is
+	port (
+		x: in std_logic;
+		y: in std_logic;
+		y1: in std_logic_vector(3 downto 0);
+		z: out std_logic_vector(3 downto 0);
+		clk: in std_logic;
+		rst: in std_logic);
+end simple_fun;
+
+architecture simple_fun_arch of simple_fun is 
+
+type state_type0 is (s0, s1, s2, s3);
+signal state: state_type0;
+signal z1: std_logic_vector(3 downto 0) := "0011";
+
+begin
+

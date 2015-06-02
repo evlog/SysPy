@@ -1,0 +1,73 @@
+--------------------------------------------------------------------------------
+Release 11.1 Trace  (lin)
+Copyright (c) 1995-2009 Xilinx, Inc.  All rights reserved.
+
+/media/4DC444747164E7E6/Xilinx_11.1_Ubuntu/ISE/bin/lin/unwrapped/trce -ise
+/media/My Passport/work/PhD/myHDL_tests/my_conversion/Plex_test/new_code_2/ISE_func_comps/ISE_func_comps.ise
+-intstyle ise -v 3 -s 5 -fastpaths -xml test_core_gen2_wrapper.twx
+test_core_gen2_wrapper.ncd -o test_core_gen2_wrapper.twr
+test_core_gen2_wrapper.pcf -ucf test_core_gen2_wrapper.ucf
+
+Design file:              test_core_gen2_wrapper.ncd
+Physical constraint file: test_core_gen2_wrapper.pcf
+Device,package,speed:     xc3s1000,fg320,-5 (PRODUCTION 1.39 2009-03-03)
+Report level:             verbose report
+
+Environment Variable      Effect 
+--------------------      ------ 
+NONE                      No environment variables were set
+--------------------------------------------------------------------------------
+
+INFO:Timing:2698 - No timing constraints found, doing default enumeration.
+INFO:Timing:2752 - To get complete path coverage, use the unconstrained paths 
+   option. All paths that are not constrained will be reported in the 
+   unconstrained paths section(s) of the report.
+INFO:Timing:3339 - The clock-to-out numbers in this timing report are based on 
+   a 50 Ohm transmission line loading model.  For the details of this model, 
+   and for more information on accounting for different loading conditions, 
+   please see the device datasheet.
+
+
+
+Data Sheet report:
+-----------------
+All values displayed in nanoseconds (ns)
+
+Pad to Pad
+---------------+---------------+---------+
+Source Pad     |Destination Pad|  Delay  |
+---------------+---------------+---------+
+x_in<0>        |x_out<0>       |    8.420|
+x_in<1>        |x_out<0>       |    8.473|
+x_in<2>        |x_out<0>       |   12.232|
+x_in<2>        |x_out<1>       |    8.426|
+x_in<3>        |x_out<0>       |   12.596|
+x_in<3>        |x_out<1>       |    8.790|
+x_in<4>        |x_out<0>       |   15.952|
+x_in<4>        |x_out<1>       |   12.146|
+x_in<4>        |x_out<2>       |    8.809|
+x_in<5>        |x_out<0>       |   16.046|
+x_in<5>        |x_out<1>       |   12.240|
+x_in<5>        |x_out<2>       |    8.903|
+x_in<6>        |x_out<0>       |   16.682|
+x_in<6>        |x_out<1>       |   12.876|
+x_in<6>        |x_out<2>       |    9.539|
+x_in<6>        |x_out<3>       |    7.192|
+x_in<7>        |x_out<0>       |   16.602|
+x_in<7>        |x_out<1>       |   12.796|
+x_in<7>        |x_out<2>       |    9.459|
+x_in<7>        |x_out<3>       |    7.051|
+---------------+---------------+---------+
+
+
+Analysis completed Wed Mar 10 15:00:39 2010 
+--------------------------------------------------------------------------------
+
+Trace Settings:
+-------------------------
+Trace Settings 
+
+Peak Memory Usage: 83 MB
+
+
+

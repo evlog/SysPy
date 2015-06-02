@@ -1,0 +1,12 @@
+CoreGen has not been configured with any user repositories.
+CoreGen has been configured with the following Xilinx repositories:
+ - '/opt/Xilinx/13.1/ISE_DS/ISE/coregen/' []
+INFO:sim:927 - Generating component instance 'hh' of
+   'xilinx.com:ip:dds_compiler:4.0' from
+   '/opt/Xilinx/13.1/ISE_DS/ISE/coregen/ip/xilinx/dsp/com/xilinx/ip/dds_compiler
+   _v4_0/component.xml'.
+Executing Tcl generator...
+Cancelled executing Tcl generator.
+Wrote file for project
+'/home/SysPy_test/SysPy_ver/Python_script/testbml2/Leon3_XST_prj_FRM4_lefteris/i
+pcore_dir/hh.cgp'.

@@ -1,0 +1,23 @@
+V3 14
+FL /home/SysPy_test/SysPy_ver/Python_script/paramsocs/Leon3_comps_Gill_top/Leon3_comps/libs/opencores/i2c/i2coc.vhd 2011/05/11.18:05:45 O.76xd
+PH opencores/i2coc 1369068502 \
+      FL /home/SysPy_test/SysPy_ver/Python_script/paramsocs/Leon3_comps_Gill_top/Leon3_comps/libs/opencores/i2c/i2coc.vhd \
+      PB ieee/std_logic_1164 1296775758 PB ieee/NUMERIC_STD 1296775759 \
+      CD i2c_master_byte_ctrl
+FL /home/SysPy_test/SysPy_ver/Python_script/paramsocs/Leon3_comps_Gill_top/Leon3_comps/libs/opencores/i2c/i2c_master_bit_ctrl.vhd 2011/05/11.18:05:45 O.76xd
+EN opencores/i2c_master_bit_ctrl 1369068456 \
+      FL /home/SysPy_test/SysPy_ver/Python_script/paramsocs/Leon3_comps_Gill_top/Leon3_comps/libs/opencores/i2c/i2c_master_bit_ctrl.vhd \
+      PB ieee/std_logic_1164 1296775758 LB grlib PB grlib/stdlib 1369068080
+AR opencores/i2c_master_bit_ctrl/structural 1369068457 \
+      FL /home/SysPy_test/SysPy_ver/Python_script/paramsocs/Leon3_comps_Gill_top/Leon3_comps/libs/opencores/i2c/i2c_master_bit_ctrl.vhd \
+      EN opencores/i2c_master_bit_ctrl 1369068456
+FL /home/SysPy_test/SysPy_ver/Python_script/paramsocs/Leon3_comps_Gill_top/Leon3_comps/libs/opencores/i2c/i2c_master_byte_ctrl.vhd 2011/05/11.18:05:45 O.76xd
+EN opencores/i2c_master_byte_ctrl 1369068500 \
+      FL /home/SysPy_test/SysPy_ver/Python_script/paramsocs/Leon3_comps_Gill_top/Leon3_comps/libs/opencores/i2c/i2c_master_byte_ctrl.vhd \
+      PB ieee/std_logic_1164 1296775758 LB grlib PB grlib/stdlib 1369068080
+AR opencores/i2c_master_byte_ctrl/structural 1369068501 \
+      FL /home/SysPy_test/SysPy_ver/Python_script/paramsocs/Leon3_comps_Gill_top/Leon3_comps/libs/opencores/i2c/i2c_master_byte_ctrl.vhd \
+      EN opencores/i2c_master_byte_ctrl 1369068500 CP i2c_master_bit_ctrl
+FL /media/Seagate/system_backup/SysPy_test/SysPy_ver/Python_script/paramsocs/Leon3_comps_Gill_top/Leon3_comps/libs/opencores/i2c/i2coc.vhd 2011/05/11.18:05:45 O.76xd
+FL /media/Seagate/system_backup/SysPy_test/SysPy_ver/Python_script/paramsocs/Leon3_comps_Gill_top/Leon3_comps/libs/opencores/i2c/i2c_master_bit_ctrl.vhd 2011/05/11.18:05:45 O.76xd
+FL /media/Seagate/system_backup/SysPy_test/SysPy_ver/Python_script/paramsocs/Leon3_comps_Gill_top/Leon3_comps/libs/opencores/i2c/i2c_master_byte_ctrl.vhd 2011/05/11.18:05:45 O.76xd

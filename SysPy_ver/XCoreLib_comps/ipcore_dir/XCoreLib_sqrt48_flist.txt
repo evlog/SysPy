@@ -1,0 +1,14 @@
+# Output products list for <XCoreLib_sqrt48>
+XCoreLib_sqrt48.asy
+XCoreLib_sqrt48.gise
+XCoreLib_sqrt48.ise
+XCoreLib_sqrt48.ngc
+XCoreLib_sqrt48.sym
+XCoreLib_sqrt48.v
+XCoreLib_sqrt48.veo
+XCoreLib_sqrt48.vhd
+XCoreLib_sqrt48.vho
+XCoreLib_sqrt48.xco
+XCoreLib_sqrt48.xise
+XCoreLib_sqrt48_flist.txt
+XCoreLib_sqrt48_xmdf.tcl

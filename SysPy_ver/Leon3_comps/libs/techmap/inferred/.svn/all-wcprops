@@ -1,0 +1,35 @@
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/svn/!svn/ver/102/SysPy/SysPy_ver/Leon3_comps/libs/techmap/inferred
+END
+vhdlsyn.txt
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/svn/!svn/ver/102/SysPy/SysPy_ver/Leon3_comps/libs/techmap/inferred/vhdlsyn.txt
+END
+memory_inferred.vhd
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/svn/!svn/ver/102/SysPy/SysPy_ver/Leon3_comps/libs/techmap/inferred/memory_inferred.vhd
+END
+ddr_inferred.vhd
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/svn/!svn/ver/102/SysPy/SysPy_ver/Leon3_comps/libs/techmap/inferred/ddr_inferred.vhd
+END
+ddr_phy_inferred.vhd
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/svn/!svn/ver/102/SysPy/SysPy_ver/Leon3_comps/libs/techmap/inferred/ddr_phy_inferred.vhd
+END
+mul_inferred.vhd
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/svn/!svn/ver/102/SysPy/SysPy_ver/Leon3_comps/libs/techmap/inferred/mul_inferred.vhd
+END

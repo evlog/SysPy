@@ -1,0 +1,43 @@
+V3 20
+FL "/media/My Passport/work/PhD/myHDL_tests/my_conversion/Plex_test/new_code_2/ISE_func_comps/ipcore_dir/test_core_gen.vhd" 2010/03/09.20:44:31 L.33
+EN work/test_core_gen 1268160455 \
+      FL "/media/My Passport/work/PhD/myHDL_tests/my_conversion/Plex_test/new_code_2/ISE_func_comps/ipcore_dir/test_core_gen.vhd" \
+      PB ieee/std_logic_1164 1236108447
+AR work/test_core_gen/test_core_gen_a 1268160456 \
+      FL "/media/My Passport/work/PhD/myHDL_tests/my_conversion/Plex_test/new_code_2/ISE_func_comps/ipcore_dir/test_core_gen.vhd" \
+      EN work/test_core_gen 1268160455
+FL "/media/My Passport/work/PhD/myHDL_tests/my_conversion/Plex_test/new_code_2/ISE_func_comps/ipcore_dir/test_core_gen2.vhd" 2010/03/10.14:41:40 L.33
+EN work/test_core_gen2 1268226149 \
+      FL "/media/My Passport/work/PhD/myHDL_tests/my_conversion/Plex_test/new_code_2/ISE_func_comps/ipcore_dir/test_core_gen2.vhd" \
+      PB ieee/std_logic_1164 1236108447
+AR work/test_core_gen2/test_core_gen2_a 1268226150 \
+      FL "/media/My Passport/work/PhD/myHDL_tests/my_conversion/Plex_test/new_code_2/ISE_func_comps/ipcore_dir/test_core_gen2.vhd" \
+      EN work/test_core_gen2 1268226149
+FL "/media/My Passport/work/PhD/myHDL_tests/my_conversion/Plex_test/new_code_2/ISE_func_comps/test.vhd" 2010/03/11.18:08:44 L.33
+EN work/test 1268323735 \
+      FL "/media/My Passport/work/PhD/myHDL_tests/my_conversion/Plex_test/new_code_2/ISE_func_comps/test.vhd" \
+      PB ieee/std_logic_1164 1236108447 PB ieee/std_logic_arith 1236108448 \
+      PB ieee/STD_LOGIC_UNSIGNED 1236108449 LB XilinxCoreLib
+AR work/test/Behavioral 1268323736 \
+      FL "/media/My Passport/work/PhD/myHDL_tests/my_conversion/Plex_test/new_code_2/ISE_func_comps/test.vhd" \
+      EN work/test 1268323735
+FL "/media/My Passport/work/PhD/myHDL_tests/my_conversion/Plex_test/new_code_2/ISE_func_comps/test_core_gen.vhd" 2010/03/09.20:05:34 L.33
+AR work/test_core_gen/test_core_gen_struct -1 \
+      FL "/media/My Passport/work/PhD/myHDL_tests/my_conversion/Plex_test/new_code_2/ISE_func_comps/test_core_gen.vhd" \
+      EN work/test_core_gen 1268160455
+FL "/media/My Passport/work/PhD/myHDL_tests/my_conversion/Plex_test/new_code_2/ISE_func_comps/test_core_gen2_wrapper.vhd" 2010/03/10.14:47:08 L.33
+EN work/test_core_gen2_wrapper 1268226151 \
+      FL "/media/My Passport/work/PhD/myHDL_tests/my_conversion/Plex_test/new_code_2/ISE_func_comps/test_core_gen2_wrapper.vhd" \
+      PB ieee/std_logic_1164 1236108447 PB ieee/std_logic_arith 1236108448 \
+      PB ieee/STD_LOGIC_UNSIGNED 1236108449
+AR work/test_core_gen2_wrapper/test_core_gen2_wrapper_struct 1268226152 \
+      FL "/media/My Passport/work/PhD/myHDL_tests/my_conversion/Plex_test/new_code_2/ISE_func_comps/test_core_gen2_wrapper.vhd" \
+      EN work/test_core_gen2_wrapper 1268226151 CP test_core_gen2
+FL "/media/My Passport/work/PhD/myHDL_tests/my_conversion/Plex_test/new_code_2/ISE_func_comps/test_core_gen_wrap.vhd" 2010/03/09.20:47:24 L.33
+EN work/test_core_gen_wrap 1268160457 \
+      FL "/media/My Passport/work/PhD/myHDL_tests/my_conversion/Plex_test/new_code_2/ISE_func_comps/test_core_gen_wrap.vhd" \
+      PB ieee/std_logic_1164 1236108447 PB ieee/std_logic_arith 1236108448 \
+      PB ieee/STD_LOGIC_UNSIGNED 1236108449 LB XilinxCoreLib
+AR work/test_core_gen_wrap/test_core_gen_wrap_struct 1268160458 \
+      FL "/media/My Passport/work/PhD/myHDL_tests/my_conversion/Plex_test/new_code_2/ISE_func_comps/test_core_gen_wrap.vhd" \
+      EN work/test_core_gen_wrap 1268160457 CP test_core_gen

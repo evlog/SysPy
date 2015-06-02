@@ -1,0 +1,3 @@
+MODULE testmaximumval
+	SUBMODULE addnewflt
+		INSTANCE XLXI_1

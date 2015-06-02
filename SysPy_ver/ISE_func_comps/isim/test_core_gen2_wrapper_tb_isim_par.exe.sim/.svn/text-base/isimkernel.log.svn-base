@@ -1,0 +1,29 @@
+Command line:
+   test_core_gen2_wrapper_tb_isim_par.exe
+     -simmode  gui
+     -sdfmax  /uut/=netgen/par/test_core_gen2_wrapper_timesim.sdf
+     -sdfroot  /uut
+     -simrunnum  1
+
+Wed Mar 10 14:53:24 2010
+
+
+ Elaboration Time: 0.05 sec
+
+ Current Memory Usage: 114.86 Meg
+
+ Total Signals          : 1022
+ Total Nets             : 545
+ Total Signal Drivers   : 520
+ Total Blocks           : 346
+ Total Primitive Blocks : 180
+ Total Processes        : 520
+ Total Traceable Variables  : 1389
+ Total Scalar Nets and Variables : 9632
+
+ Total Simulation Time: 0.1 sec
+
+ Current Memory Usage: 123.257 Meg
+
+Wed Mar 10 15:16:21 2010
+

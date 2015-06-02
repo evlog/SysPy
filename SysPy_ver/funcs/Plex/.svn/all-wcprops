@@ -1,0 +1,161 @@
+K 25
+svn:wc:ra_dav:version-url
+V 44
+/svn/!svn/ver/102/SysPy/SysPy_ver/funcs/Plex
+END
+._Scanners.py
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/svn/!svn/ver/102/SysPy/SysPy_ver/funcs/Plex/._Scanners.py
+END
+._Errors.py
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/svn/!svn/ver/102/SysPy/SysPy_ver/funcs/Plex/._Errors.py
+END
+DFA.py
+K 25
+svn:wc:ra_dav:version-url
+V 51
+/svn/!svn/ver/102/SysPy/SysPy_ver/funcs/Plex/DFA.py
+END
+._Transitions.py
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/svn/!svn/ver/102/SysPy/SysPy_ver/funcs/Plex/._Transitions.py
+END
+._Regexps.py
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/svn/!svn/ver/102/SysPy/SysPy_ver/funcs/Plex/._Regexps.py
+END
+._test_tm.py
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/svn/!svn/ver/102/SysPy/SysPy_ver/funcs/Plex/._test_tm.py
+END
+__init__.py
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/svn/!svn/ver/102/SysPy/SysPy_ver/funcs/Plex/__init__.py
+END
+Actions.py
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/svn/!svn/ver/102/SysPy/SysPy_ver/funcs/Plex/Actions.py
+END
+._Lexicons.py
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/svn/!svn/ver/102/SysPy/SysPy_ver/funcs/Plex/._Lexicons.py
+END
+._Timing.py
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/svn/!svn/ver/102/SysPy/SysPy_ver/funcs/Plex/._Timing.py
+END
+._Machines.py
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/svn/!svn/ver/102/SysPy/SysPy_ver/funcs/Plex/._Machines.py
+END
+._DFA.py
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/svn/!svn/ver/102/SysPy/SysPy_ver/funcs/Plex/._DFA.py
+END
+Traditional.py
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/svn/!svn/ver/102/SysPy/SysPy_ver/funcs/Plex/Traditional.py
+END
+Errors.py
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/svn/!svn/ver/102/SysPy/SysPy_ver/funcs/Plex/Errors.py
+END
+.___init__.py
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/svn/!svn/ver/102/SysPy/SysPy_ver/funcs/Plex/.___init__.py
+END
+Scanners.py
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/svn/!svn/ver/102/SysPy/SysPy_ver/funcs/Plex/Scanners.py
+END
+._Actions.py
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/svn/!svn/ver/102/SysPy/SysPy_ver/funcs/Plex/._Actions.py
+END
+Regexps.py
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/svn/!svn/ver/102/SysPy/SysPy_ver/funcs/Plex/Regexps.py
+END
+Transitions.py
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/svn/!svn/ver/102/SysPy/SysPy_ver/funcs/Plex/Transitions.py
+END
+test_tm.py
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/svn/!svn/ver/102/SysPy/SysPy_ver/funcs/Plex/test_tm.py
+END
+Lexicons.py
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/svn/!svn/ver/102/SysPy/SysPy_ver/funcs/Plex/Lexicons.py
+END
+Plex-1.1.5.tar.gz
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/svn/!svn/ver/102/SysPy/SysPy_ver/funcs/Plex/Plex-1.1.5.tar.gz
+END
+._.DS_Store
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/svn/!svn/ver/102/SysPy/SysPy_ver/funcs/Plex/._.DS_Store
+END
+._Traditional.py
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/svn/!svn/ver/102/SysPy/SysPy_ver/funcs/Plex/._Traditional.py
+END
+Machines.py
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/svn/!svn/ver/102/SysPy/SysPy_ver/funcs/Plex/Machines.py
+END
+Timing.py
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/svn/!svn/ver/102/SysPy/SysPy_ver/funcs/Plex/Timing.py
+END

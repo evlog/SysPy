@@ -1,0 +1,3 @@
+MODULE wavetestquad
+SUBMODULE TestQuatroconnwithLeon
+INSTANCE UUT

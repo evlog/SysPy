@@ -1,0 +1,83 @@
+K 25
+svn:wc:ra_dav:version-url
+V 111
+/svn/!svn/ver/102/SysPy/SysPy_ver/Python_script/paramsocs/Leon3_comps_Gill_top/Leon3_comps/libs/techmap/gencomp
+END
+clkgen.in.help
+K 25
+svn:wc:ra_dav:version-url
+V 126
+/svn/!svn/ver/102/SysPy/SysPy_ver/Python_script/paramsocs/Leon3_comps_Gill_top/Leon3_comps/libs/techmap/gencomp/clkgen.in.help
+END
+tech.in.help
+K 25
+svn:wc:ra_dav:version-url
+V 124
+/svn/!svn/ver/102/SysPy/SysPy_ver/Python_script/paramsocs/Leon3_comps_Gill_top/Leon3_comps/libs/techmap/gencomp/tech.in.help
+END
+tech.in.fpga
+K 25
+svn:wc:ra_dav:version-url
+V 124
+/svn/!svn/ver/102/SysPy/SysPy_ver/Python_script/paramsocs/Leon3_comps_Gill_top/Leon3_comps/libs/techmap/gencomp/tech.in.fpga
+END
+netcomp.vhd
+K 25
+svn:wc:ra_dav:version-url
+V 123
+/svn/!svn/ver/102/SysPy/SysPy_ver/Python_script/paramsocs/Leon3_comps_Gill_top/Leon3_comps/libs/techmap/gencomp/netcomp.vhd
+END
+tech.in.com
+K 25
+svn:wc:ra_dav:version-url
+V 123
+/svn/!svn/ver/102/SysPy/SysPy_ver/Python_script/paramsocs/Leon3_comps_Gill_top/Leon3_comps/libs/techmap/gencomp/tech.in.com
+END
+vhdlsyn.txt
+K 25
+svn:wc:ra_dav:version-url
+V 123
+/svn/!svn/ver/102/SysPy/SysPy_ver/Python_script/paramsocs/Leon3_comps_Gill_top/Leon3_comps/libs/techmap/gencomp/vhdlsyn.txt
+END
+clkgen.in
+K 25
+svn:wc:ra_dav:version-url
+V 121
+/svn/!svn/ver/102/SysPy/SysPy_ver/Python_script/paramsocs/Leon3_comps_Gill_top/Leon3_comps/libs/techmap/gencomp/clkgen.in
+END
+clkgen.in.vhd
+K 25
+svn:wc:ra_dav:version-url
+V 125
+/svn/!svn/ver/102/SysPy/SysPy_ver/Python_script/paramsocs/Leon3_comps_Gill_top/Leon3_comps/libs/techmap/gencomp/clkgen.in.vhd
+END
+gencomp.vhd
+K 25
+svn:wc:ra_dav:version-url
+V 123
+/svn/!svn/ver/102/SysPy/SysPy_ver/Python_script/paramsocs/Leon3_comps_Gill_top/Leon3_comps/libs/techmap/gencomp/gencomp.vhd
+END
+tech.in
+K 25
+svn:wc:ra_dav:version-url
+V 119
+/svn/!svn/ver/102/SysPy/SysPy_ver/Python_script/paramsocs/Leon3_comps_Gill_top/Leon3_comps/libs/techmap/gencomp/tech.in
+END
+tech.in.vhd
+K 25
+svn:wc:ra_dav:version-url
+V 123
+/svn/!svn/ver/102/SysPy/SysPy_ver/Python_script/paramsocs/Leon3_comps_Gill_top/Leon3_comps/libs/techmap/gencomp/tech.in.vhd
+END
+clkgen.in.h
+K 25
+svn:wc:ra_dav:version-url
+V 123
+/svn/!svn/ver/102/SysPy/SysPy_ver/Python_script/paramsocs/Leon3_comps_Gill_top/Leon3_comps/libs/techmap/gencomp/clkgen.in.h
+END
+tech.in.h
+K 25
+svn:wc:ra_dav:version-url
+V 121
+/svn/!svn/ver/102/SysPy/SysPy_ver/Python_script/paramsocs/Leon3_comps_Gill_top/Leon3_comps/libs/techmap/gencomp/tech.in.h
+END

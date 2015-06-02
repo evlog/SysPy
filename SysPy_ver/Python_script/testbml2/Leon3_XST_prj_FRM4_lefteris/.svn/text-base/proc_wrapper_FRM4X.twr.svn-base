@@ -1,0 +1,2355 @@
+--------------------------------------------------------------------------------
+Release 13.3 Trace  (lin)
+Copyright (c) 1995-2011 Xilinx, Inc.  All rights reserved.
+
+/media/ext_disk/opt/Xilinx/13.3/ISE_DS/ISE/bin/lin/unwrapped/trce -intstyle ise
+-v 3 -s 1 -n 3 -fastpaths -xml proc_wrapper_FRM4X.twx proc_wrapper_FRM4X.ncd -o
+proc_wrapper_FRM4X.twr proc_wrapper_FRM4X.pcf -ucf Leon3_wrapper.ucf
+
+Design file:              proc_wrapper_FRM4X.ncd
+Physical constraint file: proc_wrapper_FRM4X.pcf
+Device,package,speed:     xc5vlx110t,ff1136,-1 (PRODUCTION 1.73 2011-10-03, STEPPING level 0)
+Report level:             verbose report
+
+Environment Variable      Effect 
+--------------------      ------ 
+NONE                      No environment variables were set
+--------------------------------------------------------------------------------
+
+WARNING:Timing:3223 - Timing constraint PATH "TS_clkm_egtx_clk_path" TIG; 
+   ignored during timing analysis.
+WARNING:Timing:3223 - Timing constraint PATH "TS_egtx_clk_clkm_path" TIG; 
+   ignored during timing analysis.
+INFO:Timing:2752 - To get complete path coverage, use the unconstrained paths 
+   option. All paths that are not constrained will be reported in the 
+   unconstrained paths section(s) of the report.
+INFO:Timing:3339 - The clock-to-out numbers in this timing report are based on 
+   a 50 Ohm transmission line loading model.  For the details of this model, 
+   and for more information on accounting for different loading conditions, 
+   please see the device datasheet.
+
+================================================================================
+Timing constraint: NET "leon3mp_U0/clk_pad/xcv2.u0/ol" PERIOD = 10 ns HIGH 50%;
+
+ 0 paths analyzed, 0 endpoints analyzed, 0 failing endpoints
+ 0 timing errors detected. (0 component switching limit errors)
+ Minimum period is   7.142ns.
+--------------------------------------------------------------------------------
+
+Component Switching Limit Checks: NET "leon3mp_U0/clk_pad/xcv2.u0/ol" PERIOD = 10 ns HIGH 50%;
+--------------------------------------------------------------------------------
+Slack: 0.858ns (period - min period limit)
+  Period: 8.000ns
+  Min period limit: 7.142ns (140.017MHz) (Tdcmpco)
+  Physical resource: leon3mp_U0/clkgen1/xc5l.v/dll0/CLKFX
+  Logical resource: leon3mp_U0/clkgen1/xc5l.v/dll0/CLKFX
+  Location pin: DCM_ADV_X0Y1.CLKFX
+  Clock network: leon3mp_U0/clkgen1/xc5l.v/clk0B
+--------------------------------------------------------------------------------
+Slack: 1.668ns (period - min period limit)
+  Period: 10.000ns
+  Min period limit: 8.332ns (120.019MHz) (Tdcmpc)
+  Physical resource: leon3mp_U0/clkgen0/xc5l.v/dll0/CLKIN
+  Logical resource: leon3mp_U0/clkgen0/xc5l.v/dll0/CLKIN
+  Location pin: DCM_ADV_X0Y10.CLKIN
+  Clock network: leon3mp_U0/lclk
+--------------------------------------------------------------------------------
+Slack: 1.668ns (period - min period limit)
+  Period: 10.000ns
+  Min period limit: 8.332ns (120.019MHz) (Tdcmpco)
+  Physical resource: leon3mp_U0/clkgen0/xc5l.v/dll0/CLK0
+  Logical resource: leon3mp_U0/clkgen0/xc5l.v/dll0/CLK0
+  Location pin: DCM_ADV_X0Y10.CLK0
+  Clock network: leon3mp_U0/clkgen0/xc5l.v/clk_j
+--------------------------------------------------------------------------------
+
+================================================================================
+Timing constraint: PERIOD analysis for net "leon3mp_U0/clkgen0/xc5l.v/clk0B" 
+derived from  NET "leon3mp_U0/clk_pad/xcv2.u0/ol" PERIOD = 10 ns HIGH 50%;  
+divided by 1.60 to 6.250 nS and duty cycle corrected to HIGH 3.125 nS  
+
+ 7063444 paths analyzed, 352773 endpoints analyzed, 3317 failing endpoints
+ 3320 timing errors detected. (3317 setup errors, 0 hold errors, 3 component switching limit errors)
+ Minimum period is   9.874ns.
+--------------------------------------------------------------------------------
+
+Paths for end point leon3mp_U0/l3.cpu[0].u0/cmem0/ime.im0[1].idata0/xc2v.x0/a11.x[0].r (RAMB36_X2Y3.ADDRAL7), 5041 paths
+--------------------------------------------------------------------------------
+Slack (setup path):     -3.624ns (requirement - (data path - clock path skew + uncertainty))
+  Source:               leon3mp_U0/l3.cpu[0].u0/p0/iu0/r.x.ctrl.tt_5 (FF)
+  Destination:          leon3mp_U0/l3.cpu[0].u0/cmem0/ime.im0[1].idata0/xc2v.x0/a11.x[0].r (RAM)
+  Requirement:          6.250ns
+  Data Path Delay:      9.856ns (Levels of Logic = 10)
+  Clock Path Skew:      0.121ns (0.633 - 0.512)
+  Source Clock:         leon3mp_U0/clkm rising at 0.000ns
+  Destination Clock:    leon3mp_U0/clkm rising at 6.250ns
+  Clock Uncertainty:    0.139ns
+
+  Clock Uncertainty:          0.139ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter (TSJ):  0.070ns
+    Total Input Jitter (TIJ):   0.000ns
+    Discrete Jitter (DJ):       0.207ns
+    Phase Error (PE):           0.000ns
+
+  Maximum Data Path: leon3mp_U0/l3.cpu[0].u0/p0/iu0/r.x.ctrl.tt_5 to leon3mp_U0/l3.cpu[0].u0/cmem0/ime.im0[1].idata0/xc2v.x0/a11.x[0].r
+    Location               Delay type         Delay(ns)  Physical Resource
+                                                         Logical Resource(s)
+    ---------------------------------------------------  -------------------
+    SLICE_X58Y10.AQ        Tcko                  0.450   leon3mp_U0/l3.cpu[0].u0/p0/iu0/r.e.ctrl.rett
+                                                         leon3mp_U0/l3.cpu[0].u0/p0/iu0/r.x.ctrl.tt_5
+    SLICE_X59Y11.A2        net (fanout=5)        0.937   leon3mp_U0/l3.cpu[0].u0/p0/iu0/r.x.ctrl.tt_5
+    SLICE_X59Y11.A         Tilo                  0.094   leon3mp_U0/l3.cpu[0].u0/p0/iu0/r.x.mexc
+                                                         leon3mp_U0/l3.cpu[0].u0/p0/iu0/xc_vectt_cmp_eq00001
+    SLICE_X59Y10.C1        net (fanout=16)       0.893   leon3mp_U0/l3.cpu[0].u0/p0/iu0/xc_vectt_cmp_eq0000
+    SLICE_X59Y10.C         Tilo                  0.094   leon3mp_U0/l3.cpu[0].u0/p0/c0mmu/dcache0/r.wb.data1_9
+                                                         leon3mp_U0/l3.cpu[0].u0/p0/iu0/dmode_mux000171
+    SLICE_X59Y11.D4        net (fanout=1)        0.496   leon3mp_U0/l3.cpu[0].u0/p0/iu0/dmode_mux000171
+    SLICE_X59Y11.D         Tilo                  0.094   leon3mp_U0/l3.cpu[0].u0/p0/iu0/r.x.mexc
+                                                         leon3mp_U0/l3.cpu[0].u0/p0/iu0/dmode_mux0001111
+    SLICE_X57Y12.A6        net (fanout=11)       0.329   leon3mp_U0/l3.cpu[0].u0/p0/iu0/dmode_mux0001111
+    SLICE_X57Y12.A         Tilo                  0.094   leon3mp_U0/l3.dsugen.dsu0/x0/r.slv.hwdata_3
+                                                         leon3mp_U0/l3.cpu[0].u0/p0/iu0/N4761_1
+    SLICE_X67Y10.A6        net (fanout=2)        0.502   leon3mp_U0/l3.cpu[0].u0/p0/iu0/N4761
+    SLICE_X67Y10.A         Tilo                  0.094   leon3mp_U0/l3.cpu[0].u0/p0/iu0/r.e.ctrl.annul
+                                                         leon3mp_U0/l3.cpu[0].u0/p0/iu0/v_x_annul_all_mux0005
+    SLICE_X63Y19.C6        net (fanout=39)       0.825   leon3mp_U0/l3.cpu[0].u0/p0/iu0/rin_x_annul_all
+    SLICE_X63Y19.C         Tilo                  0.094   leon3mp_U0/l3.cpu[0].u0/p0/c0mmu/dcache0/r.wb.data1_27
+                                                         leon3mp_U0/l3.cpu[0].u0/p0/iu0/ldlock_mux0001203_SW1
+    SLICE_X78Y13.A3        net (fanout=1)        1.293   N5177
+    SLICE_X78Y13.A         Tilo                  0.094   leon3mp_U0/l3.cpu[0].u0/p0/c0mmu/dcache0/r.cctrl.ifrz
+                                                         leon3mp_U0/l3.cpu[0].u0/p0/iu0/pv0_and00011
+    SLICE_X91Y12.B6        net (fanout=34)       0.631   leon3mp_U0/l3.cpu[0].u0/p0/iu0/pv0_and0001
+    SLICE_X91Y12.B         Tilo                  0.094   leon3mp_U0/l3.cpu[0].u0/p0/c0mmu/icache0/rl.lru_234
+                                                         leon3mp_U0/l3.cpu[0].u0/p0/iu0/npc_mux0005<3>75
+    SLICE_X91Y11.A3        net (fanout=1)        0.569   leon3mp_U0/l3.cpu[0].u0/p0/iu0/npc_mux0005<3>75
+    SLICE_X91Y11.A         Tilo                  0.094   leon3mp_U0/l3.cpu[0].u0/p0/iu0/r.f.pc_6
+                                                         leon3mp_U0/l3.cpu[0].u0/p0/iu0/npc_mux0005<3>133
+    SLICE_X91Y16.C6        net (fanout=2)        0.477   leon3mp_U0/l3.cpu[0].u0/p0/iu0/npc_mux0005<3>
+    SLICE_X91Y16.C         Tilo                  0.094   leon3mp_U0/l3.cpu[0].u0/p0/c0mmu/icache0/rl.lru_116
+                                                         leon3mp_U0/l3.cpu[0].u0/p0/c0mmu/icache0/taddr_5_mux000171
+    RAMB36_X2Y3.ADDRAL7    net (fanout=16)       1.167   leon3mp_U0/l3.cpu[0].u0/crami_icramin_address<3>
+    RAMB36_X2Y3.CLKARDCLKL Trcck_ADDRA           0.347   leon3mp_U0/l3.cpu[0].u0/cmem0/ime.im0[1].idata0/xc2v.x0/a11.x[0].r
+                                                         leon3mp_U0/l3.cpu[0].u0/cmem0/ime.im0[1].idata0/xc2v.x0/a11.x[0].r
+    ---------------------------------------------------  ---------------------------
+    Total                                        9.856ns (1.737ns logic, 8.119ns route)
+                                                         (17.6% logic, 82.4% route)
+
+--------------------------------------------------------------------------------
+Slack (setup path):     -3.622ns (requirement - (data path - clock path skew + uncertainty))
+  Source:               leon3mp_U0/l3.cpu[0].u0/p0/iu0/r.d.inst_0_22 (FF)
+  Destination:          leon3mp_U0/l3.cpu[0].u0/cmem0/ime.im0[1].idata0/xc2v.x0/a11.x[0].r (RAM)
+  Requirement:          6.250ns
+  Data Path Delay:      9.845ns (Levels of Logic = 9)
+  Clock Path Skew:      0.112ns (0.633 - 0.521)
+  Source Clock:         leon3mp_U0/clkm rising at 0.000ns
+  Destination Clock:    leon3mp_U0/clkm rising at 6.250ns
+  Clock Uncertainty:    0.139ns
+
+  Clock Uncertainty:          0.139ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter (TSJ):  0.070ns
+    Total Input Jitter (TIJ):   0.000ns
+    Discrete Jitter (DJ):       0.207ns
+    Phase Error (PE):           0.000ns
+
+  Maximum Data Path: leon3mp_U0/l3.cpu[0].u0/p0/iu0/r.d.inst_0_22 to leon3mp_U0/l3.cpu[0].u0/cmem0/ime.im0[1].idata0/xc2v.x0/a11.x[0].r
+    Location               Delay type         Delay(ns)  Physical Resource
+                                                         Logical Resource(s)
+    ---------------------------------------------------  -------------------
+    SLICE_X67Y11.CQ        Tcko                  0.450   leon3mp_U0/l3.cpu[0].u0/p0/iu0/r.d.inst_0_23
+                                                         leon3mp_U0/l3.cpu[0].u0/p0/iu0/r.d.inst_0_22
+    SLICE_X66Y14.D4        net (fanout=3)        0.724   leon3mp_U0/l3.cpu[0].u0/p0/iu0/r.d.inst_0_22
+    SLICE_X66Y14.D         Tilo                  0.094   leon3mp_U0/l3.cpu[0].u0/p0/iu0/r.a.ctrl.inst_22
+                                                         leon3mp_U0/l3.cpu[0].u0/p0/iu0/inst2_varindex0000<22>1
+    SLICE_X62Y13.C1        net (fanout=18)       1.194   leon3mp_U0/l3.cpu[0].u0/p0/iu0/inst2_varindex0000<22>
+    SLICE_X62Y13.C         Tilo                  0.094   leon3mp_U0/l3.cpu[0].u0/p0/iu0/r.a.rfa2_0
+                                                         leon3mp_U0/l3.cpu[0].u0/p0/iu0/ncwp_cmp_eq00031
+    SLICE_X67Y19.B5        net (fanout=13)       0.778   leon3mp_U0/l3.cpu[0].u0/p0/iu0/ncwp_cmp_eq00031
+    SLICE_X67Y19.B         Tilo                  0.094   leon3mp_U0/l3.cpu[0].u0/p0/c0mmu/mmugen.m0/tlbcomb0.ctlb0/tlbcam0[5].tag0/r.btag.M
+                                                         leon3mp_U0/l3.cpu[0].u0/p0/iu0/ncwp_and00001
+    SLICE_X67Y19.C3        net (fanout=9)        0.440   leon3mp_U0/l3.cpu[0].u0/p0/iu0/ncwp_and0000
+    SLICE_X67Y19.C         Tilo                  0.094   leon3mp_U0/l3.cpu[0].u0/p0/c0mmu/mmugen.m0/tlbcomb0.ctlb0/tlbcam0[5].tag0/r.btag.M
+                                                         leon3mp_U0/l3.cpu[0].u0/p0/iu0/ldlock_mux000151
+    SLICE_X63Y19.C2        net (fanout=4)        0.929   leon3mp_U0/l3.cpu[0].u0/p0/iu0/ldlock_mux000151
+    SLICE_X63Y19.C         Tilo                  0.094   leon3mp_U0/l3.cpu[0].u0/p0/c0mmu/dcache0/r.wb.data1_27
+                                                         leon3mp_U0/l3.cpu[0].u0/p0/iu0/ldlock_mux0001203_SW1
+    SLICE_X78Y13.A3        net (fanout=1)        1.293   N5177
+    SLICE_X78Y13.A         Tilo                  0.094   leon3mp_U0/l3.cpu[0].u0/p0/c0mmu/dcache0/r.cctrl.ifrz
+                                                         leon3mp_U0/l3.cpu[0].u0/p0/iu0/pv0_and00011
+    SLICE_X91Y12.B6        net (fanout=34)       0.631   leon3mp_U0/l3.cpu[0].u0/p0/iu0/pv0_and0001
+    SLICE_X91Y12.B         Tilo                  0.094   leon3mp_U0/l3.cpu[0].u0/p0/c0mmu/icache0/rl.lru_234
+                                                         leon3mp_U0/l3.cpu[0].u0/p0/iu0/npc_mux0005<3>75
+    SLICE_X91Y11.A3        net (fanout=1)        0.569   leon3mp_U0/l3.cpu[0].u0/p0/iu0/npc_mux0005<3>75
+    SLICE_X91Y11.A         Tilo                  0.094   leon3mp_U0/l3.cpu[0].u0/p0/iu0/r.f.pc_6
+                                                         leon3mp_U0/l3.cpu[0].u0/p0/iu0/npc_mux0005<3>133
+    SLICE_X91Y16.C6        net (fanout=2)        0.477   leon3mp_U0/l3.cpu[0].u0/p0/iu0/npc_mux0005<3>
+    SLICE_X91Y16.C         Tilo                  0.094   leon3mp_U0/l3.cpu[0].u0/p0/c0mmu/icache0/rl.lru_116
+                                                         leon3mp_U0/l3.cpu[0].u0/p0/c0mmu/icache0/taddr_5_mux000171
+    RAMB36_X2Y3.ADDRAL7    net (fanout=16)       1.167   leon3mp_U0/l3.cpu[0].u0/crami_icramin_address<3>
+    RAMB36_X2Y3.CLKARDCLKL Trcck_ADDRA           0.347   leon3mp_U0/l3.cpu[0].u0/cmem0/ime.im0[1].idata0/xc2v.x0/a11.x[0].r
+                                                         leon3mp_U0/l3.cpu[0].u0/cmem0/ime.im0[1].idata0/xc2v.x0/a11.x[0].r
+    ---------------------------------------------------  ---------------------------
+    Total                                        9.845ns (1.643ns logic, 8.202ns route)
+                                                         (16.7% logic, 83.3% route)
+
+--------------------------------------------------------------------------------
+Slack (setup path):     -3.588ns (requirement - (data path - clock path skew + uncertainty))
+  Source:               leon3mp_U0/l3.cpu[0].u0/p0/iu0/r.x.ctrl.tt_0 (FF)
+  Destination:          leon3mp_U0/l3.cpu[0].u0/cmem0/ime.im0[1].idata0/xc2v.x0/a11.x[0].r (RAM)
+  Requirement:          6.250ns
+  Data Path Delay:      9.808ns (Levels of Logic = 10)
+  Clock Path Skew:      0.109ns (0.633 - 0.524)
+  Source Clock:         leon3mp_U0/clkm rising at 0.000ns
+  Destination Clock:    leon3mp_U0/clkm rising at 6.250ns
+  Clock Uncertainty:    0.139ns
+
+  Clock Uncertainty:          0.139ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter (TSJ):  0.070ns
+    Total Input Jitter (TIJ):   0.000ns
+    Discrete Jitter (DJ):       0.207ns
+    Phase Error (PE):           0.000ns
+
+  Maximum Data Path: leon3mp_U0/l3.cpu[0].u0/p0/iu0/r.x.ctrl.tt_0 to leon3mp_U0/l3.cpu[0].u0/cmem0/ime.im0[1].idata0/xc2v.x0/a11.x[0].r
+    Location               Delay type         Delay(ns)  Physical Resource
+                                                         Logical Resource(s)
+    ---------------------------------------------------  -------------------
+    SLICE_X58Y11.CQ        Tcko                  0.450   leon3mp_U0/l3.cpu[0].u0/p0/iu0/r.x.ctrl.annul
+                                                         leon3mp_U0/l3.cpu[0].u0/p0/iu0/r.x.ctrl.tt_0
+    SLICE_X59Y11.A1        net (fanout=5)        0.889   leon3mp_U0/l3.cpu[0].u0/p0/iu0/r.x.ctrl.tt_0
+    SLICE_X59Y11.A         Tilo                  0.094   leon3mp_U0/l3.cpu[0].u0/p0/iu0/r.x.mexc
+                                                         leon3mp_U0/l3.cpu[0].u0/p0/iu0/xc_vectt_cmp_eq00001
+    SLICE_X59Y10.C1        net (fanout=16)       0.893   leon3mp_U0/l3.cpu[0].u0/p0/iu0/xc_vectt_cmp_eq0000
+    SLICE_X59Y10.C         Tilo                  0.094   leon3mp_U0/l3.cpu[0].u0/p0/c0mmu/dcache0/r.wb.data1_9
+                                                         leon3mp_U0/l3.cpu[0].u0/p0/iu0/dmode_mux000171
+    SLICE_X59Y11.D4        net (fanout=1)        0.496   leon3mp_U0/l3.cpu[0].u0/p0/iu0/dmode_mux000171
+    SLICE_X59Y11.D         Tilo                  0.094   leon3mp_U0/l3.cpu[0].u0/p0/iu0/r.x.mexc
+                                                         leon3mp_U0/l3.cpu[0].u0/p0/iu0/dmode_mux0001111
+    SLICE_X57Y12.A6        net (fanout=11)       0.329   leon3mp_U0/l3.cpu[0].u0/p0/iu0/dmode_mux0001111
+    SLICE_X57Y12.A         Tilo                  0.094   leon3mp_U0/l3.dsugen.dsu0/x0/r.slv.hwdata_3
+                                                         leon3mp_U0/l3.cpu[0].u0/p0/iu0/N4761_1
+    SLICE_X67Y10.A6        net (fanout=2)        0.502   leon3mp_U0/l3.cpu[0].u0/p0/iu0/N4761
+    SLICE_X67Y10.A         Tilo                  0.094   leon3mp_U0/l3.cpu[0].u0/p0/iu0/r.e.ctrl.annul
+                                                         leon3mp_U0/l3.cpu[0].u0/p0/iu0/v_x_annul_all_mux0005
+    SLICE_X63Y19.C6        net (fanout=39)       0.825   leon3mp_U0/l3.cpu[0].u0/p0/iu0/rin_x_annul_all
+    SLICE_X63Y19.C         Tilo                  0.094   leon3mp_U0/l3.cpu[0].u0/p0/c0mmu/dcache0/r.wb.data1_27
+                                                         leon3mp_U0/l3.cpu[0].u0/p0/iu0/ldlock_mux0001203_SW1
+    SLICE_X78Y13.A3        net (fanout=1)        1.293   N5177
+    SLICE_X78Y13.A         Tilo                  0.094   leon3mp_U0/l3.cpu[0].u0/p0/c0mmu/dcache0/r.cctrl.ifrz
+                                                         leon3mp_U0/l3.cpu[0].u0/p0/iu0/pv0_and00011
+    SLICE_X91Y12.B6        net (fanout=34)       0.631   leon3mp_U0/l3.cpu[0].u0/p0/iu0/pv0_and0001
+    SLICE_X91Y12.B         Tilo                  0.094   leon3mp_U0/l3.cpu[0].u0/p0/c0mmu/icache0/rl.lru_234
+                                                         leon3mp_U0/l3.cpu[0].u0/p0/iu0/npc_mux0005<3>75
+    SLICE_X91Y11.A3        net (fanout=1)        0.569   leon3mp_U0/l3.cpu[0].u0/p0/iu0/npc_mux0005<3>75
+    SLICE_X91Y11.A         Tilo                  0.094   leon3mp_U0/l3.cpu[0].u0/p0/iu0/r.f.pc_6
+                                                         leon3mp_U0/l3.cpu[0].u0/p0/iu0/npc_mux0005<3>133
+    SLICE_X91Y16.C6        net (fanout=2)        0.477   leon3mp_U0/l3.cpu[0].u0/p0/iu0/npc_mux0005<3>
+    SLICE_X91Y16.C         Tilo                  0.094   leon3mp_U0/l3.cpu[0].u0/p0/c0mmu/icache0/rl.lru_116
+                                                         leon3mp_U0/l3.cpu[0].u0/p0/c0mmu/icache0/taddr_5_mux000171
+    RAMB36_X2Y3.ADDRAL7    net (fanout=16)       1.167   leon3mp_U0/l3.cpu[0].u0/crami_icramin_address<3>
+    RAMB36_X2Y3.CLKARDCLKL Trcck_ADDRA           0.347   leon3mp_U0/l3.cpu[0].u0/cmem0/ime.im0[1].idata0/xc2v.x0/a11.x[0].r
+                                                         leon3mp_U0/l3.cpu[0].u0/cmem0/ime.im0[1].idata0/xc2v.x0/a11.x[0].r
+    ---------------------------------------------------  ---------------------------
+    Total                                        9.808ns (1.737ns logic, 8.071ns route)
+                                                         (17.7% logic, 82.3% route)
+
+--------------------------------------------------------------------------------
+
+Paths for end point leon3mp_U0/l3.cpu[0].u0/cmem0/dme.dd0[0].ddata0/xc2v.x0/a11.x[0].r (RAMB36_X2Y0.WEAU0), 6853 paths
+--------------------------------------------------------------------------------
+Slack (setup path):     -3.620ns (requirement - (data path - clock path skew + uncertainty))
+  Source:               leon3mp_U0/l3.cpu[0].u0/p0/iu0/r.e.ldbp1 (FF)
+  Destination:          leon3mp_U0/l3.cpu[0].u0/cmem0/dme.dd0[0].ddata0/xc2v.x0/a11.x[0].r (RAM)
+  Requirement:          6.250ns
+  Data Path Delay:      9.787ns (Levels of Logic = 8)
+  Clock Path Skew:      0.056ns (0.633 - 0.577)
+  Source Clock:         leon3mp_U0/clkm rising at 0.000ns
+  Destination Clock:    leon3mp_U0/clkm rising at 6.250ns
+  Clock Uncertainty:    0.139ns
+
+  Clock Uncertainty:          0.139ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter (TSJ):  0.070ns
+    Total Input Jitter (TIJ):   0.000ns
+    Discrete Jitter (DJ):       0.207ns
+    Phase Error (PE):           0.000ns
+
+  Maximum Data Path: leon3mp_U0/l3.cpu[0].u0/p0/iu0/r.e.ldbp1 to leon3mp_U0/l3.cpu[0].u0/cmem0/dme.dd0[0].ddata0/xc2v.x0/a11.x[0].r
+    Location               Delay type         Delay(ns)  Physical Resource
+                                                         Logical Resource(s)
+    ---------------------------------------------------  -------------------
+    SLICE_X73Y6.AQ         Tcko                  0.450   leon3mp_U0/l3.cpu[0].u0/p0/iu0/r.x.dci.signed
+                                                         leon3mp_U0/l3.cpu[0].u0/p0/iu0/r.e.ldbp1
+    SLICE_X75Y3.D4         net (fanout=107)      1.016   leon3mp_U0/l3.cpu[0].u0/p0/iu0/r.e.ldbp1
+    SLICE_X75Y3.D          Tilo                  0.094   leon3mp_U0/l3.cpu[0].u0/p0/c0mmu/icache0/rl.lru_106
+                                                         leon3mp_U0/l3.cpu[0].u0/p0/iu0/ex_op1_mux0000<0>1
+    SLICE_X72Y2.BX         net (fanout=8)        0.627   leon3mp_U0/l3.cpu[0].u0/p0/iu0/muli_op1<0>
+    SLICE_X72Y2.DMUX       Tbxd                  0.585   Gill/FRM4X/XLXI_6/XLXI_3/XLXI_14/blk00000003/sig000000ba
+                                                         leon3mp_U0/l3.cpu[0].u0/p0/iu0/Madd_ex_add_res_add0000_cy<3>
+    SLICE_X69Y6.C5         net (fanout=3)        0.811   leon3mp_U0/l3.cpu[0].u0/p0/iu0/ex_add_res_add0000<3>
+    SLICE_X69Y6.C          Tilo                  0.094   Gill/FRM4X/XLXI_6/XLXI_3/XLXI_14/blk00000003/sig000000ac
+                                                         leon3mp_U0/l3.cpu[0].u0/p0/iu0/_or00011
+    SLICE_X77Y9.D2         net (fanout=3)        1.079   leon3mp_U0/l3.cpu[0].u0/p0/dci_eaddress<2>
+    SLICE_X77Y9.D          Tilo                  0.094   leon3mp_U0/l3.cpu[0].u0/p0/c0mmu/dcache0/r.faddr_8
+                                                         leon3mp_U0/l3.cpu[0].u0/p0/iu0/azero_cmp_eq000093
+    SLICE_X77Y9.B2         net (fanout=1)        0.734   leon3mp_U0/l3.cpu[0].u0/p0/iu0/azero_cmp_eq000093
+    SLICE_X77Y9.B          Tilo                  0.094   leon3mp_U0/l3.cpu[0].u0/p0/c0mmu/dcache0/r.faddr_8
+                                                         leon3mp_U0/l3.cpu[0].u0/p0/iu0/azero_cmp_eq0000256
+    SLICE_X79Y16.A5        net (fanout=3)        0.713   leon3mp_U0/l3.cpu[0].u0/p0/iu0/azero_cmp_eq0000
+    SLICE_X79Y16.A         Tilo                  0.094   leon3mp_U0/l3.cpu[0].u0/p0/c0mmu/mmugen.m0/tlbcomb0.ctlb0/tlbcam0[6].tag0/r.btag.LVL_1
+                                                         leon3mp_U0/l3.cpu[0].u0/p0/iu0/dci_nullify118
+    SLICE_X81Y17.A6        net (fanout=18)       0.545   leon3mp_U0/l3.cpu[0].u0/p0/dci_nullify
+    SLICE_X81Y17.A         Tilo                  0.094   leon3mp_U0/l3.cpu[0].u0/p0/c0mmu/dcache0/r.dstate_FSM_FFd9
+                                                         leon3mp_U0/l3.cpu[0].u0/p0/c0mmu/dcache0/r_wbinit_not0001113
+    SLICE_X70Y8.B5         net (fanout=19)       1.132   leon3mp_U0/l3.cpu[0].u0/p0/c0mmu/dcache0/N1291
+    SLICE_X70Y8.B          Tilo                  0.094   leon3mp_U0/l3.cpu[0].u0/p0/c0mmu/icache0/rl.lru_255
+                                                         leon3mp_U0/l3.cpu[0].u0/p0/c0mmu/dcache0/dwrite_mux0011106
+    RAMB36_X2Y0.WEAU0      net (fanout=16)       0.813   leon3mp_U0/l3.cpu[0].u0/crami_dcramin_dwrite<0>
+    RAMB36_X2Y0.CLKARDCLKU Trcck_WEA             0.624   leon3mp_U0/l3.cpu[0].u0/cmem0/dme.dd0[0].ddata0/xc2v.x0/a11.x[1].r
+                                                         leon3mp_U0/l3.cpu[0].u0/cmem0/dme.dd0[0].ddata0/xc2v.x0/a11.x[0].r
+    ---------------------------------------------------  ---------------------------
+    Total                                        9.787ns (2.317ns logic, 7.470ns route)
+                                                         (23.7% logic, 76.3% route)
+
+--------------------------------------------------------------------------------
+Slack (setup path):     -3.605ns (requirement - (data path - clock path skew + uncertainty))
+  Source:               leon3mp_U0/l3.cpu[0].u0/p0/iu0/r.e.op1_1 (FF)
+  Destination:          leon3mp_U0/l3.cpu[0].u0/cmem0/dme.dd0[0].ddata0/xc2v.x0/a11.x[0].r (RAM)
+  Requirement:          6.250ns
+  Data Path Delay:      9.749ns (Levels of Logic = 8)
+  Clock Path Skew:      0.033ns (0.633 - 0.600)
+  Source Clock:         leon3mp_U0/clkm rising at 0.000ns
+  Destination Clock:    leon3mp_U0/clkm rising at 6.250ns
+  Clock Uncertainty:    0.139ns
+
+  Clock Uncertainty:          0.139ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter (TSJ):  0.070ns
+    Total Input Jitter (TIJ):   0.000ns
+    Discrete Jitter (DJ):       0.207ns
+    Phase Error (PE):           0.000ns
+
+  Maximum Data Path: leon3mp_U0/l3.cpu[0].u0/p0/iu0/r.e.op1_1 to leon3mp_U0/l3.cpu[0].u0/cmem0/dme.dd0[0].ddata0/xc2v.x0/a11.x[0].r
+    Location               Delay type         Delay(ns)  Physical Resource
+                                                         Logical Resource(s)
+    ---------------------------------------------------  -------------------
+    SLICE_X70Y1.BQ         Tcko                  0.450   leon3mp_U0/l3.cpu[0].u0/p0/iu0/r.e.op1_2
+                                                         leon3mp_U0/l3.cpu[0].u0/p0/iu0/r.e.op1_1
+    SLICE_X87Y4.A4         net (fanout=6)        1.039   leon3mp_U0/l3.cpu[0].u0/p0/iu0/r.e.op1_1
+    SLICE_X87Y4.A          Tilo                  0.094   leon3mp_U0/l3.cpu[0].u0/p0/c0mmu/icache0/rl.lru_7
+                                                         leon3mp_U0/l3.cpu[0].u0/p0/iu0/ex_op1_mux0000<1>1
+    SLICE_X72Y2.CX         net (fanout=6)        0.728   leon3mp_U0/l3.cpu[0].u0/p0/iu0/muli_op1<1>
+    SLICE_X72Y2.DMUX       Tcxd                  0.423   Gill/FRM4X/XLXI_6/XLXI_3/XLXI_14/blk00000003/sig000000ba
+                                                         leon3mp_U0/l3.cpu[0].u0/p0/iu0/Madd_ex_add_res_add0000_cy<3>
+    SLICE_X69Y6.C5         net (fanout=3)        0.811   leon3mp_U0/l3.cpu[0].u0/p0/iu0/ex_add_res_add0000<3>
+    SLICE_X69Y6.C          Tilo                  0.094   Gill/FRM4X/XLXI_6/XLXI_3/XLXI_14/blk00000003/sig000000ac
+                                                         leon3mp_U0/l3.cpu[0].u0/p0/iu0/_or00011
+    SLICE_X77Y9.D2         net (fanout=3)        1.079   leon3mp_U0/l3.cpu[0].u0/p0/dci_eaddress<2>
+    SLICE_X77Y9.D          Tilo                  0.094   leon3mp_U0/l3.cpu[0].u0/p0/c0mmu/dcache0/r.faddr_8
+                                                         leon3mp_U0/l3.cpu[0].u0/p0/iu0/azero_cmp_eq000093
+    SLICE_X77Y9.B2         net (fanout=1)        0.734   leon3mp_U0/l3.cpu[0].u0/p0/iu0/azero_cmp_eq000093
+    SLICE_X77Y9.B          Tilo                  0.094   leon3mp_U0/l3.cpu[0].u0/p0/c0mmu/dcache0/r.faddr_8
+                                                         leon3mp_U0/l3.cpu[0].u0/p0/iu0/azero_cmp_eq0000256
+    SLICE_X79Y16.A5        net (fanout=3)        0.713   leon3mp_U0/l3.cpu[0].u0/p0/iu0/azero_cmp_eq0000
+    SLICE_X79Y16.A         Tilo                  0.094   leon3mp_U0/l3.cpu[0].u0/p0/c0mmu/mmugen.m0/tlbcomb0.ctlb0/tlbcam0[6].tag0/r.btag.LVL_1
+                                                         leon3mp_U0/l3.cpu[0].u0/p0/iu0/dci_nullify118
+    SLICE_X81Y17.A6        net (fanout=18)       0.545   leon3mp_U0/l3.cpu[0].u0/p0/dci_nullify
+    SLICE_X81Y17.A         Tilo                  0.094   leon3mp_U0/l3.cpu[0].u0/p0/c0mmu/dcache0/r.dstate_FSM_FFd9
+                                                         leon3mp_U0/l3.cpu[0].u0/p0/c0mmu/dcache0/r_wbinit_not0001113
+    SLICE_X70Y8.B5         net (fanout=19)       1.132   leon3mp_U0/l3.cpu[0].u0/p0/c0mmu/dcache0/N1291
+    SLICE_X70Y8.B          Tilo                  0.094   leon3mp_U0/l3.cpu[0].u0/p0/c0mmu/icache0/rl.lru_255
+                                                         leon3mp_U0/l3.cpu[0].u0/p0/c0mmu/dcache0/dwrite_mux0011106
+    RAMB36_X2Y0.WEAU0      net (fanout=16)       0.813   leon3mp_U0/l3.cpu[0].u0/crami_dcramin_dwrite<0>
+    RAMB36_X2Y0.CLKARDCLKU Trcck_WEA             0.624   leon3mp_U0/l3.cpu[0].u0/cmem0/dme.dd0[0].ddata0/xc2v.x0/a11.x[1].r
+                                                         leon3mp_U0/l3.cpu[0].u0/cmem0/dme.dd0[0].ddata0/xc2v.x0/a11.x[0].r
+    ---------------------------------------------------  ---------------------------
+    Total                                        9.749ns (2.155ns logic, 7.594ns route)
+                                                         (22.1% logic, 77.9% route)
+
+--------------------------------------------------------------------------------
+Slack (setup path):     -3.528ns (requirement - (data path - clock path skew + uncertainty))
+  Source:               leon3mp_U0/l3.cpu[0].u0/p0/iu0/r.x.ctrl.tt_5 (FF)
+  Destination:          leon3mp_U0/l3.cpu[0].u0/cmem0/dme.dd0[0].ddata0/xc2v.x0/a11.x[0].r (RAM)
+  Requirement:          6.250ns
+  Data Path Delay:      9.760ns (Levels of Logic = 9)
+  Clock Path Skew:      0.121ns (0.633 - 0.512)
+  Source Clock:         leon3mp_U0/clkm rising at 0.000ns
+  Destination Clock:    leon3mp_U0/clkm rising at 6.250ns
+  Clock Uncertainty:    0.139ns
+
+  Clock Uncertainty:          0.139ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter (TSJ):  0.070ns
+    Total Input Jitter (TIJ):   0.000ns
+    Discrete Jitter (DJ):       0.207ns
+    Phase Error (PE):           0.000ns
+
+  Maximum Data Path: leon3mp_U0/l3.cpu[0].u0/p0/iu0/r.x.ctrl.tt_5 to leon3mp_U0/l3.cpu[0].u0/cmem0/dme.dd0[0].ddata0/xc2v.x0/a11.x[0].r
+    Location               Delay type         Delay(ns)  Physical Resource
+                                                         Logical Resource(s)
+    ---------------------------------------------------  -------------------
+    SLICE_X58Y10.AQ        Tcko                  0.450   leon3mp_U0/l3.cpu[0].u0/p0/iu0/r.e.ctrl.rett
+                                                         leon3mp_U0/l3.cpu[0].u0/p0/iu0/r.x.ctrl.tt_5
+    SLICE_X59Y11.A2        net (fanout=5)        0.937   leon3mp_U0/l3.cpu[0].u0/p0/iu0/r.x.ctrl.tt_5
+    SLICE_X59Y11.A         Tilo                  0.094   leon3mp_U0/l3.cpu[0].u0/p0/iu0/r.x.mexc
+                                                         leon3mp_U0/l3.cpu[0].u0/p0/iu0/xc_vectt_cmp_eq00001
+    SLICE_X59Y10.C1        net (fanout=16)       0.893   leon3mp_U0/l3.cpu[0].u0/p0/iu0/xc_vectt_cmp_eq0000
+    SLICE_X59Y10.C         Tilo                  0.094   leon3mp_U0/l3.cpu[0].u0/p0/c0mmu/dcache0/r.wb.data1_9
+                                                         leon3mp_U0/l3.cpu[0].u0/p0/iu0/dmode_mux000171
+    SLICE_X59Y11.D4        net (fanout=1)        0.496   leon3mp_U0/l3.cpu[0].u0/p0/iu0/dmode_mux000171
+    SLICE_X59Y11.D         Tilo                  0.094   leon3mp_U0/l3.cpu[0].u0/p0/iu0/r.x.mexc
+                                                         leon3mp_U0/l3.cpu[0].u0/p0/iu0/dmode_mux0001111
+    SLICE_X57Y12.A6        net (fanout=11)       0.329   leon3mp_U0/l3.cpu[0].u0/p0/iu0/dmode_mux0001111
+    SLICE_X57Y12.A         Tilo                  0.094   leon3mp_U0/l3.dsugen.dsu0/x0/r.slv.hwdata_3
+                                                         leon3mp_U0/l3.cpu[0].u0/p0/iu0/N4761_1
+    SLICE_X67Y10.A6        net (fanout=2)        0.502   leon3mp_U0/l3.cpu[0].u0/p0/iu0/N4761
+    SLICE_X67Y10.A         Tilo                  0.094   leon3mp_U0/l3.cpu[0].u0/p0/iu0/r.e.ctrl.annul
+                                                         leon3mp_U0/l3.cpu[0].u0/p0/iu0/v_x_annul_all_mux0005
+    SLICE_X65Y7.B2         net (fanout=39)       0.990   leon3mp_U0/l3.cpu[0].u0/p0/iu0/rin_x_annul_all
+    SLICE_X65Y7.B          Tilo                  0.094   leon3mp_U0/l3.cpu[0].u0/p0/c0mmu/icache0/rl.lru_112
+                                                         leon3mp_U0/l3.cpu[0].u0/p0/iu0/rin_x_ctrl_tt_and0000
+    SLICE_X79Y16.A4        net (fanout=9)        1.203   leon3mp_U0/l3.cpu[0].u0/p0/iu0/rin_x_ctrl_tt_and0000
+    SLICE_X79Y16.A         Tilo                  0.094   leon3mp_U0/l3.cpu[0].u0/p0/c0mmu/mmugen.m0/tlbcomb0.ctlb0/tlbcam0[6].tag0/r.btag.LVL_1
+                                                         leon3mp_U0/l3.cpu[0].u0/p0/iu0/dci_nullify118
+    SLICE_X81Y17.A6        net (fanout=18)       0.545   leon3mp_U0/l3.cpu[0].u0/p0/dci_nullify
+    SLICE_X81Y17.A         Tilo                  0.094   leon3mp_U0/l3.cpu[0].u0/p0/c0mmu/dcache0/r.dstate_FSM_FFd9
+                                                         leon3mp_U0/l3.cpu[0].u0/p0/c0mmu/dcache0/r_wbinit_not0001113
+    SLICE_X70Y8.B5         net (fanout=19)       1.132   leon3mp_U0/l3.cpu[0].u0/p0/c0mmu/dcache0/N1291
+    SLICE_X70Y8.B          Tilo                  0.094   leon3mp_U0/l3.cpu[0].u0/p0/c0mmu/icache0/rl.lru_255
+                                                         leon3mp_U0/l3.cpu[0].u0/p0/c0mmu/dcache0/dwrite_mux0011106
+    RAMB36_X2Y0.WEAU0      net (fanout=16)       0.813   leon3mp_U0/l3.cpu[0].u0/crami_dcramin_dwrite<0>
+    RAMB36_X2Y0.CLKARDCLKU Trcck_WEA             0.624   leon3mp_U0/l3.cpu[0].u0/cmem0/dme.dd0[0].ddata0/xc2v.x0/a11.x[1].r
+                                                         leon3mp_U0/l3.cpu[0].u0/cmem0/dme.dd0[0].ddata0/xc2v.x0/a11.x[0].r
+    ---------------------------------------------------  ---------------------------
+    Total                                        9.760ns (1.920ns logic, 7.840ns route)
+                                                         (19.7% logic, 80.3% route)
+
+--------------------------------------------------------------------------------
+
+Paths for end point leon3mp_U0/l3.cpu[0].u0/cmem0/dme.dd0[0].ddata0/xc2v.x0/a11.x[0].r (RAMB36_X2Y0.WEAU1), 6853 paths
+--------------------------------------------------------------------------------
+Slack (setup path):     -3.620ns (requirement - (data path - clock path skew + uncertainty))
+  Source:               leon3mp_U0/l3.cpu[0].u0/p0/iu0/r.e.ldbp1 (FF)
+  Destination:          leon3mp_U0/l3.cpu[0].u0/cmem0/dme.dd0[0].ddata0/xc2v.x0/a11.x[0].r (RAM)
+  Requirement:          6.250ns
+  Data Path Delay:      9.787ns (Levels of Logic = 8)
+  Clock Path Skew:      0.056ns (0.633 - 0.577)
+  Source Clock:         leon3mp_U0/clkm rising at 0.000ns
+  Destination Clock:    leon3mp_U0/clkm rising at 6.250ns
+  Clock Uncertainty:    0.139ns
+
+  Clock Uncertainty:          0.139ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter (TSJ):  0.070ns
+    Total Input Jitter (TIJ):   0.000ns
+    Discrete Jitter (DJ):       0.207ns
+    Phase Error (PE):           0.000ns
+
+  Maximum Data Path: leon3mp_U0/l3.cpu[0].u0/p0/iu0/r.e.ldbp1 to leon3mp_U0/l3.cpu[0].u0/cmem0/dme.dd0[0].ddata0/xc2v.x0/a11.x[0].r
+    Location               Delay type         Delay(ns)  Physical Resource
+                                                         Logical Resource(s)
+    ---------------------------------------------------  -------------------
+    SLICE_X73Y6.AQ         Tcko                  0.450   leon3mp_U0/l3.cpu[0].u0/p0/iu0/r.x.dci.signed
+                                                         leon3mp_U0/l3.cpu[0].u0/p0/iu0/r.e.ldbp1
+    SLICE_X75Y3.D4         net (fanout=107)      1.016   leon3mp_U0/l3.cpu[0].u0/p0/iu0/r.e.ldbp1
+    SLICE_X75Y3.D          Tilo                  0.094   leon3mp_U0/l3.cpu[0].u0/p0/c0mmu/icache0/rl.lru_106
+                                                         leon3mp_U0/l3.cpu[0].u0/p0/iu0/ex_op1_mux0000<0>1
+    SLICE_X72Y2.BX         net (fanout=8)        0.627   leon3mp_U0/l3.cpu[0].u0/p0/iu0/muli_op1<0>
+    SLICE_X72Y2.DMUX       Tbxd                  0.585   Gill/FRM4X/XLXI_6/XLXI_3/XLXI_14/blk00000003/sig000000ba
+                                                         leon3mp_U0/l3.cpu[0].u0/p0/iu0/Madd_ex_add_res_add0000_cy<3>
+    SLICE_X69Y6.C5         net (fanout=3)        0.811   leon3mp_U0/l3.cpu[0].u0/p0/iu0/ex_add_res_add0000<3>
+    SLICE_X69Y6.C          Tilo                  0.094   Gill/FRM4X/XLXI_6/XLXI_3/XLXI_14/blk00000003/sig000000ac
+                                                         leon3mp_U0/l3.cpu[0].u0/p0/iu0/_or00011
+    SLICE_X77Y9.D2         net (fanout=3)        1.079   leon3mp_U0/l3.cpu[0].u0/p0/dci_eaddress<2>
+    SLICE_X77Y9.D          Tilo                  0.094   leon3mp_U0/l3.cpu[0].u0/p0/c0mmu/dcache0/r.faddr_8
+                                                         leon3mp_U0/l3.cpu[0].u0/p0/iu0/azero_cmp_eq000093
+    SLICE_X77Y9.B2         net (fanout=1)        0.734   leon3mp_U0/l3.cpu[0].u0/p0/iu0/azero_cmp_eq000093
+    SLICE_X77Y9.B          Tilo                  0.094   leon3mp_U0/l3.cpu[0].u0/p0/c0mmu/dcache0/r.faddr_8
+                                                         leon3mp_U0/l3.cpu[0].u0/p0/iu0/azero_cmp_eq0000256
+    SLICE_X79Y16.A5        net (fanout=3)        0.713   leon3mp_U0/l3.cpu[0].u0/p0/iu0/azero_cmp_eq0000
+    SLICE_X79Y16.A         Tilo                  0.094   leon3mp_U0/l3.cpu[0].u0/p0/c0mmu/mmugen.m0/tlbcomb0.ctlb0/tlbcam0[6].tag0/r.btag.LVL_1
+                                                         leon3mp_U0/l3.cpu[0].u0/p0/iu0/dci_nullify118
+    SLICE_X81Y17.A6        net (fanout=18)       0.545   leon3mp_U0/l3.cpu[0].u0/p0/dci_nullify
+    SLICE_X81Y17.A         Tilo                  0.094   leon3mp_U0/l3.cpu[0].u0/p0/c0mmu/dcache0/r.dstate_FSM_FFd9
+                                                         leon3mp_U0/l3.cpu[0].u0/p0/c0mmu/dcache0/r_wbinit_not0001113
+    SLICE_X70Y8.B5         net (fanout=19)       1.132   leon3mp_U0/l3.cpu[0].u0/p0/c0mmu/dcache0/N1291
+    SLICE_X70Y8.B          Tilo                  0.094   leon3mp_U0/l3.cpu[0].u0/p0/c0mmu/icache0/rl.lru_255
+                                                         leon3mp_U0/l3.cpu[0].u0/p0/c0mmu/dcache0/dwrite_mux0011106
+    RAMB36_X2Y0.WEAU1      net (fanout=16)       0.813   leon3mp_U0/l3.cpu[0].u0/crami_dcramin_dwrite<0>
+    RAMB36_X2Y0.CLKARDCLKU Trcck_WEA             0.624   leon3mp_U0/l3.cpu[0].u0/cmem0/dme.dd0[0].ddata0/xc2v.x0/a11.x[1].r
+                                                         leon3mp_U0/l3.cpu[0].u0/cmem0/dme.dd0[0].ddata0/xc2v.x0/a11.x[0].r
+    ---------------------------------------------------  ---------------------------
+    Total                                        9.787ns (2.317ns logic, 7.470ns route)
+                                                         (23.7% logic, 76.3% route)
+
+--------------------------------------------------------------------------------
+Slack (setup path):     -3.605ns (requirement - (data path - clock path skew + uncertainty))
+  Source:               leon3mp_U0/l3.cpu[0].u0/p0/iu0/r.e.op1_1 (FF)
+  Destination:          leon3mp_U0/l3.cpu[0].u0/cmem0/dme.dd0[0].ddata0/xc2v.x0/a11.x[0].r (RAM)
+  Requirement:          6.250ns
+  Data Path Delay:      9.749ns (Levels of Logic = 8)
+  Clock Path Skew:      0.033ns (0.633 - 0.600)
+  Source Clock:         leon3mp_U0/clkm rising at 0.000ns
+  Destination Clock:    leon3mp_U0/clkm rising at 6.250ns
+  Clock Uncertainty:    0.139ns
+
+  Clock Uncertainty:          0.139ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter (TSJ):  0.070ns
+    Total Input Jitter (TIJ):   0.000ns
+    Discrete Jitter (DJ):       0.207ns
+    Phase Error (PE):           0.000ns
+
+  Maximum Data Path: leon3mp_U0/l3.cpu[0].u0/p0/iu0/r.e.op1_1 to leon3mp_U0/l3.cpu[0].u0/cmem0/dme.dd0[0].ddata0/xc2v.x0/a11.x[0].r
+    Location               Delay type         Delay(ns)  Physical Resource
+                                                         Logical Resource(s)
+    ---------------------------------------------------  -------------------
+    SLICE_X70Y1.BQ         Tcko                  0.450   leon3mp_U0/l3.cpu[0].u0/p0/iu0/r.e.op1_2
+                                                         leon3mp_U0/l3.cpu[0].u0/p0/iu0/r.e.op1_1
+    SLICE_X87Y4.A4         net (fanout=6)        1.039   leon3mp_U0/l3.cpu[0].u0/p0/iu0/r.e.op1_1
+    SLICE_X87Y4.A          Tilo                  0.094   leon3mp_U0/l3.cpu[0].u0/p0/c0mmu/icache0/rl.lru_7
+                                                         leon3mp_U0/l3.cpu[0].u0/p0/iu0/ex_op1_mux0000<1>1
+    SLICE_X72Y2.CX         net (fanout=6)        0.728   leon3mp_U0/l3.cpu[0].u0/p0/iu0/muli_op1<1>
+    SLICE_X72Y2.DMUX       Tcxd                  0.423   Gill/FRM4X/XLXI_6/XLXI_3/XLXI_14/blk00000003/sig000000ba
+                                                         leon3mp_U0/l3.cpu[0].u0/p0/iu0/Madd_ex_add_res_add0000_cy<3>
+    SLICE_X69Y6.C5         net (fanout=3)        0.811   leon3mp_U0/l3.cpu[0].u0/p0/iu0/ex_add_res_add0000<3>
+    SLICE_X69Y6.C          Tilo                  0.094   Gill/FRM4X/XLXI_6/XLXI_3/XLXI_14/blk00000003/sig000000ac
+                                                         leon3mp_U0/l3.cpu[0].u0/p0/iu0/_or00011
+    SLICE_X77Y9.D2         net (fanout=3)        1.079   leon3mp_U0/l3.cpu[0].u0/p0/dci_eaddress<2>
+    SLICE_X77Y9.D          Tilo                  0.094   leon3mp_U0/l3.cpu[0].u0/p0/c0mmu/dcache0/r.faddr_8
+                                                         leon3mp_U0/l3.cpu[0].u0/p0/iu0/azero_cmp_eq000093
+    SLICE_X77Y9.B2         net (fanout=1)        0.734   leon3mp_U0/l3.cpu[0].u0/p0/iu0/azero_cmp_eq000093
+    SLICE_X77Y9.B          Tilo                  0.094   leon3mp_U0/l3.cpu[0].u0/p0/c0mmu/dcache0/r.faddr_8
+                                                         leon3mp_U0/l3.cpu[0].u0/p0/iu0/azero_cmp_eq0000256
+    SLICE_X79Y16.A5        net (fanout=3)        0.713   leon3mp_U0/l3.cpu[0].u0/p0/iu0/azero_cmp_eq0000
+    SLICE_X79Y16.A         Tilo                  0.094   leon3mp_U0/l3.cpu[0].u0/p0/c0mmu/mmugen.m0/tlbcomb0.ctlb0/tlbcam0[6].tag0/r.btag.LVL_1
+                                                         leon3mp_U0/l3.cpu[0].u0/p0/iu0/dci_nullify118
+    SLICE_X81Y17.A6        net (fanout=18)       0.545   leon3mp_U0/l3.cpu[0].u0/p0/dci_nullify
+    SLICE_X81Y17.A         Tilo                  0.094   leon3mp_U0/l3.cpu[0].u0/p0/c0mmu/dcache0/r.dstate_FSM_FFd9
+                                                         leon3mp_U0/l3.cpu[0].u0/p0/c0mmu/dcache0/r_wbinit_not0001113
+    SLICE_X70Y8.B5         net (fanout=19)       1.132   leon3mp_U0/l3.cpu[0].u0/p0/c0mmu/dcache0/N1291
+    SLICE_X70Y8.B          Tilo                  0.094   leon3mp_U0/l3.cpu[0].u0/p0/c0mmu/icache0/rl.lru_255
+                                                         leon3mp_U0/l3.cpu[0].u0/p0/c0mmu/dcache0/dwrite_mux0011106
+    RAMB36_X2Y0.WEAU1      net (fanout=16)       0.813   leon3mp_U0/l3.cpu[0].u0/crami_dcramin_dwrite<0>
+    RAMB36_X2Y0.CLKARDCLKU Trcck_WEA             0.624   leon3mp_U0/l3.cpu[0].u0/cmem0/dme.dd0[0].ddata0/xc2v.x0/a11.x[1].r
+                                                         leon3mp_U0/l3.cpu[0].u0/cmem0/dme.dd0[0].ddata0/xc2v.x0/a11.x[0].r
+    ---------------------------------------------------  ---------------------------
+    Total                                        9.749ns (2.155ns logic, 7.594ns route)
+                                                         (22.1% logic, 77.9% route)
+
+--------------------------------------------------------------------------------
+Slack (setup path):     -3.528ns (requirement - (data path - clock path skew + uncertainty))
+  Source:               leon3mp_U0/l3.cpu[0].u0/p0/iu0/r.x.ctrl.tt_5 (FF)
+  Destination:          leon3mp_U0/l3.cpu[0].u0/cmem0/dme.dd0[0].ddata0/xc2v.x0/a11.x[0].r (RAM)
+  Requirement:          6.250ns
+  Data Path Delay:      9.760ns (Levels of Logic = 9)
+  Clock Path Skew:      0.121ns (0.633 - 0.512)
+  Source Clock:         leon3mp_U0/clkm rising at 0.000ns
+  Destination Clock:    leon3mp_U0/clkm rising at 6.250ns
+  Clock Uncertainty:    0.139ns
+
+  Clock Uncertainty:          0.139ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter (TSJ):  0.070ns
+    Total Input Jitter (TIJ):   0.000ns
+    Discrete Jitter (DJ):       0.207ns
+    Phase Error (PE):           0.000ns
+
+  Maximum Data Path: leon3mp_U0/l3.cpu[0].u0/p0/iu0/r.x.ctrl.tt_5 to leon3mp_U0/l3.cpu[0].u0/cmem0/dme.dd0[0].ddata0/xc2v.x0/a11.x[0].r
+    Location               Delay type         Delay(ns)  Physical Resource
+                                                         Logical Resource(s)
+    ---------------------------------------------------  -------------------
+    SLICE_X58Y10.AQ        Tcko                  0.450   leon3mp_U0/l3.cpu[0].u0/p0/iu0/r.e.ctrl.rett
+                                                         leon3mp_U0/l3.cpu[0].u0/p0/iu0/r.x.ctrl.tt_5
+    SLICE_X59Y11.A2        net (fanout=5)        0.937   leon3mp_U0/l3.cpu[0].u0/p0/iu0/r.x.ctrl.tt_5
+    SLICE_X59Y11.A         Tilo                  0.094   leon3mp_U0/l3.cpu[0].u0/p0/iu0/r.x.mexc
+                                                         leon3mp_U0/l3.cpu[0].u0/p0/iu0/xc_vectt_cmp_eq00001
+    SLICE_X59Y10.C1        net (fanout=16)       0.893   leon3mp_U0/l3.cpu[0].u0/p0/iu0/xc_vectt_cmp_eq0000
+    SLICE_X59Y10.C         Tilo                  0.094   leon3mp_U0/l3.cpu[0].u0/p0/c0mmu/dcache0/r.wb.data1_9
+                                                         leon3mp_U0/l3.cpu[0].u0/p0/iu0/dmode_mux000171
+    SLICE_X59Y11.D4        net (fanout=1)        0.496   leon3mp_U0/l3.cpu[0].u0/p0/iu0/dmode_mux000171
+    SLICE_X59Y11.D         Tilo                  0.094   leon3mp_U0/l3.cpu[0].u0/p0/iu0/r.x.mexc
+                                                         leon3mp_U0/l3.cpu[0].u0/p0/iu0/dmode_mux0001111
+    SLICE_X57Y12.A6        net (fanout=11)       0.329   leon3mp_U0/l3.cpu[0].u0/p0/iu0/dmode_mux0001111
+    SLICE_X57Y12.A         Tilo                  0.094   leon3mp_U0/l3.dsugen.dsu0/x0/r.slv.hwdata_3
+                                                         leon3mp_U0/l3.cpu[0].u0/p0/iu0/N4761_1
+    SLICE_X67Y10.A6        net (fanout=2)        0.502   leon3mp_U0/l3.cpu[0].u0/p0/iu0/N4761
+    SLICE_X67Y10.A         Tilo                  0.094   leon3mp_U0/l3.cpu[0].u0/p0/iu0/r.e.ctrl.annul
+                                                         leon3mp_U0/l3.cpu[0].u0/p0/iu0/v_x_annul_all_mux0005
+    SLICE_X65Y7.B2         net (fanout=39)       0.990   leon3mp_U0/l3.cpu[0].u0/p0/iu0/rin_x_annul_all
+    SLICE_X65Y7.B          Tilo                  0.094   leon3mp_U0/l3.cpu[0].u0/p0/c0mmu/icache0/rl.lru_112
+                                                         leon3mp_U0/l3.cpu[0].u0/p0/iu0/rin_x_ctrl_tt_and0000
+    SLICE_X79Y16.A4        net (fanout=9)        1.203   leon3mp_U0/l3.cpu[0].u0/p0/iu0/rin_x_ctrl_tt_and0000
+    SLICE_X79Y16.A         Tilo                  0.094   leon3mp_U0/l3.cpu[0].u0/p0/c0mmu/mmugen.m0/tlbcomb0.ctlb0/tlbcam0[6].tag0/r.btag.LVL_1
+                                                         leon3mp_U0/l3.cpu[0].u0/p0/iu0/dci_nullify118
+    SLICE_X81Y17.A6        net (fanout=18)       0.545   leon3mp_U0/l3.cpu[0].u0/p0/dci_nullify
+    SLICE_X81Y17.A         Tilo                  0.094   leon3mp_U0/l3.cpu[0].u0/p0/c0mmu/dcache0/r.dstate_FSM_FFd9
+                                                         leon3mp_U0/l3.cpu[0].u0/p0/c0mmu/dcache0/r_wbinit_not0001113
+    SLICE_X70Y8.B5         net (fanout=19)       1.132   leon3mp_U0/l3.cpu[0].u0/p0/c0mmu/dcache0/N1291
+    SLICE_X70Y8.B          Tilo                  0.094   leon3mp_U0/l3.cpu[0].u0/p0/c0mmu/icache0/rl.lru_255
+                                                         leon3mp_U0/l3.cpu[0].u0/p0/c0mmu/dcache0/dwrite_mux0011106
+    RAMB36_X2Y0.WEAU1      net (fanout=16)       0.813   leon3mp_U0/l3.cpu[0].u0/crami_dcramin_dwrite<0>
+    RAMB36_X2Y0.CLKARDCLKU Trcck_WEA             0.624   leon3mp_U0/l3.cpu[0].u0/cmem0/dme.dd0[0].ddata0/xc2v.x0/a11.x[1].r
+                                                         leon3mp_U0/l3.cpu[0].u0/cmem0/dme.dd0[0].ddata0/xc2v.x0/a11.x[0].r
+    ---------------------------------------------------  ---------------------------
+    Total                                        9.760ns (1.920ns logic, 7.840ns route)
+                                                         (19.7% logic, 80.3% route)
+
+--------------------------------------------------------------------------------
+
+Hold Paths: PERIOD analysis for net "leon3mp_U0/clkgen0/xc5l.v/clk0B" derived from
+ NET "leon3mp_U0/clk_pad/xcv2.u0/ol" PERIOD = 10 ns HIGH 50%;
+ divided by 1.60 to 6.250 nS and duty cycle corrected to HIGH 3.125 nS 
+
+--------------------------------------------------------------------------------
+
+Paths for end point Gill/FRM4X/XLXI_6/XLXI_40/blk00000003/blk000000a5 (DSP48_X0Y61.C2), 1 path
+--------------------------------------------------------------------------------
+Slack (hold path):      0.245ns (requirement - (clock path skew + uncertainty - data path))
+  Source:               Gill/FRM4X/XLXI_6/XLXI_40/blk00000003/blk000000ae (FF)
+  Destination:          Gill/FRM4X/XLXI_6/XLXI_40/blk00000003/blk000000a5 (DSP)
+  Requirement:          0.000ns
+  Data Path Delay:      0.337ns (Levels of Logic = 0)
+  Clock Path Skew:      0.092ns (0.653 - 0.561)
+  Source Clock:         leon3mp_U0/clkm rising at 6.250ns
+  Destination Clock:    leon3mp_U0/clkm rising at 6.250ns
+  Clock Uncertainty:    0.000ns
+
+  Minimum Data Path: Gill/FRM4X/XLXI_6/XLXI_40/blk00000003/blk000000ae to Gill/FRM4X/XLXI_6/XLXI_40/blk00000003/blk000000a5
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICE_X31Y150.CQ     Tcko                  0.414   Gill/FRM4X/XLXI_6/XLXI_40/blk00000003/sig00000152
+                                                       Gill/FRM4X/XLXI_6/XLXI_40/blk00000003/blk000000ae
+    DSP48_X0Y61.C2       net (fanout=1)        0.292   Gill/FRM4X/XLXI_6/XLXI_40/blk00000003/sig00000153
+    DSP48_X0Y61.CLK      Tdspckd_CC  (-Th)     0.369   Gill/FRM4X/XLXI_6/XLXI_40/blk00000003/blk000000a5
+                                                       Gill/FRM4X/XLXI_6/XLXI_40/blk00000003/blk000000a5
+    -------------------------------------------------  ---------------------------
+    Total                                      0.337ns (0.045ns logic, 0.292ns route)
+                                                       (13.4% logic, 86.6% route)
+
+--------------------------------------------------------------------------------
+
+Paths for end point Gill/FRM4X/XLXI_6/XLXI_35/blk00000003/blk00000119 (SLICE_X30Y101.B6), 1 path
+--------------------------------------------------------------------------------
+Slack (hold path):      0.256ns (requirement - (clock path skew + uncertainty - data path))
+  Source:               Gill/FRM4X/XLXI_6/XLXI_35/blk00000003/blk0000010e (DSP)
+  Destination:          Gill/FRM4X/XLXI_6/XLXI_35/blk00000003/blk00000119 (FF)
+  Requirement:          0.000ns
+  Data Path Delay:      0.298ns (Levels of Logic = 1)
+  Clock Path Skew:      0.042ns (0.658 - 0.616)
+  Source Clock:         leon3mp_U0/clkm rising at 6.250ns
+  Destination Clock:    leon3mp_U0/clkm rising at 6.250ns
+  Clock Uncertainty:    0.000ns
+
+  Minimum Data Path: Gill/FRM4X/XLXI_6/XLXI_35/blk00000003/blk0000010e to Gill/FRM4X/XLXI_6/XLXI_35/blk00000003/blk00000119
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    DSP48_X0Y41.P6       Tdspcko_PP            0.190   Gill/FRM4X/XLXI_6/XLXI_35/blk00000003/blk0000010e
+                                                       Gill/FRM4X/XLXI_6/XLXI_35/blk00000003/blk0000010e
+    SLICE_X30Y101.B6     net (fanout=1)        0.330   Gill/FRM4X/XLXI_6/XLXI_35/blk00000003/sig0000022b
+    SLICE_X30Y101.CLK    Tah         (-Th)     0.222   Gill/FRM4X/XLXI_6/XLXI_35/blk00000003/sig0000023a
+                                                       Gill/FRM4X/XLXI_6/XLXI_35/blk00000003/blk00000281
+                                                       Gill/FRM4X/XLXI_6/XLXI_35/blk00000003/blk00000119
+    -------------------------------------------------  ---------------------------
+    Total                                      0.298ns (-0.032ns logic, 0.330ns route)
+                                                       (-10.7% logic, 110.7% route)
+
+--------------------------------------------------------------------------------
+
+Paths for end point Gill/FRM4X/XLXI_6/XLXI_54/blk00000003/blk0000010e (DSP48_X0Y36.C23), 1 path
+--------------------------------------------------------------------------------
+Slack (hold path):      0.257ns (requirement - (clock path skew + uncertainty - data path))
+  Source:               Gill/FRM4X/XLXI_6/XLXI_54/blk00000003/blk000000fe (FF)
+  Destination:          Gill/FRM4X/XLXI_6/XLXI_54/blk00000003/blk0000010e (DSP)
+  Requirement:          0.000ns
+  Data Path Delay:      0.337ns (Levels of Logic = 0)
+  Clock Path Skew:      0.080ns (0.642 - 0.562)
+  Source Clock:         leon3mp_U0/clkm rising at 6.250ns
+  Destination Clock:    leon3mp_U0/clkm rising at 6.250ns
+  Clock Uncertainty:    0.000ns
+
+  Minimum Data Path: Gill/FRM4X/XLXI_6/XLXI_54/blk00000003/blk000000fe to Gill/FRM4X/XLXI_6/XLXI_54/blk00000003/blk0000010e
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICE_X31Y89.CQ      Tcko                  0.414   Gill/FRM4X/XLXI_6/XLXI_54/blk00000003/sig000001f7
+                                                       Gill/FRM4X/XLXI_6/XLXI_54/blk00000003/blk000000fe
+    DSP48_X0Y36.C23      net (fanout=1)        0.292   Gill/FRM4X/XLXI_6/XLXI_54/blk00000003/sig000001f6
+    DSP48_X0Y36.CLK      Tdspckd_CC  (-Th)     0.369   Gill/FRM4X/XLXI_6/XLXI_54/blk00000003/blk0000010e
+                                                       Gill/FRM4X/XLXI_6/XLXI_54/blk00000003/blk0000010e
+    -------------------------------------------------  ---------------------------
+    Total                                      0.337ns (0.045ns logic, 0.292ns route)
+                                                       (13.4% logic, 86.6% route)
+
+--------------------------------------------------------------------------------
+
+Component Switching Limit Checks: PERIOD analysis for net "leon3mp_U0/clkgen0/xc5l.v/clk0B" derived from
+ NET "leon3mp_U0/clk_pad/xcv2.u0/ol" PERIOD = 10 ns HIGH 50%;
+ divided by 1.60 to 6.250 nS and duty cycle corrected to HIGH 3.125 nS 
+
+--------------------------------------------------------------------------------
+Slack: -2.082ns (period - min period limit)
+  Period: 6.250ns
+  Min period limit: 8.332ns (120.019MHz) (Tdcmpc)
+  Physical resource: leon3mp_U0/clkgen0/xc5l.v/sd0.dll1/CLKIN
+  Logical resource: leon3mp_U0/clkgen0/xc5l.v/sd0.dll1/CLKIN
+  Location pin: DCM_ADV_X0Y0.CLKIN
+  Clock network: leon3mp_U0/clkm
+--------------------------------------------------------------------------------
+Slack: -2.082ns (period - min period limit)
+  Period: 6.250ns
+  Min period limit: 8.332ns (120.019MHz) (Tdcmpco)
+  Physical resource: leon3mp_U0/clkgen0/xc5l.v/sd0.dll1/CLK0
+  Logical resource: leon3mp_U0/clkgen0/xc5l.v/sd0.dll1/CLK0
+  Location pin: DCM_ADV_X0Y0.CLK0
+  Clock network: leon3mp_U0/clkgen0/xc5l.v/lsdclk
+--------------------------------------------------------------------------------
+Slack: -0.892ns (period - min period limit)
+  Period: 6.250ns
+  Min period limit: 7.142ns (140.017MHz) (Tdcmpco)
+  Physical resource: leon3mp_U0/clkgen0/xc5l.v/dll0/CLKFX
+  Logical resource: leon3mp_U0/clkgen0/xc5l.v/dll0/CLKFX
+  Location pin: DCM_ADV_X0Y10.CLKFX
+  Clock network: leon3mp_U0/clkgen0/xc5l.v/clk0B
+--------------------------------------------------------------------------------
+
+================================================================================
+Timing constraint: NET "leon3mp_U0/clk_200" PERIOD = 5 ns HIGH 50%;
+
+ 3 paths analyzed, 3 endpoints analyzed, 0 failing endpoints
+ 0 timing errors detected. (0 setup errors, 0 hold errors, 0 component switching limit errors)
+ Minimum period is   3.600ns.
+--------------------------------------------------------------------------------
+
+Paths for end point leon3mp_U0/ddrsp0.ddrc0/ddr_phy0/ddr_phy0/xc4v.ddr_phy0/dll0rst_1 (SLICE_X55Y130.BX), 1 path
+--------------------------------------------------------------------------------
+Slack (setup path):     3.708ns (requirement - (data path - clock path skew + uncertainty))
+  Source:               leon3mp_U0/ddrsp0.ddrc0/ddr_phy0/ddr_phy0/xc4v.ddr_phy0/dll0rst_2 (FF)
+  Destination:          leon3mp_U0/ddrsp0.ddrc0/ddr_phy0/ddr_phy0/xc4v.ddr_phy0/dll0rst_1 (FF)
+  Requirement:          5.000ns
+  Data Path Delay:      1.257ns (Levels of Logic = 0)
+  Clock Path Skew:      0.000ns
+  Source Clock:         leon3mp_U0/clk_200 rising at 0.000ns
+  Destination Clock:    leon3mp_U0/clk_200 rising at 5.000ns
+  Clock Uncertainty:    0.035ns
+
+  Clock Uncertainty:          0.035ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter (TSJ):  0.070ns
+    Total Input Jitter (TIJ):   0.000ns
+    Discrete Jitter (DJ):       0.000ns
+    Phase Error (PE):           0.000ns
+
+  Maximum Data Path: leon3mp_U0/ddrsp0.ddrc0/ddr_phy0/ddr_phy0/xc4v.ddr_phy0/dll0rst_2 to leon3mp_U0/ddrsp0.ddrc0/ddr_phy0/ddr_phy0/xc4v.ddr_phy0/dll0rst_1
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICE_X55Y130.CQ     Tcko                  0.450   leon3mp_U0/ddrsp0.ddrc0/ddr_phy0/ddr_phy0/xc4v.ddr_phy0/dll0rst<3>
+                                                       leon3mp_U0/ddrsp0.ddrc0/ddr_phy0/ddr_phy0/xc4v.ddr_phy0/dll0rst_2
+    SLICE_X55Y130.BX     net (fanout=1)        0.818   leon3mp_U0/ddrsp0.ddrc0/ddr_phy0/ddr_phy0/xc4v.ddr_phy0/dll0rst<2>
+    SLICE_X55Y130.CLK    Tdick                -0.011   leon3mp_U0/ddrsp0.ddrc0/ddr_phy0/ddr_phy0/xc4v.ddr_phy0/dll0rst<3>
+                                                       leon3mp_U0/ddrsp0.ddrc0/ddr_phy0/ddr_phy0/xc4v.ddr_phy0/dll0rst_1
+    -------------------------------------------------  ---------------------------
+    Total                                      1.257ns (0.439ns logic, 0.818ns route)
+                                                       (34.9% logic, 65.1% route)
+
+--------------------------------------------------------------------------------
+
+Paths for end point leon3mp_U0/ddrsp0.ddrc0/ddr_phy0/ddr_phy0/xc4v.ddr_phy0/dll0rst_2 (SLICE_X55Y130.CX), 1 path
+--------------------------------------------------------------------------------
+Slack (setup path):     4.205ns (requirement - (data path - clock path skew + uncertainty))
+  Source:               leon3mp_U0/ddrsp0.ddrc0/ddr_phy0/ddr_phy0/xc4v.ddr_phy0/dll0rst_3 (FF)
+  Destination:          leon3mp_U0/ddrsp0.ddrc0/ddr_phy0/ddr_phy0/xc4v.ddr_phy0/dll0rst_2 (FF)
+  Requirement:          5.000ns
+  Data Path Delay:      0.760ns (Levels of Logic = 0)
+  Clock Path Skew:      0.000ns
+  Source Clock:         leon3mp_U0/clk_200 rising at 0.000ns
+  Destination Clock:    leon3mp_U0/clk_200 rising at 5.000ns
+  Clock Uncertainty:    0.035ns
+
+  Clock Uncertainty:          0.035ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter (TSJ):  0.070ns
+    Total Input Jitter (TIJ):   0.000ns
+    Discrete Jitter (DJ):       0.000ns
+    Phase Error (PE):           0.000ns
+
+  Maximum Data Path: leon3mp_U0/ddrsp0.ddrc0/ddr_phy0/ddr_phy0/xc4v.ddr_phy0/dll0rst_3 to leon3mp_U0/ddrsp0.ddrc0/ddr_phy0/ddr_phy0/xc4v.ddr_phy0/dll0rst_2
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICE_X55Y130.DQ     Tcko                  0.450   leon3mp_U0/ddrsp0.ddrc0/ddr_phy0/ddr_phy0/xc4v.ddr_phy0/dll0rst<3>
+                                                       leon3mp_U0/ddrsp0.ddrc0/ddr_phy0/ddr_phy0/xc4v.ddr_phy0/dll0rst_3
+    SLICE_X55Y130.CX     net (fanout=1)        0.306   leon3mp_U0/ddrsp0.ddrc0/ddr_phy0/ddr_phy0/xc4v.ddr_phy0/dll0rst<3>
+    SLICE_X55Y130.CLK    Tdick                 0.004   leon3mp_U0/ddrsp0.ddrc0/ddr_phy0/ddr_phy0/xc4v.ddr_phy0/dll0rst<3>
+                                                       leon3mp_U0/ddrsp0.ddrc0/ddr_phy0/ddr_phy0/xc4v.ddr_phy0/dll0rst_2
+    -------------------------------------------------  ---------------------------
+    Total                                      0.760ns (0.454ns logic, 0.306ns route)
+                                                       (59.7% logic, 40.3% route)
+
+--------------------------------------------------------------------------------
+
+Paths for end point leon3mp_U0/ddrsp0.ddrc0/ddr_phy0/ddr_phy0/xc4v.ddr_phy0/dll0rst_0 (SLICE_X55Y130.AX), 1 path
+--------------------------------------------------------------------------------
+Slack (setup path):     4.217ns (requirement - (data path - clock path skew + uncertainty))
+  Source:               leon3mp_U0/ddrsp0.ddrc0/ddr_phy0/ddr_phy0/xc4v.ddr_phy0/dll0rst_1 (FF)
+  Destination:          leon3mp_U0/ddrsp0.ddrc0/ddr_phy0/ddr_phy0/xc4v.ddr_phy0/dll0rst_0 (FF)
+  Requirement:          5.000ns
+  Data Path Delay:      0.748ns (Levels of Logic = 0)
+  Clock Path Skew:      0.000ns
+  Source Clock:         leon3mp_U0/clk_200 rising at 0.000ns
+  Destination Clock:    leon3mp_U0/clk_200 rising at 5.000ns
+  Clock Uncertainty:    0.035ns
+
+  Clock Uncertainty:          0.035ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter (TSJ):  0.070ns
+    Total Input Jitter (TIJ):   0.000ns
+    Discrete Jitter (DJ):       0.000ns
+    Phase Error (PE):           0.000ns
+
+  Maximum Data Path: leon3mp_U0/ddrsp0.ddrc0/ddr_phy0/ddr_phy0/xc4v.ddr_phy0/dll0rst_1 to leon3mp_U0/ddrsp0.ddrc0/ddr_phy0/ddr_phy0/xc4v.ddr_phy0/dll0rst_0
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICE_X55Y130.BQ     Tcko                  0.450   leon3mp_U0/ddrsp0.ddrc0/ddr_phy0/ddr_phy0/xc4v.ddr_phy0/dll0rst<3>
+                                                       leon3mp_U0/ddrsp0.ddrc0/ddr_phy0/ddr_phy0/xc4v.ddr_phy0/dll0rst_1
+    SLICE_X55Y130.AX     net (fanout=1)        0.306   leon3mp_U0/ddrsp0.ddrc0/ddr_phy0/ddr_phy0/xc4v.ddr_phy0/dll0rst<1>
+    SLICE_X55Y130.CLK    Tdick                -0.008   leon3mp_U0/ddrsp0.ddrc0/ddr_phy0/ddr_phy0/xc4v.ddr_phy0/dll0rst<3>
+                                                       leon3mp_U0/ddrsp0.ddrc0/ddr_phy0/ddr_phy0/xc4v.ddr_phy0/dll0rst_0
+    -------------------------------------------------  ---------------------------
+    Total                                      0.748ns (0.442ns logic, 0.306ns route)
+                                                       (59.1% logic, 40.9% route)
+
+--------------------------------------------------------------------------------
+
+Hold Paths: NET "leon3mp_U0/clk_200" PERIOD = 5 ns HIGH 50%;
+--------------------------------------------------------------------------------
+
+Paths for end point leon3mp_U0/ddrsp0.ddrc0/ddr_phy0/ddr_phy0/xc4v.ddr_phy0/dll0rst_0 (SLICE_X55Y130.AX), 1 path
+--------------------------------------------------------------------------------
+Slack (hold path):      0.467ns (requirement - (clock path skew + uncertainty - data path))
+  Source:               leon3mp_U0/ddrsp0.ddrc0/ddr_phy0/ddr_phy0/xc4v.ddr_phy0/dll0rst_1 (FF)
+  Destination:          leon3mp_U0/ddrsp0.ddrc0/ddr_phy0/ddr_phy0/xc4v.ddr_phy0/dll0rst_0 (FF)
+  Requirement:          0.000ns
+  Data Path Delay:      0.467ns (Levels of Logic = 0)
+  Clock Path Skew:      0.000ns
+  Source Clock:         leon3mp_U0/clk_200 rising at 5.000ns
+  Destination Clock:    leon3mp_U0/clk_200 rising at 5.000ns
+  Clock Uncertainty:    0.000ns
+
+  Minimum Data Path: leon3mp_U0/ddrsp0.ddrc0/ddr_phy0/ddr_phy0/xc4v.ddr_phy0/dll0rst_1 to leon3mp_U0/ddrsp0.ddrc0/ddr_phy0/ddr_phy0/xc4v.ddr_phy0/dll0rst_0
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICE_X55Y130.BQ     Tcko                  0.414   leon3mp_U0/ddrsp0.ddrc0/ddr_phy0/ddr_phy0/xc4v.ddr_phy0/dll0rst<3>
+                                                       leon3mp_U0/ddrsp0.ddrc0/ddr_phy0/ddr_phy0/xc4v.ddr_phy0/dll0rst_1
+    SLICE_X55Y130.AX     net (fanout=1)        0.282   leon3mp_U0/ddrsp0.ddrc0/ddr_phy0/ddr_phy0/xc4v.ddr_phy0/dll0rst<1>
+    SLICE_X55Y130.CLK    Tckdi       (-Th)     0.229   leon3mp_U0/ddrsp0.ddrc0/ddr_phy0/ddr_phy0/xc4v.ddr_phy0/dll0rst<3>
+                                                       leon3mp_U0/ddrsp0.ddrc0/ddr_phy0/ddr_phy0/xc4v.ddr_phy0/dll0rst_0
+    -------------------------------------------------  ---------------------------
+    Total                                      0.467ns (0.185ns logic, 0.282ns route)
+                                                       (39.6% logic, 60.4% route)
+
+--------------------------------------------------------------------------------
+
+Paths for end point leon3mp_U0/ddrsp0.ddrc0/ddr_phy0/ddr_phy0/xc4v.ddr_phy0/dll0rst_2 (SLICE_X55Y130.CX), 1 path
+--------------------------------------------------------------------------------
+Slack (hold path):      0.478ns (requirement - (clock path skew + uncertainty - data path))
+  Source:               leon3mp_U0/ddrsp0.ddrc0/ddr_phy0/ddr_phy0/xc4v.ddr_phy0/dll0rst_3 (FF)
+  Destination:          leon3mp_U0/ddrsp0.ddrc0/ddr_phy0/ddr_phy0/xc4v.ddr_phy0/dll0rst_2 (FF)
+  Requirement:          0.000ns
+  Data Path Delay:      0.478ns (Levels of Logic = 0)
+  Clock Path Skew:      0.000ns
+  Source Clock:         leon3mp_U0/clk_200 rising at 5.000ns
+  Destination Clock:    leon3mp_U0/clk_200 rising at 5.000ns
+  Clock Uncertainty:    0.000ns
+
+  Minimum Data Path: leon3mp_U0/ddrsp0.ddrc0/ddr_phy0/ddr_phy0/xc4v.ddr_phy0/dll0rst_3 to leon3mp_U0/ddrsp0.ddrc0/ddr_phy0/ddr_phy0/xc4v.ddr_phy0/dll0rst_2
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICE_X55Y130.DQ     Tcko                  0.414   leon3mp_U0/ddrsp0.ddrc0/ddr_phy0/ddr_phy0/xc4v.ddr_phy0/dll0rst<3>
+                                                       leon3mp_U0/ddrsp0.ddrc0/ddr_phy0/ddr_phy0/xc4v.ddr_phy0/dll0rst_3
+    SLICE_X55Y130.CX     net (fanout=1)        0.282   leon3mp_U0/ddrsp0.ddrc0/ddr_phy0/ddr_phy0/xc4v.ddr_phy0/dll0rst<3>
+    SLICE_X55Y130.CLK    Tckdi       (-Th)     0.218   leon3mp_U0/ddrsp0.ddrc0/ddr_phy0/ddr_phy0/xc4v.ddr_phy0/dll0rst<3>
+                                                       leon3mp_U0/ddrsp0.ddrc0/ddr_phy0/ddr_phy0/xc4v.ddr_phy0/dll0rst_2
+    -------------------------------------------------  ---------------------------
+    Total                                      0.478ns (0.196ns logic, 0.282ns route)
+                                                       (41.0% logic, 59.0% route)
+
+--------------------------------------------------------------------------------
+
+Paths for end point leon3mp_U0/ddrsp0.ddrc0/ddr_phy0/ddr_phy0/xc4v.ddr_phy0/dll0rst_1 (SLICE_X55Y130.BX), 1 path
+--------------------------------------------------------------------------------
+Slack (hold path):      0.936ns (requirement - (clock path skew + uncertainty - data path))
+  Source:               leon3mp_U0/ddrsp0.ddrc0/ddr_phy0/ddr_phy0/xc4v.ddr_phy0/dll0rst_2 (FF)
+  Destination:          leon3mp_U0/ddrsp0.ddrc0/ddr_phy0/ddr_phy0/xc4v.ddr_phy0/dll0rst_1 (FF)
+  Requirement:          0.000ns
+  Data Path Delay:      0.936ns (Levels of Logic = 0)
+  Clock Path Skew:      0.000ns
+  Source Clock:         leon3mp_U0/clk_200 rising at 5.000ns
+  Destination Clock:    leon3mp_U0/clk_200 rising at 5.000ns
+  Clock Uncertainty:    0.000ns
+
+  Minimum Data Path: leon3mp_U0/ddrsp0.ddrc0/ddr_phy0/ddr_phy0/xc4v.ddr_phy0/dll0rst_2 to leon3mp_U0/ddrsp0.ddrc0/ddr_phy0/ddr_phy0/xc4v.ddr_phy0/dll0rst_1
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICE_X55Y130.CQ     Tcko                  0.414   leon3mp_U0/ddrsp0.ddrc0/ddr_phy0/ddr_phy0/xc4v.ddr_phy0/dll0rst<3>
+                                                       leon3mp_U0/ddrsp0.ddrc0/ddr_phy0/ddr_phy0/xc4v.ddr_phy0/dll0rst_2
+    SLICE_X55Y130.BX     net (fanout=1)        0.753   leon3mp_U0/ddrsp0.ddrc0/ddr_phy0/ddr_phy0/xc4v.ddr_phy0/dll0rst<2>
+    SLICE_X55Y130.CLK    Tckdi       (-Th)     0.231   leon3mp_U0/ddrsp0.ddrc0/ddr_phy0/ddr_phy0/xc4v.ddr_phy0/dll0rst<3>
+                                                       leon3mp_U0/ddrsp0.ddrc0/ddr_phy0/ddr_phy0/xc4v.ddr_phy0/dll0rst_1
+    -------------------------------------------------  ---------------------------
+    Total                                      0.936ns (0.183ns logic, 0.753ns route)
+                                                       (19.6% logic, 80.4% route)
+
+--------------------------------------------------------------------------------
+
+Component Switching Limit Checks: NET "leon3mp_U0/clk_200" PERIOD = 5 ns HIGH 50%;
+--------------------------------------------------------------------------------
+Slack: 1.400ns (period - (min low pulse limit / (low pulse / period)))
+  Period: 5.000ns
+  Low pulse: 2.500ns
+  Low pulse limit: 1.800ns (Tdcmpw_CLKIN_200_250)
+  Physical resource: leon3mp_U0/ddrsp0.ddrc0/ddr_phy0/ddr_phy0/xc4v.ddr_phy0/clkscale.HMODE_dllm.dllm/CLKIN
+  Logical resource: leon3mp_U0/ddrsp0.ddrc0/ddr_phy0/ddr_phy0/xc4v.ddr_phy0/clkscale.HMODE_dllm.dllm/CLKIN
+  Location pin: DCM_ADV_X0Y11.CLKIN
+  Clock network: leon3mp_U0/clk_200
+--------------------------------------------------------------------------------
+Slack: 1.400ns (period - (min high pulse limit / (high pulse / period)))
+  Period: 5.000ns
+  High pulse: 2.500ns
+  High pulse limit: 1.800ns (Tdcmpw_CLKIN_200_250)
+  Physical resource: leon3mp_U0/ddrsp0.ddrc0/ddr_phy0/ddr_phy0/xc4v.ddr_phy0/clkscale.HMODE_dllm.dllm/CLKIN
+  Logical resource: leon3mp_U0/ddrsp0.ddrc0/ddr_phy0/ddr_phy0/xc4v.ddr_phy0/clkscale.HMODE_dllm.dllm/CLKIN
+  Location pin: DCM_ADV_X0Y11.CLKIN
+  Clock network: leon3mp_U0/clk_200
+--------------------------------------------------------------------------------
+Slack: 2.144ns (period - min period limit)
+  Period: 5.000ns
+  Min period limit: 2.856ns (350.140MHz) (Tdcmpc)
+  Physical resource: leon3mp_U0/ddrsp0.ddrc0/ddr_phy0/ddr_phy0/xc4v.ddr_phy0/clkscale.HMODE_dllm.dllm/CLKIN
+  Logical resource: leon3mp_U0/ddrsp0.ddrc0/ddr_phy0/ddr_phy0/xc4v.ddr_phy0/clkscale.HMODE_dllm.dllm/CLKIN
+  Location pin: DCM_ADV_X0Y11.CLKIN
+  Clock network: leon3mp_U0/clk_200
+--------------------------------------------------------------------------------
+
+================================================================================
+Timing constraint: PERIOD analysis for net 
+"leon3mp_U0/ddrsp0.ddrc0/ddr_phy0/ddr_phy0/xc4v.ddr_phy0/mclkfx" derived from  
+NET "leon3mp_U0/clk_200" PERIOD = 5 ns HIGH 50%;  multiplied by 1.05 to 5.263 
+nS and duty cycle corrected to HIGH 2.631 nS  
+
+ 9065 paths analyzed, 2426 endpoints analyzed, 5 failing endpoints
+ 5 timing errors detected. (5 setup errors, 0 hold errors, 0 component switching limit errors)
+ Minimum period is   5.941ns.
+--------------------------------------------------------------------------------
+
+Paths for end point leon3mp_U0/ddrsp0.ddrc0/ddr_phy0/ddr_phy0/xc4v.ddr_phy0/ddrbanks[1].ckegen (OLOGIC_X0Y211.D2), 2 paths
+--------------------------------------------------------------------------------
+Slack (setup path):     -0.339ns (requirement - (data path - clock path skew + uncertainty))
+  Source:               leon3mp_U0/ddrsp0.ddrc0/ddrc/ddrc/dr.cfg.cke (FF)
+  Destination:          leon3mp_U0/ddrsp0.ddrc0/ddr_phy0/ddr_phy0/xc4v.ddr_phy0/ddrbanks[1].ckegen (FF)
+  Requirement:          2.631ns
+  Data Path Delay:      2.794ns (Levels of Logic = 1)
+  Clock Path Skew:      0.074ns (1.491 - 1.417)
+  Source Clock:         leon3mp_U0/clkml rising at 0.000ns
+  Destination Clock:    leon3mp_U0/clkml falling at 2.631ns
+  Clock Uncertainty:    0.250ns
+
+  Clock Uncertainty:          0.250ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter (TSJ):  0.070ns
+    Total Input Jitter (TIJ):   0.000ns
+    Discrete Jitter (DJ):       0.429ns
+    Phase Error (PE):           0.000ns
+
+  Maximum Data Path: leon3mp_U0/ddrsp0.ddrc0/ddrc/ddrc/dr.cfg.cke to leon3mp_U0/ddrsp0.ddrc0/ddr_phy0/ddr_phy0/xc4v.ddr_phy0/ddrbanks[1].ckegen
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICE_X15Y93.AQ      Tcko                  0.450   leon3mp_U0/ddrsp0.ddrc0/ddrc/ddrc/dr.cfg.cke
+                                                       leon3mp_U0/ddrsp0.ddrc0/ddrc/ddrc/dr.cfg.cke
+    SLICE_X2Y104.D6      net (fanout=8)        1.148   leon3mp_U0/ddrsp0.ddrc0/ddrc/ddrc/dr.cfg.cke
+    SLICE_X2Y104.D       Tilo                  0.094   Gill/FRM4X/XLXI_6/XLXI_5/XLXI_6/blk00000003/sig00000207
+                                                       leon3mp_U0/ddrsp0.ddrc0/ddr_phy0/ddr_phy0/xc4v.ddr_phy0/ckel_1_and00001
+    OLOGIC_X0Y211.D2     net (fanout=4)        0.668   leon3mp_U0/ddrsp0.ddrc0/ddr_phy0/ddr_phy0/xc4v.ddr_phy0/ckel<0>
+    OLOGIC_X0Y211.CLK    Todck                 0.434   leon3mp_U0/ddrsp0.ddrc0/ddr_phy0/ddr_phy0/xc4v.ddr_phy0/ddr_ckenr<1>
+                                                       leon3mp_U0/ddrsp0.ddrc0/ddr_phy0/ddr_phy0/xc4v.ddr_phy0/ddrbanks[1].ckegen
+    -------------------------------------------------  ---------------------------
+    Total                                      2.794ns (0.978ns logic, 1.816ns route)
+                                                       (35.0% logic, 65.0% route)
+
+--------------------------------------------------------------------------------
+Slack (setup path):     -0.101ns (requirement - (data path - clock path skew + uncertainty))
+  Source:               leon3mp_U0/ddrsp0.ddrc0/ddr_phy0/ddr_phy0/xc4v.ddr_phy0/vlockl (FF)
+  Destination:          leon3mp_U0/ddrsp0.ddrc0/ddr_phy0/ddr_phy0/xc4v.ddr_phy0/ddrbanks[1].ckegen (FF)
+  Requirement:          2.631ns
+  Data Path Delay:      2.543ns (Levels of Logic = 1)
+  Clock Path Skew:      0.061ns (1.491 - 1.430)
+  Source Clock:         leon3mp_U0/clkml rising at 0.000ns
+  Destination Clock:    leon3mp_U0/clkml falling at 2.631ns
+  Clock Uncertainty:    0.250ns
+
+  Clock Uncertainty:          0.250ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter (TSJ):  0.070ns
+    Total Input Jitter (TIJ):   0.000ns
+    Discrete Jitter (DJ):       0.429ns
+    Phase Error (PE):           0.000ns
+
+  Maximum Data Path: leon3mp_U0/ddrsp0.ddrc0/ddr_phy0/ddr_phy0/xc4v.ddr_phy0/vlockl to leon3mp_U0/ddrsp0.ddrc0/ddr_phy0/ddr_phy0/xc4v.ddr_phy0/ddrbanks[1].ckegen
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICE_X8Y96.DQ       Tcko                  0.471   leon3mp_U0/ddrsp0.ddrc0/ddr_phy0/ddr_phy0/xc4v.ddr_phy0/vlockl
+                                                       leon3mp_U0/ddrsp0.ddrc0/ddr_phy0/ddr_phy0/xc4v.ddr_phy0/vlockl
+    SLICE_X2Y104.D5      net (fanout=2)        0.876   leon3mp_U0/ddrsp0.ddrc0/ddr_phy0/ddr_phy0/xc4v.ddr_phy0/vlockl
+    SLICE_X2Y104.D       Tilo                  0.094   Gill/FRM4X/XLXI_6/XLXI_5/XLXI_6/blk00000003/sig00000207
+                                                       leon3mp_U0/ddrsp0.ddrc0/ddr_phy0/ddr_phy0/xc4v.ddr_phy0/ckel_1_and00001
+    OLOGIC_X0Y211.D2     net (fanout=4)        0.668   leon3mp_U0/ddrsp0.ddrc0/ddr_phy0/ddr_phy0/xc4v.ddr_phy0/ckel<0>
+    OLOGIC_X0Y211.CLK    Todck                 0.434   leon3mp_U0/ddrsp0.ddrc0/ddr_phy0/ddr_phy0/xc4v.ddr_phy0/ddr_ckenr<1>
+                                                       leon3mp_U0/ddrsp0.ddrc0/ddr_phy0/ddr_phy0/xc4v.ddr_phy0/ddrbanks[1].ckegen
+    -------------------------------------------------  ---------------------------
+    Total                                      2.543ns (0.999ns logic, 1.544ns route)
+                                                       (39.3% logic, 60.7% route)
+
+--------------------------------------------------------------------------------
+
+Paths for end point leon3mp_U0/ddrsp0.ddrc0/ddr_phy0/ddr_phy0/xc4v.ddr_phy0/ddrbanks[1].ckegen (OLOGIC_X0Y211.D1), 2 paths
+--------------------------------------------------------------------------------
+Slack (setup path):     -0.211ns (requirement - (data path - clock path skew + uncertainty))
+  Source:               leon3mp_U0/ddrsp0.ddrc0/ddrc/ddrc/dr.cfg.cke (FF)
+  Destination:          leon3mp_U0/ddrsp0.ddrc0/ddr_phy0/ddr_phy0/xc4v.ddr_phy0/ddrbanks[1].ckegen (FF)
+  Requirement:          2.631ns
+  Data Path Delay:      2.666ns (Levels of Logic = 1)
+  Clock Path Skew:      0.074ns (1.491 - 1.417)
+  Source Clock:         leon3mp_U0/clkml rising at 0.000ns
+  Destination Clock:    leon3mp_U0/clkml falling at 2.631ns
+  Clock Uncertainty:    0.250ns
+
+  Clock Uncertainty:          0.250ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter (TSJ):  0.070ns
+    Total Input Jitter (TIJ):   0.000ns
+    Discrete Jitter (DJ):       0.429ns
+    Phase Error (PE):           0.000ns
+
+  Maximum Data Path: leon3mp_U0/ddrsp0.ddrc0/ddrc/ddrc/dr.cfg.cke to leon3mp_U0/ddrsp0.ddrc0/ddr_phy0/ddr_phy0/xc4v.ddr_phy0/ddrbanks[1].ckegen
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICE_X15Y93.AQ      Tcko                  0.450   leon3mp_U0/ddrsp0.ddrc0/ddrc/ddrc/dr.cfg.cke
+                                                       leon3mp_U0/ddrsp0.ddrc0/ddrc/ddrc/dr.cfg.cke
+    SLICE_X2Y104.D6      net (fanout=8)        1.148   leon3mp_U0/ddrsp0.ddrc0/ddrc/ddrc/dr.cfg.cke
+    SLICE_X2Y104.D       Tilo                  0.094   Gill/FRM4X/XLXI_6/XLXI_5/XLXI_6/blk00000003/sig00000207
+                                                       leon3mp_U0/ddrsp0.ddrc0/ddr_phy0/ddr_phy0/xc4v.ddr_phy0/ckel_1_and00001
+    OLOGIC_X0Y211.D1     net (fanout=4)        0.540   leon3mp_U0/ddrsp0.ddrc0/ddr_phy0/ddr_phy0/xc4v.ddr_phy0/ckel<0>
+    OLOGIC_X0Y211.CLK    Todck                 0.434   leon3mp_U0/ddrsp0.ddrc0/ddr_phy0/ddr_phy0/xc4v.ddr_phy0/ddr_ckenr<1>
+                                                       leon3mp_U0/ddrsp0.ddrc0/ddr_phy0/ddr_phy0/xc4v.ddr_phy0/ddrbanks[1].ckegen
+    -------------------------------------------------  ---------------------------
+    Total                                      2.666ns (0.978ns logic, 1.688ns route)
+                                                       (36.7% logic, 63.3% route)
+
+--------------------------------------------------------------------------------
+Slack (setup path):     0.027ns (requirement - (data path - clock path skew + uncertainty))
+  Source:               leon3mp_U0/ddrsp0.ddrc0/ddr_phy0/ddr_phy0/xc4v.ddr_phy0/vlockl (FF)
+  Destination:          leon3mp_U0/ddrsp0.ddrc0/ddr_phy0/ddr_phy0/xc4v.ddr_phy0/ddrbanks[1].ckegen (FF)
+  Requirement:          2.631ns
+  Data Path Delay:      2.415ns (Levels of Logic = 1)
+  Clock Path Skew:      0.061ns (1.491 - 1.430)
+  Source Clock:         leon3mp_U0/clkml rising at 0.000ns
+  Destination Clock:    leon3mp_U0/clkml falling at 2.631ns
+  Clock Uncertainty:    0.250ns
+
+  Clock Uncertainty:          0.250ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter (TSJ):  0.070ns
+    Total Input Jitter (TIJ):   0.000ns
+    Discrete Jitter (DJ):       0.429ns
+    Phase Error (PE):           0.000ns
+
+  Maximum Data Path: leon3mp_U0/ddrsp0.ddrc0/ddr_phy0/ddr_phy0/xc4v.ddr_phy0/vlockl to leon3mp_U0/ddrsp0.ddrc0/ddr_phy0/ddr_phy0/xc4v.ddr_phy0/ddrbanks[1].ckegen
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICE_X8Y96.DQ       Tcko                  0.471   leon3mp_U0/ddrsp0.ddrc0/ddr_phy0/ddr_phy0/xc4v.ddr_phy0/vlockl
+                                                       leon3mp_U0/ddrsp0.ddrc0/ddr_phy0/ddr_phy0/xc4v.ddr_phy0/vlockl
+    SLICE_X2Y104.D5      net (fanout=2)        0.876   leon3mp_U0/ddrsp0.ddrc0/ddr_phy0/ddr_phy0/xc4v.ddr_phy0/vlockl
+    SLICE_X2Y104.D       Tilo                  0.094   Gill/FRM4X/XLXI_6/XLXI_5/XLXI_6/blk00000003/sig00000207
+                                                       leon3mp_U0/ddrsp0.ddrc0/ddr_phy0/ddr_phy0/xc4v.ddr_phy0/ckel_1_and00001
+    OLOGIC_X0Y211.D1     net (fanout=4)        0.540   leon3mp_U0/ddrsp0.ddrc0/ddr_phy0/ddr_phy0/xc4v.ddr_phy0/ckel<0>
+    OLOGIC_X0Y211.CLK    Todck                 0.434   leon3mp_U0/ddrsp0.ddrc0/ddr_phy0/ddr_phy0/xc4v.ddr_phy0/ddr_ckenr<1>
+                                                       leon3mp_U0/ddrsp0.ddrc0/ddr_phy0/ddr_phy0/xc4v.ddr_phy0/ddrbanks[1].ckegen
+    -------------------------------------------------  ---------------------------
+    Total                                      2.415ns (0.999ns logic, 1.416ns route)
+                                                       (41.4% logic, 58.6% route)
+
+--------------------------------------------------------------------------------
+
+Paths for end point leon3mp_U0/ddrsp0.ddrc0/ddr_phy0/ddr_phy0/xc4v.ddr_phy0/ddrbanks[0].ckegen (OLOGIC_X0Y209.D1), 2 paths
+--------------------------------------------------------------------------------
+Slack (setup path):     -0.202ns (requirement - (data path - clock path skew + uncertainty))
+  Source:               leon3mp_U0/ddrsp0.ddrc0/ddrc/ddrc/dr.cfg.cke (FF)
+  Destination:          leon3mp_U0/ddrsp0.ddrc0/ddr_phy0/ddr_phy0/xc4v.ddr_phy0/ddrbanks[0].ckegen (FF)
+  Requirement:          2.631ns
+  Data Path Delay:      2.659ns (Levels of Logic = 1)
+  Clock Path Skew:      0.076ns (1.493 - 1.417)
+  Source Clock:         leon3mp_U0/clkml rising at 0.000ns
+  Destination Clock:    leon3mp_U0/clkml falling at 2.631ns
+  Clock Uncertainty:    0.250ns
+
+  Clock Uncertainty:          0.250ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter (TSJ):  0.070ns
+    Total Input Jitter (TIJ):   0.000ns
+    Discrete Jitter (DJ):       0.429ns
+    Phase Error (PE):           0.000ns
+
+  Maximum Data Path: leon3mp_U0/ddrsp0.ddrc0/ddrc/ddrc/dr.cfg.cke to leon3mp_U0/ddrsp0.ddrc0/ddr_phy0/ddr_phy0/xc4v.ddr_phy0/ddrbanks[0].ckegen
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICE_X15Y93.AQ      Tcko                  0.450   leon3mp_U0/ddrsp0.ddrc0/ddrc/ddrc/dr.cfg.cke
+                                                       leon3mp_U0/ddrsp0.ddrc0/ddrc/ddrc/dr.cfg.cke
+    SLICE_X2Y104.D6      net (fanout=8)        1.148   leon3mp_U0/ddrsp0.ddrc0/ddrc/ddrc/dr.cfg.cke
+    SLICE_X2Y104.D       Tilo                  0.094   Gill/FRM4X/XLXI_6/XLXI_5/XLXI_6/blk00000003/sig00000207
+                                                       leon3mp_U0/ddrsp0.ddrc0/ddr_phy0/ddr_phy0/xc4v.ddr_phy0/ckel_1_and00001
+    OLOGIC_X0Y209.D1     net (fanout=4)        0.533   leon3mp_U0/ddrsp0.ddrc0/ddr_phy0/ddr_phy0/xc4v.ddr_phy0/ckel<0>
+    OLOGIC_X0Y209.CLK    Todck                 0.434   leon3mp_U0/ddrsp0.ddrc0/ddr_phy0/ddr_phy0/xc4v.ddr_phy0/ddr_ckenr<0>
+                                                       leon3mp_U0/ddrsp0.ddrc0/ddr_phy0/ddr_phy0/xc4v.ddr_phy0/ddrbanks[0].ckegen
+    -------------------------------------------------  ---------------------------
+    Total                                      2.659ns (0.978ns logic, 1.681ns route)
+                                                       (36.8% logic, 63.2% route)
+
+--------------------------------------------------------------------------------
+Slack (setup path):     0.036ns (requirement - (data path - clock path skew + uncertainty))
+  Source:               leon3mp_U0/ddrsp0.ddrc0/ddr_phy0/ddr_phy0/xc4v.ddr_phy0/vlockl (FF)
+  Destination:          leon3mp_U0/ddrsp0.ddrc0/ddr_phy0/ddr_phy0/xc4v.ddr_phy0/ddrbanks[0].ckegen (FF)
+  Requirement:          2.631ns
+  Data Path Delay:      2.408ns (Levels of Logic = 1)
+  Clock Path Skew:      0.063ns (1.493 - 1.430)
+  Source Clock:         leon3mp_U0/clkml rising at 0.000ns
+  Destination Clock:    leon3mp_U0/clkml falling at 2.631ns
+  Clock Uncertainty:    0.250ns
+
+  Clock Uncertainty:          0.250ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter (TSJ):  0.070ns
+    Total Input Jitter (TIJ):   0.000ns
+    Discrete Jitter (DJ):       0.429ns
+    Phase Error (PE):           0.000ns
+
+  Maximum Data Path: leon3mp_U0/ddrsp0.ddrc0/ddr_phy0/ddr_phy0/xc4v.ddr_phy0/vlockl to leon3mp_U0/ddrsp0.ddrc0/ddr_phy0/ddr_phy0/xc4v.ddr_phy0/ddrbanks[0].ckegen
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICE_X8Y96.DQ       Tcko                  0.471   leon3mp_U0/ddrsp0.ddrc0/ddr_phy0/ddr_phy0/xc4v.ddr_phy0/vlockl
+                                                       leon3mp_U0/ddrsp0.ddrc0/ddr_phy0/ddr_phy0/xc4v.ddr_phy0/vlockl
+    SLICE_X2Y104.D5      net (fanout=2)        0.876   leon3mp_U0/ddrsp0.ddrc0/ddr_phy0/ddr_phy0/xc4v.ddr_phy0/vlockl
+    SLICE_X2Y104.D       Tilo                  0.094   Gill/FRM4X/XLXI_6/XLXI_5/XLXI_6/blk00000003/sig00000207
+                                                       leon3mp_U0/ddrsp0.ddrc0/ddr_phy0/ddr_phy0/xc4v.ddr_phy0/ckel_1_and00001
+    OLOGIC_X0Y209.D1     net (fanout=4)        0.533   leon3mp_U0/ddrsp0.ddrc0/ddr_phy0/ddr_phy0/xc4v.ddr_phy0/ckel<0>
+    OLOGIC_X0Y209.CLK    Todck                 0.434   leon3mp_U0/ddrsp0.ddrc0/ddr_phy0/ddr_phy0/xc4v.ddr_phy0/ddr_ckenr<0>
+                                                       leon3mp_U0/ddrsp0.ddrc0/ddr_phy0/ddr_phy0/xc4v.ddr_phy0/ddrbanks[0].ckegen
+    -------------------------------------------------  ---------------------------
+    Total                                      2.408ns (0.999ns logic, 1.409ns route)
+                                                       (41.5% logic, 58.5% route)
+
+--------------------------------------------------------------------------------
+
+Hold Paths: PERIOD analysis for net "leon3mp_U0/ddrsp0.ddrc0/ddr_phy0/ddr_phy0/xc4v.ddr_phy0/mclkfx" derived from
+ NET "leon3mp_U0/clk_200" PERIOD = 5 ns HIGH 50%;
+ multiplied by 1.05 to 5.263 nS and duty cycle corrected to HIGH 2.631 nS 
+
+--------------------------------------------------------------------------------
+
+Paths for end point leon3mp_U0/ddrsp0.ddrc0/ddrc/ddrc/dr.req2.startaddr_15 (SLICE_X12Y81.DX), 1 path
+--------------------------------------------------------------------------------
+Slack (hold path):      0.431ns (requirement - (clock path skew + uncertainty - data path))
+  Source:               leon3mp_U0/ddrsp0.ddrc0/ddrc/ddrc/dr.req1.startaddr_15 (FF)
+  Destination:          leon3mp_U0/ddrsp0.ddrc0/ddrc/ddrc/dr.req2.startaddr_15 (FF)
+  Requirement:          0.000ns
+  Data Path Delay:      0.507ns (Levels of Logic = 0)
+  Clock Path Skew:      0.076ns (0.706 - 0.630)
+  Source Clock:         leon3mp_U0/clkml rising at 0.000ns
+  Destination Clock:    leon3mp_U0/clkml rising at 5.263ns
+  Clock Uncertainty:    0.000ns
+
+  Minimum Data Path: leon3mp_U0/ddrsp0.ddrc0/ddrc/ddrc/dr.req1.startaddr_15 to leon3mp_U0/ddrsp0.ddrc0/ddrc/ddrc/dr.req2.startaddr_15
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICE_X16Y81.DQ      Tcko                  0.433   leon3mp_U0/ddrsp0.ddrc0/ddrc/ddrc/dr.req1.startaddr_15
+                                                       leon3mp_U0/ddrsp0.ddrc0/ddrc/ddrc/dr.req1.startaddr_15
+    SLICE_X12Y81.DX      net (fanout=5)        0.304   leon3mp_U0/ddrsp0.ddrc0/ddrc/ddrc/dr.req1.startaddr_15
+    SLICE_X12Y81.CLK     Tckdi       (-Th)     0.230   leon3mp_U0/ddrsp0.ddrc0/ddrc/ddrc/dr.req2.startaddr_15
+                                                       leon3mp_U0/ddrsp0.ddrc0/ddrc/ddrc/dr.req2.startaddr_15
+    -------------------------------------------------  ---------------------------
+    Total                                      0.507ns (0.203ns logic, 0.304ns route)
+                                                       (40.0% logic, 60.0% route)
+
+--------------------------------------------------------------------------------
+
+Paths for end point leon3mp_U0/ddrsp0.ddrc0/ddrc/ddrc/dr.col_10 (SLICE_X11Y81.C6), 1 path
+--------------------------------------------------------------------------------
+Slack (hold path):      0.453ns (requirement - (clock path skew + uncertainty - data path))
+  Source:               leon3mp_U0/ddrsp0.ddrc0/ddrc/ddrc/dr.req2.startaddr_13 (FF)
+  Destination:          leon3mp_U0/ddrsp0.ddrc0/ddrc/ddrc/dr.col_10 (FF)
+  Requirement:          0.000ns
+  Data Path Delay:      0.508ns (Levels of Logic = 1)
+  Clock Path Skew:      0.055ns (0.712 - 0.657)
+  Source Clock:         leon3mp_U0/clkml rising at 0.000ns
+  Destination Clock:    leon3mp_U0/clkml rising at 5.263ns
+  Clock Uncertainty:    0.000ns
+
+  Minimum Data Path: leon3mp_U0/ddrsp0.ddrc0/ddrc/ddrc/dr.req2.startaddr_13 to leon3mp_U0/ddrsp0.ddrc0/ddrc/ddrc/dr.col_10
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICE_X12Y81.BQ      Tcko                  0.433   leon3mp_U0/ddrsp0.ddrc0/ddrc/ddrc/dr.req2.startaddr_15
+                                                       leon3mp_U0/ddrsp0.ddrc0/ddrc/ddrc/dr.req2.startaddr_13
+    SLICE_X11Y81.C6      net (fanout=1)        0.270   leon3mp_U0/ddrsp0.ddrc0/ddrc/ddrc/dr.req2.startaddr_13
+    SLICE_X11Y81.CLK     Tah         (-Th)     0.195   leon3mp_U0/ddrsp0.ddrc0/ddrc/ddrc/dr.col_11
+                                                       leon3mp_U0/ddrsp0.ddrc0/ddrc/ddrc/dv_col_10_mux00001
+                                                       leon3mp_U0/ddrsp0.ddrc0/ddrc/ddrc/dr.col_10
+    -------------------------------------------------  ---------------------------
+    Total                                      0.508ns (0.238ns logic, 0.270ns route)
+                                                       (46.9% logic, 53.1% route)
+
+--------------------------------------------------------------------------------
+
+Paths for end point leon3mp_U0/ddrsp0.ddrc0/ddrc/ddrc/ddr_rst_gen_1 (SLICE_X11Y88.BX), 1 path
+--------------------------------------------------------------------------------
+Slack (hold path):      0.468ns (requirement - (clock path skew + uncertainty - data path))
+  Source:               leon3mp_U0/ddrsp0.ddrc0/ddrc/ddrc/ddr_rst_gen_0 (FF)
+  Destination:          leon3mp_U0/ddrsp0.ddrc0/ddrc/ddrc/ddr_rst_gen_1 (FF)
+  Requirement:          0.000ns
+  Data Path Delay:      0.468ns (Levels of Logic = 0)
+  Clock Path Skew:      0.000ns
+  Source Clock:         leon3mp_U0/clkml rising at 0.000ns
+  Destination Clock:    leon3mp_U0/clkml rising at 5.263ns
+  Clock Uncertainty:    0.000ns
+
+  Minimum Data Path: leon3mp_U0/ddrsp0.ddrc0/ddrc/ddrc/ddr_rst_gen_0 to leon3mp_U0/ddrsp0.ddrc0/ddrc/ddrc/ddr_rst_gen_1
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICE_X11Y88.AQ      Tcko                  0.414   leon3mp_U0/ddrsp0.ddrc0/ddrc/ddrc/ddr_rst_gen<3>
+                                                       leon3mp_U0/ddrsp0.ddrc0/ddrc/ddrc/ddr_rst_gen_0
+    SLICE_X11Y88.BX      net (fanout=1)        0.285   leon3mp_U0/ddrsp0.ddrc0/ddrc/ddrc/ddr_rst_gen<0>
+    SLICE_X11Y88.CLK     Tckdi       (-Th)     0.231   leon3mp_U0/ddrsp0.ddrc0/ddrc/ddrc/ddr_rst_gen<3>
+                                                       leon3mp_U0/ddrsp0.ddrc0/ddrc/ddrc/ddr_rst_gen_1
+    -------------------------------------------------  ---------------------------
+    Total                                      0.468ns (0.183ns logic, 0.285ns route)
+                                                       (39.1% logic, 60.9% route)
+
+--------------------------------------------------------------------------------
+
+Component Switching Limit Checks: PERIOD analysis for net "leon3mp_U0/ddrsp0.ddrc0/ddr_phy0/ddr_phy0/xc4v.ddr_phy0/mclkfx" derived from
+ NET "leon3mp_U0/clk_200" PERIOD = 5 ns HIGH 50%;
+ multiplied by 1.05 to 5.263 nS and duty cycle corrected to HIGH 2.631 nS 
+
+--------------------------------------------------------------------------------
+Slack: 1.262ns (period - (min low pulse limit / (low pulse / period)))
+  Period: 5.263ns
+  Low pulse: 2.631ns
+  Low pulse limit: 2.000ns (Tdcmpw_CLKIN_150_200)
+  Physical resource: leon3mp_U0/ddrsp0.ddrc0/ddr_phy0/ddr_phy0/xc4v.ddr_phy0/HMODE_dll.dll/CLKIN
+  Logical resource: leon3mp_U0/ddrsp0.ddrc0/ddr_phy0/ddr_phy0/xc4v.ddr_phy0/HMODE_dll.dll/CLKIN
+  Location pin: DCM_ADV_X0Y2.CLKIN
+  Clock network: leon3mp_U0/clkml
+--------------------------------------------------------------------------------
+Slack: 1.262ns (period - (min high pulse limit / (high pulse / period)))
+  Period: 5.263ns
+  High pulse: 2.631ns
+  High pulse limit: 2.000ns (Tdcmpw_CLKIN_150_200)
+  Physical resource: leon3mp_U0/ddrsp0.ddrc0/ddr_phy0/ddr_phy0/xc4v.ddr_phy0/HMODE_dll.dll/CLKIN
+  Logical resource: leon3mp_U0/ddrsp0.ddrc0/ddr_phy0/ddr_phy0/xc4v.ddr_phy0/HMODE_dll.dll/CLKIN
+  Location pin: DCM_ADV_X0Y2.CLKIN
+  Clock network: leon3mp_U0/clkml
+--------------------------------------------------------------------------------
+Slack: 1.264ns (period - min period limit)
+  Period: 5.263ns
+  Min period limit: 3.999ns (250.063MHz) (Tiodper_C)
+  Physical resource: leon3mp_U0/ddrsp0.ddrc0/ddr_phy0/ddr_phy0/xc4v.ddr_phy0/ddgen[0].del_dq0/C
+  Logical resource: leon3mp_U0/ddrsp0.ddrc0/ddr_phy0/ddr_phy0/xc4v.ddr_phy0/ddgen[0].del_dq0/C
+  Location pin: IODELAY_X0Y84.C
+  Clock network: leon3mp_U0/clkml
+--------------------------------------------------------------------------------
+
+================================================================================
+Timing constraint: PERIOD analysis for net 
+"leon3mp_U0/ddrsp0.ddrc0/ddr_phy0/ddr_phy0/xc4v.ddr_phy0/clk_90ro" derived from 
+ PERIOD analysis for net 
+"leon3mp_U0/ddrsp0.ddrc0/ddr_phy0/ddr_phy0/xc4v.ddr_phy0/mclkfx" derived from 
+NET "leon3mp_U0/clk_200" PERIOD = 5 ns HIGH 50%; multiplied by 1.05 to 5.263 nS 
+and duty cycle corrected to HIGH 2.631 nS   duty cycle corrected to 5.263 nS  
+HIGH 2.631 nS  
+
+ 32 paths analyzed, 32 endpoints analyzed, 0 failing endpoints
+ 0 timing errors detected. (0 setup errors, 0 hold errors, 0 component switching limit errors)
+ Minimum period is   5.093ns.
+--------------------------------------------------------------------------------
+
+Paths for end point leon3mp_U0/ddrsp0.ddrc0/ddr_phy0/ddr_phy0/xc4v.ddr_phy0/dqsgen[6].da0/N6 (OLOGIC_X0Y260.D1), 1 path
+--------------------------------------------------------------------------------
+Slack (setup path):     0.127ns (requirement - (data path - clock path skew + uncertainty))
+  Source:               leon3mp_U0/ddrsp0.ddrc0/ddr_phy0/ddr_phy0/xc4v.ddr_phy0/dqsgen[6].dsqreg (FF)
+  Destination:          leon3mp_U0/ddrsp0.ddrc0/ddr_phy0/ddr_phy0/xc4v.ddr_phy0/dqsgen[6].da0/N6 (FF)
+  Requirement:          3.947ns
+  Data Path Delay:      3.569ns (Levels of Logic = 0)
+  Clock Path Skew:      0.067ns (1.864 - 1.797)
+  Source Clock:         leon3mp_U0/clkml falling at 2.631ns
+  Destination Clock:    leon3mp_U0/ddrsp0.ddrc0/ddr_phy0/ddr_phy0/xc4v.ddr_phy0/clk90r rising at 6.578ns
+  Clock Uncertainty:    0.318ns
+
+  Clock Uncertainty:          0.318ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter (TSJ):  0.070ns
+    Total Input Jitter (TIJ):   0.000ns
+    Discrete Jitter (DJ):       0.445ns
+    Phase Error (PE):           0.060ns
+
+  Maximum Data Path: leon3mp_U0/ddrsp0.ddrc0/ddr_phy0/ddr_phy0/xc4v.ddr_phy0/dqsgen[6].dsqreg to leon3mp_U0/ddrsp0.ddrc0/ddr_phy0/ddr_phy0/xc4v.ddr_phy0/dqsgen[6].da0/N6
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICE_X1Y91.CQ       Tcko                  0.445   leon3mp_U0/ddrsp0.ddrc0/ddr_phy0/ddr_phy0/xc4v.ddr_phy0/dqsn<7>
+                                                       leon3mp_U0/ddrsp0.ddrc0/ddr_phy0/ddr_phy0/xc4v.ddr_phy0/dqsgen[6].dsqreg
+    OLOGIC_X0Y260.D1     net (fanout=2)        2.690   leon3mp_U0/ddrsp0.ddrc0/ddr_phy0/ddr_phy0/xc4v.ddr_phy0/dqsn<6>
+    OLOGIC_X0Y260.CLK    Todck                 0.434   leon3mp_U0/ddrsp0.ddrc0/ddr_phy0/ddr_phy0/xc4v.ddr_phy0/dqsgen[6].da0/N6
+                                                       leon3mp_U0/ddrsp0.ddrc0/ddr_phy0/ddr_phy0/xc4v.ddr_phy0/dqsgen[6].da0/N6
+    -------------------------------------------------  ---------------------------
+    Total                                      3.569ns (0.879ns logic, 2.690ns route)
+                                                       (24.6% logic, 75.4% route)
+
+--------------------------------------------------------------------------------
+
+Paths for end point leon3mp_U0/ddrsp0.ddrc0/ddr_phy0/ddr_phy0/xc4v.ddr_phy0/dqsgen[6].da0 (OLOGIC_X0Y261.D1), 1 path
+--------------------------------------------------------------------------------
+Slack (setup path):     0.127ns (requirement - (data path - clock path skew + uncertainty))
+  Source:               leon3mp_U0/ddrsp0.ddrc0/ddr_phy0/ddr_phy0/xc4v.ddr_phy0/dqsgen[6].dsqreg (FF)
+  Destination:          leon3mp_U0/ddrsp0.ddrc0/ddr_phy0/ddr_phy0/xc4v.ddr_phy0/dqsgen[6].da0 (FF)
+  Requirement:          3.947ns
+  Data Path Delay:      3.569ns (Levels of Logic = 0)
+  Clock Path Skew:      0.067ns (1.864 - 1.797)
+  Source Clock:         leon3mp_U0/clkml falling at 2.631ns
+  Destination Clock:    leon3mp_U0/ddrsp0.ddrc0/ddr_phy0/ddr_phy0/xc4v.ddr_phy0/clk90r rising at 6.578ns
+  Clock Uncertainty:    0.318ns
+
+  Clock Uncertainty:          0.318ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter (TSJ):  0.070ns
+    Total Input Jitter (TIJ):   0.000ns
+    Discrete Jitter (DJ):       0.445ns
+    Phase Error (PE):           0.060ns
+
+  Maximum Data Path: leon3mp_U0/ddrsp0.ddrc0/ddr_phy0/ddr_phy0/xc4v.ddr_phy0/dqsgen[6].dsqreg to leon3mp_U0/ddrsp0.ddrc0/ddr_phy0/ddr_phy0/xc4v.ddr_phy0/dqsgen[6].da0
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICE_X1Y91.CQ       Tcko                  0.445   leon3mp_U0/ddrsp0.ddrc0/ddr_phy0/ddr_phy0/xc4v.ddr_phy0/dqsn<7>
+                                                       leon3mp_U0/ddrsp0.ddrc0/ddr_phy0/ddr_phy0/xc4v.ddr_phy0/dqsgen[6].dsqreg
+    OLOGIC_X0Y261.D1     net (fanout=2)        2.690   leon3mp_U0/ddrsp0.ddrc0/ddr_phy0/ddr_phy0/xc4v.ddr_phy0/dqsn<6>
+    OLOGIC_X0Y261.CLK    Todck                 0.434   leon3mp_U0/ddrsp0.ddrc0/ddr_phy0/ddr_phy0/xc4v.ddr_phy0/ddr_dqsin<6>
+                                                       leon3mp_U0/ddrsp0.ddrc0/ddr_phy0/ddr_phy0/xc4v.ddr_phy0/dqsgen[6].da0
+    -------------------------------------------------  ---------------------------
+    Total                                      3.569ns (0.879ns logic, 2.690ns route)
+                                                       (24.6% logic, 75.4% route)
+
+--------------------------------------------------------------------------------
+
+Paths for end point leon3mp_U0/ddrsp0.ddrc0/ddr_phy0/ddr_phy0/xc4v.ddr_phy0/dqsgen[6].doen/N6 (SLICE_X0Y120.CX), 1 path
+--------------------------------------------------------------------------------
+Slack (setup path):     0.482ns (requirement - (data path - clock path skew + uncertainty))
+  Source:               leon3mp_U0/ddrsp0.ddrc0/ddr_phy0/ddr_phy0/xc4v.ddr_phy0/dqsgen[6].doen_reg (FF)
+  Destination:          leon3mp_U0/ddrsp0.ddrc0/ddr_phy0/ddr_phy0/xc4v.ddr_phy0/dqsgen[6].doen/N6 (FF)
+  Requirement:          3.947ns
+  Data Path Delay:      3.150ns (Levels of Logic = 0)
+  Clock Path Skew:      0.003ns (1.832 - 1.829)
+  Source Clock:         leon3mp_U0/clkml falling at 2.631ns
+  Destination Clock:    leon3mp_U0/ddrsp0.ddrc0/ddr_phy0/ddr_phy0/xc4v.ddr_phy0/clk90r rising at 6.578ns
+  Clock Uncertainty:    0.318ns
+
+  Clock Uncertainty:          0.318ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter (TSJ):  0.070ns
+    Total Input Jitter (TIJ):   0.000ns
+    Discrete Jitter (DJ):       0.445ns
+    Phase Error (PE):           0.060ns
+
+  Maximum Data Path: leon3mp_U0/ddrsp0.ddrc0/ddr_phy0/ddr_phy0/xc4v.ddr_phy0/dqsgen[6].doen_reg to leon3mp_U0/ddrsp0.ddrc0/ddr_phy0/ddr_phy0/xc4v.ddr_phy0/dqsgen[6].doen/N6
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICE_X6Y86.CQ       Tcko                  0.445   leon3mp_U0/ddrsp0.ddrc0/ddr_phy0/ddr_phy0/xc4v.ddr_phy0/ddr_dqsoen_reg<7>
+                                                       leon3mp_U0/ddrsp0.ddrc0/ddr_phy0/ddr_phy0/xc4v.ddr_phy0/dqsgen[6].doen_reg
+    SLICE_X0Y120.CX      net (fanout=2)        2.710   leon3mp_U0/ddrsp0.ddrc0/ddr_phy0/ddr_phy0/xc4v.ddr_phy0/ddr_dqsoen_reg<6>
+    SLICE_X0Y120.CLK     Tdick                -0.005   leon3mp_U0/ddrsp0.ddrc0/ddr_phy0/ddr_phy0/xc4v.ddr_phy0/dqsgen[5].doen/N5
+                                                       leon3mp_U0/ddrsp0.ddrc0/ddr_phy0/ddr_phy0/xc4v.ddr_phy0/dqsgen[6].doen/N6
+    -------------------------------------------------  ---------------------------
+    Total                                      3.150ns (0.440ns logic, 2.710ns route)
+                                                       (14.0% logic, 86.0% route)
+
+--------------------------------------------------------------------------------
+
+Hold Paths: PERIOD analysis for net "leon3mp_U0/ddrsp0.ddrc0/ddr_phy0/ddr_phy0/xc4v.ddr_phy0/clk_90ro" derived from
+ PERIOD analysis for net "leon3mp_U0/ddrsp0.ddrc0/ddr_phy0/ddr_phy0/xc4v.ddr_phy0/mclkfx" derived from NET "leon3mp_U0/clk_200" PERIOD = 5 ns HIGH 50%; multiplied by 1.05 to 5.263 nS and duty cycle corrected to HIGH 2.631 nS 
+ duty cycle corrected to 5.263 nS  HIGH 2.631 nS 
+
+--------------------------------------------------------------------------------
+
+Paths for end point leon3mp_U0/ddrsp0.ddrc0/ddr_phy0/ddr_phy0/xc4v.ddr_phy0/dqsgen[3].doen/N3 (SLICE_X6Y59.CX), 1 path
+--------------------------------------------------------------------------------
+Slack (hold path):      4.171ns (requirement - (clock path skew + uncertainty - data path))
+  Source:               leon3mp_U0/ddrsp0.ddrc0/ddr_phy0/ddr_phy0/xc4v.ddr_phy0/dqsgen[3].doen_reg (FF)
+  Destination:          leon3mp_U0/ddrsp0.ddrc0/ddr_phy0/ddr_phy0/xc4v.ddr_phy0/dqsgen[3].doen/N3 (FF)
+  Requirement:          3.947ns
+  Data Path Delay:      0.669ns (Levels of Logic = 0)
+  Clock Path Skew:      0.127ns (1.913 - 1.786)
+  Source Clock:         leon3mp_U0/clkml falling at 2.631ns
+  Destination Clock:    leon3mp_U0/ddrsp0.ddrc0/ddr_phy0/ddr_phy0/xc4v.ddr_phy0/clk90r rising at 6.578ns
+  Clock Uncertainty:    0.318ns
+
+  Clock Uncertainty:          0.318ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter (TSJ):  0.070ns
+    Total Input Jitter (TIJ):   0.000ns
+    Discrete Jitter (DJ):       0.445ns
+    Phase Error (PE):           0.060ns
+
+  Minimum Data Path: leon3mp_U0/ddrsp0.ddrc0/ddr_phy0/ddr_phy0/xc4v.ddr_phy0/dqsgen[3].doen_reg to leon3mp_U0/ddrsp0.ddrc0/ddr_phy0/ddr_phy0/xc4v.ddr_phy0/dqsgen[3].doen/N3
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICE_X1Y56.DQ       Tcko                  0.409   leon3mp_U0/ddrsp0.ddrc0/ddr_phy0/ddr_phy0/xc4v.ddr_phy0/ddr_dqsoen_reg<3>
+                                                       leon3mp_U0/ddrsp0.ddrc0/ddr_phy0/ddr_phy0/xc4v.ddr_phy0/dqsgen[3].doen_reg
+    SLICE_X6Y59.CX       net (fanout=2)        0.478   leon3mp_U0/ddrsp0.ddrc0/ddr_phy0/ddr_phy0/xc4v.ddr_phy0/ddr_dqsoen_reg<3>
+    SLICE_X6Y59.CLK      Tckdi       (-Th)     0.218   leon3mp_U0/ddrsp0.ddrc0/ddr_phy0/ddr_phy0/xc4v.ddr_phy0/dqsgen[0].doen/N0
+                                                       leon3mp_U0/ddrsp0.ddrc0/ddr_phy0/ddr_phy0/xc4v.ddr_phy0/dqsgen[3].doen/N3
+    -------------------------------------------------  ---------------------------
+    Total                                      0.669ns (0.191ns logic, 0.478ns route)
+                                                       (28.6% logic, 71.4% route)
+
+--------------------------------------------------------------------------------
+
+Paths for end point leon3mp_U0/ddrsp0.ddrc0/ddr_phy0/ddr_phy0/xc4v.ddr_phy0/dqsgen[0].doen/N0 (SLICE_X6Y59.DX), 1 path
+--------------------------------------------------------------------------------
+Slack (hold path):      4.355ns (requirement - (clock path skew + uncertainty - data path))
+  Source:               leon3mp_U0/ddrsp0.ddrc0/ddr_phy0/ddr_phy0/xc4v.ddr_phy0/dqsgen[0].doen_reg (FF)
+  Destination:          leon3mp_U0/ddrsp0.ddrc0/ddr_phy0/ddr_phy0/xc4v.ddr_phy0/dqsgen[0].doen/N0 (FF)
+  Requirement:          3.947ns
+  Data Path Delay:      0.853ns (Levels of Logic = 0)
+  Clock Path Skew:      0.127ns (1.913 - 1.786)
+  Source Clock:         leon3mp_U0/clkml falling at 2.631ns
+  Destination Clock:    leon3mp_U0/ddrsp0.ddrc0/ddr_phy0/ddr_phy0/xc4v.ddr_phy0/clk90r rising at 6.578ns
+  Clock Uncertainty:    0.318ns
+
+  Clock Uncertainty:          0.318ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter (TSJ):  0.070ns
+    Total Input Jitter (TIJ):   0.000ns
+    Discrete Jitter (DJ):       0.445ns
+    Phase Error (PE):           0.060ns
+
+  Minimum Data Path: leon3mp_U0/ddrsp0.ddrc0/ddr_phy0/ddr_phy0/xc4v.ddr_phy0/dqsgen[0].doen_reg to leon3mp_U0/ddrsp0.ddrc0/ddr_phy0/ddr_phy0/xc4v.ddr_phy0/dqsgen[0].doen/N0
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICE_X1Y56.AQ       Tcko                  0.409   leon3mp_U0/ddrsp0.ddrc0/ddr_phy0/ddr_phy0/xc4v.ddr_phy0/ddr_dqsoen_reg<3>
+                                                       leon3mp_U0/ddrsp0.ddrc0/ddr_phy0/ddr_phy0/xc4v.ddr_phy0/dqsgen[0].doen_reg
+    SLICE_X6Y59.DX       net (fanout=2)        0.663   leon3mp_U0/ddrsp0.ddrc0/ddr_phy0/ddr_phy0/xc4v.ddr_phy0/ddr_dqsoen_reg<0>
+    SLICE_X6Y59.CLK      Tckdi       (-Th)     0.219   leon3mp_U0/ddrsp0.ddrc0/ddr_phy0/ddr_phy0/xc4v.ddr_phy0/dqsgen[0].doen/N0
+                                                       leon3mp_U0/ddrsp0.ddrc0/ddr_phy0/ddr_phy0/xc4v.ddr_phy0/dqsgen[0].doen/N0
+    -------------------------------------------------  ---------------------------
+    Total                                      0.853ns (0.190ns logic, 0.663ns route)
+                                                       (22.3% logic, 77.7% route)
+
+--------------------------------------------------------------------------------
+
+Paths for end point leon3mp_U0/ddrsp0.ddrc0/ddr_phy0/ddr_phy0/xc4v.ddr_phy0/dqsgen[3].doen (SLICE_X1Y48.DX), 1 path
+--------------------------------------------------------------------------------
+Slack (hold path):      4.377ns (requirement - (clock path skew + uncertainty - data path))
+  Source:               leon3mp_U0/ddrsp0.ddrc0/ddr_phy0/ddr_phy0/xc4v.ddr_phy0/dqsgen[3].doen_reg (FF)
+  Destination:          leon3mp_U0/ddrsp0.ddrc0/ddr_phy0/ddr_phy0/xc4v.ddr_phy0/dqsgen[3].doen (FF)
+  Requirement:          3.947ns
+  Data Path Delay:      0.833ns (Levels of Logic = 0)
+  Clock Path Skew:      0.085ns (1.871 - 1.786)
+  Source Clock:         leon3mp_U0/clkml falling at 2.631ns
+  Destination Clock:    leon3mp_U0/ddrsp0.ddrc0/ddr_phy0/ddr_phy0/xc4v.ddr_phy0/clk90r rising at 6.578ns
+  Clock Uncertainty:    0.318ns
+
+  Clock Uncertainty:          0.318ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter (TSJ):  0.070ns
+    Total Input Jitter (TIJ):   0.000ns
+    Discrete Jitter (DJ):       0.445ns
+    Phase Error (PE):           0.060ns
+
+  Minimum Data Path: leon3mp_U0/ddrsp0.ddrc0/ddr_phy0/ddr_phy0/xc4v.ddr_phy0/dqsgen[3].doen_reg to leon3mp_U0/ddrsp0.ddrc0/ddr_phy0/ddr_phy0/xc4v.ddr_phy0/dqsgen[3].doen
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICE_X1Y56.DQ       Tcko                  0.409   leon3mp_U0/ddrsp0.ddrc0/ddr_phy0/ddr_phy0/xc4v.ddr_phy0/ddr_dqsoen_reg<3>
+                                                       leon3mp_U0/ddrsp0.ddrc0/ddr_phy0/ddr_phy0/xc4v.ddr_phy0/dqsgen[3].doen_reg
+    SLICE_X1Y48.DX       net (fanout=2)        0.643   leon3mp_U0/ddrsp0.ddrc0/ddr_phy0/ddr_phy0/xc4v.ddr_phy0/ddr_dqsoen_reg<3>
+    SLICE_X1Y48.CLK      Tckdi       (-Th)     0.219   leon3mp_U0/ddrsp0.ddrc0/ddr_phy0/ddr_phy0/xc4v.ddr_phy0/ddr_dqsoen<3>
+                                                       leon3mp_U0/ddrsp0.ddrc0/ddr_phy0/ddr_phy0/xc4v.ddr_phy0/dqsgen[3].doen
+    -------------------------------------------------  ---------------------------
+    Total                                      0.833ns (0.190ns logic, 0.643ns route)
+                                                       (22.8% logic, 77.2% route)
+
+--------------------------------------------------------------------------------
+
+Component Switching Limit Checks: PERIOD analysis for net "leon3mp_U0/ddrsp0.ddrc0/ddr_phy0/ddr_phy0/xc4v.ddr_phy0/clk_90ro" derived from
+ PERIOD analysis for net "leon3mp_U0/ddrsp0.ddrc0/ddr_phy0/ddr_phy0/xc4v.ddr_phy0/mclkfx" derived from NET "leon3mp_U0/clk_200" PERIOD = 5 ns HIGH 50%; multiplied by 1.05 to 5.263 nS and duty cycle corrected to HIGH 2.631 nS 
+ duty cycle corrected to 5.263 nS  HIGH 2.631 nS 
+
+--------------------------------------------------------------------------------
+Slack: 3.042ns (period - min period limit)
+  Period: 5.263ns
+  Min period limit: 2.221ns (450.248MHz) (Tdcmpco)
+  Physical resource: leon3mp_U0/ddrsp0.ddrc0/ddr_phy0/ddr_phy0/xc4v.ddr_phy0/HMODE_dll.dll/CLK0
+  Logical resource: leon3mp_U0/ddrsp0.ddrc0/ddr_phy0/ddr_phy0/xc4v.ddr_phy0/HMODE_dll.dll/CLK0
+  Location pin: DCM_ADV_X0Y2.CLK0
+  Clock network: leon3mp_U0/ddrsp0.ddrc0/ddr_phy0/ddr_phy0/xc4v.ddr_phy0/clk_90ro
+--------------------------------------------------------------------------------
+Slack: 3.071ns (max period limit - period)
+  Period: 5.263ns
+  Max period limit: 8.334ns (119.990MHz) (Tdcmpco)
+  Physical resource: leon3mp_U0/ddrsp0.ddrc0/ddr_phy0/ddr_phy0/xc4v.ddr_phy0/HMODE_dll.dll/CLK0
+  Logical resource: leon3mp_U0/ddrsp0.ddrc0/ddr_phy0/ddr_phy0/xc4v.ddr_phy0/HMODE_dll.dll/CLK0
+  Location pin: DCM_ADV_X0Y2.CLK0
+  Clock network: leon3mp_U0/ddrsp0.ddrc0/ddr_phy0/ddr_phy0/xc4v.ddr_phy0/clk_90ro
+--------------------------------------------------------------------------------
+Slack: 3.597ns (period - min period limit)
+  Period: 5.263ns
+  Min period limit: 1.666ns (600.240MHz) (Tbgper_I)
+  Physical resource: leon3mp_U0/ddrsp0.ddrc0/ddr_phy0/ddr_phy0/xc4v.ddr_phy0/bufg2/I0
+  Logical resource: leon3mp_U0/ddrsp0.ddrc0/ddr_phy0/ddr_phy0/xc4v.ddr_phy0/bufg2/I0
+  Location pin: BUFGCTRL_X0Y5.I0
+  Clock network: leon3mp_U0/ddrsp0.ddrc0/ddr_phy0/ddr_phy0/xc4v.ddr_phy0/clk_90ro
+--------------------------------------------------------------------------------
+
+================================================================================
+Timing constraint: PATH "TS_clkm_clkml_path" TIG;
+
+ 625 paths analyzed, 617 endpoints analyzed, 0 failing endpoints
+ 0 timing errors detected. (0 setup errors, 0 hold errors)
+--------------------------------------------------------------------------------
+
+Paths for end point leon3mp_U0/ddrsp0.ddrc0/ddrc/ddrc/dr.sdo_address_12 (SLICE_X7Y100.C6), 1 path
+--------------------------------------------------------------------------------
+Delay (setup path):     14.368ns (data path - clock path skew + uncertainty)
+  Source:               leon3mp_U0/rst0/rstoutl (FF)
+  Destination:          leon3mp_U0/ddrsp0.ddrc0/ddrc/ddrc/dr.sdo_address_12 (FF)
+  Data Path Delay:      9.402ns (Levels of Logic = 3)
+  Clock Path Skew:      -4.296ns (-0.086 - 4.210)
+  Source Clock:         leon3mp_U0/clkm rising
+  Destination Clock:    leon3mp_U0/clkml rising
+  Clock Uncertainty:    0.670ns
+
+  Clock Uncertainty:          0.670ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter (TSJ):  0.070ns
+    Total Input Jitter (TIJ):   0.000ns
+    Discrete Jitter (DJ):       0.476ns
+    Phase Error (PE):           0.395ns
+
+  Maximum Data Path: leon3mp_U0/rst0/rstoutl to leon3mp_U0/ddrsp0.ddrc0/ddrc/ddrc/dr.sdo_address_12
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICE_X50Y28.AQ      Tcko                  0.450   leon3mp_U0/rst0/rstoutl
+                                                       leon3mp_U0/rst0/rstoutl
+    SLICE_X11Y92.D3      net (fanout=163)      5.876   leon3mp_U0/rst0/rstoutl
+    SLICE_X11Y92.D       Tilo                  0.094   Gill/FRM4X/XLXI_6/XLXI_5/XLXI_1/blk00000003/sig000004c8
+                                                       leon3mp_U0/ddrsp0.ddrc0/ddrc/ddrc/ddr_rst1
+    SLICE_X13Y96.A1      net (fanout=28)       1.919   leon3mp_U0/ddrsp0.ddrc0/ddrc/ddrc/ddr_rst
+    SLICE_X13Y96.A       Tilo                  0.094   leon3mp_U0/ddrsp0.ddrc0/ddrc/ddrc/dr.sdo_address_3
+                                                       leon3mp_U0/ddrsp0.ddrc0/ddrc/ddrc/dv_sdo_address_2_mux000641
+    SLICE_X7Y100.C6      net (fanout=8)        0.940   leon3mp_U0/ddrsp0.ddrc0/ddrc/ddrc/N67
+    SLICE_X7Y100.CLK     Tas                   0.029   leon3mp_U0/ddrsp0.ddrc0/ddrc/ddrc/dr.sdo_address_13
+                                                       leon3mp_U0/ddrsp0.ddrc0/ddrc/ddrc/dv_sdo_address_12_mux00061
+                                                       leon3mp_U0/ddrsp0.ddrc0/ddrc/ddrc/dr.sdo_address_12
+    -------------------------------------------------  ---------------------------
+    Total                                      9.402ns (0.667ns logic, 8.735ns route)
+                                                       (7.1% logic, 92.9% route)
+
+--------------------------------------------------------------------------------
+
+Paths for end point leon3mp_U0/ddrsp0.ddrc0/ddrc/ddrc/dr.sdo_address_13 (SLICE_X7Y100.D6), 1 path
+--------------------------------------------------------------------------------
+Delay (setup path):     14.362ns (data path - clock path skew + uncertainty)
+  Source:               leon3mp_U0/rst0/rstoutl (FF)
+  Destination:          leon3mp_U0/ddrsp0.ddrc0/ddrc/ddrc/dr.sdo_address_13 (FF)
+  Data Path Delay:      9.396ns (Levels of Logic = 3)
+  Clock Path Skew:      -4.296ns (-0.086 - 4.210)
+  Source Clock:         leon3mp_U0/clkm rising
+  Destination Clock:    leon3mp_U0/clkml rising
+  Clock Uncertainty:    0.670ns
+
+  Clock Uncertainty:          0.670ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter (TSJ):  0.070ns
+    Total Input Jitter (TIJ):   0.000ns
+    Discrete Jitter (DJ):       0.476ns
+    Phase Error (PE):           0.395ns
+
+  Maximum Data Path: leon3mp_U0/rst0/rstoutl to leon3mp_U0/ddrsp0.ddrc0/ddrc/ddrc/dr.sdo_address_13
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICE_X50Y28.AQ      Tcko                  0.450   leon3mp_U0/rst0/rstoutl
+                                                       leon3mp_U0/rst0/rstoutl
+    SLICE_X11Y92.D3      net (fanout=163)      5.876   leon3mp_U0/rst0/rstoutl
+    SLICE_X11Y92.D       Tilo                  0.094   Gill/FRM4X/XLXI_6/XLXI_5/XLXI_1/blk00000003/sig000004c8
+                                                       leon3mp_U0/ddrsp0.ddrc0/ddrc/ddrc/ddr_rst1
+    SLICE_X13Y96.A1      net (fanout=28)       1.919   leon3mp_U0/ddrsp0.ddrc0/ddrc/ddrc/ddr_rst
+    SLICE_X13Y96.A       Tilo                  0.094   leon3mp_U0/ddrsp0.ddrc0/ddrc/ddrc/dr.sdo_address_3
+                                                       leon3mp_U0/ddrsp0.ddrc0/ddrc/ddrc/dv_sdo_address_2_mux000641
+    SLICE_X7Y100.D6      net (fanout=8)        0.935   leon3mp_U0/ddrsp0.ddrc0/ddrc/ddrc/N67
+    SLICE_X7Y100.CLK     Tas                   0.028   leon3mp_U0/ddrsp0.ddrc0/ddrc/ddrc/dr.sdo_address_13
+                                                       leon3mp_U0/ddrsp0.ddrc0/ddrc/ddrc/dv_sdo_address_13_mux00061
+                                                       leon3mp_U0/ddrsp0.ddrc0/ddrc/ddrc/dr.sdo_address_13
+    -------------------------------------------------  ---------------------------
+    Total                                      9.396ns (0.666ns logic, 8.730ns route)
+                                                       (7.1% logic, 92.9% route)
+
+--------------------------------------------------------------------------------
+
+Paths for end point leon3mp_U0/ddrsp0.ddrc0/ddrc/ddrc/dr.sdo_address_2 (SLICE_X7Y99.A6), 1 path
+--------------------------------------------------------------------------------
+Delay (setup path):     14.296ns (data path - clock path skew + uncertainty)
+  Source:               leon3mp_U0/rst0/rstoutl (FF)
+  Destination:          leon3mp_U0/ddrsp0.ddrc0/ddrc/ddrc/dr.sdo_address_2 (FF)
+  Data Path Delay:      9.247ns (Levels of Logic = 3)
+  Clock Path Skew:      -4.379ns (-0.169 - 4.210)
+  Source Clock:         leon3mp_U0/clkm rising
+  Destination Clock:    leon3mp_U0/clkml rising
+  Clock Uncertainty:    0.670ns
+
+  Clock Uncertainty:          0.670ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter (TSJ):  0.070ns
+    Total Input Jitter (TIJ):   0.000ns
+    Discrete Jitter (DJ):       0.476ns
+    Phase Error (PE):           0.395ns
+
+  Maximum Data Path: leon3mp_U0/rst0/rstoutl to leon3mp_U0/ddrsp0.ddrc0/ddrc/ddrc/dr.sdo_address_2
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICE_X50Y28.AQ      Tcko                  0.450   leon3mp_U0/rst0/rstoutl
+                                                       leon3mp_U0/rst0/rstoutl
+    SLICE_X11Y92.D3      net (fanout=163)      5.876   leon3mp_U0/rst0/rstoutl
+    SLICE_X11Y92.D       Tilo                  0.094   Gill/FRM4X/XLXI_6/XLXI_5/XLXI_1/blk00000003/sig000004c8
+                                                       leon3mp_U0/ddrsp0.ddrc0/ddrc/ddrc/ddr_rst1
+    SLICE_X13Y96.A1      net (fanout=28)       1.919   leon3mp_U0/ddrsp0.ddrc0/ddrc/ddrc/ddr_rst
+    SLICE_X13Y96.A       Tilo                  0.094   leon3mp_U0/ddrsp0.ddrc0/ddrc/ddrc/dr.sdo_address_3
+                                                       leon3mp_U0/ddrsp0.ddrc0/ddrc/ddrc/dv_sdo_address_2_mux000641
+    SLICE_X7Y99.A6       net (fanout=8)        0.788   leon3mp_U0/ddrsp0.ddrc0/ddrc/ddrc/N67
+    SLICE_X7Y99.CLK      Tas                   0.026   leon3mp_U0/ddrsp0.ddrc0/ddrc/ddrc/dr.sdo_address_2
+                                                       leon3mp_U0/ddrsp0.ddrc0/ddrc/ddrc/dv_sdo_address_2_mux0006721
+                                                       leon3mp_U0/ddrsp0.ddrc0/ddrc/ddrc/dr.sdo_address_2
+    -------------------------------------------------  ---------------------------
+    Total                                      9.247ns (0.664ns logic, 8.583ns route)
+                                                       (7.2% logic, 92.8% route)
+
+--------------------------------------------------------------------------------
+
+================================================================================
+Timing constraint: PATH "TS_clkml_clkm_path" TIG;
+
+ 386 paths analyzed, 386 endpoints analyzed, 0 failing endpoints
+ 0 timing errors detected. (0 setup errors, 0 hold errors)
+--------------------------------------------------------------------------------
+
+Paths for end point leon3mp_U0/ddrsp0.ddrc0/ddrc/wbuf/ramgen[3].r/xc2v.x0/a0.x0/Mram_rfd3_RAMA (SLICE_X20Y33.A1), 1 path
+--------------------------------------------------------------------------------
+Delay (setup path):     3.731ns (data path)
+  Source:               leon3mp_U0/ddrsp0.ddrc0/ddrc/ddrc/dr.ramaddr_0 (FF)
+  Destination:          leon3mp_U0/ddrsp0.ddrc0/ddrc/wbuf/ramgen[3].r/xc2v.x0/a0.x0/Mram_rfd3_RAMA (RAM)
+  Data Path Delay:      3.731ns (Levels of Logic = 0)
+  Source Clock:         leon3mp_U0/clkml rising at 0.000ns
+
+  Maximum Data Path: leon3mp_U0/ddrsp0.ddrc0/ddrc/ddrc/dr.ramaddr_0 to leon3mp_U0/ddrsp0.ddrc0/ddrc/wbuf/ramgen[3].r/xc2v.x0/a0.x0/Mram_rfd3_RAMA
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICE_X25Y67.AQ      Tcko                  0.450   leon3mp_U0/ddrsp0.ddrc0/ddrc/ddrc/dr.ramaddr_0
+                                                       leon3mp_U0/ddrsp0.ddrc0/ddrc/ddrc/dr.ramaddr_0
+    SLICE_X20Y33.A1      net (fanout=96)       3.281   leon3mp_U0/ddrsp0.ddrc0/ddrc/ddrc/dr.ramaddr_0
+    -------------------------------------------------  ---------------------------
+    Total                                      3.731ns (0.450ns logic, 3.281ns route)
+                                                       (12.1% logic, 87.9% route)
+
+--------------------------------------------------------------------------------
+
+Paths for end point leon3mp_U0/ddrsp0.ddrc0/ddrc/wbuf/ramgen[3].r/xc2v.x0/a0.x0/Mram_rfd3_RAMA_D1 (SLICE_X20Y33.A1), 1 path
+--------------------------------------------------------------------------------
+Delay (setup path):     3.731ns (data path)
+  Source:               leon3mp_U0/ddrsp0.ddrc0/ddrc/ddrc/dr.ramaddr_0 (FF)
+  Destination:          leon3mp_U0/ddrsp0.ddrc0/ddrc/wbuf/ramgen[3].r/xc2v.x0/a0.x0/Mram_rfd3_RAMA_D1 (RAM)
+  Data Path Delay:      3.731ns (Levels of Logic = 0)
+  Source Clock:         leon3mp_U0/clkml rising at 0.000ns
+
+  Maximum Data Path: leon3mp_U0/ddrsp0.ddrc0/ddrc/ddrc/dr.ramaddr_0 to leon3mp_U0/ddrsp0.ddrc0/ddrc/wbuf/ramgen[3].r/xc2v.x0/a0.x0/Mram_rfd3_RAMA_D1
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICE_X25Y67.AQ      Tcko                  0.450   leon3mp_U0/ddrsp0.ddrc0/ddrc/ddrc/dr.ramaddr_0
+                                                       leon3mp_U0/ddrsp0.ddrc0/ddrc/ddrc/dr.ramaddr_0
+    SLICE_X20Y33.A1      net (fanout=96)       3.281   leon3mp_U0/ddrsp0.ddrc0/ddrc/ddrc/dr.ramaddr_0
+    -------------------------------------------------  ---------------------------
+    Total                                      3.731ns (0.450ns logic, 3.281ns route)
+                                                       (12.1% logic, 87.9% route)
+
+--------------------------------------------------------------------------------
+
+Paths for end point leon3mp_U0/ddrsp0.ddrc0/ddrc/wbuf/ramgen[3].r/xc2v.x0/a0.x0/Mram_rfd3_RAMB (SLICE_X20Y33.B1), 1 path
+--------------------------------------------------------------------------------
+Delay (setup path):     3.726ns (data path)
+  Source:               leon3mp_U0/ddrsp0.ddrc0/ddrc/ddrc/dr.ramaddr_0 (FF)
+  Destination:          leon3mp_U0/ddrsp0.ddrc0/ddrc/wbuf/ramgen[3].r/xc2v.x0/a0.x0/Mram_rfd3_RAMB (RAM)
+  Data Path Delay:      3.726ns (Levels of Logic = 0)
+  Source Clock:         leon3mp_U0/clkml rising at 0.000ns
+
+  Maximum Data Path: leon3mp_U0/ddrsp0.ddrc0/ddrc/ddrc/dr.ramaddr_0 to leon3mp_U0/ddrsp0.ddrc0/ddrc/wbuf/ramgen[3].r/xc2v.x0/a0.x0/Mram_rfd3_RAMB
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICE_X25Y67.AQ      Tcko                  0.450   leon3mp_U0/ddrsp0.ddrc0/ddrc/ddrc/dr.ramaddr_0
+                                                       leon3mp_U0/ddrsp0.ddrc0/ddrc/ddrc/dr.ramaddr_0
+    SLICE_X20Y33.B1      net (fanout=96)       3.276   leon3mp_U0/ddrsp0.ddrc0/ddrc/ddrc/dr.ramaddr_0
+    -------------------------------------------------  ---------------------------
+    Total                                      3.726ns (0.450ns logic, 3.276ns route)
+                                                       (12.1% logic, 87.9% route)
+
+--------------------------------------------------------------------------------
+
+Hold Paths: PATH "TS_clkml_clkm_path" TIG;
+--------------------------------------------------------------------------------
+
+Paths for end point leon3mp_U0/rst0/r_0 (SLICE_X22Y65.B6), 1 path
+--------------------------------------------------------------------------------
+Delay (hold path):      -2.785ns (datapath - clock path skew - uncertainty)
+  Source:               leon3mp_U0/ddrsp0.ddrc0/ddr_phy0/ddr_phy0/xc4v.ddr_phy0/vlockl (FF)
+  Destination:          leon3mp_U0/rst0/r_0 (FF)
+  Data Path Delay:      2.345ns (Levels of Logic = 2)
+  Clock Path Skew:      4.460ns (4.258 - -0.202)
+  Source Clock:         leon3mp_U0/clkml rising
+  Destination Clock:    leon3mp_U0/clkm rising
+  Clock Uncertainty:    0.670ns
+
+  Clock Uncertainty:          0.670ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter (TSJ):  0.070ns
+    Total Input Jitter (TIJ):   0.000ns
+    Discrete Jitter (DJ):       0.476ns
+    Phase Error (PE):           0.395ns
+
+  Minimum Data Path: leon3mp_U0/ddrsp0.ddrc0/ddr_phy0/ddr_phy0/xc4v.ddr_phy0/vlockl to leon3mp_U0/rst0/r_0
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICE_X8Y96.DQ       Tcko                  0.433   leon3mp_U0/ddrsp0.ddrc0/ddr_phy0/ddr_phy0/xc4v.ddr_phy0/vlockl
+                                                       leon3mp_U0/ddrsp0.ddrc0/ddr_phy0/ddr_phy0/xc4v.ddr_phy0/vlockl
+    SLICE_X22Y65.A6      net (fanout=2)        1.871   leon3mp_U0/ddrsp0.ddrc0/ddr_phy0/ddr_phy0/xc4v.ddr_phy0/vlockl
+    SLICE_X22Y65.A       Tilo                  0.087   leon3mp_U0/rst0/r<3>
+                                                       leon3mp_U0/ddrsp0.ddrc0/ddr_phy0/ddr_phy0/xc4v.ddr_phy0/odtl_0_and000011
+    SLICE_X22Y65.B6      net (fanout=2)        0.150   leon3mp_U0/lock
+    SLICE_X22Y65.CLK     Tah         (-Th)     0.196   leon3mp_U0/rst0/r<3>
+                                                       leon3mp_U0/clklock1
+                                                       leon3mp_U0/rst0/r_0
+    -------------------------------------------------  ---------------------------
+    Total                                      2.345ns (0.324ns logic, 2.021ns route)
+                                                       (13.8% logic, 86.2% route)
+
+--------------------------------------------------------------------------------
+
+Paths for end point leon3mp_U0/ddrsp0.ddrc0/ddrc/rbuf/ramgen[0].r/xc2v.x0/a0.x0/q_79 (SLICE_X46Y42.DX), 1 path
+--------------------------------------------------------------------------------
+Delay (hold path):      -2.553ns (datapath - clock path skew - uncertainty)
+  Source:               leon3mp_U0/ddrsp0.ddrc0/ddrc/rbuf/ramgen[0].r/xc2v.x0/a0.x0/Mram_rfd14_RAMA_D1 (RAM)
+  Destination:          leon3mp_U0/ddrsp0.ddrc0/ddrc/rbuf/ramgen[0].r/xc2v.x0/a0.x0/q_79 (FF)
+  Data Path Delay:      2.499ns (Levels of Logic = 0)
+  Clock Path Skew:      4.382ns (4.237 - -0.145)
+  Source Clock:         leon3mp_U0/clkml rising
+  Destination Clock:    leon3mp_U0/clkm rising
+  Clock Uncertainty:    0.670ns
+
+  Clock Uncertainty:          0.670ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter (TSJ):  0.070ns
+    Total Input Jitter (TIJ):   0.000ns
+    Discrete Jitter (DJ):       0.476ns
+    Phase Error (PE):           0.395ns
+
+  Minimum Data Path: leon3mp_U0/ddrsp0.ddrc0/ddrc/rbuf/ramgen[0].r/xc2v.x0/a0.x0/Mram_rfd14_RAMA_D1 to leon3mp_U0/ddrsp0.ddrc0/ddrc/rbuf/ramgen[0].r/xc2v.x0/a0.x0/q_79
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICE_X24Y57.A       Tshcko                1.394   leon3mp_U0/ddrsp0.ddrc0/ddrc/rbuf/ramgen[0].r/xc2v.x0/a0.x0/_varindex0000<83>
+                                                       leon3mp_U0/ddrsp0.ddrc0/ddrc/rbuf/ramgen[0].r/xc2v.x0/a0.x0/Mram_rfd14_RAMA_D1
+    SLICE_X46Y42.DX      net (fanout=1)        1.324   leon3mp_U0/ddrsp0.ddrc0/ddrc/rbuf/ramgen[0].r/xc2v.x0/a0.x0/_varindex0000<79>
+    SLICE_X46Y42.CLK     Tckdi       (-Th)     0.219   leon3mp_U0/ddrsp0.ddrc0/ddrc/rbuf/ramgen[0].r/xc2v.x0/a0.x0/q<79>
+                                                       leon3mp_U0/ddrsp0.ddrc0/ddrc/rbuf/ramgen[0].r/xc2v.x0/a0.x0/q_79
+    -------------------------------------------------  ---------------------------
+    Total                                      2.499ns (1.175ns logic, 1.324ns route)
+                                                       (47.0% logic, 53.0% route)
+
+--------------------------------------------------------------------------------
+
+Paths for end point leon3mp_U0/ddrsp0.ddrc0/ddrc/rbuf/ramgen[0].r/xc2v.x0/a0.x0/q_88 (SLICE_X45Y38.AX), 1 path
+--------------------------------------------------------------------------------
+Delay (hold path):      -2.364ns (datapath - clock path skew - uncertainty)
+  Source:               leon3mp_U0/ddrsp0.ddrc0/ddrc/rbuf/ramgen[0].r/xc2v.x0/a0.x0/Mram_rfd15_RAMC (RAM)
+  Destination:          leon3mp_U0/ddrsp0.ddrc0/ddrc/rbuf/ramgen[0].r/xc2v.x0/a0.x0/q_88 (FF)
+  Data Path Delay:      2.876ns (Levels of Logic = 0)
+  Clock Path Skew:      4.570ns (4.297 - -0.273)
+  Source Clock:         leon3mp_U0/clkml rising
+  Destination Clock:    leon3mp_U0/clkm rising
+  Clock Uncertainty:    0.670ns
+
+  Clock Uncertainty:          0.670ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter (TSJ):  0.070ns
+    Total Input Jitter (TIJ):   0.000ns
+    Discrete Jitter (DJ):       0.476ns
+    Phase Error (PE):           0.395ns
+
+  Minimum Data Path: leon3mp_U0/ddrsp0.ddrc0/ddrc/rbuf/ramgen[0].r/xc2v.x0/a0.x0/Mram_rfd15_RAMC to leon3mp_U0/ddrsp0.ddrc0/ddrc/rbuf/ramgen[0].r/xc2v.x0/a0.x0/q_88
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICE_X28Y60.CMUX    Tshcko                1.535   leon3mp_U0/ddrsp0.ddrc0/ddrc/rbuf/ramgen[0].r/xc2v.x0/a0.x0/_varindex0000<89>
+                                                       leon3mp_U0/ddrsp0.ddrc0/ddrc/rbuf/ramgen[0].r/xc2v.x0/a0.x0/Mram_rfd15_RAMC
+    SLICE_X45Y38.AX      net (fanout=1)        1.570   leon3mp_U0/ddrsp0.ddrc0/ddrc/rbuf/ramgen[0].r/xc2v.x0/a0.x0/_varindex0000<88>
+    SLICE_X45Y38.CLK     Tckdi       (-Th)     0.229   leon3mp_U0/ddrsp0.ddrc0/ddrc/rbuf/ramgen[0].r/xc2v.x0/a0.x0/q<91>
+                                                       leon3mp_U0/ddrsp0.ddrc0/ddrc/rbuf/ramgen[0].r/xc2v.x0/a0.x0/q_88
+    -------------------------------------------------  ---------------------------
+    Total                                      2.876ns (1.306ns logic, 1.570ns route)
+                                                       (45.4% logic, 54.6% route)
+
+--------------------------------------------------------------------------------
+
+================================================================================
+Timing constraint: PATH "TS_clkm_egtx_clk_path" TIG;
+
+ 0 paths analyzed, 0 endpoints analyzed, 0 failing endpoints
+ 0 timing errors detected.
+--------------------------------------------------------------------------------
+
+================================================================================
+Timing constraint: PATH "TS_egtx_clk_clkm_path" TIG;
+
+ 0 paths analyzed, 0 endpoints analyzed, 0 failing endpoints
+ 0 timing errors detected.
+--------------------------------------------------------------------------------
+
+================================================================================
+Timing constraint: TSSYSACE = PERIOD TIMEGRP "clk_33" 29 ns HIGH 50%;
+
+ 234 paths analyzed, 96 endpoints analyzed, 0 failing endpoints
+ 0 timing errors detected. (0 setup errors, 0 hold errors, 0 component switching limit errors)
+ Minimum period is   9.251ns.
+--------------------------------------------------------------------------------
+
+Paths for end point leon3mp_U0/grace.grace0/s.aceo.cen (SLICE_X61Y97.DX), 4 paths
+--------------------------------------------------------------------------------
+Slack (setup path):     19.749ns (requirement - (data path - clock path skew + uncertainty))
+  Source:               leon3mp_U0/grace.grace0/s.sync.acc_1 (FF)
+  Destination:          leon3mp_U0/grace.grace0/s.aceo.cen (FF)
+  Requirement:          29.000ns
+  Data Path Delay:      8.900ns (Levels of Logic = 1)
+  Clock Path Skew:      -0.316ns (1.142 - 1.458)
+  Source Clock:         leon3mp_U0/clkace rising at 0.000ns
+  Destination Clock:    leon3mp_U0/clkace rising at 29.000ns
+  Clock Uncertainty:    0.035ns
+
+  Clock Uncertainty:          0.035ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter (TSJ):  0.070ns
+    Total Input Jitter (TIJ):   0.000ns
+    Discrete Jitter (DJ):       0.000ns
+    Phase Error (PE):           0.000ns
+
+  Maximum Data Path: leon3mp_U0/grace.grace0/s.sync.acc_1 to leon3mp_U0/grace.grace0/s.aceo.cen
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICE_X72Y33.AQ      Tcko                  0.471   leon3mp_U0/grace.grace0/s.sync.rstn_1
+                                                       leon3mp_U0/grace.grace0/s.sync.acc_1
+    SLICE_X95Y82.A4      net (fanout=5)        5.566   leon3mp_U0/grace.grace0/s.sync.acc_1
+    SLICE_X95Y82.A       Tilo                  0.094   Gill/FRM4X/XLXI_6/XLXI_3/XLXI_9/XLXI_3/blk00000003/sig0000049a
+                                                       leon3mp_U0/grace.grace0/s_aceo_cen_mux00001
+    SLICE_X61Y97.DX      net (fanout=2)        2.767   leon3mp_U0/grace.grace0/s_aceo_cen_mux0000
+    SLICE_X61Y97.CLK     Tdick                 0.002   leon3mp_U0/grace.grace0/s.aceo.cen
+                                                       leon3mp_U0/grace.grace0/s.aceo.cen
+    -------------------------------------------------  ---------------------------
+    Total                                      8.900ns (0.567ns logic, 8.333ns route)
+                                                       (6.4% logic, 93.6% route)
+
+--------------------------------------------------------------------------------
+Slack (setup path):     22.691ns (requirement - (data path - clock path skew + uncertainty))
+  Source:               leon3mp_U0/grace.grace0/s.state_FSM_FFd2 (FF)
+  Destination:          leon3mp_U0/grace.grace0/s.aceo.cen (FF)
+  Requirement:          29.000ns
+  Data Path Delay:      6.190ns (Levels of Logic = 1)
+  Clock Path Skew:      -0.084ns (1.142 - 1.226)
+  Source Clock:         leon3mp_U0/clkace rising at 0.000ns
+  Destination Clock:    leon3mp_U0/clkace rising at 29.000ns
+  Clock Uncertainty:    0.035ns
+
+  Clock Uncertainty:          0.035ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter (TSJ):  0.070ns
+    Total Input Jitter (TIJ):   0.000ns
+    Discrete Jitter (DJ):       0.000ns
+    Phase Error (PE):           0.000ns
+
+  Maximum Data Path: leon3mp_U0/grace.grace0/s.state_FSM_FFd2 to leon3mp_U0/grace.grace0/s.aceo.cen
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICE_X65Y67.AQ      Tcko                  0.450   leon3mp_U0/grace.grace0/s.aceo.doen
+                                                       leon3mp_U0/grace.grace0/s.state_FSM_FFd2
+    SLICE_X95Y82.A1      net (fanout=9)        2.877   leon3mp_U0/grace.grace0/s.state_FSM_FFd2
+    SLICE_X95Y82.A       Tilo                  0.094   Gill/FRM4X/XLXI_6/XLXI_3/XLXI_9/XLXI_3/blk00000003/sig0000049a
+                                                       leon3mp_U0/grace.grace0/s_aceo_cen_mux00001
+    SLICE_X61Y97.DX      net (fanout=2)        2.767   leon3mp_U0/grace.grace0/s_aceo_cen_mux0000
+    SLICE_X61Y97.CLK     Tdick                 0.002   leon3mp_U0/grace.grace0/s.aceo.cen
+                                                       leon3mp_U0/grace.grace0/s.aceo.cen
+    -------------------------------------------------  ---------------------------
+    Total                                      6.190ns (0.546ns logic, 5.644ns route)
+                                                       (8.8% logic, 91.2% route)
+
+--------------------------------------------------------------------------------
+Slack (setup path):     23.569ns (requirement - (data path - clock path skew + uncertainty))
+  Source:               leon3mp_U0/grace.grace0/s.aceo.cen (FF)
+  Destination:          leon3mp_U0/grace.grace0/s.aceo.cen (FF)
+  Requirement:          29.000ns
+  Data Path Delay:      5.396ns (Levels of Logic = 1)
+  Clock Path Skew:      0.000ns
+  Source Clock:         leon3mp_U0/clkace rising at 0.000ns
+  Destination Clock:    leon3mp_U0/clkace rising at 29.000ns
+  Clock Uncertainty:    0.035ns
+
+  Clock Uncertainty:          0.035ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter (TSJ):  0.070ns
+    Total Input Jitter (TIJ):   0.000ns
+    Discrete Jitter (DJ):       0.000ns
+    Phase Error (PE):           0.000ns
+
+  Maximum Data Path: leon3mp_U0/grace.grace0/s.aceo.cen to leon3mp_U0/grace.grace0/s.aceo.cen
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICE_X61Y97.DQ      Tcko                  0.450   leon3mp_U0/grace.grace0/s.aceo.cen
+                                                       leon3mp_U0/grace.grace0/s.aceo.cen
+    SLICE_X95Y82.A5      net (fanout=1)        2.083   leon3mp_U0/grace.grace0/s.aceo.cen
+    SLICE_X95Y82.A       Tilo                  0.094   Gill/FRM4X/XLXI_6/XLXI_3/XLXI_9/XLXI_3/blk00000003/sig0000049a
+                                                       leon3mp_U0/grace.grace0/s_aceo_cen_mux00001
+    SLICE_X61Y97.DX      net (fanout=2)        2.767   leon3mp_U0/grace.grace0/s_aceo_cen_mux0000
+    SLICE_X61Y97.CLK     Tdick                 0.002   leon3mp_U0/grace.grace0/s.aceo.cen
+                                                       leon3mp_U0/grace.grace0/s.aceo.cen
+    -------------------------------------------------  ---------------------------
+    Total                                      5.396ns (0.546ns logic, 4.850ns route)
+                                                       (10.1% logic, 89.9% route)
+
+--------------------------------------------------------------------------------
+
+Paths for end point leon3mp_U0/grace.grace0/s.aceo.doen_7 (OLOGIC_X2Y190.T1), 5 paths
+--------------------------------------------------------------------------------
+Slack (setup path):     20.642ns (requirement - (data path - clock path skew + uncertainty))
+  Source:               leon3mp_U0/grace.grace0/s.sync.acc_1 (FF)
+  Destination:          leon3mp_U0/grace.grace0/s.aceo.doen_7 (FF)
+  Requirement:          29.000ns
+  Data Path Delay:      8.237ns (Levels of Logic = 1)
+  Clock Path Skew:      -0.086ns (1.372 - 1.458)
+  Source Clock:         leon3mp_U0/clkace rising at 0.000ns
+  Destination Clock:    leon3mp_U0/clkace rising at 29.000ns
+  Clock Uncertainty:    0.035ns
+
+  Clock Uncertainty:          0.035ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter (TSJ):  0.070ns
+    Total Input Jitter (TIJ):   0.000ns
+    Discrete Jitter (DJ):       0.000ns
+    Phase Error (PE):           0.000ns
+
+  Maximum Data Path: leon3mp_U0/grace.grace0/s.sync.acc_1 to leon3mp_U0/grace.grace0/s.aceo.doen_7
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICE_X72Y33.AQ      Tcko                  0.471   leon3mp_U0/grace.grace0/s.sync.rstn_1
+                                                       leon3mp_U0/grace.grace0/s.sync.acc_1
+    SLICE_X88Y75.C4      net (fanout=5)        5.244   leon3mp_U0/grace.grace0/s.sync.acc_1
+    SLICE_X88Y75.C       Tilo                  0.094   Gill/FRM4X/XLXI_7_43/timeshow_DUMMY<15>
+                                                       leon3mp_U0/grace.grace0/s_aceo_doen_mux00001
+    OLOGIC_X2Y190.T1     net (fanout=17)       2.018   leon3mp_U0/grace.grace0/s_aceo_doen_mux0000
+    OLOGIC_X2Y190.CLK    Totck                 0.410   leon3mp_U0/grace.grace0/s.aceo.do_9
+                                                       leon3mp_U0/grace.grace0/s.aceo.doen_7
+    -------------------------------------------------  ---------------------------
+    Total                                      8.237ns (0.975ns logic, 7.262ns route)
+                                                       (11.8% logic, 88.2% route)
+
+--------------------------------------------------------------------------------
+Slack (setup path):     23.175ns (requirement - (data path - clock path skew + uncertainty))
+  Source:               leon3mp_U0/grace.grace0/s.accdone (FF)
+  Destination:          leon3mp_U0/grace.grace0/s.aceo.doen_7 (FF)
+  Requirement:          29.000ns
+  Data Path Delay:      5.877ns (Levels of Logic = 1)
+  Clock Path Skew:      0.087ns (1.372 - 1.285)
+  Source Clock:         leon3mp_U0/clkace rising at 0.000ns
+  Destination Clock:    leon3mp_U0/clkace rising at 29.000ns
+  Clock Uncertainty:    0.035ns
+
+  Clock Uncertainty:          0.035ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter (TSJ):  0.070ns
+    Total Input Jitter (TIJ):   0.000ns
+    Discrete Jitter (DJ):       0.000ns
+    Phase Error (PE):           0.000ns
+
+  Maximum Data Path: leon3mp_U0/grace.grace0/s.accdone to leon3mp_U0/grace.grace0/s.aceo.doen_7
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICE_X35Y71.DQ      Tcko                  0.450   leon3mp_U0/grace.grace0/s.accdone
+                                                       leon3mp_U0/grace.grace0/s.accdone
+    SLICE_X88Y75.C2      net (fanout=3)        2.905   leon3mp_U0/grace.grace0/s.accdone
+    SLICE_X88Y75.C       Tilo                  0.094   Gill/FRM4X/XLXI_7_43/timeshow_DUMMY<15>
+                                                       leon3mp_U0/grace.grace0/s_aceo_doen_mux00001
+    OLOGIC_X2Y190.T1     net (fanout=17)       2.018   leon3mp_U0/grace.grace0/s_aceo_doen_mux0000
+    OLOGIC_X2Y190.CLK    Totck                 0.410   leon3mp_U0/grace.grace0/s.aceo.do_9
+                                                       leon3mp_U0/grace.grace0/s.aceo.doen_7
+    -------------------------------------------------  ---------------------------
+    Total                                      5.877ns (0.954ns logic, 4.923ns route)
+                                                       (16.2% logic, 83.8% route)
+
+--------------------------------------------------------------------------------
+Slack (setup path):     24.073ns (requirement - (data path - clock path skew + uncertainty))
+  Source:               leon3mp_U0/grace.grace0/s.aceo.doen (FF)
+  Destination:          leon3mp_U0/grace.grace0/s.aceo.doen_7 (FF)
+  Requirement:          29.000ns
+  Data Path Delay:      5.038ns (Levels of Logic = 1)
+  Clock Path Skew:      0.146ns (1.372 - 1.226)
+  Source Clock:         leon3mp_U0/clkace rising at 0.000ns
+  Destination Clock:    leon3mp_U0/clkace rising at 29.000ns
+  Clock Uncertainty:    0.035ns
+
+  Clock Uncertainty:          0.035ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter (TSJ):  0.070ns
+    Total Input Jitter (TIJ):   0.000ns
+    Discrete Jitter (DJ):       0.000ns
+    Phase Error (PE):           0.000ns
+
+  Maximum Data Path: leon3mp_U0/grace.grace0/s.aceo.doen to leon3mp_U0/grace.grace0/s.aceo.doen_7
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICE_X65Y67.CQ      Tcko                  0.450   leon3mp_U0/grace.grace0/s.aceo.doen
+                                                       leon3mp_U0/grace.grace0/s.aceo.doen
+    SLICE_X88Y75.C1      net (fanout=1)        2.066   leon3mp_U0/grace.grace0/s.aceo.doen
+    SLICE_X88Y75.C       Tilo                  0.094   Gill/FRM4X/XLXI_7_43/timeshow_DUMMY<15>
+                                                       leon3mp_U0/grace.grace0/s_aceo_doen_mux00001
+    OLOGIC_X2Y190.T1     net (fanout=17)       2.018   leon3mp_U0/grace.grace0/s_aceo_doen_mux0000
+    OLOGIC_X2Y190.CLK    Totck                 0.410   leon3mp_U0/grace.grace0/s.aceo.do_9
+                                                       leon3mp_U0/grace.grace0/s.aceo.doen_7
+    -------------------------------------------------  ---------------------------
+    Total                                      5.038ns (0.954ns logic, 4.084ns route)
+                                                       (18.9% logic, 81.1% route)
+
+--------------------------------------------------------------------------------
+
+Paths for end point leon3mp_U0/grace.grace0/s.aceo.doen_6 (OLOGIC_X2Y191.T1), 5 paths
+--------------------------------------------------------------------------------
+Slack (setup path):     20.642ns (requirement - (data path - clock path skew + uncertainty))
+  Source:               leon3mp_U0/grace.grace0/s.sync.acc_1 (FF)
+  Destination:          leon3mp_U0/grace.grace0/s.aceo.doen_6 (FF)
+  Requirement:          29.000ns
+  Data Path Delay:      8.237ns (Levels of Logic = 1)
+  Clock Path Skew:      -0.086ns (1.372 - 1.458)
+  Source Clock:         leon3mp_U0/clkace rising at 0.000ns
+  Destination Clock:    leon3mp_U0/clkace rising at 29.000ns
+  Clock Uncertainty:    0.035ns
+
+  Clock Uncertainty:          0.035ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter (TSJ):  0.070ns
+    Total Input Jitter (TIJ):   0.000ns
+    Discrete Jitter (DJ):       0.000ns
+    Phase Error (PE):           0.000ns
+
+  Maximum Data Path: leon3mp_U0/grace.grace0/s.sync.acc_1 to leon3mp_U0/grace.grace0/s.aceo.doen_6
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICE_X72Y33.AQ      Tcko                  0.471   leon3mp_U0/grace.grace0/s.sync.rstn_1
+                                                       leon3mp_U0/grace.grace0/s.sync.acc_1
+    SLICE_X88Y75.C4      net (fanout=5)        5.244   leon3mp_U0/grace.grace0/s.sync.acc_1
+    SLICE_X88Y75.C       Tilo                  0.094   Gill/FRM4X/XLXI_7_43/timeshow_DUMMY<15>
+                                                       leon3mp_U0/grace.grace0/s_aceo_doen_mux00001
+    OLOGIC_X2Y191.T1     net (fanout=17)       2.018   leon3mp_U0/grace.grace0/s_aceo_doen_mux0000
+    OLOGIC_X2Y191.CLK    Totck                 0.410   leon3mp_U0/grace.grace0/s.aceo.do_10
+                                                       leon3mp_U0/grace.grace0/s.aceo.doen_6
+    -------------------------------------------------  ---------------------------
+    Total                                      8.237ns (0.975ns logic, 7.262ns route)
+                                                       (11.8% logic, 88.2% route)
+
+--------------------------------------------------------------------------------
+Slack (setup path):     23.175ns (requirement - (data path - clock path skew + uncertainty))
+  Source:               leon3mp_U0/grace.grace0/s.accdone (FF)
+  Destination:          leon3mp_U0/grace.grace0/s.aceo.doen_6 (FF)
+  Requirement:          29.000ns
+  Data Path Delay:      5.877ns (Levels of Logic = 1)
+  Clock Path Skew:      0.087ns (1.372 - 1.285)
+  Source Clock:         leon3mp_U0/clkace rising at 0.000ns
+  Destination Clock:    leon3mp_U0/clkace rising at 29.000ns
+  Clock Uncertainty:    0.035ns
+
+  Clock Uncertainty:          0.035ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter (TSJ):  0.070ns
+    Total Input Jitter (TIJ):   0.000ns
+    Discrete Jitter (DJ):       0.000ns
+    Phase Error (PE):           0.000ns
+
+  Maximum Data Path: leon3mp_U0/grace.grace0/s.accdone to leon3mp_U0/grace.grace0/s.aceo.doen_6
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICE_X35Y71.DQ      Tcko                  0.450   leon3mp_U0/grace.grace0/s.accdone
+                                                       leon3mp_U0/grace.grace0/s.accdone
+    SLICE_X88Y75.C2      net (fanout=3)        2.905   leon3mp_U0/grace.grace0/s.accdone
+    SLICE_X88Y75.C       Tilo                  0.094   Gill/FRM4X/XLXI_7_43/timeshow_DUMMY<15>
+                                                       leon3mp_U0/grace.grace0/s_aceo_doen_mux00001
+    OLOGIC_X2Y191.T1     net (fanout=17)       2.018   leon3mp_U0/grace.grace0/s_aceo_doen_mux0000
+    OLOGIC_X2Y191.CLK    Totck                 0.410   leon3mp_U0/grace.grace0/s.aceo.do_10
+                                                       leon3mp_U0/grace.grace0/s.aceo.doen_6
+    -------------------------------------------------  ---------------------------
+    Total                                      5.877ns (0.954ns logic, 4.923ns route)
+                                                       (16.2% logic, 83.8% route)
+
+--------------------------------------------------------------------------------
+Slack (setup path):     24.073ns (requirement - (data path - clock path skew + uncertainty))
+  Source:               leon3mp_U0/grace.grace0/s.aceo.doen (FF)
+  Destination:          leon3mp_U0/grace.grace0/s.aceo.doen_6 (FF)
+  Requirement:          29.000ns
+  Data Path Delay:      5.038ns (Levels of Logic = 1)
+  Clock Path Skew:      0.146ns (1.372 - 1.226)
+  Source Clock:         leon3mp_U0/clkace rising at 0.000ns
+  Destination Clock:    leon3mp_U0/clkace rising at 29.000ns
+  Clock Uncertainty:    0.035ns
+
+  Clock Uncertainty:          0.035ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter (TSJ):  0.070ns
+    Total Input Jitter (TIJ):   0.000ns
+    Discrete Jitter (DJ):       0.000ns
+    Phase Error (PE):           0.000ns
+
+  Maximum Data Path: leon3mp_U0/grace.grace0/s.aceo.doen to leon3mp_U0/grace.grace0/s.aceo.doen_6
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICE_X65Y67.CQ      Tcko                  0.450   leon3mp_U0/grace.grace0/s.aceo.doen
+                                                       leon3mp_U0/grace.grace0/s.aceo.doen
+    SLICE_X88Y75.C1      net (fanout=1)        2.066   leon3mp_U0/grace.grace0/s.aceo.doen
+    SLICE_X88Y75.C       Tilo                  0.094   Gill/FRM4X/XLXI_7_43/timeshow_DUMMY<15>
+                                                       leon3mp_U0/grace.grace0/s_aceo_doen_mux00001
+    OLOGIC_X2Y191.T1     net (fanout=17)       2.018   leon3mp_U0/grace.grace0/s_aceo_doen_mux0000
+    OLOGIC_X2Y191.CLK    Totck                 0.410   leon3mp_U0/grace.grace0/s.aceo.do_10
+                                                       leon3mp_U0/grace.grace0/s.aceo.doen_6
+    -------------------------------------------------  ---------------------------
+    Total                                      5.038ns (0.954ns logic, 4.084ns route)
+                                                       (18.9% logic, 81.1% route)
+
+--------------------------------------------------------------------------------
+
+Hold Paths: TSSYSACE = PERIOD TIMEGRP "clk_33" 29 ns HIGH 50%;
+--------------------------------------------------------------------------------
+
+Paths for end point leon3mp_U0/grace.grace0/s.state_FSM_FFd1 (SLICE_X55Y78.A6), 1 path
+--------------------------------------------------------------------------------
+Slack (hold path):      0.475ns (requirement - (clock path skew + uncertainty - data path))
+  Source:               leon3mp_U0/grace.grace0/s.state_FSM_FFd1 (FF)
+  Destination:          leon3mp_U0/grace.grace0/s.state_FSM_FFd1 (FF)
+  Requirement:          0.000ns
+  Data Path Delay:      0.475ns (Levels of Logic = 1)
+  Clock Path Skew:      0.000ns
+  Source Clock:         leon3mp_U0/clkace rising at 29.000ns
+  Destination Clock:    leon3mp_U0/clkace rising at 29.000ns
+  Clock Uncertainty:    0.000ns
+
+  Minimum Data Path: leon3mp_U0/grace.grace0/s.state_FSM_FFd1 to leon3mp_U0/grace.grace0/s.state_FSM_FFd1
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICE_X55Y78.AQ      Tcko                  0.414   leon3mp_U0/grace.grace0/s.state_FSM_FFd1
+                                                       leon3mp_U0/grace.grace0/s.state_FSM_FFd1
+    SLICE_X55Y78.A6      net (fanout=9)        0.258   leon3mp_U0/grace.grace0/s.state_FSM_FFd1
+    SLICE_X55Y78.CLK     Tah         (-Th)     0.197   leon3mp_U0/grace.grace0/s.state_FSM_FFd1
+                                                       leon3mp_U0/grace.grace0/s.state_FSM_FFd1-In11
+                                                       leon3mp_U0/grace.grace0/s.state_FSM_FFd1
+    -------------------------------------------------  ---------------------------
+    Total                                      0.475ns (0.217ns logic, 0.258ns route)
+                                                       (45.7% logic, 54.3% route)
+
+--------------------------------------------------------------------------------
+
+Paths for end point leon3mp_U0/grace.grace0/s.state_FSM_FFd2 (SLICE_X65Y67.A4), 1 path
+--------------------------------------------------------------------------------
+Slack (hold path):      0.557ns (requirement - (clock path skew + uncertainty - data path))
+  Source:               leon3mp_U0/grace.grace0/s.state_FSM_FFd2 (FF)
+  Destination:          leon3mp_U0/grace.grace0/s.state_FSM_FFd2 (FF)
+  Requirement:          0.000ns
+  Data Path Delay:      0.557ns (Levels of Logic = 1)
+  Clock Path Skew:      0.000ns
+  Source Clock:         leon3mp_U0/clkace rising at 29.000ns
+  Destination Clock:    leon3mp_U0/clkace rising at 29.000ns
+  Clock Uncertainty:    0.000ns
+
+  Minimum Data Path: leon3mp_U0/grace.grace0/s.state_FSM_FFd2 to leon3mp_U0/grace.grace0/s.state_FSM_FFd2
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICE_X65Y67.AQ      Tcko                  0.414   leon3mp_U0/grace.grace0/s.aceo.doen
+                                                       leon3mp_U0/grace.grace0/s.state_FSM_FFd2
+    SLICE_X65Y67.A4      net (fanout=9)        0.340   leon3mp_U0/grace.grace0/s.state_FSM_FFd2
+    SLICE_X65Y67.CLK     Tah         (-Th)     0.197   leon3mp_U0/grace.grace0/s.aceo.doen
+                                                       leon3mp_U0/grace.grace0/s.state_FSM_FFd2-In1
+                                                       leon3mp_U0/grace.grace0/s.state_FSM_FFd2
+    -------------------------------------------------  ---------------------------
+    Total                                      0.557ns (0.217ns logic, 0.340ns route)
+                                                       (39.0% logic, 61.0% route)
+
+--------------------------------------------------------------------------------
+
+Paths for end point leon3mp_U0/grace.grace0/s.state_FSM_FFd1 (SLICE_X55Y78.DX), 1 path
+--------------------------------------------------------------------------------
+Slack (hold path):      1.912ns (requirement - (clock path skew + uncertainty - data path))
+  Source:               leon3mp_U0/grace.grace0/s.state_FSM_FFd2 (FF)
+  Destination:          leon3mp_U0/grace.grace0/s.state_FSM_FFd1 (FF)
+  Requirement:          0.000ns
+  Data Path Delay:      1.931ns (Levels of Logic = 0)
+  Clock Path Skew:      0.019ns (0.470 - 0.451)
+  Source Clock:         leon3mp_U0/clkace rising at 29.000ns
+  Destination Clock:    leon3mp_U0/clkace rising at 29.000ns
+  Clock Uncertainty:    0.000ns
+
+  Minimum Data Path: leon3mp_U0/grace.grace0/s.state_FSM_FFd2 to leon3mp_U0/grace.grace0/s.state_FSM_FFd1
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICE_X65Y67.AQ      Tcko                  0.414   leon3mp_U0/grace.grace0/s.aceo.doen
+                                                       leon3mp_U0/grace.grace0/s.state_FSM_FFd2
+    SLICE_X55Y78.DX      net (fanout=9)        1.278   leon3mp_U0/grace.grace0/s.state_FSM_FFd2
+    SLICE_X55Y78.CLK     Tcksr       (-Th)    -0.239   leon3mp_U0/grace.grace0/s.state_FSM_FFd1
+                                                       leon3mp_U0/grace.grace0/s.state_FSM_FFd1
+    -------------------------------------------------  ---------------------------
+    Total                                      1.931ns (0.653ns logic, 1.278ns route)
+                                                       (33.8% logic, 66.2% route)
+
+--------------------------------------------------------------------------------
+
+Component Switching Limit Checks: TSSYSACE = PERIOD TIMEGRP "clk_33" 29 ns HIGH 50%;
+--------------------------------------------------------------------------------
+Slack: 26.500ns (period - (min high pulse limit / (high pulse / period)))
+  Period: 29.000ns
+  High pulse: 14.500ns
+  High pulse limit: 1.250ns (Tospwh)
+  Physical resource: leon3mp_U0/grace.grace0/s.aceo.do_0/SR
+  Logical resource: leon3mp_U0/grace.grace0/s.aceo.doen_16/SR
+  Location pin: OLOGIC_X2Y174.SR
+  Clock network: leon3mp_U0/grace.grace0/s.state_Rst_inv
+--------------------------------------------------------------------------------
+Slack: 26.500ns (period - (min high pulse limit / (high pulse / period)))
+  Period: 29.000ns
+  High pulse: 14.500ns
+  High pulse limit: 1.250ns (Tospwh)
+  Physical resource: leon3mp_U0/grace.grace0/s.aceo.do_1/SR
+  Logical resource: leon3mp_U0/grace.grace0/s.aceo.doen_15/SR
+  Location pin: OLOGIC_X2Y179.SR
+  Clock network: leon3mp_U0/grace.grace0/s.state_Rst_inv
+--------------------------------------------------------------------------------
+Slack: 26.500ns (period - (min high pulse limit / (high pulse / period)))
+  Period: 29.000ns
+  High pulse: 14.500ns
+  High pulse limit: 1.250ns (Tospwh)
+  Physical resource: leon3mp_U0/grace.grace0/s.aceo.do_2/SR
+  Logical resource: leon3mp_U0/grace.grace0/s.aceo.doen_14/SR
+  Location pin: OLOGIC_X2Y176.SR
+  Clock network: leon3mp_U0/grace.grace0/s.state_Rst_inv
+--------------------------------------------------------------------------------
+
+
+Derived Constraint Report
+Derived Constraints for leon3mp_U0/clk_pad/xcv2.u0/ol
++-------------------------------+-------------+-------------+-------------+-------------+-------------+-------------+-------------+
+|                               |   Period    |       Actual Period       |      Timing Errors        |      Paths Analyzed       |
+|           Constraint          | Requirement |-------------+-------------|-------------+-------------|-------------+-------------|
+|                               |             |   Direct    | Derivative  |   Direct    | Derivative  |   Direct    | Derivative  |
++-------------------------------+-------------+-------------+-------------+-------------+-------------+-------------+-------------+
+|leon3mp_U0/clk_pad/xcv2.u0/ol  |     10.000ns|      7.142ns|     15.798ns|            0|         3320|            0|      7063444|
+| leon3mp_U0/clkgen0/xc5l.v/clk0|      6.250ns|      9.874ns|          N/A|         3320|            0|      7063444|            0|
+| B                             |             |             |             |             |             |             |             |
++-------------------------------+-------------+-------------+-------------+-------------+-------------+-------------+-------------+
+
+Derived Constraints for leon3mp_U0/clk_200
++-------------------------------+-------------+-------------+-------------+-------------+-------------+-------------+-------------+
+|                               |   Period    |       Actual Period       |      Timing Errors        |      Paths Analyzed       |
+|           Constraint          | Requirement |-------------+-------------|-------------+-------------|-------------+-------------|
+|                               |             |   Direct    | Derivative  |   Direct    | Derivative  |   Direct    | Derivative  |
++-------------------------------+-------------+-------------+-------------+-------------+-------------+-------------+-------------+
+|leon3mp_U0/clk_200             |      5.000ns|      3.600ns|      5.644ns|            0|            5|            3|         9097|
+| leon3mp_U0/ddrsp0.ddrc0/ddr_ph|      5.263ns|      5.941ns|      5.093ns|            5|            0|         9065|           32|
+| y0/ddr_phy0/xc4v.ddr_phy0/mclk|             |             |             |             |             |             |             |
+| fx                            |             |             |             |             |             |             |             |
+|  leon3mp_U0/ddrsp0.ddrc0/ddr_p|      5.263ns|      5.093ns|          N/A|            0|            0|           32|            0|
+|  hy0/ddr_phy0/xc4v.ddr_phy0/cl|             |             |             |             |             |             |             |
+|  k_90ro                       |             |             |             |             |             |             |             |
++-------------------------------+-------------+-------------+-------------+-------------+-------------+-------------+-------------+
+
+2 constraints not met.
+
+
+Data Sheet report:
+-----------------
+All values displayed in nanoseconds (ns)
+
+Clock to Setup on destination clock clk_33
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+clk_33         |    9.251|         |         |         |
+---------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock clk_100
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+clk_100        |    9.874|         |         |         |
+clk_200_n      |    2.114|         |         |         |
+clk_200_p      |    2.114|         |         |         |
+---------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock clk_200_n
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+clk_100        |   14.368|         |         |         |
+clk_200_n      |    5.299|    3.820|    2.970|         |
+clk_200_p      |    5.299|    3.820|    2.970|         |
+---------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock clk_200_p
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+clk_100        |   14.368|         |         |         |
+clk_200_n      |    5.299|    3.820|    2.970|         |
+clk_200_p      |    5.299|    3.820|    2.970|         |
+---------------+---------+---------+---------+---------+
+
+
+Timing summary:
+---------------
+
+Timing errors: 3325  Score: 3466898  (Setup/Max: 3461842, Hold: 0, Component Switching Limit: 5056)
+
+Constraints cover 7073789 paths, 0 nets, and 293422 connections
+
+Design statistics:
+   Minimum period:   9.874ns{1}   (Maximum frequency: 101.276MHz)
+
+
+------------------------------------Footnotes-----------------------------------
+1)  The minimum period statistic assumes all single cycle delays.
+
+Analysis completed Tue Apr 23 12:31:25 2013 
+--------------------------------------------------------------------------------
+
+Trace Settings:
+-------------------------
+Trace Settings 
+
+Peak Memory Usage: 1161 MB
+
+
+

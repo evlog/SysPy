@@ -1,0 +1,83 @@
+K 25
+svn:wc:ra_dav:version-url
+V 109
+/svn/!svn/ver/102/SysPy/SysPy_ver/Python_script/paramsocs/Leon3_comps_Gill_top/Leon3_comps/libs/opencores/ata
+END
+atahost_pio_actrl.vhd
+K 25
+svn:wc:ra_dav:version-url
+V 131
+/svn/!svn/ver/102/SysPy/SysPy_ver/Python_script/paramsocs/Leon3_comps_Gill_top/Leon3_comps/libs/opencores/ata/atahost_pio_actrl.vhd
+END
+atahost_pio_tctrl.vhd
+K 25
+svn:wc:ra_dav:version-url
+V 131
+/svn/!svn/ver/102/SysPy/SysPy_ver/Python_script/paramsocs/Leon3_comps_Gill_top/Leon3_comps/libs/opencores/ata/atahost_pio_tctrl.vhd
+END
+ro_cnt.vhd
+K 25
+svn:wc:ra_dav:version-url
+V 120
+/svn/!svn/ver/102/SysPy/SysPy_ver/Python_script/paramsocs/Leon3_comps_Gill_top/Leon3_comps/libs/opencores/ata/ro_cnt.vhd
+END
+vhdlsyn.txt
+K 25
+svn:wc:ra_dav:version-url
+V 121
+/svn/!svn/ver/102/SysPy/SysPy_ver/Python_script/paramsocs/Leon3_comps_Gill_top/Leon3_comps/libs/opencores/ata/vhdlsyn.txt
+END
+atahost_controller.vhd
+K 25
+svn:wc:ra_dav:version-url
+V 132
+/svn/!svn/ver/102/SysPy/SysPy_ver/Python_script/paramsocs/Leon3_comps_Gill_top/Leon3_comps/libs/opencores/ata/atahost_controller.vhd
+END
+atahost_dma_fifo.vhd
+K 25
+svn:wc:ra_dav:version-url
+V 130
+/svn/!svn/ver/102/SysPy/SysPy_ver/Python_script/paramsocs/Leon3_comps_Gill_top/Leon3_comps/libs/opencores/ata/atahost_dma_fifo.vhd
+END
+ata_device_oc.v
+K 25
+svn:wc:ra_dav:version-url
+V 125
+/svn/!svn/ver/102/SysPy/SysPy_ver/Python_script/paramsocs/Leon3_comps_Gill_top/Leon3_comps/libs/opencores/ata/ata_device_oc.v
+END
+atahost_dma_actrl.vhd
+K 25
+svn:wc:ra_dav:version-url
+V 131
+/svn/!svn/ver/102/SysPy/SysPy_ver/Python_script/paramsocs/Leon3_comps_Gill_top/Leon3_comps/libs/opencores/ata/atahost_dma_actrl.vhd
+END
+ocidec2_controller.vhd
+K 25
+svn:wc:ra_dav:version-url
+V 132
+/svn/!svn/ver/102/SysPy/SysPy_ver/Python_script/paramsocs/Leon3_comps_Gill_top/Leon3_comps/libs/opencores/ata/ocidec2_controller.vhd
+END
+atahost_dma_tctrl.vhd
+K 25
+svn:wc:ra_dav:version-url
+V 131
+/svn/!svn/ver/102/SysPy/SysPy_ver/Python_script/paramsocs/Leon3_comps_Gill_top/Leon3_comps/libs/opencores/ata/atahost_dma_tctrl.vhd
+END
+ud_cnt.vhd
+K 25
+svn:wc:ra_dav:version-url
+V 120
+/svn/!svn/ver/102/SysPy/SysPy_ver/Python_script/paramsocs/Leon3_comps_Gill_top/Leon3_comps/libs/opencores/ata/ud_cnt.vhd
+END
+atahost_pio_controller.vhd
+K 25
+svn:wc:ra_dav:version-url
+V 136
+/svn/!svn/ver/102/SysPy/SysPy_ver/Python_script/paramsocs/Leon3_comps_Gill_top/Leon3_comps/libs/opencores/ata/atahost_pio_controller.vhd
+END
+vlogsim.txt
+K 25
+svn:wc:ra_dav:version-url
+V 121
+/svn/!svn/ver/102/SysPy/SysPy_ver/Python_script/paramsocs/Leon3_comps_Gill_top/Leon3_comps/libs/opencores/ata/vlogsim.txt
+END

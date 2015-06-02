@@ -1,0 +1,59 @@
+K 25
+svn:wc:ra_dav:version-url
+V 110
+/svn/!svn/ver/102/SysPy/SysPy_ver/Python_script/paramsocs/Leon3_comps_Gill_top/Leon3_comps/libs/gleichmann/spi
+END
+spi_oc.in
+K 25
+svn:wc:ra_dav:version-url
+V 120
+/svn/!svn/ver/102/SysPy/SysPy_ver/Python_script/paramsocs/Leon3_comps_Gill_top/Leon3_comps/libs/gleichmann/spi/spi_oc.in
+END
+spi_oc.in.vhd
+K 25
+svn:wc:ra_dav:version-url
+V 124
+/svn/!svn/ver/102/SysPy/SysPy_ver/Python_script/paramsocs/Leon3_comps_Gill_top/Leon3_comps/libs/gleichmann/spi/spi_oc.in.vhd
+END
+spi_oc_ea.vhd
+K 25
+svn:wc:ra_dav:version-url
+V 124
+/svn/!svn/ver/102/SysPy/SysPy_ver/Python_script/paramsocs/Leon3_comps_Gill_top/Leon3_comps/libs/gleichmann/spi/spi_oc_ea.vhd
+END
+spi_xmit_ea.vhd
+K 25
+svn:wc:ra_dav:version-url
+V 126
+/svn/!svn/ver/102/SysPy/SysPy_ver/Python_script/paramsocs/Leon3_comps_Gill_top/Leon3_comps/libs/gleichmann/spi/spi_xmit_ea.vhd
+END
+vhdlsyn.txt
+K 25
+svn:wc:ra_dav:version-url
+V 122
+/svn/!svn/ver/102/SysPy/SysPy_ver/Python_script/paramsocs/Leon3_comps_Gill_top/Leon3_comps/libs/gleichmann/spi/vhdlsyn.txt
+END
+spi_oc.in.h
+K 25
+svn:wc:ra_dav:version-url
+V 122
+/svn/!svn/ver/102/SysPy/SysPy_ver/Python_script/paramsocs/Leon3_comps_Gill_top/Leon3_comps/libs/gleichmann/spi/spi_oc.in.h
+END
+spi_oc.in.help
+K 25
+svn:wc:ra_dav:version-url
+V 125
+/svn/!svn/ver/102/SysPy/SysPy_ver/Python_script/paramsocs/Leon3_comps_Gill_top/Leon3_comps/libs/gleichmann/spi/spi_oc.in.help
+END
+spi_p.vhd
+K 25
+svn:wc:ra_dav:version-url
+V 120
+/svn/!svn/ver/102/SysPy/SysPy_ver/Python_script/paramsocs/Leon3_comps_Gill_top/Leon3_comps/libs/gleichmann/spi/spi_p.vhd
+END
+sspi_p.vhd
+K 25
+svn:wc:ra_dav:version-url
+V 121
+/svn/!svn/ver/102/SysPy/SysPy_ver/Python_script/paramsocs/Leon3_comps_Gill_top/Leon3_comps/libs/gleichmann/spi/sspi_p.vhd
+END

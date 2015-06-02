@@ -1,0 +1,66 @@
+INFO: [HD-Application 1] Opened log file /media/My Passport/work/PhD/myHDL_tests/my_conversion/Plex_test/new_code_2/ISE_func_comps/planAhead.log
+INFO: [HD-Application 2] Opened journal file /media/My Passport/work/PhD/myHDL_tests/my_conversion/Plex_test/new_code_2/ISE_func_comps/planAhead.jou
+#-----------------------------------------------------------
+# PlanAhead v11.1
+# Build 44534 by hdbuild on Thu Mar  5 11:05:08 PST 2009
+# Start of session at: 3/10/10 2:55:46 PM
+# Process ID: 3107
+#-----------------------------------------------------------
+INFO: [HD-RTPRIM 0] Parsing template file '/media/4DC444747164E7E6/Xilinx_11.1_Ubuntu/ISE/data/projnav/templates/verilog.xml'
+INFO: [HD-RTPRIM 1] Finished parsing template file '/media/4DC444747164E7E6/Xilinx_11.1_Ubuntu/ISE/data/projnav/templates/verilog.xml'
+INFO: [HD-RTPRIM 0] Parsing template file '/media/4DC444747164E7E6/Xilinx_11.1_Ubuntu/ISE/data/projnav/templates/vhdl.xml'
+INFO: [HD-RTPRIM 1] Finished parsing template file '/media/4DC444747164E7E6/Xilinx_11.1_Ubuntu/ISE/data/projnav/templates/vhdl.xml'
+INFO: [HD-RTPRIM 0] Parsing template file '/media/4DC444747164E7E6/Xilinx_11.1_Ubuntu/ISE/data/projnav/templates/ucf.xml'
+INFO: [HD-RTPRIM 1] Finished parsing template file '/media/4DC444747164E7E6/Xilinx_11.1_Ubuntu/ISE/data/projnav/templates/ucf.xml'
+Command> source {/media/My Passport/work/PhD/myHDL_tests/my_conversion/Plex_test/new_code_2/ISE_func_comps/pa.fromNcd.tcl}
+# hdi::project new -name ISE_func_comps -dir /media/My Passport/work/PhD/myHDL_tests/my_conversion/Plex_test/new_code_2/ISE_func_comps/patmp -netlist /media/My Passport/work/PhD/myHDL_tests/my_conversion/Plex_test/new_code_2/ISE_func_comps/test_core_gen2_wrapper.ngc -search_path  {/media/My Passport/work/PhD/myHDL_tests/my_conversion/Plex_test/new_code_2/ISE_func_comps} {ipcore_dir} 
+INFO: [HD-EDIFIN 0] Parsing Edif File './.HDI-PlanAhead-3107-Cade/ngc2edif/test_core_gen2_wrapper.edif'
+INFO: [HD-EDIFIN 1] Finished Parsing Edif File './.HDI-PlanAhead-3107-Cade/ngc2edif/test_core_gen2_wrapper.edif'
+INFO: [HD-EDIFIN 4] Reading core file 'ipcore_dir/test_core_gen2.ngc' for (cell view 'test_core_gen2', library 'test_core_gen2_wrapper_lib', file 'test_core_gen2_wrapper.ngc')
+INFO: [HD-EDIFIN 0] Parsing Edif File './.HDI-PlanAhead-3107-Cade/ngc2edif/test_core_gen2.edif'
+INFO: [HD-EDIFIN 1] Finished Parsing Edif File './.HDI-PlanAhead-3107-Cade/ngc2edif/test_core_gen2.edif'
+# hdi::project setArch -name ISE_func_comps -arch spartan3
+# hdi::param set -name project.paUcfFile -svalue test_core_gen2_wrapper.ucf
+# hdi::floorplan new -name floorplan_1 -part xc3s1000fg320-5 -project ISE_func_comps
+INFO: [HD-ArchReader 14] Reading macro library /media/4DC444747164E7E6/Xilinx_11.1_Ubuntu/PlanAhead/parts/xilinx/spartan3/hd_int_macros.edn
+INFO: [HD-EDIFIN 0] Parsing Edif File '/media/4DC444747164E7E6/Xilinx_11.1_Ubuntu/PlanAhead/parts/xilinx/spartan3/hd_int_macros.edn'
+INFO: [HD-EDIFIN 1] Finished Parsing Edif File '/media/4DC444747164E7E6/Xilinx_11.1_Ubuntu/PlanAhead/parts/xilinx/spartan3/hd_int_macros.edn'
+INFO: [HD-ArchReader 7] Loading clock regions from /media/4DC444747164E7E6/Xilinx_11.1_Ubuntu/PlanAhead/parts/xilinx/spartan3/3s1000/ClockRegion.xml
+INFO: [HD-ArchReader 8] Loading clock buffers from /media/4DC444747164E7E6/Xilinx_11.1_Ubuntu/PlanAhead/parts/xilinx/spartan3/3s1000/ClockBuffers.xml
+INFO: [HD-ArchReader 3] Loading package from /media/4DC444747164E7E6/Xilinx_11.1_Ubuntu/PlanAhead/parts/xilinx/spartan3/3s1000/fg320/Package.xml
+INFO: [HD-ArchReader 4] Loading io standards from /media/4DC444747164E7E6/Xilinx_11.1_Ubuntu/PlanAhead/parts/xilinx/spartan3/IOStandards.xml
+INFO: [HD-ArchReader 5] Loading pkg sso from /media/4DC444747164E7E6/Xilinx_11.1_Ubuntu/PlanAhead/parts/xilinx/spartan3/3s1000/fg320/SSORules.xml
+INFO: [HD-GDRC 0] Loading list of drcs for the architecture : /media/4DC444747164E7E6/Xilinx_11.1_Ubuntu/PlanAhead/parts/xilinx/spartan3/drc.xml
+# hdi::floorplan importPlacement -project ISE_func_comps -floorplan floorplan_1 -file /media/My Passport/work/PhD/myHDL_tests/my_conversion/Plex_test/new_code_2/ISE_func_comps/test_core_gen2_wrapper.ncd
+INFO: [HD-PAR 0] Parsing Placement File : /media/My Passport/work/PhD/myHDL_tests/my_conversion/Plex_test/new_code_2/ISE_func_comps/test_core_gen2_wrapper.ncd
+INFO: [HD-PAR 1] Finished Parsing Placement File : /media/My Passport/work/PhD/myHDL_tests/my_conversion/Plex_test/new_code_2/ISE_func_comps/test_core_gen2_wrapper.ncd
+INFO: [HD-PAR 2] Placed 70 instances
+# hdi::pconst import -project ISE_func_comps -floorplan floorplan_1 -file test_core_gen2_wrapper.ucf
+INFO: [HD-UCFReader 0] Parsing UCF File : test_core_gen2_wrapper.ucf
+INFO: [HD-UCFReader 1] Finished Parsing UCF File : test_core_gen2_wrapper.ucf
+# hdi::timing import -name results_1 -project ISE_func_comps -floorplan floorplan_1 -file /media/My Passport/work/PhD/myHDL_tests/my_conversion/Plex_test/new_code_2/ISE_func_comps/test_core_gen2_wrapper.twx
+WARNING: there was a problem importing "/media/My Passport/work/PhD/myHDL_tests/my_conversion/Plex_test/new_code_2/ISE_func_comps/test_core_gen2_wrapper.twx": Error importing TRCE results: No valid paths found for displaying.
+Command> hdi::timing run -name results_1 -project ISE_func_comps -floorplan floorplan_1 -speed {-5} -from x_in -to x_out -min_max max -transition rise/fall -sort_by slack -interconnect_type estimated -maxpaths 10 -nworst 1
+INFO: [HD-STA 16] UpdateTimingParams: Estimated, Speed grade: -5 .
+INFO: [HD-LIB 0] Reading timing library /media/4DC444747164E7E6/Xilinx_11.1_Ubuntu/PlanAhead/parts/xilinx/spartan3/spartan3-5.lib .
+INFO: [HD-LIB 1] Done reading timing library /media/4DC444747164E7E6/Xilinx_11.1_Ubuntu/PlanAhead/parts/xilinx/spartan3/spartan3-5.lib .
+INFO: [HD-DEV 0] Finished parsing spd file /media/4DC444747164E7E6/Xilinx_11.1_Ubuntu/PlanAhead/parts/xilinx/spartan3/3s1000/3s1000.paspd .
+INFO: [HD-STA 16] Going to infer timing constraints .
+INFO: [HD-STA 16] Done inferring timing constraints .
+INFO: [HD-STA 16] Going to set timing constraints .
+INFO: [HD-STA 16] Done setting timing constraints .
+INFO: [HD-STA 8] Done setting wire delays.
+INFO: [HD-STA 9] Total timing graph edges = 407 .
+INFO: [HD-STA 10] Total timing graph wire edges = 183 .
+INFO: [HD-STA 11] Total zero delay edges = 61 .
+INFO: [HD-STA 12] Total non-zero delay edges = 109 .
+INFO: [HD-DEL 2] Total pin-pairs supplied = 170 .
+INFO: [HD-DEL 3] Total data-paths obtained = 87 .
+INFO: [HD-DEL 1] P2P = 149, P2B = 0, P2NB = 17, B2B = 0, B2NB = 0, NB2NB = 1 .
+INFO: [HD-STA 6] Timing analysis in global mode.
+INFO: [HD-STA 16] UpdateTimingParams: Estimated, Speed grade: -5 .
+INFO: [HD-STA 16] ReportTimingParams: -from_pins x_in -to_pins x_out -max_paths 10 -nworst 1 -transition rf -min_max max -sort_by slack .
+#-----------------------------------------------------------
+# End of session at: 3/10/10 2:57:51 PM
+# Process ID: 3107
+#-----------------------------------------------------------

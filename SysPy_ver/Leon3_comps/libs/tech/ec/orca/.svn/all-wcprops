@@ -1,0 +1,47 @@
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/svn/!svn/ver/102/SysPy/SysPy_ver/Leon3_comps/libs/tech/ec/orca
+END
+ORCA_L.vhd
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/svn/!svn/ver/102/SysPy/SysPy_ver/Leon3_comps/libs/tech/ec/orca/ORCA_L.vhd
+END
+global.vhd
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/svn/!svn/ver/102/SysPy/SysPy_ver/Leon3_comps/libs/tech/ec/orca/global.vhd
+END
+mem3.vhd
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/svn/!svn/ver/102/SysPy/SysPy_ver/Leon3_comps/libs/tech/ec/orca/mem3.vhd
+END
+orcacomp.vhd
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/svn/!svn/ver/102/SysPy/SysPy_ver/Leon3_comps/libs/tech/ec/orca/orcacomp.vhd
+END
+orca.vhd
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/svn/!svn/ver/102/SysPy/SysPy_ver/Leon3_comps/libs/tech/ec/orca/orca.vhd
+END
+vhdlsim.txt
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/svn/!svn/ver/102/SysPy/SysPy_ver/Leon3_comps/libs/tech/ec/orca/vhdlsim.txt
+END
+orca_ecmem.vhd
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/svn/!svn/ver/102/SysPy/SysPy_ver/Leon3_comps/libs/tech/ec/orca/orca_ecmem.vhd
+END

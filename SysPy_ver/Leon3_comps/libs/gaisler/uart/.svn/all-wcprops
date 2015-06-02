@@ -1,0 +1,119 @@
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/svn/!svn/ver/102/SysPy/SysPy_ver/Leon3_comps/libs/gaisler/uart
+END
+uart1.in.vhd
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/svn/!svn/ver/102/SysPy/SysPy_ver/Leon3_comps/libs/gaisler/uart/uart1.in.vhd
+END
+uart2.in.vhd
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/svn/!svn/ver/102/SysPy/SysPy_ver/Leon3_comps/libs/gaisler/uart/uart2.in.vhd
+END
+uart1.in.h
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/svn/!svn/ver/102/SysPy/SysPy_ver/Leon3_comps/libs/gaisler/uart/uart1.in.h
+END
+dcom.in
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/svn/!svn/ver/102/SysPy/SysPy_ver/Leon3_comps/libs/gaisler/uart/dcom.in
+END
+uart2.in.h
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/svn/!svn/ver/102/SysPy/SysPy_ver/Leon3_comps/libs/gaisler/uart/uart2.in.h
+END
+uart1.in.help
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/svn/!svn/ver/102/SysPy/SysPy_ver/Leon3_comps/libs/gaisler/uart/uart1.in.help
+END
+libdcom.vhd
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/svn/!svn/ver/102/SysPy/SysPy_ver/Leon3_comps/libs/gaisler/uart/libdcom.vhd
+END
+uart2.in.help
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/svn/!svn/ver/102/SysPy/SysPy_ver/Leon3_comps/libs/gaisler/uart/uart2.in.help
+END
+uart.vhd
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/svn/!svn/ver/102/SysPy/SysPy_ver/Leon3_comps/libs/gaisler/uart/uart.vhd
+END
+dcom_uart.vhd
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/svn/!svn/ver/102/SysPy/SysPy_ver/Leon3_comps/libs/gaisler/uart/dcom_uart.vhd
+END
+uart1.in
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/svn/!svn/ver/102/SysPy/SysPy_ver/Leon3_comps/libs/gaisler/uart/uart1.in
+END
+uart2.in
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/svn/!svn/ver/102/SysPy/SysPy_ver/Leon3_comps/libs/gaisler/uart/uart2.in
+END
+dcom.vhd
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/svn/!svn/ver/102/SysPy/SysPy_ver/Leon3_comps/libs/gaisler/uart/dcom.vhd
+END
+vhdlsyn.txt
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/svn/!svn/ver/102/SysPy/SysPy_ver/Leon3_comps/libs/gaisler/uart/vhdlsyn.txt
+END
+ahbuart.vhd
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/svn/!svn/ver/102/SysPy/SysPy_ver/Leon3_comps/libs/gaisler/uart/ahbuart.vhd
+END
+dcom.in.vhd
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/svn/!svn/ver/102/SysPy/SysPy_ver/Leon3_comps/libs/gaisler/uart/dcom.in.vhd
+END
+dcom.in.h
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/svn/!svn/ver/102/SysPy/SysPy_ver/Leon3_comps/libs/gaisler/uart/dcom.in.h
+END
+dcom.in.help
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/svn/!svn/ver/102/SysPy/SysPy_ver/Leon3_comps/libs/gaisler/uart/dcom.in.help
+END
+apbuart.vhd
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/svn/!svn/ver/102/SysPy/SysPy_ver/Leon3_comps/libs/gaisler/uart/apbuart.vhd
+END

@@ -1,0 +1,251 @@
+K 25
+svn:wc:ra_dav:version-url
+V 43
+/svn/!svn/ver/102/SysPy/SysPy_ver/AVR_comps
+END
+SynchronizerLatch.vhd
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/svn/!svn/ver/102/SysPy/SysPy_ver/AVR_comps/SynchronizerLatch.vhd
+END
+XDM32Kx8_3.vhd
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/svn/!svn/ver/102/SysPy/SysPy_ver/AVR_comps/XDM32Kx8_3.vhd
+END
+external_mux.vhd
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/svn/!svn/ver/102/SysPy/SysPy_ver/AVR_comps/external_mux.vhd
+END
+uart.vhd
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/svn/!svn/ver/102/SysPy/SysPy_ver/AVR_comps/uart.vhd
+END
+reg_file.vhd
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/svn/!svn/ver/102/SysPy/SysPy_ver/AVR_comps/reg_file.vhd
+END
+AVR_Core_CompPack.vhd
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/svn/!svn/ver/102/SysPy/SysPy_ver/AVR_comps/AVR_Core_CompPack.vhd
+END
+JTAGDataPack.vhd
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/svn/!svn/ver/102/SysPy/SysPy_ver/AVR_comps/JTAGDataPack.vhd
+END
+JTAGProgrammerPack.vhd
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/svn/!svn/ver/102/SysPy/SysPy_ver/AVR_comps/JTAGProgrammerPack.vhd
+END
+JTAGPack.vhd
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/svn/!svn/ver/102/SysPy/SysPy_ver/AVR_comps/JTAGPack.vhd
+END
+MemAccessCtrlPack.vhd
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/svn/!svn/ver/102/SysPy/SysPy_ver/AVR_comps/MemAccessCtrlPack.vhd
+END
+alu_avr.vhd
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/svn/!svn/ver/143/SysPy/SysPy_ver/AVR_comps/alu_avr.vhd
+END
+SynthCtrlPack.vhd
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/svn/!svn/ver/102/SysPy/SysPy_ver/AVR_comps/SynthCtrlPack.vhd
+END
+AVRuCPackage.vhd
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/svn/!svn/ver/102/SysPy/SysPy_ver/AVR_comps/AVRuCPackage.vhd
+END
+AVR_uC_CompPack.vhd
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/svn/!svn/ver/102/SysPy/SysPy_ver/AVR_comps/AVR_uC_CompPack.vhd
+END
+BusMastCompPack.vhd
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/svn/!svn/ver/102/SysPy/SysPy_ver/AVR_comps/BusMastCompPack.vhd
+END
+MemRdMux.vhd
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/svn/!svn/ver/102/SysPy/SysPy_ver/AVR_comps/MemRdMux.vhd
+END
+OCDProgTCK.vhd
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/svn/!svn/ver/102/SysPy/SysPy_ver/AVR_comps/OCDProgTCK.vhd
+END
+pm_fetch_dec.vhd
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/svn/!svn/ver/102/SysPy/SysPy_ver/AVR_comps/pm_fetch_dec.vhd
+END
+OCDProgcp2.vhd
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/svn/!svn/ver/102/SysPy/SysPy_ver/AVR_comps/OCDProgcp2.vhd
+END
+JTAGCompPack.vhd
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/svn/!svn/ver/102/SysPy/SysPy_ver/AVR_comps/JTAGCompPack.vhd
+END
+ArbiterAndMux.vhd
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/svn/!svn/ver/102/SysPy/SysPy_ver/AVR_comps/ArbiterAndMux.vhd
+END
+RAMDataReg.vhd
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/svn/!svn/ver/102/SysPy/SysPy_ver/AVR_comps/RAMDataReg.vhd
+END
+JTAGOCDPrgTop.vhd
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/svn/!svn/ver/102/SysPy/SysPy_ver/AVR_comps/JTAGOCDPrgTop.vhd
+END
+io_adr_dec.vhd
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/svn/!svn/ver/102/SysPy/SysPy_ver/AVR_comps/io_adr_dec.vhd
+END
+SynchronizerCompPack.vhd
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/svn/!svn/ver/102/SysPy/SysPy_ver/AVR_comps/SynchronizerCompPack.vhd
+END
+portx.vhd
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/svn/!svn/ver/102/SysPy/SysPy_ver/AVR_comps/portx.vhd
+END
+SynchronizerDFF.vhd
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/svn/!svn/ver/102/SysPy/SysPy_ver/AVR_comps/SynchronizerDFF.vhd
+END
+Resync16b_TCK.vhd
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/svn/!svn/ver/102/SysPy/SysPy_ver/AVR_comps/Resync16b_TCK.vhd
+END
+bit_processor.vhd
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/svn/!svn/ver/102/SysPy/SysPy_ver/AVR_comps/bit_processor.vhd
+END
+JTAGTAPCtrlSMPack.vhd
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/svn/!svn/ver/102/SysPy/SysPy_ver/AVR_comps/JTAGTAPCtrlSMPack.vhd
+END
+MemAccessCompPack.vhd
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/svn/!svn/ver/102/SysPy/SysPy_ver/AVR_comps/MemAccessCompPack.vhd
+END
+Timer_Counter.vhd
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/svn/!svn/ver/102/SysPy/SysPy_ver/AVR_comps/Timer_Counter.vhd
+END
+RAMAdrDcd.vhd
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/svn/!svn/ver/102/SysPy/SysPy_ver/AVR_comps/RAMAdrDcd.vhd
+END
+XMemCompPack.vhd
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/svn/!svn/ver/102/SysPy/SysPy_ver/AVR_comps/XMemCompPack.vhd
+END
+AVR_XST.tcl
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/svn/!svn/ver/102/SysPy/SysPy_ver/AVR_comps/AVR_XST.tcl
+END
+Resync1b_TCK.vhd
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/svn/!svn/ver/102/SysPy/SysPy_ver/AVR_comps/Resync1b_TCK.vhd
+END
+ResetGenerator.vhd
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/svn/!svn/ver/102/SysPy/SysPy_ver/AVR_comps/ResetGenerator.vhd
+END
+Resync1b_cp2.vhd
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/svn/!svn/ver/102/SysPy/SysPy_ver/AVR_comps/Resync1b_cp2.vhd
+END
+top_avr_core_v8.vhd
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/svn/!svn/ver/102/SysPy/SysPy_ver/AVR_comps/top_avr_core_v8.vhd
+END
+avr_core.vhd
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/svn/!svn/ver/102/SysPy/SysPy_ver/AVR_comps/avr_core.vhd
+END
+io_reg_file.vhd
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/svn/!svn/ver/102/SysPy/SysPy_ver/AVR_comps/io_reg_file.vhd
+END

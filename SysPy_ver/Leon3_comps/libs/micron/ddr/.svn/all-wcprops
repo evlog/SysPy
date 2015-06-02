@@ -1,0 +1,35 @@
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/svn/!svn/ver/102/SysPy/SysPy_ver/Leon3_comps/libs/micron/ddr
+END
+ddr2.v
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/svn/!svn/ver/102/SysPy/SysPy_ver/Leon3_comps/libs/micron/ddr/ddr2.v
+END
+mobile_ddr.v
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/svn/!svn/ver/102/SysPy/SysPy_ver/Leon3_comps/libs/micron/ddr/mobile_ddr.v
+END
+vhdlsim.txt
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/svn/!svn/ver/102/SysPy/SysPy_ver/Leon3_comps/libs/micron/ddr/vhdlsim.txt
+END
+mt46v16m16.vhd
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/svn/!svn/ver/102/SysPy/SysPy_ver/Leon3_comps/libs/micron/ddr/mt46v16m16.vhd
+END
+vlogsim.txt
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/svn/!svn/ver/102/SysPy/SysPy_ver/Leon3_comps/libs/micron/ddr/vlogsim.txt
+END

@@ -1,0 +1,13 @@
+ISim log file
+Running: /media/My Passport/work/PhD/myHDL_tests/my_conversion/Plex_test/new_code_2/ISE_func_comps/test_core_gen2_wrapper_tb_isim_par.exe -gui -sdfmax /uut/=netgen/par/test_core_gen2_wrapper_timesim.sdf -sdfroot /uut -tclbatch isim.cmd -wdb /media/My Passport/work/PhD/myHDL_tests/my_conversion/Plex_test/new_code_2/ISE_func_comps/test_core_gen2_wrapper_tb_isim_par.wdb 
+WARNING: A WEBPACK license was found.
+WARNING: Please use Xilinx License Configuration Manager to check out a full ISim license.
+WARNING: ISim will run in Lite mode. Please refer to the ISim documentation for more information on the differences between the Lite and the Full version.
+This is a Lite version of ISim.
+INFO: There is another simulation running in the same directory. Change database file name to isim1.wdb!
+INFO: SDF backannotation was successful with SDF file netgen/par/test_core_gen2_wrapper_timesim.sdf, for root module /uut/.
+Time resolution is 1 ps
+# wave add /
+# run 1000 ns
+Simulator is doing circuit initialization process.
+Finished circuit initialization process.

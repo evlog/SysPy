@@ -1,0 +1,22 @@
+Release 13.3 - par O.76xd (lin)
+Copyright (c) 1995-2011 Xilinx, Inc.  All rights reserved.
+
+Tue Apr 23 12:25:36 2013
+
+All signals are completely routed.
+
+WARNING:ParHelpers:361 - There are 10 loadless signals in this design. This design will cause Bitgen to issue DRC
+   warnings.
+
+   gpio<10>_IBUF
+   gpio<11>_IBUF
+   gpio<12>_IBUF
+   gpio<1>_IBUF
+   gpio<2>_IBUF
+   gpio<4>_IBUF
+   gpio<5>_IBUF
+   gpio<8>_IBUF
+   gpio<9>_IBUF
+   rxd2_IBUF
+
+

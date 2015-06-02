@@ -1,0 +1,2 @@
+vhdl work "ipcore_dir/test_core_gen2.vhd"
+vhdl work "test_core_gen2_wrapper.vhd"

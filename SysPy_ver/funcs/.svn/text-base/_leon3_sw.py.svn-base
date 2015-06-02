@@ -1,0 +1,43 @@
+import _MyExceptions
+reload(_MyExceptions)
+from pdb import *
+import commands
+
+def leon3_sw(CFile):
+       """
+       FUNCTION: leon3_sw_os(a str)
+              a: C file name string
+              
+       - Software compilation using GCC for the Leon3 processor core.
+       """
+       
+# Python's variable declerations
+#----------------------------------------------------------------------------------------------------------------------------------
+       command = ''
+#----------------------------------------------------------------------------------------------------------------------------------
+       command = "sparc-elf-gcc -Wall -msoft-float -mcpu=v8 -g -o " 
+     
+       for i in range(len(CFile)):
+              if (i == 0):
+                     command = command + "./proc_sw/leon3/" + CFile[i] + ' '
+                     command = command + "./proc_sw/leon3/" + CFile[i] + ".c "
+
+              else:
+                     command = command + "./proc_sw/leon3/" + CFile[i] + ".c "
+
+       command = command + "-luip -lm"
+  
+       print("command:", command)
+       set_trace()
+
+       #command = "sparc-elf-gcc -Wall -msoft-float -mcpu=v8 -g -o ./proc_sw/leon3/" + CFile + " ./proc_sw/leon3/greth_api.c ./proc_sw/leon3/" + CFile + ".c -luip"
+       
+       command_output = commands.getoutput(command)
+
+       print(command_output)
+
+       if (command_output.find("error:") != -1):
+              raise _MyExceptions.MyExceptions("C/C++ file compilation error.")
+       
+       set_trace()
+       

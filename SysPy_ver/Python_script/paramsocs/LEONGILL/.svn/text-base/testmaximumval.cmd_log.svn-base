@@ -1,0 +1,2 @@
+sch2verilog -intstyle ise -family virtex5   -w "C:/NOC11/TestswithLeon4/LEONGILL/testmaximumval.sch" testmaximumval.vf
+sch2vhdl -intstyle ise -family virtex5 -flat -suppress -w "C:/NOC11/TestswithLeon4/LEONGILL/testmaximumval.sch" testmaximumval.vhf

@@ -1,0 +1,13 @@
+PH grethpkg NULL /home/SysPy_test/SysPy_ver/Python_script/paramsocs/Leon3_comps_Gill_top/Leon3_comps/libs/eth/core/greth_pkg.vhd sub00/vhpl00 1369068406
+EN greth_rx NULL /home/SysPy_test/SysPy_ver/Python_script/paramsocs/Leon3_comps_Gill_top/Leon3_comps/libs/eth/core/greth_rx.vhd sub00/vhpl06 1369068417
+EN greth_tx NULL /home/SysPy_test/SysPy_ver/Python_script/paramsocs/Leon3_comps_Gill_top/Leon3_comps/libs/eth/core/greth_tx.vhd sub00/vhpl04 1369068415
+AR greth_tx rtl /home/SysPy_test/SysPy_ver/Python_script/paramsocs/Leon3_comps_Gill_top/Leon3_comps/libs/eth/core/greth_tx.vhd sub00/vhpl05 1369068416
+AR grethc rtl /home/SysPy_test/SysPy_ver/Python_script/paramsocs/Leon3_comps_Gill_top/Leon3_comps/libs/eth/core/grethc.vhd sub00/vhpl11 1369068443
+PB grethpkg grethpkg /home/SysPy_test/SysPy_ver/Python_script/paramsocs/Leon3_comps_Gill_top/Leon3_comps/libs/eth/core/greth_pkg.vhd sub00/vhpl01 1369068407
+EN eth_ahb_mst NULL /home/SysPy_test/SysPy_ver/Python_script/paramsocs/Leon3_comps_Gill_top/Leon3_comps/libs/eth/core/eth_ahb_mst.vhd sub00/vhpl08 1369068419
+AR eth_ahb_mst rtl /home/SysPy_test/SysPy_ver/Python_script/paramsocs/Leon3_comps_Gill_top/Leon3_comps/libs/eth/core/eth_ahb_mst.vhd sub00/vhpl09 1369068420
+EN grethc NULL /home/SysPy_test/SysPy_ver/Python_script/paramsocs/Leon3_comps_Gill_top/Leon3_comps/libs/eth/core/grethc.vhd sub00/vhpl10 1369068442
+PH ethcomp NULL /home/SysPy_test/SysPy_ver/Python_script/paramsocs/Leon3_comps_Gill_top/Leon3_comps/libs/eth/comp/ethcomp.vhd sub00/vhpl12 1369068444
+AR greth_rx rtl /home/SysPy_test/SysPy_ver/Python_script/paramsocs/Leon3_comps_Gill_top/Leon3_comps/libs/eth/core/greth_rx.vhd sub00/vhpl07 1369068418
+AR eth_rstgen rtl /home/SysPy_test/SysPy_ver/Python_script/paramsocs/Leon3_comps_Gill_top/Leon3_comps/libs/eth/core/eth_rstgen.vhd sub00/vhpl03 1369068409
+EN eth_rstgen NULL /home/SysPy_test/SysPy_ver/Python_script/paramsocs/Leon3_comps_Gill_top/Leon3_comps/libs/eth/core/eth_rstgen.vhd sub00/vhpl02 1369068408

@@ -1,0 +1,196 @@
+<HTML><HEAD><TITLE>Xilinx Design Summary</TITLE></HEAD>
+<BODY TEXT='#000000' BGCOLOR='#FFFFFF' LINK='#0000EE' VLINK='#551A8B' ALINK='#FF0000'>
+<TABLE BORDER CELLSPACING=0 CELLPADDING=3 WIDTH='100%'>
+<TR ALIGN=CENTER BGCOLOR='#99CCFF'>
+<TD ALIGN=CENTER COLSPAN='4'><B>ISE_func_comps Project Status (03/10/2010 - 15:00:40)</B></TD></TR>
+<TR ALIGN=LEFT>
+<TD BGCOLOR='#FFFF99'><B>Project File:</B></TD>
+<TD>ISE_func_comps.ise</TD>
+<TD BGCOLOR='#FFFF99'><B>Implementation State:</B></TD>
+<TD>Placed and Routed</TD>
+</TR>
+<TR ALIGN=LEFT>
+<TD BGCOLOR='#FFFF99'><B>Module Name:</B></TD>
+<TD>test_core_gen2_wrapper</TD>
+<TD BGCOLOR='#FFFF99'><UL><LI><B>Errors:</B></LI></UL></TD>
+<TD>
+No Errors</TD>
+</TR>
+<TR ALIGN=LEFT>
+<TD BGCOLOR='#FFFF99'><B>Target Device:</B></TD>
+<TD>xc5vlx50t-3ff1136</TD>
+<TD BGCOLOR='#FFFF99'><UL><LI><B>Warnings:</B></LI></UL></TD>
+<TD ALIGN=LEFT><A HREF_DISABLED='/media/My Passport/work/PhD/myHDL_tests/my_conversion/Plex_test/new_code_2/ISE_func_comps/_xmsgs/*.xmsgs'>7 Warnings</A></TD>
+</TR>
+<TR ALIGN=LEFT>
+<TD BGCOLOR='#FFFF99'><B>Product Version:</B></TD><TD>ISE 11.1</TD>
+<TD BGCOLOR='#FFFF99'><UL><LI><B>Routing Results:</B></LI></UL></TD>
+<TD>
+<A HREF_DISABLED='/media/My Passport/work/PhD/myHDL_tests/my_conversion/Plex_test/new_code_2/ISE_func_comps/test_core_gen2_wrapper.unroutes'>All Signals Completely Routed</A></TD>
+</TR>
+<TR ALIGN=LEFT>
+<TD BGCOLOR='#FFFF99'><B>Design Goal:</B></dif></TD>
+<TD>Balanced</TD>
+<TD BGCOLOR='#FFFF99'><UL><LI><B>Timing Constraints:</B></LI></UL></TD>
+<TD>&nbsp;</TD>
+</TR>
+<TR ALIGN=LEFT>
+<TD BGCOLOR='#FFFF99'><B>Design Strategy:</B></dif></TD>
+<TD>Xilinx Default (unlocked)</TD>
+<TD BGCOLOR='#FFFF99'><UL><LI><B>Final Timing Score:</B></LI></UL></TD>
+<TD>0 (Setup: 0, Hold: 0)&nbsp;</TD>
+</TR>
+</TABLE>
+
+
+
+&nbsp;<BR><TABLE BORDER CELLSPACING=0 CELLPADDING=3 WIDTH='100%'>
+<TR ALIGN=CENTER BGCOLOR='#99CCFF'><TD ALIGN=CENTER COLSPAN='5'><B>Device Utilization Summary</B></TD><TD ALIGN=RIGHT WIDTH='10%'COLSPAN=1> <A HREF_DISABLED="?&ExpandedTable=DeviceUtilizationSummary"><B>[-]</B></a></TD></TR>
+<TR ALIGN=CENTER BGCOLOR='#FFFF99'>
+<TD ALIGN=LEFT><B>Slice Logic Utilization</B></TD><TD><B>Used</B></TD><TD><B>Available</B></TD><TD><B>Utilization</B></TD><TD COLSPAN='2'><B>Note(s)</B></TD>
+</TR>
+<TR ALIGN=RIGHT><TD ALIGN=LEFT>Number of Slice LUTs</TD>
+<TD ALIGN=RIGHT>25</TD>
+<TD ALIGN=RIGHT>28,800</TD>
+<TD ALIGN=RIGHT>1%</TD>
+<TD COLSPAN='2'>&nbsp;</TD>
+</TR>
+<TR ALIGN=RIGHT><TD ALIGN=LEFT>&nbsp;&nbsp;&nbsp;&nbsp;Number used as logic</TD>
+<TD ALIGN=RIGHT>25</TD>
+<TD ALIGN=RIGHT>28,800</TD>
+<TD ALIGN=RIGHT>1%</TD>
+<TD COLSPAN='2'>&nbsp;</TD>
+</TR>
+<TR ALIGN=RIGHT><TD ALIGN=LEFT>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Number using O6 output only</TD>
+<TD ALIGN=RIGHT>19</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD COLSPAN='2'>&nbsp;</TD>
+</TR>
+<TR ALIGN=RIGHT><TD ALIGN=LEFT>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Number using O5 output only</TD>
+<TD ALIGN=RIGHT>2</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD COLSPAN='2'>&nbsp;</TD>
+</TR>
+<TR ALIGN=RIGHT><TD ALIGN=LEFT>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Number using O5 and O6</TD>
+<TD ALIGN=RIGHT>4</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD COLSPAN='2'>&nbsp;</TD>
+</TR>
+<TR ALIGN=RIGHT><TD ALIGN=LEFT>Number of route-thrus</TD>
+<TD ALIGN=RIGHT>1</TD>
+<TD ALIGN=RIGHT>57,600</TD>
+<TD ALIGN=RIGHT>1%</TD>
+<TD COLSPAN='2'>&nbsp;</TD>
+</TR>
+<TR ALIGN=RIGHT><TD ALIGN=LEFT>&nbsp;&nbsp;&nbsp;&nbsp;Number using O6 output only</TD>
+<TD ALIGN=RIGHT>1</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD COLSPAN='2'>&nbsp;</TD>
+</TR>
+<TR ALIGN=RIGHT><TD ALIGN=LEFT>Number of occupied Slices</TD>
+<TD ALIGN=RIGHT>7</TD>
+<TD ALIGN=RIGHT>7,200</TD>
+<TD ALIGN=RIGHT>1%</TD>
+<TD COLSPAN='2'>&nbsp;</TD>
+</TR>
+<TR ALIGN=RIGHT><TD ALIGN=LEFT>&nbsp;&nbsp;&nbsp;&nbsp;Number of occupied SLICEMs</TD>
+<TD ALIGN=RIGHT>0</TD>
+<TD ALIGN=RIGHT>1,920</TD>
+<TD ALIGN=RIGHT>0%</TD>
+<TD COLSPAN='2'>&nbsp;</TD>
+</TR>
+<TR ALIGN=RIGHT><TD ALIGN=LEFT>Number of LUT Flip Flop pairs used</TD>
+<TD ALIGN=RIGHT>25</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD COLSPAN='2'>&nbsp;</TD>
+</TR>
+<TR ALIGN=RIGHT><TD ALIGN=LEFT>&nbsp;&nbsp;&nbsp;&nbsp;Number with an unused Flip Flop</TD>
+<TD ALIGN=RIGHT>25</TD>
+<TD ALIGN=RIGHT>25</TD>
+<TD ALIGN=RIGHT>100%</TD>
+<TD COLSPAN='2'>&nbsp;</TD>
+</TR>
+<TR ALIGN=RIGHT><TD ALIGN=LEFT>&nbsp;&nbsp;&nbsp;&nbsp;Number with an unused LUT</TD>
+<TD ALIGN=RIGHT>0</TD>
+<TD ALIGN=RIGHT>25</TD>
+<TD ALIGN=RIGHT>0%</TD>
+<TD COLSPAN='2'>&nbsp;</TD>
+</TR>
+<TR ALIGN=RIGHT><TD ALIGN=LEFT>&nbsp;&nbsp;&nbsp;&nbsp;Number of fully used LUT-FF pairs</TD>
+<TD ALIGN=RIGHT>0</TD>
+<TD ALIGN=RIGHT>25</TD>
+<TD ALIGN=RIGHT>0%</TD>
+<TD COLSPAN='2'>&nbsp;</TD>
+</TR>
+<TR ALIGN=RIGHT><TD ALIGN=LEFT>&nbsp;&nbsp;&nbsp;&nbsp;Number of slice register sites lost<BR>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;to control set restrictions</TD>
+<TD ALIGN=RIGHT>0</TD>
+<TD ALIGN=RIGHT>28,800</TD>
+<TD ALIGN=RIGHT>0%</TD>
+<TD COLSPAN='2'>&nbsp;</TD>
+</TR>
+<TR ALIGN=RIGHT><TD ALIGN=LEFT>Number of bonded <A HREF_DISABLED='/media/My Passport/work/PhD/myHDL_tests/my_conversion/Plex_test/new_code_2/ISE_func_comps/test_core_gen2_wrapper_map.xrpt?&DataKey=IOBProperties'>IOBs</A></TD>
+<TD ALIGN=RIGHT>13</TD>
+<TD ALIGN=RIGHT>480</TD>
+<TD ALIGN=RIGHT>2%</TD>
+<TD COLSPAN='2'>&nbsp;</TD>
+</TR>
+<TR ALIGN=RIGHT><TD ALIGN=LEFT>Average Fanout of Non-Clock Nets</TD>
+<TD ALIGN=RIGHT>2.53</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD COLSPAN='2'>&nbsp;</TD>
+</TR>
+</TABLE>
+
+
+
+&nbsp;<BR><TABLE BORDER CELLSPACING=0 CELLPADDING=3 WIDTH='100%'>
+<TR ALIGN=CENTER BGCOLOR='#99CCFF'><TD ALIGN=CENTER COLSPAN='4'><B>Performance Summary</B></TD><TD ALIGN=RIGHT WIDTH='10%'COLSPAN=1> <A HREF_DISABLED="?&ExpandedTable=PerformanceSummary"><B>[-]</B></a></TD></TR>
+<TR ALIGN=LEFT>
+<TD BGCOLOR='#FFFF99'><B>Final Timing Score:</B></TD>
+<TD>0 (Setup: 0, Hold: 0)</TD>
+<TD BGCOLOR='#FFFF99'><B>Pinout Data:</B></TD>
+<TD COLSPAN='2'><A HREF_DISABLED='/media/My Passport/work/PhD/myHDL_tests/my_conversion/Plex_test/new_code_2/ISE_func_comps/test_core_gen2_wrapper_par.xrpt?&DataKey=PinoutData'>Pinout Report</A></TD>
+</TR>
+<TR ALIGN=LEFT>
+<TD BGCOLOR='#FFFF99'><B>Routing Results:</B></TD><TD>
+<A HREF_DISABLED='/media/My Passport/work/PhD/myHDL_tests/my_conversion/Plex_test/new_code_2/ISE_func_comps/test_core_gen2_wrapper.unroutes'>All Signals Completely Routed</A></TD>
+<TD BGCOLOR='#FFFF99'><B>Clock Data:</B></TD>
+<TD COLSPAN='2'><A HREF_DISABLED='/media/My Passport/work/PhD/myHDL_tests/my_conversion/Plex_test/new_code_2/ISE_func_comps/test_core_gen2_wrapper_par.xrpt?&DataKey=ClocksData'>Clock Report</A></TD>
+</TR>
+<TR ALIGN=LEFT>
+<TD BGCOLOR='#FFFF99'><B>Timing Constraints:</B></TD>
+<TD>&nbsp;</TD>
+<TD BGCOLOR='#FFFF99'><B>&nbsp;</B></TD>
+<TD COLSPAN='2'>&nbsp;</TD>
+</TABLE>
+
+
+
+&nbsp;<BR><TABLE BORDER CELLSPACING=0 CELLPADDING=3 WIDTH='100%'>
+<TR ALIGN=CENTER BGCOLOR='#99CCFF'><TD ALIGN=CENTER COLSPAN='6'><B>Detailed Reports</B></TD><TD ALIGN=RIGHT WIDTH='10%'COLSPAN=1> <A HREF_DISABLED="?&ExpandedTable=DetailedReports"><B>[-]</B></a></TD></TR>
+<TR BGCOLOR='#FFFF99'><TD><B>Report Name</B></TD><TD><B>Status</B></TD><TD><B>Generated</B></TD>
+<TD ALIGN=LEFT><B>Errors</B></TD><TD ALIGN=LEFT><B>Warnings</B></TD><TD ALIGN=LEFT COLSPAN='2'><B>Infos</B></TD></TR>
+<TR ALIGN=LEFT><TD><A HREF_DISABLED='/media/My Passport/work/PhD/myHDL_tests/my_conversion/Plex_test/new_code_2/ISE_func_comps/test_core_gen2_wrapper.syr'>Synthesis Report</A></TD><TD>Current</TD><TD>Wed Mar 10 15:02:35 2010</TD><TD ALIGN=LEFT>0</TD><TD ALIGN=LEFT><A HREF_DISABLED='/media/My Passport/work/PhD/myHDL_tests/my_conversion/Plex_test/new_code_2/ISE_func_comps/_xmsgs/xst.xmsgs'>6 Warnings</A></TD><TD ALIGN=LEFT COLSPAN='2'>0</TD></TR>
+<TR ALIGN=LEFT><TD><A HREF_DISABLED='/media/My Passport/work/PhD/myHDL_tests/my_conversion/Plex_test/new_code_2/ISE_func_comps/test_core_gen2_wrapper.bld'>Translation Report</A></TD><TD>Current</TD><TD>Wed Mar 10 15:02:48 2010</TD><TD ALIGN=LEFT>0</TD><TD ALIGN=LEFT>0</TD><TD ALIGN=LEFT COLSPAN='2'>0</TD></TR>
+<TR ALIGN=LEFT><TD><A HREF_DISABLED='/media/My Passport/work/PhD/myHDL_tests/my_conversion/Plex_test/new_code_2/ISE_func_comps/test_core_gen2_wrapper_map.mrp'>Map Report</A></TD><TD>Current</TD><TD>Wed Mar 10 15:03:19 2010</TD><TD ALIGN=LEFT>0</TD><TD ALIGN=LEFT>0</TD><TD ALIGN=LEFT COLSPAN='2'><A HREF_DISABLED='/media/My Passport/work/PhD/myHDL_tests/my_conversion/Plex_test/new_code_2/ISE_func_comps/_xmsgs/map.xmsgs'>6 Infos</A></TD></TR>
+<TR ALIGN=LEFT><TD><A HREF_DISABLED='/media/My Passport/work/PhD/myHDL_tests/my_conversion/Plex_test/new_code_2/ISE_func_comps/test_core_gen2_wrapper.par'>Place and Route Report</A></TD><TD>Current</TD><TD>Wed Mar 10 15:03:58 2010</TD><TD ALIGN=LEFT>0</TD><TD ALIGN=LEFT><A HREF_DISABLED='/media/My Passport/work/PhD/myHDL_tests/my_conversion/Plex_test/new_code_2/ISE_func_comps/_xmsgs/par.xmsgs'>1 Warning</A></TD><TD ALIGN=LEFT COLSPAN='2'><A HREF_DISABLED='/media/My Passport/work/PhD/myHDL_tests/my_conversion/Plex_test/new_code_2/ISE_func_comps/_xmsgs/par.xmsgs'>1 Info</A></TD></TR>
+<TR ALIGN=LEFT><TD>Power Report</TD><TD>&nbsp;</TD><TD>&nbsp;</TD><TD>&nbsp;</TD><TD>&nbsp;</TD><TD COLSPAN='2'>&nbsp;</TD></TR>
+<TR ALIGN=LEFT><TD><A HREF_DISABLED='/media/My Passport/work/PhD/myHDL_tests/my_conversion/Plex_test/new_code_2/ISE_func_comps/test_core_gen2_wrapper.twr'>Post-PAR Static Timing Report</A></TD><TD>Out of Date</TD><TD>Wed Mar 10 15:00:39 2010</TD><TD ALIGN=LEFT>0</TD><TD ALIGN=LEFT><A HREF_DISABLED='/media/My Passport/work/PhD/myHDL_tests/my_conversion/Plex_test/new_code_2/ISE_func_comps/_xmsgs/trce.xmsgs'>1 Warning</A></TD><TD ALIGN=LEFT COLSPAN='2'>0</TD></TR>
+<TR ALIGN=LEFT><TD>Bitgen Report</TD><TD>&nbsp;</TD><TD>&nbsp;</TD><TD>&nbsp;</TD><TD>&nbsp;</TD><TD COLSPAN='2'>&nbsp;</TD></TR>
+</TABLE>
+&nbsp;<BR><TABLE BORDER CELLSPACING=0 CELLPADDING=3 WIDTH='100%'>
+<TR ALIGN=CENTER BGCOLOR='#99CCFF'><TD ALIGN=CENTER COLSPAN='3'><B>Secondary Reports</B></TD><TD ALIGN=RIGHT WIDTH='10%'COLSPAN=1> <A HREF_DISABLED="?&ExpandedTable=SecondaryReports"><B>[-]</B></a></TD></TR>
+<TR BGCOLOR='#FFFF99'><TD><B>Report Name</B></TD><TD><B>Status</B></TD><TD COLSPAN='2'><B>Generated</B></TD></TR>
+<TR ALIGN=LEFT><TD><A HREF_DISABLED='/media/My Passport/work/PhD/myHDL_tests/my_conversion/Plex_test/new_code_2/ISE_func_comps/isim.log'>ISIM Simulator Log</A></TD><TD>Out of Date</TD><TD COLSPAN='2'>Wed Mar 10 14:53:25 2010</TD></TR>
+<TR ALIGN=LEFT><TD><A HREF_DISABLED='/media/My Passport/work/PhD/myHDL_tests/my_conversion/Plex_test/new_code_2/ISE_func_comps/netgen/par/test_core_gen2_wrapper_timesim.nlf'>Post-Place and Route Simulation Model Report</A></TD><TD>Out of Date</TD><TD COLSPAN='2'>Wed Mar 10 14:53:15 2010</TD></TR>
+</TABLE>
+
+
+<br><center><b>Date Generated:</b> 03/11/2010 - 17:59:40</center>
+</BODY></HTML>

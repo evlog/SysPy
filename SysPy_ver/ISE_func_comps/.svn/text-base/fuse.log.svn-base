@@ -1,0 +1,40 @@
+Running: /media/4DC444747164E7E6/Xilinx_11.1_Ubuntu/ISE/bin/lin/unwrapped/fuse -ise /media/My Passport/work/PhD/myHDL_tests/my_conversion/Plex_test/new_code_2/ISE_func_comps/ISE_func_comps.ise -intstyle ise -incremental -o /media/My Passport/work/PhD/myHDL_tests/my_conversion/Plex_test/new_code_2/ISE_func_comps/test_core_gen2_wrapper_tb_isim_par.exe -prj /media/My Passport/work/PhD/myHDL_tests/my_conversion/Plex_test/new_code_2/ISE_func_comps/test_core_gen2_wrapper_tb_par.prj test_core_gen2_wrapper_tb 
+Number of CPUs detected in this system: 2
+Turning on mult-threading, number of parallel sub-compilation jobs: 4 
+Determining compilation order of HDL files
+Analyzing VHDL file "/media/My Passport/work/PhD/myHDL_tests/my_conversion/Plex_test/new_code_2/ISE_func_comps/netgen/par/test_core_gen2_wrapper_timesim.vhd" into library work
+Analyzing VHDL file "/media/My Passport/work/PhD/myHDL_tests/my_conversion/Plex_test/new_code_2/ISE_func_comps/test_core_gen2_wrapper_tb.vhd" into library work
+Starting static elaboration
+Completed static elaboration
+Fuse Memory Usage: 41956 KB
+Fuse CPU Usage: 630 ms
+Using precompiled package standard from library std
+Using precompiled package std_logic_1164 from library ieee
+Using precompiled package std_logic_arith from library ieee
+Using precompiled package std_logic_unsigned from library ieee
+Using precompiled package numeric_std from library ieee
+Using precompiled package textio from library std
+Using precompiled package vital_timing from library ieee
+Using precompiled package vital_primitives from library ieee
+Compiling package vcomponents
+Compiling package vpackage
+Compiling architecture x_buf_v of entity x_buf [\X_BUF(true,true,"SLICE_X33Y92",...]
+Compiling architecture x_xor2_v of entity x_xor2 [\X_XOR2(true,true,"SLICE_X33Y92"...]
+Compiling architecture x_mux2_v of entity x_mux2 [\X_MUX2(true,true,"SLICE_X33Y92"...]
+Compiling architecture x_lut4_v of entity x_lut4 [\X_LUT4(true,true,"SLICE_X33Y92"...]
+Compiling architecture x_and2_v of entity x_and2 [\X_AND2(true,true,"SLICE_X33Y93"...]
+Compiling architecture x_one_v of entity x_one [\X_ONE("SLICE_X31Y94")\]
+Compiling architecture x_obuf_v of entity x_obuf [\X_OBUF(true,true,"DONT_CARE",12...]
+Compiling architecture x_zero_v of entity x_zero [\X_ZERO("UNPLACED")\]
+Compiling architecture x_inv_v of entity x_inv [\X_INV(true,true,"PAD46",(0,0),(...]
+Compiling architecture x_roc_v of entity x_roc [\X_ROC("UNPLACED",100000,"*")\]
+Compiling architecture x_toc_v of entity x_toc [\X_TOC("UNPLACED",0,"*")\]
+Compiling architecture structure of entity test_core_gen2_wrapper [test_core_gen2_wrapper_default]
+Compiling architecture behavior of entity test_core_gen2_wrapper_tb
+Time Resolution for simulation is 1ps.
+Waiting for 4 sub-compilation(s) to finish...
+Compiled 187 VHDL Units
+Built simulation executable /media/My Passport/work/PhD/myHDL_tests/my_conversion/Plex_test/new_code_2/ISE_func_comps/test_core_gen2_wrapper_tb_isim_par.exe
+Fuse Memory Usage: 76416 KB
+Fuse CPU Usage: 920 ms
+GCC CPU Usage: 2120 ms

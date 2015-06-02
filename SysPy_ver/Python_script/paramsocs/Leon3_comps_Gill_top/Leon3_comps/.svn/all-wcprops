@@ -1,0 +1,83 @@
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/svn/!svn/ver/102/SysPy/SysPy_ver/Python_script/paramsocs/Leon3_comps_Gill_top/Leon3_comps
+END
+Leon3_XST.tcl
+K 25
+svn:wc:ra_dav:version-url
+V 104
+/svn/!svn/ver/102/SysPy/SysPy_ver/Python_script/paramsocs/Leon3_comps_Gill_top/Leon3_comps/Leon3_XST.tcl
+END
+testbench.vhd
+K 25
+svn:wc:ra_dav:version-url
+V 104
+/svn/!svn/ver/102/SysPy/SysPy_ver/Python_script/paramsocs/Leon3_comps_Gill_top/Leon3_comps/testbench.vhd
+END
+Leon3_wrapper.vhd
+K 25
+svn:wc:ra_dav:version-url
+V 108
+/svn/!svn/ver/102/SysPy/SysPy_ver/Python_script/paramsocs/Leon3_comps_Gill_top/Leon3_comps/Leon3_wrapper.vhd
+END
+leon3mp_init.vhd
+K 25
+svn:wc:ra_dav:version-url
+V 107
+/svn/!svn/ver/102/SysPy/SysPy_ver/Python_script/paramsocs/Leon3_comps_Gill_top/Leon3_comps/leon3mp_init.vhd
+END
+io_buf.vhd
+K 25
+svn:wc:ra_dav:version-url
+V 101
+/svn/!svn/ver/102/SysPy/SysPy_ver/Python_script/paramsocs/Leon3_comps_Gill_top/Leon3_comps/io_buf.vhd
+END
+config.vhd
+K 25
+svn:wc:ra_dav:version-url
+V 101
+/svn/!svn/ver/102/SysPy/SysPy_ver/Python_script/paramsocs/Leon3_comps_Gill_top/Leon3_comps/config.vhd
+END
+ahbrom.vhd
+K 25
+svn:wc:ra_dav:version-url
+V 101
+/svn/!svn/ver/102/SysPy/SysPy_ver/Python_script/paramsocs/Leon3_comps_Gill_top/Leon3_comps/ahbrom.vhd
+END
+config.vhd.in
+K 25
+svn:wc:ra_dav:version-url
+V 104
+/svn/!svn/ver/102/SysPy/SysPy_ver/Python_script/paramsocs/Leon3_comps_Gill_top/Leon3_comps/config.vhd.in
+END
+config.vhd.h
+K 25
+svn:wc:ra_dav:version-url
+V 103
+/svn/!svn/ver/102/SysPy/SysPy_ver/Python_script/paramsocs/Leon3_comps_Gill_top/Leon3_comps/config.vhd.h
+END
+svga2ch7301c.vhd
+K 25
+svn:wc:ra_dav:version-url
+V 107
+/svn/!svn/ver/102/SysPy/SysPy_ver/Python_script/paramsocs/Leon3_comps_Gill_top/Leon3_comps/svga2ch7301c.vhd
+END
+Leon3_wrapper.ucf
+K 25
+svn:wc:ra_dav:version-url
+V 108
+/svn/!svn/ver/102/SysPy/SysPy_ver/Python_script/paramsocs/Leon3_comps_Gill_top/Leon3_comps/Leon3_wrapper.ucf
+END
+leon3mp.xcf
+K 25
+svn:wc:ra_dav:version-url
+V 102
+/svn/!svn/ver/102/SysPy/SysPy_ver/Python_script/paramsocs/Leon3_comps_Gill_top/Leon3_comps/leon3mp.xcf
+END
+leon3mp.vhd
+K 25
+svn:wc:ra_dav:version-url
+V 102
+/svn/!svn/ver/102/SysPy/SysPy_ver/Python_script/paramsocs/Leon3_comps_Gill_top/Leon3_comps/leon3mp.vhd
+END

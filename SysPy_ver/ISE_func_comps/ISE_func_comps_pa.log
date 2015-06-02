@@ -1,0 +1,59 @@
+
+****** PlanAhead v11.1
+  **** Build 44534 by hdbuild on Thu Mar  5 11:05:08 PST 2009
+    ** Copyright 1986-1999, 2001-2009 Xilinx, Inc. All Rights Reserved.
+
+INFO: [HD-Licensing 0] Attempting to get a license: PlanAhead
+INFO: [HD-Licensing 1] Got a license: PlanAhead
+INFO: [HD-ArchReader 10] Loading parts and site information from /media/4DC444747164E7E6/Xilinx_11.1_Ubuntu/PlanAhead/parts/arch.xml
+INFO: [HD-RTPRIM 0] Parsing RTL primitives file '/media/4DC444747164E7E6/Xilinx_11.1_Ubuntu/PlanAhead/parts/xilinx/rtl/prims/rtl_prims.xml'
+INFO: [HD-RTPRIM 1] Finished Parsing RTL primitives file '/media/4DC444747164E7E6/Xilinx_11.1_Ubuntu/PlanAhead/parts/xilinx/rtl/prims/rtl_prims.xml'
+INFO: [HD-Application 1] Opened log file /media/My Passport/work/PhD/myHDL_tests/my_conversion/Plex_test/new_code_2/ISE_func_comps/planAhead.log
+INFO: [HD-Application 2] Opened journal file /media/My Passport/work/PhD/myHDL_tests/my_conversion/Plex_test/new_code_2/ISE_func_comps/planAhead.jou
+INFO: [HD-RTPRIM 0] Parsing template file '/media/4DC444747164E7E6/Xilinx_11.1_Ubuntu/ISE/data/projnav/templates/verilog.xml'
+INFO: [HD-RTPRIM 1] Finished parsing template file '/media/4DC444747164E7E6/Xilinx_11.1_Ubuntu/ISE/data/projnav/templates/verilog.xml'
+INFO: [HD-RTPRIM 0] Parsing template file '/media/4DC444747164E7E6/Xilinx_11.1_Ubuntu/ISE/data/projnav/templates/vhdl.xml'
+INFO: [HD-RTPRIM 1] Finished parsing template file '/media/4DC444747164E7E6/Xilinx_11.1_Ubuntu/ISE/data/projnav/templates/vhdl.xml'
+INFO: [HD-RTPRIM 0] Parsing template file '/media/4DC444747164E7E6/Xilinx_11.1_Ubuntu/ISE/data/projnav/templates/ucf.xml'
+INFO: [HD-RTPRIM 1] Finished parsing template file '/media/4DC444747164E7E6/Xilinx_11.1_Ubuntu/ISE/data/projnav/templates/ucf.xml'
+ngc2edif part name xc5vlx30ff676-2
+Release 11.1 - ngc2edif L.33 (lin)
+Copyright (c) 1995-2009 Xilinx, Inc.  All rights reserved.
+
+Release 11.1 - ngc2edif L.33 (lin)
+Copyright (c) 1995-2009 Xilinx, Inc.  All rights reserved.
+Reading design test_core_gen2_wrapper.ngc ...
+WARNING:NetListWriters:298 - No output is written to
+   test_core_gen2_wrapper.xncf, ignored.
+Processing design ...
+   Preping design's networks ...
+   Preping design's macros ...
+  finished :Prep
+Writing EDIF netlist file test_core_gen2_wrapper.edif ...
+ngc2edif: Total memory usage is 20568 kilobytes
+
+ngc2edif part name xc5vlx30ff676-2
+Release 11.1 - ngc2edif L.33 (lin)
+Copyright (c) 1995-2009 Xilinx, Inc.  All rights reserved.
+
+Release 11.1 - ngc2edif L.33 (lin)
+Copyright (c) 1995-2009 Xilinx, Inc.  All rights reserved.
+Reading design test_core_gen2.ngc ...
+WARNING:NetListWriters:298 - No output is written to test_core_gen2.xncf,
+   ignored.
+Processing design ...
+   Preping design's networks ...
+   Preping design's macros ...
+  finished :Prep
+Writing EDIF netlist file test_core_gen2.edif ...
+ngc2edif: Total memory usage is 20628 kilobytes
+
+Release 11.1 - xdl L.33 (lin)
+Copyright (c) 1995-2009 Xilinx, Inc.  All rights reserved.
+
+Loading device for application Rf_Device from file '3s1000.nph' in environment /media/4DC444747164E7E6/Xilinx_11.1_Ubuntu/ISE.
+   "test_core_gen2_wrapper" is an NCD, version 3.2, device xc3s1000, package fg320, speed -5
+Successfully converted design '/media/My Passport/work/PhD/myHDL_tests/my_conversion/Plex_test/new_code_2/ISE_func_comps/test_core_gen2_wrapper.ncd' to '/media/My
+Passport/work/PhD/myHDL_tests/my_conversion/Plex_test/new_code_2/ISE_func_comps/test_core_gen2_wrapper.xdl'.
+INFO: [HD-Application 0] Exiting PlanAhead...
+INFO: [HD-Licensing 2] Releasing license: PlanAhead

@@ -1,0 +1,317 @@
+K 25
+svn:wc:ra_dav:version-url
+V 108
+/svn/!svn/ver/102/SysPy/SysPy_ver/Python_script/paramsocs/Leon3_comps_Gill_top/Leon3_comps/libs/techmap/maps
+END
+syncram156bw.vhd
+K 25
+svn:wc:ra_dav:version-url
+V 125
+/svn/!svn/ver/102/SysPy/SysPy_ver/Python_script/paramsocs/Leon3_comps_Gill_top/Leon3_comps/libs/techmap/maps/syncram156bw.vhd
+END
+mul_61x61.vhd
+K 25
+svn:wc:ra_dav:version-url
+V 122
+/svn/!svn/ver/102/SysPy/SysPy_ver/Python_script/paramsocs/Leon3_comps_Gill_top/Leon3_comps/libs/techmap/maps/mul_61x61.vhd
+END
+allddr.vhd
+K 25
+svn:wc:ra_dav:version-url
+V 119
+/svn/!svn/ver/102/SysPy/SysPy_ver/Python_script/paramsocs/Leon3_comps_Gill_top/Leon3_comps/libs/techmap/maps/allddr.vhd
+END
+clkgen.vhd
+K 25
+svn:wc:ra_dav:version-url
+V 119
+/svn/!svn/ver/102/SysPy/SysPy_ver/Python_script/paramsocs/Leon3_comps_Gill_top/Leon3_comps/libs/techmap/maps/clkgen.vhd
+END
+ringosc.vhd
+K 25
+svn:wc:ra_dav:version-url
+V 120
+/svn/!svn/ver/102/SysPy/SysPy_ver/Python_script/paramsocs/Leon3_comps_Gill_top/Leon3_comps/libs/techmap/maps/ringosc.vhd
+END
+toutpad_ds.vhd
+K 25
+svn:wc:ra_dav:version-url
+V 123
+/svn/!svn/ver/102/SysPy/SysPy_ver/Python_script/paramsocs/Leon3_comps_Gill_top/Leon3_comps/libs/techmap/maps/toutpad_ds.vhd
+END
+grlfpw_net.vhd
+K 25
+svn:wc:ra_dav:version-url
+V 123
+/svn/!svn/ver/102/SysPy/SysPy_ver/Python_script/paramsocs/Leon3_comps_Gill_top/Leon3_comps/libs/techmap/maps/grlfpw_net.vhd
+END
+syncram128.vhd
+K 25
+svn:wc:ra_dav:version-url
+V 123
+/svn/!svn/ver/102/SysPy/SysPy_ver/Python_script/paramsocs/Leon3_comps_Gill_top/Leon3_comps/libs/techmap/maps/syncram128.vhd
+END
+grspwc_net.vhd
+K 25
+svn:wc:ra_dav:version-url
+V 123
+/svn/!svn/ver/102/SysPy/SysPy_ver/Python_script/paramsocs/Leon3_comps_Gill_top/Leon3_comps/libs/techmap/maps/grspwc_net.vhd
+END
+syncram.vhd
+K 25
+svn:wc:ra_dav:version-url
+V 120
+/svn/!svn/ver/102/SysPy/SysPy_ver/Python_script/paramsocs/Leon3_comps_Gill_top/Leon3_comps/libs/techmap/maps/syncram.vhd
+END
+regfile_3p.vhd
+K 25
+svn:wc:ra_dav:version-url
+V 123
+/svn/!svn/ver/102/SysPy/SysPy_ver/Python_script/paramsocs/Leon3_comps_Gill_top/Leon3_comps/libs/techmap/maps/regfile_3p.vhd
+END
+allpads.vhd
+K 25
+svn:wc:ra_dav:version-url
+V 120
+/svn/!svn/ver/102/SysPy/SysPy_ver/Python_script/paramsocs/Leon3_comps_Gill_top/Leon3_comps/libs/techmap/maps/allpads.vhd
+END
+techbuf.vhd
+K 25
+svn:wc:ra_dav:version-url
+V 120
+/svn/!svn/ver/102/SysPy/SysPy_ver/Python_script/paramsocs/Leon3_comps_Gill_top/Leon3_comps/libs/techmap/maps/techbuf.vhd
+END
+inpad_ds.vhd
+K 25
+svn:wc:ra_dav:version-url
+V 121
+/svn/!svn/ver/102/SysPy/SysPy_ver/Python_script/paramsocs/Leon3_comps_Gill_top/Leon3_comps/libs/techmap/maps/inpad_ds.vhd
+END
+iopad_ds.vhd
+K 25
+svn:wc:ra_dav:version-url
+V 121
+/svn/!svn/ver/102/SysPy/SysPy_ver/Python_script/paramsocs/Leon3_comps_Gill_top/Leon3_comps/libs/techmap/maps/iopad_ds.vhd
+END
+outpad_ds.vhd
+K 25
+svn:wc:ra_dav:version-url
+V 122
+/svn/!svn/ver/102/SysPy/SysPy_ver/Python_script/paramsocs/Leon3_comps_Gill_top/Leon3_comps/libs/techmap/maps/outpad_ds.vhd
+END
+inpad_ddr.vhd
+K 25
+svn:wc:ra_dav:version-url
+V 122
+/svn/!svn/ver/102/SysPy/SysPy_ver/Python_script/paramsocs/Leon3_comps_Gill_top/Leon3_comps/libs/techmap/maps/inpad_ddr.vhd
+END
+clkpad_ds.vhd
+K 25
+svn:wc:ra_dav:version-url
+V 122
+/svn/!svn/ver/102/SysPy/SysPy_ver/Python_script/paramsocs/Leon3_comps_Gill_top/Leon3_comps/libs/techmap/maps/clkpad_ds.vhd
+END
+tap.vhd
+K 25
+svn:wc:ra_dav:version-url
+V 116
+/svn/!svn/ver/102/SysPy/SysPy_ver/Python_script/paramsocs/Leon3_comps_Gill_top/Leon3_comps/libs/techmap/maps/tap.vhd
+END
+skew_outpad.vhd
+K 25
+svn:wc:ra_dav:version-url
+V 124
+/svn/!svn/ver/102/SysPy/SysPy_ver/Python_script/paramsocs/Leon3_comps_Gill_top/Leon3_comps/libs/techmap/maps/skew_outpad.vhd
+END
+odpad.vhd
+K 25
+svn:wc:ra_dav:version-url
+V 118
+/svn/!svn/ver/102/SysPy/SysPy_ver/Python_script/paramsocs/Leon3_comps_Gill_top/Leon3_comps/libs/techmap/maps/odpad.vhd
+END
+lvds_combo.vhd
+K 25
+svn:wc:ra_dav:version-url
+V 123
+/svn/!svn/ver/102/SysPy/SysPy_ver/Python_script/paramsocs/Leon3_comps_Gill_top/Leon3_comps/libs/techmap/maps/lvds_combo.vhd
+END
+inpad.vhd
+K 25
+svn:wc:ra_dav:version-url
+V 118
+/svn/!svn/ver/102/SysPy/SysPy_ver/Python_script/paramsocs/Leon3_comps_Gill_top/Leon3_comps/libs/techmap/maps/inpad.vhd
+END
+system_monitor.vhd
+K 25
+svn:wc:ra_dav:version-url
+V 127
+/svn/!svn/ver/102/SysPy/SysPy_ver/Python_script/paramsocs/Leon3_comps_Gill_top/Leon3_comps/libs/techmap/maps/system_monitor.vhd
+END
+clkand.vhd
+K 25
+svn:wc:ra_dav:version-url
+V 119
+/svn/!svn/ver/102/SysPy/SysPy_ver/Python_script/paramsocs/Leon3_comps_Gill_top/Leon3_comps/libs/techmap/maps/clkand.vhd
+END
+grgates.vhd
+K 25
+svn:wc:ra_dav:version-url
+V 120
+/svn/!svn/ver/102/SysPy/SysPy_ver/Python_script/paramsocs/Leon3_comps_Gill_top/Leon3_comps/libs/techmap/maps/grgates.vhd
+END
+syncram_dp.vhd
+K 25
+svn:wc:ra_dav:version-url
+V 123
+/svn/!svn/ver/102/SysPy/SysPy_ver/Python_script/paramsocs/Leon3_comps_Gill_top/Leon3_comps/libs/techmap/maps/syncram_dp.vhd
+END
+nandtree.vhd
+K 25
+svn:wc:ra_dav:version-url
+V 121
+/svn/!svn/ver/102/SysPy/SysPy_ver/Python_script/paramsocs/Leon3_comps_Gill_top/Leon3_comps/libs/techmap/maps/nandtree.vhd
+END
+iodpad.vhd
+K 25
+svn:wc:ra_dav:version-url
+V 119
+/svn/!svn/ver/102/SysPy/SysPy_ver/Python_script/paramsocs/Leon3_comps_Gill_top/Leon3_comps/libs/techmap/maps/iodpad.vhd
+END
+syncram128bw.vhd
+K 25
+svn:wc:ra_dav:version-url
+V 125
+/svn/!svn/ver/102/SysPy/SysPy_ver/Python_script/paramsocs/Leon3_comps_Gill_top/Leon3_comps/libs/techmap/maps/syncram128bw.vhd
+END
+ssrctrl_net.vhd
+K 25
+svn:wc:ra_dav:version-url
+V 124
+/svn/!svn/ver/102/SysPy/SysPy_ver/Python_script/paramsocs/Leon3_comps_Gill_top/Leon3_comps/libs/techmap/maps/ssrctrl_net.vhd
+END
+grusbhc_net.vhd
+K 25
+svn:wc:ra_dav:version-url
+V 124
+/svn/!svn/ver/102/SysPy/SysPy_ver/Python_script/paramsocs/Leon3_comps_Gill_top/Leon3_comps/libs/techmap/maps/grusbhc_net.vhd
+END
+clkmux.vhd
+K 25
+svn:wc:ra_dav:version-url
+V 119
+/svn/!svn/ver/102/SysPy/SysPy_ver/Python_script/paramsocs/Leon3_comps_Gill_top/Leon3_comps/libs/techmap/maps/clkmux.vhd
+END
+allmem.vhd
+K 25
+svn:wc:ra_dav:version-url
+V 119
+/svn/!svn/ver/102/SysPy/SysPy_ver/Python_script/paramsocs/Leon3_comps_Gill_top/Leon3_comps/libs/techmap/maps/allmem.vhd
+END
+alltap.vhd
+K 25
+svn:wc:ra_dav:version-url
+V 119
+/svn/!svn/ver/102/SysPy/SysPy_ver/Python_script/paramsocs/Leon3_comps_Gill_top/Leon3_comps/libs/techmap/maps/alltap.vhd
+END
+syncram_2p.vhd
+K 25
+svn:wc:ra_dav:version-url
+V 123
+/svn/!svn/ver/102/SysPy/SysPy_ver/Python_script/paramsocs/Leon3_comps_Gill_top/Leon3_comps/libs/techmap/maps/syncram_2p.vhd
+END
+ddr_ireg.vhd
+K 25
+svn:wc:ra_dav:version-url
+V 121
+/svn/!svn/ver/102/SysPy/SysPy_ver/Python_script/paramsocs/Leon3_comps_Gill_top/Leon3_comps/libs/techmap/maps/ddr_ireg.vhd
+END
+cpu_disas_net.vhd
+K 25
+svn:wc:ra_dav:version-url
+V 126
+/svn/!svn/ver/102/SysPy/SysPy_ver/Python_script/paramsocs/Leon3_comps_Gill_top/Leon3_comps/libs/techmap/maps/cpu_disas_net.vhd
+END
+syncfifo.vhd
+K 25
+svn:wc:ra_dav:version-url
+V 121
+/svn/!svn/ver/102/SysPy/SysPy_ver/Python_script/paramsocs/Leon3_comps_Gill_top/Leon3_comps/libs/techmap/maps/syncfifo.vhd
+END
+toutpad.vhd
+K 25
+svn:wc:ra_dav:version-url
+V 120
+/svn/!svn/ver/102/SysPy/SysPy_ver/Python_script/paramsocs/Leon3_comps_Gill_top/Leon3_comps/libs/techmap/maps/toutpad.vhd
+END
+iopad_ddr.vhd
+K 25
+svn:wc:ra_dav:version-url
+V 122
+/svn/!svn/ver/102/SysPy/SysPy_ver/Python_script/paramsocs/Leon3_comps_Gill_top/Leon3_comps/libs/techmap/maps/iopad_ddr.vhd
+END
+ddr_oreg.vhd
+K 25
+svn:wc:ra_dav:version-url
+V 121
+/svn/!svn/ver/102/SysPy/SysPy_ver/Python_script/paramsocs/Leon3_comps_Gill_top/Leon3_comps/libs/techmap/maps/ddr_oreg.vhd
+END
+outpad_ddr.vhd
+K 25
+svn:wc:ra_dav:version-url
+V 123
+/svn/!svn/ver/102/SysPy/SysPy_ver/Python_script/paramsocs/Leon3_comps_Gill_top/Leon3_comps/libs/techmap/maps/outpad_ddr.vhd
+END
+vhdlsyn.txt
+K 25
+svn:wc:ra_dav:version-url
+V 120
+/svn/!svn/ver/102/SysPy/SysPy_ver/Python_script/paramsocs/Leon3_comps_Gill_top/Leon3_comps/libs/techmap/maps/vhdlsyn.txt
+END
+syncram64.vhd
+K 25
+svn:wc:ra_dav:version-url
+V 122
+/svn/!svn/ver/102/SysPy/SysPy_ver/Python_script/paramsocs/Leon3_comps_Gill_top/Leon3_comps/libs/techmap/maps/syncram64.vhd
+END
+ddrphy.vhd
+K 25
+svn:wc:ra_dav:version-url
+V 119
+/svn/!svn/ver/102/SysPy/SysPy_ver/Python_script/paramsocs/Leon3_comps_Gill_top/Leon3_comps/libs/techmap/maps/ddrphy.vhd
+END
+grfpw_net.vhd
+K 25
+svn:wc:ra_dav:version-url
+V 122
+/svn/!svn/ver/102/SysPy/SysPy_ver/Python_script/paramsocs/Leon3_comps_Gill_top/Leon3_comps/libs/techmap/maps/grfpw_net.vhd
+END
+outpad.vhd
+K 25
+svn:wc:ra_dav:version-url
+V 119
+/svn/!svn/ver/102/SysPy/SysPy_ver/Python_script/paramsocs/Leon3_comps_Gill_top/Leon3_comps/libs/techmap/maps/outpad.vhd
+END
+iopad.vhd
+K 25
+svn:wc:ra_dav:version-url
+V 118
+/svn/!svn/ver/102/SysPy/SysPy_ver/Python_script/paramsocs/Leon3_comps_Gill_top/Leon3_comps/libs/techmap/maps/iopad.vhd
+END
+allclkgen.vhd
+K 25
+svn:wc:ra_dav:version-url
+V 122
+/svn/!svn/ver/102/SysPy/SysPy_ver/Python_script/paramsocs/Leon3_comps_Gill_top/Leon3_comps/libs/techmap/maps/allclkgen.vhd
+END
+grspwc2_net.vhd
+K 25
+svn:wc:ra_dav:version-url
+V 124
+/svn/!svn/ver/102/SysPy/SysPy_ver/Python_script/paramsocs/Leon3_comps_Gill_top/Leon3_comps/libs/techmap/maps/grspwc2_net.vhd
+END
+clkpad.vhd
+K 25
+svn:wc:ra_dav:version-url
+V 119
+/svn/!svn/ver/102/SysPy/SysPy_ver/Python_script/paramsocs/Leon3_comps_Gill_top/Leon3_comps/libs/techmap/maps/clkpad.vhd
+END

@@ -1,0 +1,134 @@
+--------------------------------------------------------------------------------
+-- Copyright (c) 1995-2007 Xilinx, Inc.
+-- All Right Reserved.
+--------------------------------------------------------------------------------
+--   ____  ____ 
+--  /   /\/   / 
+-- /___/  \  /    Vendor: Xilinx 
+-- \   \   \/     Version : 9.2.04i
+--  \   \         Application : ISE
+--  /   /         Filename : testrng2.ant
+-- /___/   /\     Timestamp : Mon Nov 14 21:37:03 2011
+-- \   \  /  \ 
+--  \___\/\___\ 
+--
+--Command: 
+--Design Name: testrng2
+--Device: Xilinx
+--
+
+library IEEE;
+use IEEE.STD_LOGIC_1164.ALL;
+use IEEE.STD_LOGIC_ARITH.ALL;
+use IEEE.STD_LOGIC_UNSIGNED.ALL;
+USE IEEE.STD_LOGIC_TEXTIO.ALL;
+USE STD.TEXTIO.ALL;
+
+ENTITY testrng2 IS
+END testrng2;
+
+ARCHITECTURE testbench_arch OF testrng2 IS
+    FILE RESULTS: TEXT OPEN WRITE_MODE IS "C:\NOC11\TestswithLeon4\LEONGILL\testrng2.ano";
+
+    COMPONENT patterngen2
+        PORT (
+            clock : In std_logic;
+            en : In std_logic;
+            clear : In std_logic;
+            count : In std_logic;
+            Qinseed : In std_logic_vector (7 DownTo 0);
+            Qout : Out std_logic_vector (31 DownTo 0)
+        );
+    END COMPONENT;
+
+    SIGNAL clock : std_logic := '0';
+    SIGNAL en : std_logic := '0';
+    SIGNAL clear : std_logic := '0';
+    SIGNAL count : std_logic := '0';
+    SIGNAL Qinseed : std_logic_vector (7 DownTo 0) := "00000000";
+    SIGNAL Qout : std_logic_vector (31 DownTo 0) := "00000000000000000000000000000000";
+
+    SHARED VARIABLE TX_ERROR : INTEGER := 0;
+    SHARED VARIABLE TX_OUT : LINE;
+
+    constant PERIOD : time := 20 ns;
+    constant DUTY_CYCLE : real := 0.5;
+    constant OFFSET : time := 100 ns;
+
+    BEGIN
+        UUT : patterngen2
+        PORT MAP (
+            clock => clock,
+            en => en,
+            clear => clear,
+            count => count,
+            Qinseed => Qinseed,
+            Qout => Qout
+        );
+
+        PROCESS    -- clock process for clock
+        BEGIN
+            WAIT for OFFSET;
+            CLOCK_LOOP : LOOP
+                clock <= '0';
+                WAIT FOR (PERIOD - (PERIOD * DUTY_CYCLE));
+                clock <= '1';
+                WAIT FOR (PERIOD * DUTY_CYCLE);
+            END LOOP CLOCK_LOOP;
+        END PROCESS;
+
+        PROCESS    -- Annotation process for clock
+            VARIABLE TX_TIME : INTEGER := 0;
+
+            PROCEDURE ANNOTATE_Qout(
+                TX_TIME : INTEGER
+            ) IS
+                VARIABLE TX_STR : String(1 to 4096);
+                VARIABLE TX_LOC : LINE;
+            BEGIN
+                STD.TEXTIO.write(TX_LOC, string'("Annotate["));
+                STD.TEXTIO.write(TX_LOC, TX_TIME);
+                STD.TEXTIO.write(TX_LOC, string'(", Qout, "));
+                IEEE.STD_LOGIC_TEXTIO.write(TX_LOC, Qout);
+                STD.TEXTIO.write(TX_LOC, string'("]"));
+                TX_STR(TX_LOC.all'range) := TX_LOC.all;
+                STD.TEXTIO.writeline(RESULTS, TX_LOC);
+                STD.TEXTIO.Deallocate(TX_LOC);
+            END;
+        BEGIN
+            WAIT for 1 fs;
+            ANNOTATE_Qout(0);
+            WAIT for OFFSET;
+            TX_TIME := TX_TIME + 100;
+            ANNO_LOOP : LOOP
+                --Rising Edge
+                WAIT for 15 ns;
+                TX_TIME := TX_TIME + 15;
+                ANNOTATE_Qout(TX_TIME);
+                WAIT for 5 ns;
+                TX_TIME := TX_TIME + 5;
+            END LOOP ANNO_LOOP;
+        END PROCESS;
+
+        PROCESS
+            BEGIN
+                -- -------------  Current Time:  100ns
+                WAIT FOR 100 ns;
+                Qinseed <= "00000111";
+                -- -------------------------------------
+                -- -------------  Current Time:  105ns
+                WAIT FOR 5 ns;
+                en <= '1';
+                count <= '1';
+                -- -------------------------------------
+                WAIT FOR 915 ns;
+
+                STD.TEXTIO.write(TX_OUT, string'("Total[]"));
+                STD.TEXTIO.writeline(RESULTS, TX_OUT);
+                ASSERT (FALSE) REPORT
+                    "Success! Simulation for annotation completed"
+                    SEVERITY FAILURE;
+            END PROCESS;
+
+    END testbench_arch;
+

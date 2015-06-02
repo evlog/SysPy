@@ -1,0 +1,35 @@
+K 25
+svn:wc:ra_dav:version-url
+V 112
+/svn/!svn/ver/102/SysPy/SysPy_ver/Python_script/paramsocs/Leon3_comps_Gill_top/Leon3_comps/libs/techmap/inferred
+END
+vhdlsyn.txt
+K 25
+svn:wc:ra_dav:version-url
+V 124
+/svn/!svn/ver/102/SysPy/SysPy_ver/Python_script/paramsocs/Leon3_comps_Gill_top/Leon3_comps/libs/techmap/inferred/vhdlsyn.txt
+END
+memory_inferred.vhd
+K 25
+svn:wc:ra_dav:version-url
+V 132
+/svn/!svn/ver/102/SysPy/SysPy_ver/Python_script/paramsocs/Leon3_comps_Gill_top/Leon3_comps/libs/techmap/inferred/memory_inferred.vhd
+END
+ddr_inferred.vhd
+K 25
+svn:wc:ra_dav:version-url
+V 129
+/svn/!svn/ver/102/SysPy/SysPy_ver/Python_script/paramsocs/Leon3_comps_Gill_top/Leon3_comps/libs/techmap/inferred/ddr_inferred.vhd
+END
+ddr_phy_inferred.vhd
+K 25
+svn:wc:ra_dav:version-url
+V 133
+/svn/!svn/ver/102/SysPy/SysPy_ver/Python_script/paramsocs/Leon3_comps_Gill_top/Leon3_comps/libs/techmap/inferred/ddr_phy_inferred.vhd
+END
+mul_inferred.vhd
+K 25
+svn:wc:ra_dav:version-url
+V 129
+/svn/!svn/ver/102/SysPy/SysPy_ver/Python_script/paramsocs/Leon3_comps_Gill_top/Leon3_comps/libs/techmap/inferred/mul_inferred.vhd
+END

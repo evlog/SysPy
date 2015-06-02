@@ -1,0 +1,27 @@
+Command line:
+   test_core_gen2_wrapper_tb_isim_beh.exe
+     -simmode  gui
+     -simrunnum  0
+
+Wed Mar 10 14:50:23 2010
+
+
+ Elaboration Time: 0.02 sec
+
+ Current Memory Usage: 112.546 Meg
+
+ Total Signals          : 119
+ Total Nets             : 422
+ Total Signal Drivers   : 38
+ Total Blocks           : 30
+ Total Primitive Blocks : 21
+ Total Processes        : 31
+ Total Traceable Variables  : 265
+ Total Scalar Nets and Variables : 44153
+
+ Total Simulation Time: 0.02 sec
+
+ Current Memory Usage: 120.938 Meg
+
+Wed Mar 10 15:16:18 2010
+

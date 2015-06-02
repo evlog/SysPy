@@ -1,0 +1,35 @@
+K 25
+svn:wc:ra_dav:version-url
+V 122
+/svn/!svn/ver/102/SysPy/SysPy_ver/Python_script/paramsocs/Leon3_comps_Gill_top/Leon3_comps/libs/techmap/stratixiii/adq_dqs
+END
+bidir_dqs_iobuf_inst.vhd
+K 25
+svn:wc:ra_dav:version-url
+V 147
+/svn/!svn/ver/102/SysPy/SysPy_ver/Python_script/paramsocs/Leon3_comps_Gill_top/Leon3_comps/libs/techmap/stratixiii/adq_dqs/bidir_dqs_iobuf_inst.vhd
+END
+dq_dqs_inst.vhd
+K 25
+svn:wc:ra_dav:version-url
+V 138
+/svn/!svn/ver/102/SysPy/SysPy_ver/Python_script/paramsocs/Leon3_comps_Gill_top/Leon3_comps/libs/techmap/stratixiii/adq_dqs/dq_dqs_inst.vhd
+END
+output_dqs_iobuf_inst.vhd
+K 25
+svn:wc:ra_dav:version-url
+V 148
+/svn/!svn/ver/102/SysPy/SysPy_ver/Python_script/paramsocs/Leon3_comps_Gill_top/Leon3_comps/libs/techmap/stratixiii/adq_dqs/output_dqs_iobuf_inst.vhd
+END
+altdq_dqs_input
+K 25
+svn:wc:ra_dav:version-url
+V 138
+/svn/!svn/ver/102/SysPy/SysPy_ver/Python_script/paramsocs/Leon3_comps_Gill_top/Leon3_comps/libs/techmap/stratixiii/adq_dqs/altdq_dqs_input
+END
+bidir_dq_iobuf_inst.vhd
+K 25
+svn:wc:ra_dav:version-url
+V 146
+/svn/!svn/ver/102/SysPy/SysPy_ver/Python_script/paramsocs/Leon3_comps_Gill_top/Leon3_comps/libs/techmap/stratixiii/adq_dqs/bidir_dq_iobuf_inst.vhd
+END

@@ -1,0 +1,3 @@
+vhdl isim_temp "/media/My Passport/work/PhD/myHDL_tests/my_conversion/Plex_test/new_code_2/ISE_func_comps/ipcore_dir/test_core_gen2.vhd"
+vhdl isim_temp "/media/My Passport/work/PhD/myHDL_tests/my_conversion/Plex_test/new_code_2/ISE_func_comps/test_core_gen2_wrapper.vhd"
+vhdl isim_temp "/media/My Passport/work/PhD/myHDL_tests/my_conversion/Plex_test/new_code_2/ISE_func_comps/test_core_gen2_wrapper_tb.vhd"

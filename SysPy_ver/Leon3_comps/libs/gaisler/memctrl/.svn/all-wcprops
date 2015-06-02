@@ -1,0 +1,143 @@
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/svn/!svn/ver/102/SysPy/SysPy_ver/Leon3_comps/libs/gaisler/memctrl
+END
+sdctrl.in.vhd
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/svn/!svn/ver/102/SysPy/SysPy_ver/Leon3_comps/libs/gaisler/memctrl/sdctrl.in.vhd
+END
+ssrctrl.in.vhd
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/svn/!svn/ver/102/SysPy/SysPy_ver/Leon3_comps/libs/gaisler/memctrl/ssrctrl.in.vhd
+END
+spimctrl.in.vhd
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/svn/!svn/ver/102/SysPy/SysPy_ver/Leon3_comps/libs/gaisler/memctrl/spimctrl.in.vhd
+END
+memctrl.vhd
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/svn/!svn/ver/102/SysPy/SysPy_ver/Leon3_comps/libs/gaisler/memctrl/memctrl.vhd
+END
+sdctrl64.vhd
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/svn/!svn/ver/102/SysPy/SysPy_ver/Leon3_comps/libs/gaisler/memctrl/sdctrl64.vhd
+END
+sdctrl.in.h
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/svn/!svn/ver/102/SysPy/SysPy_ver/Leon3_comps/libs/gaisler/memctrl/sdctrl.in.h
+END
+sdctrl.in.help
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/svn/!svn/ver/102/SysPy/SysPy_ver/Leon3_comps/libs/gaisler/memctrl/sdctrl.in.help
+END
+ssrctrl.in.h
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/svn/!svn/ver/102/SysPy/SysPy_ver/Leon3_comps/libs/gaisler/memctrl/ssrctrl.in.h
+END
+spimctrl.in.h
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/svn/!svn/ver/102/SysPy/SysPy_ver/Leon3_comps/libs/gaisler/memctrl/spimctrl.in.h
+END
+sdmctrl.vhd
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/svn/!svn/ver/102/SysPy/SysPy_ver/Leon3_comps/libs/gaisler/memctrl/sdmctrl.vhd
+END
+ssrctrl.in.help
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/svn/!svn/ver/102/SysPy/SysPy_ver/Leon3_comps/libs/gaisler/memctrl/ssrctrl.in.help
+END
+spimctrl.in.help
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/svn/!svn/ver/102/SysPy/SysPy_ver/Leon3_comps/libs/gaisler/memctrl/spimctrl.in.help
+END
+srctrl.vhd
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/svn/!svn/ver/102/SysPy/SysPy_ver/Leon3_comps/libs/gaisler/memctrl/srctrl.vhd
+END
+srctrl.in.vhd
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/svn/!svn/ver/102/SysPy/SysPy_ver/Leon3_comps/libs/gaisler/memctrl/srctrl.in.vhd
+END
+sdctrl.in
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/svn/!svn/ver/102/SysPy/SysPy_ver/Leon3_comps/libs/gaisler/memctrl/sdctrl.in
+END
+ssrctrl.in
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/svn/!svn/ver/102/SysPy/SysPy_ver/Leon3_comps/libs/gaisler/memctrl/ssrctrl.in
+END
+spimctrl.in
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/svn/!svn/ver/102/SysPy/SysPy_ver/Leon3_comps/libs/gaisler/memctrl/spimctrl.in
+END
+srctrl.in.h
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/svn/!svn/ver/102/SysPy/SysPy_ver/Leon3_comps/libs/gaisler/memctrl/srctrl.in.h
+END
+srctrl.in.help
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/svn/!svn/ver/102/SysPy/SysPy_ver/Leon3_comps/libs/gaisler/memctrl/srctrl.in.help
+END
+vhdlsyn.txt
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/svn/!svn/ver/102/SysPy/SysPy_ver/Leon3_comps/libs/gaisler/memctrl/vhdlsyn.txt
+END
+sdctrl.vhd
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/svn/!svn/ver/102/SysPy/SysPy_ver/Leon3_comps/libs/gaisler/memctrl/sdctrl.vhd
+END
+spimctrl.vhd
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/svn/!svn/ver/102/SysPy/SysPy_ver/Leon3_comps/libs/gaisler/memctrl/spimctrl.vhd
+END
+srctrl.in
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/svn/!svn/ver/102/SysPy/SysPy_ver/Leon3_comps/libs/gaisler/memctrl/srctrl.in
+END

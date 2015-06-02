@@ -1,0 +1,3 @@
+MODULE testrng2
+SUBMODULE patterngen2
+INSTANCE UUT

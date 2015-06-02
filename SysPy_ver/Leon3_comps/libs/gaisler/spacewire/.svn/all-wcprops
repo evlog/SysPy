@@ -1,0 +1,65 @@
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/svn/!svn/ver/102/SysPy/SysPy_ver/Leon3_comps/libs/gaisler/spacewire
+END
+grspwm.vhd
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/svn/!svn/ver/102/SysPy/SysPy_ver/Leon3_comps/libs/gaisler/spacewire/grspwm.vhd
+END
+grspw.vhd
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/svn/!svn/ver/102/SysPy/SysPy_ver/Leon3_comps/libs/gaisler/spacewire/grspw.vhd
+END
+spacewire.vhd
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/svn/!svn/ver/102/SysPy/SysPy_ver/Leon3_comps/libs/gaisler/spacewire/spacewire.vhd
+END
+grspw2.vhd
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/svn/!svn/ver/102/SysPy/SysPy_ver/Leon3_comps/libs/gaisler/spacewire/grspw2.vhd
+END
+vhdlsim.txt
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/svn/!svn/ver/102/SysPy/SysPy_ver/Leon3_comps/libs/gaisler/spacewire/vhdlsim.txt
+END
+vhdlsyn.txt
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/svn/!svn/ver/102/SysPy/SysPy_ver/Leon3_comps/libs/gaisler/spacewire/vhdlsyn.txt
+END
+spacewire.in
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/svn/!svn/ver/102/SysPy/SysPy_ver/Leon3_comps/libs/gaisler/spacewire/spacewire.in
+END
+spacewire.in.vhd
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/svn/!svn/ver/102/SysPy/SysPy_ver/Leon3_comps/libs/gaisler/spacewire/spacewire.in.vhd
+END
+spacewire.in.h
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/svn/!svn/ver/102/SysPy/SysPy_ver/Leon3_comps/libs/gaisler/spacewire/spacewire.in.h
+END
+spacewire.in.help
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/svn/!svn/ver/102/SysPy/SysPy_ver/Leon3_comps/libs/gaisler/spacewire/spacewire.in.help
+END

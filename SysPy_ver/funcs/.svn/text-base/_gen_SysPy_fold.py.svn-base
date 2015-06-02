@@ -1,0 +1,61 @@
+import commands
+from pdb import *
+
+
+def gen_SysPy_fold(vhdFile, attributes, CompLib, comp_variables, proc_name):
+       """
+       FUNCTION: signal_compatibility(a file, b(), c str, d, e int)
+              a: VHDL output file 
+              b: dictionary containing design's attributes
+              c: component's library string
+              d:
+              e: int # of processor cores
+              
+       - Checking the compatibility of left signals against the right signals assignment.
+       """
+       
+# Python's variable declerations
+#----------------------------------------------------------------------------------------------------------------------------------
+
+#----------------------------------------------------------------------------------------------------------------------------------
+       attributes_keys = attributes.keys()
+       FPGA_attr_flag = 0
+       for i in range(len(attributes_keys)):
+              if (attributes_keys[i] == "FPGA_DEV"):
+                     a = attributes[attributes_keys[i]]
+                     FPGA_attr_flag = 1
+
+       if (FPGA_attr_flag == 1):
+              if (a == "Spartan3"):
+                     fpga_dev = "_S3"
+              elif (a == "Virtex5"):
+                     fpga_dev = "_V5"
+
+       else:
+              fpga_dev = "_S3"
+
+       if (CompLib == "XCompLib"):
+              command = 'cp ./SysPy_comp_lib/XCoreLib/' + comp_variables[len(comp_variables) - 1][2] + '/' + comp_variables[len(comp_variables) - 1][2] + fpga_dev+ ".xco" + ' ./SysPy/work/' + comp_variables[len(comp_variables) - 1][2] + fpga_dev + ".xco"
+              commands.getoutput(command)
+
+              command = 'cp ./SysPy_comp_lib/XCoreLib/' + comp_variables[len(comp_variables) - 1][2] + '/' + comp_variables[len(comp_variables) - 1][2] + fpga_dev + ".vho" + ' ./SysPy/work/' + comp_variables[len(comp_variables) - 1][2] + fpga_dev+ ".vho"
+              commands.getoutput(command)
+
+              command = 'cp ./SysPy_comp_lib/XCoreLib/' + comp_variables[len(comp_variables) - 1][2] + '/' + comp_variables[len(comp_variables) - 1][2] + fpga_dev + ".ngc" + ' ./SysPy/work/' + comp_variables[len(comp_variables) - 1][2] + fpga_dev + ".ngc"
+              commands.getoutput(command)
+
+              command = 'cp ./SysPy_comp_lib/XCoreLib/' + comp_variables[len(comp_variables) - 1][2] + '/' + comp_variables[len(comp_variables) - 1][2] + fpga_dev + ".vhd" + ' ./SysPy/work/' + comp_variables[len(comp_variables) - 1][2] + fpga_dev + ".vhd"
+              commands.getoutput(command)
+
+       if (proc_name == "top_avr_core_v8"):
+              command = 'mkdir ./SysPy/work/AVR_core'
+              commands.getoutput(command)
+              command = 'cp ./proc_sw/XPM8Kx16.vhd ./SysPy/work/AVR_core/XPM8Kx16.vhd'
+              commands.getoutput(command)
+              command = 'cp ./AVR_comps/*.vhd ./SysPy/work/AVR_core/'
+              commands.getoutput(command)
+       elif (proc_name == "Leon3_wrapper"):
+              command = 'mkdir ./SysPy/work/Leon3_core'
+              commands.getoutput(command)
+              command = 'cp ./Leon3_comps/*.vhd ./SysPy/work/Leon3_core/'
+              commands.getoutput(command)

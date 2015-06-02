@@ -1,0 +1,66 @@
+////////////////////////////////////////////////////////////////////////////////
+// Copyright (c) 1995-2007 Xilinx, Inc.
+// All Right Reserved.
+////////////////////////////////////////////////////////////////////////////////
+//   ____  ____ 
+//  /   /\/   / 
+// /___/  \  /    Vendor: Xilinx 
+// \   \   \/     Version : 9.2.04i
+//  \   \         Application : ISE
+//  /   /         Filename : test.tfw
+// /___/   /\     Timestamp : Wed Oct 26 08:03:42 2011
+// \   \  /  \ 
+//  \___\/\___\ 
+//
+//Command: 
+//Design Name: test
+//Device: Xilinx
+//
+`timescale 1ns/1ps
+
+module test;
+    reg [31:0] XLXN_1 = 32'b00000000000000000000000000000000;
+    reg [31:0] XLXN_2 = 32'b00000000000000000000000000000000;
+    reg [5:0] XLXN_3 = 6'b000000;
+    reg XLXN_4 = 1'b0;
+    reg XLXN_5 = 1'b0;
+    reg XLXN_6 = 1'b0;
+    wire [31:0] XLXN_7;
+    wire XLXN_8;
+
+    parameter PERIOD = 20;
+    parameter real DUTY_CYCLE = 0.5;
+    parameter OFFSET = 100;
+
+    initial    // Clock process for XLXN_6
+    begin
+        #OFFSET;
+        forever
+        begin
+            XLXN_6 = 1'b0;
+            #(PERIOD-(PERIOD*DUTY_CYCLE)) XLXN_6 = 1'b1;
+            #(PERIOD*DUTY_CYCLE);
+        end
+    end
+
+    testmaximumval UUT (
+        .XLXN_1(XLXN_1),
+        .XLXN_2(XLXN_2),
+        .XLXN_3(XLXN_3),
+        .XLXN_4(XLXN_4),
+        .XLXN_5(XLXN_5),
+        .XLXN_6(XLXN_6),
+        .XLXN_7(XLXN_7),
+        .XLXN_8(XLXN_8));
+
+    initial begin
+        // -------------  Current Time:  100ns
+        #100;
+        XLXN_5 = 1'b1;
+        XLXN_1 = 32'b01001010000000000000000000000000;
+        XLXN_2 = 32'b01001010000000000000000000000000;
+        // -------------------------------------
+    end
+
+endmodule
+

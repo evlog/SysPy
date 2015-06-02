@@ -1,0 +1,8 @@
+INTSTYLE=ise
+INFILE=/home/SysPy_test/SysPy_ver/Python_script/testbml2/Leon3_XST_prj_FRM4_lefteris/proc_wrapper_FRM4X.ncd
+OUTFILE=/home/SysPy_test/SysPy_ver/Python_script/testbml2/Leon3_XST_prj_FRM4_lefteris/proc_wrapper_FRM4X.bit
+FAMILY=Virtex5
+PART=xc5vlx110t-1ff1136
+WORKINGDIR=/home/SysPy_test/SysPy_ver/Python_script/testbml2/Leon3_XST_prj_FRM4_lefteris
+LICENSE=ISE
+USER_INFO=176360758_178259079_204374053_443

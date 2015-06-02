@@ -1,0 +1,89 @@
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/svn/!svn/ver/102/SysPy/SysPy_ver/Leon3_comps/libs/gaisler/ata
+END
+ata.in.h
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/svn/!svn/ver/102/SysPy/SysPy_ver/Leon3_comps/libs/gaisler/ata/ata.in.h
+END
+ata.in.help
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/svn/!svn/ver/102/SysPy/SysPy_ver/Leon3_comps/libs/gaisler/ata/ata.in.help
+END
+ata_inf.vhd
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/svn/!svn/ver/102/SysPy/SysPy_ver/Leon3_comps/libs/gaisler/ata/ata_inf.vhd
+END
+atahost_ahbmst.vhd
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/svn/!svn/ver/102/SysPy/SysPy_ver/Leon3_comps/libs/gaisler/ata/atahost_ahbmst.vhd
+END
+ocidec2_amba_slave.vhd
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/svn/!svn/ver/102/SysPy/SysPy_ver/Leon3_comps/libs/gaisler/ata/ocidec2_amba_slave.vhd
+END
+ata.vhd
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/svn/!svn/ver/102/SysPy/SysPy_ver/Leon3_comps/libs/gaisler/ata/ata.vhd
+END
+vhdlsyn.txt
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/svn/!svn/ver/102/SysPy/SysPy_ver/Leon3_comps/libs/gaisler/ata/vhdlsyn.txt
+END
+atahost_dma_fifo.vhd
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/svn/!svn/ver/102/SysPy/SysPy_ver/Leon3_comps/libs/gaisler/ata/atahost_dma_fifo.vhd
+END
+atactrl_nodma.vhd
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/svn/!svn/ver/102/SysPy/SysPy_ver/Leon3_comps/libs/gaisler/ata/atactrl_nodma.vhd
+END
+ata.in
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/svn/!svn/ver/102/SysPy/SysPy_ver/Leon3_comps/libs/gaisler/ata/ata.in
+END
+ata.in.vhd
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/svn/!svn/ver/102/SysPy/SysPy_ver/Leon3_comps/libs/gaisler/ata/ata.in.vhd
+END
+atactrl.vhd
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/svn/!svn/ver/102/SysPy/SysPy_ver/Leon3_comps/libs/gaisler/ata/atactrl.vhd
+END
+atactrl_dma.vhd
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/svn/!svn/ver/102/SysPy/SysPy_ver/Leon3_comps/libs/gaisler/ata/atactrl_dma.vhd
+END
+atahost_amba_slave.vhd
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/svn/!svn/ver/102/SysPy/SysPy_ver/Leon3_comps/libs/gaisler/ata/atahost_amba_slave.vhd
+END

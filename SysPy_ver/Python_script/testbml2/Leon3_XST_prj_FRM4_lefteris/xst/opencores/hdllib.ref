@@ -1,0 +1,5 @@
+EN i2c_master_bit_ctrl NULL /home/SysPy_test/SysPy_ver/Python_script/paramsocs/Leon3_comps_Gill_top/Leon3_comps/libs/opencores/i2c/i2c_master_bit_ctrl.vhd sub00/vhpl00 1369068456
+AR i2c_master_byte_ctrl structural /home/SysPy_test/SysPy_ver/Python_script/paramsocs/Leon3_comps_Gill_top/Leon3_comps/libs/opencores/i2c/i2c_master_byte_ctrl.vhd sub00/vhpl03 1369068501
+EN i2c_master_byte_ctrl NULL /home/SysPy_test/SysPy_ver/Python_script/paramsocs/Leon3_comps_Gill_top/Leon3_comps/libs/opencores/i2c/i2c_master_byte_ctrl.vhd sub00/vhpl02 1369068500
+AR i2c_master_bit_ctrl structural /home/SysPy_test/SysPy_ver/Python_script/paramsocs/Leon3_comps_Gill_top/Leon3_comps/libs/opencores/i2c/i2c_master_bit_ctrl.vhd sub00/vhpl01 1369068457
+PH i2coc NULL /home/SysPy_test/SysPy_ver/Python_script/paramsocs/Leon3_comps_Gill_top/Leon3_comps/libs/opencores/i2c/i2coc.vhd sub00/vhpl04 1369068502

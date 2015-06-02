@@ -1,0 +1,47 @@
+K 25
+svn:wc:ra_dav:version-url
+V 104
+/svn/!svn/ver/102/SysPy/SysPy_ver/Python_script/paramsocs/Leon3_comps_Gill_top/Leon3_comps/libs/eth/core
+END
+eth_rstgen.vhd
+K 25
+svn:wc:ra_dav:version-url
+V 119
+/svn/!svn/ver/102/SysPy/SysPy_ver/Python_script/paramsocs/Leon3_comps_Gill_top/Leon3_comps/libs/eth/core/eth_rstgen.vhd
+END
+greth_rx.vhd
+K 25
+svn:wc:ra_dav:version-url
+V 117
+/svn/!svn/ver/102/SysPy/SysPy_ver/Python_script/paramsocs/Leon3_comps_Gill_top/Leon3_comps/libs/eth/core/greth_rx.vhd
+END
+greth_tx.vhd
+K 25
+svn:wc:ra_dav:version-url
+V 117
+/svn/!svn/ver/102/SysPy/SysPy_ver/Python_script/paramsocs/Leon3_comps_Gill_top/Leon3_comps/libs/eth/core/greth_tx.vhd
+END
+vhdlsyn.txt
+K 25
+svn:wc:ra_dav:version-url
+V 116
+/svn/!svn/ver/102/SysPy/SysPy_ver/Python_script/paramsocs/Leon3_comps_Gill_top/Leon3_comps/libs/eth/core/vhdlsyn.txt
+END
+greth_pkg.vhd
+K 25
+svn:wc:ra_dav:version-url
+V 118
+/svn/!svn/ver/102/SysPy/SysPy_ver/Python_script/paramsocs/Leon3_comps_Gill_top/Leon3_comps/libs/eth/core/greth_pkg.vhd
+END
+grethc.vhd
+K 25
+svn:wc:ra_dav:version-url
+V 115
+/svn/!svn/ver/102/SysPy/SysPy_ver/Python_script/paramsocs/Leon3_comps_Gill_top/Leon3_comps/libs/eth/core/grethc.vhd
+END
+eth_ahb_mst.vhd
+K 25
+svn:wc:ra_dav:version-url
+V 120
+/svn/!svn/ver/102/SysPy/SysPy_ver/Python_script/paramsocs/Leon3_comps_Gill_top/Leon3_comps/libs/eth/core/eth_ahb_mst.vhd
+END

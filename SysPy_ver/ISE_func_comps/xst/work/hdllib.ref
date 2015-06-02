@@ -1,0 +1,11 @@
+EN test_core_gen2_wrapper NULL "/media/My Passport/work/PhD/myHDL_tests/my_conversion/Plex_test/new_code_2/ISE_func_comps/test_core_gen2_wrapper.vhd" sub00/vhpl09 1268226151
+AR test_core_gen2_wrapper test_core_gen2_wrapper_struct "/media/My Passport/work/PhD/myHDL_tests/my_conversion/Plex_test/new_code_2/ISE_func_comps/test_core_gen2_wrapper.vhd" sub00/vhpl10 1268226152
+AR test_core_gen_wrap test_core_gen_wrap_struct "/media/My Passport/work/PhD/myHDL_tests/my_conversion/Plex_test/new_code_2/ISE_func_comps/test_core_gen_wrap.vhd" sub00/vhpl05 1268160458
+EN test_core_gen NULL "/media/My Passport/work/PhD/myHDL_tests/my_conversion/Plex_test/new_code_2/ISE_func_comps/ipcore_dir/test_core_gen.vhd" sub00/vhpl02 1268160455
+EN test_core_gen2 NULL "/media/My Passport/work/PhD/myHDL_tests/my_conversion/Plex_test/new_code_2/ISE_func_comps/ipcore_dir/test_core_gen2.vhd" sub00/vhpl07 1268226149
+EN test_core_gen_wrap NULL "/media/My Passport/work/PhD/myHDL_tests/my_conversion/Plex_test/new_code_2/ISE_func_comps/test_core_gen_wrap.vhd" sub00/vhpl04 1268160457
+AR test behavioral "/media/My Passport/work/PhD/myHDL_tests/my_conversion/Plex_test/new_code_2/ISE_func_comps/test.vhd" sub00/vhpl01 1268323736
+AR test_core_gen test_core_gen_struct "/media/My Passport/work/PhD/myHDL_tests/my_conversion/Plex_test/new_code_2/ISE_func_comps/test_core_gen.vhd" sub00/vhpl03 1268158249
+AR test_core_gen test_core_gen_a "/media/My Passport/work/PhD/myHDL_tests/my_conversion/Plex_test/new_code_2/ISE_func_comps/ipcore_dir/test_core_gen.vhd" sub00/vhpl06 1268160456
+EN test NULL "/media/My Passport/work/PhD/myHDL_tests/my_conversion/Plex_test/new_code_2/ISE_func_comps/test.vhd" sub00/vhpl00 1268323735
+AR test_core_gen2 test_core_gen2_a "/media/My Passport/work/PhD/myHDL_tests/my_conversion/Plex_test/new_code_2/ISE_func_comps/ipcore_dir/test_core_gen2.vhd" sub00/vhpl08 1268226150

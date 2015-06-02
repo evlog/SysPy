@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<symbol version="7" name="test_core_gen2">
+    <symboltype>BLOCK</symboltype>
+    <timestamp>2010-3-10T12:41:17</timestamp>
+    <pin polarity="Input" x="0" y="80" name="x_in[7:0]" />
+    <pin polarity="Output" x="576" y="80" name="x_out[4:0]" />
+    <graph>
+        <text style="fontsize:40;fontname:Arial" x="32" y="32">test_core_gen2</text>
+        <rect width="512" x="32" y="32" height="320" />
+        <line x2="32" y1="80" y2="80" style="linewidth:W" x1="0" />
+        <attrtext style="fontsize:24;fontname:Arial" attrname="PinName" x="36" y="80" type="pin x_in[7:0]" />
+        <line x2="544" y1="80" y2="80" style="linewidth:W" x1="576" />
+        <attrtext style="alignment:RIGHT;fontsize:24;fontname:Arial" attrname="PinName" x="540" y="80" type="pin x_out[4:0]" />
+    </graph>
+</symbol>
