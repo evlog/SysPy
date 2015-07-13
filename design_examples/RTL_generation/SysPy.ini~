@@ -33,12 +33,11 @@
 snapgear_dir=/opt/snapgear-2.6-p42/
 
 [work directories]
-SysPy_dir=/home/vangelis/Desktop/GitHub/SysPy/SysPy_ver/
+SysPy_dir=/home/vangelis/Desktop/GitHub/SysPy_dev/SysPy_ver/
 sw_dir=/home/test/proc_sw/
 
 
 
 
-work_dir=/home/vangelis/Desktop/GitHub/SysPy/design_examples/RTL_generation/
-
+work_dir=/home/vangelis/Desktop/GitHub/SysPy_dev/design_examples/RTL_generation
 

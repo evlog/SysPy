@@ -417,7 +417,7 @@ def beh_sim(func, attributes, signals_i, signals_o, signals_intr, signals, func_
        ## Import the "beh_sim" functions to the simulation file
        #simtestPythonSimFile.write("import funcs._beh_sim\nfrom pdb import *\nfrom _sim_functions import *\nSimObj = SimFunctions2()\n")
        #PythonSimFile.write("import funcs._beh_sim\nfrom pdb import *\nfrom linearRegressionSimFunctions import *\nSimObj = linearRegressionSimFunctions()\n")
-       PythonSimFile.write("import funcs._beh_sim\nfrom pdb import *\nfrom _sim_functions import *\nSimObj = SimFunctions2()\n")
+       PythonSimFile.write("import funcs._beh_sim\nfrom pdb import *\nfrom _sim_functions import *\nSimObj = SimFunctions2()\nimport example\n")
 
        for i in func_code:
               PythonSimFile.write(i)
