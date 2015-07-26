@@ -103,6 +103,8 @@ import funcs._beh_sim
 reload(funcs._beh_sim)
 import funcs._IPXACTGenerator
 reload(funcs._IPXACTGenerator)
+import funcs._VHDLTestbenchGenerator
+reload(funcs._VHDLTestbenchGenerator)
 
 from pdb import *
 import warnings, sys
@@ -2081,6 +2083,11 @@ def toVHDL(func, attributes, generics, *args):
        # Generate IPXACT description              
        funcs._IPXACTGenerator.IPXACTGenerator(func, signals_i, signals_o, signals_io, config_options)
        print("Generated IP-XACT model files:" + config_options["work_dir"] + "SysPy/work/" + func + ".xml")
+       
+       # Generate VHDL testbench  
+       commands.getoutput('mkdir ' + config_options["work_dir"] + '/SysPy/work/testbench')           
+       funcs._VHDLTestbenchGenerator.VHDLTestbenchGenerator(func, signals_i, signals_o, signals_io, config_options)
+       print("Generated VHDL testbench files:" + config_options["work_dir"] + "SysPy/work/testbench/" + func + "_tb.vhd")
 
 
 
